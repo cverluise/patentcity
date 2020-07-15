@@ -1,2 +1,2 @@
 # HistPatentMining
-Collect information from early patents
+Collect information from early-aged patents
