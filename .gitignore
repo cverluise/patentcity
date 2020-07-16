@@ -1,0 +1,5 @@
+# system
+.DS_Store
+
+# secret
+credentials-patentcity.json
