@@ -3,3 +3,6 @@
 
 # secret
 credentials-patentcity.json
+
+# data
+**/gold_*.jsonl
