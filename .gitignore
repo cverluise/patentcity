@@ -11,3 +11,7 @@ apikey-here.txt
 
 # models
 **/en_ent_gbpatent01_sm_beta
+
+# system
+**/.idea/
+**/__pycache__/
