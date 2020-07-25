@@ -3,6 +3,11 @@
 
 # secret
 credentials-patentcity.json
+apikey-here.txt
 
 # data
-**/gold_*.jsonl
+**/data/
+**/deprecated/
+
+# models
+**/en_ent_gbpatent01_sm_beta
