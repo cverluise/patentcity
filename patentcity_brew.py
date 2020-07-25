@@ -19,8 +19,11 @@ def get_text(file, max_char):
 
 @app.command()
 def beta(
-        path: str, model: str = None, max_char: int = 1000, reduced_perf: bool = False,
-        inDelim: str = None
+    path: str,
+    model: str = None,
+    max_char: int = 1000,
+    reduced_perf: bool = False,
+    inDelim: str = None,
 ):
     def serialize_beta(doc):
         labels = ["CIT", "ORG", "PERS", "LOC", "OCC"]
@@ -29,13 +32,25 @@ def beta(
         ents = doc_.ents
         for label in labels:
             out.update(
-                {label.lower(): [clean_text(ent.text, inDelim) for ent in ents if ent.label_ ==
-                                 label]})
+                {
+                    label.lower(): [
+                        clean_text(ent.text, inDelim)
+                        for ent in ents
+                        if ent.label_ == label
+                    ]
+                }
+            )
         if out.get("loc"):
             # from loc: ["", ""] to loc: [{"raw":"", "id":""}, {...}]
             # -> should make it relatively efficient to integrate results back from here
-            out.update({"loc": [{"raw": v, "recId": get_recid(publication_number)} for _, v in out[
-                "loc"].items()]})
+            out.update(
+                {
+                    "loc": [
+                        {"raw": v, "recId": get_recid(publication_number)}
+                        for _, v in out["loc"].items()
+                    ]
+                }
+            )
         typer.echo(json.dumps(out))
 
     nlp = spacy.load(model)
