@@ -13,14 +13,14 @@ ok = "\u2713"
 not_ok = "\u2717"
 
 app = typer.Typer()
-TAG_RE = re.compile(r'<[^>]+>')
-WHITE_RE = re.compile(r'\s+')
+TAG_RE = re.compile(r"<[^>]+>")
+WHITE_RE = re.compile(r"\s+")
 
 
 def clean_text(text, inDelim=None):
     """Remove anchors <*> and </*> and replace by an empty space"""
-    text = TAG_RE.sub(' ', text)
-    text = WHITE_RE.sub(' ', text)
+    text = TAG_RE.sub(" ", text)
+    text = WHITE_RE.sub(" ", text)
     text = text.replace("\n", " ")
     if inDelim:
         text = text.replace(inDelim, " ")
@@ -50,13 +50,15 @@ def get_whitespaced_labels(file: str):
             spans = line.get("spans")
             if spans:
                 for span in spans:
-                    span_text = text[span["start"]:span["end"]]
+                    span_text = text[span["start"] : span["end"]]
                     startswith = span_text.startswith("\s")
                     endswith = span_text.endswith("\s")
                     if any([startswith, endswith]):
                         typer.secho(f"{json.dumps(line)}", fg=typer.colors.YELLOW)
-                        typer.secho(f"Span:{span}\nValue:{span_text}\nLine:{i + 1}",
-                                    fg=typer.colors.RED)
+                        typer.secho(
+                            f"Span:{span}\nValue:{span_text}\nLine:{i + 1}",
+                            fg=typer.colors.RED,
+                        )
 
 
 @app.command()
