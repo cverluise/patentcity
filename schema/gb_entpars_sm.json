@@ -1,0 +1,64 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "publication_number",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ORG",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "PERS",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "OCC",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "CIT",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "raw",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "country",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "state_district",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "state",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "city",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "postcode",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "LOC",
+    "type": "RECORD"
+  }
+]

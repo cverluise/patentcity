@@ -1,0 +1,194 @@
+[
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "loc_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchQualityState",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchQualityPostalCode",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchQualityDistrict",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchQualityBuilding",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchQualityHouseNumber",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchQualityCountry",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchType",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchCode",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "relevance",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "country",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "state",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "longitude",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "subdistrict",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "district",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "houseNumber",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchQualityCounty",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "locationLabel",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "recId",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "seqNumber",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "latitude",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "county",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "street",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchQualityCity",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "postalCode",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "addressLines",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "city",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchLevel",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "building",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "seqLength",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "matchQualityStreet",
+        "type": "FLOAT"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "geoc",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "OCC",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "PERS",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ORG",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "publication_number",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "LOC",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "CIT",
+    "type": "STRING"
+  }
+]
