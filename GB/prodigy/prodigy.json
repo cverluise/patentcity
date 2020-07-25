@@ -1,0 +1,13 @@
+{"show_stats":true,
+  "show_flag":true,
+  "swipe":true,
+  "force_stream":true,
+  "split_sents_threshold":2000,
+  "custom_theme":{"labels":
+    {"PERS": "#F1948A",
+      "OCC": "#C39BD3",
+      "ORG": "#85C1E9",
+      "LOC": "#F9E79F",
+      "CIT": "#7DCEA0"}
+    }
+  }
