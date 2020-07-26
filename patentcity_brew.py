@@ -7,6 +7,13 @@ import typer
 
 from patentcity_utils import clean_text, get_recid
 
+"""
+                             Brew patentcity dataset
+
+General functioning: Stream text blobs | process through spaCy model | print json blobs to stdout
+* Beta: entities only, no dependency parsing
+"""
+
 app = typer.Typer()
 
 
@@ -21,15 +28,24 @@ def get_text(file, max_char):
 def beta(
     path: str,
     model: str = None,
-    max_char: int = 1000,
+    max_char: int = 1500,
     reduced_perf: bool = False,
-    inDelim: str = None,
+    inDelim: str = "|",
 ):
-    def serialize_beta(doc):
-        labels = ["CIT", "ORG", "PERS", "LOC", "OCC"]
+    """Print json blobs of the beta dataset
+
+    {"publication_number": str,
+    "pers": List[str],
+    "org":List[str],
+    "loc":List[Dict("raw":"", "recId":"")],
+    "occ":List[str],
+    "cit":List[str]}"""
+
+    def serialize_blob(doc):
         publication_number, doc_ = doc[0].text, doc[1:]
         out = {"publication_number": publication_number}
         ents = doc_.ents
+        labels = set([ent.label_ for ent in ents])
         for label in labels:
             out.update(
                 {
@@ -41,16 +57,9 @@ def beta(
                 }
             )
         if out.get("loc"):
-            # from loc: ["", ""] to loc: [{"raw":"", "id":""}, {...}]
+            # from loc: ["", ""] to loc: [{"raw":"", "recId":""}, {...}]
             # -> should make it relatively efficient to integrate results back from here
-            out.update(
-                {
-                    "loc": [
-                        {"raw": v, "recId": get_recid(publication_number)}
-                        for _, v in out["loc"].items()
-                    ]
-                }
-            )
+            out.update({"loc": [{"raw": v, "recId": get_recid(v)} for v in out["loc"]]})
         typer.echo(json.dumps(out))
 
     nlp = spacy.load(model)
@@ -61,7 +70,7 @@ def beta(
     else:
         docs = nlp.pipe(texts)
     for doc in docs:
-        serialize_beta(doc)
+        serialize_blob(doc)
 
 
 if __name__ == "__main__":

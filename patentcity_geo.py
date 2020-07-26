@@ -11,93 +11,57 @@ import requests
 import typer
 from bs4 import BeautifulSoup
 
+from patentcity_lib import GEOC_URL, GEOC_OUTCOLS
 from patentcity_utils import clean_text, get_dt_human
 from patentcity_utils import ok, not_ok
 
-####################################################################################################
-#                               Parse LOC using libpostal
-# Libpostal https://github.com/openvenues/libpostal
-# Docker libpostal https://github.com/johnlonganecker/libpostal-rest-docker
-# REST api https://github.com/johnlonganecker/libpostal-rest
-# Note:
-# - if set up on GCP, you need to set up firewall rules to authorize access from the requesting
-# machine
-# - get external IP of GCP compute engine https://console.cloud.google.com/networking/addresses/list
-# ?project=<your-project>
-# Then, to build on BigQuery, use schema/xx_entpars_*.json
-#
-#                           Geocode LOC using HERE Batch geocoding API
-# Guide: developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-constructing.html
-# API ref: https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/endpoints.html
-####################################################################################################
+"""
+                              Parse LOC using libpostal
+Libpostal https://github.com/openvenues/libpostal
+Docker libpostal https://github.com/johnlonganecker/libpostal-rest-docker
+REST api https://github.com/johnlonganecker/libpostal-rest
+Note:
+- if set up on GCP, you need to set up firewall rules to authorize access from the requesting
+machine
+- get external IP of GCP compute engine https://console.cloud.google.com/networking/addresses/list
+?project=<your-project>
+Then, to build on BigQuery, use schema/xx_entpars_*.json
+
+                          Geocode LOC using HERE Batch geocoding API
+Guide: developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-constructing.html
+API ref: https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/endpoints.html
+"""
 
 app = typer.Typer()
 
-# compile
 
-# HERE Geocoding API
-GEOC_URL = "https://batch.geocoder.ls.hereapi.com/6.2/jobs"
-GEOC_OUTCOLS = [
-    "recId",
-    "seqNumber",
-    "seqLength",
-    "latitude",
-    "longitude",
-    "locationLabel",
-    "addressLines",
-    "street",
-    "houseNumber",
-    "building",
-    "subdistrict",
-    "district",
-    "city",
-    "postalCode",
-    "county",
-    "state",
-    "country",
-    "relevance",
-    "matchType",
-    "matchCode",
-    "matchLevel",
-    "matchQualityStreet",
-    "matchQualityHouseNumber",
-    "matchQualityBuilding",
-    "matchQualityDistrict",
-    "matchQualityCity",
-    "matchQualityPostalCode",
-    "matchQualityCounty",
-    "matchQualityState",
-    "matchQualityCountry",
-]
-
-
-def get_parsed_loc(loc, endpoint, debug):
-    """Request http://endpoint/parser with query loc"""
-    data = json.dumps({"query": clean_text(loc)})
-    response = requests.post(f"http://{endpoint}/parser", data=data)
-    if debug and response.status_code != 200:
-        typer.secho(
-            f"{loc} failed with status code {response.status_code}", fg=typer.colors.RED
-        )
-    return json.loads(response.text)
-
-
-def flatten_parsed_loc(parsed_loc):
-    """Flatten the libpostal response"""
-    out = {}
-    for e in parsed_loc:
-        out.update({e["label"]: e["value"]})
-    return out
-
-
-def parse_loc(line, endpoint, debug):
+def parse_loc_blob(line, api_reference, debug):
     """Return the line with parsed LOCs"""
+
+    def get_parsed_loc_blob(loc, api_reference, debug):
+        """Request http://api_reference/parser with query loc"""
+        data = json.dumps({"query": clean_text(loc)})
+        response = requests.post(f"http://{api_reference}/parser", data=data)
+        if debug and response.status_code != 200:
+            typer.secho(
+                f"{loc} failed with status code {response.status_code}",
+                fg=typer.colors.RED,
+            )
+        return json.loads(response.text)
+
+    def flatten_parsed_loc(parsed_loc):
+        """Flatten the libpostal response"""
+        out = {}
+        for e in parsed_loc:
+            out.update({e["label"]: e["value"]})
+        return out
+
     line = json.loads(line)
     locs = line.get("loc")
     if locs:
         locs_ = []
         for loc in locs:
-            parsed_loc = get_parsed_loc(loc, endpoint, debug)
+            parsed_loc = get_parsed_loc_blob(loc, api_reference, debug)
             parsed_loc = flatten_parsed_loc(parsed_loc)
             parsed_loc.update({"raw": loc})
             locs_ += [parsed_loc]
@@ -105,26 +69,24 @@ def parse_loc(line, endpoint, debug):
     typer.echo(json.dumps(line))
 
 
-@app.command()
+@app.command(deprecated=True)
 def get_parsed_loc(
-    path: str, endpoint: str, max_workers: int = 10, debug: bool = False
+    path: str,
+    api_reference: str = typer.Argument(..., help="ip:port"),
+    max_workers: int = 10,
+    debug: bool = False,
 ):
-    """Print json lines with parsed loc to stdout
-    :param path: path to data file(s)
-    :param endpoint: api endpoint (ip:port)
-    :param max_workers: nb of concurrent threads
-    """
+    """Print json blobs with parsed loc to stdout"""
     files = glob(path)
     for file in files:
-        with open(file, "r") as fin:
-            data = fin.read().split("\n")
+        data = open(file, "r")
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            executor.map(parse_loc, data, repeat(endpoint), repeat(debug))
+            executor.map(parse_loc_blob, data, repeat(api_reference), repeat(debug))
 
 
 @app.command()
 def post_geoc_data(
-    data: str,
+    file: str,
     api_key: str,
     outCols: str = None,
     inDelim: str = "|",
@@ -146,11 +108,11 @@ def post_geoc_data(
         soup = BeautifulSoup(response.text, features="xml")
         RequestId = soup.RequestId.text
         Status = soup.Status.text
-        log_msg = f"{data}\t{Status}\t{RequestId}\t{get_dt_human()}"
+        log_msg = f"{file}\t{Status}\t{RequestId}\t{get_dt_human()}"
         if verbose:
             typer.echo(soup.prettify())
         if Status == "accepted":
-            typer.secho(f"{ok}\t{log_msg}", fg=typer.colors.GREEN)
+            typer.secho(f"{ok}{log_msg}", fg=typer.colors.GREEN)
         else:
             typer.secho(f"{not_ok}\t{log_msg}", fg=typer.colors.RED)
 
@@ -171,7 +133,7 @@ def post_geoc_data(
         ("locationattributes", locationattributes),
     )
 
-    data = open(data, "rb").read()
+    data = open(file, "rb").read()
     response = requests.post(GEOC_URL, headers=headers, params=params, data=data)
     if response.status_code == 200:
         check_post(response)
@@ -183,7 +145,9 @@ def post_geoc_data(
 
 
 @app.command()
-def get_geoc_status(request_id: str, api_key: str, freq: int = 5, verbose=False):
+def get_geoc_status(
+    request_id: str, api_key: str, freq: int = 5, verbose: bool = False
+):
     """Check status of job <request_id>"""
 
     def summarize_status(response, verbose):
@@ -265,7 +229,10 @@ def get_geoc_data(
 
 @app.command()
 def prep_geoc_data(file: str, inDelim: str = "|"):
-    """Write material for batch geocoding using HERE API to stdout. Receive a jsonl file."""
+    """Write material for batch geocoding using HERE API to stdout. Receive a jsonl file.
+
+    Run $sort -n -u <output-file.txt> >> <your-file.txt> to sort and deduplicate addresses before
+    batch geocoding."""
     with open(file, "r") as lines:
         typer.echo(f"recId{inDelim}searchText")  # This is the required header
         for line in lines:  # iterate over file lines {"loc":[{""},{}],...}
@@ -273,20 +240,22 @@ def prep_geoc_data(file: str, inDelim: str = "|"):
             locs = line.get("loc")
             if locs:  # if no loc found, no need to geocode it...
                 for loc in locs:
-                    typer.echo(f"{loc['uid']}{inDelim}{loc['raw']}")
-
-
-def get_header(file, outDelim):
-    with open(file, "r") as lines:
-        for line in lines:
-            header = line.replace("\n", "").split(outDelim)
-            break
-        return header
+                    typer.echo(f"{loc['recId']}{inDelim}{loc['raw']}")
 
 
 # @app.command()
 def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
-    """Create index of here results {recId:{"latitude":"","longitude":"",...}}"""
+    """Create index of here results
+    {"recId-1":{"latitude":"","longitude":"",...},
+     "recId-2":{"latitude":"","longitude":"",...},
+      ...}"""
+
+    def get_header(file, outDelim: str = ","):
+        with open(file, "r") as lines:
+            for line in lines:
+                header = line.replace("\n", "").split(outDelim)
+                break
+            return header
 
     header = get_header(file, outDelim)
     index = {}
@@ -300,7 +269,7 @@ def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
                     # TODO evaluate policy
                     pass
                 else:
-                    recid = line["recId"]
+                    recid = int(line["recId"])  # make sure that this is an int
                     line.pop("recId")
                     if line.get("SeqNumber"):
                         # causes conflict in BQ which is NOT case-sensitive
@@ -315,65 +284,41 @@ def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
         return index
 
 
-@app.command(deprecated=True)
-def here_to_jsonl(file: str):
-    """Print lines of <file> as json object {"publication_number":"CC-DDDD-TT", "geoc": {...}}
+def update_loc(blob, index, verbose):
+    blob = json.loads(blob)
+    locs = blob.get("loc")
 
-    After that, group by publication_number using the following cli:
-    jq -sc 'def array_agg($k): group_by(.[$k])[] | map(.geoc) as $geoc | .[0] | .geoc = $geoc ;
-    array_agg("publication_number")' GB/result_*.jsonl >> geoc_*.jsonl
-    stackoverflow.com/questions/48321235/sql-style-group-by-aggregate-functions-in-jq-count-sum
-    -and-etc
-
-    DEPRECATED in favor of get_geoc_index
-    """
-
-    header = get_header(file)
-    with open(file, "r") as fin:
-        csv_reader = csv.DictReader(fin, fieldnames=header)
-        for i, line in enumerate(csv_reader):
-            if i > 0:  # skip header
-                line = dict(line)
-                publication_number, _ = line["recId"].split("_")
-                if int(line["seqNumber"]) > 1:
-                    # we keep only the first proposed item
-                    # TODO evaluate policy
-                    pass
-                else:
-                    if line.get(
-                        "SeqNumber"
-                    ):  # causes conflict in BQ which is NOT case-sensitive
-                        line.pop("SeqNumber")
-                    typer.echo(
-                        json.dumps(
-                            {"publication_number": publication_number, "geoc": line}
-                        )
+    if locs:
+        locs = []
+        for loc_ in blob["loc"]:
+            # loc is a list of dict with the following form
+            # [{"raw":"", "recId":""},...]
+            recid = int(loc_["recId"])
+            geoc_ = index.get(recid)
+            if geoc_:
+                loc_.update(geoc_)
+            else:
+                if verbose:
+                    typer.secho(
+                        f"{not_ok}{recid} ({type(recid)}) not found",
+                        fg=typer.colors.RED,
                     )
+            locs += [loc_]
+            # loc is now a list of dict with the following form
+            # [{"raw":"", "recId":"", "longitude":"", "latitude":"",},...]
+        blob.update({"loc": locs})
+    typer.echo(json.dumps(blob))
 
 
 @app.command()
-def add_geoc_data(src, geoc_file: str = None, max_workers: int = 5):
+def add_geoc_data(
+    src, geoc_file: str = None, max_workers: int = 5, verbose: bool = False
+):
     """Add geoc data from geoc_file returned by HERE batch geocoding API"""
-
-    def update_loc(blob, index):
-        blob = json.loads(blob)
-        locs = []
-
-        for loc_ in blob["loc"]:
-            recid = loc_["recId"]
-            geoc_ = index.get(recid)
-            if geoc_:
-                geoc_.pop("recId")  # avoid duplicates
-                loc_.updat(geoc_)
-            locs += [loc_]
-
-        blob.update({"loc": locs})
-        typer.echo(json.dumps(blob))
-
     index = get_geoc_index(geoc_file, dump=False)
     blobs = open(src, "r")
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        executor.map(update_loc, blobs, repeat(index))
+        executor.map(update_loc, blobs, repeat(index), repeat(verbose))
 
 
 if __name__ == "__main__":
