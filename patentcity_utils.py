@@ -1,12 +1,15 @@
-import csv
 import datetime
 import json
 import os
 import re
-import secrets
+from zlib import adler32
 
 import pandas as pd
 import typer
+
+"""
+General purpose utils
+"""
 
 # msg utils
 ok = "\u2713"
@@ -32,11 +35,10 @@ def get_dt_human():
     return datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
 
-def get_recid(publication_number, n: int = 2):
+def get_recid(s):
     """Return the a uid made of the publication number and a random sequence 2^n random
     characters"""
-    id = secrets.token_hex(n)
-    return "_".join([publication_number, id])
+    return adler32(s.encode())
 
 
 @app.command()
