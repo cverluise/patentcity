@@ -7,7 +7,7 @@ apikey-here.txt
 
 # data
 **/data/
-**/deprecated/
+deprecated/
 
 # models
 **/en_ent_gbpatent01_sm_beta
@@ -15,3 +15,4 @@ apikey-here.txt
 # system
 **/.idea/
 **/__pycache__/
+/models
