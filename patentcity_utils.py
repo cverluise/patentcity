@@ -52,10 +52,19 @@ def get_group(pubnum: int, u_bounds: str):
     return group
 
 
+def get_pubnum(fname: str):
+    try:
+        pubnum = int(fname.split("-")[1])
+    except ValueError:
+        pubnum = None
+        typer.secho(f"{not_ok}Pubnum is not int")
+    return pubnum
+
+
 @app.command()
 def make_groups(path: str, u_bounds: str = None):
     """Distribute files in folders by groups. u_bounds (upper bounds of the groups) should be
-    ascending & comma-separated """
+    ascending & comma-separated."""
     files = glob(path)
     [
         os.mkdir(os.path.join(os.path.dirname(path), f"group_{i + 1}"))
@@ -63,23 +72,24 @@ def make_groups(path: str, u_bounds: str = None):
     ]
     for file in files:
         fname = os.path.basename(file)
-        pubnum = int(fname.split("-")[1])
-        group = get_group(pubnum, u_bounds)
-        dest = os.path.join(os.path.dirname(file), f"group_{group}", fname)
-        os.rename(file, dest)
-        typer.secho(f"Move {file} -> group_{group}/", fg=typer.colors.GREEN)
+        pubnum = get_pubnum(fname)
+        if pubnum:
+            group = get_group(pubnum, u_bounds)
+            dest = os.path.join(os.path.dirname(file), f"group_{group}", fname)
+            os.rename(file, dest)
+            typer.secho(f"{ok}Move {file}->group_{group}/", fg=typer.colors.GREEN)
 
 
 @app.command()
 def prep_annotation_groups(path: str, u_bounds: str = None):
     """Print files as proper prodigy jsonl input. Include with a 'format' field indicating the
-    format the document belongs to. """
+    format the document belongs to."""
 
     files = glob(path)
     for file in files:  # could be multi threaded but not worth it
         fname = os.path.basename(file)
         # path = os.path.join(dir, fname)
-        pubnum = int(fname.split("-")[1])
+        pubnum = get_pubnum(fname)
         publication_number = fname.replace(".txt", "")
         group = get_group(pubnum, u_bounds)
         with open(file, "r") as fin:
