@@ -14,6 +14,7 @@ bs4 = "^0.0.1"
 lxml = "^4.5.2"
 pandas = "^1.0.5"
 smart_open = "^2.1.0"
+spacy-lookups-data = "^0.3.2"
 
 [tool.poetry.dev-dependencies]
 mkdocs = "^1.1.2"
