@@ -1,6 +1,6 @@
 # PatentCity
 
-*Collect data from early-aged patents*
+*Innovation across ages*
 
 ***
 
@@ -34,41 +34,35 @@ pre-commit install
 
 [Install pre-commit](https://pre-commit.com) if needed.
 
-### Extraction models in practice
+:ballot_box_with_check: get data & models (dev-only)
+
+```shell script
+dvc pull
+```
+
+Install [dvc](https://dvc.org/) if needed.
+
+### Models usage
 
 > This section says (code snippets) how to:
 
->- Download the model (presumably available through release)
 >- Load the model
->- Extract NER and DEP
+>- Extract NER ~and DEP~~
 
 
-### Project structure and conventions
+### Everything you need to know
 
-:ballot_box_with_check: Structure
+#### Docs
 
-Each folder is named after the name of the country office.
-
-Each folder contains the following elements:
+Each family of models is documented in 2 documents:
 
 - `ANNOTATION_GUIDELINES.md` reports the annotation guidelines used for creating the gold dataset.
-- `train/dev_type_ccgenrexx.json` are spaCy json files for training/evaluating the information extraction model.
 - `CARD.md` reports everything you need to know about the country-specific extraction model(s) and related dataset.
-- `ll_type_ccgenrexx_vv` is the spaCy information extraction model.
 
-```text
-.
-├── XX/
-│   ├── ANNOTATION_GUIDELINES.md
-│   ├── CARD.md
-│   ├── gold_cc_type_genrexx.json
-│   └── ll_cc_type_genrexx_size_vv/
-├── ...
 
-```
+#### Naming conventions
 
-:ballot_box_with_check: Naming conventions
-
+The naming conventions are used both for data and models.
 
 Name| Short| Description
 ---|---|---
@@ -81,7 +75,8 @@ See [Spacy/issues#1010](https://github.com/explosion/spaCy/issues/1010).
 
 ### TODO
 
-- [ ] Prepare input so as to send unique addresses to batch geocoding API only
+- [x] Prepare input so as to send unique addresses to batch geocoding API only
+- [ ] Relationship prediction models
 
 ## User Guide
 
