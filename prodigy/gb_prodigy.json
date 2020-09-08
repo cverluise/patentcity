@@ -3,6 +3,7 @@
   "swipe":true,
   "force_stream":true,
   "split_sents_threshold":2000,
+  "host": "0.0.0.0",
   "custom_theme":{"labels":
     {"PERS": "#F1948A",
       "OCC": "#C39BD3",
