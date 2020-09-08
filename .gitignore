@@ -4,6 +4,7 @@
 # secret
 credentials-patentcity.json
 apikey-here.txt
+mapbox_token.txt
 
 # data
 **/data/
@@ -16,3 +17,6 @@ deprecated/
 **/.idea/
 **/__pycache__/
 /models
+
+# pkg
+*.egg-info
