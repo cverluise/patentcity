@@ -612,6 +612,17 @@ th = ["pythainlp (>=2.0)"]
 
 [[package]]
 category = "main"
+description = "Additional lookup tables and data resources for spaCy"
+name = "spacy-lookups-data"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+version = "0.3.2"
+
+[package.dependencies]
+setuptools = "*"
+
+[[package]]
+category = "main"
 description = "Modern high-performance serialization utilities for Python"
 name = "srsly"
 optional = false
@@ -731,7 +742,7 @@ python-versions = "*"
 version = "0.8.0"
 
 [metadata]
-content-hash = "83517998a23ea0337c287a94fffea8c8c636ee857bc0fb5c319b0a59b856e2f3"
+content-hash = "ee14c5347743d65a03a9c816ce8d9018cee256d555d619b92725857690458262"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -1127,6 +1138,9 @@ spacy = [
     {file = "spacy-2.3.2-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:3bafcc134c340c5d7556612344d2844522d452b99a21f2b0a9b640f6c55f1110"},
     {file = "spacy-2.3.2-cp38-cp38-win_amd64.whl", hash = "sha256:4944a1118f6dbb49201749d72527b749f74032e1026ddf387bc3a7e172ff0300"},
     {file = "spacy-2.3.2.tar.gz", hash = "sha256:818de26e0e383f64ccbe3db185574920de05923d8deac8bbb12113b9e33cee1f"},
+]
+spacy-lookups-data = [
+    {file = "spacy_lookups_data-0.3.2.tar.gz", hash = "sha256:d5ccb15a437f8be1bd9e4f52194e8aef0fa504c3b4686a51108c6f61319c60e9"},
 ]
 srsly = [
     {file = "srsly-1.0.2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:7c553a709fd56a37a07f969e849f55a0aeabaeb7677bebc588a640ab8ec134aa"},
