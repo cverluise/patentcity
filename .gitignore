@@ -8,7 +8,7 @@ mapbox_token.txt
 
 # data
 **/data/
-deprecated/
+data_tmp/
 
 # models
 **/en_ent_gbpatent01_sm_beta
@@ -20,3 +20,4 @@ deprecated/
 
 # pkg
 *.egg-info
+/lib
