@@ -138,5 +138,22 @@ def model_report(model: str, pipes: str = "ner"):
         typer.echo(f"ALL   %.2f  %.2f  %.2f" % (p, r, f))
 
 
+@app.command()
+def expand_pubdate_imputation(file: str, output: str = None):
+    """Expand a sparse publication_date imputation file (with upper bound pubnum only) to a
+    continuous (wrt pubnum) file."""
+    df = pd.read_csv(file)
+    max_pubnum = df.max()["pubnum"]
+    expansion = pd.DataFrame(range(1, max_pubnum + 1), columns=["pubnum"])
+    df_expansion = df.merge(expansion, how="right", left_on="pubnum", right_on="pubnum")
+    df_expansion = df_expansion.fillna(method="backfill")
+    for v in df_expansion.columns:
+        df_expansion[v] = df_expansion[v].astype(int)
+    df_expansion.to_csv(output)
+    typer.secho(
+        f"{ok} Imputation file expanded and saved in {output}", fg=typer.colors.GREEN
+    )
+
+
 if __name__ == "__main__":
     app()
