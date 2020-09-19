@@ -9,6 +9,8 @@ import numpy as np
 import pandas as pd
 import typer
 
+from patentcity_lib import GEOC_OUTCOLS
+
 """
 General purpose utils
 """
@@ -59,6 +61,14 @@ def get_pubnum(fname: str):
         pubnum = None
         typer.secho(f"{not_ok}Pubnum is not int")
     return pubnum
+
+
+def get_empty_here_schema():
+    return {k: None for k in GEOC_OUTCOLS}
+
+
+def flatten(l):
+    return [item for sublist in l for item in sublist]
 
 
 @app.command()
@@ -153,6 +163,34 @@ def expand_pubdate_imputation(file: str, output: str = None):
     typer.secho(
         f"{ok} Imputation file expanded and saved in {output}", fg=typer.colors.GREEN
     )
+
+
+@app.command()
+def get_nomatch(file, index, inDelim: str = "|"):
+    """Retrieve the search text from recId which were not matched
+
+    FILE is the HERE batch geocoding API output
+    INDEX is the corresponding HERE batch geocoding API input
+    """
+
+    def get_search_text_index(index, inDelim):
+        search_text_index = {}
+        with open(index, "r") as lines:
+            for line in lines:
+                recid, searchtext = line.split(inDelim)
+                search_text_index.update({recid: searchtext})
+        return search_text_index
+
+    search_text_index = get_search_text_index(index, inDelim)
+
+    with open(file, "r") as lines:
+        for line in lines:
+            if "NOMATCH" in line:
+                recid = line.split(",")[0]
+                search_text = search_text_index.get(recid)
+                typer.secho(f"{recid}{inDelim}{search_text}")
+            else:
+                pass
 
 
 if __name__ == "__main__":
