@@ -3,8 +3,8 @@
 
 # secret
 credentials-patentcity.json
-apikey-here.txt
-mapbox_token.txt
+apikey-*.txt
+token-*.txt
 
 # data
 **/data/
