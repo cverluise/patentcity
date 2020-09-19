@@ -7,12 +7,13 @@ from glob import glob
 from itertools import repeat
 from zipfile import ZipFile
 
+import googlemaps
 import requests
 import typer
 from bs4 import BeautifulSoup
 
-from patentcity_lib import GEOC_URL, GEOC_OUTCOLS
-from patentcity_utils import clean_text, get_dt_human
+from patentcity_lib import GEOC_URL, GEOC_OUTCOLS, HERE2GMAPS
+from patentcity_utils import clean_text, get_dt_human, get_empty_here_schema, flatten
 from patentcity_utils import ok, not_ok
 
 """
@@ -319,6 +320,94 @@ def add_geoc_data(
     blobs = open(src, "r")
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         executor.map(update_loc, blobs, repeat(index), repeat(verbose))
+
+
+def get_geoc_data_gmap_(line, gmaps_client, region, inDelim):
+    recid, searchtext = line.split(inDelim)
+    res = gmaps_client.geocode(searchtext, region=region)
+    typer.echo(f"{recid}{inDelim}{json.dumps(res)}")
+
+
+@app.command()
+def get_geoc_data_gmap(
+    file,
+    key,
+    region: str = None,
+    max_workers: int = 5,
+    inDelim: str = "|",
+    skip_header: bool = True,
+):
+    """
+    Return the gmam geocoding response
+
+    region:  The region code, specified as a ccTLD (“top-level domain”) two-character
+    value (e.g. en, us, de, fr).
+
+    Doc:
+    - https://developers.google.com/maps/documentation/geocoding/start
+    - https://developers.google.com/maps/documentation/geocoding/overview
+    """
+    gmaps = googlemaps.Client(key)
+    with open(file, "r") as lines:
+        if skip_header:
+            next(lines)
+        with ThreadPoolExecutor(max_workers) as executor:
+            executor.map(
+                get_geoc_data_gmap_,
+                lines,
+                repeat(gmaps),
+                repeat(region),
+                repeat(inDelim),
+            )
+
+
+def parse_result(result, recid, seqNumber):
+    """Parse Gmaps result. Note: not harmonization"""
+    res = {}
+    for kind in ["long_name", "short_name"]:
+        address_components = flatten(
+            [
+                [
+                    {f"{component['types'][typ]}_{kind}": component[kind]}
+                    for typ in range(len(component["types"]))
+                ]
+                for component in result["address_components"]
+            ]
+        )
+        for address_component in address_components:
+            res.update(address_component)
+    res.update(result["geometry"]["location"])
+    res.update({"location_type": result["geometry"]["location_type"]})
+    res.update({"formatted_address": result["formatted_address"]})
+    res.update({"recId": recid})
+    res.update({"seqNumber": seqNumber})
+    return res
+
+
+def parse_response(response, recid):
+    """Parse the high level Gmaps response (list of results). Can contain more than 1 results as
+    well as 0."""
+    response = json.loads(response)
+
+    if response:
+        for seqNumber, result in enumerate(response):
+            res = parse_result(result, recid, seqNumber)
+            out = get_empty_here_schema()  # from now on, we harmonize output with HERE
+            for k, _ in out.items():
+                out.update({k: res.get(HERE2GMAPS[k])})
+    else:
+        out = get_empty_here_schema()
+        out.update({"recId": recid, "matchLevel": "NOMATCH"})
+    typer.echo(json.dumps(out))
+
+
+@app.command()
+def harmonize_geoc_data_gmap(file, inDelim="|"):
+    """"""
+    with open(file, "r") as lines:
+        for line in lines:
+            recid, response = line.split(inDelim)
+            parse_response(response, recid)
 
 
 if __name__ == "__main__":
