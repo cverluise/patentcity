@@ -1,6 +1,7 @@
 import csv
 import json
 import os
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
 from glob import glob
@@ -119,6 +120,13 @@ def post_geoc_data(
 
     headers = {"Content-Type": "text/plain"}
     outCols = outCols.split(",") if outCols else GEOC_OUTCOLS
+
+    # Remove default columns to avoid duplicated columns
+    for col in ["recID", "seqNumber", "seqLength"]:
+        try:
+            outCols.remove(col)
+        except ValueError:
+            pass
 
     params = (
         ("", ""),
@@ -384,30 +392,37 @@ def parse_result(result, recid, seqNumber):
     return res
 
 
-def parse_response(response, recid):
+def parse_response(response, recid, out_format):
     """Parse the high level Gmaps response (list of results). Can contain more than 1 results as
     well as 0."""
     response = json.loads(response)
 
     if response:
         for seqNumber, result in enumerate(response):
-            res = parse_result(result, recid, seqNumber)
-            out = get_empty_here_schema()  # from now on, we harmonize output with HERE
+            res = parse_result(result, recid, seqNumber + 1)
+            # seqNumber starts from 1. 0 is for NOMATCH
+            out = get_empty_here_schema()
+            # from now on, we harmonize output with HERE
             for k, _ in out.items():
                 out.update({k: res.get(HERE2GMAPS[k])})
     else:
         out = get_empty_here_schema()
-        out.update({"recId": recid, "matchLevel": "NOMATCH"})
-    typer.echo(json.dumps(out))
+        out.update({"recId": recid, "seqNumber": 0, "matchLevel": "NOMATCH"})
+
+    if out_format == "csv":
+        csvwriter = csv.DictWriter(sys.stdout, GEOC_OUTCOLS)
+        csvwriter.writerow(out)
+    else:
+        typer.echo(json.dumps(out))
 
 
 @app.command()
-def harmonize_geoc_data_gmap(file, inDelim="|"):
+def harmonize_geoc_data_gmap(file: str, inDelim: str = "|", out_format: str = None):
     """"""
     with open(file, "r") as lines:
         for line in lines:
             recid, response = line.split(inDelim)
-            parse_response(response, recid)
+            parse_response(response, recid, out_format)
 
 
 if __name__ == "__main__":
