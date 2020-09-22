@@ -1,0 +1,15 @@
+[
+  {
+    "description": "",
+    "mode": "NULLABLE",
+    "name": "publication_date",
+    "type": "INTEGER"
+  },
+  {
+    "description": "",
+    "mode": "NULLABLE",
+    "name": "pubnum",
+    "type": "STRING"
+
+  }
+]
