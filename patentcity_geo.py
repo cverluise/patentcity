@@ -13,7 +13,7 @@ import requests
 import typer
 from bs4 import BeautifulSoup
 
-from patentcity_lib import GEOC_URL, GEOC_OUTCOLS, HERE2GMAPS
+from patentcity_lib import GEOC_URL, GEOC_OUTCOLS, HERE2GMAPS, get_isocrossover
 from patentcity_utils import clean_text, get_dt_human, get_empty_here_schema, flatten
 from patentcity_utils import ok, not_ok
 
@@ -32,6 +32,11 @@ Then, to build on BigQuery, use schema/xx_entpars_*.json
                           Geocode LOC using HERE Batch geocoding API
 Guide: developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-constructing.html
 API ref: https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/endpoints.html
+
+                            Geocode LOC using Gmaps geocoding API
+API ref
+- https://developers.google.com/maps/documentation/geocoding/start
+- https://developers.google.com/maps/documentation/geocoding/overview
 """
 
 app = typer.Typer()
@@ -87,7 +92,7 @@ def get_parsed_loc(
 
 
 @app.command()
-def post_geoc_data(
+def post_geoc_data_here(
     file: str,
     api_key: str,
     outCols: str = None,
@@ -154,7 +159,7 @@ def post_geoc_data(
 
 
 @app.command()
-def get_geoc_status(
+def get_geoc_status_here(
     request_id: str, api_key: str, freq: int = 5, verbose: bool = False
 ):
     """Check status of job <request_id>"""
@@ -197,7 +202,7 @@ def get_geoc_status(
 
 
 @app.command()
-def get_geoc_data(
+def get_geoc_data_here(
     request_id: str, api_key: str, output_dir: str = None, unzip: bool = True
 ):
     """Save geocoded data to <output_dir>/<request_id>.zip
@@ -337,7 +342,7 @@ def get_geoc_data_gmap_(line, gmaps_client, region, inDelim):
 
 
 @app.command()
-def get_geoc_data_gmap(
+def get_geoc_data_gmaps(
     file,
     key,
     region: str = None,
@@ -346,7 +351,7 @@ def get_geoc_data_gmap(
     skip_header: bool = True,
 ):
     """
-    Return the gmam geocoding response
+    Return the gmaps geocoding response
 
     region:  The region code, specified as a ccTLD (“top-level domain”) two-character
     value (e.g. en, us, de, fr).
@@ -369,7 +374,7 @@ def get_geoc_data_gmap(
             )
 
 
-def parse_result(result, recid, seqNumber):
+def parse_result_gmaps(result, recid, seqNumber):
     """Parse Gmaps result. Note: not harmonization"""
     res = {}
     for kind in ["long_name", "short_name"]:
@@ -392,37 +397,56 @@ def parse_result(result, recid, seqNumber):
     return res
 
 
-def parse_response(response, recid, out_format):
+def emulate_nomatch_gmaps(recid):
+    out = get_empty_here_schema()
+    out.update({"recId": recid, "seqNumber": 0, "matchLevel": "NOMATCH"})
+    return out
+
+
+def parse_response_gmaps(response, recid, out_format, iso_crossover):
     """Parse the high level Gmaps response (list of results). Can contain more than 1 results as
     well as 0."""
+
+    def flush_result(out, out_format):
+        if out_format == "csv":
+            csvwriter = csv.DictWriter(sys.stdout, GEOC_OUTCOLS)
+            csvwriter.writerow(out)
+        else:
+            typer.echo(json.dumps(out))
+
     response = json.loads(response)
 
     if response:
         for seqNumber, result in enumerate(response):
-            res = parse_result(result, recid, seqNumber + 1)
+            res = parse_result_gmaps(result, recid, seqNumber + 1)
             # seqNumber starts from 1. 0 is for NOMATCH
             out = get_empty_here_schema()
             # from now on, we harmonize output with HERE
             for k, _ in out.items():
                 out.update({k: res.get(HERE2GMAPS[k])})
+            out.update({"country": iso_crossover.get(out.get("country"))})
+            # iso 2 to iso 3 (align gmaps (ISO2) on HERE (ISO3))
+            if not out.get("latitude"):
+                # in case there were no coordinates in the result, it's a NOMATCH
+                out = emulate_nomatch_gmaps(recid)
+            flush_result(out, out_format)
     else:
-        out = get_empty_here_schema()
-        out.update({"recId": recid, "seqNumber": 0, "matchLevel": "NOMATCH"})
-
-    if out_format == "csv":
-        csvwriter = csv.DictWriter(sys.stdout, GEOC_OUTCOLS)
-        csvwriter.writerow(out)
-    else:
-        typer.echo(json.dumps(out))
+        out = emulate_nomatch_gmaps(recid)
+        flush_result(out, out_format)
 
 
 @app.command()
-def harmonize_geoc_data_gmap(file: str, inDelim: str = "|", out_format: str = None):
-    """"""
+def harmonize_geoc_data_gmaps(file: str, inDelim: str = "|", out_format: str = None):
+    """Harmonize Gmaps response with HERE Geocoding API responses (csv)"""
+    assert out_format in ["csv", "jsonl"]
+    iso_crossover = get_isocrossover()
     with open(file, "r") as lines:
         for line in lines:
+            line = clean_text(line, inDelim=f" {inDelim} ")
+            # clean cases like "Jack A. Claes Pavilion | Elk Grove Park District" returned by Gmaps
+
             recid, response = line.split(inDelim)
-            parse_response(response, recid, out_format)
+            parse_response_gmaps(response, recid, out_format, iso_crossover)
 
 
 if __name__ == "__main__":
