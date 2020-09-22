@@ -49,6 +49,61 @@ Install [dvc](https://dvc.org/) if needed.
 >- Load the model
 >- Extract NER ~and DEP~~
 
+### Recipes
+
+#### Serialize data
+
+````shell script
+
+````
+
+#### Prepare data for geocoding
+
+````shell script
+
+````
+
+#### HERE geocoding
+
+````shell script
+
+````
+
+#### Gmaps geocoding
+
+````shell script
+# Get HERE NOMATCH
+
+````
+
+#### Harmonize, combine & incorporate geocoded data
+
+```shell script
+#Harmonize (Gmaps-> HERE)
+python patentcity.py geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_nopostcode.jsonl --out-format csv >> de_locxx_beta-geoc_gmaps_sm_nopostcode.csv
+python patentcity.py geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_postcode.jsonl --out-format csv >> de_locxx_beta-geoc_gmaps_sm_postcode.csv
+
+#Combine
+cat data_tmp/de_locxx_beta-geoc_here_sm_nopostcode.csv | grep -v NOMATCH >> data_tmp/de_locxx_beta-geoc_sm.csv                                                                                 ~/Documents/GitHub/HistPatentCollection
+cat data_tmp/de_locxx_beta-geoc_gmaps_sm_nopostcode.csv >> data_tmp/de_locxx_beta-geoc_sm.csv                                                                                                      ~/Documents/GitHub/HistPatentCollection
+cat data_tmp/de_locxx_beta-geoc_gmaps_sm_postcode.csv >> data_tmp/de_locxx_beta-geoc_sm.csv
+
+#Incorporate
+python patentcity.py geo add-geoc-data de_patentxx_beta_sm.jsonl --geoc-file de_locxx_beta-geoc_sm.csv >>de_patentxx_beta-geoc_sm.jsonl
+```
+
+#### Build
+
+````shell script
+bq load --source_format=NEWLINE_DELIMITED_JSON --max_bad_records=100 --ignore_unknown_values patentcity.de_entgeoc_patentxx_sample gs://patentcity_dev/DE/beta/de_patentxx_beta-geoc_sm.jsonl schema/de_entgeoc_lg_future.json
+
+# Augment dataset
+python patentcity.py io augment-patentcity patentcity.patentcity.de_entgeoc_patentxx_sample patentcity.patentcity.de_entgeoc_patentxx_sample_conso --key-file credentials-patentcity.json
+
+# Impute missing publication_date - DE only
+bq load --source_format=CSV  --max_bad_records=1 tmp.de_pubdate_imputation lib/de_publication_date_imputation_expanded.csv schema/de_pubdate_imputation.json
+python patentcity.py io impute-publication-date patentcity.patentcity.de_entgeoc_patentxx_sample_conso patentcity.tmp.de_pubdate_imputation --key-file credentials-patentcity.json
+````
 
 ### Everything you need to know
 
@@ -76,6 +131,8 @@ See [Spacy/issues#1010](https://github.com/explosion/spaCy/issues/1010).
 ### TODO
 
 - [x] Prepare input so as to send unique addresses to batch geocoding API only
+- [ ] Migrate :de: and :gb: to md5 (rather than adler32)
+- [ ] Make schema for consolidated table
 - [ ] Relationship prediction models
 
 ## User Guide
