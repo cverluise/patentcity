@@ -3,7 +3,7 @@ import json
 import os
 import re
 from glob import glob
-from zlib import adler32
+from hashlib import md5
 
 import numpy as np
 import pandas as pd
@@ -39,10 +39,14 @@ def get_dt_human():
     return datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
 
-def get_recid(s):
+def get_recid(s, toint: bool = False):
     """Return the a uid made of the publication number and a random sequence 2^n random
     characters"""
-    return adler32(s.encode())
+
+    recid = md5(s.encode()).hexdigest()
+    if toint:
+        recid = int(recid, 16)
+    return recid
 
 
 def get_group(pubnum: int, u_bounds: str):
@@ -159,14 +163,14 @@ def expand_pubdate_imputation(file: str, output: str = None):
     df_expansion = df_expansion.fillna(method="backfill")
     for v in df_expansion.columns:
         df_expansion[v] = df_expansion[v].astype(int)
-    df_expansion.to_csv(output)
+    df_expansion.to_csv(output, index=False)
     typer.secho(
         f"{ok} Imputation file expanded and saved in {output}", fg=typer.colors.GREEN
     )
 
 
 @app.command()
-def get_nomatch(file, index, inDelim: str = "|"):
+def get_recid_nomatch(file, index, inDelim: str = "|"):
     """Retrieve the search text from recId which were not matched
 
     FILE is the HERE batch geocoding API output
@@ -191,6 +195,68 @@ def get_nomatch(file, index, inDelim: str = "|"):
                 typer.secho(f"{recid}{inDelim}{search_text}")
             else:
                 pass
+
+
+@app.command(deprecated=True)
+def debug_duplicates(file: str, duplicates: str = None):
+    """Update loc recId with md5 hashing (new get-recid) when it happens to be duplicated due to
+    adler32 issue (old get_recid).
+    """
+    # E.g. 999425627|Checy (Frankreich) and 999425627|Ablon (Frankreich)
+    list_duplicates = [
+        int(dupl.replace("\n", "")) for dupl in list(open(duplicates, "r"))
+    ]
+    with open(file, "r") as lines:
+        for line in lines:
+            line = json.loads(line)
+            updated_loc = []
+            if line.get("loc"):
+                for loc in line["loc"]:
+                    if loc["recId"] in list_duplicates:
+                        recid = get_recid(loc["raw"], toint=True)
+                        # typer.secho(f"{loc['recId']}|{recid}", fg=typer.colors.YELLOW)
+                        loc.update({"recId": recid})
+
+                    updated_loc += [loc]
+                line.update({"loc": updated_loc})
+            typer.echo(json.dumps(line))
+
+
+@app.command()
+def remove_duplicates(
+    file: str, inDelim: str = ",", duplicates: str = None, header: bool = True
+):
+    """Remove lines with adler32 duplicated recId from FILE"""
+    list_duplicates = [
+        int(dupl.replace("\n", "")) for dupl in list(open(duplicates, "r"))
+    ]
+    with open(file, "r") as lines:
+        if header:
+            line = next(lines)
+            typer.echo(line)
+        for line in lines:
+            recid = int(line.split(inDelim)[0])
+            if recid in list_duplicates:
+                # typer.secho(line, fg=typer.colors.YELLOW)
+                pass
+            else:  # only lines where recId not in duplicates are preserved
+                typer.echo(line)
+
+
+# file = "data_tmp/de_locxx_beta_nomatch_here_sm_depr.txt"
+
+
+@app.command()
+def find_postcode(file, inDelim: str = "|", remove_postcodes: bool = True):
+    with open(file, "r") as lines:
+        for line in lines:
+            recid, searchtext = line.split(inDelim)
+            like_postcode = re.findall(r"\d{4}", searchtext)
+            if like_postcode:
+                if remove_postcodes:
+                    for match in like_postcode:
+                        searchtext = searchtext.replace(match, "")
+                typer.echo(f"{recid}{inDelim}{searchtext}")
 
 
 if __name__ == "__main__":
