@@ -16,6 +16,8 @@ pandas = "^1.0.5"
 smart_open = "^2.1.0"
 spacy-lookups-data = "^0.3.2"
 googlemaps = "^4.4.2"
+google-cloud = "^0.34.0"
+google-cloud-bigquery = "^1.27.2"
 
 [tool.poetry.dev-dependencies]
 mkdocs = "^1.1.2"
