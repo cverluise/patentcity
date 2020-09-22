@@ -4,12 +4,7 @@ from google.oauth2 import service_account
 
 from patentcity_utils import ok
 
-# TODO: make schema for conso table
 
-# src_table = "patentcity.patentcity.de_entgeoc_patentxx_sample"
-# imputation_table = "patentcity.tmp.de_publication_date_imputation"
-# destination_table = ""
-# sample_ratio = 0.1
 app = typer.Typer()
 
 
@@ -72,6 +67,7 @@ def impute_publication_date(src_table, imputation_table, key_file: str = None):
     typer.secho(f"{ok}{src_table} updated.", fg=typer.colors.GREEN)
 
 
+@app.command()
 def extract_sample_kepler(
     src_table: str,
     destination_file: str,
@@ -94,6 +90,7 @@ def extract_sample_kepler(
       UNNEST(loc) AS loc
     WHERE
       RAND()<{sample_ratio}
+      AND publication_date>0
     """
     client = get_bq_client(key_file)
     typer.secho(f"Start:\n{query}", fg=typer.colors.BLUE)
