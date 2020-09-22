@@ -1,4 +1,5 @@
 """Lib of var used in patencity CLI"""
+import json
 
 GEOC_URL = "https://batch.geocoder.ls.hereapi.com/6.2/jobs"
 GEOC_OUTCOLS = [
@@ -66,4 +67,13 @@ HERE2GMAPS = {
     "matchQualityCountry": "",
 }
 
+
 # https://developers.google.com/maps/documentation/geocoding/overview
+
+
+def get_isocrossover(file: str = "lib/iso_crossover.json", reverse: str = False):
+    """Return a dict """
+    out = json.loads(open(file, "r").read())
+    if reverse:
+        out = {v: k for k, v in out.items()}
+    return out
