@@ -61,9 +61,9 @@ def get_group(pubnum: int, u_bounds: str):
 def get_pubnum(fname: str):
     try:
         pubnum = int(fname.split("-")[1])
-    except ValueError:
+    except (ValueError, IndexError):
         pubnum = None
-        typer.secho(f"{not_ok}Pubnum is not int")
+        typer.secho(f"{not_ok}{fname} Publication number ill-formatted.")
     return pubnum
 
 
