@@ -86,12 +86,13 @@ def make_groups(path: str, u_bounds: str = None):
     ]
     for file in files:
         fname = os.path.basename(file)
-        pubnum = get_pubnum(fname)
-        if pubnum:
-            group = get_group(pubnum, u_bounds)
-            dest = os.path.join(os.path.dirname(file), f"group_{group}", fname)
-            os.rename(file, dest)
-            typer.secho(f"{ok}Move {file}->group_{group}/", fg=typer.colors.GREEN)
+        if fname:
+            pubnum = get_pubnum(fname)
+            if pubnum:
+                group = get_group(pubnum, u_bounds)
+                dest = os.path.join(os.path.dirname(file), f"group_{group}", fname)
+                os.rename(file, dest)
+                typer.secho(f"{ok}Move {file}->group_{group}/", fg=typer.colors.GREEN)
 
 
 @app.command()
@@ -103,16 +104,17 @@ def prep_annotation_groups(path: str, u_bounds: str = None):
     for file in files:  # could be multi threaded but not worth it
         fname = os.path.basename(file)
         # path = os.path.join(dir, fname)
-        pubnum = get_pubnum(fname)
-        publication_number = fname.replace(".txt", "")
-        group = get_group(pubnum, u_bounds)
-        with open(file, "r") as fin:
-            out = {
-                "text": fin.read(),
-                "publication_number": publication_number,
-                "group": group,
-            }
-            typer.echo(json.dumps(out))
+        if fname:
+            pubnum = get_pubnum(fname)
+            publication_number = fname.replace(".txt", "")
+            group = get_group(pubnum, u_bounds)
+            with open(file, "r") as fin:
+                out = {
+                    "text": fin.read(),
+                    "publication_number": publication_number,
+                    "group": group,
+                }
+                typer.echo(json.dumps(out))
 
 
 @app.command()
