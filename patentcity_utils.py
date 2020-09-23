@@ -52,7 +52,7 @@ def get_recid(s, toint: bool = False):
 def get_group(pubnum: int, u_bounds: str):
     u_bounds = [int(u_bound) for u_bound in u_bounds.split(",")]
     try:
-        group = max(np.where(np.array(u_bounds) <= pubnum)[0]) + 2
+        group = int(max(np.where(np.array(u_bounds) <= pubnum)[0]) + 2)
     except ValueError:  # case where the pubnum is lower than any bound, hence in group 1
         group = 1
     return group
