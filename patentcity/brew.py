@@ -1,6 +1,7 @@
 import json
 import os
 from glob import iglob
+from smart_open import open
 
 import spacy
 import typer
