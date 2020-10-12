@@ -7,16 +7,11 @@ apikey-*.txt
 token-*.txt
 
 # data
-**/data/
 data_tmp/
-
-# models
-**/en_ent_gbpatent01_sm_beta
 
 # system
 **/.idea/
 **/__pycache__/
-/models
 
 # pkg
 *.egg-info
