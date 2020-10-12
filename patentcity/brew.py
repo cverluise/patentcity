@@ -19,7 +19,7 @@ app = typer.Typer()
 
 def get_text(file, max_char):
     with open(file, "r") as fin:
-        text = fin.read()[:max_char]
+        text = fin.read()[:max_char] if max_char else fin.read()
         publication_number = os.path.splitext(os.path.basename(file))[0]
         return " ".join([publication_number, text])
 
@@ -28,7 +28,7 @@ def get_text(file, max_char):
 def beta(
     path: str,
     model: str = None,
-    max_char: int = 1500,
+    max_char: int = None,
     reduced_perf: bool = False,
     inDelim: str = "|",
 ):
