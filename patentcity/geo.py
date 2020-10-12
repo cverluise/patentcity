@@ -13,9 +13,9 @@ import requests
 import typer
 from bs4 import BeautifulSoup
 
-from patentcity_lib import GEOC_URL, GEOC_OUTCOLS, HERE2GMAPS, get_isocrossover
-from patentcity_utils import clean_text, get_dt_human, get_empty_here_schema, flatten
-from patentcity_utils import ok, not_ok
+from patentcity.lib import GEOC_URL, GEOC_OUTCOLS, HERE2GMAPS, get_isocrossover
+from patentcity.utils import clean_text, get_dt_human, get_empty_here_schema, flatten
+from patentcity.utils import ok, not_ok
 
 """
                               Parse LOC using libpostal
