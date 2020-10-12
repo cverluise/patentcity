@@ -1,0 +1,3 @@
+outs:
+- md5: 1447b223b9871d1cc56cee436c503f1f
+  path: train_ent_depatent01.json
