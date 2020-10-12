@@ -5,7 +5,7 @@ from glob import iglob
 import spacy
 import typer
 
-from patentcity_utils import clean_text, get_recid
+from patentcity.utils import clean_text, get_recid
 
 """
                              Brew patentcity dataset

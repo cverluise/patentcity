@@ -2,7 +2,7 @@ import typer
 from google.cloud import bigquery
 from google.oauth2 import service_account
 
-from patentcity_utils import ok
+from patentcity.utils import ok
 
 
 app = typer.Typer()

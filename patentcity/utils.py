@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import typer
 
-from patentcity_lib import GEOC_OUTCOLS
+from patentcity.lib import GEOC_OUTCOLS
 
 """
 General purpose utils
