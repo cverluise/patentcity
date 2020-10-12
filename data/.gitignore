@@ -7,3 +7,9 @@
 /train_ent_gbpatent01.json
 /train_ent_frpatent01.json
 /train_ent_frpatent02.json
+/gold_ent_depatent01.jsonl
+/gold_ent_depatent02.jsonl
+/test_ent_depatent01.json
+/test_ent_depatent02.json
+/train_ent_depatent01.json
+/train_ent_depatent02.json

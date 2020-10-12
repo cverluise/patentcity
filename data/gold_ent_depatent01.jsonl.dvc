@@ -1,0 +1,3 @@
+outs:
+- md5: 1266d1c925f9d953e1e2dd35be8e02bb
+  path: gold_ent_depatent01.jsonl
