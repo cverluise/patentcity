@@ -1,0 +1,3 @@
+outs:
+- md5: 04fb42d10543ab816e28ad50692c0a65
+  path: train_ent_frpatent01.json
