@@ -7,7 +7,7 @@ apikey-*.txt
 token-*.txt
 
 # data
-data_tmp/
+data_tmp.nosync/
 
 # system
 **/.idea/
