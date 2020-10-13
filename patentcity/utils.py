@@ -149,7 +149,7 @@ def model_report(model: str, pipes: str = "ner"):
     if "ner" in pipes:
         p, r, f = scores["ents_p"], scores["ents_r"], scores["ents_f"]
         typer.secho("NER Scores", fg=typer.colors.BLUE)
-        typer.secho(f"{pd.DataFrame.from_dict(scores['ents_per_type'])}")
+        typer.secho(f"{pd.DataFrame.from_dict(scores['ents_per_type']).round(2)}")
         typer.echo("-" * 37)
         typer.echo(f"ALL   %.2f  %.2f  %.2f" % (p, r, f))
 
