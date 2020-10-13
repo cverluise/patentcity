@@ -62,7 +62,7 @@ The header contains some specific information including:
 In the second format, restricted to the year 1979, the information are structured in the front page of the patent. For these patents, the identity of the inventor and the assignee are clearly stated, but only the location of the assignee is given.
 
 
-## Named Entity recognition
+## Entities
 
 ### Format 1
 
@@ -193,7 +193,7 @@ Colaba, Bombay 5, India), do hereby declare...
 
 <font color="orange">TODO</font>
 
-## Relationship
+## Relationships
 
 ### Format 1
 <font color="orange">XX Cool example for dependency: GB415117 and GB462620</font>
