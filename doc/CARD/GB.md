@@ -47,11 +47,11 @@ Relation|Content|E.g.
 
 |||
 |---|---|
-|Name|`en_ent_gbpatent01_sm_beta`|
+|Name|`en_ent_gbpatent01_sm`|
 |Language|English |
 |Pipeline|ner |
 |Authors|Bergeaud and Verluise|
-|Date|07/2020 |
+|Date|10/2020 |
 |License|MIT|
 
 
@@ -91,6 +91,7 @@ f|86.58|92.70|84.83|84.47|86.61|87.32
 
 - Yves Plasseraud and François Savignon, "Genèse du droit unioniste des brevets", Paris, 1883
 - Tesseract, 2014-2020, https://github.com/tesseract-ocr/tesseract/
+- [EspaceNet] [EspaceNet Patent Search](https://www.epo.org/searching-for-patents/technical/espacenet.html), EPO
 
 ## Acknowledgements
 
