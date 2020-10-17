@@ -101,6 +101,7 @@ def post_geoc_data_here(
     outDelim: str = ",",
     locationattributes: str = "addressDetails",
     language: str = "en-EN",  # eg "en-EN", "en-US"
+    includeinputfields: bool = False,  # False for downstream compatibility
     verbose: bool = False,
 ):
     """Post <data> to HERE batch geocoding API (recId|searchText)
@@ -145,6 +146,7 @@ def post_geoc_data_here(
         ("countryfocus", countryfocus),
         ("language", language),
         ("locationattributes", locationattributes),
+        ("includeinputfields", includeinputfields),
     )
 
     data = open(file, "rb").read()
@@ -278,12 +280,14 @@ def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
         for i, line in enumerate(csv_reader):
             if i > 0:
                 line = dict(line)
-                if int(line["seqNumber"]) > 1:
+                if int(line["SeqNumber"]) > 1:
                     # we keep only the first proposed item
                     # TODO evaluate policy
                     pass
                 else:
-                    recid = int(line["recId"])  # make sure that this is an int
+                    recid = line[
+                        "recId"
+                    ]  # make sure that this is an int - no more needed
                     line.pop("recId")
                     if line.get("SeqNumber"):
                         # causes conflict in BQ which is NOT case-sensitive
@@ -307,7 +311,7 @@ def update_loc(blob, index, verbose):
         for loc_ in blob["loc"]:
             # loc is a list of dict with the following form
             # [{"raw":"", "recId":""},...]
-            recid = int(loc_["recId"])
+            recid = loc_["recId"]  # int no more needed
             geoc_ = index.get(recid)
             if geoc_:
                 loc_.update(geoc_)
