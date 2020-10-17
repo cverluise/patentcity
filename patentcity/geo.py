@@ -95,12 +95,12 @@ def get_parsed_loc(
 def post_geoc_data_here(
     file: str,
     api_key: str,
+    countryfocus: str,  # ISO3?
     outCols: str = None,
     inDelim: str = "|",
     outDelim: str = ",",
     locationattributes: str = "addressDetails",
-    countryfocus: str = "gbr",
-    language: str = "en-EN",
+    language: str = "en-EN",  # eg "en-EN", "en-US"
     verbose: bool = False,
 ):
     """Post <data> to HERE batch geocoding API (recId|searchText)
@@ -335,9 +335,9 @@ def add_geoc_data(
         executor.map(update_loc, blobs, repeat(index), repeat(verbose))
 
 
-def get_geoc_data_gmap_(line, gmaps_client, region, inDelim):
+def get_geoc_data_gmap_(line, gmaps_client, region, language, inDelim):
     recid, searchtext = line.split(inDelim)
-    res = gmaps_client.geocode(searchtext, region=region)
+    res = gmaps_client.geocode(searchtext, region=region, language=language)
     typer.echo(f"{recid}{inDelim}{json.dumps(res)}")
 
 
@@ -345,7 +345,8 @@ def get_geoc_data_gmap_(line, gmaps_client, region, inDelim):
 def get_geoc_data_gmaps(
     file,
     key,
-    region: str = None,
+    region: str,
+    language: str = "en",
     max_workers: int = 5,
     inDelim: str = "|",
     skip_header: bool = True,
@@ -355,10 +356,12 @@ def get_geoc_data_gmaps(
 
     region:  The region code, specified as a ccTLD (“top-level domain”) two-character
     value (e.g. en, us, de, fr).
+    language: the language in which to return results
 
     Doc:
     - https://developers.google.com/maps/documentation/geocoding/start
     - https://developers.google.com/maps/documentation/geocoding/overview
+    - https://developers.google.com/maps/faq#languagesupport
     """
     gmaps = googlemaps.Client(key)
     with open(file, "r") as lines:
@@ -370,6 +373,7 @@ def get_geoc_data_gmaps(
                 lines,
                 repeat(gmaps),
                 repeat(region),
+                repeat(language),
                 repeat(inDelim),
             )
 
