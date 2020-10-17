@@ -12,6 +12,7 @@ data_tmp.nosync/
 # system
 **/.idea/
 **/__pycache__/
+**/*.icloud
 
 # pkg
 *.egg-info
