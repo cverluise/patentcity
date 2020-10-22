@@ -22,6 +22,7 @@ googlemaps = "^4.4.2"
 google-cloud = "^0.34.0"
 google-cloud-bigquery = "^1.27.2"
 typer =  {extras = ["all"], version = "^0.3.2"}
+fuzzyset = "^0.0.19"
 
 [tool.poetry.dev-dependencies]
 typer-cli = "^0.0.11"
