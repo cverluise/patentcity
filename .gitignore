@@ -16,4 +16,3 @@ data_tmp.nosync/
 
 # pkg
 *.egg-info
-/lib
