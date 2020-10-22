@@ -2,12 +2,15 @@ import datetime
 import json
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor
 from glob import glob
 from hashlib import md5
+from itertools import repeat
 
 import numpy as np
 import pandas as pd
 import typer
+from fuzzyset import FuzzySet
 
 from patentcity.lib import GEOC_OUTCOLS
 
@@ -259,6 +262,36 @@ def find_postcode(file, inDelim: str = "|", remove_postcodes: bool = True):
                     for match in like_postcode:
                         searchtext = searchtext.replace(match, "")
                 typer.echo(f"{recid}{inDelim}{searchtext}")
+
+
+def mcq(line, fset):
+    line = json.loads(line)  # .replace("\n", "").split(indelim)
+    text = line["text"]
+    closests = fset.get(text)
+    if closests:
+        closests = [closest[1] for closest in closests]
+        line.update(
+            {
+                "options": [{"id": closest, "text": closest} for closest in closests],
+                "accept": [closests[0]],
+            }
+        )
+        typer.echo(json.dumps(line))
+    else:
+        pass
+
+
+@app.command()
+def mcq_factory(loc: str = None, index: str = None, max_workers: int = 5):
+    """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
+    on the text of each line in the loc file and the targets in the index file"""
+    targets = open(index, "r").read().split("\n")
+    fset = FuzzySet()
+    for target in targets:
+        fset.add(target)
+    with open(loc, "r") as lines:
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            executor.map(mcq, lines, repeat(fset))
 
 
 if __name__ == "__main__":
