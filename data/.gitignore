@@ -13,3 +13,6 @@
 /test_ent_depatent02.json
 /train_ent_depatent01.json
 /train_ent_depatent02.json
+/gold_ent_gbpatentocr01.jsonl
+/test_ent_gbpatentocr01.json
+/train_ent_gbpatentocr01.json
