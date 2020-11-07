@@ -3,5 +3,6 @@
   "swipe":true,
   "force_stream":true,
   "split_sents_threshold":2000,
-  "choice_style": "multiple"
-  }
+  "choice_style": "multiple",
+  "host": "0.0.0.0"
+}
