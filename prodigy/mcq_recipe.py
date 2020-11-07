@@ -13,7 +13,7 @@ def mcq(dataset, file_path):
     def add_html(stream):
         for task in stream:
             text = task["text"]
-            pubnum = task["eg_publication_number"]
+            pubnum = str(task.get("eg_publication_number"))
             root = "https://worldwide.espacenet.com/patent/search/publication/"
             gdoc = "https://docs.google.com/document/d/12ABwTdoLEBpf0Rn1cpUsvguMlHTRXSb_P_jO4WnMigU/edit?usp=sharing"
 
