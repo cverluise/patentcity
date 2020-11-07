@@ -6,6 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 from glob import glob
 from hashlib import md5
 from itertools import repeat
+from operator import itemgetter
 
 import numpy as np
 import pandas as pd
@@ -15,7 +16,7 @@ from fuzzyset import FuzzySet
 from patentcity.lib import GEOC_OUTCOLS
 
 """
-General purpose utils
+General purpose utilities
 """
 
 # msg utils
@@ -264,34 +265,94 @@ def find_postcode(file, inDelim: str = "|", remove_postcodes: bool = True):
                 typer.echo(f"{recid}{inDelim}{searchtext}")
 
 
-def mcq(line, fset):
+def mcq(line, fset, ignore):
     line = json.loads(line)  # .replace("\n", "").split(indelim)
-    text = line["text"]
-    closests = fset.get(text)
-    if closests:
-        closests = [closest[1] for closest in closests]
-        line.update(
-            {
-                "options": [{"id": closest, "text": closest} for closest in closests],
-                "accept": [closests[0]],
-            }
-        )
-        typer.echo(json.dumps(line))
+    if not line["recId"] in ignore:
+        text = line["text"]
+        closests = fset.get(text)
+        if closests:
+            closests = [closest[1] for closest in closests]
+            line.update(
+                {
+                    "options": [
+                        {"id": closest, "text": closest} for closest in closests
+                    ],
+                    "accept": [closests[0]],
+                }
+            )
+            typer.echo(json.dumps(line))
+        else:
+            pass
     else:
         pass
 
 
 @app.command()
-def mcq_factory(loc: str = None, index: str = None, max_workers: int = 5):
+def mcq_factory(
+    loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
+):
     """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
     on the text of each line in the loc file and the targets in the index file"""
     targets = open(index, "r").read().split("\n")
     fset = FuzzySet()
     for target in targets:
         fset.add(target)
+    if list_ignore:
+        with open(list_ignore, "r") as ignore:
+            ignore = ignore.read().replace('"', "").split("\n")
+    else:
+        ignore = []
     with open(loc, "r") as lines:
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            executor.map(mcq, lines, repeat(fset))
+            executor.map(mcq, lines, repeat(fset), repeat(ignore))
+
+
+@app.command()
+def mcq_revert(file, max_options: int = 50):
+    """Revert a sequence of mcq where main text is the raw text and options are
+    targets into a sequence of mcq where the target is the main text and options are the raw text"""
+
+    def revert_line(line, index):
+        for option in line.get("options"):
+            text = option["id"]
+            if not index.get(text):
+                index.update({text: []})
+            text_options = index[text] + [
+                {
+                    "id": line["recId"],
+                    "text": line["text"],
+                    "nb_occurences": line["nb_occurences"],
+                    "eg_publication_number": line["eg_publication_number"],
+                }
+            ]
+            index.update({text: text_options})
+            return index
+
+    index = {}
+    with open(file, "r") as lines:
+        for line in lines:
+            line = json.loads(line)
+            index = revert_line(line, index)
+
+    tasks = []
+    for text, options in index.items():
+        options = sorted(options, key=itemgetter("nb_occurences"), reverse=True)
+        # if len(options) > max_options:
+        for chunk_options in [
+            options[x : x + max_options] for x in range(0, len(options), max_options)
+        ]:
+            tasks += [
+                {
+                    "text": text,
+                    "nb_occurences": max(
+                        [opt["nb_occurences"] for opt in chunk_options]
+                    ),
+                    "options": chunk_options,
+                }
+            ]
+    tasks = sorted(tasks, key=itemgetter("nb_occurences"), reverse=True)
+    for task in tasks:
+        typer.echo(json.dumps(task))
 
 
 if __name__ == "__main__":
