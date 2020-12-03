@@ -18,3 +18,9 @@
 /train_ent_gbpatentocr01.json
 /gold_ent_uspatent01.jsonl
 /gold_ent_uspatent02.jsonl
+/gold_ent_ddpatent01.jsonl
+/gold_ent_ddpatent02.jsonl
+/test_ent_ddpatent01.json
+/test_ent_ddpatent02.json
+/train_ent_ddpatent01.json
+/train_ent_ddpatent02.json
