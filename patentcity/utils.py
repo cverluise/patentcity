@@ -405,5 +405,19 @@ def add_geoc_disamb(disamb_file, index_geoc_file, inDelim: str = "|"):
             typer.echo(f"{recid}{inDelim}{json.dumps(index.get(disamb_loc_recid))}")
 
 
+@app.command()
+def prep_disamb(file: str, orient: str = "revert", inDelim: str = "|"):
+    """Prep disamb file from mcq output data
+    """
+    assert orient in ["revert"]
+    with open(file, "r") as lines:
+        for line in lines:
+            line = json.loads(line)
+            accepts = line.get("accept")
+            text = line.get("text")
+            for accept in accepts:
+                typer.echo(f"{accept}{inDelim}{text}")
+
+
 if __name__ == "__main__":
     app()
