@@ -84,8 +84,8 @@ python patentcity.py geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_n
 python patentcity.py geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_postcode.jsonl --out-format csv >> de_locxx_beta-geoc_gmaps_sm_postcode.csv
 
 #Combine
-cat data_tmp/de_locxx_beta-geoc_here_sm_nopostcode.csv | grep -v NOMATCH >> data_tmp/de_locxx_beta-geoc_sm.csv                                                                                 ~/Documents/GitHub/HistPatentCollection
-cat data_tmp/de_locxx_beta-geoc_gmaps_sm_nopostcode.csv >> data_tmp/de_locxx_beta-geoc_sm.csv                                                                                                      ~/Documents/GitHub/HistPatentCollection
+cat data_tmp/de_locxx_beta-geoc_here_sm_nopostcode.csv | grep -v NOMATCH >> data_tmp/de_locxx_beta-geoc_sm.csv
+cat data_tmp/de_locxx_beta-geoc_gmaps_sm_nopostcode.csv >> data_tmp/de_locxx_beta-geoc_sm.csv
 cat data_tmp/de_locxx_beta-geoc_gmaps_sm_postcode.csv >> data_tmp/de_locxx_beta-geoc_sm.csv
 
 #Incorporate
