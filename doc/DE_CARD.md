@@ -57,9 +57,9 @@ See the annotation guidelines for more details.
 ### 👷 Training
 
 ```python
-spacy train de models/de_ent_frpatent01_sm/ data/train_ent_depatent01.json data/test_ent_depatent01.json -p ner --version 0.1
+spacy train de models/de_ent_depatent01_sm/ data/train_ent_depatent01.json data/test_ent_depatent01.json -p ner --version 0.1
 
-spacy train de models/de_ent_frpatent02_sm/ data/train_ent_depatent02.json data/test_ent_depatent02.json -p ner --version 0.1
+spacy train de models/de_ent_depatent02_sm/ data/train_ent_depatent02.json data/test_ent_depatent02.json -p ner --version 0.1
 ```
 
 ### 🔮 Model Performance
