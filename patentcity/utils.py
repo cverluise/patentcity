@@ -2,6 +2,7 @@ import datetime
 import json
 import os
 import re
+import string
 from concurrent.futures import ThreadPoolExecutor
 from glob import glob
 from hashlib import md5
@@ -122,7 +123,7 @@ def prep_annotation_groups(path: str, u_bounds: str = None):
 
 
 @app.command()
-def get_whitespaced_labels(file: str):
+def get_buggy_labels(file: str):
     """Print info on labels with leading/trailing space.
     Expect a jsonl file with lines following a simple annotation model"""
     with open(file, "r") as lines:
@@ -130,12 +131,32 @@ def get_whitespaced_labels(file: str):
             line = json.loads(line)
             text = line["text"]
             spans = line.get("spans")
+            punctuation_ = (
+                string.punctuation.replace(".", "").replace("(", "").replace(")", "")
+            )
             if spans:
                 for span in spans:
                     span_text = text[span["start"] : span["end"]]
-                    startswith = span_text.startswith("\s")
-                    endswith = span_text.endswith("\s")
-                    if any([startswith, endswith]):
+                    startswith_space = any(
+                        [span_text.startswith(" "), span_text.startswith("\s")]
+                    )
+                    endswith_space = any(
+                        [span_text.endswith("\s"), span_text.endswith(" ")]
+                    )
+                    startswith_punctuation, endswith_punctuation = ([], [])
+                    for punctuation in punctuation_:
+                        startswith_punctuation += [span_text.startswith(punctuation)]
+                        endswith_punctuation += [span_text.endswith(punctuation)]
+                    startswith_punctuation = any(startswith_punctuation)
+                    endswith_punctuation = any(endswith_punctuation)
+                    if any(
+                        [
+                            startswith_space,
+                            endswith_space,
+                            startswith_punctuation,
+                            endswith_punctuation,
+                        ]
+                    ):
                         typer.secho(f"{json.dumps(line)}", fg=typer.colors.YELLOW)
                         typer.secho(
                             f"Span:{span}\nValue:{span_text}\nLine:{i + 1}",
@@ -353,6 +374,35 @@ def mcq_revert(file, max_options: int = 50):
     tasks = sorted(tasks, key=itemgetter("nb_occurences"), reverse=True)
     for task in tasks:
         typer.echo(json.dumps(task))
+
+
+@app.command()
+def prep_disamb_index(file: str, inDelim: str = "|"):
+    """Return a list of recId(line)|line from a list of lines
+    Should be used to prepare a list of disambiguation targets for downstream process (e.g.
+    add-geoc-disamb"""
+    with open(file, "r") as lines:
+        for line in lines:
+            line = clean_text(line, inDelim)
+            recid = get_recid(line)
+            typer.echo(f"{recid}{inDelim}{line}")
+
+
+@app.command()
+def add_geoc_disamb(disamb_file, index_geoc_file, inDelim: str = "|"):
+    """Return a list of recId|geoc(target) from a list of recid|target.
+    Should be used before add-geoc-data"""
+    index = {}
+    with open(index_geoc_file, "r") as lines:
+        for line in lines:
+            recid, geoc = line.split(inDelim)
+            index.update({recid: json.loads(geoc)})
+
+    with open(disamb_file, "r") as lines:
+        for line in lines:
+            recid, disamb_loc = line.split(inDelim)
+            disamb_loc_recid = get_recid(clean_text(disamb_loc))
+            typer.echo(f"{recid}{inDelim}{json.dumps(index.get(disamb_loc_recid))}")
 
 
 if __name__ == "__main__":
