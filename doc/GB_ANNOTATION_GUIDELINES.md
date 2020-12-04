@@ -5,7 +5,7 @@
 
 ## Preliminary comments
 
-The patent corpus that we consider for GB has two types of formats.
+The patent corpus that we consider for GB has two types of formats. This corpus is restricted to publication with kind code "A" (_patent applications_).
 
 The formatting of UK patent documents have evolved in time but only modestly. Typically, until patent number GB2000001, the first paragraph of the text contains most of the relevant information, which are completed by the header, whose content changes slightly over time. See Figures 1, 2 and 3 for different examples.
 
