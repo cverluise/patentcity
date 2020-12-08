@@ -51,7 +51,11 @@ def beta(
             out.update(
                 {
                     label.lower(): [
-                        clean_text(ent.text, inDelim)
+                        {
+                            "text": clean_text(ent.text, inDelim),
+                            "start": ent.start,
+                            "end": ent.end,
+                        }
                         for ent in ents
                         if ent.label_ == label
                     ]
@@ -60,7 +64,19 @@ def beta(
         if out.get("loc"):
             # from loc: ["", ""] to loc: [{"raw":"", "recId":""}, {...}]
             # -> should make it relatively efficient to integrate results back from here
-            out.update({"loc": [{"raw": v, "recId": get_recid(v)} for v in out["loc"]]})
+            out.update(
+                {
+                    "loc": [
+                        {
+                            "raw": loc_["text"],
+                            "recId": get_recid(loc_["text"]),
+                            "start": loc_["start"],
+                            "end": loc_["end"],
+                        }
+                        for loc_ in out["loc"]
+                    ]
+                }
+            )
         typer.echo(json.dumps(out))
 
     nlp = spacy.load(model)
