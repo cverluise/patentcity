@@ -4,3 +4,5 @@
 /fr_disamb.txt
 /fr_index_geoc.txt
 /fr_index_override.txt
+/dd_publication_date_imputation.csv
+/dd_publication_date_training.csv
