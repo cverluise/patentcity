@@ -302,7 +302,7 @@ def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
         return index
 
 
-def update_loc(blob, index, verbose):
+def update_loc(blob, source, index, verbose):
     blob = json.loads(blob)
     locs = blob.get("loc")
 
@@ -315,6 +315,7 @@ def update_loc(blob, index, verbose):
             geoc_ = index.get(recid)
             if geoc_:
                 loc_.update(geoc_)
+                loc_.update({"source": source})
             else:
                 if verbose:
                     typer.secho(
@@ -330,13 +331,18 @@ def update_loc(blob, index, verbose):
 
 @app.command()
 def add_geoc_data(
-    src, geoc_file: str = None, max_workers: int = 5, verbose: bool = False
+    src,
+    geoc_file: str = None,
+    source: str = None,
+    max_workers: int = 5,
+    verbose: bool = False,
 ):
     """Add geoc data from geoc_file returned by HERE batch geocoding API"""
+    assert source in ["GMAPS", "HERE", "MANUAL"]
     index = get_geoc_index(geoc_file, dump=False)
     blobs = open(src, "r")
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        executor.map(update_loc, blobs, repeat(index), repeat(verbose))
+        executor.map(update_loc, blobs, repeat(source), repeat(index), repeat(verbose))
 
 
 def get_geoc_data_gmap_(line, gmaps_client, region, language, inDelim):
