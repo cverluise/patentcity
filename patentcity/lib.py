@@ -1,5 +1,9 @@
 """Lib of var used in patencity CLI"""
 import json
+import os
+
+ROOT_DIR = os.path.dirname(os.path.abspath("setup.py"))
+ISO_FILE = os.path.join(ROOT_DIR, "lib/iso_crossover.json")
 
 GEOC_URL = "https://batch.geocoder.ls.hereapi.com/6.2/jobs"
 GEOC_OUTCOLS = [
@@ -71,14 +75,19 @@ HERE2GMAPS = {
 # https://developers.google.com/maps/documentation/geocoding/overview
 
 
-def get_isocrossover(file: str = "lib/iso_crossover.json", reverse: str = False):
-    """Return a dict """
+def get_isocrossover(file: str = None, reverse: str = False):
+    """Return a dict of iso crossover"""
+    if not file:
+        file = ISO_FILE
     out = json.loads(open(file, "r").read())
     if reverse:
         out = {v: k for k, v in out.items()}
     return out
 
 
-def list_countrycodes():
-    countrycodes = json.loads(open("lib/iso_crossover.json", "r").read())
+def list_countrycodes(file: str = None):
+    """Return a list of country codes (iso 2 and 3)"""
+    if not file:
+        file = ISO_FILE
+    countrycodes = json.loads(open(file, "r").read())
     return list(countrycodes.keys()) + list(countrycodes.values()) + ["BRD"]
