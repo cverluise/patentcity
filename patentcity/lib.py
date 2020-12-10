@@ -77,3 +77,8 @@ def get_isocrossover(file: str = "lib/iso_crossover.json", reverse: str = False)
     if reverse:
         out = {v: k for k, v in out.items()}
     return out
+
+
+def list_countrycodes():
+    countrycodes = json.loads(open("lib/iso_crossover.json", "r").read())
+    return list(countrycodes.keys()) + list(countrycodes.values()) + ["BRD"]
