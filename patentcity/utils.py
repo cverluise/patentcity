@@ -3,6 +3,8 @@ import json
 import os
 import re
 import string
+import csv
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from glob import glob
 from hashlib import md5
@@ -14,7 +16,7 @@ import pandas as pd
 import typer
 from fuzzyset import FuzzySet
 
-from patentcity.lib import GEOC_OUTCOLS
+from patentcity.lib import GEOC_OUTCOLS, get_isocrossover, list_countrycodes
 
 """
 General purpose utilities
@@ -271,14 +273,30 @@ def remove_duplicates(
 
 
 @app.command()
-def find_postcode(file, inDelim: str = "|", remove_postcodes: bool = True):
+def prep_searchtext(
+    file,
+    inDelim: str = "|",
+    remove_postcodes: bool = True,
+    remove_countrycodes: bool = True,
+):
+    """"""
+    countrycodes = list_countrycodes()
+
     with open(file, "r") as lines:
         for line in lines:
             recid, searchtext = line.split(inDelim)
-            like_postcode = re.findall(r"\d{4}", searchtext)
+            like_postcode = re.findall(r"\b\d{4,}\b", searchtext)
+            like_countrycode = re.findall(
+                r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)), searchtext
+            )
             if like_postcode:
                 if remove_postcodes:
                     for match in like_postcode:
+                        searchtext = searchtext.replace(match, "")
+            if like_countrycode:
+                like_countrycode = list(filter(lambda x: x, sum(like_countrycode, ())))
+                if remove_countrycodes:
+                    for match in like_countrycode:
                         searchtext = searchtext.replace(match, "")
             typer.echo(f"{recid}{inDelim}{searchtext}")
 
@@ -414,6 +432,22 @@ def prep_disamb(file: str, orient: str = "revert", inDelim: str = "|"):
             text = line.get("text")
             for accept in accepts:
                 typer.echo(f"{accept}{inDelim}{text}")
+
+
+@app.command()
+def generate_iso_override():
+    """Generate the iso override file"""
+    csvwriter = csv.DictWriter(sys.stdout, GEOC_OUTCOLS)
+    countrycodes = list_countrycodes()
+    iso_crossover = get_isocrossover()
+    csvwriter.writeheader()
+    for countrycode in countrycodes:
+        out = get_empty_here_schema()
+        country = countrycode if len(countrycode) == 3 else iso_crossover[countrycode]
+        out.update(
+            {"recId": get_recid(countrycode), "seqNumber": 1, "country": country}
+        )
+        csvwriter.writerow(out)
 
 
 if __name__ == "__main__":
