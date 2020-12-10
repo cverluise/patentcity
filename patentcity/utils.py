@@ -279,7 +279,7 @@ def prep_searchtext(
     remove_postcodes: bool = True,
     remove_countrycodes: bool = True,
 ):
-    """"""
+    """Prepare search text so as to avoid common pitfalls (country codes, postcodes, etc)"""
     countrycodes = list_countrycodes()
 
     with open(file, "r") as lines:
