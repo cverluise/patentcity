@@ -60,38 +60,37 @@ Install [dvc](https://dvc.org/) if needed.
 #### Prepare data for geocoding
 
 ````shell script
-
+patentcity geo prep-geoc-data ddpatentxx_beta.jsonl >> dd_locxx_beta.txt
+patentcity utils find-postcode dd_locxx_beta.txt | grep "|" >> dd_locxx_beta_nopostcode.txt
 ````
 
 #### HERE geocoding
 
 ````shell script
-patentcity geo post-geoc-data-here dd_locxx_beta.txt $KEY deu
-patentcity geo get-geoc-status-here $REQUEST_ID $KEY
-patentcity geo get-geoc-data-here $REQUEST_ID $KEY
+patentcity geo post-geoc-data-here dd_locxx_beta_nopostcode.txt $HERE_KEY deu
+patentcity geo get-geoc-status-here $REQUEST_ID $HERE_KEY
+patentcity geo get-geoc-data-here $REQUEST_ID $HERE_KEY
+# name result dd_locxx_beta-geoc_here_nopostcode.csv
 ````
 
 #### Gmaps geocoding
 
 ````shell script
-# Get HERE NOMATCH
-
+patentcity utils get-recid-nomatch dd_locxx_beta-geoc_nopostcode.csv dd_locxx_beta_nopostcode.txt | grep "|" >> dd_locxx_beta-nomatch_nopostcode.txt
+patentcity geo get-geoc-data-gmaps  dd_locxx_beta-nomatch_nopostcode.txt $GMAPS_KEY de >> dd_locxx_beta-geoc_gmaps_nopostcode.jsonl
 ````
 
 #### Harmonize, combine & incorporate geocoded data
 
 ```shell script
 #Harmonize (Gmaps-> HERE)
-patentcity geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_nopostcode.jsonl --out-format csv >> de_locxx_beta-geoc_gmaps_sm_nopostcode.csv
-patentcity geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_postcode.jsonl --out-format csv >> de_locxx_beta-geoc_gmaps_sm_postcode.csv
+patentcity geo harmonize-geoc-data-gmaps dd_locxx_beta-geoc_gmaps_nopostcode.jsonl --out-format csv >> dd_locxx_beta-geoc_gmaps_nopostcode.csv
 
 #Combine
-cat data_tmp/de_locxx_beta-geoc_here_sm_nopostcode.csv | grep -v NOMATCH >> data_tmp/de_locxx_beta-geoc_sm.csv
-cat data_tmp/de_locxx_beta-geoc_gmaps_sm_nopostcode.csv >> data_tmp/de_locxx_beta-geoc_sm.csv
-cat data_tmp/de_locxx_beta-geoc_gmaps_sm_postcode.csv >> data_tmp/de_locxx_beta-geoc_sm.csv
+cat dd_locxx_beta-geoc_here_nopostcode.csv | grep -v NOMATCH >> dd_locxx_beta-geoc_xx_nopostcode.csv && cat dd_locxx_beta-geoc_gmaps_nopostcode.csv >> dd_locxx_beta-geoc_xx_nopostcode.csv
 
 #Incorporate
-python patentcity.py geo add-geoc-data de_patentxx_beta_sm.jsonl --geoc-file de_locxx_beta-geoc_sm.csv >>de_patentxx_beta-geoc_sm.jsonl
+patentcity geo add-geoc-data de_patentxx_beta_sm.jsonl --geoc-file de_locxx_beta-geoc_sm.csv >> de_patentxx_beta-geoc_sm.jsonl
 ```
 
 #### Build
