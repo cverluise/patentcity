@@ -66,7 +66,9 @@ Install [dvc](https://dvc.org/) if needed.
 #### HERE geocoding
 
 ````shell script
-
+patentcity geo post-geoc-data-here dd_locxx_beta.txt $KEY deu
+patentcity geo get-geoc-status-here $REQUEST_ID $KEY
+patentcity geo get-geoc-data-here $REQUEST_ID $KEY
 ````
 
 #### Gmaps geocoding
@@ -80,8 +82,8 @@ Install [dvc](https://dvc.org/) if needed.
 
 ```shell script
 #Harmonize (Gmaps-> HERE)
-python patentcity.py geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_nopostcode.jsonl --out-format csv >> de_locxx_beta-geoc_gmaps_sm_nopostcode.csv
-python patentcity.py geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_postcode.jsonl --out-format csv >> de_locxx_beta-geoc_gmaps_sm_postcode.csv
+patentcity geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_nopostcode.jsonl --out-format csv >> de_locxx_beta-geoc_gmaps_sm_nopostcode.csv
+patentcity geo harmonize-geoc-data-gmaps de_locxx_beta-geoc_gmaps_sm_postcode.jsonl --out-format csv >> de_locxx_beta-geoc_gmaps_sm_postcode.csv
 
 #Combine
 cat data_tmp/de_locxx_beta-geoc_here_sm_nopostcode.csv | grep -v NOMATCH >> data_tmp/de_locxx_beta-geoc_sm.csv
