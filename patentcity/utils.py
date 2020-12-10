@@ -270,9 +270,6 @@ def remove_duplicates(
                 typer.echo(line)
 
 
-# file = "data_tmp/de_locxx_beta_nomatch_here_sm_depr.txt"
-
-
 @app.command()
 def find_postcode(file, inDelim: str = "|", remove_postcodes: bool = True):
     with open(file, "r") as lines:
@@ -283,7 +280,7 @@ def find_postcode(file, inDelim: str = "|", remove_postcodes: bool = True):
                 if remove_postcodes:
                     for match in like_postcode:
                         searchtext = searchtext.replace(match, "")
-                typer.echo(f"{recid}{inDelim}{searchtext}")
+            typer.echo(f"{recid}{inDelim}{searchtext}")
 
 
 def mcq(line, fset, ignore):
