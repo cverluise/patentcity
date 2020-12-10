@@ -1,0 +1,245 @@
+[
+  { "description": "Publication number",
+    "mode": "NULLABLE",
+    "name": "publication_number",
+    "type": "STRING"
+  },
+  { "description": "Inventor(s) name(s)",
+    "mode": "REPEATED",
+    "name": "inv",
+    "type": "RECORD",
+    "fields": [
+      { "description": "Raw text",
+        "mode": "NULLABLE",
+        "name": "text",
+        "type": "STRING"
+      },
+      { "description": "Start token",
+        "mode": "NULLABLE",
+        "name": "start",
+        "type": "INTEGER"
+      },
+      { "description": "End token",
+        "mode": "NULLABLE",
+        "name": "end",
+        "type": "INTEGER"
+      }
+    ]
+  },
+  { "description": "Assignee(s) name(s)",
+    "mode": "REPEATED",
+    "name": "asg",
+    "type": "RECORD",
+    "fields": [
+      { "description": "Raw text",
+        "mode": "NULLABLE",
+        "name": "text",
+        "type": "STRING"
+      },
+      { "description": "Start token",
+        "mode": "NULLABLE",
+        "name": "start",
+        "type": "INTEGER"
+      },
+      { "description": "End token",
+        "mode": "NULLABLE",
+        "name": "end",
+        "type": "INTEGER"
+      }
+    ]
+  },
+  { "description": "Patentee occupation",
+    "mode": "REPEATED",
+    "name": "occ",
+    "type": "RECORD",
+    "fields": [
+      { "description": "Raw text",
+        "mode": "NULLABLE",
+        "name": "text",
+        "type": "STRING"
+      },
+      { "description": "Start token",
+        "mode": "NULLABLE",
+        "name": "start",
+        "type": "INTEGER"
+      },
+      { "description": "End token",
+        "mode": "NULLABLE",
+        "name": "end",
+        "type": "INTEGER"
+      }
+    ]
+  },
+  {
+    "fields": [
+      { "description": "Raw location extracted from the body of the patent",
+        "mode": "NULLABLE",
+        "name": "raw",
+        "type": "STRING"
+      },
+      { "description": "Start token",
+        "mode": "NULLABLE",
+        "name": "start",
+        "type": "INTEGER"
+      },
+      { "description": "End token",
+        "mode": "NULLABLE",
+        "name": "end",
+        "type": "INTEGER"
+      },
+      { "description": "Formatted address lines built out of the parsed address components",
+        "mode": "NULLABLE",
+        "name": "addressLines",
+        "type": "STRING"
+      },
+      { "description": "Assembled address value for displaying purposes",
+        "mode": "NULLABLE",
+        "name": "locationLabel",
+        "type": "STRING"
+      },
+      { "description": "ISO 3166-alpha-3 country code",
+        "mode": "NULLABLE",
+        "name": "country",
+        "type": "STRING"
+      },
+      { "description": "First subdivision level(s) below the country. Where commonly used, this is a state code (for instance, CA for California)",
+        "mode": "NULLABLE",
+        "name": "state",
+        "type": "STRING"
+      },
+      { "description": "Second subdivision level(s) below the country. Use of this field is optional if a second subdivision level is not available",
+        "mode": "NULLABLE",
+        "name": "county",
+        "type": "STRING"
+      },
+       { "description": "Locality of the address",
+        "mode": "NULLABLE",
+        "name": "city",
+        "type": "STRING"
+      },
+      { "description": "Subdivision level below the city. Use of this field is optional if a second subdivision level is not available",
+        "mode": "NULLABLE",
+        "name": "district",
+        "type": "STRING"
+      },
+      { "description": "Subdivision level below the district. Used only for India",
+        "mode": "NULLABLE",
+        "name": "subdistrict",
+        "type": "STRING"
+      },
+      { "description": "Postal code",
+        "mode": "NULLABLE",
+        "name": "postalCode",
+        "type": "STRING"
+      },
+      { "description": "Street name",
+        "mode": "NULLABLE",
+        "name": "street",
+        "type": "STRING"
+      },
+      { "description": "Building name",
+        "mode": "NULLABLE",
+        "name": "building",
+        "type": "STRING"
+      },
+      { "description": "House number",
+        "mode": "NULLABLE",
+        "name": "houseNumber",
+        "type": "STRING"
+      },
+      { "description": "Longitude",
+        "mode": "NULLABLE",
+        "name": "longitude",
+        "type": "FLOAT"
+      },
+      { "description": "Latitude",
+        "mode": "NULLABLE",
+        "name": "latitude",
+        "type": "FLOAT"
+      },
+      { "description": "Indicates the relevance of the results found; the higher the score the more relevant the alternative. The score is a normalized value between 0 and 1",
+        "mode": "NULLABLE",
+        "name": "relevance",
+        "type": "FLOAT"
+      },
+      { "description": "Quality of the location match. pointAddress: Location matches exactly as point address. interpolated: Location was interpolated",
+        "mode": "NULLABLE",
+        "name": "matchType",
+        "type": "STRING"
+      },
+      { "description": "Code indicating how well the result matches the request. Enumeration [exact, ambiguous, upHierarchy, ambiguousUpHierarchy]",
+        "mode": "NULLABLE",
+        "name": "matchCode",
+        "type": "STRING"
+      },
+      { "description": "The most detailed address field that matched the input record",
+        "mode": "NULLABLE",
+        "name": "matchLevel",
+        "type": "STRING"
+      },
+      { "description": "MatchQuality provides detailed information about the match quality of a result at attribute level. Match quality is a value between 0.0 and 1.0. 1.0 represents a 100% match. Here, matchQuality is defined at country level",
+        "mode": "NULLABLE",
+        "name": "matchQualityCountry",
+        "type": "FLOAT"
+      },
+      { "description": "Same at state level",
+        "mode": "NULLABLE",
+        "name": "matchQualityState",
+        "type": "FLOAT"
+      },
+      { "description": "Same at county level",
+        "mode": "NULLABLE",
+        "name": "matchQualityCounty",
+        "type": "FLOAT"
+      },
+      { "description": "Same at city level",
+        "mode": "NULLABLE",
+        "name": "matchQualityCity",
+        "type": "FLOAT"
+      },
+      { "description": "Same at district level",
+        "mode": "NULLABLE",
+        "name": "matchQualityDistrict",
+        "type": "FLOAT"
+      },
+      { "description": "Same at postalCode level",
+        "mode": "NULLABLE",
+        "name": "matchQualityPostalCode",
+        "type": "FLOAT"
+      },
+      { "description": "Same at street level",
+        "mode": "NULLABLE",
+        "name": "matchQualityStreet",
+        "type": "FLOAT"
+      },
+      { "description": "Same at houseNumber level",
+        "mode": "NULLABLE",
+        "name": "matchQualityHouseNumber",
+        "type": "FLOAT"
+      },
+      { "description": "Same at building level",
+        "mode": "NULLABLE",
+        "name": "matchQualityBuilding",
+        "type": "STRING"
+      },
+      { "description": "Identifier of the input address in the response",
+        "mode": "NULLABLE",
+        "name": "recId",
+        "type": "STRING"
+      },
+      { "description": "Number of results for the corresponding input record",
+        "mode": "NULLABLE",
+        "name": "seqLength",
+        "type": "INTEGER"
+      },
+      { "description": "Consecutively numbers the different results for the corresponding input record starting with 1",
+        "mode": "NULLABLE",
+        "name": "seqNumber",
+        "type": "INTEGER"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "loc",
+    "type": "RECORD"
+  }
+]
