@@ -280,7 +280,12 @@ def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
         for i, line in enumerate(csv_reader):
             if i > 0:
                 line = dict(line)
-                if int(line["SeqNumber"]) > 1:
+                seqNumber = (
+                    line.get("SeqNumber")
+                    if line.get("SeqNumber")
+                    else line.get("seqNumber")
+                )
+                if int(seqNumber) > 1:
                     # we keep only the first proposed item
                     # TODO evaluate policy
                     pass
@@ -450,10 +455,17 @@ def parse_response_gmaps(response, recid, out_format, iso_crossover):
 
 
 @app.command()
-def harmonize_geoc_data_gmaps(file: str, inDelim: str = "|", out_format: str = None):
+def harmonize_geoc_data_gmaps(
+    file: str, inDelim: str = "|", out_format: str = None, header: bool = True
+):
     """Harmonize Gmaps response with HERE Geocoding API responses (csv)"""
     assert out_format in ["csv", "jsonl"]
     iso_crossover = get_isocrossover()
+
+    if out_format == "csv" and header:
+        csvwriter = csv.DictWriter(sys.stdout, GEOC_OUTCOLS)
+        csvwriter.writeheader()
+
     with open(file, "r") as lines:
         for line in lines:
             line = clean_text(line, inDelim=f" {inDelim} ")
