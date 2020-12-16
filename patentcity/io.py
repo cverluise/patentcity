@@ -50,15 +50,15 @@ def augment_patentcity(src_table: str, destination_table: str, key_file: str = N
 
 @app.command()
 def impute_publication_date(src_table, imputation_table, key_file: str = None):
-    """Update publication_date - DE only"""
+    """Update publication_date - DE & DD only"""
     query = f"""UPDATE
-      `{src_table}` AS de
+      `{src_table}` AS t
     SET
-      de.publication_date = imputation.publication_date
+      t.publication_date = imputation.publication_date
     FROM
       `{imputation_table}` AS imputation
     WHERE
-      de.pubnum = imputation.pubnum
+      t.pubnum = imputation.pubnum
     """
     client = get_bq_client(key_file)
     typer.secho(f"Start:\n{query}", fg=typer.colors.BLUE)
