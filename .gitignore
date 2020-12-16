@@ -1,6 +1,9 @@
 # system
 .DS_Store
 
+# dev
+dev.py
+
 # secret
 credentials-patentcity.json
 apikey-*.txt
