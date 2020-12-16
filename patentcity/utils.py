@@ -450,5 +450,21 @@ def generate_iso_override():
         csvwriter.writerow(out)
 
 
+@app.command()
+def get_gmaps_index_gder(file, inDelim: str = "|"):
+    """
+    Return the csv file as the gmaps geoc index we are using in patentcity
+    recId|{gmaps output}
+    Next, it should be harmonized with HERE data.
+    E.g. addresses_florian25_sample.csv
+    """
+    with open(file, "r") as fin:
+        csv_reader = csv.reader(fin, delimiter=",", escapechar="\\")
+        for line in csv_reader:
+            typer.echo(f"{line[0]}{inDelim}{json.dumps(json.loads(line[3]))}")
+            # the first field is the location id (eq recid)
+            # the second field is the
+
+
 if __name__ == "__main__":
     app()
