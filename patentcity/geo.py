@@ -471,8 +471,13 @@ def harmonize_geoc_data_gmaps(
             line = clean_text(line, inDelim=f" {inDelim} ")
             # clean cases like "Jack A. Claes Pavilion | Elk Grove Park District" returned by Gmaps
 
-            recid, response = line.split(inDelim)
-            parse_response_gmaps(response, recid, out_format, iso_crossover)
+            try:
+                recid, response = line.split(inDelim)
+                parse_response_gmaps(response, recid, out_format, iso_crossover)
+            except ValueError:
+                pass
+                # occurs when there is an inDelim in the result
+                # (e.g. "long_name": "S2|02 Robert-Piloty-Geb\u00e4ude")
 
 
 if __name__ == "__main__":
