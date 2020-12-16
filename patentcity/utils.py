@@ -462,13 +462,15 @@ def get_gmaps_index_gder(file: str, inDelim: str = "|", verbose: bool = False):
         csv_reader = csv.reader(fin, delimiter=",", escapechar="\\")
         for line in csv_reader:
             try:
-                typer.echo(f"{line[0]}{inDelim}{json.dumps(json.loads(line[3]))}")
+                typer.echo(
+                    f"{line[0]}{inDelim}{json.dumps(json.loads(line[3])['results'])}"
+                )
             except Exception as e:
                 if verbose:
                     typer.secho(str(e), fg=typer.colors.RED)
                 pass
             # the first field is the location id (eq recid)
-            # the second field is the
+            # the second field is the gmaps result
 
 
 if __name__ == "__main__":
