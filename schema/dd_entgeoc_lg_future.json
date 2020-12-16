@@ -236,6 +236,11 @@
         "mode": "NULLABLE",
         "name": "seqNumber",
         "type": "INTEGER"
+      },
+      { "description": "Geocoding source.",
+        "mode": "NULLABLE",
+        "name": "source",
+        "type": "STRING"
       }
     ],
     "mode": "REPEATED",
