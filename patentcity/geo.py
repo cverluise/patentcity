@@ -476,7 +476,7 @@ def harmonize_geoc_data_gmaps(
                 parse_response_gmaps(response, recid, out_format, iso_crossover)
             except ValueError:
                 pass
-                # occurs when there is an inDelim in the result
+                # occurs when there is still an inDelim in the result
                 # (e.g. "long_name": "S2|02 Robert-Piloty-Geb\u00e4ude")
 
 
