@@ -1,0 +1,1 @@
+{"pattern": [{"_": {"label": {"NOT_IN": ["INV", "ASG", "CIT", "OCC", "LOC", "ORG", "PERS"]}}}]}
