@@ -66,7 +66,7 @@ spacy train de models/de_ent_depatent02_sm/ data/train_ent_depatent02.json data/
 
 #### `de_ent_depatent01_sm`
 
-- | ASG| CLAS|  LOC|  OCC| INV | ALL
+-| ASG| CLAS|  LOC|  OCC| INV | ALL
 ---|---|---|---|---|---|---
 p | 84.68 | 94.17 | 92.07 | 81.82 | 82.14  | 89.50
 r | 83.33 | 91.13 | 91.13 | 81.82 | 82.14  | 87.98
@@ -74,7 +74,7 @@ f | 84.00 | 92.62 | 91.60 | 81.82 | 82.14  | 88.74
 
 #### `de_ent_depatent02_sm`
 
-- |CLAS    |LOC    |INV    |ASG    |OCC | ALL
+-|CLAS    |LOC    |INV    |ASG    |OCC | ALL
 ---|---|---|---|---|---|---
 p  |96.27  |93.13  |89.87  |90.45  |83.75  | 91.56
 r  |92.81  |92.93  |92.91  |86.54  |83.75  | 91.18
