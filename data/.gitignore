@@ -31,3 +31,6 @@
 /train_ent_uspatentocr01.json
 /train_ent_uspatentocr02.json
 /gold_cit_gbpatentocr01.csv
+/gold_cit_uspatentocr01.csv
+/gold_cit_uspatentocr02.csv
+/gold_cit_uspatentocr03.csv
