@@ -5,7 +5,7 @@
 
 The patent system was institutionalised in France as early as 1791. However, the French patents published before 1900 have not been made publicly available in a digitised format. Note that the French INPI has manually built a database of inventors' locations spanning over the 19th century. This database is however not publicly available. We are not aware of prior work trying to constitute a database of the location of patentees filing in France for the 1900-1980 period.
 
-We consider all patents with a publication date between 1900 and 1980. We address all patents with kind-code *??**. In total, we consider **??** documents from 1900.
+We consider all patents with a publication date between 1900 and 1980. We address all patents with kind-code **A, A1**. In total, we consider ** 1,577,934** documents from 1902.
 
 
 
