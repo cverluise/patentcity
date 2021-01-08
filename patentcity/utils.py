@@ -437,7 +437,7 @@ def generate_iso_override():
 
 
 @app.command()
-def get_gmaps_index_gder(file: str, inDelim: str = "|", verbose: bool = False):
+def get_gmaps_index_wgp(file: str, inDelim: str = "|", verbose: bool = False):
     """
     Return the csv file as the gmaps geoc index we are using in patentcity
     recId|{gmaps output}
