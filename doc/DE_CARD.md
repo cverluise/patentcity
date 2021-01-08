@@ -5,7 +5,7 @@
 
 The German Patent and Trade Mark Office (DPMO) was founded in 1877. The first patent was granted as early as July 2, 1877. There was (close to) no patent published between 1945 and 1950. The 1949-1992 period is characterised by the split of Germany in two distinct countries (BDR and DDR) and consequently of the split of the patent system as well. After that date, the two offices reunified into the DPMO . We are not aware of previous research trying to extract the location of patentees filing in Germany.
 
-We address all German patents with a publication date between 1877 and 1980 published at the DPMO. This does not include East Germany (1950-1992). We address all patents with kind-code **??**. In total, we consider **??** documents from 1877.
+We address all German patents with a publication date between 1877 and 1980 published at the DPMO. This does not include East Germany (1950-1992). We address all patents with kind-code **A1, B, B3, C, C1, D1**. In total, we consider **1,983,161** documents from 1877.
 
 
 ## Data source
