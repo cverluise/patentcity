@@ -15,6 +15,7 @@ import numpy as np
 import pandas as pd
 import typer
 from fuzzyset import FuzzySet
+from fuzzysearch import find_near_matches
 
 from patentcity.lib import GEOC_OUTCOLS, get_isocrossover, list_countrycodes
 
@@ -164,21 +165,6 @@ def get_buggy_labels(file: str):
                             f"Span:{span}\nValue:{span_text}\nLine:{i + 1}",
                             fg=typer.colors.RED,
                         )
-
-
-@app.command()
-def model_report(model: str, pipes: str = "ner"):
-    """Evaluate model"""
-
-    scores = json.loads(open(os.path.join(model, "meta.json"), "r").read())["accuracy"]
-
-    pipes = pipes.split(",")
-    if "ner" in pipes:
-        p, r, f = scores["ents_p"], scores["ents_r"], scores["ents_f"]
-        typer.secho("NER Scores", fg=typer.colors.BLUE)
-        typer.secho(f"{pd.DataFrame.from_dict(scores['ents_per_type']).round(2)}")
-        typer.echo("-" * 37)
-        typer.echo(f"ALL   %.2f  %.2f  %.2f" % (p, r, f))
 
 
 @app.command()
@@ -471,6 +457,53 @@ def get_gmaps_index_gder(file: str, inDelim: str = "|", verbose: bool = False):
                 pass
             # the first field is the location id (eq recid)
             # the second field is the gmaps result
+
+
+def get_cit_code(text: str, fst: dict, fuzzy_match: bool):
+    """Return the ISO-3 country code of the detected citizenship
+
+    If fuzzy match True, fuzzy match considered iff exact match None
+    """
+
+    def get_candidates(text: str, fst: dict, fuzzy_match: bool = True):
+        # we start by considering only exact matches here
+        text = text.lower()
+        candidates = [key for key in fst.keys() if key.lower() in text.lower()]
+        if not candidates and fuzzy_match:
+            text = text.replace("laws", "")  # creates confusion with Laos
+            candidates = [
+                key
+                for key in fst.keys()
+                if find_near_matches(key.lower(), text.lower(), max_l_dist=1)
+            ]
+        return candidates
+
+    def get_pred(candidates: list, fst: dict):
+        candidates = [fst[candidate] for candidate in candidates]
+        if len(set(candidates)) == 1:
+            pred = candidates[0]
+        elif len(candidates) > 1:
+            # in case there are more than 1 candidates, we take the most frequent
+            if "USA" in candidates and "JEY" in candidates:
+                pred = "USA"
+            elif "USA" in candidates and "NIU" in candidates:
+                pred = "USA"
+            elif "USA" in candidates and "IND" in candidates:
+                pred = "USA"
+            elif "DDR" in candidates and "DEU" in candidates:
+                pred = "DDR"
+            else:
+                pred = max(candidates, key=candidates.count)
+            # will randomly pick one if multi-max
+        else:
+            pred = None
+
+        return pred
+
+    candidates = get_candidates(text, fst, fuzzy_match)
+    pred = get_pred(candidates, fst)
+
+    return pred
 
 
 if __name__ == "__main__":
