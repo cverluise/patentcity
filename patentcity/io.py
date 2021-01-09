@@ -4,7 +4,6 @@ from google.oauth2 import service_account
 
 from patentcity.utils import ok
 
-
 app = typer.Typer()
 
 
@@ -212,6 +211,22 @@ def build_wgp_as_patentcity(
               SPLIT(patstat.publication_number, "-")[OFFSET(0)] IN ("DE", "GB", "FR", "US")
             """
 
+    get_job_done(query, destination_table, key_file)
+
+
+@app.command()
+def order(
+    table: str, by: str = None, destination_table: str = None, key_file: str = None
+):
+    """Order TABLE by BY and stage it to DESTINATION_TABLE (def overwrite)"""
+    query = f"""
+    SELECT
+      *
+    FROM
+      `{table}`
+    ORDER BY
+      {by}  # publication_number
+    """
     get_job_done(query, destination_table, key_file)
 
 
