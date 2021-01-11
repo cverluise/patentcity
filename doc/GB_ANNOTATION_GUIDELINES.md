@@ -1,11 +1,9 @@
 # ANNOTATION GUIDELINES
 
-> This document describes the annotation guidelines for marking up patent texts. The document explains what the tags are and how to annotate them. The exposition should contain a large body of examples with a specific focus on examples illustrating cases which were under discussion.
-
 
 ## Preliminary comments
 
-The patent corpus that we consider for GB has two types of formats. This corpus is restricted to publication with kind code "A" (_patent applications_).
+The patent corpus that we consider for GB has two types of formats and spans the period 1893-1980.
 
 The formatting of UK patent documents have evolved in time but only modestly. Typically, until patent number GB2000001, the first paragraph of the text contains most of the relevant information, which are completed by the header, whose content changes slightly over time. See Figures 1, 2 and 3 for different examples.
 
@@ -37,9 +35,9 @@ These entities are tied together with 3 types of relations.
 
 Relation|Content|E.g.
 ---|---|---
-`CITIZENSHIP`| Links an `ORG`/`PERS` to its `CIT` | <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--</font>`CITIZENSHIP`<font color="yellow">--></font><font style="border:2px solid yellow">subject of the king of Great Britain and Ireland `CIT`</font>
-`LOCATION`|Links an `ORG`/`PERS` to its `LOC` | <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--</font>`LOCATION`<font color="green">--></font><font style="border:2px solid green">145, Bethune Road, Amhurst Park, London N. `LOC`</font>
-`OCCUPATION`|Links an `PERS` to its `OCC`| <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--</font>`OCCUPATION`<font color="magenta">--></font><font style="border:2px solid magenta">Lighting Engineer `OCC`</font>
+`CITIZENSHIP`| Links an `ORG`/`PERS` to its `CIT` | <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--<--</font>`CITIZENSHIP`<font color="yellow">--<--</font><font style="border:2px solid yellow">subject of the king of Great Britain and Ireland `CIT`</font>
+`LOCATION`|Links an `ORG`/`PERS` to its `LOC` | <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--<--</font>`LOCATION`<font color="green">--<--</font><font style="border:2px solid green">145, Bethune Road, Amhurst Park, London N. `LOC`</font>
+`OCCUPATION`|Links an `PERS` to its `OCC`| <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--<--</font>`OCCUPATION`<font color="magenta">--<--</font><font style="border:2px solid magenta">Lighting Engineer `OCC`</font>
 
 
 <details><summary>Other meta-data in GB patents</summary>
@@ -189,40 +187,13 @@ Colaba, Bombay 5, India), do hereby declare...
 
 > I, DENNIS ROBERT CHASE, a British Subject, of <font style="border:2px solid green">29 St John's Road, Locksheath, Near Southampton, Hampshire `LOC`</font>.
 
-### Format 2
-
-<font color="orange">TODO</font>
 
 ## Relationships
 
-### Format 1
-<font color="orange">XX Cool example for dependency: GB415117 and GB462620</font>
+See [XX\_REL\_ANNOTATION\_GUIDELINES.md](./XX_REL_ANNOTATION_GUIDELINES.md).
 
-#### The tag `LOCATION`
-
-##### Specific cases
-
-##### Examples
-
-#### The tag `CITIZENSHIP`
-
-##### Specific cases
-
-##### Examples
-
-#### The tag `OCCUPATION`
-
-##### Specific cases
-
-##### Examples
 
 ## Examples
-
-## Notes
-
-This document is based on [TimeML Annotation Guidelines Version 1.2.1,  Sauri et al, 2006](https://sharedtasksinthedh.github.io/assets/howto-annotation/timeml-1.2.1.pdf)
-
-## Figures
 
 #### Figure 1: GB309428A
 

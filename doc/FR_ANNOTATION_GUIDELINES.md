@@ -1,5 +1,7 @@
 # ANNOTATION GUIDELINES
 
+The patent corpus that we consider for France spans the period 1902-1980 and has 2 types of formats.
+
 ## Preliminary comments
 
 The patent corpus that we consider for France has 2 types of formats and spans the period 1902-1980.
@@ -14,6 +16,7 @@ The patent numbers from 1605567 to 2000000 do not seem to exist. The patents wit
 
 ### *Format 1*, from FR317502A to FR1569050A.
 
+#### Information display
 
 The information we are interested is in the header.
 
@@ -33,6 +36,8 @@ We notice some slight changes within this format across time.
 
 </details>
 
+#### Information extraction
+
 We extract 4 different "entities" from the header of FR patents in format category 1.
 
   Entity|Content|E.g
@@ -46,10 +51,11 @@ Assignees (or inventors) and their corresponding geographic indication are tied 
 
 | Relation     | Content                          | E.g.                                                         |
 | ------------ | -------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">M.Frederic PERDRIZET `ASG`</font><font color = "blue">--</font>`LOCATION`<font color = "green">--></font><font style = "border:2px solid green">France (Gironde) `LOC`</font> |
+| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">M.Frederic PERDRIZET `ASG`</font><font color = "blue">--<--</font>`LOCATION`<font color = "green">--<--</font><font style = "border:2px solid green">France (Gironde) `LOC`</font> |
 
 ### *Format 2*, from FR1569051A to FR1605567A and then from FR2000001A1.
 
+#### Information display
 
 The main body of text disappears from the first page of the patent and information are presented in a more "tabulated" manner: there are lines and they are associated with a number. For instance, in all of those "Format 2" patents, the line with the number 54 gives the title of the invention.
 
@@ -66,7 +72,7 @@ Attributes reported but not extracted:
 
 </details>
 
-
+#### Information extraction
 
 We extract 3 different "entities" from the header of FR patents in format category 2.
 
@@ -80,7 +86,7 @@ Assignees (or inventors) and their corresponding geographic indication are tied 
 
 | Relation     | Content                          | E.g.                                                         |
 | ------------ | -------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">KONISHIROKU PHOTO INDUSTRY CO LTD `ASG`</font><font color = "blue">--</font>`LOCATION`<font color = "green">--></font><font style = "border:2px solid green">Japon `LOC`</font> |
+| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">KONISHIROKU PHOTO INDUSTRY CO LTD `ASG`</font><font color = "blue">--<--</font>`LOCATION`<font color = "green">--<--</font><font style = "border:2px solid green">Japon `LOC`</font> |
 
 ## Entities
 
@@ -196,22 +202,7 @@ Refers to an indication about the location. Again, when assignees are lcoated ou
 
 ## Relationships
 
-### Format 1
-
-### The tag `LOCATION`
-
-#### Specific cases
-
-#### Examples
-
-
-### Format 2
-
-### The tag `LOCATION`
-
-#### Specific cases
-
-#### Examples
+See [XX\_REL\_ANNOTATION\_GUIDELINES.md](./XX_REL_ANNOTATION_GUIDELINES.md).
 
 
 
@@ -238,8 +229,3 @@ Refers to an indication about the location. Again, when assignees are lcoated ou
 ##### Example 5: Format 2 with an inventor and a county (French assignee)
 
 ![Format 2](./img/FR-1595761-A.png)
-
-
-## Notes
-
-This document is based on [TimeML Annotation Guidelines Version 1.2.1,  Sauri et al, 2006](https://sharedtasksinthedh.github.io/assets/howto-annotation/timeml-1.2.1.pdf)
