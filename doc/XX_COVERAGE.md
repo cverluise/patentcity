@@ -2,8 +2,10 @@
 
 Patent office | Time span (publication year)| Kind code(s)
 ---|---|---
-DE|1920-1980| A1, B, B3, C, C1, D1
+DE|1877-1980| A1, B, B3, C, C1, D1
 DD||
 GB|1893-1900|A
 FR|1902-1980|A1, A
-US||
+US|1836-1980|A*; B1,B2**2001
+
+**Notes**: *: Before 2001; **: After 2001
