@@ -3,7 +3,7 @@
 
 ## Preliminary comments
 
-The patent corpus that we consider for East Germany (the German Democratic Republic) has 2 format categories and spans the period 1950-1992.
+The patent corpus we consider for East Germany (the German Democratic Republic) has 2 format categories and spans the period 1950-1992.
 
 
 ### *Format 1*, from to DD1 to DD123499.
