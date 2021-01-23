@@ -76,7 +76,22 @@ Entities are tied together with 2 types of relations.
 
 ### *Format 4*, from 1971
 
-In this fourth format, the information is structured in the front page of the patent. For these patents, the identity of the inventor and the assignee are clearly stated along with their addresses.
+In this fourth format, the information is structured in the front page of the patent. For these patents, the identity of the inventor and the assignee are clearly stated along with their addresses. We consider patent US3554067A to be the first patent of Format 4, but some publications are closer to format 3 even after this number. We consider all cases.
+
+We extract 4 different "entities".
+
+| Entity | Content                           | E.g.                                                         |
+| ------ | --------------------------------- | ------------------------------------------------------------ |
+| INV    | Inventor full name                | Inventor: <font style="border:2px solid red">Vincent S. Farricielli `INV`</font> , New Haven, Conn. |
+| ASG    | Assignee full name                | Assignee: <font style="border:2px solid blue">Hannes Marker `ASG`</font>, Garmisch-Partenkirchen Germany. |
+| LOC    | Location of the assignee/inventor | Theodore A. Rich <font style="border:2px solid green">Scotia, N.Y. `LOC`</font> |
+
+Entities are tied together with 1 type of relations.
+
+| Relation      | Content                         | E.g.                                                         |
+| ------------- | ------------------------------- | ------------------------------------------------------------ |
+| `LOCATION`    | Links an `INV/ASG` to its `LOC` | <font style="border:2px solid red">Willi Wolff `INV`</font><font color="red">--</font>`LOCATION`<font color="green">--></font><font style="border:2px solid green">Schildgen, Germany `LOC`</font> |
+
 
 ## Named Entity recognition
 
@@ -272,7 +287,79 @@ The tag `CIT` refers either to the citizenship of the assignee i.e. the legal or
 ##### Examples
 
 **Example 1: *Standard Case*, from patent US2924016**
->Richard Diener, Berlin-Hermsdorf, Germany, assignor to Berliner Maschinenbau-Actien-Gesellschaft, Berlin, Germany, a <font style="border:2px solid yellow">corporation of Germany`CIT`</font>
+> Richard Diener, Berlin-Hermsdorf, Germany, assignor to Berliner Maschinenbau-Actien-Gesellschaft, Berlin, Germany, a <font style="border:2px solid yellow">corporation of Germany`CIT`</font>
+
+
+### Format 4
+
+#### The tag `INV`
+
+The tag `INV` refers to the full name of an inventor.
+
+##### Specific cases
+
+* _Format 3:_ the format 3 corresponds to a format that is very close the format 3 describes above (see example 1)
+* _Format 4:_ the standard case which is structured with a dedicated field named: inventor(s) (example 2)
+* _Deceased:_ in some rare case, the inventor is dead and an administrator is designated. Only the (dead) inventor should be labeled then (see example 3)
+
+##### Examples
+
+**Example 1: *Format 3*, from patent US3719374A**
+> <font style="border:2px solid blue">Francisco M. Serrano`INV`</font>, Paris, France, assignor to
+
+**Example 2: *Format 4*, from patent US3702536A**
+> Inventor: <font style="border:2px solid blue">John W. Gregory`INV`</font>, Middleburg Heights, Ohio 
+
+**Example 3: *Decreased*, from patent US3718608A**
+> Inventors: <font style="border:2px solid blue">Daniel W. Mason`INV`</font>, Peabody; <font style="border:2px solid blue">Henry
+H. Nester`INV`</font>, deceased, late of Peabody, Mass. by Dianne L. Nester, administratrix
+
+#### The tag `LOC`
+
+The tag `LOC` refers to the location of the inventor or assignee and is given by the city and state. 
+
+##### Specific cases
+
+* _Format 3:_ the format 3 corresponds to a format that is very close the format 3 describes above (see example 1)
+* _Format 4:_ the standard case which is structured. The location appears in the field inventor and/or assignee (example 2)
+* _all of / both of_: in some cases with multiple inventors, the location is designated in two times (INV1, [CITY] and INV2, [CITY], both of [STATE]) (see example 3).
+* _Full address:_ in some cases, the full postal address is given. In this case, only the city and more aggregated geographical entities should be labeled (see example 4).
+
+##### Examples
+
+**Example 1: *Format 3*, from patent US3702735A**
+> Andrew E. Potter, Jr., <font style="border:2px solid green">Houston, Tex`LOC`</font>
+
+** Example 2: *Format 4*, from patent US3692296**
+> Inventor: William W. Higginbotham, <font style="border:2px solid green">Monroe, Mich.`LOC`</font>
+
+** Example 3: *all of*, from patent US3697893A**
+> James L. Faustlin, <font style="border:2px solid green">Plano`LOC`</font>; Eliseo Saenz, <font style="border:2px solid green">Garland`LOC`</font>, both of <font style="border:2px solid green">Tex`LOC`</font>
+
+** Example 4: *full address*, from patent US3624981A**
+> Arthur Fischer, Altheimer Strasse 219, <font style="border:2px solid green">Tumlingen , Germany`LOC`</font>
+
+#### The tag `ASG`
+
+The tag `ASG` refers either to the name of the assignee.
+
+##### Specific cases
+
+* _Format 3:_ the format 3 corresponds to a format that is very close the format 3 describes above (see example 1)
+* _Format 4:_ the standard case which is structured with a dedicated field named: assignee (example 2)
+* _The United States of America:_ when the assignee is part of the government, the assignee is referred to as "the United States of America, as represented by XX". In such a case, only "the United States of America" should be labeled (example 3)
+do not tag the representant
+
+##### Examples
+
+**Example 1: *Format 3*, from patent *US3608112A*
+> Finn T. Ergens, Milwaukeee, Wis., assignor to <font style="border:2px solid red">Outboard Marine Corporation`ASG`</font>, Milwaukee, Wis. 
+
+** Example 2: *Format 4*, from patent *US3621396A*
+>  Assignee: <font style="border:2px solid red">Bell Telephone Laboratory, Inc.`ASG`</font>
+
+**Example 3: *USA*, from patent US3722202A**
+> Assignee: <font style="border:2px solid red">The United States of America`ASG`</font> as represented by the Secretary of Agriculture
 
 ## Relationships
 
@@ -291,5 +378,5 @@ See [XX\_REL\_ANNOTATION\_GUIDELINES.md](./XX_REL_ANNOTATION_GUIDELINES.md).
 #### Figure 3: US2954064
 ![](./img/US-2954064.png)
 
-#### Figure 3: US-3578005
+#### Figure 4: US-3578005
 ![](./img/US-3578005.png)
