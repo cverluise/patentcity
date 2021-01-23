@@ -1,7 +1,3 @@
-import json
-
-lines = open("data/gold_rel_gbpatent01.jsonl_corr", "r")
-
 LABELS = ["LOC", "CIT", "OCC"]
 POSITIONS = ["before", "after", "any"]
 RELATIONS = {"LOC": "LOCATION", "CIT": "CITIZENSHIP", "OCC": "OCCUPATION"}
