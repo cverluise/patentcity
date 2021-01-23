@@ -34,3 +34,13 @@
 /gold_cit_uspatentocr01.csv
 /gold_cit_uspatentocr02.csv
 /gold_cit_uspatentocr03.csv
+/gold_rel_ddpatent01.jsonl
+/gold_rel_ddpatent02.jsonl
+/gold_rel_depatent01.jsonl
+/gold_rel_depatent02.jsonl
+/gold_rel_frpatent01.jsonl
+/gold_rel_frpatent02.jsonl
+/gold_rel_gbpatent01.jsonl
+/gold_rel_uspatent01.jsonl
+/gold_rel_uspatent02.jsonl
+/gold_rel_uspatent03.jsonl

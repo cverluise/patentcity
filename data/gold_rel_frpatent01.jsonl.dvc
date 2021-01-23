@@ -1,0 +1,3 @@
+outs:
+- md5: d96bd1b2a6e49e642b818f72e3026e0f
+  path: gold_rel_frpatent01.jsonl
