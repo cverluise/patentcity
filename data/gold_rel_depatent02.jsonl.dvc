@@ -1,0 +1,3 @@
+outs:
+- md5: d60adfcd3cc1d9a0cd72dfed052158f7
+  path: gold_rel_depatent02.jsonl
