@@ -1,0 +1,16 @@
+search:
+  max_length: 10-40
+
+base:
+  LOC:
+    max_length:
+    position: after
+    max_n: 1
+  CIT:
+    max_length:
+    position: after
+    max_n: 1
+  OCC:
+    max_length:
+    position: after
+    max_n: 1
