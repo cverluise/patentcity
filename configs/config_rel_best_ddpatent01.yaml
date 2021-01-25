@@ -1,0 +1,12 @@
+LOC:
+  max_length: 33
+  position: after
+  max_n: 1
+CIT:
+  max_length: 33
+  position: after
+  max_n: 1
+OCC:
+  max_length: 3
+  position: after
+  max_n: 1
