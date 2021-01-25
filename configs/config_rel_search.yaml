@@ -1,5 +1,5 @@
 search:
-  max_length: 10-40
+  max_length: 1-40
 
 base:
   LOC:
