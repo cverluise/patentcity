@@ -116,10 +116,12 @@ def relationship_model(file, config, report: str = "short"):
             )
             error_context = f"""{get_text(tokens, [start, end])}"""
 
-            return f"{error_rel}\n{error_context}"
+            return error_rel, error_context
 
+        data = []
         for error in errors:
-            typer.echo(report_error(error))
+            data += [report_error(error)]
+        typer.echo(pd.DataFrame(columns=["error_rel", "error_context"], data=data).to_markdown(index=False))
 
     def get_relation(head, child):
         relation = []
