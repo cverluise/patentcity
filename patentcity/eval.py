@@ -155,10 +155,12 @@ def relationship_model(file, config, report: str = "short"):
             nb_tp = len(true_positives)
             nb_fp = len(false_positives)
             nb_fn = len(false_negatives)
-
-            prec = nb_tp / (nb_tp + nb_fp)
-            rec = nb_tp / (nb_tp + nb_fn)
-            f1 = 2 * prec * rec / (prec + rec)
+            try:
+                prec = nb_tp / (nb_tp + nb_fp)
+                rec = nb_tp / (nb_tp + nb_fn)
+                f1 = 2 * prec * rec / (prec + rec)
+            except ZeroDivisionError:
+                rec = prec = f1 = None
 
             return prec, rec, f1
 
@@ -170,9 +172,15 @@ def relationship_model(file, config, report: str = "short"):
                 true, true_positives, false_positives, false_negatives, label
             )
             label = label if label else "ALL"
-            res.update(
-                {label: {"p": round(prec, 3), "r": round(rec, 3), "f": round(f1, 3)}}
-            )
+            if all([prec, rec, f1]):
+                res.update(
+                    {label: {"p": round(prec, 3), "r": round(rec, 3), "f": round(f1, 3)}}
+                )
+            else:
+                res.update(
+                    {label: {"p": None, "r": None, "f": None}}
+                )
+
         if report == "json":
             typer.echo(json.dumps(res))
         else:
