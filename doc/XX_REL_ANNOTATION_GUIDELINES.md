@@ -1,6 +1,6 @@
 # RELATIONSHIP ANNOTATION GUIDELINES
 
-## Preliminary comment
+## Preliminary comments
 
 Each corpus has its specific set of relationship that is detailed in a separate document : 
 * [US](US_ANNOTATION_GUIDELINES.md) 
@@ -26,8 +26,17 @@ In both cases, all the corresponding relationship should be annotated.
 
 ## Examples
 
+### Example 1
 ![Example 1](./img/DERelationFormat2_a.png)
+
+### Example 2
 ![Example 2](./img/DERelationFormat1_a.png)
+
+### Example 3
 ![Example 3](./img/annot_format1_us_3.png)
+
+### Example 4
 ![Example 4](./img/annot_format1_us_4.png)
+
+### Example 5
 ![Example 5](./img/DERelationFormat1_b.png)
