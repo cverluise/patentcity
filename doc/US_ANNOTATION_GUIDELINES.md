@@ -258,7 +258,6 @@ The tag `CIT` refers either to the citizenship of the assignee i.e. the legal or
 #### The tag `INV`
 The tag `INV` refers to the full name of an inventor. This is a person that is not referred to as the assignee and is sometimes specifically referred to as the inventor.
 
-
 ##### Examples
 **Example 1: *Standard Case*, from patent US2924015**
 
