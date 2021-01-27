@@ -8,5 +8,5 @@ CIT:
   max_n: 1
 OCC:
   max_length: 3
-  position: after
+  position: before
   max_n: 1
