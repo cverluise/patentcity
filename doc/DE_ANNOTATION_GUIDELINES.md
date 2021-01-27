@@ -47,8 +47,8 @@ These entities are tied together with 2 types of relations.
 
 | Relation     | Content                          | E.g.                                                         |
 | ------------ | -------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">MARIUS ALBERT de DION `ASG`</font><font color = "blue">--<--</font>`LOCATION`<font color = "green">--<--</font><font style = "border:2px solid green">PUTEAUX (Seine, Frankr.) `LOC`</font> |
-| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid magenta">Dr. `OCC`</font><font color="magenta">-->--</font>`OCCUPATION`<font color="blue">-->--</font><font style="border:2px solid blue">KARL HENKEL `ASG`</font> |
+| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">MARIUS ALBERT de DION `ASG`</font><font color = "blue">--></font>`LOCATION`<font color = "green">--></font><font style = "border:2px solid green">PUTEAUX (Seine, Frankr.) `LOC`</font> |
+| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid magenta">Dr. `OCC`</font><font color = "magenta"><--</font>`OCCUPATION`<font color = "blue"><--</font><font style="border:2px solid blue">KARL HENKEL `ASG`</font> |
 
 
 
@@ -99,8 +99,8 @@ These entities are tied together with 2 types of relations.
 
 | Relation     | Content                          | E.g.                                                         |
 | ------------ | -------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">The Procter&Gamble Co. `ASG`</font><font color = "blue">--<--</font>`LOCATION`<font color = "green">--<--</font><font style = "border:2px solid green">Cincinnati, Ohio (U.St.A) `LOC`</font> |
-| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid blue">Spitzke, Wolfgang `ASG`</font><font color = "blue">--<--</font>`OCCUPATION`<font color = "magenta">--<--</font><font style="border:2px solid magenta">Ing.(grad.) `OCC`</font> |
+| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">The Procter&Gamble Co. `ASG`</font><font color = "blue">--></font>`LOCATION`<font color = "green">--></font><font style = "border:2px solid green">Cincinnati, Ohio (U.St.A) `LOC`</font> |
+| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid blue">Spitzke, Wolfgang `ASG`</font><font color = "blue">--></font>`OCCUPATION`<font color = "magenta">--></font><font style="border:2px solid magenta">Ing.(grad.) `OCC`</font> |
 
 
 
