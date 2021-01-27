@@ -71,7 +71,7 @@ These entities are tied together with 2 types of relations.
 | Relation     | Content                          | E.g.                                                         |
 | ------------ | -------------------------------- | ------------------------------------------------------------ |
 | `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue"> Maschinenfabrik Köppern GmbH & Co KG `ASG`</font><font color = "blue">--></font>`LOCATION`<font color = "green">--></font><font style = "border:2px solid green"> Hattingen, DE `LOC`</font> |
-| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid blue"> Lämmer, Hans-Georg `ASG`</font><font color = "blue">--></font>`LOCATION`<font color = "magenta">--></font><font style="border:2px solid magenta">Dipl-Ing. `OCC`</font> |
+| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid blue"> Lämmer, Hans-Georg `ASG`</font><font color = "blue">--></font>`OCCUPATION`<font color = "magenta">--></font><font style="border:2px solid magenta">Dipl-Ing. `OCC`</font> |
 
 
 ## Entities
