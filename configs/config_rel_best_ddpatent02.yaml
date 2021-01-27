@@ -7,6 +7,6 @@ CIT:
   position: after
   max_n: 1
 OCC:
-  max_length: 4
-  position: after
+  max_length: 2
+  position: any
   max_n: 1
