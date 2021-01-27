@@ -25,8 +25,8 @@ Entities are tied together with 2 types of relations.
 
 | Relation      | Content                         | E.g.                                                         |
 | ------------- | ------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`    | Links an `INV/ASG` to its `LOC` | <font style="border:2px solid red">SEDWARD WILLIAM YOUNG `INV`</font><font color="red">--</font>`LOCATION`<font color="green"><--</font><font style="border:2px solid green">Tytherley, Wimborne, Dorset, England `LOC`</font> |
-| `CITIZENSHIP` | Links an `INV/ASG` to its `CIT` | <font style="border:2px solid red">WILLIAM H. BAKER `INV`</font><font color="red">--</font>`CITIZENSHIP`<font color="yellow"><--</font><font style="border:2px solid yellow">citizen of the United States`CIT`</font> |
+| `LOCATION`    | Links an `INV/ASG` to its `LOC` | <font style="border:2px solid red">SEDWARD WILLIAM YOUNG `INV`</font><font color="red">--></font>`LOCATION`<font color="green">--></font><font style="border:2px solid green">Tytherley, Wimborne, Dorset, England `LOC`</font> |
+| `CITIZENSHIP` | Links an `INV/ASG` to its `CIT` | <font style="border:2px solid red">WILLIAM H. BAKER `INV`</font><font color="red">--></font>`CITIZENSHIP`<font color="yellow">--></font><font style="border:2px solid yellow">citizen of the United States`CIT`</font> |
 
 
 
@@ -47,8 +47,8 @@ Entities are tied together with 2 types of relations.
 
 | Relation      | Content                         | E.g.                                                         |
 | ------------- | ------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`    | Links an `INV/ASG` to its `LOC` | <font style="border:2px solid red">ISIDOR EDWARD BRENNER `INV`</font><font color="red">--</font>`LOCATION`<font color="green"><--</font><font style="border:2px solid green">CHICAGO, ILLINOIS `LOC`</font> |
-| `CITIZENSHIP` | Links an `ASG` to its `CIT`     | <font style="border:2px solid blue">EASTERN EXPANDED METAL COMPANY  `ASG`</font><font color="red">--</font>`CITIZENSHIP`<font color="yellow"><--</font><font style="border:2px solid yellow">CORPORATION . OF MASSACHUSETTS `CIT`</font> |
+| `LOCATION`    | Links an `INV/ASG` to its `LOC` | <font style="border:2px solid red">ISIDOR EDWARD BRENNER `INV`</font><font color="red">--></font>`LOCATION`<font color="green">--></font><font style="border:2px solid green">CHICAGO, ILLINOIS `LOC`</font> |
+| `CITIZENSHIP` | Links an `ASG` to its `CIT`     | <font style="border:2px solid blue">EASTERN EXPANDED METAL COMPANY  `ASG`</font><font color="red">--></font>`CITIZENSHIP`<font color="yellow">--></font><font style="border:2px solid yellow">CORPORATION . OF MASSACHUSETTS `CIT`</font> |
 
 
 
@@ -69,8 +69,8 @@ Entities are tied together with 2 types of relations.
 
 | Relation      | Content                         | E.g.                                                         |
 | ------------- | ------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`    | Links an `INV/ASG` to its `LOC` | <font style="border:2px solid red">George Norwitz`INV`</font><font color="red">--</font>`LOCATION`<font color="green"><--</font><font style="border:2px solid green">Philadelphia, Pa.`LOC`</font> |
-| `CITIZENSHIP` | Links an `ASG` to its `CIT`     | <font style="border:2px solid blue">The De Laval Separator Company `ASG`</font><font color="red">--</font>`CITIZENSHIP`<font color="yellow"><--</font><font style="border:2px solid yellow">Corporation of New Jersey `CIT`</font> |
+| `LOCATION`    | Links an `INV/ASG` to its `LOC` | <font style="border:2px solid red">George Norwitz`INV`</font><font color="red">--></font>`LOCATION`<font color="green">--></font><font style="border:2px solid green">Philadelphia, Pa.`LOC`</font> |
+| `CITIZENSHIP` | Links an `ASG` to its `CIT`     | <font style="border:2px solid blue">The De Laval Separator Company `ASG`</font><font color="red">--></font>`CITIZENSHIP`<font color="yellow">--></font><font style="border:2px solid yellow">Corporation of New Jersey `CIT`</font> |
 
 
 
@@ -90,7 +90,7 @@ Entities are tied together with 1 type of relations.
 
 | Relation      | Content                         | E.g.                                                         |
 | ------------- | ------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`    | Links an `INV/ASG` to its `LOC` | <font style="border:2px solid red">Willi Wolff `INV`</font><font color="red">--</font>`LOCATION`<font color="green"><--</font><font style="border:2px solid green">Schildgen, Germany `LOC`</font> |
+| `LOCATION`    | Links an `INV/ASG` to its `LOC` | <font style="border:2px solid red">Willi Wolff `INV`</font><font color="red">--></font>`LOCATION`<font color="green">--></font><font style="border:2px solid green">Schildgen, Germany `LOC`</font> |
 
 
 ## Named Entity recognition
