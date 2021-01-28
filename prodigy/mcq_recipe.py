@@ -1,6 +1,7 @@
 import prodigy
 from prodigy.components.loaders import JSONL
 
+HEADER_STYLE= ["<span style='background-color:#775ec2;color:white;font-size:100%;font-weight:bold;'>", "</span>"]
 
 @prodigy.recipe(
     "mcq.loc",
@@ -53,18 +54,34 @@ def mcq(dataset, file_path):
 
     def add_options(stream):
         # Helper function to add options to every task in a stream
+
         options = [
             {"id": "country", "text": "country"},
             {"id": "state", "text": "state"},
             {"id": "county", "text": "county"},
             {"id": "city", "text": "city"},
+            {"id": "postalCode", "text": "postalCode"},
             {"id": "district", "text": "district"},
             {"id": "street", "text": "street"},
-            {"id": "house", "text": "house"},
+            {"id": "houseNumber", "text": "houseNumber"},
         ]
+
+        def get_options(task):
+            if task.get("loc_matchLevel"):
+                options_ = []
+                for option in options:
+                    option_id = option["id"]
+                    options_ += [{"id": option_id, "text": f"{option_id} ({task.get(f'loc_{option_id}')})"}]
+                    if option["id"] == task.get("loc_matchLevel"):
+                        break
+            else:
+                options_ = options
+            return options_
+
         for task in stream:
-            task["options"] = options
-            task["text"] = "\n".join([task["loc_text"], task["loc_locationLabel"]])
+            task["options"] = get_options(task)
+            task["html"] = f"{HEADER_STYLE[0]} 🤨 {task['loc_text']} {HEADER_STYLE[1]}<br>" \
+                           f"{HEADER_STYLE[0]} 📍 {task['loc_locationLabel']} {HEADER_STYLE[1]}"
             yield task
 
     stream = JSONL(file_path)  # load in the JSONL file
