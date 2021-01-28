@@ -17,7 +17,7 @@ def get_bq_client(key_file):
 
 
 def get_job_done(
-    query, destination_table, key_file, write_disposition="WRITE_TRUNCATE"
+        query, destination_table, key_file, write_disposition="WRITE_TRUNCATE"
 ):
     job_config = bigquery.QueryJobConfig(
         destination=destination_table, write_disposition=write_disposition
@@ -75,10 +75,10 @@ def impute_publication_date(src_table, imputation_table, key_file: str = None):
 
 @app.command()
 def extract_sample_kepler(
-    src_table: str,
-    destination_file: str,
-    sample_ratio: float = 0.1,
-    key_file: str = None,
+        src_table: str,
+        destination_file: str,
+        sample_ratio: float = 0.1,
+        key_file: str = None,
 ):
     """Extract sample for kepler.gl"""
     query = f"""
@@ -109,13 +109,13 @@ def extract_sample_kepler(
 
 @app.command()
 def build_wgp_as_patentcity(
-    addresses_table: str = None,
-    patentee_location_table: str = None,
-    tls206_table: str = None,
-    tls207_table: str = None,
-    destination_table: str = None,
-    flavor: int = None,
-    key_file: str = None,
+        addresses_table: str = None,
+        patentee_location_table: str = None,
+        tls206_table: str = None,
+        tls207_table: str = None,
+        destination_table: str = None,
+        flavor: int = None,
+        key_file: str = None,
 ):
     assert flavor in [25, 45]
     assert patentee_location_table
@@ -216,7 +216,7 @@ def build_wgp_as_patentcity(
 
 @app.command()
 def order(
-    table: str, by: str = None, destination_table: str = None, key_file: str = None
+        table: str, by: str = None, destination_table: str = None, key_file: str = None
 ):
     """Order TABLE by BY and stage it to DESTINATION_TABLE (def overwrite)"""
     query = f"""
@@ -228,6 +228,58 @@ def order(
       {by}  # publication_number
     """
     get_job_done(query, destination_table, key_file)
+
+
+@app.command()
+def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
+                          destination_table: str = None, key_file: str = None):
+    """Return a stratified sample of TABLE (based on country_code and publication_decade) with BIN_SIZE samples
+    (if possible) by bin. If --no-preview, then, stratified sample saved to DESTINATION_TABLE, else
+
+    Doc: https://stackoverflow.com/questions/52901451/stratified-random-sampling-with-bigquery"""
+    if preview:
+        prefix = """
+        SELECT COUNT(*) nb_samples, country_code, publication_decade, ROUND(100*COUNT(*)/MAX(nb_bin),2) AS percentage
+        FROM ( 
+        """
+        select = """SELECT publication_number, publication_decade, country_code, nb_bin"""
+        suffix = """) GROUP BY country_code, publication_decade"""
+    else:
+        prefix, select, suffix = "", "SELECT * ", ""
+
+    query = f"""
+    WITH tmp AS (
+      SELECT CAST(publication_date/100000 AS INT64) AS publication_decade, 
+      * EXCEPT(patentee) 
+      FROM `{table}`,  # patentcity.patentcity.wgp_v1 
+            UNNEST(patentee) as patentee ), 
+      table_stats AS (
+  SELECT *, SUM(nb_bin) OVER() AS nb_total 
+      FROM (
+        SELECT 
+            country_code, 
+            CAST(publication_date/100000 AS INT64) AS publication_decade, 
+            COUNT(*) nb_bin 
+        FROM tmp
+        GROUP BY country_code, publication_decade)
+    )
+    {prefix}
+      {select}
+      FROM tmp
+      JOIN table_stats
+      USING(country_code, publication_decade)
+      WHERE RAND()< {bin_size}/nb_bin
+    {suffix}
+    """
+    if preview:
+        client = get_bq_client(key_file)
+        typer.echo(client.
+                   query(query).
+                   to_dataframe().
+                   sort_values(by=["country_code", "publication_decade"]).
+                   to_markdown(index=False))
+    else:
+        get_job_done(query, destination_table, key_file)
 
 
 if __name__ == "__main__":
