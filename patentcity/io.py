@@ -111,6 +111,7 @@ def extract_sample_kepler(
 def build_wgp_as_patentcity(
         addresses_table: str = None,
         patentee_location_table: str = None,
+        patstat_patent_properties_table: str = None,
         tls206_table: str = None,
         tls207_table: str = None,
         destination_table: str = None,
@@ -150,7 +151,7 @@ def build_wgp_as_patentcity(
         FROM
           tmp
         LEFT JOIN
-          `npl-parsing.external.patstat_patent_properties` AS patstat
+          `{patstat_patent_properties_table}` AS patstat
         ON
           tmp.appln_id = patstat.appln_id
         WHERE
@@ -178,7 +179,8 @@ def build_wgp_as_patentcity(
                   WHERE
                     tls207.person_id=tls206.person_id )
                 SELECT
-                  *
+                  patee.*,
+                  person.* EXCEPT(person_id)
                 FROM
                   `{patentee_location_table}` AS patee  # patentcity.external.person_location_id
                 LEFT JOIN
@@ -204,7 +206,7 @@ def build_wgp_as_patentcity(
             FROM
               tmp
             LEFT JOIN
-              `npl-parsing.external.patstat_patent_properties` AS patstat
+              `{patstat_patent_properties_table}` AS patstat
             ON
               tmp.appln_id = patstat.appln_id
             WHERE
