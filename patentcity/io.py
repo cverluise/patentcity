@@ -273,11 +273,12 @@ def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
     """
     if preview:
         client = get_bq_client(key_file)
-        typer.echo(client.
-                   query(query).
-                   to_dataframe().
-                   sort_values(by=["country_code", "publication_decade"]).
-                   to_markdown(index=False))
+        tmp = client.\
+            query(query).\
+            to_dataframe().\
+            sort_values(by=["country_code", "publication_decade"])
+        typer.echo(tmp.to_markdown(index=False))
+        typer.secho(f"Nb samples: {tmp['nb_samples'].sum()}", fg=typer.colors.BLUE)
     else:
         get_job_done(query, destination_table, key_file)
 
