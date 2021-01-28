@@ -1,5 +1,4 @@
 """Lib of var used in patencity CLI"""
-import json
 
 GEOC_URL = "https://batch.geocoder.ls.hereapi.com/6.2/jobs"
 GEOC_OUTCOLS = [
@@ -55,7 +54,7 @@ HERE2GMAPS = {
     "relevance": "",
     "matchType": "location_type",
     "matchCode": "",
-    "matchLevel": "",
+    "matchLevel": "types",
     "matchQualityStreet": "",
     "matchQualityHouseNumber": "",
     "matchQualityBuilding": "",
@@ -66,6 +65,34 @@ HERE2GMAPS = {
     "matchQualityState": "",
     "matchQualityCountry": "",
 }
+
+TYPE2LEVEL = {"street_address": "street",
+              "route": None,
+              "intersection": None,
+              "political": None,
+              "country": "country",
+              "administrative_area_level_1": "state",
+              "administrative_area_level_2": "county",
+              "administrative_area_level_3": None,
+              "administrative_area_level_4": None,
+              "administrative_area_level_5": None,
+              "colloquial_area": None,
+              "locality": "city",
+              "sublocality": "district",
+              "sublocality_level_1": None,
+              "sublocality_level_2": None,
+              "sublocality_level_3": None,
+              "sublocality_level_4": None,
+              "sublocality_level_5": None,
+              "neighborhood": "district",
+              "premise": "houseNumber",
+              "subpremise": "houseNumber",
+              "plus_code": "street",
+              "postal_code": "postalCode",
+              "natural_feature": "district",
+              "airport": "district",
+              "park": "district",
+              "point_of_interest": "houseNumber"}
 
 ISO_CROSSOVER = {
     "DD": "DDR",

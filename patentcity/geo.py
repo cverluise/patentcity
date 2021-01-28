@@ -13,7 +13,7 @@ import requests
 import typer
 from bs4 import BeautifulSoup
 
-from patentcity.lib import GEOC_URL, GEOC_OUTCOLS, HERE2GMAPS, get_isocrossover
+from patentcity.lib import GEOC_URL, GEOC_OUTCOLS, HERE2GMAPS, get_isocrossover, TYPE2LEVEL
 from patentcity.utils import clean_text, get_dt_human, get_empty_here_schema, flatten
 from patentcity.utils import ok, not_ok
 
@@ -413,7 +413,40 @@ def parse_result_gmaps(result, recid, seqNumber):
     res.update({"formatted_address": result["formatted_address"]})
     res.update({"recId": recid})
     res.update({"seqNumber": seqNumber})
+    res.update({"types": result["types"]})
     return res
+
+
+def types2level_crossover(types):
+    """Return a matchLevel (str, HERE flavor) based on types (list, GMAPS)"""
+    def min_geoent(levels):
+        level = None
+        if levels:
+            if "houseNumber" in levels:
+                level = "houseNumber"
+            elif "street" in levels:
+                level = "street"
+            elif "district" in levels:
+                level = "district"
+            elif "postalCode" in levels:
+                level = "postalCode"
+            elif "city" in levels:
+                level = "city"
+            elif "county" in levels:
+                level = "county"
+            elif "state" in levels:
+                level = "state"
+            elif "country" in levels:
+                level = "country"
+            else:
+                level = None
+        return level
+    levels = []
+    for type in types:
+        levels += [TYPE2LEVEL.get(type)]
+    levels = list(set(filter(lambda x: x, levels)))
+    level = min_geoent(levels)
+    return level
 
 
 def emulate_nomatch_gmaps(recid):
@@ -445,6 +478,7 @@ def parse_response_gmaps(response, recid, out_format, iso_crossover):
                 out.update({k: res.get(HERE2GMAPS[k])})
             out.update({"country": iso_crossover.get(out.get("country"))})
             # iso 2 to iso 3 (align gmaps (ISO2) on HERE (ISO3))
+            out.update({"matchLevel": types2level_crossover(out["matchLevel"])})
             if not out.get("latitude"):
                 # in case there were no coordinates in the result, it's a NOMATCH
                 out = emulate_nomatch_gmaps(recid)
