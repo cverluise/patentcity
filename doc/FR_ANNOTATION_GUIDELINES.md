@@ -51,7 +51,7 @@ Assignees (or inventors) and their corresponding geographic indication are tied 
 
 | Relation     | Content                          | E.g.                                                         |
 | ------------ | -------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">M.Frederic PERDRIZET `ASG`</font><font color = "blue">--<--</font>`LOCATION`<font color = "green">--<--</font><font style = "border:2px solid green">France (Gironde) `LOC`</font> |
+| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">M.Frederic PERDRIZET `ASG`</font><font color = "blue">--></font>`LOCATION`<font color = "green">--></font><font style = "border:2px solid green">France (Gironde) `LOC`</font> |
 
 ### *Format 2*, from FR1569051A to FR1605567A and then from FR2000001A1.
 
@@ -86,7 +86,7 @@ Assignees (or inventors) and their corresponding geographic indication are tied 
 
 | Relation     | Content                          | E.g.                                                         |
 | ------------ | -------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">KONISHIROKU PHOTO INDUSTRY CO LTD `ASG`</font><font color = "blue">--<--</font>`LOCATION`<font color = "green">--<--</font><font style = "border:2px solid green">Japon `LOC`</font> |
+| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue">KONISHIROKU PHOTO INDUSTRY CO LTD `ASG`</font><font color = "blue">--></font>`LOCATION`<font color = "green">--></font><font style = "border:2px solid green">Japon `LOC`</font> |
 
 ## Entities
 
