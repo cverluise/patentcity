@@ -37,8 +37,8 @@ These entities are tied together with 2 types of relations.
 
 | Relation     | Content                          | E.g.                                                         |
 | ------------ | -------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue"> Rhône Poulenc S.A `ASG`</font><font color = "blue">--<--</font>`LOCATION`<font color = "green">--<--</font><font style = "border:2px solid green">Paris (Frankreich)`LOC`</font> |
-| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid magenta">Dr `OCC`</font><font color = "blue">-->--</font>`OCCUPATION`<font color = "magenta">-->--</font><font style="border:2px solid blue">Elisabeth Kob `ASG`</font> |
+| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue"> Rhône Poulenc S.A `ASG`</font><font color = "blue">--></font>`LOCATION`<font color = "green">--></font><font style = "border:2px solid green">Paris (Frankreich)`LOC`</font> |
+| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid magenta">Dr `OCC`</font><font color = "magenta"><--</font>`OCCUPATION`<font color = "blue"><--</font><font style="border:2px solid blue">Elisabeth Kob `ASG`</font> |
 
 
 ### *Format 2*, from DD123500 onwards.
@@ -70,8 +70,8 @@ These entities are tied together with 2 types of relations.
 
 | Relation     | Content                          | E.g.                                                         |
 | ------------ | -------------------------------- | ------------------------------------------------------------ |
-| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue"> Maschinenfabrik Köppern GmbH & Co KG `ASG`</font><font color = "blue">--<--</font>`LOCATION`<font color = "green">--<--</font><font style = "border:2px solid green"> Hattingen, DE `LOC`</font> |
-| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid blue"> Lämmer, Hans-Georg `ASG`</font><font color = "blue">--<--</font>`OCCUPATION`<font color = "magenta">--<--</font><font style="border:2px solid magenta">Dipl-Ing. `OCC`</font> |
+| `LOCATION`   | Links an `ASG`/`INV` to a `LOC`  | <font style="border:2px solid blue"> Maschinenfabrik Köppern GmbH & Co KG `ASG`</font><font color = "blue">--></font>`LOCATION`<font color = "green">--></font><font style = "border:2px solid green"> Hattingen, DE `LOC`</font> |
+| `OCCUPATION` | Links an `ASG`/`INV` to an `OCC` | <font style="border:2px solid blue"> Lämmer, Hans-Georg `ASG`</font><font color = "blue">--></font>`OCCUPATION`<font color = "magenta">--></font><font style="border:2px solid magenta">Dipl-Ing. `OCC`</font> |
 
 
 ## Entities

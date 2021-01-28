@@ -4,7 +4,6 @@
 ## Preliminary comments
 
 The patent corpus that we consider for GB has two types of formats and spans the period 1893-1980.
-
 The formatting of UK patent documents have evolved in time but only modestly. Typically, until patent number GB2000001, the first paragraph of the text contains most of the relevant information, which are completed by the header, whose content changes slightly over time. See Figures 1, 2 and 3 for different examples.
 
 From GB2000001 onward, the information are located in the front-page of the patent in a structured way (see Figure 4 for an example). This only concerns 23,889 patent documents as we stop the analysis in 1980.
@@ -35,9 +34,9 @@ These entities are tied together with 3 types of relations.
 
 Relation|Content|E.g.
 ---|---|---
-`CITIZENSHIP`| Links an `ORG`/`PERS` to its `CIT` | <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--<--</font>`CITIZENSHIP`<font color="yellow">--<--</font><font style="border:2px solid yellow">subject of the king of Great Britain and Ireland `CIT`</font>
-`LOCATION`|Links an `ORG`/`PERS` to its `LOC` | <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--<--</font>`LOCATION`<font color="green">--<--</font><font style="border:2px solid green">145, Bethune Road, Amhurst Park, London N. `LOC`</font>
-`OCCUPATION`|Links an `PERS` to its `OCC`| <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--<--</font>`OCCUPATION`<font color="magenta">--<--</font><font style="border:2px solid magenta">Lighting Engineer `OCC`</font>
+`CITIZENSHIP`| Links an `ORG`/`PERS` to its `CIT` | <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--></font>`CITIZENSHIP`<font color="yellow">--></font><font style="border:2px solid yellow">subject of the king of Great Britain and Ireland `CIT`</font>
+`LOCATION`|Links an `ORG`/`PERS` to its `LOC` | <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--></font>`LOCATION`<font color="green">--></font><font style="border:2px solid green">145, Bethune Road, Amhurst Park, London N. `LOC`</font>
+`OCCUPATION`|Links an `PERS` to its `OCC`| <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--></font>`OCCUPATION`<font color="blue">--></font><font style="border:2px solid magenta">Lighting Engineer `OCC`</font>
 
 
 <details><summary>Other meta-data in GB patents</summary>
