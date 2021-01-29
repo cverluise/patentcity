@@ -1,81 +1,75 @@
 # CARD
 
 ## ddpatent01
-| label       |       p |       r |       f | config                        |
-|:------------|--------:|--------:|--------:|:------------------------------|
-| ALL         |   0.992 |   0.755 |   0.857 | config_rel_2_ddpatent01.json  |
-| LOCATION    |   0.99  |   0.992 |   0.991 | config_rel_32_ddpatent01.json |
-| CITIZENSHIP | nan     | nan     | nan     | config_rel_32_ddpatent01.json |
-| OCCUPATION  |   0.9   |   0.064 |   0.119 | config_rel_2_ddpatent01.json  |
+|    |   ALL |   LOCATION | CITIZENSHIP   |   OCCUPATION |
+|:---|------:|-----------:|:--------------|-------------:|
+| p  | 0.99  |      0.99  |               |        0.992 |
+| r  | 0.979 |      0.992 |               |        0.936 |
+| f  | 0.985 |      0.991 |               |        0.964 |
 
 ## ddpatent02
-| label       |       p |       r |       f | config                        |
-|:------------|--------:|--------:|--------:|:------------------------------|
-| ALL         |   0.894 |   0.949 |   0.921 | config_rel_37_ddpatent02.json |
-| LOCATION    |   0.981 |   0.933 |   0.956 | config_rel_38_ddpatent02.json |
-| CITIZENSHIP | nan     | nan     | nan     | config_rel_37_ddpatent02.json |
-| OCCUPATION  |   0.989 |   0.976 |   0.982 | config_rel_3_ddpatent02.json  |
+|    |   ALL |   LOCATION | CITIZENSHIP   |   OCCUPATION |
+|:---|------:|-----------:|:--------------|-------------:|
+| p  | 0.907 |      0.981 |               |        0.767 |
+| r  | 0.89  |      0.933 |               |        0.803 |
+| f  | 0.899 |      0.956 |               |        0.785 |
+
 
 ## depatent01
-| label       |       p |       r |       f | config                        |
-|:------------|--------:|--------:|--------:|:------------------------------|
-| ALL         |   0.967 |   0.875 |   0.918 | config_rel_15_depatent01.json |
-| LOCATION    |   0.991 |   0.997 |   0.994 | config_rel_15_depatent01.json |
-| CITIZENSHIP | nan     | nan     | nan     | config_rel_23_depatent01.json |
-| OCCUPATION  | nan     | nan     | nan     | config_rel_23_depatent01.json |
+|    |   ALL |   LOCATION | CITIZENSHIP   | OCCUPATION   |
+|:---|------:|-----------:|:--------------|:-------------|
+| p  | 0.967 |      0.991 |               |              |
+| r  | 0.875 |      0.997 |               |              |
+| f  | 0.918 |      0.994 |               |              |
+
 
 ## depatent02
-| label       |       p |       r |       f | config                        |
-|:------------|--------:|--------:|--------:|:------------------------------|
-| ALL         |   0.922 |   0.922 |   0.922 | config_rel_14_depatent02.json |
-| LOCATION    |   0.996 |   0.987 |   0.991 | config_rel_26_depatent02.json |
-| CITIZENSHIP | nan     | nan     | nan     | config_rel_26_depatent02.json |
-| OCCUPATION  |   0.949 |   0.581 |   0.721 | config_rel_1_depatent02.json  |
+|    |   ALL |   LOCATION | CITIZENSHIP   |   OCCUPATION |
+|:---|------:|-----------:|:--------------|-------------:|
+| p  | 0.994 |      0.996 |               |        0.985 |
+| r  | 0.988 |      0.987 |               |        0.992 |
+| f  | 0.991 |      0.991 |               |        0.988 |
+
 
 ## frpatent01
-| label       |      p |       r |       f | config                        |
-|:------------|-------:|--------:|--------:|:------------------------------|
-| ALL         |   0.99 |   0.962 |   0.976 | config_rel_10_frpatent01.json |
-| LOCATION    |   0.99 |   0.962 |   0.976 | config_rel_10_frpatent01.json |
-| CITIZENSHIP | nan    | nan     | nan     | config_rel_25_frpatent01.json |
-| OCCUPATION  | nan    | nan     | nan     | config_rel_25_frpatent01.json |
+|    |   ALL |   LOCATION | CITIZENSHIP   | OCCUPATION   |
+|:---|------:|-----------:|:--------------|:-------------|
+| p  | 0.99  |      0.99  |               |              |
+| r  | 0.962 |      0.962 |               |              |
+| f  | 0.976 |      0.976 |               |              |
 
 ## frpatent02
-| label       |       p |       r |       f | config                        |
-|:------------|--------:|--------:|--------:|:------------------------------|
-| ALL         |   0.984 |   0.997 |   0.991 | config_rel_37_frpatent02.json |
-| LOCATION    |   0.984 |   0.997 |   0.991 | config_rel_37_frpatent02.json |
-| CITIZENSHIP | nan     | nan     | nan     | config_rel_20_frpatent02.json |
-| OCCUPATION  | nan     | nan     | nan     | config_rel_20_frpatent02.json |
+|    |   ALL |   LOCATION | CITIZENSHIP   | OCCUPATION   |
+|:---|------:|-----------:|:--------------|:-------------|
+| p  | 0.984 |      0.984 |               |              |
+| r  | 0.997 |      0.997 |               |              |
+| f  | 0.991 |      0.991 |               |              |
 
 ## gbpatent01
-| label       |     p |     r |     f | config                        |
-|:------------|------:|------:|------:|:------------------------------|
-| ALL         | 0.864 | 0.939 | 0.9   | config_rel_27_gbpatent01.json |
-| LOCATION    | 0.867 | 0.938 | 0.901 | config_rel_27_gbpatent01.json |
-| CITIZENSHIP | 0.873 | 0.943 | 0.906 | config_rel_27_gbpatent01.json |
-| OCCUPATION  | 0.867 | 0.904 | 0.885 | config_rel_21_gbpatent01.json |
+|    |   ALL |   LOCATION |   CITIZENSHIP |   OCCUPATION |
+|:---|------:|-----------:|--------------:|-------------:|
+| p  | 0.869 |      0.867 |         0.873 |        0.867 |
+| r  | 0.935 |      0.938 |         0.943 |        0.904 |
+| f  | 0.901 |      0.901 |         0.906 |        0.885 |
 
 ## uspatent01
-| label       |       p |       r |       f | config                        |
-|:------------|--------:|--------:|--------:|:------------------------------|
-| ALL         |   0.98  |   0.966 |   0.973 | config_rel_18_uspatent01.json |
-| LOCATION    |   0.983 |   0.97  |   0.977 | config_rel_33_uspatent01.json |
-| CITIZENSHIP |   0.981 |   0.978 |   0.98  | config_rel_15_uspatent01.json |
-| OCCUPATION  | nan     | nan     | nan     | config_rel_7_uspatent01.json  |
+|    |   ALL |   LOCATION |   CITIZENSHIP | OCCUPATION   |
+|:---|------:|-----------:|--------------:|:-------------|
+| p  | 0.983 |      0.983 |         0.981 |              |
+| r  | 0.972 |      0.97  |         0.978 |              |
+| f  | 0.977 |      0.977 |         0.98  |              |
+
 
 ## uspatent02
-| label       |       p |       r |       f | config                        |
-|:------------|--------:|--------:|--------:|:------------------------------|
-| ALL         |   0.985 |   0.978 |   0.981 | config_rel_12_uspatent02.json |
-| LOCATION    |   0.977 |   0.989 |   0.983 | config_rel_36_uspatent02.json |
-| CITIZENSHIP |   0.983 |   0.975 |   0.979 | config_rel_11_uspatent02.json |
-| OCCUPATION  | nan     | nan     | nan     | config_rel_17_uspatent02.json |
+|    |   ALL |   LOCATION |   CITIZENSHIP | OCCUPATION   |
+|:---|------:|-----------:|--------------:|:-------------|
+| p  | 0.978 |      0.977 |         0.983 |              |
+| r  | 0.986 |      0.989 |         0.975 |              |
+| f  | 0.982 |      0.983 |         0.979 |              |
 
 ## uspatent03
-| label       |       p |       r |       f | config                        |
-|:------------|--------:|--------:|--------:|:------------------------------|
-| ALL         |   0.986 |   0.991 |   0.989 | config_rel_12_uspatent03.json |
-| LOCATION    |   0.993 |   0.998 |   0.995 | config_rel_31_uspatent03.json |
-| CITIZENSHIP |   0.97  |   0.982 |   0.976 | config_rel_11_uspatent03.json |
-| OCCUPATION  | nan     | nan     | nan     | config_rel_10_uspatent03.json |
+|    |   ALL |   LOCATION |   CITIZENSHIP | OCCUPATION   |
+|:---|------:|-----------:|--------------:|:-------------|
+| p  | 0.987 |      0.993 |         0.97  |              |
+| r  | 0.994 |      0.998 |         0.982 |              |
+| f  | 0.991 |      0.995 |         0.976 |              |
