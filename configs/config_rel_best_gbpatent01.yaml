@@ -1,5 +1,5 @@
 LOC:
-  max_length: 27
+  max_length: 28
   position: after
   max_n: 1
 CIT:
@@ -7,6 +7,6 @@ CIT:
   position: after
   max_n: 1
 OCC:
-  max_length: 22
+  max_length: 29
   position: after
   max_n: 1
