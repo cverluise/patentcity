@@ -1,0 +1,3 @@
+outs:
+- md5: a1bc9b37c3eb5718ead598815822a0f7
+  path: gold_ent_uspatent01.old.jsonl
