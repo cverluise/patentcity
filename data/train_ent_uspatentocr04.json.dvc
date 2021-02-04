@@ -1,0 +1,3 @@
+outs:
+- md5: 0e0f792284166ae37e07517b19bd3b57
+  path: train_ent_uspatentocr04.json
