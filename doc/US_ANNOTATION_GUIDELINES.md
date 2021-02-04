@@ -1,5 +1,7 @@
 # ANNOTATION GUIDELINES
 
+> ⚠️ GitHub markdown does not fully support visual annotation components (e.g. entity boxes) used below. We invite user interested in the annotation guidelines to download the documents and open it in a development environment supporting extended markdown syntax (e.g. MacDown, PyCharm, etc) and/or save it as a pdf.
+
 ## Preliminary comments
 
 The patent corpus that we consider for US has 4 types of formats and spans the period 1836-1980.
@@ -83,7 +85,7 @@ We extract 4 different "entities".
 | Entity | Content                           | E.g.                                                         |
 | ------ | --------------------------------- | ------------------------------------------------------------ |
 | INV    | Inventor full name                | Inventor: <font style="border:2px solid red">Vincent S. Farricielli `INV`</font> , New Haven, Conn. |
-| ASG    | Assignee full name                | Assignee: <font style="border:2px solid blue">Hannes Marker `ASG`</font>, Garmisch-Partenkirchen Germany. 
+| ASG    | Assignee full name                | Assignee: <font style="border:2px solid blue">Hannes Marker `ASG`</font>, Garmisch-Partenkirchen Germany.
 | LOC    | Location of the assignee/inventor | Theodore A. Rich <font style="border:2px solid green">Scotia, N.Y. `LOC`</font> |
 
 Entities are tied together with 1 type of relations.
@@ -307,7 +309,7 @@ The tag `INV` refers to the full name of an inventor.
 > <font style="border:2px solid blue">Francisco M. Serrano`INV`</font>, Paris, France, assignor to
 
 **Example 2: *Format 4*, from patent US3702536A**
-> Inventor: <font style="border:2px solid blue">John W. Gregory`INV`</font>, Middleburg Heights, Ohio 
+> Inventor: <font style="border:2px solid blue">John W. Gregory`INV`</font>, Middleburg Heights, Ohio
 
 **Example 3: *Decreased*, from patent US3718608A**
 > Inventors: <font style="border:2px solid blue">Daniel W. Mason`INV`</font>, Peabody; <font style="border:2px solid blue">Henry
@@ -315,7 +317,7 @@ H. Nester`INV`</font>, deceased, late of Peabody, Mass. by Dianne L. Nester, adm
 
 #### The tag `LOC`
 
-The tag `LOC` refers to the location of the inventor or assignee and is given by the city and state. 
+The tag `LOC` refers to the location of the inventor or assignee and is given by the city and state.
 
 ##### Specific cases
 
@@ -352,7 +354,7 @@ do not tag the representant
 ##### Examples
 
 **Example 1: *Format 3*, from patent *US3608112A*
-> Finn T. Ergens, Milwaukeee, Wis., assignor to <font style="border:2px solid red">Outboard Marine Corporation`ASG`</font>, Milwaukee, Wis. 
+> Finn T. Ergens, Milwaukeee, Wis., assignor to <font style="border:2px solid red">Outboard Marine Corporation`ASG`</font>, Milwaukee, Wis.
 
 ** Example 2: *Format 4*, from patent *US3621396A*
 >  Assignee: <font style="border:2px solid red">Bell Telephone Laboratory, Inc.`ASG`</font>

@@ -1,5 +1,6 @@
 # ANNOTATION GUIDELINES
 
+> ⚠️ GitHub markdown does not fully support visual annotation components (e.g. entity boxes) used below. We invite user interested in the annotation guidelines to download the documents and open it in a development environment supporting extended markdown syntax (e.g. MacDown, PyCharm, etc) and/or save it as a pdf.
 
 ## Preliminary comments
 
