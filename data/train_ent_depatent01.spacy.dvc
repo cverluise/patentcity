@@ -1,0 +1,3 @@
+outs:
+- md5: a773b35e8159f2660d57a9d1b09b51d6
+  path: train_ent_depatent01.spacy
