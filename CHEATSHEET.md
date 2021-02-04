@@ -11,7 +11,7 @@ mv ${FILE} ${FILE}_tmp && cat ${FILE}_tmp | grep -v '"spans":\[\]' | grep spans 
 
 ## Head-child switch
 
-> ℹ️ Original REL labelling convention went from attributes (e.g. `LOC`, `CIT`, `OCC`) to  patentees (`ASG`, `INV`), which was counter-intuitive in terms of `head` `child` and performance metrics (although) tractable. The below recipe makes the switch between head and child to make downstream REL handling easier.
+> ℹ️ Original REL arc labelling convention went from attributes (e.g. `LOC`, `CIT`, `OCC`) to  patentees (`ASG`, `INV`), which was counter-intuitive in terms of `head` `child` and performance metrics (although) tractable. The below recipe makes the switch between head and child to make downstream REL handling easier.
 
 ```shell
 for file in $(ls gold_rel_*.jsonl); do  sed 's/\"child/$tmp/g;s/\"head/\"child/g;s/$tmp/\"head/g' ${file} >> ${file}_corr; done;
