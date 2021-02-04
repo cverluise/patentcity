@@ -1,5 +1,7 @@
 # ANNOTATION GUIDELINES
 
+> ⚠️ GitHub markdown does not fully support visual annotation components (e.g. entity boxes) used below. We invite user interested in the annotation guidelines to download the documents and open it in a development environment supporting extended markdown syntax (e.g. MacDown, PyCharm, etc) and/or save it as a pdf.
+
 The patent corpus that we consider for France spans the period 1902-1980 and has 2 types of formats.
 
 ## Preliminary comments
@@ -40,12 +42,12 @@ We notice some slight changes within this format across time.
 
 We extract 4 different "entities" from the header of FR patents in format category 1.
 
-  Entity|Content|E.g
-  ---|---|---
- `ASG`| Assignee full name | <font style="border:2px solid blue">M. Robert John Jocelyn SWAN `ASG`</font> résidant en Angleterre
- `INV`| Inventor full name | (Demande de brevet déposée aux Etats-Unis d'Amérique au nom de <font style="border:2px solid red"> M. Ladislas Charles MATSCH `INV`</font>)
-	`LOC`| Location of the assignee/inventor| M. Louis LEGRAND résidant en <font style="border:2px solid green">France `LOC`</font>.
-	`CLAS`| Technological class (French system) | <font style="border:2px solid purple"> XII Instruments de précision 3 POIDS ET MESURES, INSTRUMENTS DE MATHEMMATIQUES`CLAS`</font>
+Entity|Content|E.g
+---|---|---
+`ASG`| Assignee full name | <font style="border:2px solid blue">M. Robert John Jocelyn SWAN `ASG`</font> résidant en Angleterre
+`INV`| Inventor full name | (Demande de brevet déposée aux Etats-Unis d'Amérique au nom de <font style="border:2px solid red"> M. Ladislas Charles MATSCH `INV`</font>)
+`LOC`| Location of the assignee/inventor| M. Louis LEGRAND résidant en <font style="border:2px solid green">France `LOC`</font>.
+`CLAS`| Technological class (French system) | <font style="border:2px solid purple"> XII Instruments de précision 3 POIDS ET MESURES, INSTRUMENTS DE MATHEMMATIQUES`CLAS`</font>
 
 Assignees (or inventors) and their corresponding geographic indication are tied together through the relation "LOCATION".
 
