@@ -44,3 +44,6 @@
 /gold_rel_uspatent01.jsonl
 /gold_rel_uspatent02.jsonl
 /gold_rel_uspatent03.jsonl
+/gold_ent_uspatentocr04.jsonl
+/test_ent_uspatentocr04.json
+/train_ent_uspatentocr04.json
