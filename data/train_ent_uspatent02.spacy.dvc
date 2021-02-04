@@ -1,0 +1,3 @@
+outs:
+- md5: 9a57ac932da668d8ece3751a92b8f212
+  path: train_ent_uspatent02.spacy

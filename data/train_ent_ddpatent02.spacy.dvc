@@ -1,0 +1,3 @@
+outs:
+- md5: 172679a0e2d9f95bef2655bbf6cb1162
+  path: train_ent_ddpatent02.spacy
