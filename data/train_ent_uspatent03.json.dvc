@@ -1,0 +1,3 @@
+outs:
+- md5: 36287cbac127ee318be6770d6b2712bb
+  path: train_ent_uspatent03.json
