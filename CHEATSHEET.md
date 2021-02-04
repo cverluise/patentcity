@@ -6,7 +6,7 @@
 
 ```shell
 FILE=""  # should be a .jsonl
-mv ${FILE} ${FILE}_tmp && cat ${FILE}_tmp | grep -v '"spans":\[\]' | grep spans |jq  -s -c 'group_by(.publication_number)[] | { publication_number: .[0].publication_number, spans:[.[].spans[]]}' >> ${FILE}
+mv ${FILE} ${FILE}_tmp && cat ${FILE}_tmp | grep -v '"spans":\[\]' | grep spans |jq  -s -c 'group_by(.publication_number)[] | { publication_number: .[0].publication_number, text: .[0].text, tokens: .[0].tokens, spans:[.[].spans[]]}' >> ${FILE}
 ```
 
 ## Head-child switch
