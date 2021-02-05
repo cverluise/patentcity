@@ -10,6 +10,8 @@ from glob import glob
 from hashlib import md5
 from itertools import repeat
 from operator import itemgetter
+from pathlib import Path
+import spacy
 
 import numpy as np
 import pandas as pd
@@ -504,6 +506,69 @@ def get_cit_code(text: str, fst: dict, fuzzy_match: bool):
     pred = get_pred(candidates, fst)
 
     return pred
+
+
+class ReportFormat:
+    def __init__(
+        self, file: Path, lang: str, bins: iter, crop: bool = True, md: bool = False
+    ):
+        self.file = file
+        self.lang = lang
+        self.bins = bins
+        self.crop = crop
+        self.md = md
+        self.nlp = spacy.blank(lang)
+
+    def hist_to_stdout(self, a):
+        hist_vals, hist_bins = np.histogram(a, bins=self.bins)
+        if self.crop:
+            nonzero = np.where(hist_vals != 0)
+            hist_vals, hist_bins = hist_vals[nonzero], hist_bins[nonzero]
+
+        if self.md:
+            typer.echo("```shell script")
+        for i in range(len(hist_vals)):
+            typer.echo(
+                f"{hist_bins[i]}\t" + "+" * (hist_vals / len(a) * 100).astype(int)[i]
+            )
+        if self.md:
+            typer.echo("```")
+
+    def get_data(self):
+        # typer.echo("Acquiring data ...")
+        with self.file.open("r") as lines:
+            lengths = []
+            span_starts = []
+            for line in lines:
+                line = json.loads(line)
+                text = line["text"]
+                spans = line.get("spans")
+                span_starts += [span["token_start"] for span in spans]
+                doc = self.nlp(text)
+                lengths += [len(doc)]
+            return lengths, span_starts
+
+    def get_report(self):
+        lengths, span_starts = self.get_data()
+        typer.secho(f"# REPORT `{os.path.basename(self.file)}`", fg=typer.colors.BLUE)
+        typer.secho(f"\n> ℹ️ Unit: token\n", fg=typer.colors.BLUE)
+        typer.secho("\n## Doc lengths\n", fg=typer.colors.BLUE)
+        self.hist_to_stdout(lengths)
+        typer.secho("\n## Span starts\n", fg=typer.colors.BLUE)
+        self.hist_to_stdout(span_starts)
+
+
+@app.command()
+def report_format(path: str, lang: str, bins: str = "0,2000,50", crop=True, md=True):
+    """
+    Return the histogram of doc length and start span
+    """
+    files = list(Path().glob(path))
+    start, end, by = list(map(int, bins.split(",")))
+    bins = np.arange(start, end, by)
+    for file in files:
+        report = ReportFormat(file, lang, bins, crop=crop, md=md)
+        report.get_report()
 
 
 if __name__ == "__main__":
