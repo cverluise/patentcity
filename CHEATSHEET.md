@@ -16,3 +16,15 @@ mv ${FILE} ${FILE}_tmp && cat ${FILE}_tmp | grep -v '"spans":\[\]' | grep spans 
 ```shell
 for file in $(ls gold_rel_*.jsonl); do  sed 's/\"child/$tmp/g;s/\"head/\"child/g;s/$tmp/\"head/g' ${file} >> ${file}_corr; done;
 ```
+
+## Parallel models training
+
+> ℹ️ Training models takes time, it's better to train them in parallel
+
+```shell
+LANG=de  # support for en fr
+OFFICE=de  # support dd fr gb us
+cat lib/format.txt| grep $OFFICE | parallel -j 2 --eta 'spacy train configs/${LANG}_t2vner.cfg --paths.train data/train_ent_{}.spacy --paths.dev data/train_ent_{}.spacy --output models/${LANG}_ent_{}'
+```
+
+> ⚠️ Don't start too many jobs at once. On a mac mini,each job takes up to 2 CPUs.
