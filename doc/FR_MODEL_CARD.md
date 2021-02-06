@@ -50,19 +50,3 @@ spacy train configs/fr_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 |---|---|
 |0.1|ent - v2 spaCy|
 |1.0|ent - v3 spaCy|
-
-
-## References
-
-
-- [EspaceNet] [EspaceNet Patent Search](https://www.epo.org/searching-for-patents/technical/espacenet.html), EPO
-- Tesseract, 2014-2020, https://github.com/tesseract-ocr/tesseract/
-
-## Notes
-
-This document is based on:
-
-- [Data descriptor format](https://www.nature.com/sdata/publish/for-authors#format), Nature of Scientific Data
-- [FAIR principles](https://www.go-fair.org/fair-principles/)
-- [Spacy models description](https://spacy.io/models/en)
-- [Model cards for model description, Mitchell et al, 2019](https://arxiv.org/pdf/1810.03993.pdf)
