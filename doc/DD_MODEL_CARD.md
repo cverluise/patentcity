@@ -90,7 +90,7 @@ f  |66.67  |90.59  |94.83  |88.94 | 87.55
 
 ## References
 
-- [EspaceNet] [EspaceNet Patent Search](https://www.epo.org/searching-for-patents/technical/espacenet.html), EPO
+- [EspaceNet Patent Search](https://www.epo.org/searching-for-patents/technical/espacenet.html), EPO
 - Tesseract, 2014-2020, https://github.com/tesseract-ocr/tesseract/
 
 ## Notes
