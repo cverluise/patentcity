@@ -1,0 +1,11 @@
+ddpatent01
+ddpatent02
+depatent01
+depatent02
+frpatent01
+frpatent02
+gbpatent01
+uspatent01
+uspatent02
+uspatent03
+uspatent04
