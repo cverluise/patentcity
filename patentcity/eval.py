@@ -19,15 +19,18 @@ def spacy_model(model: str, pipes: str = "ner"):
     *Actually report results from runtime eval
     """
 
-    scores = json.loads(open(os.path.join(model, "meta.json"), "r").read())["accuracy"]
+    scores = json.loads(open(os.path.join(model, "meta.json"), "r").read())[
+        "performance"
+    ]
 
     pipes = pipes.split(",")
     if "ner" in pipes:
         p, r, f = scores["ents_p"], scores["ents_r"], scores["ents_f"]
         typer.secho("NER Scores", fg=typer.colors.BLUE)
-        typer.echo(f"{pd.DataFrame.from_dict(scores['ents_per_type']).round(2)}")
-        typer.echo("-" * 37)
-        typer.echo(f"ALL   %.2f  %.2f  %.2f" % (p, r, f))
+        perfs = pd.DataFrame.from_dict(scores["ents_per_type"])
+        perfs["ALL"] = (p, r, f)
+        perfs = perfs.round(2).T
+        typer.echo(f"{perfs.sort_index().to_markdown()}")
 
 
 @app.command()
@@ -121,7 +124,11 @@ def relationship_model(file, config, report: str = "short"):
         data = []
         for error in errors:
             data += [report_error(error)]
-        typer.echo(pd.DataFrame(columns=["error_rel", "error_context"], data=data).to_markdown(index=False))
+        typer.echo(
+            pd.DataFrame(columns=["error_rel", "error_context"], data=data).to_markdown(
+                index=False
+            )
+        )
 
     def get_relation(head, child):
         relation = []
@@ -176,12 +183,16 @@ def relationship_model(file, config, report: str = "short"):
             label = label if label else "ALL"
             if all([prec, rec, f1]):
                 res.update(
-                    {label: {"p": round(prec, 3), "r": round(rec, 3), "f": round(f1, 3)}}
+                    {
+                        label: {
+                            "p": round(prec, 3),
+                            "r": round(rec, 3),
+                            "f": round(f1, 3),
+                        }
+                    }
                 )
             else:
-                res.update(
-                    {label: {"p": None, "r": None, "f": None}}
-                )
+                res.update({label: {"p": None, "r": None, "f": None}})
 
         if report == "json":
             typer.echo(json.dumps(res))
