@@ -29,7 +29,7 @@ def spacy_model(model: str, pipes: str = "ner"):
         typer.secho("NER Scores", fg=typer.colors.BLUE)
         perfs = pd.DataFrame.from_dict(scores["ents_per_type"])
         perfs["ALL"] = (p, r, f)
-        perfs = perfs.round(2).T
+        perfs = perfs.round(2)
         typer.echo(f"{perfs.sort_index().to_markdown()}")
 
 
