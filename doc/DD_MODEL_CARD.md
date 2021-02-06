@@ -15,7 +15,7 @@
 ## 👷 Training
 
 ```shell
-FORMAT=depatent01  # depatent02
+FORMAT=ddpatent01  # ddpatent02
 spacy train configs/de_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy --paths.dev data/train_ent_${FORMAT}.spacy --output models/de_ent_${FORMAT}
 ```
 
@@ -23,19 +23,19 @@ spacy train configs/de_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 
 ### `de_ent_ddpatent01/model-best`
 
-|    |   ALL |   ASG |   CLAS |   INV |   LOC |   OCC |
-|:---|------:|------:|-------:|------:|------:|------:|
-| p  |  0.99 |  0.98 |   0.99 |  0.99 |     1 |  0.97 |
-| r  |  0.99 |  0.99 |   1    |  0.96 |     1 |  0.98 |
-| f  |  0.99 |  0.98 |   1    |  0.98 |     1 |  0.97 |
+|    |   ALL |   ASG |   INV |   LOC |   OCC |
+|:---|------:|------:|------:|------:|------:|
+| p  |  0.99 |  0.99 |  0.96 |  0.99 |  0.99 |
+| r  |  0.99 |  0.99 |  0.96 |  0.99 |  1    |
+| f  |  0.99 |  0.99 |  0.96 |  0.99 |  0.99 |
 
 ### `de_ent_ddpatent02/model-best`
 
-|    |   ALL |   ASG |   CIT |   CLAS |   INV |   LOC |   OCC |
-|:---|------:|------:|------:|-------:|------:|------:|------:|
-| p  |  0.99 |  0.99 |     0 |   0.99 |  0.98 |  0.99 |  0.97 |
-| r  |  0.98 |  0.98 |     0 |   1    |  0.99 |  0.98 |  0.97 |
-| f  |  0.98 |  0.98 |     0 |   0.99 |  0.99 |  0.98 |  0.97 |
+|    |   ALL |   ASG |   INV |   LOC |   OCC |
+|:---|------:|------:|------:|------:|------:|
+| p  |  0.95 |  0.94 |  0.95 |  0.98 |  0.94 |
+| r  |  0.94 |  0.87 |  0.97 |  0.95 |  0.94 |
+| f  |  0.95 |  0.91 |  0.96 |  0.96 |  0.94 |
 
 
 ## 🎯 Intended use
