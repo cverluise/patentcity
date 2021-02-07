@@ -1,8 +1,11 @@
 import json
+import yaml
 import os
 from glob import iglob
 from smart_open import open
+import git
 
+from patentcity.relationship import create_relationship_component
 import spacy
 import typer
 
@@ -16,16 +19,18 @@ General functioning: Stream text blobs | process through spaCy model | print jso
 """
 
 app = typer.Typer()
+repo = git.Repo(search_parent_directories=True)
+sha = repo.head.object.hexsha
 
 
-def get_text(file, max_char):
+def get_text(file, max_char=None):
     with open(file, "r") as fin:
         text = fin.read()[:max_char] if max_char else fin.read()
         publication_number = os.path.splitext(os.path.basename(file))[0]
         return " ".join([publication_number, text])
 
 
-@app.command()
+@app.command(deprecated=True)
 def beta(
     path: str,
     model: str = None,
@@ -88,6 +93,43 @@ def beta(
         docs = nlp.pipe(texts)
     for doc in docs:
         serialize_blob(doc)
+
+
+@app.command()
+def v1(
+    path: str,
+    model: str,
+    rel_config: str,
+    reduced_perf: bool = False,
+    inDelim: str = "|",
+):
+    """
+    Print jsonl blobs of the v1 dataset
+    """
+    with open(rel_config, "r") as config_file:
+        config = yaml.load(config_file, Loader=yaml.FullLoader)
+
+    nlp = spacy.load(model)
+    nlp.add_pipe("relation_extractor", config={"config": config}, last=True)
+    blobs = iglob(path)
+    texts = (get_text(file) for file in blobs)
+    if reduced_perf:
+        docs = nlp.pipe(texts, n_threads=1, batch_size=1)
+    else:
+        docs = nlp.pipe(texts)
+    for doc in docs:
+        patentees = [
+            {k: clean_text(v, inDelim) for k, v in patentee.items()}
+            for patentee in doc._.patentees
+        ]
+        row = {
+            "publication_number": doc[0].text,
+            "patentee": patentees,
+            "model_ents": model,
+            "model_rels": rel_config,
+            "git_sha": sha,
+        }
+        typer.echo(json.dumps(row))
 
 
 if __name__ == "__main__":
