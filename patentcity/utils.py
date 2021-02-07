@@ -516,14 +516,20 @@ def get_cit_code(text: str, fst: dict, fuzzy_match: bool):
 
 class ReportFormat:
     def __init__(
-        self, file: Path, lang: str, bins: iter, crop: bool = True, md: bool = False
+        self,
+        file: Path,
+        bins: iter,
+        lang: str = None,
+        crop: bool = True,
+        md: bool = False,
     ):
         self.file = file
-        self.lang = lang
         self.bins = bins
+        self.lang = lang
         self.crop = crop
         self.md = md
-        self.nlp = spacy.blank(lang)
+        self.nlp = spacy.blank(self.lang) if self.lang else self.lang
+        self.unit = "tok" if self.lang else "char"
 
     def hist_to_stdout(self, a):
         hist_vals, hist_bins = np.histogram(a, bins=self.bins)
@@ -549,15 +555,22 @@ class ReportFormat:
                 line = json.loads(line)
                 text = line["text"]
                 spans = line.get("spans")
-                span_starts += [span["token_start"] for span in spans]
-                doc = self.nlp(text)
-                lengths += [len(doc)]
+                if self.unit == "tok":
+                    span_starts += [span["token_start"] for span in spans]
+                else:
+                    span_starts += [span["start"] for span in spans]
+
+                if self.unit == "tok":
+                    doc = self.nlp(text)
+                    lengths += [len(doc)]
+                else:
+                    lengths += [len(text)]
             return lengths, span_starts
 
     def get_report(self):
         lengths, span_starts = self.get_data()
         typer.secho(f"# REPORT `{os.path.basename(self.file)}`", fg=typer.colors.BLUE)
-        typer.secho(f"\n> ℹ️ Unit: token\n", fg=typer.colors.BLUE)
+        typer.secho(f"\n> ℹ️ Unit: {self.unit}\n", fg=typer.colors.BLUE)
         typer.secho("\n## Doc lengths\n", fg=typer.colors.BLUE)
         self.hist_to_stdout(lengths)
         typer.secho("\n## Span starts\n", fg=typer.colors.BLUE)
@@ -565,7 +578,13 @@ class ReportFormat:
 
 
 @app.command()
-def report_format(path: str, lang: str, bins: str = "0,2000,50", crop=True, md=True):
+def report_format(
+    path: str,
+    bins: str = "0,2000,50",
+    lang: str = None,
+    crop: bool = True,
+    md: bool = True,
+):
     """
     Return the histogram of doc length and start span
     """
@@ -573,7 +592,7 @@ def report_format(path: str, lang: str, bins: str = "0,2000,50", crop=True, md=T
     start, end, by = list(map(int, bins.split(",")))
     bins = np.arange(start, end, by)
     for file in files:
-        report = ReportFormat(file, lang, bins, crop=crop, md=md)
+        report = ReportFormat(file, bins=bins, lang=lang, crop=crop, md=md)
         report.get_report()
 
 
