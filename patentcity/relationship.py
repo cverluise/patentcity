@@ -1,6 +1,61 @@
+import spacy
+from spacy import Language
+from spacy.tokens import Doc
+
 LABELS = ["LOC", "CIT", "OCC"]
 POSITIONS = ["before", "after", "any"]
 RELATIONS = {"LOC": "LOCATION", "CIT": "CITIZENSHIP", "OCC": "OCCUPATION"}
+default_config = {
+    "LOC": {"max_length": None, "position": "after", "max_n": 1},
+    "CIT": {"max_length": None, "position": "after", "max_n": 1},
+    "OCC": {"max_length": None, "position": "after", "max_n": 1},
+}
+
+Doc.set_extension("patentees", default=[], force=True)
+
+
+@spacy.Language.factory("relation_extractor", default_config={"config": default_config})
+def create_relationship_component(nlp: Language, name: str, config: dict):
+    return EntityRelationshipComponent(config)
+
+
+class EntityRelationshipComponent:
+    def __init__(self, config: dict):
+        self.config = config
+        if not Doc.has_extension("patentees"):
+            Doc.set_extension("patentees", default=[])
+
+    def get_span(self, ent):
+        return {
+            "token_start": ent.start,
+            "token_end": ent.end,
+            "start": ent.start_char,
+            "end": ent.end_char,
+            "text": ent.text,
+            "label": ent.label_,
+        }
+
+    def __call__(self, doc: Doc):
+        ents = [self.get_span(ent) for ent in doc.ents]
+        heads = [ent for ent in ents if ent["label"] in ["ASG", "INV"]]
+        children = [ent for ent in ents if ent["label"] not in ["ASG", "INV"]]
+
+        for head in heads:
+            line = format_line(head, label="name")
+            for label in ["LOC", "OCC", "CIT"]:
+                cfg_ = self.config[label]
+                child = get_child(
+                    head,
+                    children,
+                    label,
+                    cfg_["max_length"],
+                    cfg_["position"],
+                    cfg_["max_n"],
+                )
+                if child:
+                    line.update(format_line(child[0]))
+            doc._.patentees.append(line)
+        return doc
 
 
 def harvest_candidates(
