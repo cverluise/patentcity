@@ -100,6 +100,7 @@ def v1(
     path: str,
     model: str,
     rel_config: str,
+    batch_size: int = 1000,
     reduced_perf: bool = False,
     inDelim: str = "|",
 ):
@@ -116,7 +117,7 @@ def v1(
     if reduced_perf:
         docs = nlp.pipe(texts, n_threads=1, batch_size=1)
     else:
-        docs = nlp.pipe(texts)
+        docs = nlp.pipe(texts, batch_size=batch_size)
     for doc in docs:
         patentees = [
             {k: clean_text(v, inDelim) for k, v in patentee.items()}
