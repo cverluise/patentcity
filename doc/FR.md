@@ -7,11 +7,13 @@ The patent system was institutionalised in France as early as 1791. However, the
 We consider all patents with a publication date between 1900 and 1980. We address all patents with kind-code **A, A1**. In total, we consider ** 1,577,934** documents from 1902.
 
 
-
 ## 📚 Data source
 
 From the earliest patent that we consider FR317502A to patent FR2427761A (excluded), we collected image data (png) from Espacenet and OCRed the first page using Tesseract v5.
 
+Patent office | Time span (publication year)| Kind code(s)
+---|---|---
+FR|1902-1980|A, A1
 
 Publication number (range)| Data source | Pre-processing | E.g. | Format #
  --- | --- | --- | --- | ---
