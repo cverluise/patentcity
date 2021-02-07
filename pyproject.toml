@@ -34,6 +34,7 @@ mkdocs = "^1.1.2"
 mkdocs-material = "^5.4.0"
 mkdocs-minify-plugin = "^0.3.0"
 pymdown-extensions = "^7.1"
+gitpython = "^3.1.12"
 
 [build-system]
 requires = ["poetry>=0.12"]
