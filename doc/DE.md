@@ -11,6 +11,9 @@ We address all German patents with a publication date between 1877 and 1980 publ
 
 From the earliest patent that we consider DE1C to patent DE7927785 (excluded), we collected image data (png) from Espacenet and OCRed the first page using Tesseract v5.
 
+Patent office | Time span (publication year)| Kind code(s)
+---|---|---
+DE|1877-1980|A1, B, B3, C, C1, D1
 
 Publication number (range)| Data source | Pre-processing | E.g. | Format #
  --- | --- | --- | --- | ---

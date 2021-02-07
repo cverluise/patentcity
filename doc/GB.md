@@ -10,6 +10,10 @@ We consider all patents with a publication date between 1894 and 1980. We addres
 
 From the earliest patent that we consider GB189317126A to patent GB2000001A (excluded), we collected image data (png) from Espacenet and OCRed the first page using Tesseract v5.
 
+Patent office | Time span (publication year)| Kind code(s)
+---|---|---
+GB|1893-1900|A
+
 Publication number (range)| Data source | Pre-processing | E.g. | Format #
  --- | --- | --- | --- | ---
 GB189317126A-GB2000001A (excluded) | Espacenet | OCR | GB309428A| 1

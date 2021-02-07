@@ -8,6 +8,10 @@ XX
 
 From the earliest patent that we consider XX to patent XX (excluded), we collected XX image data (png) from Espacenet and OCRed the first page using Tesseract v5.
 
+Patent office | Time span (publication year)| Kind code(s)
+---|---|---
+DD|1950-1992|A, A1, B
+
 Publication number (range)| Data source | Pre-processing | E.g. | Format #
  --- | --- | --- | --- | ---
 XX | Espacenet | OCR |DE283698C| 1
