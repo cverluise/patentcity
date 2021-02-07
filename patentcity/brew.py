@@ -100,6 +100,7 @@ def v1(
     path: str,
     model: str,
     rel_config: str,
+    max_char: int = None,
     batch_size: int = 1000,
     reduced_perf: bool = False,
     inDelim: str = "|",
@@ -113,7 +114,7 @@ def v1(
     nlp = spacy.load(model)
     nlp.add_pipe("relation_extractor", config={"config": config}, last=True)
     blobs = iglob(path)
-    texts = (get_text(file) for file in blobs)
+    texts = (get_text(file, max_char=max_char) for file in blobs)
     if reduced_perf:
         docs = nlp.pipe(texts, n_threads=1, batch_size=1)
     else:
