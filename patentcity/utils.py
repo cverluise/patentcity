@@ -36,11 +36,12 @@ WHITE_RE = re.compile(r"\s+")
 
 def clean_text(text, inDelim=None):
     """Remove anchors <*> and </*> and replace by an empty space"""
-    text = TAG_RE.sub(" ", text)
-    text = WHITE_RE.sub(" ", text)
-    text = text.replace("\n", " ")
-    if inDelim:
-        text = text.replace(inDelim, " ")
+    if isinstance(text, str):
+        text = TAG_RE.sub(" ", text)
+        text = WHITE_RE.sub(" ", text)
+        text = text.replace("\n", " ")
+        if inDelim:
+            text = text.replace(inDelim, " ")
     return text
 
 
@@ -85,8 +86,19 @@ def flatten(l):
     return [item for sublist in l for item in sublist]
 
 
+def move_file(file, u_bounds):
+    fname = os.path.basename(file)
+    if fname:
+        pubnum = get_pubnum(fname)
+        if pubnum:
+            group = get_group(pubnum, u_bounds)
+            dest = os.path.join(os.path.dirname(file), f"group_{group}", fname)
+            os.rename(file, dest)
+            typer.secho(f"{ok}Move {file}->group_{group}/", fg=typer.colors.GREEN)
+
+
 @app.command()
-def make_groups(path: str, u_bounds: str = None):
+def make_groups(path: str, u_bounds: str = None, max_workers: int = 10):
     """Distribute files in folders by groups. u_bounds (upper bounds of the groups) should be
     ascending & comma-separated."""
     files = glob(path)
@@ -94,15 +106,9 @@ def make_groups(path: str, u_bounds: str = None):
         os.mkdir(os.path.join(os.path.dirname(path), f"group_{i + 1}"))
         for i in range(len(u_bounds.split(",")) + 1)
     ]
-    for file in files:
-        fname = os.path.basename(file)
-        if fname:
-            pubnum = get_pubnum(fname)
-            if pubnum:
-                group = get_group(pubnum, u_bounds)
-                dest = os.path.join(os.path.dirname(file), f"group_{group}", fname)
-                os.rename(file, dest)
-                typer.secho(f"{ok}Move {file}->group_{group}/", fg=typer.colors.GREEN)
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        executor.map(move_file, files, repeat(u_bounds))
 
 
 @app.command()
