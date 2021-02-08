@@ -178,8 +178,6 @@ fuzzysearch==0.7.3 \
     --hash=sha256:bbf3047d3ed3fd80b69d38c7a07fdef5c9738436249586095e27f32397c8ad2e \
     --hash=sha256:f3def5f55c90300ae1c4f3da830ff3ed8bf7827ace1e3cecff819c9de5f23aa7 \
     --hash=sha256:d5a1b114ceee50a5e181b2fe1ac1b4371ac8db92142770a48fed49ecbc37ca4c
-fuzzyset==0.0.19 \
-    --hash=sha256:2bf5a3de20f107124a4842d875e5005ee523719f97ab731caf4121e86ec8ccbc
 google==3.0.0 \
     --hash=sha256:889cf695f84e4ae2c55fbc0cfdaf4c1e729417fa52ab1db0485202ba173e4935 \
     --hash=sha256:143530122ee5130509ad5e989f0512f7cb218b2d4eddbafbad40fd10e8d8ccbe
@@ -702,8 +700,6 @@ pyrsistent==0.17.3 \
 python-dateutil==2.8.1 \
     --hash=sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c \
     --hash=sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a
-python-levenshtein==0.12.0 \
-    --hash=sha256:033a11de5e3d19ea25c9302d11224e1a1898fe5abd23c61c7c360c25195e3eb1
 pytz==2020.1 \
     --hash=sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed \
     --hash=sha256:c35965d010ce31b23eeb663ed3cc8c906275d6be1a34393a1d73a41febf4a048
@@ -840,9 +836,6 @@ srsly==2.4.0 \
 tabulate==0.8.7 \
     --hash=sha256:ac64cb76d53b1231d364babcd72abbb16855adac7de6665122f97b593f1eb2ba \
     --hash=sha256:db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007
-texttable==1.6.3 \
-    --hash=sha256:f802f2ef8459058736264210f716c757cbf85007a30886d8541aa8c3404f1dda \
-    --hash=sha256:ce0faf21aa77d806bbff22b107cc22cce68dc9438f97a2df32c93e9afa4ce436
 thinc==8.0.1 \
     --hash=sha256:091c1da6d6d02d985a27d2e77c14e5b92c8e637d989fe7069dcae02549af1c22 \
     --hash=sha256:763e6a4c59da2f80ba0959f13fc40760e2e3dafd7a6e2101ba8ff9d4e8684b7b \

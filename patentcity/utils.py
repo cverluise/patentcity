@@ -16,7 +16,8 @@ import spacy
 import numpy as np
 import pandas as pd
 import typer
-from fuzzyset import FuzzySet
+
+# from fuzzyset import FuzzySet
 from fuzzysearch import find_near_matches
 
 from patentcity.lib import GEOC_OUTCOLS, get_isocrossover, list_countrycodes
@@ -295,46 +296,46 @@ def prep_searchtext(
             typer.echo(f"{recid}{inDelim}{searchtext}")
 
 
-def mcq(line, fset, ignore):
-    line = json.loads(line)  # .replace("\n", "").split(indelim)
-    if not line["recId"] in ignore:
-        text = line["text"]
-        closests = fset.get(text)
-        if closests:
-            closests = [closest[1] for closest in closests]
-            line.update(
-                {
-                    "options": [
-                        {"id": closest, "text": closest} for closest in closests
-                    ],
-                    "accept": [closests[0]],
-                }
-            )
-            typer.echo(json.dumps(line))
-        else:
-            pass
-    else:
-        pass
-
-
-@app.command()
-def mcq_factory(
-    loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
-):
-    """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
-    on the text of each line in the loc file and the targets in the index file"""
-    targets = open(index, "r").read().split("\n")
-    fset = FuzzySet()
-    for target in targets:
-        fset.add(target)
-    if list_ignore:
-        with open(list_ignore, "r") as ignore:
-            ignore = ignore.read().replace('"', "").split("\n")
-    else:
-        ignore = []
-    with open(loc, "r") as lines:
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            executor.map(mcq, lines, repeat(fset), repeat(ignore))
+# def mcq(line, fset, ignore):
+#     line = json.loads(line)  # .replace("\n", "").split(indelim)
+#     if not line["recId"] in ignore:
+#         text = line["text"]
+#         closests = fset.get(text)
+#         if closests:
+#             closests = [closest[1] for closest in closests]
+#             line.update(
+#                 {
+#                     "options": [
+#                         {"id": closest, "text": closest} for closest in closests
+#                     ],
+#                     "accept": [closests[0]],
+#                 }
+#             )
+#             typer.echo(json.dumps(line))
+#         else:
+#             pass
+#     else:
+#         pass
+#
+#
+# @app.command()
+# def mcq_factory(
+#     loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
+# ):
+#     """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
+#     on the text of each line in the loc file and the targets in the index file"""
+#     targets = open(index, "r").read().split("\n")
+#     fset = FuzzySet()
+#     for target in targets:
+#         fset.add(target)
+#     if list_ignore:
+#         with open(list_ignore, "r") as ignore:
+#             ignore = ignore.read().replace('"', "").split("\n")
+#     else:
+#         ignore = []
+#     with open(loc, "r") as lines:
+#         with ThreadPoolExecutor(max_workers=max_workers) as executor:
+#             executor.map(mcq, lines, repeat(fset), repeat(ignore))
 
 
 @app.command()
