@@ -612,7 +612,7 @@ def report_format(
 def prep_geoc_gold(gold: str, data: str):
     """Return a csv file with gold annotations"""
 
-    def accept2array(x):
+    def level2array(x):
         idx = levels.index(x) if x else None
         if idx:
             truth_array = [1] * (idx + 1) + [0] * (len(levels) - (idx + 1))
@@ -623,15 +623,25 @@ def prep_geoc_gold(gold: str, data: str):
     gold_df = pd.read_json(gold, lines=True)
     data_df = pd.read_json(data, lines=True)
 
-    gold_ = gold_df.query("answer=='accept'")[["loc_text", "accept"]]
+    gold_ = gold_df.query("answer=='accept'")[["loc_text", "accept", "options"]]
     gold_["accept"] = gold_["accept"].apply(lambda x: x[0] if x else None)
+    gold_["option"] = gold_["options"].apply(lambda x: x[-1]["id"] if x else None)
 
     out = data_df.merge(gold_, on="loc_text", how="left")
-    labels = pd.DataFrame(
-        data=out["accept"].apply(accept2array).values.tolist(), columns=levels
+    truth_values = pd.DataFrame(
+        data=out["accept"].apply(lambda x: level2array(x)).values.tolist(),
+        columns=list(map(lambda x: x + "_is_true", levels)),
+    )
+    option_values = pd.DataFrame(
+        data=out["option"].apply(lambda x: level2array(x)).values.tolist(),
+        columns=list(map(lambda x: x + "_is_option", levels)),
     )
 
-    typer.echo(out.merge(labels, right_index=True, left_index=True).to_csv())
+    out = out.merge(truth_values, right_index=True, left_index=True).merge(
+        option_values, right_index=True, left_index=True
+    )
+
+    typer.echo(out.to_csv())
 
 
 if __name__ == "__main__":
