@@ -34,6 +34,17 @@ app = typer.Typer()
 TAG_RE = re.compile(r"<[^>]+>")
 WHITE_RE = re.compile(r"\s+")
 
+levels = [
+    "country",
+    "state",
+    "county",
+    "city",
+    "postalCode",
+    "district",
+    "street",
+    "houseNumber",
+]
+
 
 def clean_text(text, inDelim=None):
     """Remove anchors <*> and </*> and replace by an empty space"""
@@ -595,6 +606,32 @@ def report_format(
     for file in files:
         report = ReportFormat(file, bins=bins, lang=lang, crop=crop, md=md)
         report.get_report()
+
+
+@app.command()
+def prep_geoc_gold(gold: str, data: str):
+    """Return a csv file with gold annotations"""
+
+    def accept2array(x):
+        idx = levels.index(x) if x else None
+        if idx:
+            truth_array = [1] * (idx + 1) + [0] * (len(levels) - (idx + 1))
+        else:
+            truth_array = [0] * len(levels)
+        return truth_array
+
+    gold_df = pd.read_json(gold, lines=True)
+    data_df = pd.read_json(data, lines=True)
+
+    gold_ = gold_df.query("answer=='accept'")[["loc_text", "accept"]]
+    gold_["accept"] = gold_["accept"].apply(lambda x: x[0] if x else None)
+
+    out = data_df.merge(gold_, on="loc_text", how="left")
+    labels = pd.DataFrame(
+        data=out["accept"].apply(accept2array).values.tolist(), columns=levels
+    )
+
+    typer.echo(out.merge(labels, right_index=True, left_index=True).to_csv())
 
 
 if __name__ == "__main__":
