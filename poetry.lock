@@ -272,18 +272,6 @@ version = "0.7.3"
 attrs = ">=19.3"
 
 [[package]]
-category = "main"
-description = "A simple python fuzzyset implementation."
-name = "fuzzyset"
-optional = false
-python-versions = "*"
-version = "0.0.19"
-
-[package.dependencies]
-python-levenshtein = "*"
-texttable = "*"
-
-[[package]]
 category = "dev"
 description = "Git Object Database"
 name = "gitdb"
@@ -1020,17 +1008,6 @@ six = ">=1.5"
 
 [[package]]
 category = "main"
-description = "Python extension for computing string edit distances and similarities."
-name = "python-levenshtein"
-optional = false
-python-versions = "*"
-version = "0.12.0"
-
-[package.dependencies]
-setuptools = "*"
-
-[[package]]
-category = "main"
 description = "World timezone definitions, modern and historical"
 name = "pytz"
 optional = false
@@ -1344,14 +1321,6 @@ widechars = ["wcwidth"]
 
 [[package]]
 category = "main"
-description = "module for creating simple ASCII tables"
-name = "texttable"
-optional = false
-python-versions = "*"
-version = "1.6.3"
-
-[[package]]
-category = "main"
 description = "A refreshing functional take on deep learning, compatible with your favorite libraries"
 name = "thinc"
 optional = false
@@ -1601,7 +1570,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [metadata]
-content-hash = "e69a359180cc5343a35ce9f47000b99866779a0c0ad7647e501e440b6d913211"
+content-hash = "c9a781474b9e0a51632e55a2bbacb696edf18cfb22c1ebaa4a73dae207e0bb99"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -1812,9 +1781,6 @@ fuzzysearch = [
     {file = "fuzzysearch-0.7.3-cp38-cp38-win32.whl", hash = "sha256:bbf3047d3ed3fd80b69d38c7a07fdef5c9738436249586095e27f32397c8ad2e"},
     {file = "fuzzysearch-0.7.3-cp38-cp38-win_amd64.whl", hash = "sha256:f3def5f55c90300ae1c4f3da830ff3ed8bf7827ace1e3cecff819c9de5f23aa7"},
     {file = "fuzzysearch-0.7.3.tar.gz", hash = "sha256:d5a1b114ceee50a5e181b2fe1ac1b4371ac8db92142770a48fed49ecbc37ca4c"},
-]
-fuzzyset = [
-    {file = "fuzzyset-0.0.19.tar.gz", hash = "sha256:2bf5a3de20f107124a4842d875e5005ee523719f97ab731caf4121e86ec8ccbc"},
 ]
 gitdb = [
     {file = "gitdb-4.0.5-py3-none-any.whl", hash = "sha256:91f36bfb1ab7949b3b40e23736db18231bf7593edada2ba5c3a174a7b23657ac"},
@@ -2439,9 +2405,6 @@ python-dateutil = [
     {file = "python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"},
     {file = "python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"},
 ]
-python-levenshtein = [
-    {file = "python-Levenshtein-0.12.0.tar.gz", hash = "sha256:033a11de5e3d19ea25c9302d11224e1a1898fe5abd23c61c7c360c25195e3eb1"},
-]
 pytz = [
     {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},
     {file = "pytz-2020.1.tar.gz", hash = "sha256:c35965d010ce31b23eeb663ed3cc8c906275d6be1a34393a1d73a41febf4a048"},
@@ -2602,10 +2565,6 @@ srsly = [
 tabulate = [
     {file = "tabulate-0.8.7-py3-none-any.whl", hash = "sha256:ac64cb76d53b1231d364babcd72abbb16855adac7de6665122f97b593f1eb2ba"},
     {file = "tabulate-0.8.7.tar.gz", hash = "sha256:db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"},
-]
-texttable = [
-    {file = "texttable-1.6.3-py2.py3-none-any.whl", hash = "sha256:f802f2ef8459058736264210f716c757cbf85007a30886d8541aa8c3404f1dda"},
-    {file = "texttable-1.6.3.tar.gz", hash = "sha256:ce0faf21aa77d806bbff22b107cc22cce68dc9438f97a2df32c93e9afa4ce436"},
 ]
 thinc = [
     {file = "thinc-8.0.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:091c1da6d6d02d985a27d2e77c14e5b92c8e637d989fe7069dcae02549af1c22"},

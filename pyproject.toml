@@ -21,7 +21,6 @@ googlemaps = "^4.4.2"
 google-cloud = "^0.34.0"
 google-cloud-bigquery = "^1.27.2"
 typer =  {extras = ["all"], version = "^0.3.2"}
-fuzzyset = "^0.0.19"
 fuzzysearch = "^0.7.3"
 tabulate = "^0.8.7"
 spacy = "^3.0.1"
