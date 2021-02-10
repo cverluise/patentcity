@@ -16,7 +16,7 @@
 
 ```shell
 FORMAT=gbpatent01
-spacy train configs/en_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy --paths.dev data/train_ent_${FORMAT}.spacy --output models/de_ent_${FORMAT}
+spacy train configs/en_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy --paths.dev data/train_ent_${FORMAT}.spacy --output models/en_ent_${FORMAT}
 ```
 
 ## 🔮 Model Performance
