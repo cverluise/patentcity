@@ -13,9 +13,15 @@ import requests
 import typer
 from bs4 import BeautifulSoup
 
-from patentcity.lib import GEOC_URL, GEOC_OUTCOLS, HERE2GMAPS, get_isocrossover, TYPE2LEVEL
+from patentcity.lib import (
+    GEOC_URL,
+    GEOC_OUTCOLS,
+    HERE2GMAPS,
+    get_isocrossover,
+    TYPE2LEVEL,
+)
 from patentcity.utils import clean_text, get_dt_human, get_empty_here_schema, flatten
-from patentcity.utils import ok, not_ok
+from patentcity.utils import ok, not_ok, get_recid
 
 """
                               Parse LOC using libpostal
@@ -253,10 +259,12 @@ def prep_geoc_data(file: str, inDelim: str = "|"):
         typer.echo(f"recId{inDelim}searchText")  # This is the required header
         for line in lines:  # iterate over file lines {"loc":[{""},{}],...}
             line = json.loads(line)
-            locs = line.get("loc")
-            if locs:  # if no loc found, no need to geocode it...
-                for loc in locs:
-                    typer.echo(f"{loc['recId']}{inDelim}{loc['raw']}")
+            patentees = line.get("patentee")
+            # locs = line.get("loc")
+            for patentee in patentees:
+                loc_text = patentee.get("loc_text")
+                if loc_text:
+                    typer.echo(f"{get_recid(loc_text)}{inDelim}{loc_text}")
 
 
 # @app.command()
@@ -419,6 +427,7 @@ def parse_result_gmaps(result, recid, seqNumber):
 
 def types2level_crossover(types):
     """Return a matchLevel (str, HERE flavor) based on types (list, GMAPS)"""
+
     def min_geoent(levels):
         level = None
         if levels:
@@ -441,6 +450,7 @@ def types2level_crossover(types):
             else:
                 level = None
         return level
+
     levels = []
     for type in types:
         levels += [TYPE2LEVEL.get(type)]
