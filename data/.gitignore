@@ -74,8 +74,4 @@
 /train_ent_uspatent02.spacy
 /train_ent_uspatent03.spacy
 /train_ent_uspatent04.spacy
-/raw_gbpatentxx.jsonl
-/raw_uspatentxx.jsonl
-/raw_frpatentxx.jsonl
-/raw_dxpatentxx.jsonl
 /gold_geoc_wgp45.csv
