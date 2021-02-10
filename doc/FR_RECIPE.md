@@ -3,10 +3,10 @@
 #### Serialize data
 
 ```shell
+LANG=fr
 OFFICE=fr
-for FORMAT in $(cat lib/formats.txt| grep ${OFFICE});
-do time patentcity brew v1 "data_tmp/${FORMAT}/*.txt" models/${OFFICE}_ent_${FORMAT}/model-best configs/config_rel_best_${FORMAT}.yaml --max-char 1300 >> /data_tmp/entrel_${FORMAT}.jsonl;
-done;
+FORMAT=frpatent01 # frpatent02
+patentcity brew v1 "data_${OFFICE}/${FORMAT}/*.txt" models/${LANG}_ent_${FORMAT}/model-best configs/config_rel_best_${FORMAT}.yaml >> entrel_${FORMAT}.jsonl
 ```
 
 #### Prepare data for geocoding
