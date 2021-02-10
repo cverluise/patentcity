@@ -3,7 +3,10 @@
 #### Serialize data
 
 ````shell script
-
+LANG=de
+OFFICE=dd
+FORMAT=ddpatent01 # ddpatent02
+patentcity brew v1 "data_${OFFICE}/${FORMAT}/*.txt" models/${LANG}_ent_${FORMAT}/model-best configs/config_rel_best_${FORMAT}.yaml >> entrel_${FORMAT}.jsonl
 ````
 
 #### Prepare data for geocoding
