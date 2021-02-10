@@ -1,0 +1,3 @@
+outs:
+- md5: 5881b0fa2401e3b859d84c31f2bef90e
+  path: gold_rel_uspatent04.jsonl
