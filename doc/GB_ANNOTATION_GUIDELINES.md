@@ -39,7 +39,14 @@ Relation|Content|E.g.
 `LOCATION`|Links an `ORG`/`PERS` to its `LOC` | <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--></font>`LOCATION`<font color="green">--></font><font style="border:2px solid green">145, Bethune Road, Amhurst Park, London N. `LOC`</font>
 `OCCUPATION`|Links an `PERS` to its `OCC`| <font style="border:2px solid red">Maxim Hanson Hersey `PERS`</font><font color="red">--></font>`OCCUPATION`<font color="blue">--></font><font style="border:2px solid magenta">Lighting Engineer `OCC`</font>
 
-
+<details><summary>Specific labelling issues</summary>
+ 
+  * In some cases the text of the patent is repeated twice in the same document, once for the _provisionnal specification_ and once for the _complete specification_ (see e.g. GB132951A). In such case, all relevant entities must be labelled, even if this means labelling the same entities twice.
+  
+  * In some cases, the name of the inventor, the name of the assignee and even its address can appear at the end of the patent. Those entities must not be labelled (e.g. GB509140A).
+    
+</details>
+  
 <details><summary>Other meta-data in GB patents</summary>
 
 The header contains some specific information including:
