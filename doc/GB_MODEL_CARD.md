@@ -15,26 +15,28 @@
 ## 👷 Training
 
 ```shell
-spacy train configs/en_t2vner.cfg --paths.train data/train_ent_gbpatent01.spacy --paths.dev data/train_ent_gbpatent01.spacy --output models/de_ent_gbpatent01
+FORMAT=gbpatent01
+spacy train configs/en_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy --paths.dev data/train_ent_${FORMAT}.spacy --output models/de_ent_${FORMAT}
 ```
 
 ## 🔮 Model Performance
 
--|ORG|CIT|LOC|OCC| PERS | ALL
----|---|---|---|---|---|---
-p|86.21|94.24|85.11|87.88|89.42|88.53
-r|86.96|91.20|84.55|81.31|83.97|86.14
-f|86.58|92.70|84.83|84.47|86.61|87.32
+### `en_ent_gbpatent01/model-best`
+
+|    |   ALL |   ASG |   CIT |   INV |   LOC |   OCC |
+|:---|------:|------:|------:|------:|------:|------:|
+| p  |  0.93 |  0.93 |  0.96 |  0.95 |  0.92 |  0.9  |
+| r  |  0.94 |  0.92 |  0.96 |  0.96 |  0.92 |  0.86 |
+| f  |  0.94 |  0.93 |  0.96 |  0.96 |  0.92 |  0.88
 
 
 ## :dart: Intended use
 
-
 `en_ent_gbpatent01` has been specifically trained on GB patents GB189317126A to GB2000001A (excluded). The model's performance are not guaranteed out of this scope.
-
 
 ## 🔂 Versions and alternative approaches
 
 |Version|Comment|
 |---|---|
 |0.1|ent - v2 spaCy|
+|1.0|ent - v3 spaCy|
