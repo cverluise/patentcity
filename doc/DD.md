@@ -14,8 +14,8 @@ DD|1950-1992|A, A1, B
 
 Publication number (range)| Data source | Pre-processing | E.g. | Format #
  --- | --- | --- | --- | ---
-XX | Espacenet | OCR |DE283698C| 1
-XX | Espacenet | OCR | DE2454950C| 2
+DD1-DD123499 | Espacenet | OCR |DE283698C| 1
+DD123500 | Espacenet | OCR | DE2454950C| 2
 
 ## 🚜 Extraction schema
 
