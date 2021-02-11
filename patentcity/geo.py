@@ -262,9 +262,10 @@ def prep_geoc_data(file: str, inDelim: str = "|"):
             patentees = line.get("patentee")
             # locs = line.get("loc")
             for patentee in patentees:
+                loc_recid = patentee.get("loc_recId")
                 loc_text = patentee.get("loc_text")
-                if loc_text:
-                    typer.echo(f"{get_recid(loc_text)}{inDelim}{loc_text}")
+                if loc_recid and loc_text:
+                    typer.echo(f"{loc_recid}{inDelim}{loc_text}")
 
 
 # @app.command()
