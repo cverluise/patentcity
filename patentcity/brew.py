@@ -136,7 +136,7 @@ def v1(
         typer.echo(json.dumps(row))
 
 
-def topping_(line, fst):
+def topping_(line, cit_fst):
     line = json.loads(line)
     patentees_ = []
     patentees = line["patentee"]
@@ -150,7 +150,7 @@ def topping_(line, fst):
         if loc_text:
             patentee.update({"recId": get_recid(loc_text)})
         if cit_text:
-            cit_code = get_cit_code(cit_text, fst, True)
+            cit_code = get_cit_code(cit_text, cit_fst, True)
             patentee.update({"cit_code": cit_code})
         patentees_ += [patentee]
     line.update({"patentee": patentees_})
