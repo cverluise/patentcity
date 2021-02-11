@@ -4,12 +4,14 @@ import os
 from glob import iglob
 from smart_open import open
 import git
+from concurrent.futures import ThreadPoolExecutor
+from itertools import repeat
 
 from patentcity.relationship import create_relationship_component
 import spacy
 import typer
 
-from patentcity.utils import clean_text, get_recid
+from patentcity.utils import clean_text, get_recid, get_cit_code
 
 """
                              Brew patentcity dataset
@@ -132,6 +134,35 @@ def v1(
             "git_sha": sha,
         }
         typer.echo(json.dumps(row))
+
+
+def topping_(line, fst):
+    line = json.loads(line)
+    patentees_ = []
+    patentees = line["patentee"]
+    for patentee in patentees:
+        name_label = patentee.get("name_label")
+        loc_text = patentee.get("loc_text")
+        cit_text = patentee.get("cit_text")
+        is_inv = name_label == "INV"
+        is_asg = name_label == "ASG"
+        patentee.update({"is_asg": is_asg, "is_inv": is_inv})
+        if loc_text:
+            patentee.update({"recId": get_recid(loc_text)})
+        if cit_text:
+            cit_code = get_cit_code(cit_text, fst, True)
+            patentee.update({"cit_code": cit_code})
+        patentees_ += [patentee]
+    line.update({"patentee": patentees_})
+    typer.echo(json.dumps(line))
+
+
+@app.command(name="v1.topping")
+def topping(file: str, fst_file: str, max_workers=10):
+    fst = json.loads(open(fst_file, "r").read())
+    with open(file, "r") as lines:
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            executor.map(topping_, lines, repeat(fst))
 
 
 if __name__ == "__main__":
