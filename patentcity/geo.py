@@ -260,7 +260,6 @@ def prep_geoc_data(file: str, inDelim: str = "|"):
         for line in lines:  # iterate over file lines {"loc":[{""},{}],...}
             line = json.loads(line)
             patentees = line.get("patentee")
-            # locs = line.get("loc")
             for patentee in patentees:
                 loc_recid = patentee.get("loc_recId")
                 loc_text = patentee.get("loc_text")
