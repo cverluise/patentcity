@@ -6,7 +6,7 @@ XX
 
 ## 📚 Data
 
-From the earliest patent that we consider XX to patent XX (excluded), we collected XX image data (png) from Espacenet and OCRed the first page using Tesseract v5.
+From the earliest patent that we consider XX to patent XX (excluded), we collected 197,451 image data (png) from Espacenet and OCRed the first page using Tesseract v5.
 
 Patent office | Time span (publication year)| Kind code(s)
 ---|---|---
