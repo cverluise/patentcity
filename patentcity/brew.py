@@ -158,11 +158,12 @@ def topping_(line, fst):
 
 
 @app.command(name="v1.topping")
-def topping(file: str, fst_file: str, max_workers=10):
-    fst = json.loads(open(fst_file, "r").read())
+def topping(file: str, cit_fst_file: str, max_workers=10):
+    """Return patentees with v1 var derived from extracted vars (is_asg, is_inv, etc)"""
+    cit_fst = json.loads(open(cit_fst_file, "r").read())
     with open(file, "r") as lines:
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            executor.map(topping_, lines, repeat(fst))
+            executor.map(topping_, lines, repeat(cit_fst))
 
 
 if __name__ == "__main__":
