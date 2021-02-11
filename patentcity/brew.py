@@ -148,8 +148,8 @@ def topping_(line, cit_fst):
         is_asg = name_label == "ASG"
         patentee.update({"is_asg": is_asg, "is_inv": is_inv})
         if loc_text:
-            patentee.update({"recId": get_recid(loc_text)})
-        if cit_text:
+            patentee.update({"loc_recId": get_recid(loc_text)})
+        if cit_text and cit_fst:
             cit_code = get_cit_code(cit_text, cit_fst, True)
             patentee.update({"cit_code": cit_code})
         patentees_ += [patentee]
@@ -158,9 +158,10 @@ def topping_(line, cit_fst):
 
 
 @app.command(name="v1.topping")
-def topping(file: str, cit_fst_file: str, max_workers=10):
+def topping(file: str, cit_fst_file: str = None, max_workers=10):
     """Return patentees with v1 var derived from extracted vars (is_asg, is_inv, etc)"""
-    cit_fst = json.loads(open(cit_fst_file, "r").read())
+
+    cit_fst = json.loads(open(cit_fst_file, "r").read()) if cit_fst_file else None
     with open(file, "r") as lines:
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             executor.map(topping_, lines, repeat(cit_fst))
