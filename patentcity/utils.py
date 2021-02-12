@@ -306,8 +306,8 @@ def prep_searchtext(
                 if like_postcode:
                     for match in like_postcode:
                         searchtext = searchtext.replace(match, "")
-            if remove_countrycode:
 
+            if remove_countrycode:
                 like_countrycode = re.findall(
                     r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)), searchtext
                 )
