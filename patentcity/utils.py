@@ -289,8 +289,6 @@ def prep_searchtext(
         config = yaml.load(config_file, Loader=yaml.FullLoader)
 
     remove_postcode = config["postcode"]["remove"]
-    if remove_postcode:
-        numdigits = config["postcode"]["numdigits"]
     remove_countrycode = config["countrycode"]["remove"]
     if remove_countrycode:
         countrycodes = config["countrycode"]["list"]
@@ -303,7 +301,7 @@ def prep_searchtext(
 
 
             if remove_postcode:
-                like_postcode = re.findall(fr"\b\d{numdigits,}\b", searchtext)
+                like_postcode = re.findall(r"\b\d{4,}\b", searchtext)
                 if like_postcode:
                     for match in like_postcode:
                         searchtext = searchtext.replace(match, "")

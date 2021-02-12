@@ -2,7 +2,6 @@ inDelim: "|"
 
 postcode:
   remove: false
-  numdigits: null
 
 countrycode:
   remove: false
