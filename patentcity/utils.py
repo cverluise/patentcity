@@ -311,7 +311,7 @@ def prep_searchtext(
                 like_countrycode = re.findall(
                     r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)), searchtext
                 )
-                if like_countrycode:
+                if like_countrycode and len(searchtext) > 5:
                     like_countrycode = list(filter(lambda x: x, sum(like_countrycode, ())))
 
                     for match in like_countrycode:
