@@ -1,3 +1,9 @@
-remove_postcode: True
-remove_countrycode: True
 inDelim: "|"
+
+postcode:
+  remove: True
+  numdigits: 4
+
+countrycode:
+  remove: True
+  list: DD,BRD,SU

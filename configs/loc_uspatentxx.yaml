@@ -1,3 +1,9 @@
-remove_postcode: false
-remove_countrycode: false
 inDelim: "|"
+
+postcode:
+  remove: false
+  numdigits: null
+
+countrycode:
+  remove: false
+  list: null
