@@ -378,7 +378,7 @@ def get_geoc_data_gmaps(
     Return the gmaps geocoding response
 
     region:  The region code, specified as a ccTLD (“top-level domain”) two-character
-    value (e.g. en, us, de, fr).
+    value (e.g. uk, us, de, fr).
     language: the language in which to return results
 
     Doc:
