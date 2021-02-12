@@ -354,4 +354,4 @@ def get_isocrossover(reverse: str = False):
 def list_countrycodes():
     """Return a list of country codes (iso 2 and 3)"""
     countrycodes = ISO_CROSSOVER
-    return list(countrycodes.keys()) + list(countrycodes.values()) + ["BRD"]
+    return list(countrycodes.keys()) + list(countrycodes.values()) + ["BRD", "WD", "SU", "DD"]
