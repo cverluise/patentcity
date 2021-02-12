@@ -285,28 +285,36 @@ def prep_searchtext(
     config_file: str,
 ):
     """Prepare search text so as to avoid common pitfalls (country codes, postcodes, etc)"""
-    countrycodes = list_countrycodes()
     with open(config_file, "r") as config_file:
         config = yaml.load(config_file, Loader=yaml.FullLoader)
 
-    remove_postcode = config["remove_postcode"]
-    remove_countrycode = config["remove_countrycode"]
+    remove_postcode = config["postcode"]["remove"]
+    if remove_postcode:
+        numdigits = config["postcode"]["numdigits"]
+    remove_countrycode = config["countrycode"]["remove"]
+    if remove_countrycode:
+        countrycodes = config["countrycode"]["list"]
+        countrycodes = list_countrycodes() if countrycodes=="*" else config["countrycode"]["list"].split(",")
     inDelim = config["inDelim"]
 
     with open(file, "r") as lines:
         for line in lines:
             recid, searchtext = line.split(inDelim)
-            like_postcode = re.findall(r"\b\d{4,}\b", searchtext)
-            like_countrycode = re.findall(
-                r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)), searchtext
-            )
-            if like_postcode:
-                if remove_postcode:
+
+
+            if remove_postcode:
+                like_postcode = re.findall(fr"\b\d{numdigits,}\b", searchtext)
+                if like_postcode:
                     for match in like_postcode:
                         searchtext = searchtext.replace(match, "")
-            if like_countrycode:
-                like_countrycode = list(filter(lambda x: x, sum(like_countrycode, ())))
-                if remove_countrycode:
+            if remove_countrycode:
+
+                like_countrycode = re.findall(
+                    r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)), searchtext
+                )
+                if like_countrycode:
+                    like_countrycode = list(filter(lambda x: x, sum(like_countrycode, ())))
+
                     for match in like_countrycode:
                         searchtext = searchtext.replace(match, "")
             typer.echo(f"{recid}{inDelim}{searchtext}")
