@@ -2,8 +2,7 @@ inDelim: "|"
 
 postcode:
   remove: True
-  numdigits: 4
 
 countrycode:
   remove: True
-  list: DD,BRD,SU
+  list: DD,BRD,SU,DDR
