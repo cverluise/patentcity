@@ -297,6 +297,7 @@ def prep_searchtext(
 
     with open(file, "r") as lines:
         for line in lines:
+            line = line.replace("\n", "")
             recid, searchtext = line.split(inDelim)
 
 
