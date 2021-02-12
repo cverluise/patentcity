@@ -16,6 +16,7 @@ import spacy
 import numpy as np
 import pandas as pd
 import typer
+import yaml
 
 # from fuzzyset import FuzzySet
 from fuzzysearch import find_near_matches
@@ -257,7 +258,7 @@ def debug_duplicates(file: str, duplicates: str = None):
             typer.echo(json.dumps(line))
 
 
-@app.command()
+@app.command(deprecated=True)
 def remove_duplicates(
     file: str, inDelim: str = ",", duplicates: str = None, header: bool = True
 ):
@@ -281,12 +282,16 @@ def remove_duplicates(
 @app.command()
 def prep_searchtext(
     file,
-    inDelim: str = "|",
-    remove_postcodes: bool = True,
-    remove_countrycodes: bool = True,
+    config_file: str,
 ):
     """Prepare search text so as to avoid common pitfalls (country codes, postcodes, etc)"""
     countrycodes = list_countrycodes()
+    with open(config_file, "r") as config_file:
+        config = yaml.load(config_file, Loader=yaml.FullLoader)
+
+    remove_postcode = config["remove_postcode"]
+    remove_countrycode = config["remove_countrycode"]
+    inDelim = config["inDelim"]
 
     with open(file, "r") as lines:
         for line in lines:
@@ -296,12 +301,12 @@ def prep_searchtext(
                 r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)), searchtext
             )
             if like_postcode:
-                if remove_postcodes:
+                if remove_postcode:
                     for match in like_postcode:
                         searchtext = searchtext.replace(match, "")
             if like_countrycode:
                 like_countrycode = list(filter(lambda x: x, sum(like_countrycode, ())))
-                if remove_countrycodes:
+                if remove_countrycode:
                     for match in like_countrycode:
                         searchtext = searchtext.replace(match, "")
             typer.echo(f"{recid}{inDelim}{searchtext}")
