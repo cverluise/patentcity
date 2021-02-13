@@ -142,7 +142,6 @@ def post_geoc_data_here(
             pass
 
     params = (
-        ("", ""),
         ("apiKey", api_key),
         ("action", "run"),
         ("header", "true"),
@@ -254,11 +253,11 @@ def get_geoc_data_here(
 def prep_geoc_data(file: str, inDelim: str = "|"):
     """Write material for batch geocoding using HERE API to stdout. Receive a jsonl file.
 
-    Run $sort -n -u <output-file.txt> >> <your-file.txt> to sort and deduplicate addresses before
+    Run $sort -u <output-file.txt> >> <your-file.txt> to sort and deduplicate addresses before
     batch geocoding."""
     with open(file, "r") as lines:
         typer.echo(f"recId{inDelim}searchText")  # This is the required header
-        for line in lines:  # iterate over file lines {"loc":[{""},{}],...}
+        for line in lines:
             line = json.loads(line)
             patentees = line.get("patentee")
             for patentee in patentees:
