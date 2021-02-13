@@ -318,22 +318,24 @@ def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
 
 def update_loc(blob, source, index, verbose):
     blob = json.loads(blob)
-    patentees = []
-    for patentee in blob.get("patentee"):
-
-        loc_recid = patentee.get("loc_recId")
-        geoc_ = index.get(loc_recid)
-        if geoc_:
-            patentee.update(geoc_)
-        else:
-            if verbose:
-                typer.secho(
-                    f"{not_ok}{loc_recid} ({type(loc_recid)}) not found",
-                    fg=typer.colors.RED,
-                )
-            patentee.update({"loc_source": source})
-            patentees += [patentee]
-    blob.update({"patentee": patentees})
+    patentees_ = []
+    patentees = blob.get("patentee")
+    if patentees:
+        for patentee in patentees:
+            loc_recid = patentee.get("loc_recId")
+            if loc_recid:
+                geoc_ = index.get(loc_recid)
+                if geoc_:
+                    patentee.update(geoc_)
+                    patentee.update({"loc_source": source})
+                else:
+                    if verbose:
+                        typer.secho(
+                            f"{not_ok}{loc_recid} ({type(loc_recid)}) not found",
+                            fg=typer.colors.RED,
+                        )
+            patentees_ += [patentee]
+        blob.update({"patentee": patentees_})
     typer.echo(json.dumps(blob))
 
 
