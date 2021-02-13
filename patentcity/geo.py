@@ -7,6 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 from glob import glob
 from itertools import repeat
 from zipfile import ZipFile
+from smart_open import open
 
 import googlemaps
 import requests
@@ -317,28 +318,22 @@ def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
 
 def update_loc(blob, source, index, verbose):
     blob = json.loads(blob)
-    locs = blob.get("loc")
+    patentees = []
+    for patentee in blob.get("patentee"):
 
-    if locs:
-        locs = []
-        for loc_ in blob["loc"]:
-            # loc is a list of dict with the following form
-            # [{"raw":"", "recId":""},...]
-            recid = loc_["recId"]  # int no more needed
-            geoc_ = index.get(recid)
-            if geoc_:
-                loc_.update(geoc_)
-                loc_.update({"source": source})
-            else:
-                if verbose:
-                    typer.secho(
-                        f"{not_ok}{recid} ({type(recid)}) not found",
-                        fg=typer.colors.RED,
-                    )
-            locs += [loc_]
-            # loc is now a list of dict with the following form
-            # [{"raw":"", "recId":"", "longitude":"", "latitude":"",},...]
-        blob.update({"loc": locs})
+        loc_recid = patentee.get("loc_recId")
+        geoc_ = index.get(loc_recid)
+        if geoc_:
+            patentee.update(geoc_)
+        else:
+            if verbose:
+                typer.secho(
+                    f"{not_ok}{loc_recid} ({type(loc_recid)}) not found",
+                    fg=typer.colors.RED,
+                )
+            patentee.update({"loc_source": source})
+            patentees += [patentee]
+    blob.update({"patentee": patentees})
     typer.echo(json.dumps(blob))
 
 
