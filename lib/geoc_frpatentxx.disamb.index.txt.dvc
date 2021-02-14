@@ -1,3 +1,3 @@
 outs:
 - md5: 53ee0c0c4a477e3693ec713132a19264
-  path: fr_index_geoc.txt
+  path: geoc_frpatentxx.disamb.index.txt

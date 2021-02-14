@@ -1,10 +1,10 @@
 /de_publication_date_imputation.csv
 /iso_crossover.json
 /fr_index.txt
-/fr_disamb.txt
-/fr_index_geoc.txt
 /fr_index_override.txt
 /dd_publication_date_imputation.csv
 /dd_publication_date_training.csv
 /iso_geoc_manual.csv
 /cit_fst.json
+/loc_frpatentxx.disamb.txt
+/geoc_frpatentxx.disamb.index.txt
