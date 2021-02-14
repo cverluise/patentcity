@@ -18,7 +18,8 @@ from patentcity.utils import clean_text, get_recid, get_cit_code
                              Brew patentcity dataset
 
 General functioning: Stream text blobs | process through spaCy model | print json blobs to stdout
-* Beta: entities only, no dependency parsing
+* beta: entities only
+* v1: entities & relationship
 """
 
 app = typer.Typer()
@@ -26,14 +27,29 @@ repo = git.Repo(search_parent_directories=True)
 sha = repo.head.object.hexsha
 
 
+def get_blob(file):
+    with open(file, "r") as fin:
+        text = fin.read()
+        publication_number = os.path.splitext(os.path.basename(file))[0]
+        hash_id = md5(text.encode()).hexdigest()
+    typer.echo(json.dumps({"publication_number": publication_number, "text": text, "hash_id": hash_id}))
+
+
+@app.command(name="v1.grind")
+def grind(path: str, max_workers: int = 10):
+    files = iglob(path)
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        executor.map(get_blob, files)
+
+
 @app.command()
 def v1(
-    path: str,
-    model: str,
-    rel_config: str,
-    max_char: int = 9999,
-    batch_size: int = 1000,
-    inDelim: str = "|",
+        path: str,
+        model: str,
+        rel_config: str,
+        max_char: int = 9999,
+        batch_size: int = 1000,
+        inDelim: str = "|",
 ):
     """
     Print jsonl blobs of the v1 dataset
