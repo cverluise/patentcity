@@ -87,13 +87,13 @@ def extract_sample_kepler(
       country_code,
       CAST(publication_date/10000 AS INT64) AS publication_year,
       PARSE_TIMESTAMP('%Y%m%d%H%M%S', CAST(publication_date*100000 AS STRING)) as publication_date,
-      loc.country as country,
-      loc.city as city,
-      loc.latitude as point_latitude,
-      loc.longitude as point_longitude
+      patentee.loc_country as country,
+      patentee.loc_city as city,
+      patentee.loc_latitude as point_latitude,
+      patentee.loc_longitude as point_longitude
     FROM
       {src_table},
-      UNNEST(loc) AS loc
+      UNNEST(patentee) AS patentee
     WHERE
       RAND()<{sample_ratio}
       AND publication_date>0
