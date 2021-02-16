@@ -132,13 +132,25 @@ patentcity geo get-geoc-data-here ${REQUESTID} ${APIKEY} --output-dir ${OUTPUTDI
 
 #### Using manual annotations (e.g. France)
 
+**Generate manual annotations using Prodigy**
+
+XX
+
+**Generate manual annotations for country codes**
 ```shell
-FORMAT=""  # e.g. frpatentxx
+FORMAT = ""  # e.g. ddpatentxx
+patentcity utils disamb-countrycodes loc_${FORMAT}.txt >> lib/loc_${FORMAT}.disamb.txt
+```
+
+```shell
+FORMAT=""  # e.g. frpatentxx, ddpatentxx
 DISAMBFILE=""  # e.g. lib/loc_${FORMAT}.disamb.txt
-GEOCINDEX=""  # e.g. lib/geoc_${FORMAT}.disamb.index.txt
-patentcity utils add-geoc-disamb ${DISAMBFILE} ${GEOCINDEX} >> geoc_${FORMAT}.manual.txt
+GEOCINDEX=""  # e.g. lib/geoc_${FORMAT}.disamb.index.txt lib/geoc_iso.disamb.index.txt 
+FLAVOR=""  # HERE or GMAPS
+patentcity geo add-geoc-disamb ${DISAMBFILE} ${GEOCINDEX} --flavor ${FLAVOR}>> geoc_${FORMAT}.manual.txt
 # DISAMBFILE is a list of disambiguated loc together with their *original* hash (sep by the standard inDelim)
 # GEOCINDEX is the list of geoc of disambigated loc (e.g. "république fédérale d'allemagne")
+# FLAVOR is HERE or GMAPS depending on the flavor of GEOCINDEX  
 # The output is a GMAPS like file (md5|{}) 
 ```
 
