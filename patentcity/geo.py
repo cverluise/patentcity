@@ -519,6 +519,36 @@ def harmonize_geoc_data_gmaps(
                 # occurs when there is still an inDelim in the result
                 # (e.g. "long_name": "S2|02 Robert-Piloty-Geb\u00e4ude")
 
+@app.command()
+def add_geoc_disamb(disamb_file, index_geoc_file, flavor: str = "GMAPS", inDelim: str = "|"):
+    """Return a list of recId|geoc(target) from a list of recid|target.
+    Should be used before add-geoc-data"""
+    assert flavor in ["GMAPS", "HERE"]
+    if flavor == "GMAPS":
+        index = {}
+        with open(index_geoc_file, "r") as lines:
+            for line in lines:
+                recid, geoc = line.split(inDelim)
+                index.update({recid: json.loads(geoc)})
+
+        with open(disamb_file, "r") as lines:
+            for line in lines:
+                recid, disamb_loc = line.split(inDelim)
+                disamb_loc_recid = get_recid(clean_text(disamb_loc))
+                typer.echo(f"{recid}{inDelim}{json.dumps(index.get(disamb_loc_recid))}")
+    else:
+        index = get_geoc_index(index_geoc_file, dump=False)
+        fieldnames = GEOC_OUTCOLS
+        writer = csv.DictWriter(sys.stdout, fieldnames=fieldnames)
+        writer.writeheader()
+        with open(disamb_file, "r") as lines:
+            for line in lines:
+                recid, searchtext = line.replace("\n", "").split(inDelim)
+                geoc_disamb = index.get(get_recid(searchtext))
+                geoc_disamb.update({"recId": recid})
+                writer.writerow(geoc_disamb)
+
+
 
 if __name__ == "__main__":
     app()
