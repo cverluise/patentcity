@@ -95,7 +95,6 @@ TYPE2LEVEL = {"street_address": "street",
               "point_of_interest": "houseNumber"}
 
 ISO_CROSSOVER = {
-    "DD": "DDR",
     "AF": "AFG",
     "AX": "ALA",
     "AL": "ALB",
@@ -340,6 +339,12 @@ ISO_CROSSOVER = {
     "YE": "YEM",
     "ZM": "ZMB",
     "ZW": "ZWE",
+    "DD": "DDR",
+    "WD": "DEU",
+    "SU": "RUS",
+    "WB": "DEU",
+    "CS": "CZE",
+    "BRD": "DEU"
 }
 
 
@@ -354,4 +359,4 @@ def get_isocrossover(reverse: str = False):
 def list_countrycodes():
     """Return a list of country codes (iso 2 and 3)"""
     countrycodes = ISO_CROSSOVER
-    return list(countrycodes.keys()) + list(countrycodes.values()) + ["BRD", "WD", "SU", "DD", "CS"]
+    return list(set(list(countrycodes.keys()) + list(countrycodes.values())))
