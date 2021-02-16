@@ -421,23 +421,6 @@ def prep_disamb_index(file: str, inDelim: str = "|"):
 
 
 @app.command()
-def add_geoc_disamb(disamb_file, index_geoc_file, inDelim: str = "|"):
-    """Return a list of recId|geoc(target) from a list of recid|target.
-    Should be used before add-geoc-data"""
-    index = {}
-    with open(index_geoc_file, "r") as lines:
-        for line in lines:
-            recid, geoc = line.split(inDelim)
-            index.update({recid: json.loads(geoc)})
-
-    with open(disamb_file, "r") as lines:
-        for line in lines:
-            recid, disamb_loc = line.split(inDelim)
-            disamb_loc_recid = get_recid(clean_text(disamb_loc))
-            typer.echo(f"{recid}{inDelim}{json.dumps(index.get(disamb_loc_recid))}")
-
-
-@app.command()
 def prep_disamb(file: str, orient: str = "revert", inDelim: str = "|"):
     """Prep disamb file from mcq output data
     """
