@@ -31,13 +31,14 @@ gsutil -m cp "gs://patentcity_dev/v1/*.jsonl.gz" ./
 
 ```shell
 # Extract entities (brew data)
-cat lib/formats.txt | parallel --eta -j 4 'MODEL=$(ls -d models/**/model-best | grep {} ) && patentcity brew v1 {}.jsonl.gz ${MODEL} configs/rel_{}.yaml --batch-size 500 >> entrel_{}.jsonl'
+cat lib/formats.txt | parallel --eta -j 3 'MODEL=$(ls -d models/**/model-best | grep {} ) && patentcity brew v1 {}.jsonl.gz ${MODEL} configs/rel_{}.yaml --batch-size 500 >> entrel_{}.jsonl'
+# Number of job for a 8 CPUs 32Gb ram machine
 
 # Merge all format belonging to the same office in one single file 
 for OFFICE in  dd de fr gb us; do echo ${OFFICE} && cat entrel_${OFFICE}patent*.jsonl >> entrel_${OFFICE}patentxx.jsonl; done;
 
 # Add topping 
-ls *patentxx.jsonl | parallel --eta -j 2 'mv {} {}_tmp && patentcity brew v1.topping --cit-fst-file lib/cit_fst.json {}_tmp >> {} '
+ls entrel_*patentxx.jsonl | parallel --eta -j 2 'mv {} {}_tmp && patentcity brew v1.topping --cit-fst-file lib/cit_fst.json {}_tmp >> {} '
 # Note: it can be memory greedy, you might want to limit the nb or jobs and/or the nb of workers
 
 # Check output not corrupted
@@ -168,11 +169,12 @@ done;
 # HERE and GMAPS
 for OFFICE in dd de fr gb us; do
   echo ${OFFICE}
-  patentcity geo add-geoc-data entrel_${OFFICE}patentxx.jsonl.gz --geoc-file geoc_${OFFICE}patentxx.here.csv_00.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp && 
+  patentcity geo add-geoc-data entrel_${OFFICE}patentxx.jsonl --geoc-file geoc_${OFFICE}patentxx.here.csv_00.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp && 
   patentcity geo add-geoc-data entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.gmaps.csv.gz --source GMAPS >> entrelgeoc_${OFFICE}patentxx.jsonl &&
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
 done;  
 
+MANUALDISAMB="dd fr"  # we add dd which is already in HERE like format
 for OFFICE in ${MANUALDISAMB}; do
   mv entrelgeoc_${OFFICE}patentxx.jsonl entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
   patentcity geo add-geoc-data entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.manual.csv.gz --source MANUAL >> entrelgeoc_${OFFICE}patentxx.jsonl &&
@@ -181,7 +183,7 @@ done;
 
 for FILE in $(ls entrelgeoc_*patentxx.jsonl); do
  mv ${FILE} ${FILE}_tmp &&
- sed 's/\"seqNumber\"/\"loc_seqNumber\"/g; s/\"seqLength\"/\"loc_seqLength\"/g; s/\"latitude\"/\"loc_latitude\"/g; s/\"longitude\"/\"loc_longitude\"/g; s/\"locationLabel\"/\"loc_locationLabel\"/g; s/\"addressLines\"/\"loc_addressLines\"/g; s/\"street\"/\"loc_street\"/g; s/\"houseNumber\"/\"loc_houseNumber\"/g; s/\"building\"/\"loc_building\"/g; s/\"subdistrict\"/\"loc_subdistrict\"/g; s/\"district\"/\"loc_district\"/g; s/\"city\"/\"loc_city\"/g; s/\"postalCode\"/\"loc_postalCode\"/g; s/\"county\"/\"loc_county\"/g; s/\"state\"/\"loc_state\"/g; s/\"country\"/\"loc_country\"/g; s/\"relevance\"/\"loc_relevance\"/g; s/\"matchType\"/\"loc_matchType\"/g; s/\"matchCode\"/\"loc_matchCode\"/g; s/\"matchLevel\"/\"loc_matchLevel\"/g; s/\"matchQualityStreet\"/\"loc_matchQualityStreet\"/g; s/\"matchQualityHouseNumber\"/\"loc_matchQualityHouseNumber\"/g; s/\"matchQualityBuilding\"/\"loc_matchQualityBuilding\"/g; s/\"matchQualityDistrict\"/\"loc_matchQualityDistrict\"/g; s/\"matchQualityCity\"/\"loc_matchQualityCity\"/g; s/\"matchQualityPostalCode\"/\"loc_matchQualityPostalCode\"/g; s/\"matchQualityCounty\"/\"loc_matchQualityCounty\"/g; s/\"matchQualityState\"/\"loc_matchQualityState\"/g; s/\"matchQualityCountry\\r\"/\"loc_matchQualityCountry\\r\"/g' ${FILE}_tmp >> ${FILE}
+ sed 's/\"seqNumber\":/\"loc_seqNumber\":/g; s/\"seqLength\":/\"loc_seqLength\":/g; s/\"latitude\":/\"loc_latitude\":/g; s/\"longitude\":/\"loc_longitude\":/g; s/\"locationLabel\":/\"loc_locationLabel\":/g; s/\"addressLines\":/\"loc_addressLines\":/g; s/\"street\":/\"loc_street\":/g; s/\"houseNumber\":/\"loc_houseNumber\":/g; s/\"building\":/\"loc_building\":/g; s/\"subdistrict\":/\"loc_subdistrict\":/g; s/\"district\":/\"loc_district\":/g; s/\"city\":/\"loc_city\":/g; s/\"postalCode\":/\"loc_postalCode\":/g; s/\"county\":/\"loc_county\":/g; s/\"state\":/\"loc_state\":/g; s/\"country\":/\"loc_country\":/g; s/\"relevance\":/\"loc_relevance\":/g; s/\"matchType\":/\"loc_matchType\":/g; s/\"matchCode\":/\"loc_matchCode\":/g; s/\"matchLevel\":/\"loc_matchLevel\":/g; s/\"matchQualityStreet\":/\"loc_matchQualityStreet\":/g; s/\"matchQualityHouseNumber\":/\"loc_matchQualityHouseNumber\":/g; s/\"matchQualityBuilding\":/\"loc_matchQualityBuilding\":/g; s/\"matchQualityDistrict\":/\"loc_matchQualityDistrict\":/g; s/\"matchQualityCity\":/\"loc_matchQualityCity\":/g; s/\"matchQualityPostalCode\":/\"loc_matchQualityPostalCode\":/g; s/\"matchQualityCounty\":/\"loc_matchQualityCounty\":/g; s/\"matchQualityState\":/\"loc_matchQualityState\":/g; s/\"matchQualityCountry\\r\":/\"loc_matchQualityCountry\":/g' ${FILE}_tmp >> ${FILE}
 done; 
 ```
 
