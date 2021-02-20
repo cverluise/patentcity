@@ -187,8 +187,25 @@ for FILE in $(ls entrelgeoc_*patentxx.jsonl); do
 done; 
 ```
 
-### Load data
+### Build data
 
 ```shell
-bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values --max_bad_records 1000 patentcity:tmp.tmp "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl" schema/patentcity_v1.sm.json
+STAGETABLE="patentcity:tmp.tmp"
+RELEASETABLE="" # e.g. patentcity.tmp.tmp_100rc1
+KEYFILE="" # e.g. credentials-patentcity.json
+# Load data
+bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values --max_bad_records 1000 ${STAGETABLE} "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl" schema/patentcity_v1.sm.json
+# Augment data
+patentcity io augment-patentcity $(echo ${STAGETABLE} | sed -e 's/:/./') ${RELEASETABLE} --key-file ${KEYFILE}
+
+# Impute missing dates
+#for OFFICE in dd de; do
+#  patentcity utils expand-pubdate-imputation lib/pubdate_${OFFICE}patentxx.imputation.csv --output pubdate_${OFFICE}patentxx.imputation.expanded.csv;
+#done;
+# gsutil -m cp "pubdate_*patentxx.imputation.expanded.csv" gs://patentcity_dev/v1/
+
+for OFFICE in dd de; do 
+  bq load --source_format CSV --replace --ignore_unknown_values --max_bad_records 1000 patentcity:tmp.de_pubdate_imputation "gs://patentcity_dev/v1/pubdate_${OFFICE}patentxx.imputation.expanded.csv" schema/date_imputation.json
+  patentcity io impute-publication-date ${RELEASETABLE} patentcity.tmp.${OFFICE}_pubdate_imputation --country-code ${OFFICE:u} --key-file ${KEYFILE};
+done;    
 ```
