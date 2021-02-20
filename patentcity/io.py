@@ -55,8 +55,9 @@ def augment_patentcity(src_table: str, destination_table: str, key_file: str = N
 
 
 @app.command()
-def impute_publication_date(src_table, imputation_table, key_file: str = None):
+def impute_publication_date(src_table, imputation_table, country_code: str = None, key_file: str = None):
     """Update publication_date - DE & DD only"""
+    de_clause = """AND CAST(t.pubnum AS INT64)<330000""" if country_code=="DE" else """"""
     query = f"""UPDATE
       `{src_table}` AS t
     SET
@@ -65,6 +66,9 @@ def impute_publication_date(src_table, imputation_table, key_file: str = None):
       `{imputation_table}` AS imputation
     WHERE
       t.pubnum = imputation.pubnum
+      AND country_code="{country_code}"
+      {de_clause}
+       
     """
     client = get_bq_client(key_file)
     typer.secho(f"Start:\n{query}", fg=typer.colors.BLUE)
@@ -78,9 +82,11 @@ def extract_sample_kepler(
         src_table: str,
         destination_file: str,
         sample_ratio: float = 0.1,
+        office: str = None,
         key_file: str = None,
 ):
     """Extract sample for kepler.gl"""
+    office_clause = f"""AND country_code="{office}" """ if office else ""
     query = f"""
     SELECT
       publication_number,
@@ -97,6 +103,8 @@ def extract_sample_kepler(
     WHERE
       RAND()<{sample_ratio}
       AND publication_date>0
+      AND patentee.loc_source IS NOT NULL
+      {office_clause}
     """
     client = get_bq_client(key_file)
     typer.secho(f"Start:\n{query}", fg=typer.colors.BLUE)
@@ -275,9 +283,9 @@ def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
     """
     if preview:
         client = get_bq_client(key_file)
-        tmp = client.\
-            query(query).\
-            to_dataframe().\
+        tmp = client. \
+            query(query). \
+            to_dataframe(). \
             sort_values(by=["country_code", "publication_decade"])
         typer.echo(tmp.to_markdown(index=False))
         typer.secho(f"Nb samples: {tmp['nb_samples'].sum()}", fg=typer.colors.BLUE)
