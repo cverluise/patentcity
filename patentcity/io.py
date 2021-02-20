@@ -104,6 +104,7 @@ def extract_sample_kepler(
       RAND()<{sample_ratio}
       AND publication_date>0
       AND patentee.loc_source IS NOT NULL
+      AND patentee.loc_latitude IS NOT NULL
       {office_clause}
     """
     client = get_bq_client(key_file)
