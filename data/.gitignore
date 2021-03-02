@@ -76,4 +76,4 @@
 /train_ent_uspatent04.spacy
 /gold_geoc_wgp45.csv
 /gold_rel_uspatent04.jsonl
-/gold_pateedupl_uspatent01.jsonl
+/gold_deduplication_uspatent01.jsonl
