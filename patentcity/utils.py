@@ -219,6 +219,7 @@ def get_recid_nomatch(file, index, inDelim: str = "|"):
         with open(index, "r") as lines:
             for line in lines:
                 recid, searchtext = line.split(inDelim)
+                searchtext = searchtext.replace("\n", "")
                 search_text_index.update({recid: searchtext})
         return search_text_index
 
