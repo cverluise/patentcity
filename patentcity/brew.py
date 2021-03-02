@@ -101,11 +101,11 @@ def topping_(line, cit_fst):
             cit_code = get_cit_code(cit_text, cit_fst, True)
             patentee.update({"cit_code": cit_code})
         patentees_ += [patentee]
-    nb_patentees = len(patentees_) if patentees_ else 0
+    nb_patee = len(patentees_) if patentees_ else 0
     nb_inv = sum([patentee_.get("is_inv") for patentee_ in patentees_])
     nb_asg = sum([patentee_.get("is_asg") for patentee_ in patentees_])
     line.update({"patentee": patentees_,
-                 "nb_asg": nb_asg, "nb_inv": nb_inv, "nb_patentees": nb_patentees})
+                 "nb_asg": nb_asg, "nb_inv": nb_inv, "nb_patee": nb_patee})
 
     typer.echo(json.dumps(line))
 
