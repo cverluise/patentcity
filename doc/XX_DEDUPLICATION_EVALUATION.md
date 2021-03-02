@@ -1,5 +1,7 @@
 # READ ME
 
+> ℹ️ We call relative levenshtein distance the levenshtein distance between 2 strings (lower caps) divided by the average character lengths of the two strings
+
 ## uspatent01
 
 ### Best
@@ -8,7 +10,7 @@
 - Accuracy: 0.9740518962075848
 
 ### Levenshtein distance (rel) distribution
-|       |     accept |   reject |
+|       | duplicates |not_duplicates|
 |:------|-----------:|---------:|
 | 0%    | 0          | 0.275862 |
 | 1%    | 0          | 0.285714 |
