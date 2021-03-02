@@ -6,7 +6,7 @@ from smart_open import open
 import git
 from concurrent.futures import ThreadPoolExecutor
 from itertools import repeat, combinations
-import editdistance
+from Levenshtein import distance as levenshtein_distance
 
 from patentcity.relationship import create_relationship_component
 import spacy
@@ -123,7 +123,7 @@ def deduplicate_(line, threshold):
             p1, p2 = patentees[i], patentees[j]
             name1 = p1.get("name_text").lower()
             name2 = p2.get("name_text").lower()
-            lev_dist_rel = editdistance.eval(name1, name2) / ((len(name1) + len(name2)) / 2)
+            lev_dist_rel = levenshtein_distance(name1, name2) / ((len(name1) + len(name2)) / 2)
             are_duplicates = True if lev_dist_rel < threshold else False
             # print(name1, name2, are_duplicates, lev_dist_rel)
             if are_duplicates:
