@@ -5,7 +5,8 @@ from glob import iglob, glob
 from smart_open import open
 import git
 from concurrent.futures import ThreadPoolExecutor
-from itertools import repeat
+from itertools import repeat, combinations
+from Levenshtein import distance as levenshtein_distance
 
 from patentcity.relationship import create_relationship_component
 import spacy
@@ -107,6 +108,43 @@ def topping_(line, cit_fst):
     line.update({"patentee": patentees_,
                  "nb_asg": nb_asg, "nb_inv": nb_inv, "nb_patee": nb_patee})
 
+    typer.echo(json.dumps(line))
+
+
+def deduplicate_(line, threshold):
+    """Return LINE with an additional field is_duplicate (bool). is_duplicate is True when the patentee should be
+    removed from the analysis because another patentee has the 'same' name. We say that 2 patentees have the same name
+     when the relative levenshtein of the two strings (lower) is below THRESHOLD."""
+    line = json.loads(line)
+    patentees = line.get("patentee")
+    [patentee.update({"is_duplicate": False}) for patentee in patentees]
+    if patentees:
+        for i, j in list(combinations(range(len(patentees)), 2)):
+            p1, p2 = patentees[i], patentees[j]
+            name1 = p1.get("name_text").lower()
+            name2 = p2.get("name_text").lower()
+            lev_dist_rel = levenshtein_distance(name1, name2) / ((len(name1) + len(name2)) / 2)
+            are_duplicates = True if lev_dist_rel < threshold else False
+            # print(name1, name2, are_duplicates, lev_dist_rel)
+            if are_duplicates:
+                p1_hasloc, p2_has_loc = p1.get("loc_text"), p2.get("loc_text")
+                if p1_hasloc == p2_has_loc:  # case when both have loc or none has loc
+                    if len(p1.keys()) >= len(p2.keys()):  # we 'keep' p1
+                        p1.update({"is_duplicate": any([False, p1.get("is_duplicate")])})
+                        p2.update({"is_duplicate": any([True, p2.get("is_duplicate")])})
+                    else:  # we 'keep' p2
+                        p1.update({"is_duplicate": any([True, p1.get("is_duplicate")])})
+                        p2.update({"is_duplicate": any([False, p2.get("is_duplicate")])})
+                else:  # only one of the 2 has loc
+                    if p1_hasloc:  # we 'keep' p1
+                        p1.update({"is_duplicate": any([False, p1.get("is_duplicate")])})
+                        p2.update({"is_duplicate": any([True, p2.get("is_duplicate")])})
+                    else:  # we 'keep' p2
+                        p1.update({"is_duplicate": any([True, p1.get("is_duplicate")])})
+                        p2.update({"is_duplicate": any([False, p2.get("is_duplicate")])})
+                patentees[i] = p1
+                patentees[j] = p2
+        line.update({"patentee": patentees})
     typer.echo(json.dumps(line))
 
 
