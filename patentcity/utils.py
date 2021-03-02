@@ -12,6 +12,7 @@ from itertools import repeat
 from operator import itemgetter
 from pathlib import Path
 import spacy
+from smart_open import open
 
 import numpy as np
 import pandas as pd
