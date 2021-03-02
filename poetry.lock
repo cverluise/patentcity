@@ -235,6 +235,14 @@ version = "0.3.1"
 
 [[package]]
 category = "main"
+description = "Fast implementation of the edit distance(Levenshtein distance)"
+name = "editdistance"
+optional = false
+python-versions = "*"
+version = "0.5.3"
+
+[[package]]
+category = "main"
 description = "A platform independent file lock."
 name = "filelock"
 optional = false
@@ -1008,17 +1016,6 @@ six = ">=1.5"
 
 [[package]]
 category = "main"
-description = "Python extension for computing string edit distances and similarities."
-name = "python-levenshtein"
-optional = false
-python-versions = "*"
-version = "0.12.2"
-
-[package.dependencies]
-setuptools = "*"
-
-[[package]]
-category = "main"
 description = "World timezone definitions, modern and historical"
 name = "pytz"
 optional = false
@@ -1581,7 +1578,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [metadata]
-content-hash = "0ad9b33bbe89ec585276be7e1b0524ff5d9e2d0a0c14eae9c49d7189a5473e2b"
+content-hash = "161e04ecd4f766651911e7bbec817cd097056db24ee4a520e17b642100d7b4ca"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -1764,6 +1761,38 @@ cymem = [
 distlib = [
     {file = "distlib-0.3.1-py2.py3-none-any.whl", hash = "sha256:8c09de2c67b3e7deef7184574fc060ab8a793e7adbb183d942c389c8b13c52fb"},
     {file = "distlib-0.3.1.zip", hash = "sha256:edf6116872c863e1aa9d5bb7cb5e05a022c519a4594dc703843343a9ddd9bff1"},
+]
+editdistance = [
+    {file = "editdistance-0.5.3-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:ef4714dc9cf281863dcc3ba6d24c3cae1dde41610a78dcdfae50d743ca71d5e1"},
+    {file = "editdistance-0.5.3-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:a322354a8dfb442770902f06552b20df5184e65e84ac90cb799740915eb52212"},
+    {file = "editdistance-0.5.3-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:36a4c36d7945f5ecfa1dc92c08635d73b64769cd0af066da774437fe2c7dc80a"},
+    {file = "editdistance-0.5.3-cp27-cp27m-win32.whl", hash = "sha256:93e847cc2fbebb34a36b41337a3eb9b2034d4ff9679665b08ecc5c3c313f83a9"},
+    {file = "editdistance-0.5.3-cp27-cp27m-win_amd64.whl", hash = "sha256:d4561b602b7675f6a050cdd0e1b652007ce73bb7290019487b8919a44593d74d"},
+    {file = "editdistance-0.5.3-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:dddb0d36f698e3c942d0d5934185533d9324fbde975b3e956a19883713e86d33"},
+    {file = "editdistance-0.5.3-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:1018f0fa857b079c721583c42d2c54800fbe8c7d2c29b354a9724a0b79971cb8"},
+    {file = "editdistance-0.5.3-cp33-cp33m-win32.whl", hash = "sha256:810d93e614f35ad2916570f48ff1370ac3c001eb6941d5e836e2c1c6986fafff"},
+    {file = "editdistance-0.5.3-cp33-cp33m-win_amd64.whl", hash = "sha256:a96ac49acc7668477c13aff02ca0527c6462b026b78600602dbef04efc9250d3"},
+    {file = "editdistance-0.5.3-cp34-cp34m-macosx_10_6_intel.whl", hash = "sha256:a9167d9d5e754abd7ce68da065a636cc161e5063c322efd81159d15001d5272a"},
+    {file = "editdistance-0.5.3-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:a10c61df748220b2b9e2949a10aea23ffeded28c07e610e107a8f6a4b5b92782"},
+    {file = "editdistance-0.5.3-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:6452d750fbc49c6f04232a840f96b0f1155ff7cb2d953ce1edf075c5a394f3ea"},
+    {file = "editdistance-0.5.3-cp34-cp34m-win32.whl", hash = "sha256:1f510e6eb411ec6123ba4ebc086d5882027710d28db174985a74e13fd0eb354f"},
+    {file = "editdistance-0.5.3-cp34-cp34m-win_amd64.whl", hash = "sha256:9d6ee66f8de30ec6358083e5ecd7919a5966b38c64012c1672f326c61ff7a15f"},
+    {file = "editdistance-0.5.3-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:c1cf5ff98cfdc38046ae0f2d3ccbe1e15b0665234a04783f6558ec0a48e72dc8"},
+    {file = "editdistance-0.5.3-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:5f9c202b1a2f2630f7a0cdd76ad0ad55de4cd700553778c77e37379c6ac8e8bb"},
+    {file = "editdistance-0.5.3-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:553fb295802c399f0f419b616b499c241ffdcb2a70888d1e9d1bd22ba21b122f"},
+    {file = "editdistance-0.5.3-cp35-cp35m-win32.whl", hash = "sha256:0834826832e51a6c18032b13b68083e3ebfbf3daf774142ae6f2b17b35580c16"},
+    {file = "editdistance-0.5.3-cp35-cp35m-win_amd64.whl", hash = "sha256:6ccfd57221bae661304e7f9495f508aeec8f72e462d97481d55488ded87f5cbc"},
+    {file = "editdistance-0.5.3-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:25b39c836347dcbb251a6041fd3d7575b82c365923a4b13c32c699e442b1b644"},
+    {file = "editdistance-0.5.3-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:fa0047a8d972ab779141eed4713811251c9f6e96e9e8a62caa8d554a0444ff74"},
+    {file = "editdistance-0.5.3-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:db65bf1f39964019040434cb924c62c9965bd0df2feb316dbe5de3f09e6a81de"},
+    {file = "editdistance-0.5.3-cp36-cp36m-win32.whl", hash = "sha256:cc65c2cd68751a966f7468537b4a6fd7d9107d49e139d8efd5734ee6f48d3126"},
+    {file = "editdistance-0.5.3-cp36-cp36m-win_amd64.whl", hash = "sha256:fe7e6a90476976d7e5abc9472acb0311b7cdc76d84190f8f6c317234680c5de3"},
+    {file = "editdistance-0.5.3-cp37-cp37m-macosx_10_6_intel.whl", hash = "sha256:25dd59d7f17a38203c5e433f5b11f64a8d1042d876d0dc00b324dda060d12e81"},
+    {file = "editdistance-0.5.3-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:61486173447a153cccbd52eb63947378803f0f2a5bffebbfec500bd77fc5706d"},
+    {file = "editdistance-0.5.3-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:cd49e9b22972b15527d53e06918c14d9fe228ae362a57476d16b0cad3e14e0c8"},
+    {file = "editdistance-0.5.3-cp37-cp37m-win32.whl", hash = "sha256:503c6f69f4901d8a63f3748e4b0eccb2a89e6844b0879a7e256cab439297d379"},
+    {file = "editdistance-0.5.3-cp37-cp37m-win_amd64.whl", hash = "sha256:ee4ed815bc5137a794095368580334e430ff26c73a05c67e76b39f535b363a0f"},
+    {file = "editdistance-0.5.3.tar.gz", hash = "sha256:89d016dda04649b2c49e12b34337755a7b612bfd690420edd50ab31787120c1f"},
 ]
 filelock = [
     {file = "filelock-3.0.12-py3-none-any.whl", hash = "sha256:929b7d63ec5b7d6b71b0fa5ac14e030b3f70b75747cef1b10da9b879fef15836"},
@@ -2438,9 +2467,6 @@ pyrsistent = [
 python-dateutil = [
     {file = "python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"},
     {file = "python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"},
-]
-python-levenshtein = [
-    {file = "python-Levenshtein-0.12.2.tar.gz", hash = "sha256:dc2395fbd148a1ab31090dd113c366695934b9e85fe5a4b2a032745efd0346f6"},
 ]
 pytz = [
     {file = "pytz-2020.1-py2.py3-none-any.whl", hash = "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed"},
