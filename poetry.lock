@@ -272,6 +272,18 @@ version = "0.7.3"
 attrs = ">=19.3"
 
 [[package]]
+category = "main"
+description = "A simple python fuzzyset implementation."
+name = "fuzzyset"
+optional = false
+python-versions = "*"
+version = "0.0.19"
+
+[package.dependencies]
+python-levenshtein = "*"
+texttable = "*"
+
+[[package]]
 category = "dev"
 description = "Git Object Database"
 name = "gitdb"
@@ -1332,6 +1344,14 @@ widechars = ["wcwidth"]
 
 [[package]]
 category = "main"
+description = "module for creating simple ASCII tables"
+name = "texttable"
+optional = false
+python-versions = "*"
+version = "1.6.3"
+
+[[package]]
+category = "main"
 description = "A refreshing functional take on deep learning, compatible with your favorite libraries"
 name = "thinc"
 optional = false
@@ -1581,7 +1601,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [metadata]
-content-hash = "0ad9b33bbe89ec585276be7e1b0524ff5d9e2d0a0c14eae9c49d7189a5473e2b"
+content-hash = "45e3a33041eb50c0797cd6804990cfa91dfad8067db6ec2d974bd5e4198599b3"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -1792,6 +1812,9 @@ fuzzysearch = [
     {file = "fuzzysearch-0.7.3-cp38-cp38-win32.whl", hash = "sha256:bbf3047d3ed3fd80b69d38c7a07fdef5c9738436249586095e27f32397c8ad2e"},
     {file = "fuzzysearch-0.7.3-cp38-cp38-win_amd64.whl", hash = "sha256:f3def5f55c90300ae1c4f3da830ff3ed8bf7827ace1e3cecff819c9de5f23aa7"},
     {file = "fuzzysearch-0.7.3.tar.gz", hash = "sha256:d5a1b114ceee50a5e181b2fe1ac1b4371ac8db92142770a48fed49ecbc37ca4c"},
+]
+fuzzyset = [
+    {file = "fuzzyset-0.0.19.tar.gz", hash = "sha256:2bf5a3de20f107124a4842d875e5005ee523719f97ab731caf4121e86ec8ccbc"},
 ]
 gitdb = [
     {file = "gitdb-4.0.5-py3-none-any.whl", hash = "sha256:91f36bfb1ab7949b3b40e23736db18231bf7593edada2ba5c3a174a7b23657ac"},
@@ -2602,6 +2625,10 @@ srsly = [
 tabulate = [
     {file = "tabulate-0.8.7-py3-none-any.whl", hash = "sha256:ac64cb76d53b1231d364babcd72abbb16855adac7de6665122f97b593f1eb2ba"},
     {file = "tabulate-0.8.7.tar.gz", hash = "sha256:db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"},
+]
+texttable = [
+    {file = "texttable-1.6.3-py2.py3-none-any.whl", hash = "sha256:f802f2ef8459058736264210f716c757cbf85007a30886d8541aa8c3404f1dda"},
+    {file = "texttable-1.6.3.tar.gz", hash = "sha256:ce0faf21aa77d806bbff22b107cc22cce68dc9438f97a2df32c93e9afa4ce436"},
 ]
 thinc = [
     {file = "thinc-8.0.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:091c1da6d6d02d985a27d2e77c14e5b92c8e637d989fe7069dcae02549af1c22"},
