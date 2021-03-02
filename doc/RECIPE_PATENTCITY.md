@@ -74,9 +74,9 @@ for FILE in $(ls loc_*patentxx.count.txt | cut -d. -f 1 ); do cat ${FILE}.count.
 
 # Now assume that you want to get 250k addresses to geocode, covering as many occurences as possible and making sure that they have not been geocoded yet 
 # Below, we get the 275k most cited addresses (unconditional) and we keep only those which are no yet done (ie in tbd as well)
-# Nb requires a bit of fine tuning to make sure that we have the right nbr of lines:  rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -12 <(sort loc_${FORMAT}.tbd.txt) <(sort tmp) | wc -l    
+# Nb requires a bit of fine tuning to make sure that we have the right nbr of lines:  rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort loc_${FORMAT}.tbd.txt) <(sort tmp) | wc -l    
 FORMAT="uspatentxx"
-rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -12 <(sort loc_${FORMAT}.tbd.txt) <(sort tmp) | sort -r >>  loc_${FORMAT}.tbd.txt_00
+rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort loc_${FORMAT}.tbd.txt) <(sort tmp) | sort -r >>  loc_${FORMAT}.tbd.txt_00
 ````
 
 
