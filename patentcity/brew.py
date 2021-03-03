@@ -85,8 +85,10 @@ def v1(
                 typer.echo(json.dumps(row))
 
 
-def topping_(line, cit_fst):
+def topping_(line, config):
     line = json.loads(line)
+    country_code, pubnum, _ = line["publication_number"].split("-")
+    pubnum = int(pubnum)
     patentees_ = []
     patentees = line["patentee"]
     for patentee in patentees:
@@ -98,15 +100,31 @@ def topping_(line, cit_fst):
         patentee.update({"is_asg": is_asg, "is_inv": is_inv})
         if loc_text:
             patentee.update({"loc_recId": get_recid(loc_text)})
-        if cit_text and cit_fst:
-            cit_code = get_cit_code(cit_text, cit_fst, True)
+        if cit_text:
+            cit_code = get_cit_code(cit_text, config["cit_code"]["XX"], True)
             patentee.update({"cit_code": cit_code})
         patentees_ += [patentee]
     nb_patee = len(patentees_) if patentees_ else 0
     nb_inv = sum([patentee_.get("is_inv") for patentee_ in patentees_])
     nb_asg = sum([patentee_.get("is_asg") for patentee_ in patentees_])
-    line.update({"patentee": patentees_,
-                 "nb_asg": nb_asg, "nb_inv": nb_inv, "nb_patee": nb_patee})
+    line.update({"patentee": patentees_})
+
+    if country_code in config["deduplicate"].keys():
+        pubnum_low, pubnum_up = config["deduplicate"][country_code]["pubnum"].split("-")
+        pubnum_low, pubnum_up = int(pubnum_low), int(pubnum_up)
+        if pubnum_low <= pubnum <= pubnum_up:
+            line = deduplicate_(line, config["deduplicate"][country_code]["threshold"])
+            nb_patee_dupl = len(
+                [patentee for patentee in line.get("patentee") if patentee["is_duplicate"]])
+            nb_inv_dupl = len(
+                [patentee for patentee in line.get("patentee") if patentee["is_inv"] and patentee["is_duplicate"]])
+            nb_asg_dupl = len(
+                [patentee for patentee in line.get("patentee") if patentee["is_asg"] and patentee["is_duplicate"]])
+            nb_patee = nb_patee - nb_patee_dupl
+            nb_inv = nb_inv - nb_inv_dupl
+            nb_asg = nb_asg - nb_asg_dupl
+
+    line.update({"nb_patee": nb_patee, "nb_inv": nb_inv, "nb_asg": nb_asg})
 
     typer.echo(json.dumps(line))
 
@@ -115,7 +133,7 @@ def deduplicate_(line, threshold):
     """Return LINE with an additional field is_duplicate (bool). is_duplicate is True when the patentee should be
     removed from the analysis because another patentee has the 'same' name. We say that 2 patentees have the same name
      when the relative levenshtein of the two strings (lower) is below THRESHOLD."""
-    line = json.loads(line)
+    # line = json.loads(line)
     patentees = line.get("patentee")
     [patentee.update({"is_duplicate": False}) for patentee in patentees]
     if patentees:
@@ -145,17 +163,20 @@ def deduplicate_(line, threshold):
                 patentees[i] = p1
                 patentees[j] = p2
         line.update({"patentee": patentees})
-    typer.echo(json.dumps(line))
+    return line
 
 
 @app.command(name="v1.topping")
-def topping(file: str, cit_fst_file: str = None, max_workers=10):
+def topping(file: str, config_file: str = None, max_workers=10):
     """Return patentees with v1 var derived from extracted vars (is_asg, is_inv, etc)"""
+    with open(config_file, "r") as config_file:
+        config = yaml.load(config_file, Loader=yaml.FullLoader)
+    for k, v in config["cit_code"].items():
+        config["cit_code"].update({k: json.loads(open(v, "r").read())})
 
-    cit_fst = json.loads(open(cit_fst_file, "r").read()) if cit_fst_file else None
     with open(file, "r") as lines:
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            executor.map(topping_, lines, repeat(cit_fst))
+            executor.map(topping_, lines, repeat(config))
 
 
 if __name__ == "__main__":
