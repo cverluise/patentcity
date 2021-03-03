@@ -79,6 +79,14 @@ FORMAT="uspatentxx"
 rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort loc_${FORMAT}.tbd.txt) <(sort tmp) | sort -r >>  loc_${FORMAT}.tbd.txt_00
 ````
 
+#### NOMATCH from HERE
+
+````shell
+ROUND="00"
+for OFFICE in dd de fr gb us; do 
+  patentcity utils get-recid-nomatch geoc_${OFFICE}patentxx.here.csv_${ROUND}.gz loc_${OFFICE}patentxx.tbd.txt_${ROUND} >> loc_${OFFICE}patentxx.tbd.nomatch.txt_${ROUND};
+done;    
+````
 
 
 ### Geocode dataset
@@ -89,19 +97,15 @@ rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort l
 
 ```shell
 # Geocode using GMAPS
-# Using a loop
+# 1-by-1
 APIKEY=""
-for ARGS in dd,de de,de fr,fr gb,uk us,us;
- do IFS="," read OFFICE REGION <<< $ARGS;  
- patentcity get-geoc-data-gmaps loc_${OFFICE}patentxx.gmaps.txt ${APIKEY} ${REGION} >> geoc_${OFFICE}patentxx.gmaps.txt; 
-done;
-
-# Or 1-by-1
 OFFICE=""  # see above 
-REGION=""  # see above 
-echo "OFFICE:${OFFICE} REGION:${REGION}"
+REGION=""  # see above (nb uk for gb)
+ROUND=""  # e.g. 00 
+echo "OFFICE:${OFFICE} REGION:${REGION} ROUND:${ROUND}"
+echo "loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND} has $(wc -l loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND}) line(s)"
 # better safe than sorry
-patentcity geo get-geoc-data-gmaps loc_${OFFICE}patentxx.gmaps.txt ${APIKEY} ${REGION} >> geoc_${OFFICE}patentxx.gmaps.txt 
+patentcity geo get-geoc-data-gmaps loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND} ${APIKEY} ${REGION} >> geoc_${OFFICE}patentxx.gmaps.txt_${ROUND}
 ```
 
 > ⚠️ Take care, geocoding is not free, especially using GMAPS. Keep calm and plan your budget, you might want to ask for a grant and/or chunk the data and process it month-by-month as you free-tier gets automatically refilled. You might also want to first start with the batch geocoding API from HERE (which offers much more generous free plan) and use gmaps only for the no-match. NB: HERE batch geocoding API is supported by patentcity.
