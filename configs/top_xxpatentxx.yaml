@@ -1,0 +1,9 @@
+deduplicate:
+  US:
+    pubnum: 0-1583766
+    threshold: .43
+
+cit_code:
+  XX: lib/fst_cit.json
+
+
