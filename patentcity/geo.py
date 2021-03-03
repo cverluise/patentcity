@@ -19,6 +19,7 @@ from patentcity.lib import (
     GEOC_OUTCOLS,
     HERE2GMAPS,
     get_isocrossover,
+    get_usstatecrossover,
     TYPE2LEVEL,
 )
 from patentcity.utils import clean_text, get_dt_human, get_empty_here_schema, flatten
@@ -461,7 +462,7 @@ def emulate_nomatch_gmaps(recid):
     return out
 
 
-def parse_response_gmaps(response, recid, out_format, iso_crossover):
+def parse_response_gmaps(response, recid, out_format, iso_crossover, us_state_crossover):
     """Parse the high level Gmaps response (list of results). Can contain more than 1 results as
     well as 0."""
 
@@ -482,8 +483,11 @@ def parse_response_gmaps(response, recid, out_format, iso_crossover):
             # from now on, we harmonize output with HERE
             for k, _ in out.items():
                 out.update({k: res.get(HERE2GMAPS[k])})
-            out.update({"country": iso_crossover.get(out.get("country"))})
             # iso 2 to iso 3 (align gmaps (ISO2) on HERE (ISO3))
+            out.update({"country": iso_crossover.get(out.get("country"))})
+            # US state to code form
+            out.update({"state": us_state_crossover.get(out.get("state"), out.get("state"))})
+            # matchLevel harmonization
             out.update({"matchLevel": types2level_crossover(out["matchLevel"])})
             if not out.get("latitude"):
                 # in case there were no coordinates in the result, it's a NOMATCH
@@ -501,6 +505,7 @@ def harmonize_geoc_data_gmaps(
     """Harmonize Gmaps response with HERE Geocoding API responses (csv)"""
     assert out_format in ["csv", "jsonl"]
     iso_crossover = get_isocrossover()
+    us_state_crossover = get_usstatecrossover()
 
     if out_format == "csv" and header:
         csvwriter = csv.DictWriter(sys.stdout, GEOC_OUTCOLS)
@@ -513,7 +518,7 @@ def harmonize_geoc_data_gmaps(
 
             try:
                 recid, response = line.split(inDelim)
-                parse_response_gmaps(response, recid, out_format, iso_crossover)
+                parse_response_gmaps(response, recid, out_format, iso_crossover, us_state_crossover)
             except ValueError:
                 pass
                 # occurs when there is still an inDelim in the result
