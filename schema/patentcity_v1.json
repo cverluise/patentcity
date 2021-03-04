@@ -337,10 +337,16 @@
         "type": "INTEGER"
       },
       {
-        "description": "Geocoding source (in [HERE, GMAPS, MANUAL, WGP]).",
+        "description": "Geocoding source (in [HERE, GMAPS, MANUAL]).",
         "mode": "NULLABLE",
         "name": "loc_source",
         "type": "STRING"
+      },
+      {
+        "description": "True if a patentee with the 'same' name has been detected in the same patent. Only one of the two is marked as duplicate.",
+        "mode": "NULLABLE",
+        "name": "is_duplicate",
+        "type": "BOOLEAN"
       }
     ]
   }
