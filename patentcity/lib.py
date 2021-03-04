@@ -399,22 +399,29 @@ US_STATE_CROSSOVER = {"Alabama": "AL",
                       "Wisconsin": "WI",
                       "Wyoming": "WY"}
 
-US_COUNTY_CROSSOVER = {"O'Brien": "Obrien",
-                       "Lac qui Parle": "Lac Qui Parle",
-                       "LaSalle": "La Salle",
-                       "DeSoto": "Desoto",
-                       "Prince Georges": "Prince George",
-                       "DeKalb": "Dekalb",
-                       "DeWitt": "De Witt",
-                       "LaPorte": "Laporte",
-                       "Doña Ana": "Dona Ana",
-                       "LaMoure": "Lamoure",
-                       "LaGrange": "Lagrange"}
+COUNTY_CROSSOVER = {"O'Brien": "Obrien",
+                    "Lac qui Parle": "Lac Qui Parle",
+                    "LaSalle": "La Salle",
+                    "DeSoto": "Desoto",
+                    "Prince Georges": "Prince George",
+                    "DeKalb": "Dekalb",
+                    "DeWitt": "De Witt",
+                    "LaPorte": "Laporte",
+                    "Doña Ana": "Dona Ana",
+                    "LaMoure": "Lamoure",
+                    "LaGrange": "Lagrange",
+                    "Ariege": "Ariège",
+                    "Bouches-du-Rhone": "Bouches-du-Rhône",
+                    "Correze": "Corrèze",
+                    "Isere": "Isère",
+                    "Puy-de-Dome": "Puy-de-Dôme",
+                    "Département de Paris": "Paris"
+                    }
 
 
-def get_uscountycrossover(reverse: bool = False):
+def get_countycrossover(reverse: bool = False):
     """Return a dict of GMAPS counties under their HERE orth"""
-    out = US_COUNTY_CROSSOVER
+    out = COUNTY_CROSSOVER
     if reverse:
         out = {v: k for k, v in out.items()}
     return out
