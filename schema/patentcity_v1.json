@@ -1,5 +1,5 @@
 [
-	{ "description": "Publication number.",
+  { "description": "Publication number.",
     "mode": "NULLABLE",
     "name": "publication_number",
     "type": "STRING"
@@ -24,35 +24,10 @@
     "name": "kind_code",
     "type": "STRING"
   },
-{ "description": "Application ID (PATSTAT).",
-    "mode": "NULLABLE",
-    "name": "appln_id",
-    "type": "INTEGER"
-  },
 { "description": "Family ID (DOCDB).",
     "mode": "NULLABLE",
     "name": "family_id",
     "type": "INTEGER"
-  },
-{ "description": "Technological class text.",
-    "mode": "NULLABLE",
-    "name": "tech_class_text",
-    "type": "STRING"
-  },
-{ "description": "Technological class start.",
-    "mode": "NULLABLE",
-    "name": "tech_class_start",
-    "type": "INTEGER"
-  },
-{ "description": "Technological class end.",
-    "mode": "NULLABLE",
-    "name": "tech_class_end",
-    "type": "INTEGER"
-  },
-{ "description": "Technological class.",
-    "mode": "NULLABLE",
-    "name": "tech_class",
-    "type": "STRING"
   },
   {
     "description": "",
@@ -316,7 +291,7 @@
         "description": "Same at building level.",
         "mode": "NULLABLE",
         "name": "loc_matchQualityBuilding",
-        "type": "STRING"
+        "type": "FLOAT"
       },
       {
         "description": "Identifier of the input address in the response.",

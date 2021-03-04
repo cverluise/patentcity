@@ -194,7 +194,7 @@
         "description": "Indicates the relevance of the results found; the higher the score the more relevant the alternative. The score is a normalized value between 0 and 1.",
         "mode": "NULLABLE",
         "name": "loc_relevance",
-        "type": "STRING"
+        "type": "FLOAT"
       },
       {
         "description": "Quality of the location match. pointAddress: Location matches exactly as point address. interpolated: Location was interpolated.",
@@ -260,7 +260,7 @@
         "description": "Same at houseNumber level.",
         "mode": "NULLABLE",
         "name": "loc_matchQualityHouseNumber",
-        "type": "STRING"
+        "type": "FLOAT"
       },
       {
         "description": "Same at building level.",
