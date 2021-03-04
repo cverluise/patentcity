@@ -20,7 +20,7 @@ from patentcity.lib import (
     HERE2GMAPS,
     get_isocrossover,
     get_usstatecrossover,
-    get_uscountycrossover,
+    get_countycrossover,
     TYPE2LEVEL,
 )
 from patentcity.utils import clean_text, get_dt_human, get_empty_here_schema, flatten
@@ -463,7 +463,7 @@ def emulate_nomatch_gmaps(recid):
     return out
 
 
-def parse_response_gmaps(response, recid, out_format, iso_crossover, us_state_crossover, us_county_crossover):
+def parse_response_gmaps(response, recid, out_format, iso_crossover, us_state_crossover, county_crossover):
     """Parse the high level Gmaps response (list of results). Can contain more than 1 results as
     well as 0."""
 
@@ -488,7 +488,7 @@ def parse_response_gmaps(response, recid, out_format, iso_crossover, us_state_cr
             out.update({"country": iso_crossover.get(out.get("country"))})
             # US state to code form
             out.update({"state": us_state_crossover.get(out.get("state"), out.get("state"))})
-            # US county 'harmonization'
+            # county 'harmonization'
             if out.get("country") == "USA" and out.get("county"):
                 county_ = (out.get("county")
                            .replace("County", "")
@@ -498,12 +498,13 @@ def parse_response_gmaps(response, recid, out_format, iso_crossover, us_state_cr
                            .replace("St.", "St")
                            .replace("Ste.", "Ste")
                            .replace("'s", "s").strip())
-                county_ = us_county_crossover.get(county_, county_)
                 out.update({"county": county_})
+            county_ = county_crossover.get(out.get("county"), out.get("county"))
+            out.update({"county": county_})
             # matchLevel harmonization
             out.update({"matchLevel": types2level_crossover(out["matchLevel"])})
             if not out.get("latitude"):
-                # in case there were no coordinates in the result, it's a NOMATCH
+                # in case there is no coordinates in the result, it's a NOMATCH
                 out = emulate_nomatch_gmaps(recid)
             flush_result(out, out_format)
     else:
@@ -519,7 +520,7 @@ def harmonize_geoc_data_gmaps(
     assert out_format in ["csv", "jsonl"]
     iso_crossover = get_isocrossover()
     us_state_crossover = get_usstatecrossover()
-    us_county_crossover = get_uscountycrossover()
+    county_crossover = get_countycrossover()
 
     if out_format == "csv" and header:
         csvwriter = csv.DictWriter(sys.stdout, GEOC_OUTCOLS)
@@ -533,7 +534,7 @@ def harmonize_geoc_data_gmaps(
             try:
                 recid, response = line.split(inDelim)
                 parse_response_gmaps(response, recid, out_format,
-                                     iso_crossover, us_state_crossover, us_county_crossover)
+                                     iso_crossover, us_state_crossover, county_crossover)
             except ValueError:
                 pass
                 # occurs when there is still an inDelim in the result
