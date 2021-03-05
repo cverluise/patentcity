@@ -473,19 +473,21 @@ def generate_iso_override():
 
 
 @app.command()
-def get_gmaps_index_wgp(file: str, inDelim: str = "|", verbose: bool = False):
+def get_gmaps_index_wgp(file: str, flavor: int = None, inDelim: str = "|", verbose: bool = False):
     """
     Return the csv file as the gmaps geoc index we are using in patentcity
     recId|{gmaps output}
     Next, it should be harmonized with HERE data.
     E.g. addresses_florian25.csv
     """
+    assert flavor in [25, 45]
+    recid_idx = 0 if flavor == 45 else -1
     with open(file, "r") as fin:
         csv_reader = csv.reader(fin, delimiter=",", escapechar="\\")
         for line in csv_reader:
             try:
                 typer.echo(
-                    f"{line[0]}{inDelim}{json.dumps(json.loads(line[3])['results'])}"
+                    f"{line[recid_idx]}{inDelim}{json.dumps(json.loads(line[3])['results'])}"
                 )
             except Exception as e:
                 if verbose:

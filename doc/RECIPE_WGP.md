@@ -10,8 +10,8 @@ bq load --replace --source_format CSV --autodetect patentcity:external.inventor_
 #### Build Gmaps index (patent city flavor)
 
 ```shell script
-patentcity utils get-gmaps-index-wgp addresses_florian45.csv >> addresses_florian45.jsonl
-patentcity utils get-gmaps-index-wgp addresses_florian25.csv >> addresses_florian25.jsonl
+patentcity utils get-gmaps-index-wgp --flavor 45 addresses_florian45.csv >> addresses_florian45.jsonl
+patentcity utils get-gmaps-index-wgp --flavor 25 addresses_florian25.csv >> addresses_florian25.jsonl
 patentcity geo harmonize-geoc-data-gmaps addresses_florian45.jsonl --out-format csv >> addresses_florian45_patentcity.csv
 patentcity geo harmonize-geoc-data-gmaps addresses_florian25.jsonl --out-format csv >> addresses_florian25_patentcity.csv
 ````
@@ -56,5 +56,7 @@ gsutil -m mv  "./patentcity*.jsonl.gz" gs://gder_dev/v1/
 #### Load (BQ)
 
 ```shell script
-bq load --source_format=NEWLINE_DELIMITED_JSON --max_bad_records=1000 --ignore_unknown_values --replace patentcity:patentcity.wgp_v1 "gs://gder_dev/v1/patentcity*.jsonl.gz" schema/patentcity_v1.json
+URI="" # e.g. "gs://gder_dev/v100rc3/patentcity*.jsonl.gz"
+RELEASETABLE=""  #e.g. "patentcity:patentcity.wgp_v100rc3"
+bq load --source_format=NEWLINE_DELIMITED_JSON --max_bad_records=1000 --ignore_unknown_values --replace ${RELEASETABLE} ${URI} schema/patentcity_v1.sm.json
 ```
