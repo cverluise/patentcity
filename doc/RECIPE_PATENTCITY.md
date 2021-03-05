@@ -38,7 +38,7 @@ cat lib/formats.txt | parallel --eta -j 3 'MODEL=$(ls -d models/**/model-best | 
 for OFFICE in  dd de fr gb us; do echo ${OFFICE} && cat entrel_${OFFICE}patent*.jsonl >> entrel_${OFFICE}patentxx.jsonl; done;
 
 # Add topping 
-ls entrel_*patentxx.jsonl | parallel --eta -j 2 'mv {} {}_tmp && patentcity brew v1.topping --cit-fst-file lib/cit_fst.json {}_tmp >> {} '
+ls entrel_*patentxx.jsonl | parallel --eta -j 2 'mv {} {}_tmp && patentcity brew v1.topping --config-file configs/top_xxpatentxx.yaml {}_tmp >> {} '
 # Note: it can be memory greedy, you might want to limit the nb or jobs and/or the nb of workers
 
 # Check output not corrupted
@@ -169,12 +169,23 @@ for OFFICE in ${MANUALDISAMB}; do
   patentcity geo harmonize-geoc-data-gmaps geoc_${OFFICE}patentxx.manual.txt --out-format csv >> geoc_${OFFICE}patentxx.manual.csv;
 done;
   
+# Stack geocoded data
+for SERVICE in here gmaps; do
+  for OFFICE in dd de fr gb us; do
+    rm -f geoc_${OFFICE}patentxx.${SERVICE}.csv_xx
+    head -n 1 geoc_${OFFICE}patentxx.${SERVICE}.csv_00 >> geoc_${OFFICE}patentxx.${SERVICE}.csv_xx && 
+    for i in 0 1; do  # up until last round
+      tail -n +2 geoc_${OFFICE}patentxx.${SERVICE}.csv_0${i} >> geoc_${OFFICE}patentxx.${SERVICE}.csv_xx; 
+    done;
+  done;
+done;
+
 # Incorporate geocoded data
 # HERE and GMAPS
 for OFFICE in dd de fr gb us; do
   echo ${OFFICE}
-  patentcity geo add-geoc-data entrel_${OFFICE}patentxx.jsonl --geoc-file geoc_${OFFICE}patentxx.here.csv_00.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp && 
-  patentcity geo add-geoc-data entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.gmaps.csv.gz --source GMAPS >> entrelgeoc_${OFFICE}patentxx.jsonl &&
+  patentcity geo add-geoc-data entrel_${OFFICE}patentxx.jsonl --geoc-file geoc_${OFFICE}patentxx.here.csv_xx.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp && 
+  patentcity geo add-geoc-data entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.gmaps.csv_xx.gz --source GMAPS >> entrelgeoc_${OFFICE}patentxx.jsonl &&
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
 done;  
 
@@ -185,22 +196,37 @@ for OFFICE in ${MANUALDISAMB}; do
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
 done;
 
-for FILE in $(ls entrelgeoc_*patentxx.jsonl); do
- mv ${FILE} ${FILE}_tmp &&
- sed 's/\"seqNumber\":/\"loc_seqNumber\":/g; s/\"seqLength\":/\"loc_seqLength\":/g; s/\"latitude\":/\"loc_latitude\":/g; s/\"longitude\":/\"loc_longitude\":/g; s/\"locationLabel\":/\"loc_locationLabel\":/g; s/\"addressLines\":/\"loc_addressLines\":/g; s/\"street\":/\"loc_street\":/g; s/\"houseNumber\":/\"loc_houseNumber\":/g; s/\"building\":/\"loc_building\":/g; s/\"subdistrict\":/\"loc_subdistrict\":/g; s/\"district\":/\"loc_district\":/g; s/\"city\":/\"loc_city\":/g; s/\"postalCode\":/\"loc_postalCode\":/g; s/\"county\":/\"loc_county\":/g; s/\"state\":/\"loc_state\":/g; s/\"country\":/\"loc_country\":/g; s/\"relevance\":/\"loc_relevance\":/g; s/\"matchType\":/\"loc_matchType\":/g; s/\"matchCode\":/\"loc_matchCode\":/g; s/\"matchLevel\":/\"loc_matchLevel\":/g; s/\"matchQualityStreet\":/\"loc_matchQualityStreet\":/g; s/\"matchQualityHouseNumber\":/\"loc_matchQualityHouseNumber\":/g; s/\"matchQualityBuilding\":/\"loc_matchQualityBuilding\":/g; s/\"matchQualityDistrict\":/\"loc_matchQualityDistrict\":/g; s/\"matchQualityCity\":/\"loc_matchQualityCity\":/g; s/\"matchQualityPostalCode\":/\"loc_matchQualityPostalCode\":/g; s/\"matchQualityCounty\":/\"loc_matchQualityCounty\":/g; s/\"matchQualityState\":/\"loc_matchQualityState\":/g; s/\"matchQualityCountry\\r\":/\"loc_matchQualityCountry\":/g' ${FILE}_tmp >> ${FILE}
-done; 
+# prep var name
+ls entrelgeoc_*patentxx.jsonl | parallel --eta """mv {} {}_tmp && sed 's/\"seqNumber\":/\"loc_seqNumber\":/g; s/\"seqLength\":/\"loc_seqLength\":/g; s/\"latitude\":/\"loc_latitude\":/g; s/\"longitude\":/\"loc_longitude\":/g; s/\"locationLabel\":/\"loc_locationLabel\":/g; s/\"addressLines\":/\"loc_addressLines\":/g; s/\"street\":/\"loc_street\":/g; s/\"houseNumber\":/\"loc_houseNumber\":/g; s/\"building\":/\"loc_building\":/g; s/\"subdistrict\":/\"loc_subdistrict\":/g; s/\"district\":/\"loc_district\":/g; s/\"city\":/\"loc_city\":/g; s/\"postalCode\":/\"loc_postalCode\":/g; s/\"county\":/\"loc_county\":/g; s/\"state\":/\"loc_state\":/g; s/\"country\":/\"loc_country\":/g; s/\"relevance\":/\"loc_relevance\":/g; s/\"matchType\":/\"loc_matchType\":/g; s/\"matchCode\":/\"loc_matchCode\":/g; s/\"matchLevel\":/\"loc_matchLevel\":/g; s/\"matchQualityStreet\":/\"loc_matchQualityStreet\":/g; s/\"matchQualityHouseNumber\":/\"loc_matchQualityHouseNumber\":/g; s/\"matchQualityBuilding\":/\"loc_matchQualityBuilding\":/g; s/\"matchQualityDistrict\":/\"loc_matchQualityDistrict\":/g; s/\"matchQualityCity\":/\"loc_matchQualityCity\":/g; s/\"matchQualityPostalCode\":/\"loc_matchQualityPostalCode\":/g; s/\"matchQualityCounty\":/\"loc_matchQualityCounty\":/g; s/\"matchQualityState\":/\"loc_matchQualityState\":/g; s/\"matchQualityCountry\\r\":/\"loc_matchQualityCountry\":/g' {}_tmp >> {} """
 ```
 
 ### Build data
 
+#### patentcity only
+
 ```shell
-STAGETABLE="patentcity:tmp.tmp"
-RELEASETABLE="" # e.g. patentcity.tmp.tmp_100rc1
-KEYFILE="" # e.g. credentials-patentcity.json
+#STAGETABLE="patentcity:tmp.tmp"
+URI="" # e.g "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl"
+RELEASETABLE="" # e.g. "patentcity:patentcity.pc_v100rc3"
+KEYFILE="" # e.g. "credentials-patentcity.json"
 # Load data
-bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values --max_bad_records 1000 ${STAGETABLE} "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl" schema/patentcity_v1.sm.json
+bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values --max_bad_records 10000 ${RELEASETABLE} ${URI} schema/patentcity_v1.sm.json
+```
+
+#### patentcity + wgp
+
+```shell
+KEYFILE="" # e.g. "credentials-patentcity.json"
+URIPC=""  # e.g. "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl"
+URIWGP=""  # e.g. "gs://gder_dev/v100rc3/patentcity*.jsonl.gz" 
+STAGETABLE="" #e.g "patentcity:tmp.v100rc3"
+RELEASETABLE=""  # e.g. "patentcity:patentcity.v100rc3"
+
+bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values --max_bad_records 10000 ${STAGETABLE} ${URIPC} schema/patentcity_v1.sm.json
+bq load --source_format NEWLINE_DELIMITED_JSON --noreplace --ignore_unknown_values --max_bad_records 1000 ${STAGETABLE} ${URIWGP} schema/patentcity_v1.sm.json
+ 
 # Augment data
-patentcity io augment-patentcity $(echo ${STAGETABLE} | sed -e 's/:/./') ${RELEASETABLE} --key-file ${KEYFILE}
+patentcity io augment-patentcity $(echo ${STAGETABLE} | sed -e 's/:/./') $(echo ${RELEASETABLE} | sed -e 's/:/./') --key-file ${KEYFILE}
 
 # Impute missing dates
 #for OFFICE in dd de; do
@@ -210,6 +236,6 @@ patentcity io augment-patentcity $(echo ${STAGETABLE} | sed -e 's/:/./') ${RELEA
 
 for OFFICE in dd de; do 
   bq load --source_format CSV --replace --ignore_unknown_values --max_bad_records 1000 patentcity:tmp.de_pubdate_imputation "gs://patentcity_dev/v1/pubdate_${OFFICE}patentxx.imputation.expanded.csv" schema/date_imputation.json
-  patentcity io impute-publication-date ${RELEASETABLE} patentcity.tmp.${OFFICE}_pubdate_imputation --country-code ${OFFICE:u} --key-file ${KEYFILE};
+  patentcity io impute-publication-date $(echo ${RELEASETABLE} | sed -e 's/:/./') patentcity.tmp.${OFFICE}_pubdate_imputation --country-code ${OFFICE:u} --key-file ${KEYFILE};
 done;    
 ```
