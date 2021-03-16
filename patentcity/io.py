@@ -263,7 +263,10 @@ def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
       SELECT CAST(publication_date/100000 AS INT64) AS publication_decade, 
       * EXCEPT(patentee) 
       FROM `{table}`,  # patentcity.patentcity.wgp_v1 
-            UNNEST(patentee) as patentee ), 
+            UNNEST(patentee) as patentee 
+        WHERE 
+        patentee.loc_text IS NOT NULL
+        AND patentee.loc_source IS NOT NULL ), 
       table_stats AS (
   SELECT *, SUM(nb_bin) OVER() AS nb_total 
       FROM (
