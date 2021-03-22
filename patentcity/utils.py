@@ -344,7 +344,7 @@ def mcq(line, fset, ignore):
 
 @app.command()
 def mcq_factory(
-    loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
+        loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
 ):
     """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
     on the text of each line in the loc file and the targets in the index file"""
@@ -631,7 +631,7 @@ def prep_geoc_gold(gold: str, data: str):
     """Return a csv file with gold annotations"""
 
     def level2array(x):
-        idx = levels.index(x) if x else None
+        idx = levels.index(x) if x and str(x) != "nan" else None
         if idx:
             truth_array = [1] * (idx + 1) + [0] * (len(levels) - (idx + 1))
         else:
