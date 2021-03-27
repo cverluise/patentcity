@@ -82,7 +82,7 @@ Entity|Content|E.g
   ---|---|---
  `ASG`| Assignee full name | Déposant: Société dite: <font style="border:2px solid blue">SALZDETFURTH A.G `ASG`</font>, résidant en République Fédérale d'Allemagne
  `INV`| Inventor(s) full name |  Invention de: <font style="border:2px solid red">Takaya Endo`INV`</font>, <font style="border:2px solid red">Shui Sato`INV`</font>, <font style="border:2px solid red">Shoji Kikuchi`INV`</font>, <font style="border:2px solid red">Koichi Takabe`INV`</font>, <font style="border:2px solid red">Hiroyuki Imamura `INV`</font>, <font style="border:2px solid red">Tamotsu Kozima`INV`</font> et <font style="border:2px solid red">Tugumoto Usui `INV`</font>
-	`LOC`| Location of the assignee/inventor| Déposant: Société dite: ROBERT BOSCH GBMH, résidant en <font style="border:2px solid green">République Fédérale d'Allemagne `LOC`</font>.
+ `LOC`| Location of the assignee/inventor| Déposant: Société dite: ROBERT BOSCH GBMH, résidant en <font style="border:2px solid green">République Fédérale d'Allemagne `LOC`</font>.
 
 Assignees (or inventors) and their corresponding geographic indication are tied together through the relation "LOCATION".
 
