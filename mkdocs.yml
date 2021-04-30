@@ -1,0 +1,88 @@
+site_name: patentCity
+site_description: Early age patents for humans and researchers
+site_author: Cyril Verluise
+#site_url:
+#repo_url: https://github.com/koaning/clumper
+
+##### Nav #####
+nav:
+  - About: index.md
+  - Guides:
+      - DD:
+        - Overview: DD.md
+        - Annotation Guidelines: DD_ANNOTATION_GUIDELINES.md
+        - Models: DD_MODEL_CARD.md
+      - DE:
+        - Overview: DE.md
+        - Annotation Guidelines: DE_ANNOTATION_GUIDELINES.md
+        - Models: DE_MODEL_CARD.md
+      - FR:
+        - Overview: FR.md
+        - Annotation Guidelines: FR_ANNOTATION_GUIDELINES.md
+        - Models: FR_MODEL_CARD.md
+      - GB:
+        - Overview: GB.md
+        - Annotation Guidelines: GB_ANNOTATION_GUIDELINES.md
+        - Models: GB_MODEL_CARD.md
+      - US:
+        - Overview: US.md
+        - Annotation Guidelines: US_ANNOTATION_GUIDELINES.md
+        - Models: US_MODEL_CARD.md
+      - Relationship:
+          - Annotation Guidelines: XX_REL_ANNOTATION_GUIDELINES.md
+          - Models: XX_REL_CARD.md
+      - Date imputation:
+          - DD: DD_DATE_IMPUTATION.md
+          - DE: DE_DATE_IMPUTATION.md
+      - Citizenship: XX_CIT_EVALUATION.md
+      - Deduplicaton: XX_DEDUPLICATION_EVALUATION.md
+  - API:
+      - brew: API_BREW.md
+      - eval: API_EVAL.md
+      - geo: API_GEO.md
+  - License:
+    - Code: LICENSE_CODE.md
+    - Data: LICENSE_DATA.md
+
+
+##### Theme #####
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+  palette:
+    primary: teal
+    accent: teal
+
+markdown_extensions:
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.highlight:
+      use_pygments: true
+  - toc:
+      permalink: true
+
+##### Plugins #####
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      watch:
+        - patcit
+  - search:
+      lang: en
+
+##### Footer #####
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/cyrilverluise
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/cyril-verluise-80184347/
+#    - icon: fontawesome/brands/github
+#      link: https://cverluise.github.io/PatCit/
