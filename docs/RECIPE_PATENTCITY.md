@@ -84,7 +84,7 @@ rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort l
 ````shell
 ROUND="00"
 for OFFICE in dd de fr gb us; do 
-  patentcity utils get-recid-nomatch geoc_${OFFICE}patentxx.here.csv_${ROUND}.gz loc_${OFFICE}patentxx.tbd.txt_${ROUND} >> loc_${OFFICE}patentxx.tbd.nomatch.txt_${ROUND};
+  patentcity utils get-recid-nomatch geoc_${OFFICE}patentxx.here.csv_${ROUND}.gz loc_${OFFICE}patentxx.tbd.txt_${ROUND} >> loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND};
 done;    
 ````
 
