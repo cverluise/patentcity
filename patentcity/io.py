@@ -57,7 +57,7 @@ def augment_patentcity(src_table: str, destination_table: str, key_file: str = N
 @app.command()
 def impute_publication_date(src_table, imputation_table, country_code: str = None, key_file: str = None):
     """Update publication_date - DE & DD only"""
-    de_clause = """AND CAST(t.pubnum AS INT64)<330000""" if country_code=="DE" else """"""
+    de_clause = """AND CAST(t.pubnum AS INT64)<330000""" if country_code == "DE" else """"""
     query = f"""UPDATE
       `{src_table}` AS t
     SET
@@ -295,6 +295,25 @@ def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
         typer.secho(f"Nb samples: {tmp['nb_samples'].sum()}", fg=typer.colors.BLUE)
     else:
         get_job_done(query, destination_table, key_file)
+
+
+@app.command()
+def get_wgp25_recid(ctry_code: str, table_ref: str, destination_table: str, key_file: str):
+    """Extract recId and searchText from wgp25. Nb: assume that the recId has been added to
+    inventor_applicant_locationid beforehand (using utils.get_recid(address_))."""
+    assert len(ctry_code) == 2
+    query = f"""
+    SELECT
+        recId,
+        ANY_VALUE(address_) AS searchText
+    FROM
+        `{table_ref}`  # patentcity.external.inventor_applicant_recid
+    WHERE
+        ctry_code = "{ctry_code}"
+    GROUP BY
+        recId
+    """
+    get_job_done(query, destination_table, key_file)
 
 
 if __name__ == "__main__":
