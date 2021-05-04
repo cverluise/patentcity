@@ -136,7 +136,8 @@ def build_wgp_as_patentcity(
         WITH
           tmp AS (
           SELECT
-            *,
+            patee.* EXCEPT(recId),
+            loc.*,
             app_inv="INV" AS is_inv,
             app_inv="APP" AS is_app
           FROM (
@@ -150,7 +151,7 @@ def build_wgp_as_patentcity(
             `{patentee_location_table}` AS patee
             # patentcity.external.inventor_applicant_location_id
           ON
-            loc.recId = patee.location_id )
+            loc.recId = patee.recId )  # location_id  
         SELECT
           tmp.* EXCEPT(appln_id, pat_publn_id),
           patstat.*,
