@@ -82,7 +82,7 @@ rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort l
 #### NOMATCH from HERE
 
 ````shell
-ROUND="00"
+ROUND=""  # e.g. 00
 for OFFICE in dd de fr gb us; do 
   patentcity utils get-recid-nomatch geoc_${OFFICE}patentxx.here.csv_${ROUND}.gz loc_${OFFICE}patentxx.tbd.txt_${ROUND} >> loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND};
 done;    
@@ -207,7 +207,7 @@ ls entrelgeoc_*patentxx.jsonl | parallel --eta """mv {} {}_tmp && sed 's/\"seqNu
 ```shell
 #STAGETABLE="patentcity:tmp.tmp"
 URI="" # e.g "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl"
-RELEASETABLE="" # e.g. "patentcity:patentcity.pc_v100rc3"
+RELEASETABLE="" # e.g. "patentcity:patentcity.pc_v100rc4"
 KEYFILE="" # e.g. "credentials-patentcity.json"
 # Load data
 bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values --max_bad_records 10000 ${RELEASETABLE} ${URI} schema/patentcity_v1.sm.json
@@ -218,9 +218,9 @@ bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values
 ```shell
 KEYFILE="" # e.g. "credentials-patentcity.json"
 URIPC=""  # e.g. "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl"
-URIWGP=""  # e.g. "gs://gder_dev/v100rc3/patentcity*.jsonl.gz" 
-STAGETABLE="" #e.g "patentcity:tmp.v100rc3"
-RELEASETABLE=""  # e.g. "patentcity:patentcity.v100rc3"
+URIWGP=""  # e.g. "gs://gder_dev/v100rc4/patentcity*.jsonl.gz" 
+STAGETABLE="" #e.g "patentcity:tmp.v100rc4"
+RELEASETABLE=""  # e.g. "patentcity:patentcity.v100rc4"
 
 bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values --max_bad_records 10000 ${STAGETABLE} ${URIPC} schema/patentcity_v1.sm.json
 bq load --source_format NEWLINE_DELIMITED_JSON --noreplace --ignore_unknown_values --max_bad_records 1000 ${STAGETABLE} ${URIWGP} schema/patentcity_v1.sm.json
