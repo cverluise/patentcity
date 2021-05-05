@@ -299,20 +299,36 @@ def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
 
 
 @app.command()
-def get_wgp25_recid(ctry_code: str, table_ref: str, destination_table: str, key_file: str):
-    """Extract recId and searchText from wgp25. Nb: assume that the recId has been added to
+def get_wgp25_recid(country_code: str,
+                    table_ref: str,
+                    patstat_patent_properties_table: str,
+                    destination_table: str, key_file: str):
+    """Extract recId and searchText from wgp25 for patents published in `country_code`. Nb: assume that the recId has been added to
     inventor_applicant_locationid beforehand (using utils.get_recid(address_))."""
-    assert len(ctry_code) == 2
+    assert len(country_code) == 2
     query = f"""
+    WITH
+      tmp AS (
+      SELECT
+        loc.*,
+        patstat.*,
+        SPLIT(patstat.publication_number, "-")[OFFSET(0)] AS country_code
+      FROM
+        `{table_ref}` AS loc,  # patentcity.external.inventor_applicant_recid
+        `{patstat_patent_properties_table}` AS patstat  # patentcity.external.patstat_patent_properties
+      WHERE
+        loc.appln_id = patstat.appln_id
+        AND loc.appln_id IS NOT NULL
+        AND SPLIT(patstat.publication_number, "-")[OFFSET(0)] IN ("DE", "GB", "FR", "US")
     SELECT
-        recId,
-        ANY_VALUE(address_) AS searchText
+      recId,
+      ANY_VALUE(address_) AS searchText
     FROM
-        `{table_ref}`  # patentcity.external.inventor_applicant_recid
+      tmp
     WHERE
-        ctry_code = "{ctry_code}"
+      country_code="{country_code}"
     GROUP BY
-        recId
+      recId
     """
     get_job_done(query, destination_table, key_file)
 
