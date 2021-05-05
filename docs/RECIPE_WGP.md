@@ -38,12 +38,12 @@ Then, geocode following the same procedure as for PatentCity (see [RECIPE_PATENT
 # harmonize
 ls geoc_*patentwgp25.gmaps.txt | cut -d. -f1,2 |parallel --eta 'patentcity geo harmonize-geoc-data-gmaps {}.txt --out-format csv >> {}.csv'
 # Remove extra recId field (returned by HERE)
-ls geoc_*patentwgp25.here.csv.gz | parallel --eta 'mv {} {.}.tmp.gz && csvcut -C 4 {.}.tmp.gz >> {.}'
+ls geoc_*patentwgp25.here.csv.gz | parallel --eta 'mv {} {.}.tmp.gz && csvcut -C 4 {.}.tmp.gz >> {.} && gzip {.}'
 # Add source 
 ls geoc_*patentwgp25.here.csv.gz | parallel --eta 'mv {} {.}.tmp.gz && csvstack -n source -g HERE {.}.tmp.gz >> {.} && gzip {.}'
 ls geoc_*patentwgp25.gmaps.csv.gz | parallel --eta 'mv {} {.}.tmp.gz && csvstack -n source -g GMAPS {.}.tmp.gz >> {.} && gzip {.}'
-# addresses_florian25_patentcity.csv 
-zcat geoc_depatentwgp25.gmaps.csv.gz | head -n 1 >> addresses_cyril25_patentcity.csv
+# addresses_vyril25_patentcity.csv 
+zcat geoc_depatentwgp25.gmaps.csv.gz | head -n 1 >> addresses_cyril25_patentcity.csv  # this is just the header
 for FILE in $(ls geoc_*patentwgp25.*.csv.gz); do zcat ${FILE} | grep -v "recId" >> addresses_cyril25_patentcity.csv ; done
 gzip addresses_cyril25_patentcity.csv
 ```
@@ -90,7 +90,7 @@ gsutil -m mv  "./patentcity*.jsonl.gz" gs://gder_dev/v1/
 ### Load (BQ)
 
 ```shell
-URI="" # e.g. "gs://gder_dev/v100rc3/patentcity*.jsonl.gz"
-RELEASETABLE=""  #e.g. "patentcity:patentcity.wgp_v100rc3"
+URI="" # e.g. "gs://gder_dev/v100rc4/patentcity*.jsonl.gz"
+RELEASETABLE=""  #e.g. "patentcity:patentcity.wgp_v100rc4"
 bq load --source_format=NEWLINE_DELIMITED_JSON --max_bad_records=1000 --ignore_unknown_values --replace ${RELEASETABLE} ${URI} schema/patentcity_v1.sm.json
 ```
