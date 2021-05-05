@@ -144,12 +144,13 @@ def build_wgp_as_patentcity(
             SELECT
               *
             FROM
-              `{addresses_table}`  # patentcity.external.addresses_florian25_patentcity
+              `{addresses_table}`  # patentcity.external.addresses_cyril25_patentcity
             WHERE
-              seqNumber = 1 ) AS loc
+              seqNumber = 1 
+              AND (matchLevel="NOMATCH" AND source="HERE") IS FALSE ) AS loc
           JOIN
             `{patentee_location_table}` AS patee
-            # patentcity.external.inventor_applicant_location_id
+            # patentcity.external.inventor_applicant_recid
           ON
             loc.recId = patee.recId )  # location_id  
         SELECT
@@ -163,7 +164,8 @@ def build_wgp_as_patentcity(
         LEFT JOIN
           `{patstat_patent_properties_table}` AS patstat
         ON
-          tmp.appln_id = patstat.appln_id
+          tmp.pat_publn_id = patstat.pat_publn_id #tmp.appln_id = patstat.appln_id
+          # here we are at the publication level, not the patent level 
         WHERE
           SPLIT(patstat.publication_number, "-")[OFFSET(0)] IN ("DE", "GB", "FR", "US")
 
@@ -219,6 +221,7 @@ def build_wgp_as_patentcity(
               `{patstat_patent_properties_table}` AS patstat
             ON
               tmp.appln_id = patstat.appln_id
+              # here we are at the the patent level 
             WHERE
               SPLIT(patstat.publication_number, "-")[OFFSET(0)] IN ("DE", "GB", "FR", "US")
             """
