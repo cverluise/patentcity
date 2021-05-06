@@ -10,10 +10,10 @@
 
 ````shell
 # get raw data
-gsutil -m cp "gs://patentcity_dev/v1/*patent*.txt.tar.gz" ./ 
+gsutil -m cp "gs://patentcity_dev/v1/*patent*.txt.tar.gz" ./
 
 # Unpack data
-cat lib/formats.txt | parallel --eta 'tar -xvzf {}.txt.tar.gz -C ./{}' 
+cat lib/formats.txt | parallel --eta 'tar -xvzf {}.txt.tar.gz -C ./{}'
 # then, you can go for a week-end
 
 # Prepare data
@@ -34,10 +34,10 @@ gsutil -m cp "gs://patentcity_dev/v1/*.jsonl.gz" ./
 cat lib/formats.txt | parallel --eta -j 3 'MODEL=$(ls -d models/**/model-best | grep {} ) && patentcity brew v1 {}.jsonl.gz ${MODEL} configs/rel_{}.yaml --batch-size 500 >> entrel_{}.jsonl'
 # Number of job for a 8 CPUs 32Gb ram machine
 
-# Merge all format belonging to the same office in one single file 
+# Merge all format belonging to the same office in one single file
 for OFFICE in  dd de fr gb us; do echo ${OFFICE} && cat entrel_${OFFICE}patent*.jsonl >> entrel_${OFFICE}patentxx.jsonl; done;
 
-# Add topping 
+# Add topping
 ls entrel_*patentxx.jsonl | parallel --eta -j 2 'mv {} {}_tmp && patentcity brew v1.topping --config-file configs/top_xxpatentxx.yaml {}_tmp >> {} '
 # Note: it can be memory greedy, you might want to limit the nb or jobs and/or the nb of workers
 
@@ -72,9 +72,9 @@ ls loc_*patentxx.count.txt | cut -d. -f 1,2 | parallel --eta 'mv {}.txt {}.txt_t
 for FILE in $(ls loc_*patentxx.count.txt | cut -d. -f 1 ); do cat ${FILE}.count.txt | sort -nr  |awk '{$1=""; print $0}' | cut -c2- >> ${FILE}.sorted.txt; done;
 # nb sorted in descending order
 
-# Now assume that you want to get 250k addresses to geocode, covering as many occurences as possible and making sure that they have not been geocoded yet 
+# Now assume that you want to get 250k addresses to geocode, covering as many occurences as possible and making sure that they have not been geocoded yet
 # Below, we get the 275k most cited addresses (unconditional) and we keep only those which are no yet done (ie in tbd as well)
-# Nb requires a bit of fine tuning to make sure that we have the right nbr of lines:  rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort loc_${FORMAT}.tbd.txt) <(sort tmp) | wc -l    
+# Nb requires a bit of fine tuning to make sure that we have the right nbr of lines:  rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort loc_${FORMAT}.tbd.txt) <(sort tmp) | wc -l
 FORMAT="uspatentxx"
 rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort loc_${FORMAT}.tbd.txt) <(sort tmp) | sort -r >>  loc_${FORMAT}.tbd.txt_00
 ````
@@ -83,15 +83,15 @@ rm -f tmp && head -n 275000 loc_${FORMAT}.sorted.txt >> tmp && comm -13 <(sort l
 
 ````shell
 ROUND=""  # e.g. 00
-for OFFICE in dd de fr gb us; do 
+for OFFICE in dd de fr gb us; do
   patentcity utils get-recid-nomatch geoc_${OFFICE}patentxx.here.csv_${ROUND}.gz loc_${OFFICE}patentxx.tbd.txt_${ROUND} >> loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND};
-done;    
+done;
 ````
 
 
 ### Geocode dataset
 
-> ℹ️ The below snippets walks you through the geocoding process.   
+> ℹ️ The below snippets walks you through the geocoding process.
 
 #### Using GMAPS
 
@@ -99,9 +99,9 @@ done;
 # Geocode using GMAPS
 # 1-by-1
 APIKEY=""
-OFFICE=""  # see above 
+OFFICE=""  # see above
 REGION=""  # see above (nb uk for gb)
-ROUND=""  # e.g. 00 
+ROUND=""  # e.g. 00
 echo "OFFICE:${OFFICE} REGION:${REGION} ROUND:${ROUND}"
 echo "loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND} has $(wc -l loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND}) line(s)"
 # better safe than sorry
@@ -116,7 +116,7 @@ patentcity geo get-geoc-data-gmaps loc_${OFFICE}patentxx.here.nomatch.txt_${ROUN
 # Make sure that there is the appropriate header, ie recId|searchText
 # if not, you can use sthg in the flavor of
 # ls loc_*patentxx.tbd.txt_00* | parallel --eta 'mv {} {}_tmp && echo "recId|searchText" >> {} && cat {}_tmp >> {}'
-APIKEY="" 
+APIKEY=""
 FILE="" # e.g. loc_ddpatentxx.tbd.txt_00
 CNTFOCUS="" # e.g. deu
 
@@ -150,13 +150,13 @@ patentcity utils disamb-countrycodes loc_${FORMAT}.txt >> lib/loc_${FORMAT}.disa
 ```shell
 FORMAT=""  # e.g. frpatentxx, ddpatentxx
 DISAMBFILE=""  # e.g. lib/loc_${FORMAT}.disamb.txt
-GEOCINDEX=""  # e.g. lib/geoc_${FORMAT}.disamb.index.txt lib/geoc_iso.disamb.index.txt 
+GEOCINDEX=""  # e.g. lib/geoc_${FORMAT}.disamb.index.txt lib/geoc_iso.disamb.index.txt
 FLAVOR=""  # HERE or GMAPS
 patentcity geo add-geoc-disamb ${DISAMBFILE} ${GEOCINDEX} --flavor ${FLAVOR}>> geoc_${FORMAT}.manual.txt
 # DISAMBFILE is a list of disambiguated loc together with their *original* hash (sep by the standard inDelim)
 # GEOCINDEX is the list of geoc of disambigated loc (e.g. "république fédérale d'allemagne")
-# FLAVOR is HERE or GMAPS depending on the flavor of GEOCINDEX  
-# The output is a GMAPS like file (md5|{}) 
+# FLAVOR is HERE or GMAPS depending on the flavor of GEOCINDEX
+# The output is a GMAPS like file (md5|{})
 ```
 
 ### Add geocoded data
@@ -168,14 +168,14 @@ MANUALDISAMB="fr"
 for OFFICE in ${MANUALDISAMB}; do
   patentcity geo harmonize-geoc-data-gmaps geoc_${OFFICE}patentxx.manual.txt --out-format csv >> geoc_${OFFICE}patentxx.manual.csv;
 done;
-  
+
 # Stack geocoded data
 for SERVICE in here gmaps; do
   for OFFICE in dd de fr gb us; do
     rm -f geoc_${OFFICE}patentxx.${SERVICE}.csv_xx
-    head -n 1 geoc_${OFFICE}patentxx.${SERVICE}.csv_00 >> geoc_${OFFICE}patentxx.${SERVICE}.csv_xx && 
+    head -n 1 geoc_${OFFICE}patentxx.${SERVICE}.csv_00 >> geoc_${OFFICE}patentxx.${SERVICE}.csv_xx &&
     for i in 0 1; do  # up until last round
-      tail -n +2 geoc_${OFFICE}patentxx.${SERVICE}.csv_0${i} >> geoc_${OFFICE}patentxx.${SERVICE}.csv_xx; 
+      tail -n +2 geoc_${OFFICE}patentxx.${SERVICE}.csv_0${i} >> geoc_${OFFICE}patentxx.${SERVICE}.csv_xx;
     done;
   done;
 done;
@@ -184,10 +184,10 @@ done;
 # HERE and GMAPS
 for OFFICE in dd de fr gb us; do
   echo ${OFFICE}
-  patentcity geo add-geoc-data entrel_${OFFICE}patentxx.jsonl --geoc-file geoc_${OFFICE}patentxx.here.csv_xx.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp && 
+  patentcity geo add-geoc-data entrel_${OFFICE}patentxx.jsonl --geoc-file geoc_${OFFICE}patentxx.here.csv_xx.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
   patentcity geo add-geoc-data entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.gmaps.csv_xx.gz --source GMAPS >> entrelgeoc_${OFFICE}patentxx.jsonl &&
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
-done;  
+done;
 
 MANUALDISAMB="dd fr"  # we add dd which is already in HERE like format
 for OFFICE in ${MANUALDISAMB}; do
@@ -207,7 +207,7 @@ ls entrelgeoc_*patentxx.jsonl | parallel --eta """mv {} {}_tmp && sed 's/\"seqNu
 ```shell
 #STAGETABLE="patentcity:tmp.tmp"
 URI="" # e.g "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl"
-RELEASETABLE="" # e.g. "patentcity:patentcity.pc_v100rc4"
+RELEASETABLE="" # e.g. "patentcity:patentcity.pc_v100rc5"
 KEYFILE="" # e.g. "credentials-patentcity.json"
 # Load data
 bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values --max_bad_records 10000 ${RELEASETABLE} ${URI} schema/patentcity_v1.sm.json
@@ -216,17 +216,17 @@ bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values
 #### patentcity + wgp
 
 ```shell
-KEYFILE="" # e.g. "credentials-patentcity.json"
-URIPC=""  # e.g. "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl"
-URIWGP=""  # e.g. "gs://gder_dev/v100rc4/patentcity*.jsonl.gz" 
-STAGETABLE="" #e.g "patentcity:tmp.v100rc4"
-RELEASETABLE=""  # e.g. "patentcity:patentcity.v100rc4"
+KEYFILE="" # "credentials-patentcity.json"
+URIPC=""  # "gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl"
+URIWGP=""  # "gs://gder_dev/v100rc4/patentcity*.jsonl.gz"
+STAGETABLE="" #e.g "patentcity:tmp.v100rc5"
+RELEASETABLE=""  # "patentcity:patentcity.v100rc5"
 
 bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values --max_bad_records 10000 ${STAGETABLE} ${URIPC} schema/patentcity_v1.sm.json
 bq load --source_format NEWLINE_DELIMITED_JSON --noreplace --ignore_unknown_values --max_bad_records 1000 ${STAGETABLE} ${URIWGP} schema/patentcity_v1.sm.json
- 
+
 # Augment data
-patentcity io augment-patentcity $(echo ${STAGETABLE} | sed -e 's/:/./') $(echo ${RELEASETABLE} | sed -e 's/:/./') --key-file ${KEYFILE}
+patentcity io augment-patentcity $(echo ${STAGETABLE} | sed -e 's/:/./') $(echo ${STAGETABLE} | sed -e 's/:/./') --key-file ${KEYFILE}
 
 # Impute missing dates
 #for OFFICE in dd de; do
@@ -234,8 +234,15 @@ patentcity io augment-patentcity $(echo ${STAGETABLE} | sed -e 's/:/./') $(echo 
 #done;
 # gsutil -m cp "pubdate_*patentxx.imputation.expanded.csv" gs://patentcity_dev/v1/
 
-for OFFICE in dd de; do 
+for OFFICE in dd de; do
   bq load --source_format CSV --replace --ignore_unknown_values --max_bad_records 1000 patentcity:tmp.de_pubdate_imputation "gs://patentcity_dev/v1/pubdate_${OFFICE}patentxx.imputation.expanded.csv" schema/date_imputation.json
-  patentcity io impute-publication-date $(echo ${RELEASETABLE} | sed -e 's/:/./') patentcity.tmp.${OFFICE}_pubdate_imputation --country-code ${OFFICE:u} --key-file ${KEYFILE};
-done;    
+  patentcity io impute-publication-date $(echo ${STAGETABLE} | sed -e 's/:/./') patentcity.tmp.${OFFICE}_pubdate_imputation --country-code ${OFFICE:u} --key-file ${KEYFILE};
+done;
+
+
+patentcity io family-expansion $(echo ${STAGETABLE} | sed -e 's/:/./') $(echo ${STAGETABLE}_expansion | sed -e 's/:/./') $KEYFILE schema/patentcity_v1.json
+gsutil -m rm "gs://tmp/family_expansion_*.jsonl.gz"
+bq extract --destination_format NEWLINE_DELIMITED_JSON --compression GZIP ${STAGETABLE}_expansion "gs://tmp/family_expansion_*.jsonl.gz"
+bq load --source_format NEWLINE_DELIMITED_JSON --noreplace --ignore_unknown_values --max_bad_records 1000 $STAGETABLE "gs://tmp/family_expansion_*.jsonl.gz"
+patentcity io filter-kind-codes $(echo ${STAGETABLE} | sed -e 's/:/./') $(echo ${RELEASETABLE} | sed -e 's/:/./') $KEYFILE
 ```
