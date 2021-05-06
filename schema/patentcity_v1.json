@@ -27,7 +27,7 @@
 { "description": "Family ID (DOCDB).",
     "mode": "NULLABLE",
     "name": "family_id",
-    "type": "INTEGER"
+    "type": "STRING"
   },
   {
     "description": "",
