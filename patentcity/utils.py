@@ -161,7 +161,7 @@ def get_buggy_labels(file: str):
             )
             if spans:
                 for span in spans:
-                    span_text = text[span["start"]: span["end"]]
+                    span_text = text[span["start"] : span["end"]]
                     startswith_space = any(
                         [span_text.startswith(" "), span_text.startswith("\s")]
                     )
@@ -175,12 +175,12 @@ def get_buggy_labels(file: str):
                     startswith_punctuation = any(startswith_punctuation)
                     endswith_punctuation = any(endswith_punctuation)
                     if any(
-                            [
-                                startswith_space,
-                                endswith_space,
-                                startswith_punctuation,
-                                endswith_punctuation,
-                            ]
+                        [
+                            startswith_space,
+                            endswith_space,
+                            startswith_punctuation,
+                            endswith_punctuation,
+                        ]
                     ):
                         typer.secho(f"{json.dumps(line)}", fg=typer.colors.YELLOW)
                         typer.secho(
@@ -262,7 +262,7 @@ def debug_duplicates(file: str, duplicates: str = None):
 
 @app.command(deprecated=True)
 def remove_duplicates(
-        file: str, inDelim: str = ",", duplicates: str = None, header: bool = True
+    file: str, inDelim: str = ",", duplicates: str = None, header: bool = True
 ):
     """Remove lines with adler32 duplicated recId from FILE"""
     list_duplicates = [
@@ -282,10 +282,7 @@ def remove_duplicates(
 
 
 @app.command()
-def prep_searchtext(
-        file,
-        config_file: str,
-):
+def prep_searchtext(file, config_file: str):
     """Prepare search text so as to avoid common pitfalls (country codes, postcodes, etc)"""
     with open(config_file, "r") as config_file:
         config = yaml.load(config_file, Loader=yaml.FullLoader)
@@ -294,7 +291,11 @@ def prep_searchtext(
     remove_countrycode = config["countrycode"]["remove"]
     if remove_countrycode:
         countrycodes = config["countrycode"]["list"]
-        countrycodes = list_countrycodes() if countrycodes == "*" else config["countrycode"]["list"].split(",")
+        countrycodes = (
+            list_countrycodes()
+            if countrycodes == "*"
+            else config["countrycode"]["list"].split(",")
+        )
     inDelim = config["inDelim"]
 
     with open(file, "r") as lines:
@@ -310,10 +311,13 @@ def prep_searchtext(
 
             if remove_countrycode:
                 like_countrycode = re.findall(
-                    r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)), searchtext
+                    r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)),
+                    searchtext,
                 )
                 if like_countrycode and len(searchtext) > 5:
-                    like_countrycode = list(filter(lambda x: x, sum(like_countrycode, ())))
+                    like_countrycode = list(
+                        filter(lambda x: x, sum(like_countrycode, ()))
+                    )
 
                     for match in like_countrycode:
                         searchtext = searchtext.replace(match, "")
@@ -344,7 +348,7 @@ def mcq(line, fset, ignore):
 
 @app.command()
 def mcq_factory(
-        loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
+    loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
 ):
     """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
     on the text of each line in the loc file and the targets in the index file"""
@@ -394,7 +398,7 @@ def mcq_revert(file, max_options: int = 50):
         options = sorted(options, key=itemgetter("nb_occurences"), reverse=True)
         # if len(options) > max_options:
         for chunk_options in [
-            options[x: x + max_options] for x in range(0, len(options), max_options)
+            options[x : x + max_options] for x in range(0, len(options), max_options)
         ]:
             tasks += [
                 {
@@ -446,7 +450,8 @@ def disamb_countrycodes(file, inDelim: str = "|", verbose: bool = False):
             recid, searchtext = line.split(inDelim)
             if len(searchtext) <= 5:
                 like_countrycode = re.findall(
-                    r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)), searchtext
+                    r"|".join(map(lambda x: r"(\b" + x + r")\b", countrycodes)),
+                    searchtext,
                 )
                 matches = list(filter(lambda x: x, sum(like_countrycode, ())))
                 if matches:
@@ -467,13 +472,20 @@ def generate_iso_override():
         out = get_empty_here_schema()
         country = countrycode if len(countrycode) == 3 else iso_crossover[countrycode]
         out.update(
-            {"recId": get_recid(countrycode), "seqNumber": 1, "country": country, "matchLevel": "country"}
+            {
+                "recId": get_recid(countrycode),
+                "seqNumber": 1,
+                "country": country,
+                "matchLevel": "country",
+            }
         )
         csvwriter.writerow(out)
 
 
 @app.command()
-def get_gmaps_index_wgp(file: str, flavor: int = None, inDelim: str = "|", verbose: bool = False):
+def get_gmaps_index_wgp(
+    file: str, flavor: int = None, inDelim: str = "|", verbose: bool = False
+):
     """
     Return the csv file as the gmaps geoc index we are using in patentcity
     recId|{gmaps output}
@@ -546,12 +558,12 @@ def get_cit_code(text: str, fst: dict, fuzzy_match: bool):
 
 class ReportFormat:
     def __init__(
-            self,
-            file: Path,
-            bins: iter,
-            lang: str = None,
-            crop: bool = True,
-            md: bool = False,
+        self,
+        file: Path,
+        bins: iter,
+        lang: str = None,
+        crop: bool = True,
+        md: bool = False,
     ):
         self.file = file
         self.bins = bins
@@ -609,11 +621,11 @@ class ReportFormat:
 
 @app.command()
 def report_format(
-        path: str,
-        bins: str = "0,2000,50",
-        lang: str = None,
-        crop: bool = True,
-        md: bool = True,
+    path: str,
+    bins: str = "0,2000,50",
+    lang: str = None,
+    crop: bool = True,
+    md: bool = True,
 ):
     """
     Return the histogram of doc length and start span

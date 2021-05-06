@@ -36,7 +36,7 @@ def spacy_model(model: str, pipes: str = "ner"):
 
 @app.command()
 def cit_fst(
-        test_file, fst_file: str = None, fuzzy_match: bool = True, verbose: bool = False
+    test_file, fst_file: str = None, fuzzy_match: bool = True, verbose: bool = False
 ):
     """Evaluate cit FST on TEST_FILE"""
     fst = json.loads(open(fst_file, "r").read())
@@ -109,7 +109,7 @@ def relationship_model(file, config, report: str = "short"):
             tokens = error["tokens"]
 
             def get_text(tokens, boundaries):
-                text = tokens[boundaries[0]: boundaries[1] + 1]
+                text = tokens[boundaries[0] : boundaries[1] + 1]
                 text = " ".join(text).replace("\n", "")
                 return text
 
@@ -155,7 +155,7 @@ def relationship_model(file, config, report: str = "short"):
                 yield [e for e in l if e["label"] == label]
 
         def get_metrics(
-                true, true_positives, false_positives, false_negatives, label=None
+            true, true_positives, false_positives, false_negatives, label=None
         ):
             if label:
                 true, true_positives, false_positives, false_negatives = filter_relation(
@@ -256,10 +256,12 @@ def relationship_model(file, config, report: str = "short"):
 def deduplication_patentee(file: str, verbose: bool = False):
     """Return the best threshold and related deduplication accuracy (based on the relative levenshtein edit distance)"""
     df = pd.read_json(file, lines=True)
-    df["clas"] = df["answer"].apply(lambda x: 0 if x == "reject" else (1 if x == "accept" else None))
+    df["clas"] = df["answer"].apply(
+        lambda x: 0 if x == "reject" else (1 if x == "accept" else None)
+    )
     df = df.query("clas==clas").copy()
     accuracy = {}
-    for threshold in np.arange(0, 2, .01):
+    for threshold in np.arange(0, 2, 0.01):
         df["pred"] = df["lev_dist_rel"].apply(lambda x: 1 if x < threshold else 0)
         nb_true = len(df.query("clas==pred"))
         acc = nb_true / len(df)
@@ -267,13 +269,18 @@ def deduplication_patentee(file: str, verbose: bool = False):
     accuracy = pd.DataFrame.from_dict(accuracy, orient="index", columns=["accuracy"])
     if verbose:
         typer.secho("## Levenshtein distance (rel) distribution", fg=typer.colors.BLUE)
-        typer.echo((df
-                    .groupby("answer")
-                    .describe(percentiles=np.arange(0, 1, .01))["lev_dist_rel"]
-                    .filter(regex="%")
-                    .T
-                    .to_markdown()))
-    threshold_star, accuracy_star = accuracy.idxmax().values[0], accuracy.max().values[0]
+        typer.echo(
+            (
+                df.groupby("answer")
+                .describe(percentiles=np.arange(0, 1, 0.01))["lev_dist_rel"]
+                .filter(regex="%")
+                .T.to_markdown()
+            )
+        )
+    threshold_star, accuracy_star = (
+        accuracy.idxmax().values[0],
+        accuracy.max().values[0],
+    )
     typer.secho("## Best", fg=typer.colors.BLUE)
     typer.echo(f"Best threshold: {threshold_star}\nAccuracy: {accuracy_star}")
 

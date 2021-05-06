@@ -33,7 +33,11 @@ def get_blob(file):
         text = fin.read()
         publication_number = os.path.splitext(os.path.basename(file))[0]
         hash_id = md5(text.encode()).hexdigest()
-    typer.echo(json.dumps({"publication_number": publication_number, "text": text, "hash_id": hash_id}))
+    typer.echo(
+        json.dumps(
+            {"publication_number": publication_number, "text": text, "hash_id": hash_id}
+        )
+    )
 
 
 @app.command(name="v1.grind")
@@ -45,12 +49,12 @@ def grind(path: str, max_workers: int = 10):
 
 @app.command()
 def v1(
-        path: str,
-        model: str,
-        rel_config: str,
-        max_char: int = 9999,
-        batch_size: int = 1000,
-        inDelim: str = "|",
+    path: str,
+    model: str,
+    rel_config: str,
+    max_char: int = 9999,
+    batch_size: int = 1000,
+    inDelim: str = "|",
 ):
     """
     Print jsonl blobs of the v1 dataset
@@ -62,7 +66,9 @@ def v1(
 
     files = glob(path)
     for file in files:
-        publication_numbers = list((json.loads(line)["publication_number"] for line in open(file, "r")))
+        publication_numbers = list(
+            (json.loads(line)["publication_number"] for line in open(file, "r"))
+        )
         hash_ids = list((json.loads(line)["hash_id"] for line in open(file, "r")))
         with open(file, "r") as lines:
             texts = (json.loads(line)["text"][:max_char] for line in lines)
@@ -115,11 +121,26 @@ def topping_(line, config):
         if pubnum_low <= pubnum <= pubnum_up:
             line = deduplicate_(line, config["deduplicate"][country_code]["threshold"])
             nb_patee_dupl = len(
-                [patentee for patentee in line.get("patentee") if patentee["is_duplicate"]])
+                [
+                    patentee
+                    for patentee in line.get("patentee")
+                    if patentee["is_duplicate"]
+                ]
+            )
             nb_inv_dupl = len(
-                [patentee for patentee in line.get("patentee") if patentee["is_inv"] and patentee["is_duplicate"]])
+                [
+                    patentee
+                    for patentee in line.get("patentee")
+                    if patentee["is_inv"] and patentee["is_duplicate"]
+                ]
+            )
             nb_asg_dupl = len(
-                [patentee for patentee in line.get("patentee") if patentee["is_asg"] and patentee["is_duplicate"]])
+                [
+                    patentee
+                    for patentee in line.get("patentee")
+                    if patentee["is_asg"] and patentee["is_duplicate"]
+                ]
+            )
             nb_patee = nb_patee - nb_patee_dupl
             nb_inv = nb_inv - nb_inv_dupl
             nb_asg = nb_asg - nb_asg_dupl
@@ -141,25 +162,35 @@ def deduplicate_(line, threshold):
             p1, p2 = patentees[i], patentees[j]
             name1 = p1.get("name_text").lower()
             name2 = p2.get("name_text").lower()
-            lev_dist_rel = levenshtein_distance(name1, name2) / ((len(name1) + len(name2)) / 2)
+            lev_dist_rel = levenshtein_distance(name1, name2) / (
+                (len(name1) + len(name2)) / 2
+            )
             are_duplicates = True if lev_dist_rel < threshold else False
             # print(name1, name2, are_duplicates, lev_dist_rel)
             if are_duplicates:
                 p1_hasloc, p2_has_loc = p1.get("loc_text"), p2.get("loc_text")
                 if p1_hasloc == p2_has_loc:  # case when both have loc or none has loc
                     if len(p1.keys()) >= len(p2.keys()):  # we 'keep' p1
-                        p1.update({"is_duplicate": any([False, p1.get("is_duplicate")])})
+                        p1.update(
+                            {"is_duplicate": any([False, p1.get("is_duplicate")])}
+                        )
                         p2.update({"is_duplicate": any([True, p2.get("is_duplicate")])})
                     else:  # we 'keep' p2
                         p1.update({"is_duplicate": any([True, p1.get("is_duplicate")])})
-                        p2.update({"is_duplicate": any([False, p2.get("is_duplicate")])})
+                        p2.update(
+                            {"is_duplicate": any([False, p2.get("is_duplicate")])}
+                        )
                 else:  # only one of the 2 has loc
                     if p1_hasloc:  # we 'keep' p1
-                        p1.update({"is_duplicate": any([False, p1.get("is_duplicate")])})
+                        p1.update(
+                            {"is_duplicate": any([False, p1.get("is_duplicate")])}
+                        )
                         p2.update({"is_duplicate": any([True, p2.get("is_duplicate")])})
                     else:  # we 'keep' p2
                         p1.update({"is_duplicate": any([True, p1.get("is_duplicate")])})
-                        p2.update({"is_duplicate": any([False, p2.get("is_duplicate")])})
+                        p2.update(
+                            {"is_duplicate": any([False, p2.get("is_duplicate")])}
+                        )
                 patentees[i] = p1
                 patentees[j] = p2
         line.update({"patentee": patentees})

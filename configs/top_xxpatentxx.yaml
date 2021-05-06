@@ -5,5 +5,3 @@ deduplicate:
 
 cit_code:
   XX: lib/fst_cit.json
-
-

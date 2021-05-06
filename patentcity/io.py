@@ -17,7 +17,7 @@ def get_bq_client(key_file):
 
 
 def get_job_done(
-        query, destination_table, key_file, write_disposition="WRITE_TRUNCATE", **kwargs
+    query, destination_table, key_file, write_disposition="WRITE_TRUNCATE", **kwargs
 ):
     job_config = bigquery.QueryJobConfig(
         destination=destination_table, write_disposition=write_disposition, **kwargs
@@ -55,9 +55,13 @@ def augment_patentcity(src_table: str, destination_table: str, key_file: str = N
 
 
 @app.command()
-def impute_publication_date(src_table, imputation_table, country_code: str = None, key_file: str = None):
+def impute_publication_date(
+    src_table, imputation_table, country_code: str = None, key_file: str = None
+):
     """Update publication_date - DE & DD only"""
-    de_clause = """AND CAST(t.pubnum AS INT64)<330000""" if country_code == "DE" else """"""
+    de_clause = (
+        """AND CAST(t.pubnum AS INT64)<330000""" if country_code == "DE" else """"""
+    )
     query = f"""UPDATE
       `{src_table}` AS t
     SET
@@ -68,7 +72,7 @@ def impute_publication_date(src_table, imputation_table, country_code: str = Non
       t.pubnum = imputation.pubnum
       AND country_code="{country_code}"
       {de_clause}
-       
+
     """
     client = get_bq_client(key_file)
     typer.secho(f"Start:\n{query}", fg=typer.colors.BLUE)
@@ -79,11 +83,11 @@ def impute_publication_date(src_table, imputation_table, country_code: str = Non
 
 @app.command()
 def extract_sample_kepler(
-        src_table: str,
-        destination_file: str,
-        sample_ratio: float = 0.1,
-        office: str = None,
-        key_file: str = None,
+    src_table: str,
+    destination_file: str,
+    sample_ratio: float = 0.1,
+    office: str = None,
+    key_file: str = None,
 ):
     """Extract sample for kepler.gl"""
     office_clause = f"""AND country_code="{office}" """ if office else ""
@@ -118,14 +122,14 @@ def extract_sample_kepler(
 
 @app.command()
 def build_wgp_as_patentcity(
-        addresses_table: str = None,
-        patentee_location_table: str = None,
-        patstat_patent_properties_table: str = None,
-        tls206_table: str = None,
-        tls207_table: str = None,
-        destination_table: str = None,
-        flavor: int = None,
-        key_file: str = None,
+    addresses_table: str = None,
+    patentee_location_table: str = None,
+    patstat_patent_properties_table: str = None,
+    tls206_table: str = None,
+    tls207_table: str = None,
+    destination_table: str = None,
+    flavor: int = None,
+    key_file: str = None,
 ):
     assert flavor in [25, 45]
     assert patentee_location_table
@@ -146,13 +150,13 @@ def build_wgp_as_patentcity(
             FROM
               `{addresses_table}`  # patentcity.external.addresses_cyril25_patentcity
             WHERE
-              seqNumber = 1 
+              seqNumber = 1
               AND (matchLevel="NOMATCH" AND source="HERE") IS FALSE ) AS loc
           JOIN
             `{patentee_location_table}` AS patee
             # patentcity.external.inventor_applicant_recid
           ON
-            loc.recId = patee.recId )  # location_id  
+            loc.recId = patee.recId )  # location_id
         SELECT
           tmp.* EXCEPT(appln_id, pat_publn_id),
           patstat.*,
@@ -165,7 +169,7 @@ def build_wgp_as_patentcity(
           `{patstat_patent_properties_table}` AS patstat
         ON
           tmp.pat_publn_id = patstat.pat_publn_id #tmp.appln_id = patstat.appln_id
-          # here we are at the publication level, not the patent level 
+          # here we are at the publication level, not the patent level
         WHERE
           SPLIT(patstat.publication_number, "-")[OFFSET(0)] IN ("DE", "GB", "FR", "US")
 
@@ -221,7 +225,7 @@ def build_wgp_as_patentcity(
               `{patstat_patent_properties_table}` AS patstat
             ON
               tmp.appln_id = patstat.appln_id
-              # here we are at the the patent level 
+              # here we are at the the patent level
             WHERE
               SPLIT(patstat.publication_number, "-")[OFFSET(0)] IN ("DE", "GB", "FR", "US")
             """
@@ -231,7 +235,7 @@ def build_wgp_as_patentcity(
 
 @app.command()
 def order(
-        table: str, by: str = None, destination_table: str = None, key_file: str = None
+    table: str, by: str = None, destination_table: str = None, key_file: str = None
 ):
     """Order TABLE by BY and stage it to DESTINATION_TABLE (def overwrite)"""
     query = f"""
@@ -246,8 +250,13 @@ def order(
 
 
 @app.command()
-def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
-                          destination_table: str = None, key_file: str = None):
+def get_stratified_sample(
+    table: str,
+    bin_size: int = 50,
+    preview: bool = False,
+    destination_table: str = None,
+    key_file: str = None,
+):
     """Return a stratified sample of TABLE (based on country_code and publication_decade) with BIN_SIZE samples
     (if possible) by bin. If --no-preview, then, stratified sample saved to DESTINATION_TABLE, else
 
@@ -255,29 +264,31 @@ def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
     if preview:
         prefix = """
         SELECT COUNT(*) nb_samples, country_code, publication_decade, ROUND(100*COUNT(*)/MAX(nb_bin),2) AS percentage
-        FROM ( 
+        FROM (
         """
-        select = """SELECT publication_number, publication_decade, country_code, nb_bin"""
+        select = (
+            """SELECT publication_number, publication_decade, country_code, nb_bin"""
+        )
         suffix = """) GROUP BY country_code, publication_decade"""
     else:
         prefix, select, suffix = "", "SELECT * ", ""
 
     query = f"""
     WITH tmp AS (
-      SELECT CAST(publication_date/100000 AS INT64) AS publication_decade, 
-      * EXCEPT(patentee) 
-      FROM `{table}`,  # patentcity.patentcity.wgp_v1 
-            UNNEST(patentee) as patentee 
-        WHERE 
+      SELECT CAST(publication_date/100000 AS INT64) AS publication_decade,
+      * EXCEPT(patentee)
+      FROM `{table}`,  # patentcity.patentcity.wgp_v1
+            UNNEST(patentee) as patentee
+        WHERE
         patentee.loc_text IS NOT NULL
-        AND patentee.loc_source IS NOT NULL ), 
+        AND patentee.loc_source IS NOT NULL ),
       table_stats AS (
-  SELECT *, SUM(nb_bin) OVER() AS nb_total 
+  SELECT *, SUM(nb_bin) OVER() AS nb_total
       FROM (
-        SELECT 
-            country_code, 
-            CAST(publication_date/100000 AS INT64) AS publication_decade, 
-            COUNT(*) nb_bin 
+        SELECT
+            country_code,
+            CAST(publication_date/100000 AS INT64) AS publication_decade,
+            COUNT(*) nb_bin
         FROM tmp
         GROUP BY country_code, publication_decade)
     )
@@ -291,10 +302,11 @@ def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
     """
     if preview:
         client = get_bq_client(key_file)
-        tmp = client. \
-            query(query). \
-            to_dataframe(). \
-            sort_values(by=["country_code", "publication_decade"])
+        tmp = (
+            client.query(query)
+            .to_dataframe()
+            .sort_values(by=["country_code", "publication_decade"])
+        )
         typer.echo(tmp.to_markdown(index=False))
         typer.secho(f"Nb samples: {tmp['nb_samples'].sum()}", fg=typer.colors.BLUE)
     else:
@@ -302,10 +314,13 @@ def get_stratified_sample(table: str, bin_size: int = 50, preview: bool = False,
 
 
 @app.command()
-def get_wgp25_recid(country_code: str,
-                    table_ref: str,
-                    patstat_patent_properties_table: str,
-                    destination_table: str, key_file: str):
+def get_wgp25_recid(
+    country_code: str,
+    table_ref: str,
+    patstat_patent_properties_table: str,
+    destination_table: str,
+    key_file: str,
+):
     """Extract recId and searchText from wgp25 for patents published in `country_code`. Nb: assume that the recId has been added to
     inventor_applicant_locationid beforehand (using utils.get_recid(address_))."""
     assert len(country_code) == 2
@@ -337,10 +352,9 @@ def get_wgp25_recid(country_code: str,
 
 
 @app.command()
-def family_expansion(table_ref: str,
-                     destination_table: str,
-                     key_file: str,
-                     destination_schema: str):
+def family_expansion(
+    table_ref: str, destination_table: str, key_file: str, destination_schema: str
+):
     """Expand along families in `table ref`. The returned table contains all publications belonging to a family
     existing in `table_ref` *but* absent from the latter. Family data are *assigned* from data in `table_ref`."""
     query = f"""
@@ -357,7 +371,7 @@ def family_expansion(table_ref: str,
       SELECT
         DISTINCT(publication_number) AS publication_number
       FROM
-        `{table_ref}`),  # patentcity.patentcity.v100rc4  
+        `{table_ref}`),  # patentcity.patentcity.v100rc4
       expanded_family_table AS (
       SELECT
         p.publication_number,
@@ -368,23 +382,25 @@ def family_expansion(table_ref: str,
         family_table
       WHERE
         p.family_id = family_table.family_id
-        AND family_table.family_id IS NOT NULL 
+        AND family_table.family_id IS NOT NULL
         AND SPLIT(p.publication_number, "-")[OFFSET(0)] in ("DD","DE", "FR", "GB", "US"))#,
-      
+
     SELECT
     expanded_family_table.*, #EXCEPT(appln_id, pat_publn_id, docdb_family_id, inpadoc_family_id),
     SPLIT(expanded_family_table.publication_number, "-")[OFFSET(0)] as country_code,
     SPLIT(expanded_family_table.publication_number, "-")[OFFSET(1)] as pubnum,
     SPLIT(expanded_family_table.publication_number, "-")[OFFSET(2)] as kind_code
-    FROM 
-    publication_list 
-    RIGHT JOIN 
+    FROM
+    publication_list
+    RIGHT JOIN
     expanded_family_table
     ON
     expanded_family_table.publication_number=publication_list.publication_number
     WHERE publication_list.publication_number IS NULL
   """
-    get_job_done(query, destination_table, key_file, destination_schema=destination_schema)
+    get_job_done(
+        query, destination_table, key_file, destination_schema=destination_schema
+    )
 
 
 @app.command()
@@ -404,9 +420,9 @@ def filter_kind_codes(table_ref: str, destination_table: str, key_file: str):
     WITH keep_list AS (
     SELECT
       publication_number,
-      CASE 
+      CASE
         WHEN country_code = "DD" AND (kind_code in ("A", "A1", "A3", "B")) THEN TRUE
-        WHEN country_code = "DE" AND (kind_code in ("A1", "B", "B3", "C", "C1", "D1")) THEN TRUE  
+        WHEN country_code = "DE" AND (kind_code in ("A1", "B", "B3", "C", "C1", "D1")) THEN TRUE
         WHEN country_code = "FR" AND (kind_code in ("A", "A1")) THEN TRUE
         WHEN country_code = "GB" AND (kind_code in ("A")) THEN TRUE
         WHEN country_code = "US" AND (kind_code in ("A", "B1", "B2")) THEN TRUE
@@ -415,10 +431,10 @@ def filter_kind_codes(table_ref: str, destination_table: str, key_file: str):
     FROM
       `{table_ref}`) # patentcity.patentcity.v100rc4
     SELECT
-      origin.* FROM 
+      origin.* FROM
       `{table_ref}` as origin,  # patentcity.patentcity.v100rc4
-      keep_list 
-      WHERE 
+      keep_list
+      WHERE
         keep_list.publication_number = origin.publication_number
         AND keep_list.keep IS TRUE
     """

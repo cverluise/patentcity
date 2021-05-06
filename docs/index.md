@@ -3,7 +3,7 @@
 
 Welcome to the patentCity documentation website.
 
-patentCity is the data backbone of Bergeaud and Verluise (2021). 
+patentCity is the data backbone of Bergeaud and Verluise (2021).
 
 === "BibTex"
 
@@ -14,12 +14,12 @@ patentCity is the data backbone of Bergeaud and Verluise (2021).
 === "Chicago"
 
     ```raw
-    
+
     ```
 
-Here, you can find the project and API documentation. 
+Here, you can find the project and API documentation.
 
-We open source the code to support future extensions and a collaborative way to create and continuously improve research databases. patentCity is due to expand and improve continuously in the coming years. Make sure you receive updates, join our newsletter and star the GitHub repository!     
+We open source the code to support future extensions and a collaborative way to create and continuously improve research databases. patentCity is due to expand and improve continuously in the coming years. Make sure you receive updates, join our newsletter and star the GitHub repository!
 
 
 <!-- Begin Mailchimp Signup Form -->

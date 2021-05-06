@@ -8,7 +8,7 @@
 ```shell
 bq load --replace --source_format CSV --autodetect patentcity:external.person_location_id gs://gder_dev/person_location_id.csv.gz
 #bq load --replace --source_format CSV --autodetect patentcity:external.inventor_applicant_location_id gs://gder_dev/inventor_applicant_location_id.csv.gz
-# TODO add `recId` to inventor_applicant_location_id.csv >> inventor_applicant_recid.csv 
+# TODO add `recId` to inventor_applicant_location_id.csv >> inventor_applicant_recid.csv
 bq load --replace --source_format CSV --autodetect patentcity:external.inventor_applicant_recid gs://gder_dev/inventor_applicant_recid.csv.gz
 ```
 
@@ -39,10 +39,10 @@ Then, geocode following the same procedure as for PatentCity (see [RECIPE_PATENT
 ls geoc_*patentwgp25.gmaps.txt | cut -d. -f1,2 |parallel --eta 'patentcity geo harmonize-geoc-data-gmaps {}.txt --out-format csv >> {}.csv'
 # Remove extra recId field (returned by HERE)
 ls geoc_*patentwgp25.here.csv.gz | parallel --eta 'mv {} {.}.tmp.gz && csvcut -C 4 {.}.tmp.gz >> {.} && gzip {.}'
-# Add source 
+# Add source
 ls geoc_*patentwgp25.here.csv.gz | parallel --eta 'mv {} {.}.tmp.gz && csvstack -n source -g HERE {.}.tmp.gz >> {.} && gzip {.}'
 ls geoc_*patentwgp25.gmaps.csv.gz | parallel --eta 'mv {} {.}.tmp.gz && csvstack -n source -g GMAPS {.}.tmp.gz >> {.} && gzip {.}'
-# addresses_vyril25_patentcity.csv 
+# addresses_vyril25_patentcity.csv
 zcat geoc_depatentwgp25.gmaps.csv.gz | head -n 1 >> addresses_cyril25_patentcity.csv  # this is just the header
 for FILE in $(ls geoc_*patentwgp25.*.csv.gz); do zcat ${FILE} | grep -v "recId" >> addresses_cyril25_patentcity.csv ; done
 gzip addresses_cyril25_patentcity.csv

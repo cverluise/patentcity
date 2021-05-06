@@ -1,7 +1,11 @@
 import prodigy
 from prodigy.components.loaders import JSONL
 
-HEADER_STYLE= ["<span style='background-color:#775ec2;color:white;font-size:100%;font-weight:bold;'>", "</span>"]
+HEADER_STYLE = [
+    "<span style='background-color:#775ec2;color:white;font-size:100%;font-weight:bold;'>",
+    "</span>",
+]
+
 
 @prodigy.recipe(
     "mcq.loc",
@@ -71,7 +75,12 @@ def mcq(dataset, file_path):
                 options_ = []
                 for option in options:
                     option_id = option["id"]
-                    options_ += [{"id": option_id, "text": f"{option_id} ({task.get(f'loc_{option_id}')})"}]
+                    options_ += [
+                        {
+                            "id": option_id,
+                            "text": f"{option_id} ({task.get(f'loc_{option_id}')})",
+                        }
+                    ]
                     if option["id"] == task.get("loc_matchLevel"):
                         break
             else:
@@ -80,8 +89,10 @@ def mcq(dataset, file_path):
 
         for task in stream:
             task["options"] = get_options(task)
-            task["html"] = f"{HEADER_STYLE[0]} 🤨 {task['loc_text']} {HEADER_STYLE[1]}<br>" \
-                           f"{HEADER_STYLE[0]} 📍 {task['loc_locationLabel']} {HEADER_STYLE[1]}"
+            task["html"] = (
+                f"{HEADER_STYLE[0]} 🤨 {task['loc_text']} {HEADER_STYLE[1]}<br>"
+                f"{HEADER_STYLE[0]} 📍 {task['loc_locationLabel']} {HEADER_STYLE[1]}"
+            )
             yield task
 
     stream = JSONL(file_path)  # load in the JSONL file
