@@ -463,7 +463,9 @@ def emulate_nomatch_gmaps(recid):
     return out
 
 
-def parse_response_gmaps(response, recid, out_format, iso_crossover, us_state_crossover, county_crossover):
+def parse_response_gmaps(
+    response, recid, out_format, iso_crossover, us_state_crossover, county_crossover
+):
     """Parse the high level Gmaps response (list of results). Can contain more than 1 results as
     well as 0."""
 
@@ -487,17 +489,22 @@ def parse_response_gmaps(response, recid, out_format, iso_crossover, us_state_cr
             # iso 2 to iso 3 (align gmaps (ISO2) on HERE (ISO3))
             out.update({"country": iso_crossover.get(out.get("country"))})
             # US state to code form
-            out.update({"state": us_state_crossover.get(out.get("state"), out.get("state"))})
+            out.update(
+                {"state": us_state_crossover.get(out.get("state"), out.get("state"))}
+            )
             # county 'harmonization'
             if out.get("country") == "USA" and out.get("county"):
-                county_ = (out.get("county")
-                           .replace("County", "")
-                           .replace("Parish", "")
-                           .replace("Borough", "")
-                           .replace("Census Area", "")
-                           .replace("St.", "St")
-                           .replace("Ste.", "Ste")
-                           .replace("'s", "s").strip())
+                county_ = (
+                    out.get("county")
+                    .replace("County", "")
+                    .replace("Parish", "")
+                    .replace("Borough", "")
+                    .replace("Census Area", "")
+                    .replace("St.", "St")
+                    .replace("Ste.", "Ste")
+                    .replace("'s", "s")
+                    .strip()
+                )
                 out.update({"county": county_})
             county_ = county_crossover.get(out.get("county"), out.get("county"))
             out.update({"county": county_})
@@ -533,15 +540,24 @@ def harmonize_geoc_data_gmaps(
 
             try:
                 recid, response = line.split(inDelim)
-                parse_response_gmaps(response, recid, out_format,
-                                     iso_crossover, us_state_crossover, county_crossover)
+                parse_response_gmaps(
+                    response,
+                    recid,
+                    out_format,
+                    iso_crossover,
+                    us_state_crossover,
+                    county_crossover,
+                )
             except ValueError:
                 pass
                 # occurs when there is still an inDelim in the result
                 # (e.g. "long_name": "S2|02 Robert-Piloty-Geb\u00e4ude")
 
+
 @app.command()
-def add_geoc_disamb(disamb_file, index_geoc_file, flavor: str = "GMAPS", inDelim: str = "|"):
+def add_geoc_disamb(
+    disamb_file, index_geoc_file, flavor: str = "GMAPS", inDelim: str = "|"
+):
     """Return a list of recId|geoc(target) from a list of recid|target.
     Should be used before add-geoc-data"""
     assert flavor in ["GMAPS", "HERE"]
@@ -568,7 +584,6 @@ def add_geoc_disamb(disamb_file, index_geoc_file, flavor: str = "GMAPS", inDelim
                 geoc_disamb = index.get(get_recid(searchtext))
                 geoc_disamb.update({"recId": recid})
                 writer.writerow(geoc_disamb)
-
 
 
 if __name__ == "__main__":

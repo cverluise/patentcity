@@ -28,7 +28,9 @@ def relationship_params(config_search: str):
             for i, val in enumerate(grid):
                 for label in base.keys():
                     base[label].update({param: val})
-                with open(os.path.join(path, filename.replace("search", str(i))), "w") as file:
+                with open(
+                    os.path.join(path, filename.replace("search", str(i))), "w"
+                ) as file:
                     yaml.dump(base, file)
         typer.secho(f"config files saved in {path}", fg=typer.colors.BLUE)
 

@@ -6,7 +6,7 @@ Name| Content | data
 ---|---|---
 `*patentff.txt.tar.gz` | tar file containing format `ff` office `*` patents (`.txt` blobs) | List\[text\]
 `*patentff.jsonl.gz` | jsonl file with format `ff` office `*` patents, to be used with `brew v1` | {"publication\_number": "", "text": "", "hash\_id": ""}
-`entrel_*patentff.jsonl.gz` | jsonl files of extracted entities and relations from office `*` patents| {"publication_number":"", "patentee": [{}, {}]}  
+`entrel_*patentff.jsonl.gz` | jsonl files of extracted entities and relations from office `*` patents| {"publication_number":"", "patentee": [{}, {}]}
 `entrelgeoc_*patentxx.jsonl.gz` | same but with geocoded data in addition| " "
 `loc_*patentxx.txt_tmp.gz` | loc data (extracted from `entrel_*patentff.jsonl.gz`)| recId &#124; loc\_text
 `loc_*patentxx.txt.gz` | same but wth prepared loc text | recId &#124; loc\_text

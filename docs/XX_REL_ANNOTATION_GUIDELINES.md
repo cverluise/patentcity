@@ -2,8 +2,8 @@
 
 ## Preliminary comments
 
-Each corpus has its specific set of relationship that is detailed in a separate document : 
-* [US](US_ANNOTATION_GUIDELINES.md) 
+Each corpus has its specific set of relationship that is detailed in a separate document :
+* [US](US_ANNOTATION_GUIDELINES.md)
 * [GB](GB_ANNOTATION_GUIDELINES.md)
 * [FR](FR_ANNOTATION_GUIDELINES.md)
 * [DE](DE_ANNOTATION_GUIDELINES.md)
@@ -11,7 +11,7 @@ Each corpus has its specific set of relationship that is detailed in a separate 
 
 ## General rule
 
-The labelling of relationship between entities follow the general rule that the relation should go from the object to its attributes. For example, in the case of a link between an entity `LOC` 
+The labelling of relationship between entities follow the general rule that the relation should go from the object to its attributes. For example, in the case of a link between an entity `LOC`
 and an entity `INV`, the relationship should go from `INV` to `LOC`.
 
 ## Specific rules

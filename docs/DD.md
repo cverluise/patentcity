@@ -8,7 +8,7 @@ XX
 
 From the earliest patent that we consider DD1A3 to patent XX (excluded), we collected 197,451 image data (png) from Espacenet and OCRed the first page using Tesseract v5.
 
-> ⚠️ Between 1973 and 1976, patent images are missing (meaning no data at all). 
+> ⚠️ Between 1973 and 1976, patent images are missing (meaning no data at all).
 
 Patent office | Time span (publication year)| Kind code(s)
 ---|---|---
