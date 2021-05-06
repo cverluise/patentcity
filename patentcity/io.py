@@ -17,10 +17,10 @@ def get_bq_client(key_file):
 
 
 def get_job_done(
-        query, destination_table, key_file, write_disposition="WRITE_TRUNCATE"
+        query, destination_table, key_file, write_disposition="WRITE_TRUNCATE", **kwargs
 ):
     job_config = bigquery.QueryJobConfig(
-        destination=destination_table, write_disposition=write_disposition
+        destination=destination_table, write_disposition=write_disposition, **kwargs
     )
     client = get_bq_client(key_file)
     typer.secho(f"Start:\n{query}", fg=typer.colors.BLUE)
@@ -332,6 +332,95 @@ def get_wgp25_recid(country_code: str,
       country_code="{country_code}"
     GROUP BY
       recId
+    """
+    get_job_done(query, destination_table, key_file)
+
+
+@app.command()
+def family_expansion(table_ref: str,
+                     destination_table: str,
+                     key_file: str,
+                     destination_schema: str):
+    """Expand along families in `table ref`. The returned table contains all publications belonging to a family
+    existing in `table_ref` *but* absent from the latter. Family data are *assigned* from data in `table_ref`."""
+    query = f"""
+    WITH
+      family_table AS (
+      SELECT
+        family_id,
+        ANY_VALUE(patentee) as patentee
+      FROM
+        `{table_ref}`  # patentcity.patentcity.v100rc4
+     GROUP BY
+      family_id   ),
+      publication_list AS (
+      SELECT
+        DISTINCT(publication_number) AS publication_number
+      FROM
+        `{table_ref}`),  # patentcity.patentcity.v100rc4  
+      expanded_family_table AS (
+      SELECT
+        p.publication_number,
+        p.publication_date,
+        family_table.*
+      FROM
+        `patents-public-data.patents.publications`AS p,
+        family_table
+      WHERE
+        p.family_id = family_table.family_id
+        AND family_table.family_id IS NOT NULL 
+        AND SPLIT(p.publication_number, "-")[OFFSET(0)] in ("DD","DE", "FR", "GB", "US"))#,
+      
+    SELECT
+    expanded_family_table.*, #EXCEPT(appln_id, pat_publn_id, docdb_family_id, inpadoc_family_id),
+    SPLIT(expanded_family_table.publication_number, "-")[OFFSET(0)] as country_code,
+    SPLIT(expanded_family_table.publication_number, "-")[OFFSET(1)] as pubnum,
+    SPLIT(expanded_family_table.publication_number, "-")[OFFSET(2)] as kind_code
+    FROM 
+    publication_list 
+    RIGHT JOIN 
+    expanded_family_table
+    ON
+    expanded_family_table.publication_number=publication_list.publication_number
+    WHERE publication_list.publication_number IS NULL
+  """
+    get_job_done(query, destination_table, key_file, destination_schema=destination_schema)
+
+
+@app.command()
+def filter_kind_codes(table_ref: str, destination_table: str, key_file: str):
+    """Filter `table_ref` to make sure that only *utility patents* are reported. See below the precise definition of
+    utility patents by country code (of the patent office).
+
+    |Country code|Kind codes|
+    |---|---|
+    |DD|A, A1, A3, B|
+    |DE|A1, B, B3, C, C1, D1|
+    |FR|A, A1|
+    |GB|A|
+    |US|A (before 2001); B1,B2 (after 2001)|
+    """
+    query = f"""
+    WITH keep_list AS (
+    SELECT
+      publication_number,
+      CASE 
+        WHEN country_code = "DD" AND (kind_code in ("A", "A1", "A3", "B")) THEN TRUE
+        WHEN country_code = "DE" AND (kind_code in ("A1", "B", "B3", "C", "C1", "D1")) THEN TRUE  
+        WHEN country_code = "FR" AND (kind_code in ("A", "A1")) THEN TRUE
+        WHEN country_code = "GB" AND (kind_code in ("A")) THEN TRUE
+        WHEN country_code = "US" AND (kind_code in ("A", "B1", "B2")) THEN TRUE
+        ELSE FALSE
+      END AS keep
+    FROM
+      `{table_ref}`) # patentcity.patentcity.v100rc4
+    SELECT
+      origin.* FROM 
+      `{table_ref}` as origin,  # patentcity.patentcity.v100rc4
+      keep_list 
+      WHERE 
+        keep_list.publication_number = origin.publication_number
+        AND keep_list.keep IS TRUE
     """
     get_job_done(query, destination_table, key_file)
 
