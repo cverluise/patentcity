@@ -53,8 +53,6 @@ def grind(path: str, max_workers: int = 10):
         max_workers: max number of workers
 
     **Output**:
-
-    Json objects have the following form:
         ```json
         {"publication_number": str, "text": str, "hash_id": str}
         ```
@@ -91,8 +89,6 @@ def v1(
         inDelim: in delimiter
 
     **Output**:
-
-    Json objects have the following form:
         ```json
         {"publication_number": str, "patentee": List[dict], "hash_id": str,
         "model_ents": str, "model_rels": str, "git_sha": str}
@@ -252,8 +248,6 @@ def topping(file: str, config_file: str = None, max_workers=10):
         max_workers: max number of workers
 
     **Output**:
-
-    Json objects have the following form:
         ```json
         {"publication_number": str, "patentee": List[dict], "hash_id": str,
         "model_ents": str, "model_rels": str, "git_sha": str}
