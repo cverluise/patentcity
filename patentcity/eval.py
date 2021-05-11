@@ -1,6 +1,6 @@
 import json
 import os
-
+from typing import List
 import numpy as np
 import pandas as pd
 import typer
@@ -9,22 +9,36 @@ import yaml
 from patentcity.utils import get_cit_code
 from patentcity.relationship import get_child, RELATIONS
 
+"""
+                            Eval patentcity model components
+
+Take model (and test data, opt) and return performance metrics report
+"""
+
 app = typer.Typer()
 
 
 @app.command()
-def spacy_model(model: str, pipes: str = "ner"):
-    """Evaluate model*
+def spacy_model(model: str, components: str = "ner"):
+    """Evaluate spaCy model `components` and return report to stdout. Notes: i) only "ner" component is supported so far ii) report results from runtime eval
 
-    *Actually report results from runtime eval
+    Arguments:
+        model: model path
+        components: spaCy model components (comma separated)
+
+    **Usage:**
+        ```shell
+        patentcity eval spacy-model models/en_ent_uspatent01
+        ```
+
     """
 
     scores = json.loads(open(os.path.join(model, "meta.json"), "r").read())[
         "performance"
     ]
 
-    pipes = pipes.split(",")
-    if "ner" in pipes:
+    components = components.split(",")
+    if "ner" in components:
         p, r, f = scores["ents_p"], scores["ents_r"], scores["ents_f"]
         typer.secho("NER Scores", fg=typer.colors.BLUE)
         perfs = pd.DataFrame.from_dict(scores["ents_per_type"])
@@ -36,9 +50,21 @@ def spacy_model(model: str, pipes: str = "ner"):
 
 @app.command()
 def cit_fst(
-    test_file, fst_file: str = None, fuzzy_match: bool = True, verbose: bool = False
+    test_file: str,
+    fst_file: str = None,
+    fuzzy_match: bool = True,
+    verbose: bool = False,
 ):
-    """Evaluate cit FST on TEST_FILE"""
+    """Evaluate citizenship finite state transducer and return report to stdout
+
+    Arguments:
+        test_file: test file path
+        fst_file: fst file path
+        fuzzy_match: accept/reject fuzzy match
+        verbose: report verbosity
+
+    **Usage:**
+    """
     fst = json.loads(open(fst_file, "r").read())
     test_df = pd.read_csv(test_file, sep=";")
     test_df = test_df.replace({np.nan: None})
@@ -65,9 +91,19 @@ def cit_fst(
 
 
 @app.command()
-def relationship_model(file, config, report: str = "short"):
+def relationship_model(test_file: str, rel_config: str, report: str = "short"):
     """
-    Evaluate relationship model for a given set of parameters (in yaml config file)
+    Evaluate relationship model and return report to stdout
+
+    Arguments:
+        test_file: test file path
+        rel_config: relationship resolution config file path
+        report: size and format of the performance report (in "short", "long", "json")
+
+    **Usage:**
+        ```shell
+        patentcity eval relationship-model gold_rel_uspatent01.jsonl configs/rel_uspatent01.yaml
+        ```
     """
     assert report in ["short", "long", "json"]
 
@@ -199,7 +235,7 @@ def relationship_model(file, config, report: str = "short"):
             typer.echo(json.dumps(res))
         else:
             typer.secho("\n# Report", fg=typer.colors.BLUE)
-            typer.echo(f"Config file: {config}")
+            typer.echo(f"Config file: {rel_config}")
             typer.secho("\n## Performance", fg=typer.colors.BLUE)
             typer.echo(pd.DataFrame.from_dict(res).to_markdown())
             if report == "long":
@@ -209,9 +245,9 @@ def relationship_model(file, config, report: str = "short"):
                 report_errors(sorted(false_negatives, key=lambda d: d["label"]))
 
     true, true_positives, false_positives, false_negatives = [], [], [], []
-    with open(config, "r") as config_file:
+    with open(rel_config, "r") as config_file:
         cfg = yaml.load(config_file, Loader=yaml.FullLoader)
-    with open(file, "r") as lines:
+    with open(test_file, "r") as lines:
         for line in lines:
             eg = json.loads(line)
             ents = eg["spans"]
@@ -253,9 +289,20 @@ def relationship_model(file, config, report: str = "short"):
 
 
 @app.command()
-def deduplication_patentee(file: str, verbose: bool = False):
-    """Return the best threshold and related deduplication accuracy (based on the relative levenshtein edit distance)"""
-    df = pd.read_json(file, lines=True)
+def patentee_deduplication(test_file: str, verbose: bool = False):
+    """Evaluate patentee deduplication and return the best threshold and related deduplication accuracy to stdout.
+    Note: Deduplication is based on the relative levenshtein edit distance.
+
+    Arguments:
+        test_file: test file path
+        verbose: report verbosity
+
+    **Usage:**
+        ```shell
+        patentcity eval patentee-deduplication data/gold_deduplication_uspatent01.jsonl
+        ```
+    """
+    df = pd.read_json(test_file, lines=True)
     df["clas"] = df["answer"].apply(
         lambda x: 0 if x == "reject" else (1 if x == "accept" else None)
     )
