@@ -1,6 +1,7 @@
 import json
 import yaml
 import os
+from pathlib import Path
 from glob import iglob, glob
 from smart_open import open
 import git
@@ -18,7 +19,8 @@ from patentcity.utils import clean_text, get_recid, get_cit_code
 """
                              Brew patentcity dataset
 
-General functioning: Stream text blobs | process through spaCy model | print json blobs to stdout
+General functioning: Stream text blobs | process | print json blobs to stdout
+
 * beta: entities only
 * v1: entities & relationship
 """
@@ -28,7 +30,7 @@ repo = git.Repo(search_parent_directories=True)
 sha = repo.head.object.hexsha
 
 
-def get_blob(file):
+def _get_blob(file: str):
     with open(file, "r") as fin:
         text = fin.read()
         publication_number = os.path.splitext(os.path.basename(file))[0]
@@ -42,9 +44,30 @@ def get_blob(file):
 
 @app.command(name="v1.grind")
 def grind(path: str, max_workers: int = 10):
+    """Stream texts in `path` and return json objects to stdout. Files are expected to be patent texts named after the
+    publication_number of the patent (e.g. US-12345-A.txt).
+
+
+    Arguments:
+        path: data path, wildcard allowed
+        max_workers: max number of workers
+
+    **Output**:
+
+    Json objects have the following form:
+        ```json
+        {"publication_number": str, "text": str, "hash_id": str}
+        ```
+
+    **Usage**:
+        ```shell
+        patencity brew v1.grind "data/US/*.txt" >> data/US/uspatentxx.jsonl
+        # Nb: if the file is large, you can split and zip
+        ```
+    """
     files = iglob(path)
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        executor.map(get_blob, files)
+        executor.map(_get_blob, files)
 
 
 @app.command()
@@ -57,7 +80,29 @@ def v1(
     inDelim: str = "|",
 ):
     """
-    Print jsonl blobs of the v1 dataset
+    Stream json objects in `path` and return json objects of the with v1 core attributes.
+
+    Arguments:
+        path: data path, wildcard allowed
+        model: model path
+        rel_config: relationship resolution config file path
+        max_char: max char considered for entity extraction
+        batch_size: size of the data batch passed to spaCy model
+        inDelim: in delimiter
+
+    **Output**:
+
+    Json objects have the following form:
+        ```json
+        {"publication_number": str, "patentee": List[dict], "hash_id": str,
+        "model_ents": str, "model_rels": str, "git_sha": str}
+        ```
+
+    **Usage**:
+        ```shell
+        patencity brew v1 "data/US/uspatentxx*.jsonl" >> data/US/entrel_uspatentxx.jsonl
+        # Nb: if the file is large, you can split and zip
+        ```
     """
     nlp = spacy.load(model)
     with open(rel_config, "r") as config_file:
@@ -91,7 +136,7 @@ def v1(
                 typer.echo(json.dumps(row))
 
 
-def topping_(line, config):
+def _topping(line, config):
     line = json.loads(line)
     country_code, pubnum, _ = line["publication_number"].split("-")
     pubnum = int(pubnum)
@@ -119,7 +164,7 @@ def topping_(line, config):
         pubnum_low, pubnum_up = config["deduplicate"][country_code]["pubnum"].split("-")
         pubnum_low, pubnum_up = int(pubnum_low), int(pubnum_up)
         if pubnum_low <= pubnum <= pubnum_up:
-            line = deduplicate_(line, config["deduplicate"][country_code]["threshold"])
+            line = _deduplicate(line, config["deduplicate"][country_code]["threshold"])
             nb_patee_dupl = len(
                 [
                     patentee
@@ -150,7 +195,7 @@ def topping_(line, config):
     typer.echo(json.dumps(line))
 
 
-def deduplicate_(line, threshold):
+def _deduplicate(line: dict, threshold: float):
     """Return LINE with an additional field is_duplicate (bool). is_duplicate is True when the patentee should be
     removed from the analysis because another patentee has the 'same' name. We say that 2 patentees have the same name
      when the relative levenshtein of the two strings (lower) is below THRESHOLD."""
@@ -199,7 +244,30 @@ def deduplicate_(line, threshold):
 
 @app.command(name="v1.topping")
 def topping(file: str, config_file: str = None, max_workers=10):
-    """Return patentees with v1 var derived from extracted vars (is_asg, is_inv, etc)"""
+    """Stream data in `file` and  return patentees with additional variables derived from variables extracted through
+    `v1`. Additional variables include `is_asg`, `is_inv`, etc)
+
+    Arguments:
+        file: file path
+        config_file: topping config file
+        max_workers: max number of workers
+
+    **Output**:
+
+    Json objects have the following form:
+        ```json
+        {"publication_number": str, "patentee": List[dict], "hash_id": str,
+        "model_ents": str, "model_rels": str, "git_sha": str}
+        ```
+
+    **Usage**:
+        ```shell
+        mv data/US/entrel_uspatentxx.jsonl data/US/entrel_uspatentxx.jsonl.tmp
+        patencity v1.topping --config-file configs/top_xxpatentxx.yaml "data/US/entrel_uspatentxx.jsonl.tmp" >> data/US/entrel_uspatentxx.jsonl
+        # Nb: if the file is large, you can split and zip
+        ```
+
+    """
     with open(config_file, "r") as config_file:
         config = yaml.load(config_file, Loader=yaml.FullLoader)
     for k, v in config["cit_code"].items():
@@ -207,7 +275,7 @@ def topping(file: str, config_file: str = None, max_workers=10):
 
     with open(file, "r") as lines:
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            executor.map(topping_, lines, repeat(config))
+            executor.map(_topping, lines, repeat(config))
 
 
 if __name__ == "__main__":
