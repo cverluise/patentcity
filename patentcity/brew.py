@@ -80,7 +80,7 @@ def v1(
     inDelim: str = "|",
 ):
     """
-    Stream json objects in `path` and return json objects of the with v1 core attributes.
+    Stream json objects in `path` and return json v1 objects to stdout.
 
     Arguments:
         path: data path, wildcard allowed
@@ -244,8 +244,7 @@ def _deduplicate(line: dict, threshold: float):
 
 @app.command(name="v1.topping")
 def topping(file: str, config_file: str = None, max_workers=10):
-    """Stream data in `file` and  return patentees with additional variables derived from variables extracted through
-    `v1`. Additional variables include `is_asg`, `is_inv`, etc)
+    """Stream data in `file` and  return enriched v1 json object to stdout.
 
     Arguments:
         file: file path
