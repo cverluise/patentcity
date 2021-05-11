@@ -49,11 +49,8 @@ def spacy_model(model: str, components: str = "ner"):
 
 
 @app.command()
-def cit_fst(
-    test_file: str,
-    fst_file: str = None,
-    fuzzy_match: bool = True,
-    verbose: bool = False,
+def citizenship_fst(
+    test_file: str, fst_file: str, fuzzy_match: bool = True, verbose: bool = False
 ):
     """Evaluate citizenship finite state transducer and return report to stdout
 
@@ -64,6 +61,9 @@ def cit_fst(
         verbose: report verbosity
 
     **Usage:**
+        ```shell
+        patentcity eval citizenship-fst data/gold_cit_uspatent01.csv lib/fst_cit.json
+        ```
     """
     fst = json.loads(open(fst_file, "r").read())
     test_df = pd.read_csv(test_file, sep=";")
