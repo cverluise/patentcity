@@ -57,7 +57,7 @@ def grind(path: str, max_workers: int = 10):
         {"publication_number": str, "text": str, "hash_id": str}
         ```
 
-    **Usage**:
+    **Usage:**
         ```shell
         patencity brew v1.grind "data/US/*.txt" >> data/US/uspatentxx.jsonl
         # Nb: if the file is large, you can split and zip
@@ -94,7 +94,7 @@ def v1(
         "model_ents": str, "model_rels": str, "git_sha": str}
         ```
 
-    **Usage**:
+    **Usage:**
         ```shell
         patencity brew v1 "data/US/uspatentxx*.jsonl" >> data/US/entrel_uspatentxx.jsonl
         # Nb: if the file is large, you can split and zip
@@ -253,7 +253,7 @@ def topping(file: str, config_file: str = None, max_workers=10):
         "model_ents": str, "model_rels": str, "git_sha": str}
         ```
 
-    **Usage**:
+    **Usage:**
         ```shell
         mv data/US/entrel_uspatentxx.jsonl data/US/entrel_uspatentxx.jsonl.tmp
         patencity v1.topping --config-file configs/top_xxpatentxx.yaml "data/US/entrel_uspatentxx.jsonl.tmp" >> data/US/entrel_uspatentxx.jsonl
