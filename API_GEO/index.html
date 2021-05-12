@@ -995,8 +995,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#patentcity.geo.get_parsed_loc" class="md-nav__link">
-    get_parsed_loc()
+  <a href="#patentcity.geo.get_parsed_loc_libpostal" class="md-nav__link">
+    get_parsed_loc_libpostal()
   </a>
   
 </li>
@@ -1026,6 +1026,30 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_IO/" class="md-nav__link">
+        io
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_SEARCH/" class="md-nav__link">
+        search
+      </a>
     </li>
   
 
@@ -1156,8 +1180,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#patentcity.geo.get_parsed_loc" class="md-nav__link">
-    get_parsed_loc()
+  <a href="#patentcity.geo.get_parsed_loc_libpostal" class="md-nav__link">
+    get_parsed_loc_libpostal()
   </a>
   
 </li>
@@ -1225,42 +1249,114 @@
 
 
 <h2 id="patentcity.geo.add_geoc_data" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">add_geoc_data</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">geoc_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">add_geoc_data</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">geoc_file</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 
 <a href="#patentcity.geo.add_geoc_data" class="headerlink" title="Permanent link">&para;</a></h2>
 
     <div class="doc doc-contents ">
 
-      <p>Add geoc data from geoc_file returned by HERE batch geocoding API</p>
+      <p>Add geoc data from <code>geoc_file</code>to <code>file</code></p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>file</code></td>
+        <td><code>str</code></td>
+        <td><p>file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>geoc_file</code></td>
+        <td><code>str</code></td>
+        <td><p>geoc file path (geocoding output, csv)</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>source</code></td>
+        <td><code>str</code></td>
+        <td><p>geocoding service (in ["HERE", "GMAPS", "MANUAL"])</p></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>max_workers</code></td>
+        <td><code>int</code></td>
+        <td><p>max number of workers</p></td>
+        <td><code>5</code></td>
+      </tr>
+      <tr>
+        <td><code>verbose</code></td>
+        <td><code>bool</code></td>
+        <td><p>verbosity</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo add entrel_uspatentxx.jsonl geoc_uspatentxx.here.csv --source HERE
+</code></pre></div></p>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>350
-351
-352
-353
-354
-355
-356
-357
-358
-359
-360
-361
-362
-363</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;add&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">add_geoc_data</span><span class="p">(</span>
-    <span class="n">src</span><span class="p">,</span>
-    <span class="n">geoc_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">geoc_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">source</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">max_workers</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
     <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Add geoc data from geoc_file returned by HERE batch geocoding API&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Add geoc data from `geoc_file`to `file`</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        file: file path</span>
+<span class="sd">        geoc_file: geoc file path (geocoding output, csv)</span>
+<span class="sd">        source: geocoding service (in [&quot;HERE&quot;, &quot;GMAPS&quot;, &quot;MANUAL&quot;])</span>
+<span class="sd">        max_workers: max number of workers</span>
+<span class="sd">        verbose: verbosity</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo add entrel_uspatentxx.jsonl geoc_uspatentxx.here.csv --source HERE</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="n">source</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;GMAPS&quot;</span><span class="p">,</span> <span class="s2">&quot;HERE&quot;</span><span class="p">,</span> <span class="s2">&quot;MANUAL&quot;</span><span class="p">]</span>
     <span class="n">index</span> <span class="o">=</span> <span class="n">_get_geoc_index</span><span class="p">(</span><span class="n">geoc_file</span><span class="p">,</span> <span class="n">dump</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="n">blobs</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+    <span class="n">blobs</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
     <span class="k">with</span> <span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="n">max_workers</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
         <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">_update_loc</span><span class="p">,</span> <span class="n">blobs</span><span class="p">,</span> <span class="n">repeat</span><span class="p">(</span><span class="n">source</span><span class="p">),</span> <span class="n">repeat</span><span class="p">(</span><span class="n">index</span><span class="p">),</span> <span class="n">repeat</span><span class="p">(</span><span class="n">verbose</span><span class="p">))</span>
 </code></pre></div>
@@ -1284,46 +1380,117 @@
 
     <div class="doc doc-contents ">
 
-      <p>Return a list of recId|geoc(target) from a list of recid|target.
-Should be used before add-geoc-data</p>
+      <p>Return a list of recId|geoc(target) from a list of recid|target.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>disamb_file</code></td>
+        <td><code>str</code></td>
+        <td><p>disambiguation data file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>index_geoc_file</code></td>
+        <td><code>str</code></td>
+        <td><p>index geocoding file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>flavor</code></td>
+        <td><code>str</code></td>
+        <td><p>flavor of <code>index_geoc_file</code> (in ["HERE","GMAPS"])</p></td>
+        <td><code>&#39;GMAPS&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>inDelim</code></td>
+        <td><code>str</code></td>
+        <td><p>inner delimiter</p></td>
+        <td><code>&#39;|&#39;</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo add.disamb <span class="si">${</span><span class="nv">DISAMBFILE</span><span class="si">}</span> <span class="si">${</span><span class="nv">GEOCINDEX</span><span class="si">}</span> --flavor <span class="si">${</span><span class="nv">FLAVOR</span><span class="si">}</span>
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Use before <code>patentcity geo add</code></p>
+</div>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>561
-562
-563
-564
-565
-566
-567
-568
-569
-570
-571
-572
-573
-574
-575
-576
-577
-578
-579
-580
-581
-582
-583
-584
-585
-586
-587
-588
-589
-590</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;add.disamb&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">add_geoc_disamb</span><span class="p">(</span>
-    <span class="n">disamb_file</span><span class="p">,</span> <span class="n">index_geoc_file</span><span class="p">,</span> <span class="n">flavor</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;GMAPS&quot;</span><span class="p">,</span> <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span>
+    <span class="n">disamb_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">index_geoc_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">flavor</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;GMAPS&quot;</span><span class="p">,</span> <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span>
 <span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a list of recId|geoc(target) from a list of recid|target.</span>
-<span class="sd">    Should be used before add-geoc-data&quot;&quot;&quot;</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        disamb_file: disambiguation data file path</span>
+<span class="sd">        index_geoc_file: index geocoding file path</span>
+<span class="sd">        flavor: flavor of `index_geoc_file` (in [&quot;HERE&quot;,&quot;GMAPS&quot;])</span>
+<span class="sd">        inDelim: inner delimiter</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo add.disamb ${DISAMBFILE} ${GEOCINDEX} --flavor ${FLAVOR}</span>
+<span class="sd">        ```</span>
+
+<span class="sd">    !!! info</span>
+<span class="sd">        Use before `patentcity geo add`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">assert</span> <span class="n">flavor</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;GMAPS&quot;</span><span class="p">,</span> <span class="s2">&quot;HERE&quot;</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">flavor</span> <span class="o">==</span> <span class="s2">&quot;GMAPS&quot;</span><span class="p">:</span>
         <span class="n">index</span> <span class="o">=</span> <span class="p">{}</span>
@@ -1362,81 +1529,158 @@ Should be used before add-geoc-data</p>
 
 
 <h2 id="patentcity.geo.get_geoc_data_gmaps" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">get_geoc_data_gmaps</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">inDelim</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">,</span> <span class="n">skip_header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">get_geoc_data_gmaps</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">api_key</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">inDelim</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">,</span> <span class="n">skip_header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
 
 
 <a href="#patentcity.geo.get_geoc_data_gmaps" class="headerlink" title="Permanent link">&para;</a></h2>
 
     <div class="doc doc-contents ">
 
-      <p>Return the gmaps geocoding response</p>
-<p>region:  The region code, specified as a ccTLD (“top-level domain”) two-character
-value (e.g. uk, us, de, fr).
-language: the language in which to return results</p>
-<p>Doc:
-- https://developers.google.com/maps/documentation/geocoding/start
-- https://developers.google.com/maps/documentation/geocoding/overview
-- https://developers.google.com/maps/faq#languagesupport</p>
+      <p>Geocode addresses in <code>file</code> using GMAPS</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>file</code></td>
+        <td><code>str</code></td>
+        <td><p>file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>api_key</code></td>
+        <td><code>str</code></td>
+        <td><p>api key</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>region</code></td>
+        <td><code>str</code></td>
+        <td><p>region code, specified as a ccTLD (“top-level domain”) two-character value (e.g. de, fr, uk, us, etc).</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>language</code></td>
+        <td><code>str</code></td>
+        <td><p>the language in which to return results</p></td>
+        <td><code>&#39;en&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>max_workers</code></td>
+        <td><code>int</code></td>
+        <td><p>max number of workers</p></td>
+        <td><code>5</code></td>
+      </tr>
+      <tr>
+        <td><code>inDelim</code></td>
+        <td><code>str</code></td>
+        <td><p>inner delimiter</p></td>
+        <td><code>&#39;|&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>skip_header</code></td>
+        <td><code>bool</code></td>
+        <td><p>whether to ski header or not</p></td>
+        <td><code>True</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo gmaps.get loc_uspatentxx.txt <span class="nv">$APIKEY</span> us
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><a href="https://developers.google.com/maps/documentation/geocoding/start">Quickstart</a></li>
+<li><a href="https://developers.google.com/maps/documentation/geocoding/overview">Overview</a></li>
+<li><a href="https://developers.google.com/maps/faq#languagesupport">Language</a></li>
+</ul>
+</div>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>372
-373
-374
-375
-376
-377
-378
-379
-380
-381
-382
-383
-384
-385
-386
-387
-388
-389
-390
-391
-392
-393
-394
-395
-396
-397
-398
-399
-400
-401
-402
-403
-404
-405
-406</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;gmaps.get&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">get_geoc_data_gmaps</span><span class="p">(</span>
-    <span class="n">file</span><span class="p">,</span>
-    <span class="n">key</span><span class="p">,</span>
+    <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">region</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">language</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span>
     <span class="n">max_workers</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
     <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span><span class="p">,</span>
     <span class="n">skip_header</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
 <span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Return the gmaps geocoding response</span>
+    <span class="sd">&quot;&quot;&quot;Geocode addresses in `file` using GMAPS</span>
 
-<span class="sd">    region:  The region code, specified as a ccTLD (“top-level domain”) two-character</span>
-<span class="sd">    value (e.g. uk, us, de, fr).</span>
-<span class="sd">    language: the language in which to return results</span>
+<span class="sd">    Arguments:</span>
+<span class="sd">        file: file path</span>
+<span class="sd">        api_key: api key</span>
+<span class="sd">        region:  region code, specified as a ccTLD (“top-level domain”) two-character value (e.g. de, fr, uk, us, etc).</span>
+<span class="sd">        language: the language in which to return results</span>
+<span class="sd">        max_workers: max number of workers</span>
+<span class="sd">        inDelim: inner delimiter</span>
+<span class="sd">        skip_header: whether to ski header or not</span>
 
-<span class="sd">    Doc:</span>
-<span class="sd">    - https://developers.google.com/maps/documentation/geocoding/start</span>
-<span class="sd">    - https://developers.google.com/maps/documentation/geocoding/overview</span>
-<span class="sd">    - https://developers.google.com/maps/faq#languagesupport</span>
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo gmaps.get loc_uspatentxx.txt $APIKEY us</span>
+<span class="sd">        ```</span>
+
+<span class="sd">    !!! info</span>
+<span class="sd">        - [Quickstart](https://developers.google.com/maps/documentation/geocoding/start)</span>
+<span class="sd">        - [Overview](https://developers.google.com/maps/documentation/geocoding/overview)</span>
+<span class="sd">        - [Language](https://developers.google.com/maps/faq#languagesupport)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">gmaps</span> <span class="o">=</span> <span class="n">googlemaps</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="n">gmaps</span> <span class="o">=</span> <span class="n">googlemaps</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">lines</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">skip_header</span><span class="p">:</span>
             <span class="nb">next</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
@@ -1470,56 +1714,122 @@ language: the language in which to return results</p>
 
     <div class="doc doc-contents ">
 
-      <p>Save geocoded data to <output_dir>/<request_id>.zip</p>
-<p>Read output:
-developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-request-output.html</p>
+      <p>Download and save HERE geocoded data to <code>output_dir</code>/<code>request_id</code>.zip</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>request_id</code></td>
+        <td><code>str</code></td>
+        <td><p>HERE job request ID (returned by `here.post)</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>api_key</code></td>
+        <td><code>str</code></td>
+        <td><p>HERE api key</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>output_dir</code></td>
+        <td><code>str</code></td>
+        <td><p>saving directory</p></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>unzip</code></td>
+        <td><code>bool</code></td>
+        <td><p>whether to unzip the output</p></td>
+        <td><code>True</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo here.get <span class="nv">$REQUESTID</span> <span class="nv">$APIKEY</span> --output-dir &lt;your-dir&gt;
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-request-output.html">Read output</a></li>
+</ul>
+</div>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>221
-222
-223
-224
-225
-226
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237
-238
-239
-240
-241
-242
-243
-244
-245
-246
-247
-248
-249
-250
-251
-252
-253
-254
-255
-256
-257</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.get&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">get_geoc_data_here</span><span class="p">(</span>
     <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">unzip</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Save geocoded data to &lt;output_dir&gt;/&lt;request_id&gt;.zip</span>
+    <span class="sd">&quot;&quot;&quot;Download and save HERE geocoded data to `output_dir`/`request_id`.zip</span>
 
-<span class="sd">    Read output:</span>
-<span class="sd">    developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-request-output.html</span>
+<span class="sd">    Arguments:</span>
+<span class="sd">        request_id: HERE job request ID (returned by `here.post)</span>
+<span class="sd">        api_key: HERE api key</span>
+<span class="sd">        output_dir: saving directory</span>
+<span class="sd">        unzip: whether to unzip the output</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo here.get $REQUESTID $APIKEY --output-dir &lt;your-dir&gt;</span>
+<span class="sd">        ```</span>
+
+<span class="sd">    !!! info</span>
+<span class="sd">        - [Read output](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-request-output.html)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">dump_data</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">output_file</span><span class="p">):</span>
@@ -1570,36 +1880,51 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-requ
 
     <div class="doc doc-contents ">
 
-      <p>Check status of job <request_id></p>
+      <p>Check status of job <code>request_id</code> every <code>freq</code> seconds</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>request_id</code></td>
+        <td><code>str</code></td>
+        <td><p>HERE job request ID (returned by `here.post)</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>api_key</code></td>
+        <td><code>str</code></td>
+        <td><p>HERE api key</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>freq</code></td>
+        <td><code>int</code></td>
+        <td><p>interval between 2 consecutive status updates</p></td>
+        <td><code>5</code></td>
+      </tr>
+      <tr>
+        <td><code>verbose</code></td>
+        <td><code>bool</code></td>
+        <td><p>verbosity</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo here.status <span class="nv">$REQUESTID</span> <span class="nv">$APIKEY</span>
+</code></pre></div></p>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201
-202
-203
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>203
 204
 205
 206
@@ -1614,11 +1939,60 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-requ
 215
 216
 217
-218</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.status&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">get_geoc_status_here</span><span class="p">(</span>
     <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">freq</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Check status of job &lt;request_id&gt;&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Check status of job `request_id` every `freq` seconds</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        request_id: HERE job request ID (returned by `here.post)</span>
+<span class="sd">        api_key: HERE api key</span>
+<span class="sd">        freq: interval between 2 consecutive status updates</span>
+<span class="sd">        verbose: verbosity</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo here.status $REQUESTID $APIKEY</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">summarize_status</span><span class="p">(</span><span class="n">response</span><span class="p">,</span> <span class="n">verbose</span><span class="p">):</span>
         <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s2">&quot;xml&quot;</span><span class="p">)</span>
@@ -1668,15 +2042,55 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-requ
 
 
 
-<h2 id="patentcity.geo.get_parsed_loc" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">get_parsed_loc</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">api_reference</span><span class="o">=&lt;</span><span class="n">typer</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">ArgumentInfo</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x12a41df10</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<h2 id="patentcity.geo.get_parsed_loc_libpostal" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">get_parsed_loc_libpostal</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">api_reference</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">debug</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 
-<a href="#patentcity.geo.get_parsed_loc" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#patentcity.geo.get_parsed_loc_libpostal" class="headerlink" title="Permanent link">&para;</a></h2>
 
     <div class="doc doc-contents ">
 
-      <p>Print json blobs with parsed loc to stdout</p>
+      <p>Send data in <code>path</code> to libpostal service (hosted at <code>api_reference</code>) and return parsed loc json blobs to stdout.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>path</code></td>
+        <td><code>str</code></td>
+        <td><p>data path (wildcard allowed)</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>api_reference</code></td>
+        <td><code>str</code></td>
+        <td><p>reference of service host "ip:port"</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>max_workers</code></td>
+        <td><code>int</code></td>
+        <td><p>max number of workers</p></td>
+        <td><code>10</code></td>
+      </tr>
+      <tr>
+        <td><code>debug</code></td>
+        <td><code>bool</code></td>
+        <td><p>verbosity degree</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo libpostal.get &lt;your-addresses.txt&gt; &lt;ip:port&gt;
+</code></pre></div></p>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
@@ -1692,14 +2106,32 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-requ
 104
 105
 106
-107</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">deprecated</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">get_parsed_loc</span><span class="p">(</span>
-    <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-    <span class="n">api_reference</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">typer</span><span class="o">.</span><span class="n">Argument</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;ip:port&quot;</span><span class="p">),</span>
-    <span class="n">max_workers</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
-    <span class="n">debug</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">deprecated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;libpostal.get&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">get_parsed_loc_libpostal</span><span class="p">(</span>
+    <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_reference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">max_workers</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">debug</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Print json blobs with parsed loc to stdout&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Send data in `path` to libpostal service (hosted at `api_reference`) and return parsed loc json blobs to stdout.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        path: data path (wildcard allowed)</span>
+<span class="sd">        api_reference: reference of service host &quot;ip:port&quot;</span>
+<span class="sd">        max_workers: max number of workers</span>
+<span class="sd">        debug: verbosity degree</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo libpostal.get &lt;your-addresses.txt&gt; &lt;ip:port&gt;</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">files</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
         <span class="n">data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
@@ -1719,7 +2151,7 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-requ
 
 
 <h2 id="patentcity.geo.harmonize_geoc_data_gmaps" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">harmonize_geoc_data_gmaps</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">inDelim</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">,</span> <span class="n">out_format</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">harmonize_geoc_data_gmaps</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">inDelim</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">,</span> <span class="n">out_format</span><span class="o">=</span><span class="s1">&#39;csv&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
 
 
 <a href="#patentcity.geo.harmonize_geoc_data_gmaps" class="headerlink" title="Permanent link">&para;</a></h2>
@@ -1728,43 +2160,109 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-requ
 
       <p>Harmonize Gmaps response with HERE Geocoding API responses (csv)</p>
 
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>file</code></td>
+        <td><code>str</code></td>
+        <td><p>file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>inDelim</code></td>
+        <td><code>str</code></td>
+        <td><p>inner delimiter</p></td>
+        <td><code>&#39;|&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>out_format</code></td>
+        <td><code>str</code></td>
+        <td><p>format of the output (in ["csv", "jsonl"])</p></td>
+        <td><code>&#39;csv&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>header</code></td>
+        <td><code>bool</code></td>
+        <td><p>whether to add a header (if <code>out_format</code> is "csv")</p></td>
+        <td><code>True</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo gmaps.harmonize geoc_uspatentxx.gmaps.jsonl
+</code></pre></div></p>
+
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>526
-527
-528
-529
-530
-531
-532
-533
-534
-535
-536
-537
-538
-539
-540
-541
-542
-543
-544
-545
-546
-547
-548
-549
-550
-551
-552
-553
-554
-555
-556</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>605
+606
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;gmaps.harmonize&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">harmonize_geoc_data_gmaps</span><span class="p">(</span>
-    <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span><span class="p">,</span> <span class="n">out_format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">header</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span><span class="p">,</span> <span class="n">out_format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Harmonize Gmaps response with HERE Geocoding API responses (csv)&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Harmonize Gmaps response with HERE Geocoding API responses (csv)</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        file: file path</span>
+<span class="sd">        inDelim: inner delimiter</span>
+<span class="sd">        out_format: format of the output (in [&quot;csv&quot;, &quot;jsonl&quot;])</span>
+<span class="sd">        header: whether to add a header (if `out_format` is &quot;csv&quot;)</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo gmaps.harmonize geoc_uspatentxx.gmaps.jsonl</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="k">assert</span> <span class="n">out_format</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;csv&quot;</span><span class="p">,</span> <span class="s2">&quot;jsonl&quot;</span><span class="p">]</span>
     <span class="n">iso_crossover</span> <span class="o">=</span> <span class="n">get_isocrossover</span><span class="p">()</span>
     <span class="n">us_state_crossover</span> <span class="o">=</span> <span class="n">get_usstatecrossover</span><span class="p">()</span>
@@ -1812,24 +2310,94 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-requ
 
     <div class="doc doc-contents ">
 
-      <p>Post <data> to HERE batch geocoding API (recId|searchText)</p>
-<p>Format input:
-developer.here.com/documentation/batch-geocoder/dev_guide/topics/data-input.html
-Request parameters:
-developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html</p>
+      <p>Post <code>file</code> to HERE batch geocoding API</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>file</code></td>
+        <td><code>str</code></td>
+        <td><p>file path. File is expected to be formatted as follows recId|searchText</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>api_key</code></td>
+        <td><code>str</code></td>
+        <td><p>HERE api key</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>countryfocus</code></td>
+        <td><code>str</code></td>
+        <td><p>iso3 country code (e.g. deu, fra, gbr, usa, etc), see <a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/data-input.html">Format input</a></p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>outCols</code></td>
+        <td><code>str</code></td>
+        <td><p>see <a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html">Request parameters</a></p></td>
+        <td><code>None</code></td>
+      </tr>
+      <tr>
+        <td><code>inDelim</code></td>
+        <td><code>str</code></td>
+        <td><p>see <a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html">Request parameters</a></p></td>
+        <td><code>&#39;|&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>outDelim</code></td>
+        <td><code>str</code></td>
+        <td><p>see <a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html">Request parameters</a></p></td>
+        <td><code>&#39;,&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>locationattributes</code></td>
+        <td><code>str</code></td>
+        <td><p>see <a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html">Request parameters</a></p></td>
+        <td><code>&#39;addressDetails&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>language</code></td>
+        <td><code>str</code></td>
+        <td><p>output language, see <a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html">Request parameters</a></p></td>
+        <td><code>&#39;en-EN&#39;</code></td>
+      </tr>
+      <tr>
+        <td><code>includeinputfields</code></td>
+        <td><code>bool</code></td>
+        <td><p>see <a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html">Request parameters</a></p></td>
+        <td><code>False</code></td>
+      </tr>
+      <tr>
+        <td><code>verbose</code></td>
+        <td><code>bool</code></td>
+        <td><p>verbosity</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo here.post loc_uspatentxx.txt <span class="nv">$APIKEY</span> usa
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/data-input.html">Format input</a></li>
+<li><a href="https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html">Request parameters</a></li>
+</ul>
+</div>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>110
-111
-112
-113
-114
-115
-116
-117
-118
-119
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>119
 120
 121
 122
@@ -1885,7 +2453,32 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-paramet
 172
 173
 174
-175</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.post&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">post_geoc_data_here</span><span class="p">(</span>
     <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -1898,12 +2491,28 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-paramet
     <span class="n">includeinputfields</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>  <span class="c1"># False for downstream compatibility</span>
     <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Post &lt;data&gt; to HERE batch geocoding API (recId|searchText)</span>
+    <span class="sd">&quot;&quot;&quot;Post `file` to HERE batch geocoding API</span>
 
-<span class="sd">    Format input:</span>
-<span class="sd">    developer.here.com/documentation/batch-geocoder/dev_guide/topics/data-input.html</span>
-<span class="sd">    Request parameters:</span>
-<span class="sd">    developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html</span>
+<span class="sd">    Arguments:</span>
+<span class="sd">        file: file path. File is expected to be formatted as follows recId|searchText</span>
+<span class="sd">        api_key: HERE api key</span>
+<span class="sd">        countryfocus: iso3 country code (e.g. deu, fra, gbr, usa, etc), see [Format input](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/data-input.html)</span>
+<span class="sd">        outCols: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)</span>
+<span class="sd">        inDelim: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)</span>
+<span class="sd">        outDelim: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)</span>
+<span class="sd">        locationattributes: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)</span>
+<span class="sd">        language: output language, see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)</span>
+<span class="sd">        includeinputfields: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)</span>
+<span class="sd">        verbose: verbosity</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo here.post loc_uspatentxx.txt $APIKEY usa</span>
+<span class="sd">        ```</span>
+
+<span class="sd">    !!! info</span>
+<span class="sd">        - [Format input](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/data-input.html)</span>
+<span class="sd">        - [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">check_post</span><span class="p">(</span><span class="n">response</span><span class="p">):</span>
@@ -1972,33 +2581,79 @@ developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-paramet
 
     <div class="doc doc-contents ">
 
-      <p>Write material for batch geocoding using HERE API to stdout. Receive a jsonl file.</p>
-<p>Run $sort -u <output-file.txt> &gt;&gt; <your-file.txt> to sort and deduplicate addresses before
-batch geocoding.</p>
+      <p>Return patentees' loc data formatted for geocoding to stdout (recId|searchText).</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>file</code></td>
+        <td><code>str</code></td>
+        <td><p>file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>inDelim</code></td>
+        <td><code>str</code></td>
+        <td><p>inner delimiter used by HERE</p></td>
+        <td><code>&#39;|&#39;</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo prep entrel_uspatent01.jsonl
+<span class="c1">#Sort and deduplicate addresses before batch geocoding</span>
+sort -u loc_uspatent01.txt
+</code></pre></div></p>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>261
-262
-263
-264
-265
-266
-267
-268
-269
-270
-271
-272
-273
-274
-275
-276</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;prep&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">prep_geoc_data</span><span class="p">(</span><span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Write material for batch geocoding using HERE API to stdout. Receive a jsonl file.</span>
+    <span class="sd">&quot;&quot;&quot;Return patentees&#39; loc data formatted for geocoding to stdout (recId|searchText).</span>
 
-<span class="sd">    Run $sort -u &lt;output-file.txt&gt; &gt;&gt; &lt;your-file.txt&gt; to sort and deduplicate addresses before</span>
-<span class="sd">    batch geocoding.&quot;&quot;&quot;</span>
+<span class="sd">    Arguments:</span>
+<span class="sd">        file: file path</span>
+<span class="sd">        inDelim: inner delimiter used by HERE</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo prep entrel_uspatent01.jsonl</span>
+<span class="sd">        #Sort and deduplicate addresses before batch geocoding</span>
+<span class="sd">        sort -u loc_uspatent01.txt</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">lines</span><span class="p">:</span>
         <span class="n">typer</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;recId</span><span class="si">{</span><span class="n">inDelim</span><span class="si">}</span><span class="s2">searchText&quot;</span><span class="p">)</span>  <span class="c1"># This is the required header</span>
         <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
@@ -2059,13 +2714,13 @@ batch geocoding.</p>
         </a>
       
       
-        <a href="../LICENSE_CODE/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../API_IO/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Code
+              io
             </div>
           </div>
           <div class="md-footer__button md-icon">

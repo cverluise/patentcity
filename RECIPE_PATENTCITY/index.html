@@ -1021,6 +1021,30 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_IO/" class="md-nav__link">
+        io
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_SEARCH/" class="md-nav__link">
+        search
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1221,7 +1245,7 @@ ls entrel_*patentxx.jsonl <span class="p">|</span> parallel <span class="s2">&qu
 <h2 id="get-loc-data">Get LOC data<a class="headerlink" href="#get-loc-data" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">All</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="c1"># Get loc data</span>
-ls entrel_*patentxx.jsonl <span class="p">|</span>cut -d_ -f2 <span class="p">|</span>  parallel --eta <span class="s1">&#39;patentcity geo prep-geoc-data entrel_{} | sort -u &gt;&gt; loc_{.}.txt&#39;</span>
+ls entrel_*patentxx.jsonl <span class="p">|</span>cut -d_ -f2 <span class="p">|</span>  parallel --eta <span class="s1">&#39;patentcity geo prep entrel_{} | sort -u &gt;&gt; loc_{.}.txt&#39;</span>
 
 <span class="c1"># Prep geoc data</span>
 ls loc_*patentxx.txt <span class="p">|</span> parallel --eta <span class="s1">&#39;mv {} {}_tmp &amp;&amp; patentcity utils prep-searchtext {}_tmp configs/{.}.yaml &gt;&gt; {}&#39;</span>
@@ -1234,7 +1258,7 @@ ls loc_*patentxx.txt <span class="p">|</span> parallel --eta <span class="s1">&#
 </code></pre></div>
 </div>
 <input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Most reccurent loc</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>ls entrel_*patentxx.jsonl <span class="p">|</span>cut -d_ -f2 <span class="p">|</span>  parallel --eta <span class="s1">&#39;patentcity geo prep-geoc-data entrel_{} | sort | uniq -c &gt;&gt; loc_{.}.count.txt&#39;</span>
+<div class="highlight"><pre><span></span><code>ls entrel_*patentxx.jsonl <span class="p">|</span>cut -d_ -f2 <span class="p">|</span>  parallel --eta <span class="s1">&#39;patentcity geo prep entrel_{} | sort | uniq -c &gt;&gt; loc_{.}.count.txt&#39;</span>
 ls loc_*patentxx.count.txt <span class="p">|</span> cut -d. -f <span class="m">1</span>,2 <span class="p">|</span> parallel --eta <span class="s1">&#39;mv {}.txt {}.txt_tmp &amp;&amp; patentcity utils prep-searchtext {}.txt_tmp configs/{.}.yaml &gt;&gt; {}.txt&#39;</span>
 <span class="k">for</span> FILE in <span class="k">$(</span>ls loc_*patentxx.count.txt <span class="p">|</span> cut -d. -f <span class="m">1</span> <span class="k">)</span><span class="p">;</span> <span class="k">do</span> cat <span class="si">${</span><span class="nv">FILE</span><span class="si">}</span>.count.txt <span class="p">|</span> sort -nr  <span class="p">|</span>awk <span class="s1">&#39;{$1=&quot;&quot;; print $0}&#39;</span> <span class="p">|</span> cut -c2- &gt;&gt; <span class="si">${</span><span class="nv">FILE</span><span class="si">}</span>.sorted.txt<span class="p">;</span> <span class="k">done</span><span class="p">;</span>
 <span class="c1"># nb sorted in descending order</span>
@@ -1269,17 +1293,17 @@ rm -f tmp <span class="o">&amp;&amp;</span> head -n <span class="m">275000</span
 
 <span class="nb">echo</span> <span class="s2">&quot;FILE: </span><span class="si">${</span><span class="nv">FILE</span><span class="si">}</span><span class="s2"> CNTFOCUS: </span><span class="si">${</span><span class="nv">CNTFOCUS</span><span class="si">}</span><span class="s2">&quot;</span>
 
-patentcity geo post-geoc-data-here <span class="si">${</span><span class="nv">FILE</span><span class="si">}</span> <span class="si">${</span><span class="nv">APIKEY</span><span class="si">}</span> <span class="si">${</span><span class="nv">CNTFOCUS</span><span class="si">}</span>
+patentcity geo here.post <span class="si">${</span><span class="nv">FILE</span><span class="si">}</span> <span class="si">${</span><span class="nv">APIKEY</span><span class="si">}</span> <span class="si">${</span><span class="nv">CNTFOCUS</span><span class="si">}</span>
 <span class="c1"># print REQUESTID to stdout</span>
 
 <span class="c1"># monitor status</span>
 <span class="nv">REQUESTID</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
-patentcity geo get-geoc-status-here <span class="nv">$REQUESTID</span> <span class="nv">$APIKEY</span>
+patentcity geo here.status <span class="nv">$REQUESTID</span> <span class="nv">$APIKEY</span>
 
 <span class="c1"># get data and rename</span>
 <span class="nv">OUTPUTDIR</span><span class="o">=</span><span class="s2">&quot;tmp&quot;</span>
 mkdir -p <span class="si">${</span><span class="nv">OUTPUTDIR</span><span class="si">}</span>
-patentcity geo get-geoc-data-here <span class="si">${</span><span class="nv">REQUESTID</span><span class="si">}</span> <span class="si">${</span><span class="nv">APIKEY</span><span class="si">}</span> --output-dir <span class="si">${</span><span class="nv">OUTPUTDIR</span><span class="si">}</span> <span class="o">&amp;&amp;</span> <span class="nv">RESULT</span><span class="o">=</span><span class="k">$(</span>ls <span class="si">${</span><span class="nv">OUTPUTDIR</span><span class="si">}</span>/<span class="si">${</span><span class="nv">REQUESTID</span><span class="si">}</span><span class="k">)</span> <span class="o">&amp;&amp;</span> mv <span class="si">${</span><span class="nv">OUTPUTDIR</span><span class="si">}</span>/<span class="si">${</span><span class="nv">REQUESTID</span><span class="si">}</span>/<span class="nv">$RESULT</span> ./<span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">FILE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/tbd/here/g; s/txt/csv/g; s/loc/geoc/g&#39;</span><span class="k">)</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;Saved as </span><span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">FILE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/tbd/here/g; s/txt/csv/g; s/loc/geoc/g&#39;</span><span class="k">)</span><span class="s2">!&quot;</span>
+patentcity geo here.get <span class="si">${</span><span class="nv">REQUESTID</span><span class="si">}</span> <span class="si">${</span><span class="nv">APIKEY</span><span class="si">}</span> --output-dir <span class="si">${</span><span class="nv">OUTPUTDIR</span><span class="si">}</span> <span class="o">&amp;&amp;</span> <span class="nv">RESULT</span><span class="o">=</span><span class="k">$(</span>ls <span class="si">${</span><span class="nv">OUTPUTDIR</span><span class="si">}</span>/<span class="si">${</span><span class="nv">REQUESTID</span><span class="si">}</span><span class="k">)</span> <span class="o">&amp;&amp;</span> mv <span class="si">${</span><span class="nv">OUTPUTDIR</span><span class="si">}</span>/<span class="si">${</span><span class="nv">REQUESTID</span><span class="si">}</span>/<span class="nv">$RESULT</span> ./<span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">FILE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/tbd/here/g; s/txt/csv/g; s/loc/geoc/g&#39;</span><span class="k">)</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;Saved as </span><span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">FILE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/tbd/here/g; s/txt/csv/g; s/loc/geoc/g&#39;</span><span class="k">)</span><span class="s2">!&quot;</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">GMAPS</label><div class="tabbed-content">
@@ -1292,7 +1316,7 @@ patentcity geo get-geoc-data-here <span class="si">${</span><span class="nv">REQ
 <span class="nb">echo</span> <span class="s2">&quot;OFFICE:</span><span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span><span class="s2"> REGION:</span><span class="si">${</span><span class="nv">REGION</span><span class="si">}</span><span class="s2"> ROUND:</span><span class="si">${</span><span class="nv">ROUND</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="nb">echo</span> <span class="s2">&quot;loc_</span><span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span><span class="s2">patentxx.here.nomatch.txt_</span><span class="si">${</span><span class="nv">ROUND</span><span class="si">}</span><span class="s2"> has </span><span class="k">$(</span>wc -l loc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.here.nomatch.txt_<span class="si">${</span><span class="nv">ROUND</span><span class="si">}</span><span class="k">)</span><span class="s2"> line(s)&quot;</span>
 <span class="c1"># better safe than sorry</span>
-patentcity geo get-geoc-data-gmaps loc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.here.nomatch.txt_<span class="si">${</span><span class="nv">ROUND</span><span class="si">}</span> <span class="si">${</span><span class="nv">APIKEY</span><span class="si">}</span> <span class="si">${</span><span class="nv">REGION</span><span class="si">}</span> &gt;&gt; geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.gmaps.txt_<span class="si">${</span><span class="nv">ROUND</span><span class="si">}</span>
+patentcity geo gmaps.get loc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.here.nomatch.txt_<span class="si">${</span><span class="nv">ROUND</span><span class="si">}</span> <span class="si">${</span><span class="nv">APIKEY</span><span class="si">}</span> <span class="si">${</span><span class="nv">REGION</span><span class="si">}</span> &gt;&gt; geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.gmaps.txt_<span class="si">${</span><span class="nv">ROUND</span><span class="si">}</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Manual annotations</label><div class="tabbed-content">
@@ -1308,7 +1332,7 @@ patentcity utils disamb-countrycodes loc_<span class="si">${</span><span class="
 <span class="nv">DISAMBFILE</span><span class="o">=</span><span class="s2">&quot;&quot;</span>  <span class="c1"># e.g. lib/loc_${FORMAT}.disamb.txt</span>
 <span class="nv">GEOCINDEX</span><span class="o">=</span><span class="s2">&quot;&quot;</span>  <span class="c1"># e.g. lib/geoc_${FORMAT}.disamb.index.txt lib/geoc_iso.disamb.index.txt</span>
 <span class="nv">FLAVOR</span><span class="o">=</span><span class="s2">&quot;&quot;</span>  <span class="c1"># HERE or GMAPS</span>
-patentcity geo add-geoc-disamb <span class="si">${</span><span class="nv">DISAMBFILE</span><span class="si">}</span> <span class="si">${</span><span class="nv">GEOCINDEX</span><span class="si">}</span> --flavor <span class="si">${</span><span class="nv">FLAVOR</span><span class="si">}</span>&gt;&gt; geoc_<span class="si">${</span><span class="nv">FORMAT</span><span class="si">}</span>.manual.txt
+patentcity geo add.disamb <span class="si">${</span><span class="nv">DISAMBFILE</span><span class="si">}</span> <span class="si">${</span><span class="nv">GEOCINDEX</span><span class="si">}</span> --flavor <span class="si">${</span><span class="nv">FLAVOR</span><span class="si">}</span>&gt;&gt; geoc_<span class="si">${</span><span class="nv">FORMAT</span><span class="si">}</span>.manual.txt
 <span class="c1"># DISAMBFILE is a list of disambiguated loc together with their *original* hash (sep by the standard inDelim)</span>
 <span class="c1"># GEOCINDEX is the list of geoc of disambigated loc (e.g. &quot;république fédérale d&#39;allemagne&quot;)</span>
 <span class="c1"># FLAVOR is HERE or GMAPS depending on the flavor of GEOCINDEX</span>
@@ -1318,10 +1342,10 @@ patentcity geo add-geoc-disamb <span class="si">${</span><span class="nv">DISAMB
 </div>
 <h2 id="add-geocoded-data">Add geocoded data<a class="headerlink" href="#add-geocoded-data" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># Harmonize GMAPS and MANUAL as HERE geocoded data</span>
-ls geoc_*patentxx.gmaps.txt.gz <span class="p">|</span> cut -d. -f1,2 <span class="p">|</span>parallel --eta <span class="s1">&#39;patentcity geo harmonize-geoc-data-gmaps {}.txt.gz --out-format csv &gt;&gt; {}.csv &amp;&amp; gzip {}.csv&#39;</span>
+ls geoc_*patentxx.gmaps.txt.gz <span class="p">|</span> cut -d. -f1,2 <span class="p">|</span>parallel --eta <span class="s1">&#39;patentcity geo gmaps.harmonize {}.txt.gz --out-format csv &gt;&gt; {}.csv &amp;&amp; gzip {}.csv&#39;</span>
 <span class="nv">MANUALDISAMB</span><span class="o">=</span><span class="s2">&quot;fr&quot;</span>
 <span class="k">for</span> OFFICE in <span class="si">${</span><span class="nv">MANUALDISAMB</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>
-  patentcity geo harmonize-geoc-data-gmaps geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.txt --out-format csv &gt;&gt; geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.csv<span class="p">;</span>
+  patentcity geo gmaps.harmonize geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.txt --out-format csv &gt;&gt; geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.csv<span class="p">;</span>
 <span class="k">done</span><span class="p">;</span>
 
 <span class="c1"># Stack geocoded data</span>
@@ -1339,15 +1363,15 @@ ls geoc_*patentxx.gmaps.txt.gz <span class="p">|</span> cut -d. -f1,2 <span clas
 <span class="c1"># HERE and GMAPS</span>
 <span class="k">for</span> OFFICE in dd de fr gb us<span class="p">;</span> <span class="k">do</span>
   <span class="nb">echo</span> <span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>
-  patentcity geo add-geoc-data entrel_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl --geoc-file geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.here.csv_xx.gz --source HERE &gt;&gt; entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp <span class="o">&amp;&amp;</span>
-  patentcity geo add-geoc-data entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp --geoc-file geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.gmaps.csv_xx.gz --source GMAPS &gt;&gt; entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl <span class="o">&amp;&amp;</span>
+  patentcity geo add entrel_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.here.csv_xx.gz --source HERE &gt;&gt; entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp <span class="o">&amp;&amp;</span>
+  patentcity geo add entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.gmaps.csv_xx.gz --source GMAPS &gt;&gt; entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl <span class="o">&amp;&amp;</span>
   rm entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp<span class="p">;</span>
 <span class="k">done</span><span class="p">;</span>
 
 <span class="nv">MANUALDISAMB</span><span class="o">=</span><span class="s2">&quot;dd fr&quot;</span>  <span class="c1"># we add dd which is already in HERE like format</span>
 <span class="k">for</span> OFFICE in <span class="si">${</span><span class="nv">MANUALDISAMB</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>
   mv entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp <span class="o">&amp;&amp;</span>
-  patentcity geo add-geoc-data entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp --geoc-file geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.csv.gz --source MANUAL &gt;&gt; entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl <span class="o">&amp;&amp;</span>
+  patentcity geo add entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.csv.gz --source MANUAL &gt;&gt; entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl <span class="o">&amp;&amp;</span>
   rm entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp<span class="p">;</span>
 <span class="k">done</span><span class="p">;</span>
 

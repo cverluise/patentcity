@@ -988,6 +988,30 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_IO/" class="md-nav__link">
+        io
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_SEARCH/" class="md-nav__link">
+        search
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1181,7 +1205,7 @@ publication_number of the patent (e.g. US-12345-A.txt).</p>
     <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;publication_number&quot;</span><span class="p">:</span> <span class="err">str</span><span class="p">,</span> <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="err">str</span><span class="p">,</span> <span class="nt">&quot;hash_id&quot;</span><span class="p">:</span> <span class="err">str</span><span class="p">}</span>
 </code></pre></div></p>
 <p><strong>Usage:</strong>
-    <div class="highlight"><pre><span></span><code>patencity brew v1.grind <span class="s2">&quot;data/US/*.txt&quot;</span> &gt;&gt; data/US/uspatentxx.jsonl
+    <div class="highlight"><pre><span></span><code>patencity brew v1.grind <span class="s2">&quot;data/US/*.txt&quot;</span>
 <span class="c1"># Nb: if the file is large, you can split and zip</span>
 </code></pre></div></p>
 
@@ -1227,7 +1251,7 @@ publication_number of the patent (e.g. US-12345-A.txt).</p>
 
 <span class="sd">    **Usage:**</span>
 <span class="sd">        ```shell</span>
-<span class="sd">        patencity brew v1.grind &quot;data/US/*.txt&quot; &gt;&gt; data/US/uspatentxx.jsonl</span>
+<span class="sd">        patencity brew v1.grind &quot;data/US/*.txt&quot;</span>
 <span class="sd">        # Nb: if the file is large, you can split and zip</span>
 <span class="sd">        ```</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1293,7 +1317,7 @@ publication_number of the patent (e.g. US-12345-A.txt).</p>
 </code></pre></div></p>
 <p><strong>Usage:</strong>
     <div class="highlight"><pre><span></span><code>mv data/US/entrel_uspatentxx.jsonl data/US/entrel_uspatentxx.jsonl.tmp
-patencity v1.topping --config-file configs/top_xxpatentxx.yaml <span class="s2">&quot;data/US/entrel_uspatentxx.jsonl.tmp&quot;</span> &gt;&gt; data/US/entrel_uspatentxx.jsonl
+patencity v1.topping --config-file configs/top_xxpatentxx.yaml <span class="s2">&quot;data/US/entrel_uspatentxx.jsonl.tmp&quot;</span>
 <span class="c1"># Nb: if the file is large, you can split and zip</span>
 </code></pre></div></p>
 
@@ -1347,7 +1371,7 @@ patencity v1.topping --config-file configs/top_xxpatentxx.yaml <span class="s2">
 <span class="sd">    **Usage:**</span>
 <span class="sd">        ```shell</span>
 <span class="sd">        mv data/US/entrel_uspatentxx.jsonl data/US/entrel_uspatentxx.jsonl.tmp</span>
-<span class="sd">        patencity v1.topping --config-file configs/top_xxpatentxx.yaml &quot;data/US/entrel_uspatentxx.jsonl.tmp&quot; &gt;&gt; data/US/entrel_uspatentxx.jsonl</span>
+<span class="sd">        patencity v1.topping --config-file configs/top_xxpatentxx.yaml &quot;data/US/entrel_uspatentxx.jsonl.tmp&quot;</span>
 <span class="sd">        # Nb: if the file is large, you can split and zip</span>
 <span class="sd">        ```</span>
 
@@ -1436,7 +1460,7 @@ patencity v1.topping --config-file configs/top_xxpatentxx.yaml <span class="s2">
 <span class="nt">&quot;model_ents&quot;</span><span class="p">:</span> <span class="err">str</span><span class="p">,</span> <span class="nt">&quot;model_rels&quot;</span><span class="p">:</span> <span class="err">str</span><span class="p">,</span> <span class="nt">&quot;git_sha&quot;</span><span class="p">:</span> <span class="err">str</span><span class="p">}</span>
 </code></pre></div></p>
 <p><strong>Usage:</strong>
-    <div class="highlight"><pre><span></span><code>patencity brew v1 <span class="s2">&quot;data/US/uspatentxx*.jsonl&quot;</span> &gt;&gt; data/US/entrel_uspatentxx.jsonl
+    <div class="highlight"><pre><span></span><code>patencity brew v1 <span class="s2">&quot;data/US/uspatentxx*.jsonl&quot;</span>
 <span class="c1"># Nb: if the file is large, you can split and zip</span>
 </code></pre></div></p>
 
@@ -1531,7 +1555,7 @@ patencity v1.topping --config-file configs/top_xxpatentxx.yaml <span class="s2">
 
 <span class="sd">    **Usage:**</span>
 <span class="sd">        ```shell</span>
-<span class="sd">        patencity brew v1 &quot;data/US/uspatentxx*.jsonl&quot; &gt;&gt; data/US/entrel_uspatentxx.jsonl</span>
+<span class="sd">        patencity brew v1 &quot;data/US/uspatentxx*.jsonl&quot;</span>
 <span class="sd">        # Nb: if the file is large, you can split and zip</span>
 <span class="sd">        ```</span>
 <span class="sd">    &quot;&quot;&quot;</span>

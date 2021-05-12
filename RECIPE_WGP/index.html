@@ -980,6 +980,30 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_IO/" class="md-nav__link">
+        io
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_SEARCH/" class="md-nav__link">
+        search
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1112,7 +1136,7 @@ bq load --replace --source_format CSV --autodetect patentcity:external.person_lo
 
 <span class="c1"># Build Geoc index (patent city flavor)</span>
 patentcity utils get-gmaps-index-wgp --flavor <span class="m">45</span> addresses_florian45.csv &gt;&gt; addresses_florian45.jsonl
-patentcity geo harmonize-geoc-data-gmaps addresses_florian45.jsonl --out-format csv &gt;&gt; addresses_florian45_patentcity.csv
+patentcity geo gmaps.harmonize addresses_florian45.jsonl --out-format csv &gt;&gt; addresses_florian45_patentcity.csv
 mv addresses_florian45_patentcity.csv addresses_florian45_patentcity.tmp.csv <span class="o">&amp;&amp;</span> csvstack -n <span class="nb">source</span> -g GMAPS addresses_florian45_patentcity.tmp.csv &gt;&gt; addresses_florian45_patentcity.csv
 
 <span class="c1"># Load addresses</span>
@@ -1121,7 +1145,7 @@ bq load --replace --autodetect --source_format CSV  --max_bad_records <span clas
 
 <span class="c1"># Join</span>
 <span class="nv">KEY_FILE</span><span class="o">=</span><span class="s2">&quot;credentials-patentcity.json&quot;</span>
-patentcity io build-wgp-as-patentcity --addresses-table patentcity.external.addresses_florian45_patentcity --patentee-location-table patentcity.external.person_location_id --tls206-table patentcity.external.tls206 --tls207-table patentcity.external.tls207 --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity45 --flavor <span class="m">45</span> --key-file <span class="nv">$KEY_FILE</span>
+patentcity io build-wgp-as-patentcity  patentcity.external.addresses_florian45_patentcity  patentcity.external.person_location_id --tls206-table patentcity.external.tls206 --tls207-table patentcity.external.tls207 --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity45 --flavor <span class="m">45</span> --key-file <span class="nv">$KEY_FILE</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">wgp25 (fixed)</label><div class="tabbed-content">
@@ -1139,7 +1163,7 @@ bq load --replace --source_format CSV --autodetect patentcity:external.inventor_
 <span class="c1"># Geocode</span>
 <span class="c1">## follow the same procedure as for PatentCity see RECIPE_PATENTCITY.md</span>
 <span class="c1">## harmonize HERE and GMAPS outputs</span>
-ls geoc_*patentwgp25.gmaps.txt <span class="p">|</span> cut -d. -f1,2 <span class="p">|</span>parallel --eta <span class="s1">&#39;patentcity geo harmonize-geoc-data-gmaps {}.txt --out-format csv &gt;&gt; {}.csv&#39;</span>
+ls geoc_*patentwgp25.gmaps.txt <span class="p">|</span> cut -d. -f1,2 <span class="p">|</span>parallel --eta <span class="s1">&#39;patentcity geo gmaps.harmonize {}.txt --out-format csv &gt;&gt; {}.csv&#39;</span>
 <span class="c1">## remove extra recId field (returned by HERE)</span>
 ls geoc_*patentwgp25.here.csv.gz <span class="p">|</span> parallel --eta <span class="s1">&#39;mv {} {.}.tmp.gz &amp;&amp; csvcut -C 4 {.}.tmp.gz &gt;&gt; {.} &amp;&amp; gzip {.}&#39;</span>
 <span class="c1"># add source</span>
@@ -1156,7 +1180,7 @@ bq load --replace --autodetect --source_format CSV  --max_bad_records <span clas
 
 <span class="c1"># Join</span>
 <span class="nv">KEY_FILE</span><span class="o">=</span><span class="s2">&quot;credentials-patentcity.json&quot;</span>
-patentcity io build-wgp-as-patentcity --addresses-table patentcity.external.addresses_cyril25_patentcity --patentee-location-table patentcity.external.inventor_applicant_recid --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor <span class="m">25</span> --key-file <span class="nv">$KEY_FILE</span>
+patentcity io build-wgp-as-patentcity  patentcity.external.addresses_cyril25_patentcity  patentcity.external.inventor_applicant_recid --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor <span class="m">25</span> --key-file <span class="nv">$KEY_FILE</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">wgp25 (broken)</label><div class="tabbed-content">
@@ -1165,7 +1189,7 @@ bq load --replace --source_format CSV --autodetect patentcity:external.inventor_
 
 <span class="c1"># Build Geoc index (patent city flavor)</span>
 patentcity utils get-gmaps-index-wgp --flavor <span class="m">25</span> addresses_florian25.csv &gt;&gt; addresses_florian25.jsonl
-patentcity geo harmonize-geoc-data-gmaps addresses_florian25.jsonl --out-format csv &gt;&gt; addresses_florian25_patentcity.csv
+patentcity geo gmaps.harmonize addresses_florian25.jsonl --out-format csv &gt;&gt; addresses_florian25_patentcity.csv
 mv addresses_florian25_patentcity.csv addresses_florian25_patentcity.tmp.csv <span class="o">&amp;&amp;</span> csvstack -n <span class="nb">source</span> -g GMAPS addresses_florian25_patentcity.tmp.csv &gt;&gt; addresses_florian25_patentcity.csv
 
 <span class="c1"># Load addresses</span>
@@ -1174,7 +1198,7 @@ bq load --replace --autodetect --source_format CSV  --max_bad_records <span clas
 
 <span class="c1"># Join</span>
 <span class="nv">KEY_FILE</span><span class="o">=</span><span class="s2">&quot;credentials-patentcity.json&quot;</span>
-patentcity io build-wgp-as-patentcity --addresses-table patentcity.external.addresses_florian25_patentcity --patentee-location-table patentcity.external.inventor_applicant_location_id --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor <span class="m">25</span> --key-file <span class="nv">$KEY_FILE</span>
+patentcity io build-wgp-as-patentcity  patentcity.external.addresses_florian25_patentcity  patentcity.external.inventor_applicant_location_id --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor <span class="m">25</span> --key-file <span class="nv">$KEY_FILE</span>
 </code></pre></div>
 </div>
 </div>
