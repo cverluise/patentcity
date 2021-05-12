@@ -105,6 +105,7 @@ def relationship_model(test_file: str, rel_config: str, report: str = "short"):
         patentcity eval relationship-model gold_rel_uspatent01.jsonl configs/rel_uspatent01.yaml
         ```
     """
+    # TODO Transition to EntityRelationshipComponent
     assert report in ["short", "long", "json"]
 
     def eval_performance(pred, gold, label: str = None):

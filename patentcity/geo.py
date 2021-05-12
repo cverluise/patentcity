@@ -27,23 +27,30 @@ from patentcity.utils import clean_text, get_dt_human, get_empty_here_schema, fl
 from patentcity.utils import ok, not_ok, get_recid
 
 """
-                              Parse LOC using libpostal
+                            Patentcity geo
+
+general principle: address (str) -> structured geo data (dict)
+3 flavors: libpostal, HERE, GMAPS
+
+# libpostal (parser)
+
 Libpostal https://github.com/openvenues/libpostal
 Docker libpostal https://github.com/johnlonganecker/libpostal-rest-docker
 REST api https://github.com/johnlonganecker/libpostal-rest
-Note:
-- if set up on GCP, you need to set up firewall rules to authorize access from the requesting
-machine
-- get external IP of GCP compute engine https://console.cloud.google.com/networking/addresses/list
-?project=<your-project>
-Then, to build on BigQuery, use schema/xx_entpars_*.json
 
-                          Geocode LOC using HERE Batch geocoding API
+Note: i) if set up on GCP, you need to set up firewall rules to authorize access from the requesting
+machine ii) get external IP of GCP compute engine https://console.cloud.google.com/networking/addresses/list
+?project=<your-project>
+
+# HERE Batch (geocoding)
+
 Guide: developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-constructing.html
 API ref: https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/endpoints.html
 
-                            Geocode LOC using Gmaps geocoding API
+# Gmaps (geocoding)
+
 API ref
+
 - https://developers.google.com/maps/documentation/geocoding/start
 - https://developers.google.com/maps/documentation/geocoding/overview
 """
@@ -51,7 +58,7 @@ API ref
 app = typer.Typer()
 
 
-def parse_loc_blob(line, api_reference, debug):
+def _parse_loc_blob(line, api_reference, debug):
     """Return the line with parsed LOCs"""
 
     def get_parsed_loc_blob(loc, api_reference, debug):
@@ -97,7 +104,7 @@ def get_parsed_loc(
     for file in files:
         data = open(file, "r")
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            executor.map(parse_loc_blob, data, repeat(api_reference), repeat(debug))
+            executor.map(_parse_loc_blob, data, repeat(api_reference), repeat(debug))
 
 
 @app.command()
@@ -270,7 +277,7 @@ def prep_geoc_data(file: str, inDelim: str = "|"):
 
 
 # @app.command()
-def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
+def _get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
     """Create index of here results
     {"recId-1":{"latitude":"","longitude":"",...},
      "recId-2":{"latitude":"","longitude":"",...},
@@ -317,7 +324,7 @@ def get_geoc_index(file: str, outDelim: str = ",", dump: bool = True):
         return index
 
 
-def update_loc(blob, source, index, verbose):
+def _update_loc(blob, source, index, verbose):
     blob = json.loads(blob)
     patentees_ = []
     patentees = blob.get("patentee")
@@ -350,13 +357,13 @@ def add_geoc_data(
 ):
     """Add geoc data from geoc_file returned by HERE batch geocoding API"""
     assert source in ["GMAPS", "HERE", "MANUAL"]
-    index = get_geoc_index(geoc_file, dump=False)
+    index = _get_geoc_index(geoc_file, dump=False)
     blobs = open(src, "r")
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        executor.map(update_loc, blobs, repeat(source), repeat(index), repeat(verbose))
+        executor.map(_update_loc, blobs, repeat(source), repeat(index), repeat(verbose))
 
 
-def get_geoc_data_gmap_(line, gmaps_client, region, language, inDelim):
+def _get_geoc_data_gmaps(line, gmaps_client, region, language, inDelim):
     recid, searchtext = line.split(inDelim)
     res = gmaps_client.geocode(searchtext, region=region, language=language)
     typer.echo(f"{recid}{inDelim}{json.dumps(res)}")
@@ -390,7 +397,7 @@ def get_geoc_data_gmaps(
             next(lines)
         with ThreadPoolExecutor(max_workers) as executor:
             executor.map(
-                get_geoc_data_gmap_,
+                _get_geoc_data_gmaps,
                 lines,
                 repeat(gmaps),
                 repeat(region),
@@ -399,75 +406,72 @@ def get_geoc_data_gmaps(
             )
 
 
-def parse_result_gmaps(result, recid, seqNumber):
-    """Parse Gmaps result. Note: not harmonization"""
-    res = {}
-    for kind in ["long_name", "short_name"]:
-        address_components = flatten(
-            [
-                [
-                    {f"{component['types'][typ]}_{kind}": component[kind]}
-                    for typ in range(len(component["types"]))
-                ]
-                for component in result["address_components"]
-            ]
-        )
-        for address_component in address_components:
-            res.update(address_component)
-    res.update(result["geometry"]["location"])
-    res.update({"location_type": result["geometry"]["location_type"]})
-    res.update({"formatted_address": result["formatted_address"]})
-    res.update({"recId": recid})
-    res.update({"seqNumber": seqNumber})
-    res.update({"types": result["types"]})
-    return res
-
-
-def types2level_crossover(types):
-    """Return a matchLevel (str, HERE flavor) based on types (list, GMAPS)"""
-
-    def min_geoent(levels):
-        level = None
-        if levels:
-            if "houseNumber" in levels:
-                level = "houseNumber"
-            elif "street" in levels:
-                level = "street"
-            elif "district" in levels:
-                level = "district"
-            elif "postalCode" in levels:
-                level = "postalCode"
-            elif "city" in levels:
-                level = "city"
-            elif "county" in levels:
-                level = "county"
-            elif "state" in levels:
-                level = "state"
-            elif "country" in levels:
-                level = "country"
-            else:
-                level = None
-        return level
-
-    levels = []
-    for type in types:
-        levels += [TYPE2LEVEL.get(type)]
-    levels = list(set(filter(lambda x: x, levels)))
-    level = min_geoent(levels)
-    return level
-
-
-def emulate_nomatch_gmaps(recid):
-    out = get_empty_here_schema()
-    out.update({"recId": recid, "seqNumber": 0, "matchLevel": "NOMATCH"})
-    return out
-
-
-def parse_response_gmaps(
+def _parse_response_gmaps(
     response, recid, out_format, iso_crossover, us_state_crossover, county_crossover
 ):
     """Parse the high level Gmaps response (list of results). Can contain more than 1 results as
     well as 0."""
+
+    def parse_result_gmaps(result, recid, seqNumber):
+        """Parse Gmaps result. Note: not harmonization"""
+        res = {}
+        for kind in ["long_name", "short_name"]:
+            address_components = flatten(
+                [
+                    [
+                        {f"{component['types'][typ]}_{kind}": component[kind]}
+                        for typ in range(len(component["types"]))
+                    ]
+                    for component in result["address_components"]
+                ]
+            )
+            for address_component in address_components:
+                res.update(address_component)
+        res.update(result["geometry"]["location"])
+        res.update({"location_type": result["geometry"]["location_type"]})
+        res.update({"formatted_address": result["formatted_address"]})
+        res.update({"recId": recid})
+        res.update({"seqNumber": seqNumber})
+        res.update({"types": result["types"]})
+        return res
+
+    def types2level_crossover(types):
+        """Return a matchLevel (str, HERE flavor) based on types (list, GMAPS)"""
+
+        def min_geoent(levels):
+            level = None
+            if levels:
+                if "houseNumber" in levels:
+                    level = "houseNumber"
+                elif "street" in levels:
+                    level = "street"
+                elif "district" in levels:
+                    level = "district"
+                elif "postalCode" in levels:
+                    level = "postalCode"
+                elif "city" in levels:
+                    level = "city"
+                elif "county" in levels:
+                    level = "county"
+                elif "state" in levels:
+                    level = "state"
+                elif "country" in levels:
+                    level = "country"
+                else:
+                    level = None
+            return level
+
+        levels = []
+        for type in types:
+            levels += [TYPE2LEVEL.get(type)]
+        levels = list(set(filter(lambda x: x, levels)))
+        level = min_geoent(levels)
+        return level
+
+    def emulate_nomatch_gmaps(recid):
+        out = get_empty_here_schema()
+        out.update({"recId": recid, "seqNumber": 0, "matchLevel": "NOMATCH"})
+        return out
 
     def flush_result(out, out_format):
         if out_format == "csv":
@@ -540,7 +544,7 @@ def harmonize_geoc_data_gmaps(
 
             try:
                 recid, response = line.split(inDelim)
-                parse_response_gmaps(
+                _parse_response_gmaps(
                     response,
                     recid,
                     out_format,
@@ -574,7 +578,7 @@ def add_geoc_disamb(
                 disamb_loc_recid = get_recid(clean_text(disamb_loc))
                 typer.echo(f"{recid}{inDelim}{json.dumps(index.get(disamb_loc_recid))}")
     else:
-        index = get_geoc_index(index_geoc_file, dump=False)
+        index = _get_geoc_index(index_geoc_file, dump=False)
         fieldnames = GEOC_OUTCOLS
         writer = csv.DictWriter(sys.stdout, fieldnames=fieldnames)
         writer.writeheader()
