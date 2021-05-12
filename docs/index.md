@@ -5,16 +5,20 @@ Welcome to the patentCity documentation website.
 
 patentCity is the data backbone of Bergeaud and Verluise (2021).
 
-=== "BibTex"
+=== "BibTeX"
 
     ```json
-    {}
+    @techreport{bergeaudVerluise2021,
+      title={},
+      author={Bergeaud, Antonin and Verluise, Cyril},
+      year={2021}
+    }
     ```
 
 === "Chicago"
 
     ```raw
-
+    Bergeaud, Antonin and Cyril Verluise. "". 2021
     ```
 
 Here, you can find the project and API documentation.

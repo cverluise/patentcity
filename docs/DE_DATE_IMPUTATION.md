@@ -1,24 +1,21 @@
-## Impute missing year for DE patents
+# DATE IMPUTATION
+
+## Problem
+
+Before 1919 (incl), the publication date of DE patents is missing.
+Frontier is fuzzy, patents publication numbers are not exactly chronological but nearly. This makes it hard to manually find the latest publication number for each vintage. Number seem to be given based on the "Patentdatum"
+
+## Approach
 
 We look in the corpus of patents to find the latest publication number for each given year from 1877 to 1920.
-
-
-
-**Problem:** frontier is fuzzy, patents publication numbers are not exactly chronological but nearly. This makes it hard to manually find the latest publication number for each vintage. Number seem to be given based on the "Patentdatum"
-
-**Suggestion**: we use the patent gazette published par the German patent offices ("PatentBlat") and consider the largest publication number specified under section "Erteilungen". The gazette is published weekly and we consider either week 52 or week 53 of each year from 1878 to 1919 (and 51 for 1918.
-
+We use the patent gazette published par the German patent offices ("PatentBlat") and consider the largest publication number specified under section "Erteilungen". The gazette is published weekly and we consider either week 52 or week 53 of each year from 1878 to 1919 (and 51 for 1918).
 From these benchmark patents, we carry forward the year of publication.
 
-**Note:** This method is not applicable for patents publication earlier than 1883, hence for years 1877-1882, we manually look for patents with publication date in late December and arbitrarily select a benchmark.
-
-Patent DE1 has no publication year in the document we retrieved, but we know that it was published in 1877 (see the [History of DPMA](https://www.dpma.de/english/our_office/about_us/history/140yearsofthepatentoffice/index.html)).
-
+!!! warning
+    This method is not applicable for patents published earlier than 1883, hence for years 1877-1882, we manually look for patents with publication date in late December and arbitrarily select a benchmark.
 
 
-### Last publication found for (benchmark)
-
-
+## Results
 
 | Publication year | Benchmark publication number                               |
 | ---------------- | ---------------------------------------------------------- |

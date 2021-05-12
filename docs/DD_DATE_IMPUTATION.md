@@ -1,21 +1,31 @@
-## Impute missing year for DD patents
+# DATE IMPUTATION
+
+## Problem
 
 Before 1972 (incl), the publication date of DD patents is missing.
-
-**Problem:** frontier is fuzzy, patents publication numbers are not exactly chronological but nearly. This makes it hard to manually find the latest publication number for each vintage.
+frontier is fuzzy, patents publication numbers are not exactly chronological but nearly. This makes it hard to manually find the latest publication number for each vintage.
 
 ![](./img/DD_numberdate.png)
-Note: The above figure reports the patent number (x-axis) and the publication year (ausgabe datum) labeled by hand of a random sample of 1k+ DD patents with missing date.
+!!! note
+    The above figure reports the patent number (x-axis) and the publication year (ausgabe datum) labeled by hand of a random sample of 1k+ DD patents with missing date.
 
-**Approach**: The idea is to look iteratively at each publication year and find the best threshold (in terms of f1) to delimit between the year and year+1. We obtain a stepwise prediction function where each threshold can be characterized by an f1-score indicating how "good" the threshold is.
+## Approach
+
+The idea is to look iteratively at each publication year and find the best threshold (in terms of f1) to delimit between the year and year+1. We obtain a stepwise prediction function where each threshold can be characterized by an f1-score indicating how "good" the threshold is.
 
 ![](./img/DD_numberdatepred.png)
+
+## Results
+
 ![](./img/DD_numberdatef1.png)
 
-**Results**: The overall accuracy of the the prediction function is 93% on the training set (for the sake of simplicity, we don't have a test set)
+The overall accuracy of the prediction function is 93% on the training set (for the sake of simplicity, we don't have a test set)
 
 
 ### Date imputation
+
+!!! note "Reading"
+    Patents with number below 3 are imputed publication year 1951, between 3 and 1723 are imputed publication year 1952, etc
 
 year|threshold
 ---|---
@@ -40,5 +50,3 @@ year|threshold
 1969|DD-70534
 1970|DD-78709
 1971|DD-86784
-
-Reading: Patents with number below 3 are imputed publication year 1951, between 3 and 1723 are imputed publication year 1952, etc
