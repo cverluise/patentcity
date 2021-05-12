@@ -25,7 +25,7 @@
 
     # Join
     KEY_FILE="credentials-patentcity.json"
-    patentcity io build-wgp-as-patentcity --addresses-table patentcity.external.addresses_florian45_patentcity --patentee-location-table patentcity.external.person_location_id --tls206-table patentcity.external.tls206 --tls207-table patentcity.external.tls207 --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity45 --flavor 45 --key-file $KEY_FILE
+    patentcity io build-wgp-as-patentcity  patentcity.external.addresses_florian45_patentcity  patentcity.external.person_location_id --tls206-table patentcity.external.tls206 --tls207-table patentcity.external.tls207 --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity45 --flavor 45 --key-file $KEY_FILE
     ```
 
 === "wgp25 (fixed)"
@@ -62,7 +62,7 @@
 
     # Join
     KEY_FILE="credentials-patentcity.json"
-    patentcity io build-wgp-as-patentcity --addresses-table patentcity.external.addresses_cyril25_patentcity --patentee-location-table patentcity.external.inventor_applicant_recid --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor 25 --key-file $KEY_FILE
+    patentcity io build-wgp-as-patentcity  patentcity.external.addresses_cyril25_patentcity  patentcity.external.inventor_applicant_recid --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor 25 --key-file $KEY_FILE
     ```
 
 === "wgp25 (broken)"
@@ -82,7 +82,7 @@
 
     # Join
     KEY_FILE="credentials-patentcity.json"
-    patentcity io build-wgp-as-patentcity --addresses-table patentcity.external.addresses_florian25_patentcity --patentee-location-table patentcity.external.inventor_applicant_location_id --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor 25 --key-file $KEY_FILE
+    patentcity io build-wgp-as-patentcity  patentcity.external.addresses_florian25_patentcity  patentcity.external.inventor_applicant_location_id --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor 25 --key-file $KEY_FILE
     ```
 
 
