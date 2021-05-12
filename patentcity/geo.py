@@ -92,14 +92,23 @@ def _parse_loc_blob(line, api_reference, debug):
     typer.echo(json.dumps(line))
 
 
-@app.command(deprecated=True)
-def get_parsed_loc(
-    path: str,
-    api_reference: str = typer.Argument(..., help="ip:port"),
-    max_workers: int = 10,
-    debug: bool = False,
+@app.command(deprecated=True, name="libpostal.get")
+def get_parsed_loc_libpostal(
+    path: str, api_reference: str, max_workers: int = 10, debug: bool = False
 ):
-    """Print json blobs with parsed loc to stdout"""
+    """Send data in `path` to libpostal service (hosted at `api_reference`) and return parsed loc json blobs to stdout.
+
+    Arguments:
+        path: data path (wildcard allowed)
+        api_reference: reference of service host "ip:port"
+        max_workers: max number of workers
+        debug: verbosity degree
+
+    **Usage:**
+        ```shell
+        patentcity geo libpostal.get <your-addresses.txt> <ip:port>
+        ```
+    """
     files = glob(path)
     for file in files:
         data = open(file, "r")
@@ -107,7 +116,7 @@ def get_parsed_loc(
             executor.map(_parse_loc_blob, data, repeat(api_reference), repeat(debug))
 
 
-@app.command()
+@app.command(name="here.post")
 def post_geoc_data_here(
     file: str,
     api_key: str,
@@ -120,12 +129,28 @@ def post_geoc_data_here(
     includeinputfields: bool = False,  # False for downstream compatibility
     verbose: bool = False,
 ):
-    """Post <data> to HERE batch geocoding API (recId|searchText)
+    """Post `file` to HERE batch geocoding API
 
-    Format input:
-    developer.here.com/documentation/batch-geocoder/dev_guide/topics/data-input.html
-    Request parameters:
-    developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html
+    Arguments:
+        file: file path. File is expected to be formatted as follows recId|searchText
+        api_key: HERE api key
+        countryfocus: iso3 country code (e.g. deu, fra, gbr, usa, etc), see [Format input](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/data-input.html)
+        outCols: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)
+        inDelim: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)
+        outDelim: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)
+        locationattributes: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)
+        language: output language, see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)
+        includeinputfields: see [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)
+        verbose: verbosity
+
+    **Usage:**
+        ```shell
+        patentcity geo here.post loc_uspatentxx.txt $APIKEY usa
+        ```
+
+    !!! info
+        - [Format input](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/data-input.html)
+        - [Request parameters](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-parameters.html)
     """
 
     def check_post(response):
@@ -175,11 +200,23 @@ def post_geoc_data_here(
         )
 
 
-@app.command()
+@app.command(name="here.status")
 def get_geoc_status_here(
     request_id: str, api_key: str, freq: int = 5, verbose: bool = False
 ):
-    """Check status of job <request_id>"""
+    """Check status of job `request_id` every `freq` seconds
+
+    Arguments:
+        request_id: HERE job request ID (returned by `here.post)
+        api_key: HERE api key
+        freq: interval between 2 consecutive status updates
+        verbose: verbosity
+
+    **Usage:**
+        ```shell
+        patentcity geo here.status $REQUESTID $APIKEY
+        ```
+    """
 
     def summarize_status(response, verbose):
         soup = BeautifulSoup(response.text, "xml")
@@ -218,14 +255,25 @@ def get_geoc_status_here(
             time.sleep(freq)
 
 
-@app.command()
+@app.command(name="here.get")
 def get_geoc_data_here(
     request_id: str, api_key: str, output_dir: str = None, unzip: bool = True
 ):
-    """Save geocoded data to <output_dir>/<request_id>.zip
+    """Download and save HERE geocoded data to `output_dir`/`request_id`.zip
 
-    Read output:
-    developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-request-output.html
+    Arguments:
+        request_id: HERE job request ID (returned by `here.post)
+        api_key: HERE api key
+        output_dir: saving directory
+        unzip: whether to unzip the output
+
+    **Usage:**
+        ```shell
+        patentcity geo here.get $REQUESTID $APIKEY --output-dir <your-dir>
+        ```
+
+    !!! info
+        - [Read output](https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/read-batch-request-output.html)
     """
 
     def dump_data(response, output_file):
@@ -258,12 +306,21 @@ def get_geoc_data_here(
     # return response
 
 
-@app.command()
+@app.command(name="prep")
 def prep_geoc_data(file: str, inDelim: str = "|"):
-    """Write material for batch geocoding using HERE API to stdout. Receive a jsonl file.
+    """Return patentees' loc data formatted for geocoding to stdout (recId|searchText).
 
-    Run $sort -u <output-file.txt> >> <your-file.txt> to sort and deduplicate addresses before
-    batch geocoding."""
+    Arguments:
+        file: file path
+        inDelim: inner delimiter used by HERE
+
+    **Usage:**
+        ```shell
+        patentcity geo prep entrel_uspatent01.jsonl
+        #Sort and deduplicate addresses before batch geocoding
+        sort -u loc_uspatent01.txt
+        ```
+    """
     with open(file, "r") as lines:
         typer.echo(f"recId{inDelim}searchText")  # This is the required header
         for line in lines:
@@ -347,18 +404,31 @@ def _update_loc(blob, source, index, verbose):
     typer.echo(json.dumps(blob))
 
 
-@app.command()
+@app.command(name="add")
 def add_geoc_data(
-    src,
-    geoc_file: str = None,
+    file: str,
+    geoc_file: str,
     source: str = None,
     max_workers: int = 5,
     verbose: bool = False,
 ):
-    """Add geoc data from geoc_file returned by HERE batch geocoding API"""
+    """Add geoc data from `geoc_file`to `file`
+
+    Arguments:
+        file: file path
+        geoc_file: geoc file path (geocoding output, csv)
+        source: geocoding service (in ["HERE", "GMAPS", "MANUAL"])
+        max_workers: max number of workers
+        verbose: verbosity
+
+    **Usage:**
+        ```shell
+        patentcity geo add entrel_uspatentxx.jsonl geoc_uspatentxx.here.csv --source HERE
+        ```
+    """
     assert source in ["GMAPS", "HERE", "MANUAL"]
     index = _get_geoc_index(geoc_file, dump=False)
-    blobs = open(src, "r")
+    blobs = open(file, "r")
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         executor.map(_update_loc, blobs, repeat(source), repeat(index), repeat(verbose))
 
@@ -369,29 +439,38 @@ def _get_geoc_data_gmaps(line, gmaps_client, region, language, inDelim):
     typer.echo(f"{recid}{inDelim}{json.dumps(res)}")
 
 
-@app.command()
+@app.command(name="gmaps.get")
 def get_geoc_data_gmaps(
-    file,
-    key,
+    file: str,
+    api_key: str,
     region: str,
     language: str = "en",
     max_workers: int = 5,
     inDelim: str = "|",
     skip_header: bool = True,
 ):
-    """
-    Return the gmaps geocoding response
+    """Geocode addresses in `file` using GMAPS
 
-    region:  The region code, specified as a ccTLD (“top-level domain”) two-character
-    value (e.g. uk, us, de, fr).
-    language: the language in which to return results
+    Arguments:
+        file: file path
+        api_key: api key
+        region:  region code, specified as a ccTLD (“top-level domain”) two-character value (e.g. de, fr, uk, us, etc).
+        language: the language in which to return results
+        max_workers: max number of workers
+        inDelim: inner delimiter
+        skip_header: whether to ski header or not
 
-    Doc:
-    - https://developers.google.com/maps/documentation/geocoding/start
-    - https://developers.google.com/maps/documentation/geocoding/overview
-    - https://developers.google.com/maps/faq#languagesupport
+    **Usage:**
+        ```shell
+        patentcity geo gmaps.get loc_uspatentxx.txt $APIKEY us
+        ```
+
+    !!! info
+        - [Quickstart](https://developers.google.com/maps/documentation/geocoding/start)
+        - [Overview](https://developers.google.com/maps/documentation/geocoding/overview)
+        - [Language](https://developers.google.com/maps/faq#languagesupport)
     """
-    gmaps = googlemaps.Client(key)
+    gmaps = googlemaps.Client(api_key)
     with open(file, "r") as lines:
         if skip_header:
             next(lines)
@@ -523,11 +602,24 @@ def _parse_response_gmaps(
         flush_result(out, out_format)
 
 
-@app.command()
+@app.command(name="gmaps.harmonize")
 def harmonize_geoc_data_gmaps(
-    file: str, inDelim: str = "|", out_format: str = None, header: bool = True
+    file: str, inDelim: str = "|", out_format: str = "csv", header: bool = True
 ):
-    """Harmonize Gmaps response with HERE Geocoding API responses (csv)"""
+    """Harmonize Gmaps response with HERE Geocoding API responses (csv)
+
+    Arguments:
+        file: file path
+        inDelim: inner delimiter
+        out_format: format of the output (in ["csv", "jsonl"])
+        header: whether to add a header (if `out_format` is "csv")
+
+    **Usage:**
+        ```shell
+        patentcity geo gmaps.harmonize geoc_uspatentxx.gmaps.jsonl
+        ```
+    """
+
     assert out_format in ["csv", "jsonl"]
     iso_crossover = get_isocrossover()
     us_state_crossover = get_usstatecrossover()
@@ -558,12 +650,26 @@ def harmonize_geoc_data_gmaps(
                 # (e.g. "long_name": "S2|02 Robert-Piloty-Geb\u00e4ude")
 
 
-@app.command()
+@app.command(name="add.disamb")
 def add_geoc_disamb(
-    disamb_file, index_geoc_file, flavor: str = "GMAPS", inDelim: str = "|"
+    disamb_file: str, index_geoc_file: str, flavor: str = "GMAPS", inDelim: str = "|"
 ):
     """Return a list of recId|geoc(target) from a list of recid|target.
-    Should be used before add-geoc-data"""
+
+    Arguments:
+        disamb_file: disambiguation data file path
+        index_geoc_file: index geocoding file path
+        flavor: flavor of `index_geoc_file` (in ["HERE","GMAPS"])
+        inDelim: inner delimiter
+
+    **Usage:**
+        ```shell
+        patentcity geo add.disamb ${DISAMBFILE} ${GEOCINDEX} --flavor ${FLAVOR}
+        ```
+
+    !!! info
+        Use before `patentcity geo add`
+    """
     assert flavor in ["GMAPS", "HERE"]
     if flavor == "GMAPS":
         index = {}
