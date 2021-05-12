@@ -184,15 +184,15 @@ done;
 # HERE and GMAPS
 for OFFICE in dd de fr gb us; do
   echo ${OFFICE}
-  patentcity geo add entrel_${OFFICE}patentxx.jsonl --geoc-file geoc_${OFFICE}patentxx.here.csv_xx.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
-  patentcity geo add entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.gmaps.csv_xx.gz --source GMAPS >> entrelgeoc_${OFFICE}patentxx.jsonl &&
+  patentcity geo add entrel_${OFFICE}patentxx.jsonl geoc_${OFFICE}patentxx.here.csv_xx.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
+  patentcity geo add entrelgeoc_${OFFICE}patentxx.jsonl_tmp geoc_${OFFICE}patentxx.gmaps.csv_xx.gz --source GMAPS >> entrelgeoc_${OFFICE}patentxx.jsonl &&
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
 done;
 
 MANUALDISAMB="dd fr"  # we add dd which is already in HERE like format
 for OFFICE in ${MANUALDISAMB}; do
   mv entrelgeoc_${OFFICE}patentxx.jsonl entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
-  patentcity geo add entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.manual.csv.gz --source MANUAL >> entrelgeoc_${OFFICE}patentxx.jsonl &&
+  patentcity geo add entrelgeoc_${OFFICE}patentxx.jsonl_tmp geoc_${OFFICE}patentxx.manual.csv.gz --source MANUAL >> entrelgeoc_${OFFICE}patentxx.jsonl &&
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
 done;
 

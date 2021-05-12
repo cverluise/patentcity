@@ -45,6 +45,8 @@ nav:
       - brew: API_BREW.md
       - eval: API_EVAL.md
       - geo: API_GEO.md
+      - io: API_IO.md
+      - search: API_SEARCH.md
   - License:
     - Code: LICENSE_CODE.md
     - Data: LICENSE_DATA.md
