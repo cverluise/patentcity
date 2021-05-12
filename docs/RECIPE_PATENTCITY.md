@@ -52,7 +52,7 @@ ls entrel_*patentxx.jsonl | parallel "wc -l {}*"
 
     ```shell
     # Get loc data
-    ls entrel_*patentxx.jsonl |cut -d_ -f2 |  parallel --eta 'patentcity geo prep-geoc-data entrel_{} | sort -u >> loc_{.}.txt'
+    ls entrel_*patentxx.jsonl |cut -d_ -f2 |  parallel --eta 'patentcity geo prep entrel_{} | sort -u >> loc_{.}.txt'
 
     # Prep geoc data
     ls loc_*patentxx.txt | parallel --eta 'mv {} {}_tmp && patentcity utils prep-searchtext {}_tmp configs/{.}.yaml >> {}'
@@ -70,7 +70,7 @@ ls entrel_*patentxx.jsonl | parallel "wc -l {}*"
 === "Most reccurent loc"
 
     ```shell
-    ls entrel_*patentxx.jsonl |cut -d_ -f2 |  parallel --eta 'patentcity geo prep-geoc-data entrel_{} | sort | uniq -c >> loc_{.}.count.txt'
+    ls entrel_*patentxx.jsonl |cut -d_ -f2 |  parallel --eta 'patentcity geo prep entrel_{} | sort | uniq -c >> loc_{.}.count.txt'
     ls loc_*patentxx.count.txt | cut -d. -f 1,2 | parallel --eta 'mv {}.txt {}.txt_tmp && patentcity utils prep-searchtext {}.txt_tmp configs/{.}.yaml >> {}.txt'
     for FILE in $(ls loc_*patentxx.count.txt | cut -d. -f 1 ); do cat ${FILE}.count.txt | sort -nr  |awk '{$1=""; print $0}' | cut -c2- >> ${FILE}.sorted.txt; done;
     # nb sorted in descending order
@@ -109,17 +109,17 @@ ls entrel_*patentxx.jsonl | parallel "wc -l {}*"
 
     echo "FILE: ${FILE} CNTFOCUS: ${CNTFOCUS}"
 
-    patentcity geo post-geoc-data-here ${FILE} ${APIKEY} ${CNTFOCUS}
+    patentcity geo here.post ${FILE} ${APIKEY} ${CNTFOCUS}
     # print REQUESTID to stdout
 
     # monitor status
     REQUESTID=""
-    patentcity geo get-geoc-status-here $REQUESTID $APIKEY
+    patentcity geo here.status $REQUESTID $APIKEY
 
     # get data and rename
     OUTPUTDIR="tmp"
     mkdir -p ${OUTPUTDIR}
-    patentcity geo get-geoc-data-here ${REQUESTID} ${APIKEY} --output-dir ${OUTPUTDIR} && RESULT=$(ls ${OUTPUTDIR}/${REQUESTID}) && mv ${OUTPUTDIR}/${REQUESTID}/$RESULT ./"$(echo ${FILE} | sed -e 's/tbd/here/g; s/txt/csv/g; s/loc/geoc/g')" && echo "Saved as $(echo ${FILE} | sed -e 's/tbd/here/g; s/txt/csv/g; s/loc/geoc/g')!"
+    patentcity geo here.get ${REQUESTID} ${APIKEY} --output-dir ${OUTPUTDIR} && RESULT=$(ls ${OUTPUTDIR}/${REQUESTID}) && mv ${OUTPUTDIR}/${REQUESTID}/$RESULT ./"$(echo ${FILE} | sed -e 's/tbd/here/g; s/txt/csv/g; s/loc/geoc/g')" && echo "Saved as $(echo ${FILE} | sed -e 's/tbd/here/g; s/txt/csv/g; s/loc/geoc/g')!"
     ```
 
 === "GMAPS"
@@ -134,7 +134,7 @@ ls entrel_*patentxx.jsonl | parallel "wc -l {}*"
     echo "OFFICE:${OFFICE} REGION:${REGION} ROUND:${ROUND}"
     echo "loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND} has $(wc -l loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND}) line(s)"
     # better safe than sorry
-    patentcity geo get-geoc-data-gmaps loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND} ${APIKEY} ${REGION} >> geoc_${OFFICE}patentxx.gmaps.txt_${ROUND}
+    patentcity geo gmaps.get loc_${OFFICE}patentxx.here.nomatch.txt_${ROUND} ${APIKEY} ${REGION} >> geoc_${OFFICE}patentxx.gmaps.txt_${ROUND}
     ```
 
 === "Manual annotations"
@@ -152,7 +152,7 @@ ls entrel_*patentxx.jsonl | parallel "wc -l {}*"
     DISAMBFILE=""  # e.g. lib/loc_${FORMAT}.disamb.txt
     GEOCINDEX=""  # e.g. lib/geoc_${FORMAT}.disamb.index.txt lib/geoc_iso.disamb.index.txt
     FLAVOR=""  # HERE or GMAPS
-    patentcity geo add-geoc-disamb ${DISAMBFILE} ${GEOCINDEX} --flavor ${FLAVOR}>> geoc_${FORMAT}.manual.txt
+    patentcity geo add.disamb ${DISAMBFILE} ${GEOCINDEX} --flavor ${FLAVOR}>> geoc_${FORMAT}.manual.txt
     # DISAMBFILE is a list of disambiguated loc together with their *original* hash (sep by the standard inDelim)
     # GEOCINDEX is the list of geoc of disambigated loc (e.g. "république fédérale d'allemagne")
     # FLAVOR is HERE or GMAPS depending on the flavor of GEOCINDEX
@@ -163,10 +163,10 @@ ls entrel_*patentxx.jsonl | parallel "wc -l {}*"
 
 ```shell
 # Harmonize GMAPS and MANUAL as HERE geocoded data
-ls geoc_*patentxx.gmaps.txt.gz | cut -d. -f1,2 |parallel --eta 'patentcity geo harmonize-geoc-data-gmaps {}.txt.gz --out-format csv >> {}.csv && gzip {}.csv'
+ls geoc_*patentxx.gmaps.txt.gz | cut -d. -f1,2 |parallel --eta 'patentcity geo gmaps.harmonize {}.txt.gz --out-format csv >> {}.csv && gzip {}.csv'
 MANUALDISAMB="fr"
 for OFFICE in ${MANUALDISAMB}; do
-  patentcity geo harmonize-geoc-data-gmaps geoc_${OFFICE}patentxx.manual.txt --out-format csv >> geoc_${OFFICE}patentxx.manual.csv;
+  patentcity geo gmaps.harmonize geoc_${OFFICE}patentxx.manual.txt --out-format csv >> geoc_${OFFICE}patentxx.manual.csv;
 done;
 
 # Stack geocoded data
@@ -184,15 +184,15 @@ done;
 # HERE and GMAPS
 for OFFICE in dd de fr gb us; do
   echo ${OFFICE}
-  patentcity geo add-geoc-data entrel_${OFFICE}patentxx.jsonl --geoc-file geoc_${OFFICE}patentxx.here.csv_xx.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
-  patentcity geo add-geoc-data entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.gmaps.csv_xx.gz --source GMAPS >> entrelgeoc_${OFFICE}patentxx.jsonl &&
+  patentcity geo add entrel_${OFFICE}patentxx.jsonl --geoc-file geoc_${OFFICE}patentxx.here.csv_xx.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
+  patentcity geo add entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.gmaps.csv_xx.gz --source GMAPS >> entrelgeoc_${OFFICE}patentxx.jsonl &&
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
 done;
 
 MANUALDISAMB="dd fr"  # we add dd which is already in HERE like format
 for OFFICE in ${MANUALDISAMB}; do
   mv entrelgeoc_${OFFICE}patentxx.jsonl entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
-  patentcity geo add-geoc-data entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.manual.csv.gz --source MANUAL >> entrelgeoc_${OFFICE}patentxx.jsonl &&
+  patentcity geo add entrelgeoc_${OFFICE}patentxx.jsonl_tmp --geoc-file geoc_${OFFICE}patentxx.manual.csv.gz --source MANUAL >> entrelgeoc_${OFFICE}patentxx.jsonl &&
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
 done;
 

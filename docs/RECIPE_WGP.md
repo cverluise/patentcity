@@ -16,7 +16,7 @@
 
     # Build Geoc index (patent city flavor)
     patentcity utils get-gmaps-index-wgp --flavor 45 addresses_florian45.csv >> addresses_florian45.jsonl
-    patentcity geo harmonize-geoc-data-gmaps addresses_florian45.jsonl --out-format csv >> addresses_florian45_patentcity.csv
+    patentcity geo gmaps.harmonize addresses_florian45.jsonl --out-format csv >> addresses_florian45_patentcity.csv
     mv addresses_florian45_patentcity.csv addresses_florian45_patentcity.tmp.csv && csvstack -n source -g GMAPS addresses_florian45_patentcity.tmp.csv >> addresses_florian45_patentcity.csv
 
     # Load addresses
@@ -45,7 +45,7 @@
     # Geocode
     ## follow the same procedure as for PatentCity see RECIPE_PATENTCITY.md
     ## harmonize HERE and GMAPS outputs
-    ls geoc_*patentwgp25.gmaps.txt | cut -d. -f1,2 |parallel --eta 'patentcity geo harmonize-geoc-data-gmaps {}.txt --out-format csv >> {}.csv'
+    ls geoc_*patentwgp25.gmaps.txt | cut -d. -f1,2 |parallel --eta 'patentcity geo gmaps.harmonize {}.txt --out-format csv >> {}.csv'
     ## remove extra recId field (returned by HERE)
     ls geoc_*patentwgp25.here.csv.gz | parallel --eta 'mv {} {.}.tmp.gz && csvcut -C 4 {.}.tmp.gz >> {.} && gzip {.}'
     # add source
@@ -73,7 +73,7 @@
 
     # Build Geoc index (patent city flavor)
     patentcity utils get-gmaps-index-wgp --flavor 25 addresses_florian25.csv >> addresses_florian25.jsonl
-    patentcity geo harmonize-geoc-data-gmaps addresses_florian25.jsonl --out-format csv >> addresses_florian25_patentcity.csv
+    patentcity geo gmaps.harmonize addresses_florian25.jsonl --out-format csv >> addresses_florian25_patentcity.csv
     mv addresses_florian25_patentcity.csv addresses_florian25_patentcity.tmp.csv && csvstack -n source -g GMAPS addresses_florian25_patentcity.tmp.csv >> addresses_florian25_patentcity.csv
 
     # Load addresses
