@@ -57,5 +57,5 @@ done;
 ```shell
 OFFICE="" # e.g. DD, DE, etc
 RATIO= # e.g. .2, .015
-patentcity io.py extract-sample-kepler patentcity.patentcity.pc_v100rc1 data_tmp/sample_${OFFICE}.csv --sample-ratio ${RATIO} --office ${OFFICE} --key-file credentials-patentcity.json
+patentcity io extract-sample-kepler patentcity.patentcity.pc_v100rc1 data_tmp/sample_${OFFICE}.csv --sample-ratio ${RATIO} --office ${OFFICE} --key-file credentials-patentcity.json
 ```
