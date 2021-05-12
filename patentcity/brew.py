@@ -59,7 +59,7 @@ def grind(path: str, max_workers: int = 10):
 
     **Usage:**
         ```shell
-        patencity brew v1.grind "data/US/*.txt" >> data/US/uspatentxx.jsonl
+        patencity brew v1.grind "data/US/*.txt"
         # Nb: if the file is large, you can split and zip
         ```
     """
@@ -96,7 +96,7 @@ def v1(
 
     **Usage:**
         ```shell
-        patencity brew v1 "data/US/uspatentxx*.jsonl" >> data/US/entrel_uspatentxx.jsonl
+        patencity brew v1 "data/US/uspatentxx*.jsonl"
         # Nb: if the file is large, you can split and zip
         ```
     """
@@ -256,7 +256,7 @@ def topping(file: str, config_file: str = None, max_workers=10):
     **Usage:**
         ```shell
         mv data/US/entrel_uspatentxx.jsonl data/US/entrel_uspatentxx.jsonl.tmp
-        patencity v1.topping --config-file configs/top_xxpatentxx.yaml "data/US/entrel_uspatentxx.jsonl.tmp" >> data/US/entrel_uspatentxx.jsonl
+        patencity v1.topping --config-file configs/top_xxpatentxx.yaml "data/US/entrel_uspatentxx.jsonl.tmp"
         # Nb: if the file is large, you can split and zip
         ```
 
