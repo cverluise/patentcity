@@ -1,0 +1,480 @@
+kind,raw,harmonized,nutsx_code
+state,Bade-Wurtemberg,Baden-Württemberg,DE1
+state,Baden-Wurttemberg,Baden-Württemberg,DE1
+state,Baden-Württemberg,Baden-Württemberg,DE1
+state,Bavaria,Bayern,DE2
+state,Bayern,Bayern,DE2
+state,Berlin,Berlin,DE3
+state,Brandenburg,Brandenburg,DE4
+state,Bremen,Bremen,DE5
+state,Hamburg,Hamburg,DE6
+state,Hesse,Hessen,DE7
+state,Hessen,Hessen,DE7
+state,KS,,
+state,Lower Saxony,Niedersachsen,DE9
+state,Lower-Saxony,Niedersachsen,DE9
+state,Mecklenburg-Vorpommern,,
+state,Niedersachsen,Niedersachsen,DE9
+state,Noordrijn-Westfalen,Nordrhein-Westfalen,DEA
+state,Nordrhein-Westfalen,Nordrhein-Westfalen,DEA
+state,North Rhine-Westphalia,Nordrhein-Westfalen,DEA
+state,North-Rhine-Westphalia,Nordrhein-Westfalen,DEA
+state,NRW,Nordrhein-Westfalen,DEA
+state,Rheinland-Pfalz,Rheinland-Pfalz,DEB
+state,Rhineland-Palatinate,Rheinland-Pfalz,DEB
+state,Saarland,Saarland,DEC
+state,Sachsen,Sachsen,DED
+state,Sachsen-Anhalt,Sachsen-Anhalt,DEE
+state,Saxony,Sachsen,DED
+state,Saxony-Anhalt,Sachsen-Anhalt,DEE
+state,Schleswig-Holstein,Schleswig-Holstein,DEF
+state,Thuringia,Thüringen,DEG
+state,Thüringen,Thüringen,DEG
+state,Σλέσβιγκ-Χόλσταϊν,Schleswig-Holstein,DEF
+county,Aabenraa,,
+county,Aachen,Köln,DEA2
+county,Ahrweiler,Koblenz,DEB1
+county,Aichach-Friedberg,Schwaben,DE27
+county,Alb-Donau-Kreis,Tübingen,DE14
+county,Altenburger Land,Thüringen,DEG0
+county,Altenkirchen (Westerwald),Koblenz,DEB1
+county,Altmarkkreis Salzwedel,Sachsen-Anhalt,DEE0
+county,Altötting,Oberbayern,DE21
+county,Alzey-Worms,Rheinhessen-Pfalz,DEB3
+county,Amberg,Oberpfalz,DE23
+county,Amberg-Sulzbach,Oberpfalz,DE23
+county,Ammerland,Weser-Ems,DE94
+county,Anhalt-Bitterfeld,Sachsen-Anhalt,DEE0
+county,Ansbach (Landkreis),Mittelfranken,DE25
+county,Ansbach (Stadt),Mittelfranken,DE25
+county,Arnsberg,Arnsberg,DEA5
+county,Aschaffenburg (Landkreis),Unterfranken,DE26
+county,Aschaffenburg (Stadt),Unterfranken,DE26
+county,Augsburg (City),Schwaben,DE27
+county,Augsburg (Landkreis),Schwaben,DE27
+county,Aurich,Weser-Ems,DE94
+county,Bad Dürkheim,Rheinhessen-Pfalz,DEB3
+county,Bad Kissingen,Unterfranken,DE26
+county,Bad Kreuznach,Koblenz,DEB1
+county,Bad Tölz-Wolfratshausen,Oberbayern,DE21
+county,Baden-Baden,Karlsruhe,DE12
+county,Bamberg (Landkreis),Oberfranken,DE24
+county,Bamberg (Stadt),Oberfranken,DE24
+county,Barnim,Brandenburg,DE40
+county,Bautzen,Dresden,DED2
+county,Bayreuth (Landkreis),Oberfranken,DE24
+county,Bayreuth (Stadt),Oberfranken,DE24
+county,Berchtesgadener Land,Oberbayern,DE21
+county,Bergstraße,Darmstadt,DE71
+county,Berlin,Berlin,DE30
+county,Bernkastel-Wittlich,Trier,DEB2
+county,Biberach,Tübingen,DE14
+county,Bielefeld,Detmold,DEA4
+county,Birkenfeld,Koblenz,DEB1
+county,Bochum,Arnsberg,DEA5
+county,Bodenseekreis,Tübingen,DE14
+county,Bonn,Köln,DEA2
+county,Borken,Münster,DEA3
+county,Bottrop,Münster,DEA3
+county,Brandenburg an der Havel,Brandenburg,DE40
+county,Brandenburg,Brandenburg,DE40
+county,Braunschweig,Braunschweig,DE91
+county,Breisgau-Hochschwarzwald,Freiburg,DE13
+county,Bremen,Bremen,DE50
+county,Bremerhaven,Bremen,DE50
+county,Brunswick,Braunschweig,DE91
+county,Burgenlandkreis,Sachsen-Anhalt,DEE0
+county,Böblingen,Stuttgart,DE11
+county,Börde,Sachsen-Anhalt,DEE0
+county,Calw,Karlsruhe,DE12
+county,Cassel,Kassel,DE73
+county,Celle,Lüneburg,DE93
+county,Cham,Oberpfalz,DE23
+county,Chemnitz,Chemnitz,DED4
+county,Cleves,Düsseldorf,DEA1
+county,Cloppenburg,Weser-Ems,DE94
+county,Coblenz,Koblenz,DEB1
+county,Coburg (Landkreis),Oberfranken,DE24
+county,Coburg (Stadt),Oberfranken,DE24
+county,Cochem-Zell,Koblenz,DEB1
+county,Coesfeld,Münster,DEA3
+county,Cologne,Köln,DEA2
+county,Constance,Freiburg,DE13
+county,Cottbus,Brandenburg,DE40
+county,Cuxhaven,Lüneburg,DE93
+county,Dachau,Oberbayern,DE21
+county,Dahme-Spreewald,Brandenburg,DE40
+county,Darmstadt,Darmstadt,DE71
+county,Darmstadt-Dieburg,Darmstadt,DE71
+county,Deggendorf,Niederbayern,DE22
+county,Delmenhorst,Weser-Ems,DE94
+county,Dessau-Roßlau,Sachsen-Anhalt,DEE0
+county,Detmold,Detmold,DEA4
+county,Diepholz,Hannover,DE92
+county,Dillingen an der Donau,Saarland,DEC0
+county,Dingolfing-Landau,Niederbayern,DE22
+county,Dithmarschen,Schleswig-Holstein,DEF0
+county,Donau-Ries,Schwaben,DE27
+county,Donnersbergkreis,Rheinhessen-Pfalz,DEB3
+county,Dortmund,Arnsberg,DEA5
+county,Dresden Government Region,Dresden,DED2
+county,Dresden,Dresden,DED2
+county,Duisburg,Düsseldorf,DEA1
+county,Dusseldorf,Düsseldorf,DEA1
+county,Düren,Köln,DEA2
+county,Düsseldorf,Düsseldorf,DEA1
+county,Ebersberg,Oberbayern,DE21
+county,Eichsfeld,Thüringen,DEG0
+county,Eichstätt,Oberbayern,DE21
+county,Eifelkreis Bitburg-Prüm,Trier,DEB2
+county,Eisenach,Thüringen,DEG0
+county,Elbe-Elster,Brandenburg,DE40
+county,Emden,Weser-Ems,DE94
+county,Emmendingen,Freiburg,DE13
+county,Emsland,Weser-Ems,DE94
+county,Ennepe-Ruhr-Kreis,Arnsberg,DEA5
+county,Enzkreis,Karlsruhe,DE12
+county,Erding,Oberbayern,DE21
+county,Erfurt,Thüringen,DEG0
+county,Erlangen,Mittelfranken,DE25
+county,Erlangen-Höchstadt,Mittelfranken,DE25
+county,Erzgebirgskreis,Chemnitz,DED4
+county,Essen,Düsseldorf,DEA1
+county,Esslingen,Stuttgart,DE11
+county,Euskirchen,Köln,DEA2
+county,Flensburg,Schleswig-Holstein,DEF0
+county,Forchheim,Oberfranken,DE24
+county,Frankenthal (Pfalz),Rheinhessen-Pfalz,DEB3
+county,Frankfurt (Oder),Brandenburg,DE40
+county,Frankfurt,Brandenburg,DE40
+county,Freiburg,Freiburg,DE13
+county,Freising,Oberbayern,DE21
+county,Freudenstadt,Karlsruhe,DE12
+county,Freyung-Grafenau,Niederbayern,DE22
+county,Friesland,Weser-Ems,DE94
+county,Fulda,Kassel,DE73
+county,Fürstenfeldbruck,Oberbayern,DE21
+county,Fürth (Landkreis),Mittelfranken,DE25
+county,Fürth (Stadt),Mittelfranken,DE25
+county,Garmisch-Partenkirchen,Oberbayern,DE21
+county,Gelsenkirchen,Münster,DEA3
+county,Gera,Thüringen,DEG0
+county,Germersheim,Rheinhessen-Pfalz,DEB3
+county,Giessen,Gießen,DE72
+county,Gießen,Gießen,DE72
+county,Gifhorn,Braunschweig,DE91
+county,Goslar,Braunschweig,DE91
+county,Gotha,Thüringen,DEG0
+county,Grafschaft Bentheim,Weser-Ems,DE94
+county,Greiz,Thüringen,DEG0
+county,Grevenmacher,,
+county,Groß-Gerau,Darmstadt,DE71
+county,gryfiński,,
+county,Göppingen,Stuttgart,DE11
+county,Görlitz,Dresden,DED2
+county,Göttingen,Braunschweig,DE91
+county,Günzburg,Schwaben,DE27
+county,Gütersloh,Detmold,DEA4
+county,Hagen,Arnsberg,DEA5
+county,Halle (Saale),Sachsen-Anhalt,DEE0
+county,Hamburg,Hamburg,DE60
+county,Hameln-Pyrmont,Hannover,DE92
+county,Hamm,Arnsberg,DEA5
+county,Hannover,Hannover,DE92
+county,Hannover,Hannover,DE92
+county,Harburg,Lüneburg,DE93
+county,Harz,Sachsen-Anhalt,DEE0
+county,Havelland,Brandenburg,DE40
+county,Haßberge,Unterfranken,DE26
+county,Heidekreis,Lüneburg,DE93
+county,Heidelberg,Karlsruhe,DE12
+county,Heidenheim,Stuttgart,DE11
+county,Heilbronn (Landkreis),Stuttgart,DE11
+county,Heilbronn,Stuttgart,DE11
+county,Heinsberg,Köln,DEA2
+county,Helmstedt,Braunschweig,DE91
+county,Herford,Detmold,DEA4
+county,Herne,Arnsberg,DEA5
+county,Hersfeld-Rotenburg,Kassel,DE73
+county,Herzogtum Lauenburg,Schleswig-Holstein,DEF0
+county,Hildburghausen,Thüringen,DEG0
+county,Hildesheim,Hannover,DE92
+county,Hochsauerlandkreis,Arnsberg,DEA5
+county,Hochtaunuskreis,Darmstadt,DE71
+county,Hof (Landkreis),Oberfranken,DE24
+county,Hof (Stadt),Oberfranken,DE24
+county,Hohenlohekreis,Stuttgart,DE11
+county,Holzminden,Hannover,DE92
+county,Höxter,Detmold,DEA4
+county,Ilm-Kreis,Thüringen,DEG0
+county,Ingolstadt,Oberbayern,DE21
+county,Jena,Thüringen,DEG0
+county,Jerichower Land,Sachsen-Anhalt,DEE0
+county,Kaiserslautern (City),Rheinhessen-Pfalz,DEB3
+county,Kaiserslautern (Landkreis),Rheinhessen-Pfalz,DEB3
+county,Karlsruhe (City),Karlsruhe,DE12
+county,Karlsruhe (Landkreis),Karlsruhe,DE12
+county,Karlsruhe,Karlsruhe,DE12
+county,Kassel (Landkreis),Kassel,DE73
+county,Kassel,Kassel,DE73
+county,Kaufbeuren,Niederbayern,DE22
+county,Kelheim,Niederbayern,DE22
+county,Kempten (Allgäu),Schwaben,DE27
+county,Kiel,Schleswig-Holstein,DEF0
+county,Kitzingen,Unterfranken,DE26
+county,Koblenz,Koblenz,DEB1
+county,Krefeld,Düsseldorf,DEA1
+county,Kronach,Oberfranken,DE24
+county,krośnieński,,
+county,Kulmbach,Oberfranken,DE24
+county,Kusel,Rheinhessen-Pfalz,DEB3
+county,Kyffhäuserkreis,Thüringen,DEG0
+county,Köln,Köln,DEA2
+county,Lahn-Dill-Kreis,Gießen,DE72
+county,Landau in der Pfalz,Rheinhessen-Pfalz,DEB3
+county,Landsberg am Lech,Oberbayern,DE21
+county,Landshut (Landkreis),Niederbayern,DE22
+county,Landshut (Stadt),Niederbayern,DE22
+county,Leer,Weser-Ems,DE94
+county,Leipzig (City),Leipzig,DED5
+county,Leipzig (Landkreis),Leipzig,DED5
+county,Leipzig,Leipzig,DED5
+county,Leverkusen,Köln,DEA2
+county,Lichtenfels,Oberfranken,DE24
+county,Limburg-Weilburg,Gießen,DE72
+county,Lindau (Bodensee),Schwaben,DE27
+county,Lippe,Detmold,DEA4
+county,Lower Bavaria,Niederbayern,DE22
+county,Lower Franconia,Unterfranken,DE26
+county,Ludwigsburg,Stuttgart,DE11
+county,Ludwigshafen,Rheinhessen-Pfalz,DEB3
+county,Ludwigslust-Parchim,Mecklenburg-Vorpommern,DE80
+county,Lunenburg,Lünenburg,DE93
+county,Lörrach,Freiburg,DE13
+county,Lübeck,Schleswig-Holstein,DEF0
+county,Lüchow-Dannenberg,Lüneburg,DE93
+county,Lüneburg,Lüneburg,DE93
+county,Magdeburg,Sachsen-Anhalt,DEE0
+county,Main-Kinzig-Kreis,Darmstadt,DE71
+county,Main-Spessart,Unterfranken,DE26
+county,Main-Tauber-Kreis,Stuttgart,DE11
+county,Main-Taunus-Kreis,Darmstadt,DE71
+county,Mainz,Rheinhessen-Pfalz,DEB3
+county,Mainz-Bingen,Rheinhessen-Pfalz,DEB3
+county,Mannheim,Karlsruhe,DE12
+county,Mansfeld-Südharz,Sachsen-Anhalt,DEE0
+county,Marburg-Biedenkopf,Gießen,DE72
+county,Mayen-Koblenz,Koblenz,DEB1
+county,Mecklenburg-Vorpommern,Mecklenburg-Vorpommern,DE80
+county,Mecklenburgische Seenplatte,Mecklenburg-Vorpommern,DE80
+county,Meißen,Dresden,DED2
+county,Memmingen,Schwaben,DE27
+county,Merzig-Wadern,Saarland,DEC0
+county,Mettmann,Düsseldorf,DEA1
+county,Middle Franconia,Mittelfranken,DE25
+county,Miesbach,Oberbayern,DE21
+county,Miltenberg,Unterfranken,DE26
+county,Minden-Lübbecke,Detmold,DEA4
+county,Mittelfranken,Mittelfranken,DE25
+county,Mittelsachsen,Chemnitz,DED4
+county,Moselle,,
+county,Munich,Oberbayern,DE21
+county,Märkisch-Oderland,Brandenburg,DE40
+county,Märkischer Kreis,Arnsberg,DEA5
+county,Mönchengladbach,Düsseldorf,DEA1
+county,Mühldorf a. Inn,Oberbayern,DE21
+county,Mülheim an der Ruhr,Düsseldorf,DEA1
+county,München (Landkreis),Oberbayern,DE21
+county,Münster,Münster,DEA3
+county,Neckar-Odenwald-Kreis,Karlsruhe,DE12
+county,Neu-Ulm,Schwaben,DE27
+county,Neuburg-Schrobenhausen,Oberbayern,DE21
+county,Neumarkt in der Oberpfalz,Oberpfalz,DE23
+county,Neumünster,Schleswig-Holstein,DEF0
+county,Neunkirchen,Saarland,DEC0
+county,Neustadt an der Aisch-Bad Windsheim,Mittelfranken,DE25
+county,Neustadt an der Waldnaab,Oberpfalz,DE23
+county,Neustadt an der Weinstraße,Rheinhessen-Pfalz,DEB3
+county,Neuwied,Koblenz,DEB1
+county,Niederbayern,Niederbayern,DE22
+county,Nienburg/Weser,Hannover,DE92
+county,Nordfriesland,Schleswig-Holstein,DEF0
+county,Nordhausen,Thüringen,DEG0
+county,Nordsachsen,Leipzig,DED5
+county,Nordwestmecklenburg,Mecklenburg-Vorpommern,DE80
+county,Northeim,Braunschweig,DE91
+county,Nuremberg,Mittelfranken,DE25
+county,Nürnberger Land,Mittelfranken,DE25
+county,Oberallgäu,Schwaben,DE27
+county,Oberbayern,Oberbayern,DE21
+county,Oberbergischer Kreis,Köln,DEA2
+county,Oberfranken,Oberfranken,DE24
+county,Oberhausen,Düsseldorf,DEA1
+county,Oberhavel,Brandenburg,DE40
+county,Oberpfalz,Oberpfalz,DE23
+county,Oberspreewald-Lausitz,Brandenburg,DE40
+county,Odenwaldkreis,Darmstadt,DE71
+county,Oder-Spree,Brandenburg,DE40
+county,Offenbach am Main,Darmstadt,DE71
+county,Offenbach,Darmstadt,DE71
+county,Oldenburg (Oldb.),Weser-Ems,DE94
+county,Oldenburg,Weser-Ems,DE94
+county,Olpe,Arnsberg,DEA5
+county,Ortenaukreis,Freiburg,DE13
+county,Osnabrück (Landkreis),Weser-Ems,DE94
+county,Osnabrück (Stadt),Weser-Ems,DE94
+county,Ostalbkreis,Stuttgart,DE11
+county,Ostallgäu,Schwaben,DE27
+county,Osterholz,Lüneburg,DE93
+county,Ostholstein,Schleswig-Holstein,DEF0
+county,Ostprignitz-Ruppin,Brandenburg,DE40
+county,Paderborn,Detmold,DEA4
+county,Passau (Landkreis),Niederbayern,DE22
+county,Passau (Stadt),Niederbayern,DE22
+county,Peine,Braunschweig,DE91
+county,Pfaffenhofen an der Ilm,Oberbayern,DE21
+county,Pforzheim,Karlsruhe,DE12
+county,Pinneberg,Schleswig-Holstein,DEF0
+county,Pirmasens,Rheinhessen-Pfalz,DEB3
+county,Plön,Schleswig-Holstein,DEF0
+county,policki,,
+county,Potsdam,Brandenburg,DE40
+county,Potsdam-Mittelmark,Brandenburg,DE40
+county,Prignitz,Brandenburg,DE40
+county,Rastatt,Karlsruhe,DE12
+county,Ravensburg,Tübingen,DE14
+county,Recklinghausen,Münster,DEA3
+county,Regen,Niederbayern,DE22
+county,Regensburg (City),Oberpfalz,DE23
+county,Regensburg (Landkreis),Oberpfalz,DE23
+county,Regionalverband Saarbrücken,Saarland,DEC0
+county,Rems-Murr-Kreis,Stuttgart,DE11
+county,Remscheid,Düsseldorf,DEA1
+county,Rendsburg-Eckernförde,Schleswig-Holstein,DEF0
+county,Reno County,,
+county,Reutlingen,Tübingen,DE14
+county,Rhein-Erft-Kreis,Köln,DEA2
+county,Rhein-Hunsrück-Kreis,Koblenz,DEB1
+county,Rhein-Kreis Neuss,Düsseldorf,DEA1
+county,Rhein-Lahn-Kreis,Koblenz,DEB1
+county,Rhein-Neckar-Kreis,Karlsruhe,DE12
+county,Rhein-Pfalz-Kreis,Rheinhessen-Pfalz,DEB3
+county,Rhein-Sieg-Kreis,Köln,DEA2
+county,Rheingau-Taunus-Kreis,Darmstadt,DE71
+county,Rheinhessen-Pfalz,Rheinhessen-Pfalz,DEB3
+county,Rheinisch-Bergischer Kreis,Köln,DEA2
+county,Rhön-Grabfeld,Unterfranken,DE26
+county,Rosenheim (Landkreis),Oberbayern,DE21
+county,Rosenheim (Stadt),Oberbayern,DE21
+county,Rostock (City,Mecklenburg-Vorpommern,DE80
+county,Rostock (Landkreis),Mecklenburg-Vorpommern,DE80
+county,Rotenburg (Wümme),Lüneburg,DE93
+county,Roth,Mittelfranken,DE25
+county,Rottal-Inn,Niederbayern,DE22
+county,Rottweil,Freiburg,DE13
+county,Saale-Holzland-Kreis,Thüringen,DEG0
+county,Saale-Orla-Kreis,Thüringen,DEG0
+county,Saalekreis,Sachsen-Anhalt,DEE0
+county,Saalfeld-Rudolstadt,Thüringen,DEG0
+county,Saarland,Saarland,DEC0
+county,Saarlouis,Saarland,DEC0
+county,Saarpfalz-Kreis,Saarland,DEC0
+county,Sachsen-Anhalt,Sachsen-Anhalt,DEE0
+county,Salzgitter,Braunschweig,DE91
+county,Salzlandkreis,Sachsen-Anhalt,DEE0
+county,Sankt Wendel,Saarland,DEC0
+county,Schaumburg,Hannover,DE92
+county,Schleswig-Flensburg,Schleswig-Holstein,DEF0
+county,Schleswig-Holstein,Schleswig-Holstein,DEF0
+county,Schmalkalden-Meiningen,Thüringen,DEG0
+county,Schwabach,Mittelfranken,DE25
+county,Schwaben,Schwaben,DE27
+county,Schwalm-Eder-Kreis,Kassel,DE73
+county,Schwandorf,Oberpfalz,DE23
+county,Schwarzwald-Baar-Kreis,Freiburg,DE13
+county,Schweinfurt (Landkreis),Unterfranken,DE26
+county,Schweinfurt (Stadt),Unterfranken,DE26
+county,Schwerin,Mecklenburg-Vorpommern,DE80
+county,Schwäbisch Hall,Stuttgart,DE11
+county,Segeberg,Schleswig-Holstein,DEF0
+county,Siegen-Wittgenstein,Arnsberg,DEA5
+county,Sigmaringen,Tübingen,DE14
+county,Soest,Arnsberg,DEA5
+county,Solingen,Düsseldorf,DEA1
+county,Sonneberg,Thüringen,DEG0
+county,Speyer,Rheinhessen-Pfalz,DEB3
+county,Spree-Neiße,Brandenburg,DE40
+county,Stade,Lüneburg,DE93
+county,Starnberg,Oberbayern,DE21
+county,Steinburg,Schleswig-Holstein,DEF0
+county,Steinfurt,Münster,DEA3
+county,Stendal,Sachsen-Anhalt,DEE0
+county,Stormarn,Schleswig-Holstein,DEF0
+county,Straubing,Niederbayern,DE22
+county,Straubing-Bogen,Niederbayern,DE22
+county,Stuttgart,Stuttgart,DE11
+county,Suhl,Thüringen,DEG0
+county,Swabia,Schwaben,DE27
+county,Sächsische Schweiz-Osterzgebirge,Dresden,DED2
+county,Sömmerda,Thüringen,DEG0
+county,Südliche Weinstraße,Rheinhessen-Pfalz,DEB3
+county,Südwestpfalz,Rheinhessen-Pfalz,DEB3
+county,słubicki,,
+county,Teltow-Fläming,Brandenburg,DE40
+county,Thüringen,Thüringen,DEG0
+county,Tirschenreuth,Oberpfalz,DE23
+county,Traunstein,Oberbayern,DE21
+county,Treves,Trier,DEB2
+county,Trier,Trier,DEB2
+county,Trier-Saarburg,Trier,DEB2
+county,Tuttlingen,Freiburg,DE13
+county,Tübingen,Tübingen,DE14
+county,Uckermark,Brandenburg,DE40
+county,Uelzen,Lüneburg,DE93
+county,Ulm,Tübingen,DE14
+county,Unna,Arnsberg,DEA5
+county,Unstrut-Hainich-Kreis,Thüringen,DEG0
+county,Unterallgäu,Schwaben,DE27
+county,Unterfranken,Unterfranken,DE26
+county,Upper Bavaria,Oberbayern,DE21
+county,Upper Franconia,Oberfranken,DE24
+county,Upper Palatinate,Oberpfalz,DE23
+county,Vechta,Weser-Ems,DE94
+county,Verden,Lüneburg,DE93
+county,Vianden,,
+county,Viersen,Düsseldorf,DEA1
+county,Vogelsbergkreis,Gießen,DE72
+county,Vogtlandkreis,Chemnitz,DED4
+county,Vorpommern-Greifswald,Mecklenburg-Vorpommern,DE80
+county,Vorpommern-Rügen,Mecklenburg-Vorpommern,DE80
+county,Vulkaneifelkreis,Trier,DEB2
+county,Waldeck-Frankenberg,Kassel,DE73
+county,Waldshut,Freiburg,DE13
+county,Warendorf,Münster,DEA3
+county,Wartburgkreis,Thüringen,DEG0
+county,Weiden in der Oberpfalz,Oberpfalz,DE23
+county,Weilheim-Schongau,Oberbayern,DE21
+county,Weimar,Thüringen,DEG0
+county,Weimarer Land,Thüringen,DEG0
+county,Weißenburg-Gunzenhausen,Mittelfranken,DE25
+county,Werra-Meißner-Kreis,Kassel,DE73
+county,Wesel,Düsseldorf,DEA1
+county,Weser-Ems,Weser-Ems,DE94
+county,Wesermarsch,Weser-Ems,DE94
+county,Westerwaldkreis,Koblenz,DEB1
+county,Wetteraukreis,Darmstadt,DE71
+county,Wiesbaden,Darmstadt,DE71
+county,Wilhelmshaven,Weser-Ems,DE94
+county,Wittenberg,Sachsen-Anhalt,DEE0
+county,Wittmund,Weser-Ems,DE94
+county,Wolfenbüttel,Braunschweig,DE91
+county,Wolfsburg,Braunschweig,DE91
+county,Worms,Rheinhessen-Pfalz,DEB3
+county,Wunsiedel im Fichtelgebirge,Oberfranken,DE24
+county,Wuppertal,Düsseldorf,DEA1
+county,Würzburg (City),Unterfranken,DE26
+county,Würzburg (Landkreis),Unterfranken,DE26
+county,Zollernalbkreis,Tübingen,DE14
+county,Zweibrücken,Rheinhessen-Pfalz,DEB3
+county,Zwickau,Chemnitz,DED4
+county,Świnoujście,,
