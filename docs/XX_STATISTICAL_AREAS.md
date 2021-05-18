@@ -14,30 +14,26 @@ In addition, we would like to have the following features:
 
 ## Approach
 
-The first group of issues (spelling and semantic inconsistentcies) is solved using hand-made dictionaries. Fully documented by issue [#7](https://github.com/cverluise/patentcity/issues/7).
+The first group of issues (spelling and semantic inconsistencies) is solved using hand-made dictionaries. Fully documented by issue [#7](https://github.com/cverluise/patentcity/issues/7).
 
 For the second group of issues, we define two levels of "statistical areas" (level 1 being more aggregated than level 2).
 
-Country code| Statistical areas 1| Statitical areas 2
+Country code| Statistical area 1| Statitical area 2
 ----|----|----
 DD  |-   |-
 DE  |NUTS1 (Land)   |NUTS2 (District)
 FR  |NUTS1 (Région) |NUTS3 (Département)
-GB  |NUTS1          |Ceremonial counties
-US  |State          |Commuting Zone
+GB  |NUTS1          |Ceremonial counties for England, Lieutenancy Areas for Scotland, Preserved counties for Wales and Northern Ireland (as a whole)
+US  |State          |Commuting Zone (1990)
 
-Except for the US, we can use the postal code as the starting point
+!!! info
+    - [NUTS Europe (2021)](https://ec.europa.eu/eurostat/documents/345175/629341/NUTS2021.xlsx)
+    - [Postal code to NUTS Europe (2021)](https://gisco-services.ec.europa.eu/tercet/flat-files)
+    - [County to Commuting zone (1990)](http://fpeckert.me/eglp/)
 
-Country code |File | From-to | e.g.
---- |---|---|---
-DE  |`county2nuts2_de.json`| Map the districts (NUTS2) returned by GMAPS and the kreisen (NUTS3) returned by HERE onto NUTS2 | "Aachen" -> "Köln"
-FR  |||
-GB  |||
-US  |||
+Except for the US, we can use the postal code as the primary key for statistical areas.
 
-https://gisco-services.ec.europa.eu/tercet/flat-files
-
-??? quote "Mapping key"
+??? quote "Postal code as a primary key?"
 
     ```sql
     WITH tmp AS (
