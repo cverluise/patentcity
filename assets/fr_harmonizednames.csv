@@ -1,0 +1,148 @@
+kind,raw,harmonized,nuts_code,national_code
+state,(34) Hérault,Occitanie,FRJ,
+state,Alsace,Grand Est,FRF,
+state,Aquitaine,Nouvelle-Aquitaine,FRI,
+state,Auvergne-Rhone-Alpes,Auvergne-Rhône-Alpes,FRK,
+state,Auvergne-Rhône-Alpes,Auvergne-Rhône-Alpes,FRK,
+state,Bourgogne Franche-Comté,Bourgogne-Franche-Comté,FRC,
+state,Bourgogne-Franche-Comte,Bourgogne-Franche-Comté,FRC,
+state,Bourgogne-Franche-Comté,Bourgogne-Franche-Comté,FRC,
+state,Bretagne,Bretagne,FRH,
+state,Brittany,Bretagne,FRH,
+state,Cayenne,Régions Ultrapériphériques Françaises,FRY,
+state,Centre-Val de Loire,Centre — Val de Loire,FRB,
+state,Collectivity of Saint Martin,Régions Ultrapériphériques Françaises,FRY,
+state,Corse,Corse,FRM,
+state,Corsica,Corse,FRM,
+state,France,,,
+state,Grand Est,Grand Est,FRF,
+state,Grande-Terre,Régions Ultrapériphériques Françaises,FRY,
+state,HAUTS DE SEINE,Ile-de-France,FR1,
+state,Hauts-de-France,Hauts-de-France,FRE,
+state,Ile-de-France,Ile-de-France,FR1,
+state,Loire,Auvergne-Rhône-Alpes,FRK,
+state,Loire Region,Pays de la Loire,FRG,
+state,Mamoudzou,Régions Ultrapériphériques Françaises,FRY,
+state,Normandie,Normandie,FRD,
+state,Normandy,Normandie,FRD,
+state,Nouvelle-Aquitaine,Nouvelle-Aquitaine,FRI,
+state,Occitanie,Occitanie,FRJ,
+state,Paris,Ile-de-France,FR1,
+state,Pays de la Loire,Pays de la Loire,FRG,
+state,Provence-Alpes-Cote d'Azur,Provence-Alpes-Côte d’Azur,FRL,
+state,Provence-Alpes-Côte d'Azur,Provence-Alpes-Côte d’Azur,FRL,
+state,Rhône-Alpes,Auvergne-Rhône-Alpes,FRK,
+state,Réunion,Régions Ultrapériphériques Françaises,FRY,
+state,Saint Denis,Régions Ultrapériphériques Françaises,FRY,
+state,Saint Pierre,Régions Ultrapériphériques Françaises,FRY,
+state,Saint-Paul,Régions Ultrapériphériques Françaises,FRY,
+state,Île-de-France,Ile-de-France,FR1,
+county,Ain,Ain,FRK21,01
+county,Aisne,Aisne,FRE21,02
+county,Allier,Allier,FRK11,03
+county,Alpes-Maritimes,Alpes-Maritimes,FRL03,06
+county,Maritime Alps,Alpes-Maritimes,FRL03,06
+county,Alpes-de-Haute-Provence,Alpes-de-Haute-Provence,FRL01,04
+county,Ardèche,Ardèche,FRK22,07
+county,Ardeche,Ardèche,FRK22,07
+county,Ardennes,Ardennes,FRF21,08
+county,Ariege,Ardennes,FRF21,09
+county,Ariège,Ariège,FRJ21,09
+county,Aube,Aube,FRF22,10
+county,Aude,Aude,FRJ11,11
+county,Aveyron,Aveyron,FRJ22,12
+county,Bas-Rhin,Bas-Rhin,FRF11,67
+county,Bouches-du-Rhone,Bouches-du-Rhône,FRL04,13
+county,Bouches-du-Rhône,Bouches-du-Rhône,FRL04,13
+county,Calvados,Calvados,FRD11,14
+county,Cantal,Cantal,FRK12,15
+county,Charente,Charente,FRI31,16
+county,Charente-Maritime,Charente-Maritime,FRI32,17
+county,Cher,Cher,FRB01,18
+county,Correze,Corrèze,FRI21,19
+county,Corrèze,Corrèze,FRI21,19
+county,Corse,Corse,,20
+county,Haute-Corse,Haute-Corse,FRM02,2B
+county,Corse-du-Nord,Haute-Corse,FRM02,2B
+county,Corse-du-Sud,Corse-du-Sud,FRM01,2A
+county,Côte-d'Or,Côte-d’Or,FRC11,21
+county,Côtes-d'Armor,Côtes-d’Armor,FRH01,22
+county,Creuse,Creuse,FRI22,23
+county,Département de Paris,Paris,FR101,75
+county,Deux-Sèvres,Deux-Sèvres,FRI33,79
+county,Dordogne,Dordogne,FRI11,24
+county,Doubs,Doubs,FRC21,25
+county,Drôme,Drôme,FRK23,26
+county,Essonne,Essonne,FR104,91
+county,Eure,Eure,FRD21,27
+county,Eure-et-Loir,Eure-et-Loir,FRB02,28
+county,Finistère,Finistère,FRH02,29
+county,Finistere,Finistère,FRH02,29
+county,Gard,Gard,FRJ12,30
+county,Gers,Gers,FRJ24,32
+county,Gironde,Gironde,FRI12,33
+county,Haut-Rhin,Haut-Rhin,FRF12,68
+county,Haute-Garonne,Haute-Garonne,FRJ23,31
+county,Haute-Loire,Haute-Loire,FRK13,43
+county,Haute-Marne,Haute-Marne,FRF24,52
+county,Haute-Saône,Haute-Saône,FRC23,70
+county,Haute-Savoie,Haute-Savoie,FRK28,74
+county,Haute-Vienne,Haute-Vienne,FRI23,87
+county,Hautes-Alpes,Hautes-Alpes,FRL02,05
+county,Hautes-Pyrénées,Hautes-Pyrénées,FRJ26,65
+county,Hauts-de-Seine,Hauts-de-Seine,FR105,92
+county,Hérault,Hérault,FRJ13,34
+county,Ille-et-Vilaine,Ille-et-Vilaine,FRH03,35
+county,Indre,Indre,FRB03,36
+county,Indre-et-Loire,Indre-et-Loire,FRB04,37
+county,Isere,Isère,FRK24,38
+county,Isère,Isère,FRK24,38
+county,Jura,Jura,FRC22,39
+county,Landes,Landes,FRI13,40
+county,Loir-et-Cher,Loir-et-Cher,FRB05,41
+county,Loire,Loire,FRK25,42
+county,Loire-Atlantique,Loire-Atlantique,FRG01,44
+county,Loiret,Loiret,FRB06,45
+county,Lot,Lot,FRJ25,46
+county,Lot-et-Garonne,Lot-et-Garonne,FRI14,47
+county,Lozère,Lozère,FRJ14,48
+county,Maine-et-Loire,Maine-et-Loire,FRG02,49
+county,Manche,Manche,FRD12,50
+county,Marne,Marne,FRF23,51
+county,Mayenne,Mayenne,FRG03,53
+county,Meurthe-et-Moselle,Meurthe-et-Moselle,FRF31,54
+county,Meuse,Meuse,FRF32,55
+county,Morbihan,Morbihan,FRH04,56
+county,Moselle,Moselle,FRF33,57
+county,Nièvre,Nièvre,FRC12,58
+county,Nievre,Nièvre,FRC12,58
+county,Nord,Nord,FRE11,59
+county,Oise,Oise,FRE22,60
+county,Orne,Orne,FRD13,61
+county,Paris,Paris,FR101,75
+county,Pas-de-Calais,Pas-de-Calais,FRE12,62
+county,Puy-de-Dome,Puy-de-Dôme,FRK14,63
+county,Puy-de-Dôme,Puy-de-Dôme,FRK14,63
+county,Pyrénées-Atlantiques,Pyrénées-Atlantiques,FRI15,64
+county,Pyrénées-Orientales,Pyrénées-Orientales,FRJ15,66
+county,Rhône,Rhône,FRK26,69
+county,Saône-et-Loire,Saône-et-Loire,FRC13,71
+county,Sarthe,Sarthe,FRG04,72
+county,Savoie,Savoie,FRK27,73
+county,Seine-Maritime,Seine-Maritime,FRD22,76
+county,Seine-Saint-Denis,Seine-Saint-Denis,FR106,93
+county,Seine-et-Marne,Seine-et-Marne,FR102,77
+county,Somme,Somme,FRE23,80
+county,Tarn,Tarn,FRJ27,81
+county,Tarn-et-Garonne,Tarn-et-Garonne,FRJ28,82
+county,Territoire de Belfort,Territoire de Belfort,FRC24,90
+county,Val-d'Oise,Val-d’Oise,FR108,95
+county,Val-de-Marne,Val-de-Marne,FR107,94
+county,Var,Var,FRL05,83
+county,Vaucluse,Vaucluse,FRL06,84
+county,Vendée,Vendée,FRG05,85
+county,Vendee,Vendée,FRG05,85
+county,Vienne,Vienne,FRI34,86
+county,Vosges,Vosges,FRF34,88
+county,Yonne,Yonne,FRC14,89
+county,Yvelines,Yvelines,FR103,78
