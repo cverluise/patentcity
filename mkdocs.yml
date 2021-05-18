@@ -37,10 +37,12 @@ nav:
         - DE dates: DE_DATE_IMPUTATION.md
         - Geocoding: XX_GEOC_REPORT.md
         - Citizenship: XX_CIT_EVALUATION.md
-        - Deduplicaton: XX_DEDUPLICATION_EVALUATION.md
+        - Statistical areas: XX_STATISTICAL_AREAS.md
+        - Deduplication: XX_DEDUPLICATION_EVALUATION.md
       - Recipes:
         - PatentCity: RECIPE_PATENTCITY.md
         - WGP: RECIPE_WGP.md
+      - Cheatsheet: CHEATSHEET.md
   - API:
       - brew: API_BREW.md
       - eval: API_EVAL.md

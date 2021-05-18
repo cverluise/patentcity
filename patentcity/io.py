@@ -300,7 +300,7 @@ def order(
     Arguments:
         src_table: source table (project.dataset.table)
         by: ordering dimension (e.g. publication_number)
-        destinatio_table: destination table (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
         credentials: BQ credentials file path
 
     **Usage:**
