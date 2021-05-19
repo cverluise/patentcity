@@ -1,0 +1,248 @@
+country,kind,key,harmonized,nutsCode
+GBR,state,Alderney,Extra-Regio NUTS 1,UKZ
+GBR,state,Bailiwick of Guernsey,Extra-Regio NUTS 1,UKZ
+GBR,state,Bailiwick of Jersey,Extra-Regio NUTS 1,UKZ
+GBR,state,Castel,Extra-Regio NUTS 1,UKZ
+GBR,state,Cymru,Wales,UKL
+GBR,state,Douglas,Extra-Regio NUTS 1,UKZ
+GBR,state,England,England,
+GBR,state,Isle of Man,Extra-Regio NUTS 1,UKZ
+GBR,state,Le Valle,,
+GBR,state,Northern Ireland,Northern Ireland,UKN
+GBR,state,Saint Martin,England,
+GBR,state,Saint Peter Port,Extra-Regio NUTS 1,UKZ
+GBR,state,Saint Sampson,Extra-Regio NUTS 1,UKZ
+GBR,state,Saint-Pierre-Port,Extra-Regio NUTS 1,UKZ
+GBR,state,Scotland,Scotland,UKM
+GBR,state,St Brelade,Extra-Regio NUTS 1,UKZ
+GBR,state,St Helier,Extra-Regio NUTS 1,UKZ
+GBR,state,St Mary,England,
+GBR,state,St Peter,Extra-Regio NUTS 1,UKZ
+GBR,state,Wales,Wales,
+GBR,county,"Armagh City, Banbridge and Craigavon",Northern Ireland,UKN0
+GBR,county,"Isle of Arran,",Southern Scotland,UKM9
+GBR,county,"Lydney, Glos","Gloucestershire, Wiltshire and Bristol/Bath area",UKK1
+GBR,county,"Newry, Mourne and Down",Northern Ireland,UKN0
+GBR,county,"Unst, Shetland",Highlands and Islands,UKM6
+GBR,county,Aberdeen City,North Eastern Scotland,UKM5
+GBR,county,Aberdeenshire,North Eastern Scotland,UKM5
+GBR,county,Angus Council,Eastern Scotland,UKM7
+GBR,county,Angus,Eastern Scotland,UKM7
+GBR,county,Antrim and Newtownabbey,Northern Ireland,UKN0
+GBR,county,Ards and North Down,Northern Ireland,UKN0
+GBR,county,Argyll and Bute Council,Highlands and Islands,UKM6
+GBR,county,Argyll,Highlands and Islands,UKM6
+GBR,county,Avon,"Gloucestershire, Wiltshire and Bristol/Bath area",UKK1
+GBR,county,Ayrshire,Southern Scotland,UKM9
+GBR,county,Banffshire,Highlands and Islands,UKM6
+GBR,county,Bath and North East Somerset,"Gloucestershire, Wiltshire and Bristol/Bath area",UKK1
+GBR,county,Bedford,Bedfordshire and Hertfordshire,UKH2
+GBR,county,Bedfordshire,Bedfordshire and Hertfordshire,UKH2
+GBR,county,Belfast,Northern Ireland,UKN0
+GBR,county,Berkshire,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,Berwickshire,Highlands and Islands,UKM6
+GBR,county,Blackburn with Darwen,Lancashire,UKD4
+GBR,county,Blackpool,Lancashire,UKD4
+GBR,county,Blaenau Gwent,East Wales,UKL2
+GBR,county,Borough of Halton,Cheshire,UKD6
+GBR,county,Bracknell Forest,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,Bridgend County Borough,West Wales and The Valleys,UKL1
+GBR,county,Brighton and Hove,"Surrey, East and West Sussex",UKJ2
+GBR,county,Bristol City,"Gloucestershire, Wiltshire and Bristol/Bath area",UKK1
+GBR,county,Bro Morgannwg,East Wales,UKL2
+GBR,county,Buckinghamshire,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,Caerdydd,East Wales,UKL2
+GBR,county,Caerffili,West Wales and The Valleys,UKL1
+GBR,county,Caerphilly County Borough,West Wales and The Valleys,UKL1
+GBR,county,Caithness,Highlands and Islands,UKM6
+GBR,county,Cambridgeshire,East Anglia,UKH1
+GBR,county,Cardiff,East Wales,UKL2
+GBR,county,Carmarthenshire,West Wales and The Valleys,UKL1
+GBR,county,Causeway Coast and Glens,Northern Ireland,UKN0
+GBR,county,Central Bedfordshire,Bedfordshire and Hertfordshire,UKH2
+GBR,county,Ceredigion,West Wales and The Valleys,UKL1
+GBR,county,Cheshire East,Cheshire,UKD6
+GBR,county,Cheshire West and Chester,Cheshire,UKD6
+GBR,county,Cheshire,Cheshire,UKD6
+GBR,county,Clackmannanshire,Eastern Scotland,UKM7
+GBR,county,Cleveland,Tees Valley and Durham,UKC1
+GBR,county,Clwyd,West Wales and The Valleys,UKL1
+GBR,county,Conwy Principal Area,West Wales and The Valleys,UKL1
+GBR,county,Conwy,West Wales and The Valleys,UKL1
+GBR,county,Cornwall,Cornwall and Isles of Scilly,UKK3
+GBR,county,County Antrim,Northern Ireland,UKN0
+GBR,county,County Armagh,Northern Ireland,UKN0
+GBR,county,County Down,Northern Ireland,UKN0
+GBR,county,County Durham,Tees Valley and Durham,UKC1
+GBR,county,County Fermanagh,Northern Ireland,UKN0
+GBR,county,County Londonderry,Northern Ireland,UKN0
+GBR,county,County Tyrone,Northern Ireland,UKN0
+GBR,county,Cumbria,Cumbria,UKD1
+GBR,county,Darlington,Tees Valley and Durham,UKC1
+GBR,county,Denbighshire,West Wales and The Valleys,UKL1
+GBR,county,Derby,Derbyshire and Nottinghamshire,UKF1
+GBR,county,Derbyshire,Derbyshire and Nottinghamshire,UKF1
+GBR,county,Derry and Strabane,Northern Ireland,UKN0
+GBR,county,Devon,Devon,UKK4
+GBR,county,Dorset,Dorset and Somerset,UKK2
+GBR,county,Dumfries and Galloway,Southern Scotland,UKM9
+GBR,county,Dumfriesshire,Southern Scotland,UKM9
+GBR,county,Dunbartonshire,West Central Scotland,UKM8
+GBR,county,Dundee City Council,Eastern Scotland,UKM7
+GBR,county,Dyfed,West Wales and The Valleys,UKL1
+GBR,county,East Ayrshire Council,Southern Scotland,UKM9
+GBR,county,East Dunbartonshire Council,West Central Scotland,UKM8
+GBR,county,East Lothian Council,Eastern Scotland,UKM7
+GBR,county,East Lothian,Eastern Scotland,UKM7
+GBR,county,East Renfrewshire Council,West Central Scotland,UKM8
+GBR,county,East Riding of Yorkshire,East Yorkshire and Northern Lincolnshire,UKE1
+GBR,county,East Sussex,"Surrey, East and West Sussex",UKJ2
+GBR,county,Edinburgh,Eastern Scotland,UKM7
+GBR,county,Essex,Essex,UKH3
+GBR,county,Falkirk,Eastern Scotland,UKM7
+GBR,county,Farthingstone nr Towcester,"Leicestershire, Rutland and Northamptonshire",UKF2
+GBR,county,Fermanagh and Omagh,Northern Ireland,UKN0
+GBR,county,Fife,Eastern Scotland,UKM7
+GBR,county,Flintshire,East Wales,UKL2
+GBR,county,Glasgow City,West Central Scotland,UKM8
+GBR,county,Gloucestershire,"Gloucestershire, Wiltshire and Bristol/Bath area",UKK1
+GBR,county,Greater London,,UKI
+GBR,county,Greater Manchester,Greater Manchester,UKD3
+GBR,county,Gwent,West Wales and The Valleys,UKL1
+GBR,county,Gwynedd,West Wales and The Valleys,UKL1
+GBR,county,Hampshire,Hampshire and Isle of Wight,UKJ3
+GBR,county,Hartlepool,Tees Valley and Durham,UKC1
+GBR,county,Herefordshire,"Herefordshire, Worcestershire and Warwickshire",UKG1
+GBR,county,Hertfordshire,Bedfordshire and Hertfordshire,UKH2
+GBR,county,Highland Council,Highlands and Islands,UKM6
+GBR,county,Inverclyde,West Central Scotland,UKM8
+GBR,county,Inverness-Shire,Highlands and Islands,UKM6
+GBR,county,Isle of Anglesey,West Wales and The Valleys,UKL1
+GBR,county,Isle of Arran,Highlands and Islands,UKM6
+GBR,county,Isle of Barra,Highlands and Islands,UKM6
+GBR,county,Isle of Bute,Highlands and Islands,UKM6
+GBR,county,Isle of Cumbrae,Highlands and Islands,UKM6
+GBR,county,Isle of Eigg,Highlands and Islands,UKM6
+GBR,county,Isle of Gigha,Highlands and Islands,UKM6
+GBR,county,Isle of Harris,Highlands and Islands,UKM6
+GBR,county,Isle of Islay,Highlands and Islands,UKM6
+GBR,county,Isle of Jura,Highlands and Islands,UKM6
+GBR,county,Isle of Lewis,Highlands and Islands,UKM6
+GBR,county,Isle of Mull,Highlands and Islands,UKM6
+GBR,county,Isle of North Uist,Highlands and Islands,UKM6
+GBR,county,Isle of Skye,Highlands and Islands,UKM6
+GBR,county,Isle of South Uist,Highlands and Islands,UKM6
+GBR,county,Isle of Tiree,Highlands and Islands,UKM6
+GBR,county,Isle of Wight,Hampshire and Isle of Wight,UKJ3
+GBR,county,Isles of Scilly,Cornwall and Isles of Scilly,UKK3
+GBR,county,Kent,Kent,UKJ4
+GBR,county,Kincardineshire,North Eastern Scotland,UKM5
+GBR,county,Kingston upon Hull,East Yorkshire and Northern Lincolnshire,UKE1
+GBR,county,Kinross-Shire,Eastern Scotland,UKM7
+GBR,county,Kirkcudbrightshire,Southern Scotland,UKM9
+GBR,county,Lanarkshire,West Central Scotland,UKM8
+GBR,county,Lancashire,Lancashire,UKD4
+GBR,county,Leicester,"Leicestershire, Rutland and Northamptonshire",UKF2
+GBR,county,Leicestershire,"Leicestershire, Rutland and Northamptonshire",UKF2
+GBR,county,Lincolnshire,Lincolnshire,UKF3
+GBR,county,Lisburn and Castlereagh,Northern Ireland,UKN0
+GBR,county,London,,UKI
+GBR,county,Luton,Bedfordshire and Hertfordshire,UKH2
+GBR,county,Medway,Kent,UKJ4
+GBR,county,Merseyside,Merseyside,UKD7
+GBR,county,Merthyr Tudful,East Wales,UKL2
+GBR,county,Merthyr Tydfil County Borough,East Wales,UKL2
+GBR,county,Mid and East Antrim,Northern Ireland,UKN0
+GBR,county,Mid Glamorgan,East Wales,UKL2
+GBR,county,Mid Ulster,Northern Ireland,UKN0
+GBR,county,Middlesbrough,North Yorkshire,UKE2
+GBR,county,Middlesex,,UKI
+GBR,county,Midlothian,Eastern Scotland,UKM7
+GBR,county,Milton Keynes,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,Monmouthshire,East Wales,UKL2
+GBR,county,Moray,Highlands and Islands,UKM6
+GBR,county,Morayshire,Highlands and Islands,UKM6
+GBR,county,Na h-Eileanan an Iar,Highlands and Islands,UKM6
+GBR,county,Nairnshire,Highlands and Islands,UKM6
+GBR,county,Neath Port Talbot Principle Area,West Wales and The Valleys,UKL1
+GBR,county,Newport,East Wales,UKL2
+GBR,county,Norfolk,East Anglia,UKH1
+GBR,county,North Ayrshire Council,Southern Scotland,UKM9
+GBR,county,North East Lincolnshire,East Yorkshire and Northern Lincolnshire,UKE1
+GBR,county,North Hastings,"Surrey, East and West Sussex",UKJ2
+GBR,county,North Humberside,East Yorkshire and Northern Lincolnshire,UKE1
+GBR,county,North Lanarkshire,West Central Scotland,UKM8
+GBR,county,North Lincolnshire,East Yorkshire and Northern Lincolnshire,UKE1
+GBR,county,North Somerset,"Gloucestershire, Wiltshire and Bristol/Bath area",UKK1
+GBR,county,North Yorkshire,North Yorkshire,UKE2
+GBR,county,Northamptonshire,"Leicestershire, Rutland and Northamptonshire",UKF2
+GBR,county,Northumberland,Northumberland and Tyne and Wear,UKC2
+GBR,county,Nottingham,Derbyshire and Nottinghamshire,UKF1
+GBR,county,Nottinghamshire,Derbyshire and Nottinghamshire,UKF1
+GBR,county,Orkney,Highlands and Islands,UKM6
+GBR,county,Oxfordshire,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,Peeblesshire,Southern Scotland,UKM9
+GBR,county,Pembrokeshire,West Wales and The Valleys,UKL1
+GBR,county,Pen-y-bont ar Ogwr,East Wales,UKL2
+GBR,county,Perth and Kinross,Eastern Scotland,UKM7
+GBR,county,Perthshire,Highlands and Islands,UKM6
+GBR,county,Peterborough,East Anglia,UKH1
+GBR,county,Plymouth,Devon,UKK4
+GBR,county,Portsmouth,Hampshire and Isle of Wight,UKJ3
+GBR,county,Powys,East Wales,UKL2
+GBR,county,Reading,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,Redcar and Cleveland,North Yorkshire,UKE2
+GBR,county,Renfrewshire,West Central Scotland,UKM8
+GBR,county,Rhondda Cynon Taf,East Wales,UKL2
+GBR,county,Rhondda Cynon Taff,East Wales,UKL2
+GBR,county,Ross-Shire,Highlands and Islands,UKM6
+GBR,county,Roxburghshire,Southern Scotland,UKM9
+GBR,county,Rutland,"Leicestershire, Rutland and Northamptonshire",UKF2
+GBR,county,Scottish Borders,Southern Scotland,UKM9
+GBR,county,Selkirkshire,Southern Scotland,UKM9
+GBR,county,Shetland Islands,Highlands and Islands,UKM6
+GBR,county,Shropshire,Shropshire and Staffordshire,UKG2
+GBR,county,Sir Ddinbych,West Wales and The Valleys,UKL1
+GBR,county,Sir Gaerfyrddin,West Wales and The Valleys,UKL1
+GBR,county,Slough,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,Somerset,Dorset and Somerset,UKK2
+GBR,county,South Ayrshire Council,Southern Scotland,UKM9
+GBR,county,South Glamorgan,East Wales,UKL2
+GBR,county,South Gloucestershire,"Gloucestershire, Wiltshire and Bristol/Bath area",UKK1
+GBR,county,South Humberside,East Yorkshire and Northern Lincolnshire,UKE1
+GBR,county,South Lanarkshire,Southern Scotland,UKM9
+GBR,county,South Yorkshire,South Yorkshire,UKE3
+GBR,county,Southampton,Hampshire and Isle of Wight,UKJ3
+GBR,county,Southend-on-Sea,Essex,UKH3
+GBR,county,Staffordshire,Shropshire and Staffordshire,UKG2
+GBR,county,Stirling,Eastern Scotland,UKM7
+GBR,county,Stirlingshire,Eastern Scotland,UKM7
+GBR,county,Stockton-on-Tees,Tees Valley and Durham,UKC1
+GBR,county,Stoke-on-Trent,Shropshire and Staffordshire,UKG2
+GBR,county,Suffolk,East Anglia,UKH1
+GBR,county,Surrey,"Surrey, East and West Sussex",UKJ2
+GBR,county,Sutherland,Highlands and Islands,UKM6
+GBR,county,Swansea,West Wales and The Valleys,UKL1
+GBR,county,Swindon,"Gloucestershire, Wiltshire and Bristol/Bath area",UKK1
+GBR,county,Thurrock,Essex,UKH3
+GBR,county,Torbay,Devon,UKK4
+GBR,county,Torfaen Principal Area,Southern Scotland,UKM9
+GBR,county,Tyne and Wear,Northumberland and Tyne and Wear,UKC2
+GBR,county,Vale of Glamorgan,East Wales,UKL2
+GBR,county,Warrington,Cheshire,UKD6
+GBR,county,Warwickshire,"Herefordshire, Worcestershire and Warwickshire",UKG1
+GBR,county,West Berkshire,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,West Dunbartonshire Council,West Central Scotland,UKM8
+GBR,county,West Glamorgan,East Wales,UKL2
+GBR,county,West Lothian,Eastern Scotland,UKM7
+GBR,county,West Midlands,West Midlands,UKG3
+GBR,county,West Sussex,"Surrey, East and West Sussex",UKJ2
+GBR,county,West Yorkshire,West Yorkshire,UKE4
+GBR,county,Wigtownshire,Southern Scotland,UKM9
+GBR,county,Wiltshire,"Gloucestershire, Wiltshire and Bristol/Bath area",UKK1
+GBR,county,Windsor and Maidenhead,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,Wokingham,"Berkshire, Buckinghamshire and Oxfordshire",UKJ1
+GBR,county,Worcestershire,"Herefordshire, Worcestershire and Warwickshire",UKG1
+GBR,county,Wrexham Principal Area,East Wales,UKL2
+GBR,county,York,North Yorkshire,UKE2
+GBR,county,Yorkshire,North Yorkshire,UKE2
