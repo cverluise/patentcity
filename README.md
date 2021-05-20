@@ -12,7 +12,7 @@
 :ballot_box_with_check: Clone repo
 
 ```shell script
-git clone https://github.com/Antoberge/patentcity.git
+git clone https://github.com/cverluise/patentcity.git
 
 ```
 
