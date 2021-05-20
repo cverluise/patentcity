@@ -745,6 +745,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#train-and-evaluate" class="md-nav__link">
+    Train and Evaluate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ddpatent01" class="md-nav__link">
     ddpatent01
   </a>
@@ -911,8 +918,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../XX_STATISTICAL_AREAS/" class="md-nav__link">
+        Statistical areas
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../XX_DEDUPLICATION_EVALUATION/" class="md-nav__link">
-        Deduplicaton
+        Deduplication
       </a>
     </li>
   
@@ -973,6 +992,18 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHEATSHEET/" class="md-nav__link">
+        Cheatsheet
+      </a>
     </li>
   
 
@@ -1153,6 +1184,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#train-and-evaluate" class="md-nav__link">
+    Train and Evaluate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ddpatent01" class="md-nav__link">
     ddpatent01
   </a>
@@ -1247,6 +1285,21 @@
                 
                 
                 <h1 id="models">MODELS<a class="headerlink" href="#models" title="Permanent link">&para;</a></h1>
+<h2 id="train-and-evaluate">Train and Evaluate<a class="headerlink" href="#train-and-evaluate" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># generate configs</span>
+patentcity search relationship-params configs/rel_search.yaml
+
+<span class="c1"># Grid search for all formats</span>
+<span class="k">for</span> FORMAT in <span class="k">$(</span>cat lib/formats.txt<span class="k">)</span><span class="p">;</span>
+<span class="k">do</span> ls configs/rel_*.yaml <span class="p">|</span> grep -v search <span class="p">|</span> grep -v best <span class="p">|</span> parallel --eta <span class="s2">&quot;patentcity eval relationship-model data/gold_rel_</span><span class="si">${</span><span class="nv">FORMAT</span><span class="si">}</span><span class="s2">.jsonl {} --report json&gt;&gt; {.}_</span><span class="si">${</span><span class="nv">FORMAT</span><span class="si">}</span><span class="s2">.json&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;\n## </span><span class="si">${</span><span class="nv">FORMAT</span><span class="si">}</span><span class="s2">&quot;</span> &gt;&gt; doc/XX_REL_CARD.md  <span class="o">&amp;&amp;</span> patentcity search relationship-best <span class="s2">&quot;configs/rel_*_</span><span class="si">${</span><span class="nv">FORMAT</span><span class="si">}</span><span class="s2">.json&quot;</span> &gt;&gt; doc/XX_REL_CARD.md<span class="p">;</span>
+<span class="k">done</span><span class="p">;</span>
+<span class="c1"># -&gt; Fill rel_best_*.yaml using logged results in XX_REL_CARD.md</span>
+
+<span class="c1"># Generate CARD with best configs</span>
+<span class="k">for</span> FORMAT in <span class="k">$(</span>cat lib/formats.txt<span class="k">)</span><span class="p">;</span>
+  <span class="k">do</span> patentcity <span class="nb">eval</span> relationship-model data/gold_rel_<span class="si">${</span><span class="nv">FORMAT</span><span class="si">}</span>.jsonl configs/rel_best_<span class="si">${</span><span class="nv">FORMAT</span><span class="si">}</span>.yaml &gt;&gt; doc/XX_REL_CARD.md<span class="p">;</span>
+<span class="k">done</span><span class="p">;</span>
+</code></pre></div>
 <h2 id="ddpatent01">ddpatent01<a class="headerlink" href="#ddpatent01" title="Permanent link">&para;</a></h2>
 <table>
 <thead>

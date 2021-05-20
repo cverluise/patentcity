@@ -18,7 +18,7 @@
     
     
       
-        <title>Deduplication - patentCity</title>
+        <title>Statistical areas - patentCity</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deduplication" class="md-skip">
+        <a href="#statistical-areas" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deduplication
+              Statistical areas
             
           </span>
         </div>
@@ -799,18 +799,6 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../XX_STATISTICAL_AREAS/" class="md-nav__link">
-        Statistical areas
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
     
   
   
@@ -823,12 +811,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Deduplication
+          Statistical areas
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Deduplication
+        Statistical areas
       </a>
       
         
@@ -860,22 +848,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#results" class="md-nav__link">
-    Results
+  <a href="#related-issue" class="md-nav__link">
+    Related issue
   </a>
-  
-    <nav class="md-nav" aria-label="Results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#uspatent01" class="md-nav__link">
-    uspatent01
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -883,6 +858,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../XX_DEDUPLICATION_EVALUATION/" class="md-nav__link">
+        Deduplication
+      </a>
     </li>
   
 
@@ -1148,22 +1135,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#results" class="md-nav__link">
-    Results
+  <a href="#related-issue" class="md-nav__link">
+    Related issue
   </a>
-  
-    <nav class="md-nav" aria-label="Results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#uspatent01" class="md-nav__link">
-    uspatent01
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1179,29 +1153,143 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/cverluise/patentcity/edit/master/docs/XX_DEDUPLICATION_EVALUATION.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/cverluise/patentcity/edit/master/docs/XX_STATISTICAL_AREAS.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="deduplication">DEDUPLICATION<a class="headerlink" href="#deduplication" title="Permanent link">&para;</a></h1>
+                <h1 id="statistical-areas">STATISTICAL AREAS<a class="headerlink" href="#statistical-areas" title="Permanent link">&para;</a></h1>
 <h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
-<p>In some formats (e.g. uspatent01), patentees are reported twice on the same document. This can be detrimental to metrics such as the average number of inventors/assignees per patent, etc. We would like to flag duplicates to avoid results contamination.</p>
-<h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
-<p>For each patent of affected formats, we look at the pairwise relative levenshtein distance of all detected patentee names. Then we look for the threshold maximizing accuracy (based on a manually labelled gold set).</p>
-<div class="admonition definition">
-<p class="admonition-title">Definition</p>
-<p>We call relative levenshtein distance the levenshtein distance between 2 strings (lower caps) divided by the average character lengths of the two strings</p>
-</div>
-<h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h2>
-<h3 id="uspatent01"><code>uspatent01</code><a class="headerlink" href="#uspatent01" title="Permanent link">&para;</a></h3>
-<div class="admonition done">
-<p class="admonition-title">Done</p>
+<p>We harvest administrative areas from the geocoding. They are already useful, but they have some limitations. In particular, they are not fully satisgying regarding the following features:</p>
 <ul>
-<li>Best threshold: 0.43</li>
-<li>Accuracy: 0.974</li>
+<li>between country comparability. We would like to be able to compare countries based on comparable objects (e.g. <a href="https://en.wikipedia.org/wiki/Nomenclature_of_Territorial_Units_for_Statistics">NUTS</a>)</li>
+<li>common usage. We want to be able to interoperate our data with external statistics (e.g. demographic data, economic data, structural data)</li>
+</ul>
+<h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
+<p>We define three levels of "statistical areas". Level 1 is more aggregated than level 2 and so on. The below table details the statistical areas for each country.</p>
+<table>
+<thead>
+<tr>
+<th>Country code</th>
+<th>Statistical area 1</th>
+<th>Statistical area 2</th>
+<th>Statistical area 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DD</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>DE</td>
+<td>NUTS1</td>
+<td>NUTS2</td>
+<td>NUTS3</td>
+</tr>
+<tr>
+<td>FR</td>
+<td>NUTS1</td>
+<td>NUTS2</td>
+<td>NUTS3</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>NUTS1</td>
+<td>NUTS2</td>
+<td>NUTS3</td>
+</tr>
+<tr>
+<td>US</td>
+<td>State</td>
+<td>Commuting Zone (1990)</td>
+<td>County</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li><a href="https://ec.europa.eu/eurostat/documents/345175/629341/NUTS2021.xlsx">NUTS Europe (2021)</a></li>
+<li><a href="https://gisco-services.ec.europa.eu/tercet/flat-files">Postal code to NUTS Europe (2021)</a></li>
+<li><a href="http://fpeckert.me/eglp/">County to Commuting zone (1990)</a></li>
 </ul>
 </div>
+<details class="quote"><summary>Mapping key?</summary><p>Except for the US, we can use the postal code as the primary key for statistical areas. For the US, we us the combination of the state and county (or state and city if county is null).</p>
+<div class="highlight"><pre><span></span><code><span class="k">WITH</span> <span class="n">tmp</span> <span class="k">AS</span> <span class="p">(</span>
+<span class="k">SELECT</span>
+  <span class="n">country_code</span><span class="p">,</span>
+  <span class="k">CAST</span><span class="p">(</span><span class="n">patentee</span><span class="p">.</span><span class="n">loc_state</span> <span class="k">IS</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">AS</span> <span class="n">INT64</span><span class="p">)</span> <span class="k">AS</span> <span class="n">has_state</span><span class="p">,</span>
+  <span class="k">CAST</span><span class="p">(</span><span class="n">patentee</span><span class="p">.</span><span class="n">loc_county</span> <span class="k">IS</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">AS</span> <span class="n">INT64</span><span class="p">)</span> <span class="k">AS</span> <span class="n">has_county</span><span class="p">,</span>
+  <span class="k">CAST</span><span class="p">(</span><span class="n">patentee</span><span class="p">.</span><span class="n">loc_postalCode</span> <span class="k">IS</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">AS</span> <span class="n">INT64</span><span class="p">)</span> <span class="k">AS</span> <span class="n">has_postalCode</span><span class="p">,</span>
+<span class="k">FROM</span>
+  <span class="o">`</span><span class="n">patentcity</span><span class="p">.</span><span class="n">patentcity</span><span class="p">.</span><span class="n">v100rc3</span><span class="o">`</span><span class="p">,</span>
+  <span class="k">UNNEST</span><span class="p">(</span><span class="n">patentee</span><span class="p">)</span> <span class="k">AS</span> <span class="n">patentee</span>
+<span class="o">#</span><span class="k">WHERE</span>
+<span class="o">#</span>  <span class="n">publication_date</span><span class="o">&lt;=</span><span class="mi">19800000</span>
+<span class="p">)</span>
+<span class="k">SELECT</span>
+  <span class="n">country_code</span><span class="p">,</span>
+  <span class="k">SUM</span><span class="p">(</span><span class="n">has_state</span><span class="p">)</span> <span class="k">as</span> <span class="n">has_state</span><span class="p">,</span>
+  <span class="k">SUM</span><span class="p">(</span><span class="n">has_county</span><span class="p">)</span> <span class="k">as</span> <span class="n">has_county</span><span class="p">,</span>
+  <span class="k">SUM</span><span class="p">(</span><span class="n">has_postalCode</span><span class="p">)</span> <span class="k">as</span> <span class="n">has_postalCode</span>
+<span class="k">FROM</span>
+  <span class="n">tmp</span>
+<span class="k">GROUP</span> <span class="k">BY</span>
+  <span class="n">country_code</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>country_code</th>
+<th>has_state</th>
+<th>has_county</th>
+<th>has_postalCode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DD</td>
+<td>495479</td>
+<td>495479</td>
+<td>495479</td>
+</tr>
+<tr>
+<td>DE</td>
+<td>7284246</td>
+<td>6555370</td>
+<td>7366705</td>
+</tr>
+<tr>
+<td>FR</td>
+<td>1881112</td>
+<td>1872960</td>
+<td>1864284</td>
+</tr>
+<tr>
+<td>GB</td>
+<td>1759783</td>
+<td>1709290</td>
+<td>1750767</td>
+</tr>
+<tr>
+<td>US</td>
+<td>39675118</td>
+<td>29133272</td>
+<td>12382827</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="related-issue">Related issue<a class="headerlink" href="#related-issue" title="Permanent link">&para;</a></h2>
+<p>Administrative areas obtained directly from the geocoding services (<code>loc_state</code> and <code>loc_counties</code>) also exhibit intrinsic limitations:</p>
+<ul>
+<li>spelling inconsistencies between geocoding services (e.g. "Constance" vs "Konstanz")</li>
+<li>semantic inconsistencies between geocoding services (e.g. districts vs kreis as level 3 adminstritative area for DE)</li>
+</ul>
+<p>Although we recommend the use of statistical areas, we also propose a solution using hand-made crossover tables. We do not implement the harmonization directly in the database as this is partly destructive. The solution (and its history) is described by issue <a href="https://github.com/cverluise/patentcity/issues/7">#7</a>.</p>
                 
               
               
@@ -1220,7 +1308,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../XX_STATISTICAL_AREAS/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../XX_CIT_EVALUATION/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1229,19 +1317,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Statistical areas
+              Citizenship
             </div>
           </div>
         </a>
       
       
-        <a href="../RECIPE_PATENTCITY/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../XX_DEDUPLICATION_EVALUATION/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              PatentCity
+              Deduplication
             </div>
           </div>
           <div class="md-footer__button md-icon">

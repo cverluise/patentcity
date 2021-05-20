@@ -797,8 +797,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../XX_STATISTICAL_AREAS/" class="md-nav__link">
+        Statistical areas
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../XX_DEDUPLICATION_EVALUATION/" class="md-nav__link">
-        Deduplicaton
+        Deduplication
       </a>
     </li>
   
@@ -859,6 +871,18 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CHEATSHEET/" class="md-nav__link">
+        Cheatsheet
+      </a>
     </li>
   
 
@@ -969,6 +993,13 @@
         <li class="md-nav__item">
   <a href="#patentcity.geo.add_geoc_disamb" class="md-nav__link">
     add_geoc_disamb()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patentcity.geo.add_statisticalareas" class="md-nav__link">
+    add_statisticalareas()
   </a>
   
 </li>
@@ -1159,6 +1190,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#patentcity.geo.add_statisticalareas" class="md-nav__link">
+    add_statisticalareas()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#patentcity.geo.get_geoc_data_gmaps" class="md-nav__link">
     get_geoc_data_gmaps()
   </a>
@@ -1306,14 +1344,7 @@
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>407
-408
-409
-410
-411
-412
-413
-414
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>414
 415
 416
 417
@@ -1332,7 +1363,14 @@
 430
 431
 432
-433</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;add&quot;</span><span class="p">)</span>
+433
+434
+435
+436
+437
+438
+439
+440</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;add&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">add_geoc_data</span><span class="p">(</span>
     <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">geoc_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -1428,14 +1466,7 @@
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>653
-654
-655
-656
-657
-658
-659
-660
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>660
 661
 662
 663
@@ -1471,7 +1502,14 @@
 693
 694
 695
-696</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;add.disamb&quot;</span><span class="p">)</span>
+696
+697
+698
+699
+700
+701
+702
+703</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;add.disamb&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">add_geoc_disamb</span><span class="p">(</span>
     <span class="n">disamb_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">index_geoc_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">flavor</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;GMAPS&quot;</span><span class="p">,</span> <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span>
 <span class="p">):</span>
@@ -1515,6 +1553,110 @@
                 <span class="n">geoc_disamb</span> <span class="o">=</span> <span class="n">index</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">get_recid</span><span class="p">(</span><span class="n">searchtext</span><span class="p">))</span>
                 <span class="n">geoc_disamb</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;recId&quot;</span><span class="p">:</span> <span class="n">recid</span><span class="p">})</span>
                 <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span><span class="n">geoc_disamb</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-function">
+
+
+
+<h2 id="patentcity.geo.add_statisticalareas" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">add_statisticalareas</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">statisticalareas_path</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+
+
+<a href="#patentcity.geo.add_statisticalareas" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Return <code>file</code> with statistical areas to stdout.</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>file</code></td>
+        <td><code>str</code></td>
+        <td><p>file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>statisticalareas_path</code></td>
+        <td><code>str</code></td>
+        <td><p>satistical area files path (wildcard allowed)</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>verbose</code></td>
+        <td><code>bool</code></td>
+        <td><p>verbosity</p></td>
+        <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity geo add.statisticalareas geoc_gbpatentxx.here.csv <span class="s2">&quot;assets/*_statisticalareas.csv&quot;</span>
+</code></pre></div></p>
+
+        <details class="quote">
+          <summary>Source code in <code>patentcity/geo.py</code></summary>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>728
+729
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+740
+741
+742
+743
+744
+745
+746
+747
+748
+749
+750</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;add.statisticalareas&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">add_statisticalareas</span><span class="p">(</span><span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">statisticalareas_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return `file` with statistical areas to stdout.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">         file: file path</span>
+<span class="sd">         statisticalareas_path: satistical area files path (wildcard allowed)</span>
+<span class="sd">         verbose: verbosity</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity geo add.statisticalareas geoc_gbpatentxx.here.csv &quot;assets/*_statisticalareas.csv&quot;</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">statisticalareas_df</span> <span class="o">=</span> <span class="n">read_csv_many</span><span class="p">(</span>
+        <span class="n">statisticalareas_path</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">str</span>
+    <span class="p">)</span>
+    <span class="n">geoc_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">error_bad_lines</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">geoc_df</span> <span class="o">=</span> <span class="n">geoc_df</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">geoc_df</span><span class="p">),</span> <span class="kc">None</span><span class="p">)</span>  <span class="c1"># we replace pandas nan by None</span>
+    <span class="nb">vars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">,</span> <span class="s2">&quot;state&quot;</span><span class="p">,</span> <span class="s2">&quot;county&quot;</span><span class="p">,</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span> <span class="s2">&quot;postalCode&quot;</span><span class="p">]</span>
+    <span class="n">geoc_df</span><span class="p">[</span><span class="s2">&quot;key&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">geoc_df</span><span class="p">[</span><span class="nb">vars</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">get_statisticalarea_key</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">geoc_df</span> <span class="o">=</span> <span class="n">geoc_df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">statisticalareas_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;country&quot;</span><span class="p">,</span> <span class="s2">&quot;key&quot;</span><span class="p">])</span>
+    <span class="n">typer</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="n">geoc_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </code></pre></div>
 </td></tr></table>
         </details>
@@ -1606,14 +1748,7 @@
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>442
-443
-444
-445
-446
-447
-448
-449
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>449
 450
 451
 452
@@ -1649,7 +1784,14 @@
 482
 483
 484
-485</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;gmaps.get&quot;</span><span class="p">)</span>
+485
+486
+487
+488
+489
+490
+491
+492</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;gmaps.get&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">get_geoc_data_gmaps</span><span class="p">(</span>
     <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -1764,14 +1906,7 @@
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>258
-259
-260
-261
-262
-263
-264
-265
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>265
 266
 267
 268
@@ -1811,7 +1946,14 @@
 302
 303
 304
-305</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.get&quot;</span><span class="p">)</span>
+305
+306
+307
+308
+309
+310
+311
+312</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.get&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">get_geoc_data_here</span><span class="p">(</span>
     <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">unzip</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="p">):</span>
@@ -1924,14 +2066,7 @@
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>203
-204
-205
-206
-207
-208
-209
-210
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>210
 211
 212
 213
@@ -1976,7 +2111,14 @@
 252
 253
 254
-255</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.status&quot;</span><span class="p">)</span>
+255
+256
+257
+258
+259
+260
+261
+262</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.status&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">get_geoc_status_here</span><span class="p">(</span>
     <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">freq</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="p">):</span>
@@ -2094,14 +2236,7 @@
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 95
- 96
- 97
- 98
- 99
-100
-101
-102
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>102
 103
 104
 105
@@ -2115,7 +2250,14 @@
 113
 114
 115
-116</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">deprecated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;libpostal.get&quot;</span><span class="p">)</span>
+116
+117
+118
+119
+120
+121
+122
+123</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">deprecated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;libpostal.get&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">get_parsed_loc_libpostal</span><span class="p">(</span>
     <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_reference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">max_workers</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">debug</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="p">):</span>
@@ -2143,6 +2285,7 @@
     </div>
 
   </div>
+
 
 
 
@@ -2202,14 +2345,7 @@
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>605
-606
-607
-608
-609
-610
-611
-612
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>612
 613
 614
 615
@@ -2245,7 +2381,14 @@
 645
 646
 647
-648</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;gmaps.harmonize&quot;</span><span class="p">)</span>
+648
+649
+650
+651
+652
+653
+654
+655</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;gmaps.harmonize&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">harmonize_geoc_data_gmaps</span><span class="p">(</span>
     <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span><span class="p">,</span> <span class="n">out_format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="p">):</span>
@@ -2397,14 +2540,7 @@
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>119
-120
-121
-122
-123
-124
-125
-126
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>126
 127
 128
 129
@@ -2478,7 +2614,14 @@
 197
 198
 199
-200</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.post&quot;</span><span class="p">)</span>
+200
+201
+202
+203
+204
+205
+206
+207</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.post&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">post_geoc_data_here</span><span class="p">(</span>
     <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -2615,14 +2758,7 @@ sort -u loc_uspatent01.txt
 
         <details class="quote">
           <summary>Source code in <code>patentcity/geo.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>309
-310
-311
-312
-313
-314
-315
-316
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>316
 317
 318
 319
@@ -2639,7 +2775,14 @@ sort -u loc_uspatent01.txt
 330
 331
 332
-333</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;prep&quot;</span><span class="p">)</span>
+333
+334
+335
+336
+337
+338
+339
+340</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;prep&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">prep_geoc_data</span><span class="p">(</span><span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return patentees&#39; loc data formatted for geocoding to stdout (recId|searchText).</span>
 
