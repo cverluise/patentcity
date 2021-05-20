@@ -485,7 +485,12 @@ def get_geoc_data_gmaps(
             next(lines)
         with ThreadPoolExecutor(max_workers) as executor:
             executor.map(
-                lines, repeat(gmaps), repeat(region), repeat(language), repeat(inDelim)
+                _get_geoc_data_gmaps,
+                lines,
+                repeat(gmaps),
+                repeat(region),
+                repeat(language),
+                repeat(inDelim),
             )
 
 
