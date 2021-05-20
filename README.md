@@ -13,7 +13,6 @@
 
 ```shell script
 git clone https://github.com/cverluise/patentcity.git
-
 ```
 
 :ballot_box_with_check: Install dependencies

@@ -3,6 +3,7 @@
 
 # dev
 dev.py
+site/*
 
 # secret
 credentials-patentcity.json

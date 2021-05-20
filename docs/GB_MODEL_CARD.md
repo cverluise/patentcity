@@ -1,11 +1,11 @@
-# CARD
+# MODELS
 
 ## ℹ️ Model Overview
 
 |||
 |---|---|
 |Name|`en_ent_gbpatent01`|
-|Language|English |
+|Language|English (en)|
 |Pipeline|ner |
 |Authors|Bergeaud and Verluise|
 |Date (last)|02/2021 |
@@ -30,7 +30,7 @@ spacy train configs/en_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 | f  |  0.94 |  0.93 |  0.96 |  0.96 |  0.92 |  0.88
 
 
-## :dart: Intended use
+## 🎯 Intended use
 
 `en_ent_gbpatent01` has been specifically trained on GB patents GB189317126A to GB2000001A (excluded). The model's performance are not guaranteed out of this scope.
 

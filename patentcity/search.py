@@ -10,7 +10,16 @@ app = typer.Typer()
 
 @app.command()
 def relationship_params(config_search: str):
-    """Generate config files for grid defined by CONFIG_SEARCH"""
+    """Generate config files defined by `config_search` grid
+
+    Arguments:
+        config_search: config search file path
+
+    **Usage:**
+        ```shell
+        patentcity search relationship-params configs/rel_search.yaml
+        ``
+    """
     filename = os.path.basename(config_search)
     path = os.path.dirname(config_search)
     with open(config_search, "r") as config_file:
@@ -37,7 +46,17 @@ def relationship_params(config_search: str):
 
 @app.command()
 def relationship_best(path: str, report: str = "short"):
-    """Report perf for each (long)/best (short) config"""
+    """Report perf of each (long)/best (short) config`
+
+    Arguments:
+        path: data file path (wildcard allowed)
+        report: report type (in ["short", "long"])
+
+    **Usage:**
+        ```shell
+        patentcity eval relationship-model data/gold_rel_ddpatent01.jsonl rel_ddpatent01.yaml --report json
+        ```
+    """
     files = glob(path)
     assert report in ["short", "long"]
 

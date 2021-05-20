@@ -1,0 +1,3299 @@
+kind,key,harmonized,fipsCode
+county,AL.Autauga,Autauga,01001
+county,AL.Baldwin,Baldwin,01003
+county,AL.Barbour,Barbour,01005
+county,AL.Bibb,Bibb,01007
+county,AL.Blount,Blount,01009
+county,AL.Bullock,Bullock,01011
+county,AL.Butler,Butler,01013
+county,AL.Calhoun,Calhoun,01015
+county,AL.Chambers,Chambers,01017
+county,AL.Cherokee,Cherokee,01019
+county,AL.Chilton,Chilton,01021
+county,AL.Choctaw,Choctaw,01023
+county,AL.Clarke,Clarke,01025
+county,AL.Clay,Clay,01027
+county,AL.Cleburne,Cleburne,01029
+county,AL.Coffee,Coffee,01031
+county,AL.Colbert,Colbert,01033
+county,AL.Conecuh,Conecuh,01035
+county,AL.Coosa,Coosa,01037
+county,AL.Covington,Covington,01039
+county,AL.Crenshaw,Crenshaw,01041
+county,AL.Cullman,Cullman,01043
+county,AL.Dale,Dale,01045
+county,AL.Dallas,Dallas,01047
+county,AL.Dekalb,De Kalb,01049
+county,AL.Elmore,Elmore,01051
+county,AL.Escambia,Escambia,01053
+county,AL.Etowah,Etowah,01055
+county,AL.Fayette,Fayette,01057
+county,AL.Franklin,Franklin,01059
+county,AL.Geneva,Geneva,01061
+county,AL.Greene,Greene,01063
+county,AL.Hale,Hale,01065
+county,AL.Henry,Henry,01067
+county,AL.Houston,Houston,01069
+county,AL.Jackson,Jackson,01071
+county,AL.Jefferson,Jefferson,01073
+county,AL.Lamar,Lamar,01075
+county,AL.Lauderdale,Lauderdale,01077
+county,AL.Lawrence,Lawrence,01079
+county,AL.Lee,Lee,01081
+county,AL.Limestone,Limestone,01083
+county,AL.Lowndes,Lowndes,01085
+county,AL.Macon,Macon,01087
+county,AL.Madison,Madison,01089
+county,AL.Marengo,Marengo,01091
+county,AL.Marion,Marion,01093
+county,AL.Marshall,Marshall,01095
+county,AL.Mobile,Mobile,01097
+county,AL.Monroe,Monroe,01099
+county,AL.Montgomery,Montgomery,01101
+county,AL.Morgan,Morgan,01103
+county,AL.Perry,Perry,01105
+county,AL.Pickens,Pickens,01107
+county,AL.Pike,Pike,01109
+county,AL.Randolph,Randolph,01111
+county,AL.Russell,Russell,01113
+county,AL.Shelby,Shelby,01117
+county,AL.StClair,St Clair,01115
+county,AL.Sumter,Sumter,01119
+county,AL.Talladega,Talladega,01121
+county,AL.Tallapoosa,Tallapoosa,01123
+county,AL.Tuscaloosa,Tuscaloosa,01125
+county,AL.Walker,Walker,01127
+county,AL.Washington,Washington,01129
+county,AL.Wilcox,Wilcox,01131
+county,AL.Winston,Winston,01133
+county,AK.Anchorage,Anchorage,02020
+county,AK.Denali,Denali,02068
+county,AK.FairbanksNorthStar,Fairbanks North Star,02090
+county,AK.Juneau,Juneau,02110
+county,AK.KenaiPeninsula,Kenai Peninsula,02122
+county,AK.KetchikanGateway,Ketchikan Gateway,02130
+county,AK.KodiakIsland,Kodiak Island,02150
+county,AK.Matanuska-Susitna,Matanuska-Susitna,02170
+county,AK.Nome,Nome,02180
+county,AK.Petersburg,,02195
+county,AK.PrinceofWales-Hyder,,02198
+county,AK.Sitka,Sitka,02220
+county,AK.Skagway,,02230
+county,AK.SoutheastFairbanks,Southeast Fairbanks,02240
+county,AK.Valdez-Cordova,Valdez-Cordova,02261
+county,AK.Wrangell,,02275
+county,AK.Yukon-Koyukuk,Yukon-Koyukuk,02290
+county,AZ.Apache,Apache,04001
+county,AZ.Cochise,Cochise,04003
+county,AZ.Coconino,Coconino,04005
+county,AZ.Gila,Gila,04007
+county,AZ.Graham,Graham,04009
+county,AZ.Greenlee,Greenlee,04011
+county,AZ.LaPaz,La Paz,04012
+county,AZ.Maricopa,Maricopa,04013
+county,AZ.Mohave,Mohave,04015
+county,AZ.Navajo,Navajo,04017
+county,AZ.Pima,Pima,04019
+county,AZ.Pinal,Pinal,04021
+county,AZ.SantaCruz,Santa Cruz,04023
+county,AZ.Yavapai,Yavapai,04025
+county,AZ.Yuma,Yuma,04027
+county,AR.Arkansas,Arkansas,05001
+county,AR.Ashley,Ashley,05003
+county,AR.Baxter,Baxter,05005
+county,AR.Benton,Benton,05007
+county,AR.Boone,Boone,05009
+county,AR.Bradley,Bradley,05011
+county,AR.Calhoun,Calhoun,05013
+county,AR.Carroll,Carroll,05015
+county,AR.Chicot,Chicot,05017
+county,AR.Clark,Clark,05019
+county,AR.Clay,Clay,05021
+county,AR.Cleburne,Cleburne,05023
+county,AR.Cleveland,Cleveland,05025
+county,AR.Columbia,Columbia,05027
+county,AR.Conway,Conway,05029
+county,AR.Craighead,Craighead,05031
+county,AR.Crawford,Crawford,05033
+county,AR.Crittenden,Crittenden,05035
+county,AR.Cross,Cross,05037
+county,AR.Dallas,Dallas,05039
+county,AR.Desha,Desha,05041
+county,AR.Drew,Drew,05043
+county,AR.Faulkner,Faulkner,05045
+county,AR.Franklin,Franklin,05047
+county,AR.Fulton,Fulton,05049
+county,AR.Garland,Garland,05051
+county,AR.Grant,Grant,05053
+county,AR.Greene,Greene,05055
+county,AR.Hempstead,Hempstead,05057
+county,AR.HotSpring,Hot Spring,05059
+county,AR.Howard,Howard,05061
+county,AR.Independence,Independence,05063
+county,AR.Izard,Izard,05065
+county,AR.Jackson,Jackson,05067
+county,AR.Jefferson,Jefferson,05069
+county,AR.Johnson,Johnson,05071
+county,AR.Lafayette,Lafayette,05073
+county,AR.Lawrence,Lawrence,05075
+county,AR.Lee,Lee,05077
+county,AR.Lincoln,Lincoln,05079
+county,AR.LittleRiver,Little River,05081
+county,AR.Logan,Logan,05083
+county,AR.Lonoke,Lonoke,05085
+county,AR.Madison,Madison,05087
+county,AR.Marion,Marion,05089
+county,AR.Miller,Miller,05091
+county,AR.Mississippi,Mississippi,05093
+county,AR.Monroe,Monroe,05095
+county,AR.Montgomery,Montgomery,05097
+county,AR.Nevada,Nevada,05099
+county,AR.Newton,Newton,05101
+county,AR.Ouachita,Ouachita,05103
+county,AR.Perry,Perry,05105
+county,AR.Phillips,Phillips,05107
+county,AR.Pike,Pike,05109
+county,AR.Poinsett,Poinsett,05111
+county,AR.Polk,Polk,05113
+county,AR.Pope,Pope,05115
+county,AR.Prairie,Prairie,05117
+county,AR.Pulaski,Pulaski,05119
+county,AR.Randolph,Randolph,05121
+county,AR.Saline,Saline,05125
+county,AR.Scott,Scott,05127
+county,AR.Searcy,Searcy,05129
+county,AR.Sebastian,Sebastian,05131
+county,AR.Sevier,Sevier,05133
+county,AR.Sharp,Sharp,05135
+county,AR.StFrancis,St Francis,05123
+county,AR.Stone,Stone,05137
+county,AR.Union,Union,05139
+county,AR.VanBuren,Van Buren,05141
+county,AR.Washington,Washington,05143
+county,AR.White,White,05145
+county,AR.Woodruff,Woodruff,05147
+county,AR.Yell,Yell,05149
+county,CA.Alameda,Alameda,06001
+county,CA.Alpine,Alpine,06003
+county,CA.Amador,Amador,06005
+county,CA.Butte,Butte,06007
+county,CA.Calaveras,Calaveras,06009
+county,CA.Colusa,Colusa,06011
+county,CA.ContraCosta,Contra Costa,06013
+county,CA.DelNorte,Del Norte,06015
+county,CA.ElDorado,El Dorado,06017
+county,CA.Fresno,Fresno,06019
+county,CA.Glenn,Glenn,06021
+county,CA.Humboldt,Humboldt,06023
+county,CA.Imperial,Imperial,06025
+county,CA.Inyo,Inyo,06027
+county,CA.Kern,Kern,06029
+county,CA.Kings,Kings,06031
+county,CA.Lake,Lake,06033
+county,CA.Lassen,Lassen,06035
+county,CA.LosAngeles,Los Angeles,06037
+county,CA.Madera,Madera,06039
+county,CA.Marin,Marin,06041
+county,CA.Mariposa,Mariposa,06043
+county,CA.Mendocino,Mendocino,06045
+county,CA.Merced,Merced,06047
+county,CA.Modoc,Modoc,06049
+county,CA.Mono,Mono,06051
+county,CA.Monterey,Monterey,06053
+county,CA.Napa,Napa,06055
+county,CA.Nevada,Nevada,06057
+county,CA.Orange,Orange,06059
+county,CA.Placer,Placer,06061
+county,CA.Plumas,Plumas,06063
+county,CA.Riverside,Riverside,06065
+county,CA.Sacramento,Sacramento,06067
+county,CA.SanBenito,San Benito,06069
+county,CA.SanBernardino,San Bernardino,06071
+county,CA.SanDiego,San Diego,06073
+county,CA.SanFrancisco,San Francisco,06075
+county,CA.SanJoaquin,San Joaquin,06077
+county,CA.SanLuisObispo,San Luis Obispo,06079
+county,CA.SanMateo,San Mateo,06081
+county,CA.SantaBarbara,Santa Barbara,06083
+county,CA.SantaClara,Santa Clara,06085
+county,CA.SantaCruz,Santa Cruz,06087
+county,CA.Shasta,Shasta,06089
+county,CA.Sierra,Sierra,06091
+county,CA.Siskiyou,Siskiyou,06093
+county,CA.Solano,Solano,06095
+county,CA.Sonoma,Sonoma,06097
+county,CA.Stanislaus,Stanislaus,06099
+county,CA.Sutter,Sutter,06101
+county,CA.Tehama,Tehama,06103
+county,CA.Trinity,Trinity,06105
+county,CA.Tulare,Tulare,06107
+county,CA.Tuolumne,Tuolumne,06109
+county,CA.Ventura,Ventura,06111
+county,CA.Yolo,Yolo,06113
+county,CA.Yuba,Yuba,06115
+county,CO.Adams,Adams,08001
+county,CO.Alamosa,Alamosa,08003
+county,CO.Arapahoe,Arapahoe,08005
+county,CO.Archuleta,Archuleta,08007
+county,CO.Baca,Baca,08009
+county,CO.Bent,Bent,08011
+county,CO.Boulder,Boulder,08013
+county,CO.Broomfield,,08014
+county,CO.Chaffee,Chaffee,08015
+county,CO.Cheyenne,Cheyenne,08017
+county,CO.ClearCreek,Clear Creek,08019
+county,CO.Conejos,Conejos,08021
+county,CO.Costilla,Costilla,08023
+county,CO.Crowley,Crowley,08025
+county,CO.Custer,Custer,08027
+county,CO.Delta,Delta,08029
+county,CO.Denver,Denver,08031
+county,CO.Dolores,Dolores,08033
+county,CO.Douglas,Douglas,08035
+county,CO.Eagle,Eagle,08037
+county,CO.ElPaso,El Paso,08041
+county,CO.Elbert,Elbert,08039
+county,CO.Fremont,Fremont,08043
+county,CO.Garfield,Garfield,08045
+county,CO.Gilpin,Gilpin,08047
+county,CO.Grand,Grand,08049
+county,CO.Gunnison,Gunnison,08051
+county,CO.Hinsdale,Hinsdale,08053
+county,CO.Huerfano,Huerfano,08055
+county,CO.Jackson,Jackson,08057
+county,CO.Jefferson,Jefferson,08059
+county,CO.Kiowa,Kiowa,08061
+county,CO.KitCarson,Kit Carson,08063
+county,CO.LaPlata,La Plata,08067
+county,CO.Lake,Lake,08065
+county,CO.Larimer,Larimer,08069
+county,CO.LasAnimas,Las Animas,08071
+county,CO.Lincoln,Lincoln,08073
+county,CO.Logan,Logan,08075
+county,CO.Mesa,Mesa,08077
+county,CO.Mineral,Mineral,08079
+county,CO.Moffat,Moffat,08081
+county,CO.Montezuma,Montezuma,08083
+county,CO.Montrose,Montrose,08085
+county,CO.Morgan,Morgan,08087
+county,CO.Otero,Otero,08089
+county,CO.Ouray,Ouray,08091
+county,CO.Park,Park,08093
+county,CO.Phillips,Phillips,08095
+county,CO.Pitkin,Pitkin,08097
+county,CO.Prowers,Prowers,08099
+county,CO.Pueblo,Pueblo,08101
+county,CO.RioBlanco,Rio Blanco,08103
+county,CO.RioGrande,Rio Grande,08105
+county,CO.Routt,Routt,08107
+county,CO.Saguache,Saguache,08109
+county,CO.SanJuan,San Juan,08111
+county,CO.SanMiguel,San Miguel,08113
+county,CO.Sedgwick,Sedgwick,08115
+county,CO.Summit,Summit,08117
+county,CO.Teller,Teller,08119
+county,CO.Washington,Washington,08121
+county,CO.Weld,Weld,08123
+county,CO.Yuma,Yuma,08125
+county,CT.Fairfield,Fairfield,09001
+county,CT.Hartford,Hartford,09003
+county,CT.Litchfield,Litchfield,09005
+county,CT.Middlesex,Middlesex,09007
+county,CT.NewHaven,New Haven,09009
+county,CT.NewLondon,New London,09011
+county,CT.Tolland,Tolland,09013
+county,CT.Windham,Windham,09015
+county,DE.Kent,Kent,10001
+county,DE.NewCastle,New Castle,10003
+county,DE.Sussex,Sussex,10005
+county,DC.DistrictofColumbia,,11000
+county,FL.Alachua,Alachua,12001
+county,FL.Baker,Baker,12003
+county,FL.Bay,Bay,12005
+county,FL.Bradford,Bradford,12007
+county,FL.Brevard,Brevard,12009
+county,FL.Broward,Broward,12011
+county,FL.Calhoun,Calhoun,12013
+county,FL.Charlotte,Charlotte,12015
+county,FL.Citrus,Citrus,12017
+county,FL.Clay,Clay,12019
+county,FL.Collier,Collier,12021
+county,FL.Columbia,Columbia,12023
+county,FL.Desoto,De Soto,12027
+county,FL.Dixie,Dixie,12029
+county,FL.Duval,Duval,12031
+county,FL.Escambia,Escambia,12033
+county,FL.Flagler,Flagler,12035
+county,FL.Franklin,Franklin,12037
+county,FL.Gadsden,Gadsden,12039
+county,FL.Gilchrist,Gilchrist,12041
+county,FL.Glades,Glades,12043
+county,FL.Gulf,Gulf,12045
+county,FL.Hamilton,Hamilton,12047
+county,FL.Hardee,Hardee,12049
+county,FL.Hendry,Hendry,12051
+county,FL.Hernando,Hernando,12053
+county,FL.Highlands,Highlands,12055
+county,FL.Hillsborough,Hillsborough,12057
+county,FL.Holmes,Holmes,12059
+county,FL.IndianRiver,Indian River,12061
+county,FL.Jackson,Jackson,12063
+county,FL.Jefferson,Jefferson,12065
+county,FL.Lafayette,Lafayette,12067
+county,FL.Lake,Lake,12069
+county,FL.Lee,Lee,12071
+county,FL.Leon,Leon,12073
+county,FL.Levy,Levy,12075
+county,FL.Liberty,Liberty,12077
+county,FL.Madison,Madison,12079
+county,FL.Manatee,Manatee,12081
+county,FL.Marion,Marion,12083
+county,FL.Martin,Martin,12085
+county,FL.Miami-Dade,Miami-Dade,12086
+county,FL.Monroe,Monroe,12087
+county,FL.Nassau,Nassau,12089
+county,FL.Okaloosa,Okaloosa,12091
+county,FL.Okeechobee,Okeechobee,12093
+county,FL.Orange,Orange,12095
+county,FL.Osceola,Osceola,12097
+county,FL.PalmBeach,Palm Beach,12099
+county,FL.Pasco,Pasco,12101
+county,FL.Pinellas,Pinellas,12103
+county,FL.Polk,Polk,12105
+county,FL.Putnam,Putnam,12107
+county,FL.SantaRosa,Santa Rosa,12113
+county,FL.Sarasota,Sarasota,12115
+county,FL.Seminole,Seminole,12117
+county,FL.StJohns,St Johns,12109
+county,FL.StLucie,St Lucie,12111
+county,FL.Sumter,Sumter,12119
+county,FL.Suwannee,Suwannee,12121
+county,FL.Taylor,Taylor,12123
+county,FL.Union,Union,12125
+county,FL.Volusia,Volusia,12127
+county,FL.Wakulla,Wakulla,12129
+county,FL.Walton,Walton,12131
+county,FL.Washington,Washington,12133
+county,GA.Appling,Appling,13001
+county,GA.Atkinson,Atkinson,13003
+county,GA.Bacon,Bacon,13005
+county,GA.Baker,Baker,13007
+county,GA.Baldwin,Baldwin,13009
+county,GA.Banks,Banks,13011
+county,GA.Barrow,Barrow,13013
+county,GA.Bartow,Bartow,13015
+county,GA.BenHill,Ben Hill,13017
+county,GA.Berrien,Berrien,13019
+county,GA.Bibb,Bibb,13021
+county,GA.Bleckley,Bleckley,13023
+county,GA.Brantley,Brantley,13025
+county,GA.Brooks,Brooks,13027
+county,GA.Bryan,Bryan,13029
+county,GA.Bulloch,Bulloch,13031
+county,GA.Burke,Burke,13033
+county,GA.Butts,Butts,13035
+county,GA.Calhoun,Calhoun,13037
+county,GA.Camden,Camden,13039
+county,GA.Candler,Candler,13043
+county,GA.Carroll,Carroll,13045
+county,GA.Catoosa,Catoosa,13047
+county,GA.Charlton,Charlton,13049
+county,GA.Chatham,Chatham,13051
+county,GA.Chattahoochee,Chattahoochee,13053
+county,GA.Chattooga,Chattooga,13055
+county,GA.Cherokee,Cherokee,13057
+county,GA.Clarke,Clarke,13059
+county,GA.Clay,Clay,13061
+county,GA.Clayton,Clayton,13063
+county,GA.Clinch,Clinch,13065
+county,GA.Cobb,Cobb,13067
+county,GA.Coffee,Coffee,13069
+county,GA.Colquitt,Colquitt,13071
+county,GA.Columbia,Columbia,13073
+county,GA.Cook,Cook,13075
+county,GA.Coweta,Coweta,13077
+county,GA.Crisp,Crisp,13081
+county,GA.Dade,Dade,13083
+county,GA.Dawson,Dawson,13085
+county,GA.Decatur,Decatur,13087
+county,GA.Dekalb,De Kalb,13089
+county,GA.Dodge,Dodge,13091
+county,GA.Dooly,Dooly,13093
+county,GA.Dougherty,Dougherty,13095
+county,GA.Douglas,Douglas,13097
+county,GA.Early,Early,13099
+county,GA.Effingham,Effingham,13103
+county,GA.Elbert,Elbert,13105
+county,GA.Emanuel,Emanuel,13107
+county,GA.Evans,Evans,13109
+county,GA.Fannin,Fannin,13111
+county,GA.Fayette,Fayette,13113
+county,GA.Floyd,Floyd,13115
+county,GA.Forsyth,Forsyth,13117
+county,GA.Franklin,Franklin,13119
+county,GA.Fulton,Fulton,13121
+county,GA.Gilmer,Gilmer,13123
+county,GA.Glascock,Glascock,13125
+county,GA.Glynn,Glynn,13127
+county,GA.Gordon,Gordon,13129
+county,GA.Grady,Grady,13131
+county,GA.Greene,Greene,13133
+county,GA.Gwinnett,Gwinnett,13135
+county,GA.Habersham,Habersham,13137
+county,GA.Hall,Hall,13139
+county,GA.Hancock,Hancock,13141
+county,GA.Haralson,Haralson,13143
+county,GA.Harris,Harris,13145
+county,GA.Hart,Hart,13147
+county,GA.Heard,Heard,13149
+county,GA.Henry,Henry,13151
+county,GA.Houston,Houston,13153
+county,GA.Irwin,Irwin,13155
+county,GA.Jackson,Jackson,13157
+county,GA.Jasper,Jasper,13159
+county,GA.JeffDavis,Jeff Davis,13161
+county,GA.Jefferson,Jefferson,13163
+county,GA.Jenkins,Jenkins,13165
+county,GA.Johnson,Johnson,13167
+county,GA.Jones,Jones,13169
+county,GA.Lamar,Lamar,13171
+county,GA.Lanier,Lanier,13173
+county,GA.Laurens,Laurens,13175
+county,GA.Lee,Lee,13177
+county,GA.Liberty,Liberty,13179
+county,GA.Lincoln,Lincoln,13181
+county,GA.Long,Long,13183
+county,GA.Lowndes,Lowndes,13185
+county,GA.Lumpkin,Lumpkin,13187
+county,GA.Macon,Macon,13193
+county,GA.Madison,Madison,13195
+county,GA.Marion,Marion,13197
+county,GA.McDuffie,McDuffie,13189
+county,GA.McIntosh,McIntosh,13191
+county,GA.Meriwether,Meriwether,13199
+county,GA.Miller,Miller,13201
+county,GA.Mitchell,Mitchell,13205
+county,GA.Monroe,Monroe,13207
+county,GA.Montgomery,Montgomery,13209
+county,GA.Morgan,Morgan,13211
+county,GA.Murray,Murray,13213
+county,GA.Muscogee,Muscogee,13215
+county,GA.Newton,Newton,13217
+county,GA.Oconee,Oconee,13219
+county,GA.Oglethorpe,Oglethorpe,13221
+county,GA.Paulding,Paulding,13223
+county,GA.Peach,Peach,13225
+county,GA.Pickens,Pickens,13227
+county,GA.Pierce,Pierce,13229
+county,GA.Pike,Pike,13231
+county,GA.Polk,Polk,13233
+county,GA.Pulaski,Pulaski,13235
+county,GA.Putnam,Putnam,13237
+county,GA.Quitman,Quitman,13239
+county,GA.Rabun,Rabun,13241
+county,GA.Randolph,Randolph,13243
+county,GA.Richmond,Richmond,13245
+county,GA.Rockdale,Rockdale,13247
+county,GA.Screven,Screven,13251
+county,GA.Seminole,Seminole,13253
+county,GA.Spalding,Spalding,13255
+county,GA.Stephens,Stephens,13257
+county,GA.Stewart,Stewart,13259
+county,GA.Sumter,Sumter,13261
+county,GA.Talbot,Talbot,13263
+county,GA.Taliaferro,Taliaferro,13265
+county,GA.Tattnall,Tattnall,13267
+county,GA.Taylor,Taylor,13269
+county,GA.Telfair,Telfair,13271
+county,GA.Terrell,Terrell,13273
+county,GA.Thomas,Thomas,13275
+county,GA.Tift,Tift,13277
+county,GA.Toombs,Toombs,13279
+county,GA.Towns,Towns,13281
+county,GA.Treutlen,Treutlen,13283
+county,GA.Troup,Troup,13285
+county,GA.Turner,Turner,13287
+county,GA.Twiggs,Twiggs,13289
+county,GA.Union,Union,13291
+county,GA.Upson,Upson,13293
+county,GA.Walker,Walker,13295
+county,GA.Walton,Walton,13297
+county,GA.Ware,Ware,13299
+county,GA.Warren,Warren,13301
+county,GA.Washington,Washington,13303
+county,GA.Wayne,Wayne,13305
+county,GA.Webster,Webster,13307
+county,GA.White,White,13311
+county,GA.Whitfield,Whitfield,13313
+county,GA.Wilcox,Wilcox,13315
+county,GA.Wilkes,Wilkes,13317
+county,GA.Wilkinson,Wilkinson,13319
+county,GA.Worth,Worth,13321
+county,HI.Hawaii,Hawaii,15001
+county,HI.Honolulu,Honolulu,15003
+county,HI.Kauai,Kauai,15007
+county,HI.Maui,Maui,15009
+county,ID.Ada,Ada,16001
+county,ID.Adams,Adams,16003
+county,ID.Bannock,Bannock,16005
+county,ID.BearLake,Bear Lake,16007
+county,ID.Benewah,Benewah,16009
+county,ID.Bingham,Bingham,16011
+county,ID.Blaine,Blaine,16013
+county,ID.Boise,Boise,16015
+county,ID.Bonner,Bonner,16017
+county,ID.Bonneville,Bonneville,16019
+county,ID.Boundary,Boundary,16021
+county,ID.Butte,Butte,16023
+county,ID.Camas,Camas,16025
+county,ID.Canyon,Canyon,16027
+county,ID.Caribou,Caribou,16029
+county,ID.Cassia,Cassia,16031
+county,ID.Clark,Clark,16033
+county,ID.Clearwater,Clearwater,16035
+county,ID.Custer,Custer,16037
+county,ID.Elmore,Elmore,16039
+county,ID.Franklin,Franklin,16041
+county,ID.Fremont,Fremont,16043
+county,ID.Gem,Gem,16045
+county,ID.Gooding,Gooding,16047
+county,ID.Idaho,Idaho,16049
+county,ID.Jefferson,Jefferson,16051
+county,ID.Jerome,Jerome,16053
+county,ID.Kootenai,Kootenai,16055
+county,ID.Latah,Latah,16057
+county,ID.Lemhi,Lemhi,16059
+county,ID.Lewis,Lewis,16061
+county,ID.Lincoln,Lincoln,16063
+county,ID.Madison,Madison,16065
+county,ID.Minidoka,Minidoka,16067
+county,ID.NezPerce,Nez Perce,16069
+county,ID.Oneida,Oneida,16071
+county,ID.Owyhee,Owyhee,16073
+county,ID.Payette,Payette,16075
+county,ID.Power,Power,16077
+county,ID.Shoshone,Shoshone,16079
+county,ID.Teton,Teton,16081
+county,ID.TwinFalls,Twin Falls,16083
+county,ID.Valley,Valley,16085
+county,ID.Washington,Washington,16087
+county,IL.Adams,Adams,17001
+county,IL.Alexander,Alexander,17003
+county,IL.Bond,Bond,17005
+county,IL.Boone,Boone,17007
+county,IL.Brown,Brown,17009
+county,IL.Bureau,Bureau,17011
+county,IL.Calhoun,Calhoun,17013
+county,IL.Carroll,Carroll,17015
+county,IL.Cass,Cass,17017
+county,IL.Champaign,Champaign,17019
+county,IL.Christian,Christian,17021
+county,IL.Clark,Clark,17023
+county,IL.Clay,Clay,17025
+county,IL.Clinton,Clinton,17027
+county,IL.Coles,Coles,17029
+county,IL.Cook,Cook,17031
+county,IL.Crawford,Crawford,17033
+county,IL.Cumberland,Cumberland,17035
+county,IL.DeWitt,De Witt,17039
+county,IL.Dekalb,De Kalb,17037
+county,IL.Douglas,Douglas,17041
+county,IL.DuPage,Du Page,17043
+county,IL.Edgar,Edgar,17045
+county,IL.Edwards,Edwards,17047
+county,IL.Effingham,Effingham,17049
+county,IL.Fayette,Fayette,17051
+county,IL.Ford,Ford,17053
+county,IL.Franklin,Franklin,17055
+county,IL.Fulton,Fulton,17057
+county,IL.Gallatin,Gallatin,17059
+county,IL.Greene,Greene,17061
+county,IL.Grundy,Grundy,17063
+county,IL.Hamilton,Hamilton,17065
+county,IL.Hancock,Hancock,17067
+county,IL.Hardin,Hardin,17069
+county,IL.Henderson,Henderson,17071
+county,IL.Henry,Henry,17073
+county,IL.Iroquois,Iroquois,17075
+county,IL.Jackson,Jackson,17077
+county,IL.Jasper,Jasper,17079
+county,IL.Jefferson,Jefferson,17081
+county,IL.Jersey,Jersey,17083
+county,IL.JoDaviess,Jo Daviess,17085
+county,IL.Johnson,Johnson,17087
+county,IL.Kane,Kane,17089
+county,IL.Kankakee,Kankakee,17091
+county,IL.Kendall,Kendall,17093
+county,IL.Knox,Knox,17095
+county,IL.LaSalle,La Salle,17099
+county,IL.Lake,Lake,17097
+county,IL.Lawrence,Lawrence,17101
+county,IL.Lee,Lee,17103
+county,IL.Livingston,Livingston,17105
+county,IL.Logan,Logan,17107
+county,IL.Macon,Macon,17115
+county,IL.Macoupin,Macoupin,17117
+county,IL.Madison,Madison,17119
+county,IL.Marion,Marion,17121
+county,IL.Marshall,Marshall,17123
+county,IL.Mason,Mason,17125
+county,IL.Massac,Massac,17127
+county,IL.McDonough,McDonough,17109
+county,IL.McHenry,McHenry,17111
+county,IL.McLean,McLean,17113
+county,IL.Menard,Menard,17129
+county,IL.Mercer,Mercer,17131
+county,IL.Monroe,Monroe,17133
+county,IL.Montgomery,Montgomery,17135
+county,IL.Morgan,Morgan,17137
+county,IL.Moultrie,Moultrie,17139
+county,IL.Ogle,Ogle,17141
+county,IL.Peoria,Peoria,17143
+county,IL.Perry,Perry,17145
+county,IL.Piatt,Piatt,17147
+county,IL.Pike,Pike,17149
+county,IL.Pope,Pope,17151
+county,IL.Pulaski,Pulaski,17153
+county,IL.Putnam,Putnam,17155
+county,IL.Randolph,Randolph,17157
+county,IL.Richland,Richland,17159
+county,IL.RockIsland,Rock Island,17161
+county,IL.Saline,Saline,17165
+county,IL.Sangamon,Sangamon,17167
+county,IL.Schuyler,Schuyler,17169
+county,IL.Scott,Scott,17171
+county,IL.Shelby,Shelby,17173
+county,IL.StClair,St Clair,17163
+county,IL.Stark,Stark,17175
+county,IL.Stephenson,Stephenson,17177
+county,IL.Tazewell,Tazewell,17179
+county,IL.Union,Union,17181
+county,IL.Vermilion,Vermilion,17183
+county,IL.Wabash,Wabash,17185
+county,IL.Warren,Warren,17187
+county,IL.Washington,Washington,17189
+county,IL.Wayne,Wayne,17191
+county,IL.White,White,17193
+county,IL.Whiteside,Whiteside,17195
+county,IL.Will,Will,17197
+county,IL.Williamson,Williamson,17199
+county,IL.Winnebago,Winnebago,17201
+county,IL.Woodford,Woodford,17203
+county,IN.Adams,Adams,18001
+county,IN.Allen,Allen,18003
+county,IN.Bartholomew,Bartholomew,18005
+county,IN.Benton,Benton,18007
+county,IN.Blackford,Blackford,18009
+county,IN.Boone,Boone,18011
+county,IN.Brown,Brown,18013
+county,IN.Carroll,Carroll,18015
+county,IN.Cass,Cass,18017
+county,IN.Clark,Clark,18019
+county,IN.Clay,Clay,18021
+county,IN.Clinton,Clinton,18023
+county,IN.Crawford,Crawford,18025
+county,IN.Daviess,Daviess,18027
+county,IN.DeKalb,De Kalb,18033
+county,IN.Dearborn,Dearborn,18029
+county,IN.Decatur,Decatur,18031
+county,IN.Delaware,Delaware,18035
+county,IN.Dubois,Dubois,18037
+county,IN.Elkhart,Elkhart,18039
+county,IN.Fayette,Fayette,18041
+county,IN.Floyd,Floyd,18043
+county,IN.Fountain,Fountain,18045
+county,IN.Franklin,Franklin,18047
+county,IN.Fulton,Fulton,18049
+county,IN.Gibson,Gibson,18051
+county,IN.Grant,Grant,18053
+county,IN.Greene,Greene,18055
+county,IN.Hamilton,Hamilton,18057
+county,IN.Hancock,Hancock,18059
+county,IN.Harrison,Harrison,18061
+county,IN.Hendricks,Hendricks,18063
+county,IN.Henry,Henry,18065
+county,IN.Howard,Howard,18067
+county,IN.Huntington,Huntington,18069
+county,IN.Jackson,Jackson,18071
+county,IN.Jasper,Jasper,18073
+county,IN.Jay,Jay,18075
+county,IN.Jefferson,Jefferson,18077
+county,IN.Jennings,Jennings,18079
+county,IN.Johnson,Johnson,18081
+county,IN.Knox,Knox,18083
+county,IN.Kosciusko,Kosciusko,18085
+county,IN.Lagrange,La Grange,18087
+county,IN.Lake,Lake,18089
+county,IN.Laporte,La Porte,18091
+county,IN.Lawrence,Lawrence,18093
+county,IN.Madison,Madison,18095
+county,IN.Marion,Marion,18097
+county,IN.Marshall,Marshall,18099
+county,IN.Martin,Martin,18101
+county,IN.Miami,Miami,18103
+county,IN.Monroe,Monroe,18105
+county,IN.Montgomery,Montgomery,18107
+county,IN.Morgan,Morgan,18109
+county,IN.Newton,Newton,18111
+county,IN.Noble,Noble,18113
+county,IN.Ohio,Ohio,18115
+county,IN.Orange,Orange,18117
+county,IN.Owen,Owen,18119
+county,IN.Parke,Parke,18121
+county,IN.Perry,Perry,18123
+county,IN.Pike,Pike,18125
+county,IN.Porter,Porter,18127
+county,IN.Posey,Posey,18129
+county,IN.Pulaski,Pulaski,18131
+county,IN.Putnam,Putnam,18133
+county,IN.Randolph,Randolph,18135
+county,IN.Ripley,Ripley,18137
+county,IN.Rush,Rush,18139
+county,IN.Scott,Scott,18143
+county,IN.Shelby,Shelby,18145
+county,IN.Spencer,Spencer,18147
+county,IN.StJoseph,St Joseph,18141
+county,IN.Starke,Starke,18149
+county,IN.Steuben,Steuben,18151
+county,IN.Sullivan,Sullivan,18153
+county,IN.Switzerland,Switzerland,18155
+county,IN.Tippecanoe,Tippecanoe,18157
+county,IN.Tipton,Tipton,18159
+county,IN.Union,Union,18161
+county,IN.Vanderburgh,Vanderburgh,18163
+county,IN.Vermillion,Vermillion,18165
+county,IN.Vigo,Vigo,18167
+county,IN.Wabash,Wabash,18169
+county,IN.Warren,Warren,18171
+county,IN.Warrick,Warrick,18173
+county,IN.Washington,Washington,18175
+county,IN.Wayne,Wayne,18177
+county,IN.Wells,Wells,18179
+county,IN.White,White,18181
+county,IN.Whitley,Whitley,18183
+county,IA.Adair,Adair,19001
+county,IA.Adams,Adams,19003
+county,IA.Allamakee,Allamakee,19005
+county,IA.Appanoose,Appanoose,19007
+county,IA.Audubon,Audubon,19009
+county,IA.Benton,Benton,19011
+county,IA.BlackHawk,Black Hawk,19013
+county,IA.Boone,Boone,19015
+county,IA.Bremer,Bremer,19017
+county,IA.Buchanan,Buchanan,19019
+county,IA.BuenaVista,Buena Vista,19021
+county,IA.Butler,Butler,19023
+county,IA.Calhoun,Calhoun,19025
+county,IA.Carroll,Carroll,19027
+county,IA.Cass,Cass,19029
+county,IA.Cedar,Cedar,19031
+county,IA.CerroGordo,Cerro Gordo,19033
+county,IA.Cherokee,Cherokee,19035
+county,IA.Chickasaw,Chickasaw,19037
+county,IA.Clarke,Clarke,19039
+county,IA.Clay,Clay,19041
+county,IA.Clayton,Clayton,19043
+county,IA.Clinton,Clinton,19045
+county,IA.Crawford,Crawford,19047
+county,IA.Dallas,Dallas,19049
+county,IA.Davis,Davis,19051
+county,IA.Decatur,Decatur,19053
+county,IA.Delaware,Delaware,19055
+county,IA.DesMoines,Des Moines,19057
+county,IA.Dickinson,Dickinson,19059
+county,IA.Dubuque,Dubuque,19061
+county,IA.Emmet,Emmet,19063
+county,IA.Fayette,Fayette,19065
+county,IA.Floyd,Floyd,19067
+county,IA.Franklin,Franklin,19069
+county,IA.Fremont,Fremont,19071
+county,IA.Greene,Greene,19073
+county,IA.Grundy,Grundy,19075
+county,IA.Guthrie,Guthrie,19077
+county,IA.Hamilton,Hamilton,19079
+county,IA.Hancock,Hancock,19081
+county,IA.Hardin,Hardin,19083
+county,IA.Harrison,Harrison,19085
+county,IA.Henry,Henry,19087
+county,IA.Howard,Howard,19089
+county,IA.Humboldt,Humboldt,19091
+county,IA.Ida,Ida,19093
+county,IA.Iowa,Iowa,19095
+county,IA.Jackson,Jackson,19097
+county,IA.Jasper,Jasper,19099
+county,IA.Jefferson,Jefferson,19101
+county,IA.Johnson,Johnson,19103
+county,IA.Jones,Jones,19105
+county,IA.Keokuk,Keokuk,19107
+county,IA.Kossuth,Kossuth,19109
+county,IA.Lee,Lee,19111
+county,IA.Linn,Linn,19113
+county,IA.Louisa,Louisa,19115
+county,IA.Lucas,Lucas,19117
+county,IA.Lyon,Lyon,19119
+county,IA.Madison,Madison,19121
+county,IA.Mahaska,Mahaska,19123
+county,IA.Marion,Marion,19125
+county,IA.Marshall,Marshall,19127
+county,IA.Mills,Mills,19129
+county,IA.Mitchell,Mitchell,19131
+county,IA.Monona,Monona,19133
+county,IA.Monroe,Monroe,19135
+county,IA.Montgomery,Montgomery,19137
+county,IA.Muscatine,Muscatine,19139
+county,IA.Obrien,O Brien,19141
+county,IA.Osceola,Osceola,19143
+county,IA.Page,Page,19145
+county,IA.PaloAlto,Palo Alto,19147
+county,IA.Plymouth,Plymouth,19149
+county,IA.Pocahontas,Pocahontas,19151
+county,IA.Polk,Polk,19153
+county,IA.Pottawattamie,Pottawattamie,19155
+county,IA.Poweshiek,Poweshiek,19157
+county,IA.Ringgold,Ringgold,19159
+county,IA.Sac,Sac,19161
+county,IA.Scott,Scott,19163
+county,IA.Shelby,Shelby,19165
+county,IA.Sioux,Sioux,19167
+county,IA.Story,Story,19169
+county,IA.Tama,Tama,19171
+county,IA.Taylor,Taylor,19173
+county,IA.Union,Union,19175
+county,IA.VanBuren,Van Buren,19177
+county,IA.Wapello,Wapello,19179
+county,IA.Warren,Warren,19181
+county,IA.Washington,Washington,19183
+county,IA.Wayne,Wayne,19185
+county,IA.Webster,Webster,19187
+county,IA.Winnebago,Winnebago,19189
+county,IA.Winneshiek,Winneshiek,19191
+county,IA.Woodbury,Woodbury,19193
+county,IA.Worth,Worth,19195
+county,IA.Wright,Wright,19197
+county,KS.Allen,Allen,20001
+county,KS.Anderson,Anderson,20003
+county,KS.Atchison,Atchison,20005
+county,KS.Barber,Barber,20007
+county,KS.Barton,Barton,20009
+county,KS.Bourbon,Bourbon,20011
+county,KS.Brown,Brown,20013
+county,KS.Butler,Butler,20015
+county,KS.Chase,Chase,20017
+county,KS.Chautauqua,Chautauqua,20019
+county,KS.Cherokee,Cherokee,20021
+county,KS.Cheyenne,Cheyenne,20023
+county,KS.Clark,Clark,20025
+county,KS.Clay,Clay,20027
+county,KS.Cloud,Cloud,20029
+county,KS.Coffey,Coffey,20031
+county,KS.Comanche,Comanche,20033
+county,KS.Cowley,Cowley,20035
+county,KS.Crawford,Crawford,20037
+county,KS.Decatur,Decatur,20039
+county,KS.Dickinson,Dickinson,20041
+county,KS.Doniphan,Doniphan,20043
+county,KS.Douglas,Douglas,20045
+county,KS.Edwards,Edwards,20047
+county,KS.Elk,Elk,20049
+county,KS.Ellis,Ellis,20051
+county,KS.Ellsworth,Ellsworth,20053
+county,KS.Finney,Finney,20055
+county,KS.Ford,Ford,20057
+county,KS.Franklin,Franklin,20059
+county,KS.Geary,Geary,20061
+county,KS.Gove,Gove,20063
+county,KS.Graham,Graham,20065
+county,KS.Grant,Grant,20067
+county,KS.Gray,Gray,20069
+county,KS.Greeley,Greeley,20071
+county,KS.Greenwood,Greenwood,20073
+county,KS.Hamilton,Hamilton,20075
+county,KS.Harper,Harper,20077
+county,KS.Harvey,Harvey,20079
+county,KS.Haskell,Haskell,20081
+county,KS.Hodgeman,Hodgeman,20083
+county,KS.Jackson,Jackson,20085
+county,KS.Jefferson,Jefferson,20087
+county,KS.Jewell,Jewell,20089
+county,KS.Johnson,Johnson,20091
+county,KS.Kearny,Kearny,20093
+county,KS.Kingman,Kingman,20095
+county,KS.Kiowa,Kiowa,20097
+county,KS.Labette,Labette,20099
+county,KS.Lane,Lane,20101
+county,KS.Leavenworth,Leavenworth,20103
+county,KS.Lincoln,Lincoln,20105
+county,KS.Linn,Linn,20107
+county,KS.Logan,Logan,20109
+county,KS.Lyon,Lyon,20111
+county,KS.Marion,Marion,20115
+county,KS.Marshall,Marshall,20117
+county,KS.McPherson,McPherson,20113
+county,KS.Meade,Meade,20119
+county,KS.Miami,Miami,20121
+county,KS.Mitchell,Mitchell,20123
+county,KS.Montgomery,Montgomery,20125
+county,KS.Morris,Morris,20127
+county,KS.Morton,Morton,20129
+county,KS.Nemaha,Nemaha,20131
+county,KS.Neosho,Neosho,20133
+county,KS.Ness,Ness,20135
+county,KS.Norton,Norton,20137
+county,KS.Osage,Osage,20139
+county,KS.Osborne,Osborne,20141
+county,KS.Ottawa,Ottawa,20143
+county,KS.Pawnee,Pawnee,20145
+county,KS.Phillips,Phillips,20147
+county,KS.Pottawatomie,Pottawatomie,20149
+county,KS.Pratt,Pratt,20151
+county,KS.Rawlins,Rawlins,20153
+county,KS.Reno,Reno,20155
+county,KS.Republic,Republic,20157
+county,KS.Rice,Rice,20159
+county,KS.Riley,Riley,20161
+county,KS.Rooks,Rooks,20163
+county,KS.Rush,Rush,20165
+county,KS.Russell,Russell,20167
+county,KS.Saline,Saline,20169
+county,KS.Scott,Scott,20171
+county,KS.Sedgwick,Sedgwick,20173
+county,KS.Seward,Seward,20175
+county,KS.Shawnee,Shawnee,20177
+county,KS.Sheridan,Sheridan,20179
+county,KS.Sherman,Sherman,20181
+county,KS.Smith,Smith,20183
+county,KS.Stafford,Stafford,20185
+county,KS.Stanton,Stanton,20187
+county,KS.Stevens,Stevens,20189
+county,KS.Sumner,Sumner,20191
+county,KS.Thomas,Thomas,20193
+county,KS.Trego,Trego,20195
+county,KS.Wabaunsee,Wabaunsee,20197
+county,KS.Wallace,Wallace,20199
+county,KS.Washington,Washington,20201
+county,KS.Wichita,Wichita,20203
+county,KS.Wilson,Wilson,20205
+county,KS.Woodson,Woodson,20207
+county,KS.Wyandotte,Wyandotte,20209
+county,KY.Adair,Adair,21001
+county,KY.Allen,Allen,21003
+county,KY.Anderson,Anderson,21005
+county,KY.Ballard,Ballard,21007
+county,KY.Barren,Barren,21009
+county,KY.Bath,Bath,21011
+county,KY.Bell,Bell,21013
+county,KY.Boone,Boone,21015
+county,KY.Bourbon,Bourbon,21017
+county,KY.Boyd,Boyd,21019
+county,KY.Boyle,Boyle,21021
+county,KY.Bracken,Bracken,21023
+county,KY.Breathitt,Breathitt,21025
+county,KY.Breckinridge,Breckinridge,21027
+county,KY.Bullitt,Bullitt,21029
+county,KY.Butler,Butler,21031
+county,KY.Caldwell,Caldwell,21033
+county,KY.Calloway,Calloway,21035
+county,KY.Campbell,Campbell,21037
+county,KY.Carlisle,Carlisle,21039
+county,KY.Carroll,Carroll,21041
+county,KY.Carter,Carter,21043
+county,KY.Casey,Casey,21045
+county,KY.Christian,Christian,21047
+county,KY.Clark,Clark,21049
+county,KY.Clay,Clay,21051
+county,KY.Crittenden,Crittenden,21055
+county,KY.Cumberland,Cumberland,21057
+county,KY.Daviess,Daviess,21059
+county,KY.Edmonson,Edmonson,21061
+county,KY.Elliott,Elliott,21063
+county,KY.Estill,Estill,21065
+county,KY.Fayette,Fayette,21067
+county,KY.Fleming,Fleming,21069
+county,KY.Floyd,Floyd,21071
+county,KY.Franklin,Franklin,21073
+county,KY.Fulton,Fulton,21075
+county,KY.Gallatin,Gallatin,21077
+county,KY.Garrard,Garrard,21079
+county,KY.Grant,Grant,21081
+county,KY.Graves,Graves,21083
+county,KY.Grayson,Grayson,21085
+county,KY.Green,Green,21087
+county,KY.Greenup,Greenup,21089
+county,KY.Hancock,Hancock,21091
+county,KY.Hardin,Hardin,21093
+county,KY.Harlan,Harlan,21095
+county,KY.Harrison,Harrison,21097
+county,KY.Hart,Hart,21099
+county,KY.Henderson,Henderson,21101
+county,KY.Henry,Henry,21103
+county,KY.Hickman,Hickman,21105
+county,KY.Hopkins,Hopkins,21107
+county,KY.Jackson,Jackson,21109
+county,KY.Jefferson,Jefferson,21111
+county,KY.Jessamine,Jessamine,21113
+county,KY.Johnson,Johnson,21115
+county,KY.Kenton,Kenton,21117
+county,KY.Knox,Knox,21121
+county,KY.Larue,Larue,21123
+county,KY.Laurel,Laurel,21125
+county,KY.Lawrence,Lawrence,21127
+county,KY.Lee,Lee,21129
+county,KY.Letcher,Letcher,21133
+county,KY.Lewis,Lewis,21135
+county,KY.Lincoln,Lincoln,21137
+county,KY.Livingston,Livingston,21139
+county,KY.Logan,Logan,21141
+county,KY.Lyon,Lyon,21143
+county,KY.Madison,Madison,21151
+county,KY.Magoffin,Magoffin,21153
+county,KY.Marion,Marion,21155
+county,KY.Marshall,Marshall,21157
+county,KY.Martin,Martin,21159
+county,KY.Mason,Mason,21161
+county,KY.McCracken,McCracken,21145
+county,KY.McCreary,McCreary,21147
+county,KY.McLean,McLean,21149
+county,KY.Meade,Meade,21163
+county,KY.Menifee,Menifee,21165
+county,KY.Mercer,Mercer,21167
+county,KY.Metcalfe,Metcalfe,21169
+county,KY.Monroe,Monroe,21171
+county,KY.Montgomery,Montgomery,21173
+county,KY.Morgan,Morgan,21175
+county,KY.Muhlenberg,Muhlenberg,21177
+county,KY.Nelson,Nelson,21179
+county,KY.Nicholas,Nicholas,21181
+county,KY.Ohio,Ohio,21183
+county,KY.Oldham,Oldham,21185
+county,KY.Owen,Owen,21187
+county,KY.Owsley,Owsley,21189
+county,KY.Pendleton,Pendleton,21191
+county,KY.Perry,Perry,21193
+county,KY.Pike,Pike,21195
+county,KY.Powell,Powell,21197
+county,KY.Pulaski,Pulaski,21199
+county,KY.Robertson,Robertson,21201
+county,KY.Rockcastle,Rockcastle,21203
+county,KY.Rowan,Rowan,21205
+county,KY.Russell,Russell,21207
+county,KY.Scott,Scott,21209
+county,KY.Shelby,Shelby,21211
+county,KY.Simpson,Simpson,21213
+county,KY.Spencer,Spencer,21215
+county,KY.Taylor,Taylor,21217
+county,KY.Todd,Todd,21219
+county,KY.Trigg,Trigg,21221
+county,KY.Trimble,Trimble,21223
+county,KY.Union,Union,21225
+county,KY.Warren,Warren,21227
+county,KY.Washington,Washington,21229
+county,KY.Wayne,Wayne,21231
+county,KY.Webster,Webster,21233
+county,KY.Whitley,Whitley,21235
+county,KY.Wolfe,Wolfe,21237
+county,KY.Woodford,Woodford,21239
+county,LA.Acadia,Acadia,22001
+county,LA.Allen,Allen,22003
+county,LA.Ascension,Ascension,22005
+county,LA.Assumption,Assumption,22007
+county,LA.Avoyelles,Avoyelles,22009
+county,LA.Beauregard,Beauregard,22011
+county,LA.Bienville,Bienville,22013
+county,LA.Bossier,Bossier,22015
+county,LA.Caddo,Caddo,22017
+county,LA.Calcasieu,Calcasieu,22019
+county,LA.Caldwell,Caldwell,22021
+county,LA.Cameron,Cameron,22023
+county,LA.Catahoula,Catahoula,22025
+county,LA.Claiborne,Claiborne,22027
+county,LA.Concordia,Concordia,22029
+county,LA.DeSoto,De Soto,22031
+county,LA.EastBatonRouge,East Baton Rouge,22033
+county,LA.EastCarroll,East Carroll,22035
+county,LA.EastFeliciana,East Feliciana,22037
+county,LA.Evangeline,Evangeline,22039
+county,LA.Franklin,Franklin,22041
+county,LA.Grant,Grant,22043
+county,LA.Iberia,Iberia,22045
+county,LA.Iberville,Iberville,22047
+county,LA.Jackson,Jackson,22049
+county,LA.Jefferson,Jefferson,22051
+county,LA.JeffersonDavis,Jefferson Davis,22053
+county,LA.LaSalle,La Salle,22059
+county,LA.Lafayette,Lafayette,22055
+county,LA.Lafourche,Lafourche,22057
+county,LA.Lincoln,Lincoln,22061
+county,LA.Livingston,Livingston,22063
+county,LA.Madison,Madison,22065
+county,LA.Morehouse,Morehouse,22067
+county,LA.Natchitoches,Natchitoches,22069
+county,LA.Orleans,Orleans,22071
+county,LA.Ouachita,Ouachita,22073
+county,LA.Plaquemines,Plaquemines,22075
+county,LA.PointeCoupee,Pointe Coupee,22077
+county,LA.Rapides,Rapides,22079
+county,LA.RedRiver,Red River,22081
+county,LA.Richland,Richland,22083
+county,LA.Sabine,Sabine,22085
+county,LA.StBernard,St Bernard,22087
+county,LA.StCharles,St Charles,22089
+county,LA.StHelena,St Helena,22091
+county,LA.StJames,St James,22093
+county,LA.StJohntheBaptist,St John the Baptist,22095
+county,LA.StLandry,St Landry,22097
+county,LA.StMartin,St Martin,22099
+county,LA.StMary,St Mary,22101
+county,LA.StTammany,St Tammany,22103
+county,LA.Tangipahoa,Tangipahoa,22105
+county,LA.Tensas,Tensas,22107
+county,LA.Terrebonne,Terrebonne,22109
+county,LA.Union,Union,22111
+county,LA.Vermilion,Vermilion,22113
+county,LA.Vernon,Vernon,22115
+county,LA.Washington,Washington,22117
+county,LA.Webster,Webster,22119
+county,LA.WestBatonRouge,West Baton Rouge,22121
+county,LA.WestCarroll,West Carroll,22123
+county,LA.WestFeliciana,West Feliciana,22125
+county,LA.Winn,Winn,22127
+county,ME.Androscoggin,Androscoggin,23001
+county,ME.Aroostook,Aroostook,23003
+county,ME.Cumberland,Cumberland,23005
+county,ME.Franklin,Franklin,23007
+county,ME.Hancock,Hancock,23009
+county,ME.Kennebec,Kennebec,23011
+county,ME.Knox,Knox,23013
+county,ME.Lincoln,Lincoln,23015
+county,ME.Oxford,Oxford,23017
+county,ME.Penobscot,Penobscot,23019
+county,ME.Piscataquis,Piscataquis,23021
+county,ME.Sagadahoc,Sagadahoc,23023
+county,ME.Somerset,Somerset,23025
+county,ME.Waldo,Waldo,23027
+county,ME.Washington,Washington,23029
+county,ME.York,York,23031
+county,MD.Allegany,Allegany,24001
+county,MD.AnneArundel,Anne Arundel,24003
+county,MD.Baltimore(City),Baltimore City,24510
+county,MD.Baltimore,Baltimore,24005
+county,MD.Calvert,Calvert,24009
+county,MD.Caroline,Caroline,24011
+county,MD.Carroll,Carroll,24013
+county,MD.Cecil,Cecil,24015
+county,MD.Charles,Charles,24017
+county,MD.Dorchester,Dorchester,24019
+county,MD.Frederick,Frederick,24021
+county,MD.Garrett,Garrett,24023
+county,MD.Harford,Harford,24025
+county,MD.Howard,Howard,24027
+county,MD.Kent,Kent,24029
+county,MD.Montgomery,Montgomery,24031
+county,MD.PrinceGeorge's,Prince Georges,24033
+county,MD.QueenAnnes,Queen Annes,24035
+county,MD.Somerset,Somerset,24039
+county,MD.StMarys,St Marys,24037
+county,MD.Talbot,Talbot,24041
+county,MD.Washington,Washington,24043
+county,MD.Wicomico,Wicomico,24045
+county,MD.Worcester,Worcester,24047
+county,MA.Barnstable,Barnstable,25001
+county,MA.Berkshire,Berkshire,25003
+county,MA.Bristol,Bristol,25005
+county,MA.Dukes,Dukes,25007
+county,MA.Essex,Essex,25009
+county,MA.Franklin,Franklin,25011
+county,MA.Hampden,Hampden,25013
+county,MA.Hampshire,Hampshire,25015
+county,MA.Middlesex,Middlesex,25017
+county,MA.Nantucket,Nantucket,25019
+county,MA.Norfolk,Norfolk,25021
+county,MA.Plymouth,Plymouth,25023
+county,MA.Suffolk,Suffolk,25025
+county,MA.Worcester,Worcester,25027
+county,MI.Alcona,Alcona,26001
+county,MI.Alger,Alger,26003
+county,MI.Allegan,Allegan,26005
+county,MI.Alpena,Alpena,26007
+county,MI.Antrim,Antrim,26009
+county,MI.Arenac,Arenac,26011
+county,MI.Baraga,Baraga,26013
+county,MI.Barry,Barry,26015
+county,MI.Bay,Bay,26017
+county,MI.Benzie,Benzie,26019
+county,MI.Berrien,Berrien,26021
+county,MI.Branch,Branch,26023
+county,MI.Calhoun,Calhoun,26025
+county,MI.Cass,Cass,26027
+county,MI.Charlevoix,Charlevoix,26029
+county,MI.Cheboygan,Cheboygan,26031
+county,MI.Chippewa,Chippewa,26033
+county,MI.Clare,Clare,26035
+county,MI.Clinton,Clinton,26037
+county,MI.Crawford,Crawford,26039
+county,MI.Delta,Delta,26041
+county,MI.Dickinson,Dickinson,26043
+county,MI.Eaton,Eaton,26045
+county,MI.Emmet,Emmet,26047
+county,MI.Genesee,Genesee,26049
+county,MI.Gladwin,Gladwin,26051
+county,MI.Gogebic,Gogebic,26053
+county,MI.GrandTraverse,Grand Traverse,26055
+county,MI.Gratiot,Gratiot,26057
+county,MI.Hillsdale,Hillsdale,26059
+county,MI.Houghton,Houghton,26061
+county,MI.Huron,Huron,26063
+county,MI.Ingham,Ingham,26065
+county,MI.Ionia,Ionia,26067
+county,MI.Iosco,Iosco,26069
+county,MI.Iron,Iron,26071
+county,MI.Isabella,Isabella,26073
+county,MI.Jackson,Jackson,26075
+county,MI.Kalamazoo,Kalamazoo,26077
+county,MI.Kalkaska,Kalkaska,26079
+county,MI.Kent,Kent,26081
+county,MI.Keweenaw,Keweenaw,26083
+county,MI.Lake,Lake,26085
+county,MI.Lapeer,Lapeer,26087
+county,MI.Leelanau,Leelanau,26089
+county,MI.Lenawee,Lenawee,26091
+county,MI.Livingston,Livingston,26093
+county,MI.Luce,Luce,26095
+county,MI.Mackinac,Mackinac,26097
+county,MI.Macomb,Macomb,26099
+county,MI.Manistee,Manistee,26101
+county,MI.Marquette,Marquette,26103
+county,MI.Mason,Mason,26105
+county,MI.Mecosta,Mecosta,26107
+county,MI.Menominee,Menominee,26109
+county,MI.Midland,Midland,26111
+county,MI.Missaukee,Missaukee,26113
+county,MI.Monroe,Monroe,26115
+county,MI.Montcalm,Montcalm,26117
+county,MI.Montmorency,Montmorency,26119
+county,MI.Muskegon,Muskegon,26121
+county,MI.Newaygo,Newaygo,26123
+county,MI.Oakland,Oakland,26125
+county,MI.Oceana,Oceana,26127
+county,MI.Ogemaw,Ogemaw,26129
+county,MI.Ontonagon,Ontonagon,26131
+county,MI.Osceola,Osceola,26133
+county,MI.Oscoda,Oscoda,26135
+county,MI.Otsego,Otsego,26137
+county,MI.Ottawa,Ottawa,26139
+county,MI.PresqueIsle,Presque Isle,26141
+county,MI.Roscommon,Roscommon,26143
+county,MI.Saginaw,Saginaw,26145
+county,MI.Sanilac,Sanilac,26151
+county,MI.Schoolcraft,Schoolcraft,26153
+county,MI.Shiawassee,Shiawassee,26155
+county,MI.StClair,St Clair,26147
+county,MI.StJoseph,St Joseph,26149
+county,MI.Tuscola,Tuscola,26157
+county,MI.VanBuren,Van Buren,26159
+county,MI.Washtenaw,Washtenaw,26161
+county,MI.Wayne,Wayne,26163
+county,MI.Wexford,Wexford,26165
+county,MN.Aitkin,Aitkin,27001
+county,MN.Anoka,Anoka,27003
+county,MN.Becker,Becker,27005
+county,MN.Beltrami,Beltrami,27007
+county,MN.Benton,Benton,27009
+county,MN.BigStone,Big Stone,27011
+county,MN.BlueEarth,Blue Earth,27013
+county,MN.Brown,Brown,27015
+county,MN.Carlton,Carlton,27017
+county,MN.Carver,Carver,27019
+county,MN.Cass,Cass,27021
+county,MN.Chippewa,Chippewa,27023
+county,MN.Chisago,Chisago,27025
+county,MN.Clay,Clay,27027
+county,MN.Clearwater,Clearwater,27029
+county,MN.Cook,Cook,27031
+county,MN.Cottonwood,Cottonwood,27033
+county,MN.CrowWing,Crow Wing,27035
+county,MN.Dakota,Dakota,27037
+county,MN.Dodge,Dodge,27039
+county,MN.Douglas,Douglas,27041
+county,MN.Faribault,Faribault,27043
+county,MN.Fillmore,Fillmore,27045
+county,MN.Freeborn,Freeborn,27047
+county,MN.Goodhue,Goodhue,27049
+county,MN.Grant,Grant,27051
+county,MN.Hennepin,Hennepin,27053
+county,MN.Houston,Houston,27055
+county,MN.Hubbard,Hubbard,27057
+county,MN.Isanti,Isanti,27059
+county,MN.Itasca,Itasca,27061
+county,MN.Jackson,Jackson,27063
+county,MN.Kanabec,Kanabec,27065
+county,MN.Kandiyohi,Kandiyohi,27067
+county,MN.Kittson,Kittson,27069
+county,MN.Koochiching,Koochiching,27071
+county,MN.LacQuiParle,Lac qui Parle,27073
+county,MN.Lake,Lake,27075
+county,MN.LakeoftheWoods,Lake of the Woods,27077
+county,MN.LeSueur,Le Sueur,27079
+county,MN.Lincoln,Lincoln,27081
+county,MN.Lyon,Lyon,27083
+county,MN.Mahnomen,Mahnomen,27087
+county,MN.Marshall,Marshall,27089
+county,MN.Martin,Martin,27091
+county,MN.McLeod,McLeod,27085
+county,MN.Meeker,Meeker,27093
+county,MN.MilleLacs,Mille Lacs,27095
+county,MN.Morrison,Morrison,27097
+county,MN.Mower,Mower,27099
+county,MN.Murray,Murray,27101
+county,MN.Nicollet,Nicollet,27103
+county,MN.Nobles,Nobles,27105
+county,MN.Norman,Norman,27107
+county,MN.Olmsted,Olmsted,27109
+county,MN.OtterTail,Otter Tail,27111
+county,MN.Pennington,Pennington,27113
+county,MN.Pine,Pine,27115
+county,MN.Pipestone,Pipestone,27117
+county,MN.Polk,Polk,27119
+county,MN.Pope,Pope,27121
+county,MN.Ramsey,Ramsey,27123
+county,MN.RedLake,Red Lake,27125
+county,MN.Redwood,Redwood,27127
+county,MN.Renville,Renville,27129
+county,MN.Rice,Rice,27131
+county,MN.Rock,Rock,27133
+county,MN.Roseau,Roseau,27135
+county,MN.Scott,Scott,27139
+county,MN.Sherburne,Sherburne,27141
+county,MN.Sibley,Sibley,27143
+county,MN.StLouis,St Louis,27137
+county,MN.Stearns,Stearns,27145
+county,MN.Steele,Steele,27147
+county,MN.Stevens,Stevens,27149
+county,MN.Swift,Swift,27151
+county,MN.Todd,Todd,27153
+county,MN.Traverse,Traverse,27155
+county,MN.Wabasha,Wabasha,27157
+county,MN.Wadena,Wadena,27159
+county,MN.Waseca,Waseca,27161
+county,MN.Washington,Washington,27163
+county,MN.Watonwan,Watonwan,27165
+county,MN.Wilkin,Wilkin,27167
+county,MN.Winona,Winona,27169
+county,MN.Wright,Wright,27171
+county,MN.YellowMedicine,Yellow Medicine,27173
+county,MS.Adams,Adams,28001
+county,MS.Alcorn,Alcorn,28003
+county,MS.Amite,Amite,28005
+county,MS.Attala,Attala,28007
+county,MS.Benton,Benton,28009
+county,MS.Bolivar,Bolivar,28011
+county,MS.Calhoun,Calhoun,28013
+county,MS.Carroll,Carroll,28015
+county,MS.Chickasaw,Chickasaw,28017
+county,MS.Choctaw,Choctaw,28019
+county,MS.Claiborne,Claiborne,28021
+county,MS.Clarke,Clarke,28023
+county,MS.Clay,Clay,28025
+county,MS.Coahoma,Coahoma,28027
+county,MS.Copiah,Copiah,28029
+county,MS.Covington,Covington,28031
+county,MS.DeSoto,De Soto,28033
+county,MS.Forrest,Forrest,28035
+county,MS.Franklin,Franklin,28037
+county,MS.George,George,28039
+county,MS.Greene,Greene,28041
+county,MS.Grenada,Grenada,28043
+county,MS.Hancock,Hancock,28045
+county,MS.Harrison,Harrison,28047
+county,MS.Hinds,Hinds,28049
+county,MS.Holmes,Holmes,28051
+county,MS.Humphreys,Humphreys,28053
+county,MS.Issaquena,Issaquena,28055
+county,MS.Itawamba,Itawamba,28057
+county,MS.Jackson,Jackson,28059
+county,MS.Jasper,Jasper,28061
+county,MS.Jefferson,Jefferson,28063
+county,MS.JeffersonDavis,Jefferson Davis,28065
+county,MS.Jones,Jones,28067
+county,MS.Kemper,Kemper,28069
+county,MS.Lafayette,Lafayette,28071
+county,MS.Lamar,Lamar,28073
+county,MS.Lauderdale,Lauderdale,28075
+county,MS.Lawrence,Lawrence,28077
+county,MS.Leake,Leake,28079
+county,MS.Lee,Lee,28081
+county,MS.Leflore,Leflore,28083
+county,MS.Lincoln,Lincoln,28085
+county,MS.Lowndes,Lowndes,28087
+county,MS.Madison,Madison,28089
+county,MS.Marion,Marion,28091
+county,MS.Marshall,Marshall,28093
+county,MS.Monroe,Monroe,28095
+county,MS.Montgomery,Montgomery,28097
+county,MS.Neshoba,Neshoba,28099
+county,MS.Newton,Newton,28101
+county,MS.Noxubee,Noxubee,28103
+county,MS.Oktibbeha,Oktibbeha,28105
+county,MS.Panola,Panola,28107
+county,MS.PearlRiver,Pearl River,28109
+county,MS.Perry,Perry,28111
+county,MS.Pike,Pike,28113
+county,MS.Pontotoc,Pontotoc,28115
+county,MS.Prentiss,Prentiss,28117
+county,MS.Quitman,Quitman,28119
+county,MS.Rankin,Rankin,28121
+county,MS.Scott,Scott,28123
+county,MS.Sharkey,Sharkey,28125
+county,MS.Simpson,Simpson,28127
+county,MS.Smith,Smith,28129
+county,MS.Stone,Stone,28131
+county,MS.Sunflower,Sunflower,28133
+county,MS.Tallahatchie,Tallahatchie,28135
+county,MS.Tate,Tate,28137
+county,MS.Tippah,Tippah,28139
+county,MS.Tishomingo,Tishomingo,28141
+county,MS.Tunica,Tunica,28143
+county,MS.Union,Union,28145
+county,MS.Walthall,Walthall,28147
+county,MS.Warren,Warren,28149
+county,MS.Washington,Washington,28151
+county,MS.Wayne,Wayne,28153
+county,MS.Webster,Webster,28155
+county,MS.Wilkinson,Wilkinson,28157
+county,MS.Winston,Winston,28159
+county,MS.Yalobusha,Yalobusha,28161
+county,MS.Yazoo,Yazoo,28163
+county,MO.Adair,Adair,29001
+county,MO.Andrew,Andrew,29003
+county,MO.Atchison,Atchison,29005
+county,MO.Audrain,Audrain,29007
+county,MO.Barry,Barry,29009
+county,MO.Barton,Barton,29011
+county,MO.Bates,Bates,29013
+county,MO.Benton,Benton,29015
+county,MO.Bollinger,Bollinger,29017
+county,MO.Boone,Boone,29019
+county,MO.Buchanan,Buchanan,29021
+county,MO.Butler,Butler,29023
+county,MO.Caldwell,Caldwell,29025
+county,MO.Callaway,Callaway,29027
+county,MO.Camden,Camden,29029
+county,MO.CapeGirardeau,Cape Girardeau,29031
+county,MO.Carroll,Carroll,29033
+county,MO.Carter,Carter,29035
+county,MO.Cass,Cass,29037
+county,MO.Cedar,Cedar,29039
+county,MO.Chariton,Chariton,29041
+county,MO.Christian,Christian,29043
+county,MO.Clark,Clark,29045
+county,MO.Clay,Clay,29047
+county,MO.Clinton,Clinton,29049
+county,MO.Cole,Cole,29051
+county,MO.Cooper,Cooper,29053
+county,MO.Crawford,Crawford,29055
+county,MO.Dade,Dade,29057
+county,MO.Dallas,Dallas,29059
+county,MO.Daviess,Daviess,29061
+county,MO.Dekalb,De Kalb,29063
+county,MO.Dent,Dent,29065
+county,MO.Douglas,Douglas,29067
+county,MO.Dunklin,Dunklin,29069
+county,MO.Franklin,Franklin,29071
+county,MO.Gasconade,Gasconade,29073
+county,MO.Gentry,Gentry,29075
+county,MO.Greene,Greene,29077
+county,MO.Grundy,Grundy,29079
+county,MO.Harrison,Harrison,29081
+county,MO.Henry,Henry,29083
+county,MO.Hickory,Hickory,29085
+county,MO.Holt,Holt,29087
+county,MO.Howard,Howard,29089
+county,MO.Howell,Howell,29091
+county,MO.Iron,Iron,29093
+county,MO.Jackson,Jackson,29095
+county,MO.Jasper,Jasper,29097
+county,MO.Jefferson,Jefferson,29099
+county,MO.Johnson,Johnson,29101
+county,MO.Knox,Knox,29103
+county,MO.Laclede,Laclede,29105
+county,MO.Lafayette,Lafayette,29107
+county,MO.Lawrence,Lawrence,29109
+county,MO.Lewis,Lewis,29111
+county,MO.Lincoln,Lincoln,29113
+county,MO.Linn,Linn,29115
+county,MO.Livingston,Livingston,29117
+county,MO.Macon,Macon,29121
+county,MO.Madison,Madison,29123
+county,MO.Maries,Maries,29125
+county,MO.Marion,Marion,29127
+county,MO.McDonald,McDonald,29119
+county,MO.Mercer,Mercer,29129
+county,MO.Miller,Miller,29131
+county,MO.Mississippi,Mississippi,29133
+county,MO.Moniteau,Moniteau,29135
+county,MO.Monroe,Monroe,29137
+county,MO.Montgomery,Montgomery,29139
+county,MO.Morgan,Morgan,29141
+county,MO.NewMadrid,New Madrid,29143
+county,MO.Newton,Newton,29145
+county,MO.Nodaway,Nodaway,29147
+county,MO.Oregon,Oregon,29149
+county,MO.Osage,Osage,29151
+county,MO.Ozark,Ozark,29153
+county,MO.Pemiscot,Pemiscot,29155
+county,MO.Perry,Perry,29157
+county,MO.Pettis,Pettis,29159
+county,MO.Phelps,Phelps,29161
+county,MO.Pike,Pike,29163
+county,MO.Platte,Platte,29165
+county,MO.Polk,Polk,29167
+county,MO.Pulaski,Pulaski,29169
+county,MO.Putnam,Putnam,29171
+county,MO.Ralls,Ralls,29173
+county,MO.Randolph,Randolph,29175
+county,MO.Ray,Ray,29177
+county,MO.Reynolds,Reynolds,29179
+county,MO.Ripley,Ripley,29181
+county,MO.Saline,Saline,29195
+county,MO.Schuyler,Schuyler,29197
+county,MO.Scotland,Scotland,29199
+county,MO.Scott,Scott,29201
+county,MO.Shannon,Shannon,29203
+county,MO.Shelby,Shelby,29205
+county,MO.StCharles,St Charles,29183
+county,MO.StClair,St Clair,29185
+county,MO.StFrancois,St Francois,29187
+county,MO.StLouis(City),St Louis City,29510
+county,MO.StLouis,St Louis,29189
+county,MO.SteGenevieve,Ste. Genevieve,29186
+county,MO.Stoddard,Stoddard,29207
+county,MO.Stone,Stone,29209
+county,MO.Sullivan,Sullivan,29211
+county,MO.Taney,Taney,29213
+county,MO.Texas,Texas,29215
+county,MO.Vernon,Vernon,29217
+county,MO.Warren,Warren,29219
+county,MO.Washington,Washington,29221
+county,MO.Wayne,Wayne,29223
+county,MO.Webster,Webster,29225
+county,MO.Worth,Worth,29227
+county,MO.Wright,Wright,29229
+county,MT.Beaverhead,Beaverhead,30001
+county,MT.BigHorn,Big Horn,30003
+county,MT.Blaine,Blaine,30005
+county,MT.Broadwater,Broadwater,30007
+county,MT.Carbon,Carbon,30009
+county,MT.Carter,Carter,30011
+county,MT.Cascade,Cascade,30013
+county,MT.Chouteau,Chouteau,30015
+county,MT.Custer,Custer,30017
+county,MT.Daniels,Daniels,30019
+county,MT.Dawson,Dawson,30021
+county,MT.DeerLodge,Deer Lodge,30023
+county,MT.Fallon,Fallon,30025
+county,MT.Fergus,Fergus,30027
+county,MT.Flathead,Flathead,30029
+county,MT.Gallatin,Gallatin,30031
+county,MT.Glacier,Glacier,30035
+county,MT.GoldenValley,Golden Valley,30037
+county,MT.Granite,Granite,30039
+county,MT.Hill,Hill,30041
+county,MT.Jefferson,Jefferson,30043
+county,MT.JudithBasin,Judith Basin,30045
+county,MT.Lake,Lake,30047
+county,MT.LewisandClark,Lewis and Clark,30049
+county,MT.Liberty,Liberty,30051
+county,MT.Lincoln,Lincoln,30053
+county,MT.Madison,Madison,30057
+county,MT.McCone,McCone,30055
+county,MT.Meagher,Meagher,30059
+county,MT.Mineral,Mineral,30061
+county,MT.Missoula,Missoula,30063
+county,MT.Musselshell,Musselshell,30065
+county,MT.Park,Park,30067
+county,MT.Petroleum,Petroleum,30069
+county,MT.Phillips,Phillips,30071
+county,MT.Pondera,Pondera,30073
+county,MT.PowderRiver,Powder River,30075
+county,MT.Powell,Powell,30077
+county,MT.Prairie,Prairie,30079
+county,MT.Ravalli,Ravalli,30081
+county,MT.Richland,Richland,30083
+county,MT.Roosevelt,Roosevelt,30085
+county,MT.Rosebud,Rosebud,30087
+county,MT.Sanders,Sanders,30089
+county,MT.Sheridan,Sheridan,30091
+county,MT.SilverBow,Silver Bow,30093
+county,MT.Stillwater,Stillwater,30095
+county,MT.SweetGrass,Sweet Grass,30097
+county,MT.Teton,Teton,30099
+county,MT.Toole,Toole,30101
+county,MT.Treasure,Treasure,30103
+county,MT.Valley,Valley,30105
+county,MT.Wheatland,Wheatland,30107
+county,MT.Wibaux,Wibaux,30109
+county,MT.Yellowstone,Yellowstone,30111
+county,NE.Adams,Adams,31001
+county,NE.Antelope,Antelope,31003
+county,NE.Banner,Banner,31007
+county,NE.Blaine,Blaine,31009
+county,NE.Boone,Boone,31011
+county,NE.BoxButte,Box Butte,31013
+county,NE.Boyd,Boyd,31015
+county,NE.Brown,Brown,31017
+county,NE.Buffalo,Buffalo,31019
+county,NE.Burt,Burt,31021
+county,NE.Butler,Butler,31023
+county,NE.Cass,Cass,31025
+county,NE.Cedar,Cedar,31027
+county,NE.Chase,Chase,31029
+county,NE.Cherry,Cherry,31031
+county,NE.Cheyenne,Cheyenne,31033
+county,NE.Clay,Clay,31035
+county,NE.Colfax,Colfax,31037
+county,NE.Cuming,Cuming,31039
+county,NE.Custer,Custer,31041
+county,NE.Dakota,Dakota,31043
+county,NE.Dawes,Dawes,31045
+county,NE.Dawson,Dawson,31047
+county,NE.Deuel,Deuel,31049
+county,NE.Dixon,Dixon,31051
+county,NE.Dodge,Dodge,31053
+county,NE.Douglas,Douglas,31055
+county,NE.Dundy,Dundy,31057
+county,NE.Fillmore,Fillmore,31059
+county,NE.Franklin,Franklin,31061
+county,NE.Frontier,Frontier,31063
+county,NE.Furnas,Furnas,31065
+county,NE.Gage,Gage,31067
+county,NE.Garden,Garden,31069
+county,NE.Garfield,Garfield,31071
+county,NE.Gosper,Gosper,31073
+county,NE.Grant,Grant,31075
+county,NE.Greeley,Greeley,31077
+county,NE.Hall,Hall,31079
+county,NE.Hamilton,Hamilton,31081
+county,NE.Harlan,Harlan,31083
+county,NE.Hayes,Hayes,31085
+county,NE.Hitchcock,Hitchcock,31087
+county,NE.Holt,Holt,31089
+county,NE.Hooker,Hooker,31091
+county,NE.Howard,Howard,31093
+county,NE.Jefferson,Jefferson,31095
+county,NE.Johnson,Johnson,31097
+county,NE.Kearney,Kearney,31099
+county,NE.Keith,Keith,31101
+county,NE.KeyaPaha,Keya Paha,31103
+county,NE.Kimball,Kimball,31105
+county,NE.Knox,Knox,31107
+county,NE.Lancaster,Lancaster,31109
+county,NE.Lincoln,Lincoln,31111
+county,NE.Logan,Logan,31113
+county,NE.Madison,Madison,31119
+county,NE.McPherson,McPherson,31117
+county,NE.Merrick,Merrick,31121
+county,NE.Morrill,Morrill,31123
+county,NE.Nance,Nance,31125
+county,NE.Nemaha,Nemaha,31127
+county,NE.Nuckolls,Nuckolls,31129
+county,NE.Otoe,Otoe,31131
+county,NE.Pawnee,Pawnee,31133
+county,NE.Perkins,Perkins,31135
+county,NE.Phelps,Phelps,31137
+county,NE.Pierce,Pierce,31139
+county,NE.Platte,Platte,31141
+county,NE.Polk,Polk,31143
+county,NE.RedWillow,Red Willow,31145
+county,NE.Richardson,Richardson,31147
+county,NE.Rock,Rock,31149
+county,NE.Saline,Saline,31151
+county,NE.Sarpy,Sarpy,31153
+county,NE.Saunders,Saunders,31155
+county,NE.ScottsBluff,Scotts Bluff,31157
+county,NE.Seward,Seward,31159
+county,NE.Sheridan,Sheridan,31161
+county,NE.Sherman,Sherman,31163
+county,NE.Sioux,Sioux,31165
+county,NE.Stanton,Stanton,31167
+county,NE.Thayer,Thayer,31169
+county,NE.Thomas,Thomas,31171
+county,NE.Thurston,Thurston,31173
+county,NE.Valley,Valley,31175
+county,NE.Washington,Washington,31177
+county,NE.Wayne,Wayne,31179
+county,NE.Webster,Webster,31181
+county,NE.Wheeler,Wheeler,31183
+county,NE.York,York,31185
+county,NV.CarsonCity(City),Carson City,32510
+county,NV.Churchill,Churchill,32001
+county,NV.Clark,Clark,32003
+county,NV.Douglas,Douglas,32005
+county,NV.Elko,Elko,32007
+county,NV.Esmeralda,Esmeralda,32009
+county,NV.Eureka,Eureka,32011
+county,NV.Humboldt,Humboldt,32013
+county,NV.Lander,Lander,32015
+county,NV.Lincoln,Lincoln,32017
+county,NV.Lyon,Lyon,32019
+county,NV.Mineral,Mineral,32021
+county,NV.Nye,Nye,32023
+county,NV.Pershing,Pershing,32027
+county,NV.Storey,Storey,32029
+county,NV.Washoe,Washoe,32031
+county,NV.WhitePine,White Pine,32033
+county,NH.Belknap,Belknap,33001
+county,NH.Carroll,Carroll,33003
+county,NH.Cheshire,Cheshire,33005
+county,NH.Coos,Coos,33007
+county,NH.Grafton,Grafton,33009
+county,NH.Hillsborough,Hillsborough,33011
+county,NH.Merrimack,Merrimack,33013
+county,NH.Rockingham,Rockingham,33015
+county,NH.Strafford,Strafford,33017
+county,NH.Sullivan,Sullivan,33019
+county,NJ.Atlantic,Atlantic,34001
+county,NJ.Bergen,Bergen,34003
+county,NJ.Burlington,Burlington,34005
+county,NJ.Camden,Camden,34007
+county,NJ.CapeMay,Cape May,34009
+county,NJ.Cumberland,Cumberland,34011
+county,NJ.Essex,Essex,34013
+county,NJ.Gloucester,Gloucester,34015
+county,NJ.Hudson,Hudson,34017
+county,NJ.Hunterdon,Hunterdon,34019
+county,NJ.Mercer,Mercer,34021
+county,NJ.Middlesex,Middlesex,34023
+county,NJ.Monmouth,Monmouth,34025
+county,NJ.Morris,Morris,34027
+county,NJ.Ocean,Ocean,34029
+county,NJ.Passaic,Passaic,34031
+county,NJ.Salem,Salem,34033
+county,NJ.Somerset,Somerset,34035
+county,NJ.Sussex,Sussex,34037
+county,NJ.Union,Union,34039
+county,NJ.Warren,Warren,34041
+county,NM.Bernalillo,Bernalillo,35001
+county,NM.Catron,Catron,35003
+county,NM.Chaves,Chaves,35005
+county,NM.Cibola,Cibola,35006
+county,NM.Colfax,Colfax,35007
+county,NM.Curry,Curry,35009
+county,NM.DeBaca,De Baca,35011
+county,NM.DonaAna,Dona Ana,35013
+county,NM.Eddy,Eddy,35015
+county,NM.Grant,Grant,35017
+county,NM.Guadalupe,Guadalupe,35019
+county,NM.Harding,Harding,35021
+county,NM.Hidalgo,Hidalgo,35023
+county,NM.Lea,Lea,35025
+county,NM.Lincoln,Lincoln,35027
+county,NM.LosAlamos,Los Alamos,35028
+county,NM.Luna,Luna,35029
+county,NM.McKinley,McKinley,35031
+county,NM.Mora,Mora,35033
+county,NM.Otero,Otero,35035
+county,NM.Quay,Quay,35037
+county,NM.RioArriba,Rio Arriba,35039
+county,NM.Roosevelt,Roosevelt,35041
+county,NM.SanJuan,San Juan,35045
+county,NM.SanMiguel,San Miguel,35047
+county,NM.Sandoval,Sandoval,35043
+county,NM.SantaFe,Santa Fe,35049
+county,NM.Sierra,Sierra,35051
+county,NM.Socorro,Socorro,35053
+county,NM.Taos,Taos,35055
+county,NM.Torrance,Torrance,35057
+county,NM.Union,Union,35059
+county,NM.Valencia,Valencia,35061
+county,NY.Albany,Albany,36001
+county,NY.Allegany,Allegany,36003
+county,NY.Bronx,Bronx,36005
+county,NY.Broome,Broome,36007
+county,NY.Cattaraugus,Cattaraugus,36009
+county,NY.Cayuga,Cayuga,36011
+county,NY.Chautauqua,Chautauqua,36013
+county,NY.Chemung,Chemung,36015
+county,NY.Chenango,Chenango,36017
+county,NY.Clinton,Clinton,36019
+county,NY.Columbia,Columbia,36021
+county,NY.Cortland,Cortland,36023
+county,NY.Delaware,Delaware,36025
+county,NY.Dutchess,Dutchess,36027
+county,NY.Erie,Erie,36029
+county,NY.Essex,Essex,36031
+county,NY.Franklin,Franklin,36033
+county,NY.Fulton,Fulton,36035
+county,NY.Genesee,Genesee,36037
+county,NY.Greene,Greene,36039
+county,NY.Hamilton,Hamilton,36041
+county,NY.Herkimer,Herkimer,36043
+county,NY.Jefferson,Jefferson,36045
+county,NY.Kings,Kings,36047
+county,NY.Lewis,Lewis,36049
+county,NY.Livingston,Livingston,36051
+county,NY.Madison,Madison,36053
+county,NY.Monroe,Monroe,36055
+county,NY.Montgomery,Montgomery,36057
+county,NY.Nassau,Nassau,36059
+county,NY.NewYork,New York,36061
+county,NY.Niagara,Niagara,36063
+county,NY.Oneida,Oneida,36065
+county,NY.Onondaga,Onondaga,36067
+county,NY.Ontario,Ontario,36069
+county,NY.Orange,Orange,36071
+county,NY.Orleans,Orleans,36073
+county,NY.Oswego,Oswego,36075
+county,NY.Otsego,Otsego,36077
+county,NY.Putnam,Putnam,36079
+county,NY.Queens,Queens,36081
+county,NY.Rensselaer,Rensselaer,36083
+county,NY.Richmond,Richmond,36085
+county,NY.Rockland,Rockland,36087
+county,NY.Saratoga,Saratoga,36091
+county,NY.Schenectady,Schenectady,36093
+county,NY.Schoharie,Schoharie,36095
+county,NY.Schuyler,Schuyler,36097
+county,NY.Seneca,Seneca,36099
+county,NY.StLawrence,St Lawrence,36089
+county,NY.Steuben,Steuben,36101
+county,NY.Suffolk,Suffolk,36103
+county,NY.Sullivan,Sullivan,36105
+county,NY.Tioga,Tioga,36107
+county,NY.Tompkins,Tompkins,36109
+county,NY.Ulster,Ulster,36111
+county,NY.Warren,Warren,36113
+county,NY.Washington,Washington,36115
+county,NY.Wayne,Wayne,36117
+county,NY.Westchester,Westchester,36119
+county,NY.Wyoming,Wyoming,36121
+county,NY.Yates,Yates,36123
+county,NC.Alamance,Alamance,37001
+county,NC.Alexander,Alexander,37003
+county,NC.Alleghany,Alleghany,37005
+county,NC.Anson,Anson,37007
+county,NC.Ashe,Ashe,37009
+county,NC.Avery,Avery,37011
+county,NC.Beaufort,Beaufort,37013
+county,NC.Bertie,Bertie,37015
+county,NC.Bladen,Bladen,37017
+county,NC.Brunswick,Brunswick,37019
+county,NC.Buncombe,Buncombe,37021
+county,NC.Burke,Burke,37023
+county,NC.Cabarrus,Cabarrus,37025
+county,NC.Caldwell,Caldwell,37027
+county,NC.Camden,Camden,37029
+county,NC.Carteret,Carteret,37031
+county,NC.Caswell,Caswell,37033
+county,NC.Catawba,Catawba,37035
+county,NC.Chatham,Chatham,37037
+county,NC.Cherokee,Cherokee,37039
+county,NC.Chowan,Chowan,37041
+county,NC.Clay,Clay,37043
+county,NC.Cleveland,Cleveland,37045
+county,NC.Columbus,Columbus,37047
+county,NC.Craven,Craven,37049
+county,NC.Cumberland,Cumberland,37051
+county,NC.Currituck,Currituck,37053
+county,NC.Dare,Dare,37055
+county,NC.Davidson,Davidson,37057
+county,NC.Davie,Davie,37059
+county,NC.Duplin,Duplin,37061
+county,NC.Durham,Durham,37063
+county,NC.Edgecombe,Edgecombe,37065
+county,NC.Forsyth,Forsyth,37067
+county,NC.Franklin,Franklin,37069
+county,NC.Gaston,Gaston,37071
+county,NC.Gates,Gates,37073
+county,NC.Graham,Graham,37075
+county,NC.Granville,Granville,37077
+county,NC.Greene,Greene,37079
+county,NC.Guilford,Guilford,37081
+county,NC.Halifax,Halifax,37083
+county,NC.Harnett,Harnett,37085
+county,NC.Haywood,Haywood,37087
+county,NC.Henderson,Henderson,37089
+county,NC.Hertford,Hertford,37091
+county,NC.Hoke,Hoke,37093
+county,NC.Hyde,Hyde,37095
+county,NC.Iredell,Iredell,37097
+county,NC.Jackson,Jackson,37099
+county,NC.Johnston,Johnston,37101
+county,NC.Jones,Jones,37103
+county,NC.Lee,Lee,37105
+county,NC.Lenoir,Lenoir,37107
+county,NC.Lincoln,Lincoln,37109
+county,NC.Macon,Macon,37113
+county,NC.Madison,Madison,37115
+county,NC.Martin,Martin,37117
+county,NC.McDowell,McDowell,37111
+county,NC.Mecklenburg,Mecklenburg,37119
+county,NC.Mitchell,Mitchell,37121
+county,NC.Montgomery,Montgomery,37123
+county,NC.Moore,Moore,37125
+county,NC.Nash,Nash,37127
+county,NC.NewHanover,New Hanover,37129
+county,NC.Northampton,Northampton,37131
+county,NC.Onslow,Onslow,37133
+county,NC.Orange,Orange,37135
+county,NC.Pamlico,Pamlico,37137
+county,NC.Pasquotank,Pasquotank,37139
+county,NC.Pender,Pender,37141
+county,NC.Perquimans,Perquimans,37143
+county,NC.Person,Person,37145
+county,NC.Pitt,Pitt,37147
+county,NC.Polk,Polk,37149
+county,NC.Randolph,Randolph,37151
+county,NC.Richmond,Richmond,37153
+county,NC.Robeson,Robeson,37155
+county,NC.Rockingham,Rockingham,37157
+county,NC.Rowan,Rowan,37159
+county,NC.Rutherford,Rutherford,37161
+county,NC.Sampson,Sampson,37163
+county,NC.Scotland,Scotland,37165
+county,NC.Stanly,Stanly,37167
+county,NC.Stokes,Stokes,37169
+county,NC.Surry,Surry,37171
+county,NC.Swain,Swain,37173
+county,NC.Transylvania,Transylvania,37175
+county,NC.Tyrrell,Tyrrell,37177
+county,NC.Union,Union,37179
+county,NC.Vance,Vance,37181
+county,NC.Wake,Wake,37183
+county,NC.Warren,Warren,37185
+county,NC.Washington,Washington,37187
+county,NC.Watauga,Watauga,37189
+county,NC.Wayne,Wayne,37191
+county,NC.Wilkes,Wilkes,37193
+county,NC.Wilson,Wilson,37195
+county,NC.Yadkin,Yadkin,37197
+county,NC.Yancey,Yancey,37199
+county,ND.Adams,Adams,38001
+county,ND.Barnes,Barnes,38003
+county,ND.Benson,Benson,38005
+county,ND.Billings,Billings,38007
+county,ND.Bottineau,Bottineau,38009
+county,ND.Bowman,Bowman,38011
+county,ND.Burke,Burke,38013
+county,ND.Burleigh,Burleigh,38015
+county,ND.Cass,Cass,38017
+county,ND.Cavalier,Cavalier,38019
+county,ND.Dickey,Dickey,38021
+county,ND.Divide,Divide,38023
+county,ND.Dunn,Dunn,38025
+county,ND.Eddy,Eddy,38027
+county,ND.Emmons,Emmons,38029
+county,ND.Foster,Foster,38031
+county,ND.GoldenValley,Golden Valley,38033
+county,ND.GrandForks,Grand Forks,38035
+county,ND.Grant,Grant,38037
+county,ND.Griggs,Griggs,38039
+county,ND.Hettinger,Hettinger,38041
+county,ND.Kidder,Kidder,38043
+county,ND.Lamoure,La Moure,38045
+county,ND.Logan,Logan,38047
+county,ND.McHenry,McHenry,38049
+county,ND.McIntosh,McIntosh,38051
+county,ND.McKenzie,McKenzie,38053
+county,ND.McLean,McLean,38055
+county,ND.Mercer,Mercer,38057
+county,ND.Morton,Morton,38059
+county,ND.Mountrail,Mountrail,38061
+county,ND.Nelson,Nelson,38063
+county,ND.Pembina,Pembina,38067
+county,ND.Pierce,Pierce,38069
+county,ND.Ramsey,Ramsey,38071
+county,ND.Ransom,Ransom,38073
+county,ND.Renville,Renville,38075
+county,ND.Richland,Richland,38077
+county,ND.Rolette,Rolette,38079
+county,ND.Sargent,Sargent,38081
+county,ND.Sheridan,Sheridan,38083
+county,ND.Sioux,Sioux,38085
+county,ND.Slope,Slope,38087
+county,ND.Stark,Stark,38089
+county,ND.Steele,Steele,38091
+county,ND.Stutsman,Stutsman,38093
+county,ND.Towner,Towner,38095
+county,ND.Traill,Traill,38097
+county,ND.Walsh,Walsh,38099
+county,ND.Ward,Ward,38101
+county,ND.Wells,Wells,38103
+county,ND.Williams,Williams,38105
+county,OH.Adams,Adams,39001
+county,OH.Allen,Allen,39003
+county,OH.Ashland,Ashland,39005
+county,OH.Ashtabula,Ashtabula,39007
+county,OH.Athens,Athens,39009
+county,OH.Auglaize,Auglaize,39011
+county,OH.Belmont,Belmont,39013
+county,OH.Brown,Brown,39015
+county,OH.Butler,Butler,39017
+county,OH.Carroll,Carroll,39019
+county,OH.Champaign,Champaign,39021
+county,OH.Clark,Clark,39023
+county,OH.Clermont,Clermont,39025
+county,OH.Clinton,Clinton,39027
+county,OH.Columbiana,Columbiana,39029
+county,OH.Coshocton,Coshocton,39031
+county,OH.Crawford,Crawford,39033
+county,OH.Cuyahoga,Cuyahoga,39035
+county,OH.Darke,Darke,39037
+county,OH.Defiance,Defiance,39039
+county,OH.Delaware,Delaware,39041
+county,OH.Erie,Erie,39043
+county,OH.Fairfield,Fairfield,39045
+county,OH.Fayette,Fayette,39047
+county,OH.Franklin,Franklin,39049
+county,OH.Fulton,Fulton,39051
+county,OH.Gallia,Gallia,39053
+county,OH.Geauga,Geauga,39055
+county,OH.Greene,Greene,39057
+county,OH.Guernsey,Guernsey,39059
+county,OH.Hamilton,Hamilton,39061
+county,OH.Hancock,Hancock,39063
+county,OH.Hardin,Hardin,39065
+county,OH.Harrison,Harrison,39067
+county,OH.Henry,Henry,39069
+county,OH.Highland,Highland,39071
+county,OH.Hocking,Hocking,39073
+county,OH.Holmes,Holmes,39075
+county,OH.Huron,Huron,39077
+county,OH.Jackson,Jackson,39079
+county,OH.Jefferson,Jefferson,39081
+county,OH.Knox,Knox,39083
+county,OH.Lake,Lake,39085
+county,OH.Lawrence,Lawrence,39087
+county,OH.Licking,Licking,39089
+county,OH.Logan,Logan,39091
+county,OH.Lorain,Lorain,39093
+county,OH.Lucas,Lucas,39095
+county,OH.Madison,Madison,39097
+county,OH.Mahoning,Mahoning,39099
+county,OH.Marion,Marion,39101
+county,OH.Medina,Medina,39103
+county,OH.Meigs,Meigs,39105
+county,OH.Mercer,Mercer,39107
+county,OH.Miami,Miami,39109
+county,OH.Monroe,Monroe,39111
+county,OH.Montgomery,Montgomery,39113
+county,OH.Morgan,Morgan,39115
+county,OH.Morrow,Morrow,39117
+county,OH.Muskingum,Muskingum,39119
+county,OH.Noble,Noble,39121
+county,OH.Ottawa,Ottawa,39123
+county,OH.Paulding,Paulding,39125
+county,OH.Perry,Perry,39127
+county,OH.Pickaway,Pickaway,39129
+county,OH.Pike,Pike,39131
+county,OH.Portage,Portage,39133
+county,OH.Preble,Preble,39135
+county,OH.Putnam,Putnam,39137
+county,OH.Richland,Richland,39139
+county,OH.Ross,Ross,39141
+county,OH.Sandusky,Sandusky,39143
+county,OH.Scioto,Scioto,39145
+county,OH.Seneca,Seneca,39147
+county,OH.Shelby,Shelby,39149
+county,OH.Stark,Stark,39151
+county,OH.Summit,Summit,39153
+county,OH.Trumbull,Trumbull,39155
+county,OH.Tuscarawas,Tuscarawas,39157
+county,OH.Union,Union,39159
+county,OH.VanWert,Van Wert,39161
+county,OH.Vinton,Vinton,39163
+county,OH.Warren,Warren,39165
+county,OH.Washington,Washington,39167
+county,OH.Wayne,Wayne,39169
+county,OH.Williams,Williams,39171
+county,OH.Wood,Wood,39173
+county,OH.Wyandot,Wyandot,39175
+county,OK.Adair,Adair,40001
+county,OK.Alfalfa,Alfalfa,40003
+county,OK.Atoka,Atoka,40005
+county,OK.Beaver,Beaver,40007
+county,OK.Beckham,Beckham,40009
+county,OK.Blaine,Blaine,40011
+county,OK.Bryan,Bryan,40013
+county,OK.Caddo,Caddo,40015
+county,OK.Canadian,Canadian,40017
+county,OK.Carter,Carter,40019
+county,OK.Cherokee,Cherokee,40021
+county,OK.Choctaw,Choctaw,40023
+county,OK.Cimarron,Cimarron,40025
+county,OK.Cleveland,Cleveland,40027
+county,OK.Coal,Coal,40029
+county,OK.Comanche,Comanche,40031
+county,OK.Cotton,Cotton,40033
+county,OK.Craig,Craig,40035
+county,OK.Creek,Creek,40037
+county,OK.Custer,Custer,40039
+county,OK.Delaware,Delaware,40041
+county,OK.Dewey,Dewey,40043
+county,OK.Ellis,Ellis,40045
+county,OK.Garfield,Garfield,40047
+county,OK.Garvin,Garvin,40049
+county,OK.Grady,Grady,40051
+county,OK.Grant,Grant,40053
+county,OK.Greer,Greer,40055
+county,OK.Harmon,Harmon,40057
+county,OK.Harper,Harper,40059
+county,OK.Haskell,Haskell,40061
+county,OK.Hughes,Hughes,40063
+county,OK.Jackson,Jackson,40065
+county,OK.Jefferson,Jefferson,40067
+county,OK.Johnston,Johnston,40069
+county,OK.Kay,Kay,40071
+county,OK.Kingfisher,Kingfisher,40073
+county,OK.Kiowa,Kiowa,40075
+county,OK.Latimer,Latimer,40077
+county,OK.LeFlore,Le Flore,40079
+county,OK.Lincoln,Lincoln,40081
+county,OK.Logan,Logan,40083
+county,OK.Love,Love,40085
+county,OK.Major,Major,40093
+county,OK.Marshall,Marshall,40095
+county,OK.Mayes,Mayes,40097
+county,OK.McClain,McClain,40087
+county,OK.McCurtain,McCurtain,40089
+county,OK.McIntosh,McIntosh,40091
+county,OK.Murray,Murray,40099
+county,OK.Muskogee,Muskogee,40101
+county,OK.Noble,Noble,40103
+county,OK.Nowata,Nowata,40105
+county,OK.Okfuskee,Okfuskee,40107
+county,OK.Oklahoma,Oklahoma,40109
+county,OK.Okmulgee,Okmulgee,40111
+county,OK.Osage,Osage,40113
+county,OK.Ottawa,Ottawa,40115
+county,OK.Pawnee,Pawnee,40117
+county,OK.Payne,Payne,40119
+county,OK.Pittsburg,Pittsburg,40121
+county,OK.Pontotoc,Pontotoc,40123
+county,OK.Pottawatomie,Pottawatomie,40125
+county,OK.Pushmataha,Pushmataha,40127
+county,OK.RogerMills,Roger Mills,40129
+county,OK.Rogers,Rogers,40131
+county,OK.Seminole,Seminole,40133
+county,OK.Sequoyah,Sequoyah,40135
+county,OK.Stephens,Stephens,40137
+county,OK.Texas,Texas,40139
+county,OK.Tillman,Tillman,40141
+county,OK.Tulsa,Tulsa,40143
+county,OK.Wagoner,Wagoner,40145
+county,OK.Washington,Washington,40147
+county,OK.Washita,Washita,40149
+county,OK.Woods,Woods,40151
+county,OK.Woodward,Woodward,40153
+county,OR.Baker,Baker,41001
+county,OR.Benton,Benton,41003
+county,OR.Clackamas,Clackamas,41005
+county,OR.Clatsop,Clatsop,41007
+county,OR.Columbia,Columbia,41009
+county,OR.Coos,Coos,41011
+county,OR.Crook,Crook,41013
+county,OR.Curry,Curry,41015
+county,OR.Deschutes,Deschutes,41017
+county,OR.Douglas,Douglas,41019
+county,OR.Gilliam,Gilliam,41021
+county,OR.Grant,Grant,41023
+county,OR.Harney,Harney,41025
+county,OR.HoodRiver,Hood River,41027
+county,OR.Jackson,Jackson,41029
+county,OR.Jefferson,Jefferson,41031
+county,OR.Josephine,Josephine,41033
+county,OR.Klamath,Klamath,41035
+county,OR.Lake,Lake,41037
+county,OR.Lane,Lane,41039
+county,OR.Lincoln,Lincoln,41041
+county,OR.Linn,Linn,41043
+county,OR.Malheur,Malheur,41045
+county,OR.Marion,Marion,41047
+county,OR.Morrow,Morrow,41049
+county,OR.Multnomah,Multnomah,41051
+county,OR.Polk,Polk,41053
+county,OR.Sherman,Sherman,41055
+county,OR.Tillamook,Tillamook,41057
+county,OR.Umatilla,Umatilla,41059
+county,OR.Union,Union,41061
+county,OR.Wallowa,Wallowa,41063
+county,OR.Wasco,Wasco,41065
+county,OR.Washington,Washington,41067
+county,OR.Wheeler,Wheeler,41069
+county,OR.Yamhill,Yamhill,41071
+county,PA.Adams,Adams,42001
+county,PA.Allegheny,Allegheny,42003
+county,PA.Armstrong,Armstrong,42005
+county,PA.Beaver,Beaver,42007
+county,PA.Bedford,Bedford,42009
+county,PA.Berks,Berks,42011
+county,PA.Blair,Blair,42013
+county,PA.Bradford,Bradford,42015
+county,PA.Bucks,Bucks,42017
+county,PA.Butler,Butler,42019
+county,PA.Cambria,Cambria,42021
+county,PA.Cameron,Cameron,42023
+county,PA.Carbon,Carbon,42025
+county,PA.Centre,Centre,42027
+county,PA.Chester,Chester,42029
+county,PA.Clarion,Clarion,42031
+county,PA.Clearfield,Clearfield,42033
+county,PA.Clinton,Clinton,42035
+county,PA.Columbia,Columbia,42037
+county,PA.Crawford,Crawford,42039
+county,PA.Cumberland,Cumberland,42041
+county,PA.Dauphin,Dauphin,42043
+county,PA.Delaware,Delaware,42045
+county,PA.Elk,Elk,42047
+county,PA.Erie,Erie,42049
+county,PA.Fayette,Fayette,42051
+county,PA.Forest,Forest,42053
+county,PA.Franklin,Franklin,42055
+county,PA.Fulton,Fulton,42057
+county,PA.Greene,Greene,42059
+county,PA.Huntingdon,Huntingdon,42061
+county,PA.Indiana,Indiana,42063
+county,PA.Jefferson,Jefferson,42065
+county,PA.Juniata,Juniata,42067
+county,PA.Lackawanna,Lackawanna,42069
+county,PA.Lancaster,Lancaster,42071
+county,PA.Lawrence,Lawrence,42073
+county,PA.Lebanon,Lebanon,42075
+county,PA.Lehigh,Lehigh,42077
+county,PA.Luzerne,Luzerne,42079
+county,PA.Lycoming,Lycoming,42081
+county,PA.McKean,McKean,42083
+county,PA.Mercer,Mercer,42085
+county,PA.Mifflin,Mifflin,42087
+county,PA.Monroe,Monroe,42089
+county,PA.Montgomery,Montgomery,42091
+county,PA.Montour,Montour,42093
+county,PA.Northampton,Northampton,42095
+county,PA.Northumberland,Northumberland,42097
+county,PA.Perry,Perry,42099
+county,PA.Philadelphia,Philadelphia,42101
+county,PA.Pike,Pike,42103
+county,PA.Potter,Potter,42105
+county,PA.Schuylkill,Schuylkill,42107
+county,PA.Snyder,Snyder,42109
+county,PA.Somerset,Somerset,42111
+county,PA.Sullivan,Sullivan,42113
+county,PA.Susquehanna,Susquehanna,42115
+county,PA.Tioga,Tioga,42117
+county,PA.Union,Union,42119
+county,PA.Venango,Venango,42121
+county,PA.Warren,Warren,42123
+county,PA.Washington,Washington,42125
+county,PA.Wayne,Wayne,42127
+county,PA.Westmoreland,Westmoreland,42129
+county,PA.Wyoming,Wyoming,42131
+county,PA.York,York,42133
+county,RI.Bristol,Bristol,44001
+county,RI.Kent,Kent,44003
+county,RI.Newport,Newport,44005
+county,RI.Providence,Providence,44007
+county,RI.Washington,Washington,44009
+county,SC.Abbeville,Abbeville,45001
+county,SC.Aiken,Aiken,45003
+county,SC.Allendale,Allendale,45005
+county,SC.Anderson,Anderson,45007
+county,SC.Bamberg,Bamberg,45009
+county,SC.Barnwell,Barnwell,45011
+county,SC.Beaufort,Beaufort,45013
+county,SC.Berkeley,Berkeley,45015
+county,SC.Calhoun,Calhoun,45017
+county,SC.Charleston,Charleston,45019
+county,SC.Cherokee,Cherokee,45021
+county,SC.Chester,Chester,45023
+county,SC.Chesterfield,Chesterfield,45025
+county,SC.Clarendon,Clarendon,45027
+county,SC.Colleton,Colleton,45029
+county,SC.Darlington,Darlington,45031
+county,SC.Dillon,Dillon,45033
+county,SC.Dorchester,Dorchester,45035
+county,SC.Edgefield,Edgefield,45037
+county,SC.Fairfield,Fairfield,45039
+county,SC.Florence,Florence,45041
+county,SC.Georgetown,Georgetown,45043
+county,SC.Greenville,Greenville,45045
+county,SC.Greenwood,Greenwood,45047
+county,SC.Hampton,Hampton,45049
+county,SC.Horry,Horry,45051
+county,SC.Jasper,Jasper,45053
+county,SC.Kershaw,Kershaw,45055
+county,SC.Lancaster,Lancaster,45057
+county,SC.Laurens,Laurens,45059
+county,SC.Lee,Lee,45061
+county,SC.Lexington,Lexington,45063
+county,SC.Marion,Marion,45067
+county,SC.Marlboro,Marlboro,45069
+county,SC.McCormick,McCormick,45065
+county,SC.Newberry,Newberry,45071
+county,SC.Oconee,Oconee,45073
+county,SC.Orangeburg,Orangeburg,45075
+county,SC.Pickens,Pickens,45077
+county,SC.Richland,Richland,45079
+county,SC.Saluda,Saluda,45081
+county,SC.Spartanburg,Spartanburg,45083
+county,SC.Sumter,Sumter,45085
+county,SC.Union,Union,45087
+county,SC.Williamsburg,Williamsburg,45089
+county,SC.York,York,45091
+county,SD.Aurora,Aurora,46003
+county,SD.Beadle,Beadle,46005
+county,SD.Bennett,Bennett,46007
+county,SD.BonHomme,Bon Homme,46009
+county,SD.Brookings,Brookings,46011
+county,SD.Brown,Brown,46013
+county,SD.Brule,Brule,46015
+county,SD.Buffalo,Buffalo,46017
+county,SD.Butte,Butte,46019
+county,SD.Campbell,Campbell,46021
+county,SD.CharlesMix,Charles Mix,46023
+county,SD.Clark,Clark,46025
+county,SD.Clay,Clay,46027
+county,SD.Codington,Codington,46029
+county,SD.Corson,Corson,46031
+county,SD.Custer,Custer,46033
+county,SD.Davison,Davison,46035
+county,SD.Day,Day,46037
+county,SD.Deuel,Deuel,46039
+county,SD.Dewey,Dewey,46041
+county,SD.Douglas,Douglas,46043
+county,SD.Edmunds,Edmunds,46045
+county,SD.FallRiver,Fall River,46047
+county,SD.Faulk,Faulk,46049
+county,SD.Grant,Grant,46051
+county,SD.Gregory,Gregory,46053
+county,SD.Haakon,Haakon,46055
+county,SD.Hamlin,Hamlin,46057
+county,SD.Hand,Hand,46059
+county,SD.Hanson,Hanson,46061
+county,SD.Harding,Harding,46063
+county,SD.Hughes,Hughes,46065
+county,SD.Hutchinson,Hutchinson,46067
+county,SD.Hyde,Hyde,46069
+county,SD.Jackson,Jackson,46071
+county,SD.Jerauld,Jerauld,46073
+county,SD.Jones,Jones,46075
+county,SD.Kingsbury,Kingsbury,46077
+county,SD.Lake,Lake,46079
+county,SD.Lawrence,Lawrence,46081
+county,SD.Lincoln,Lincoln,46083
+county,SD.Lyman,Lyman,46085
+county,SD.Marshall,Marshall,46091
+county,SD.McCook,McCook,46087
+county,SD.McPherson,McPherson,46089
+county,SD.Meade,Meade,46093
+county,SD.Mellette,Mellette,46095
+county,SD.Miner,Miner,46097
+county,SD.Minnehaha,Minnehaha,46099
+county,SD.Moody,Moody,46101
+county,SD.OglalaLakota,,46102
+county,SD.Pennington,Pennington,46103
+county,SD.Perkins,Perkins,46105
+county,SD.Potter,Potter,46107
+county,SD.Roberts,Roberts,46109
+county,SD.Sanborn,Sanborn,46111
+county,SD.Spink,Spink,46115
+county,SD.Stanley,Stanley,46117
+county,SD.Sully,Sully,46119
+county,SD.Todd,Todd,46121
+county,SD.Tripp,Tripp,46123
+county,SD.Turner,Turner,46125
+county,SD.Union,Union,46127
+county,SD.Walworth,Walworth,46129
+county,SD.Yankton,Yankton,46135
+county,TN.Anderson,Anderson,47001
+county,TN.Bedford,Bedford,47003
+county,TN.Benton,Benton,47005
+county,TN.Bledsoe,Bledsoe,47007
+county,TN.Blount,Blount,47009
+county,TN.Bradley,Bradley,47011
+county,TN.Campbell,Campbell,47013
+county,TN.Cannon,Cannon,47015
+county,TN.Carroll,Carroll,47017
+county,TN.Carter,Carter,47019
+county,TN.Cheatham,Cheatham,47021
+county,TN.Chester,Chester,47023
+county,TN.Claiborne,Claiborne,47025
+county,TN.Clay,Clay,47027
+county,TN.Cocke,Cocke,47029
+county,TN.Coffee,Coffee,47031
+county,TN.Crockett,Crockett,47033
+county,TN.Cumberland,Cumberland,47035
+county,TN.Davidson,Davidson,47037
+county,TN.DeKalb,De Kalb,47041
+county,TN.Decatur,Decatur,47039
+county,TN.Dickson,Dickson,47043
+county,TN.Dyer,Dyer,47045
+county,TN.Fayette,Fayette,47047
+county,TN.Fentress,Fentress,47049
+county,TN.Franklin,Franklin,47051
+county,TN.Gibson,Gibson,47053
+county,TN.Giles,Giles,47055
+county,TN.Grainger,Grainger,47057
+county,TN.Greene,Greene,47059
+county,TN.Grundy,Grundy,47061
+county,TN.Hamblen,Hamblen,47063
+county,TN.Hamilton,Hamilton,47065
+county,TN.Hancock,Hancock,47067
+county,TN.Hardeman,Hardeman,47069
+county,TN.Hardin,Hardin,47071
+county,TN.Hawkins,Hawkins,47073
+county,TN.Haywood,Haywood,47075
+county,TN.Henderson,Henderson,47077
+county,TN.Henry,Henry,47079
+county,TN.Hickman,Hickman,47081
+county,TN.Houston,Houston,47083
+county,TN.Humphreys,Humphreys,47085
+county,TN.Jackson,Jackson,47087
+county,TN.Jefferson,Jefferson,47089
+county,TN.Johnson,Johnson,47091
+county,TN.Knox,Knox,47093
+county,TN.Lake,Lake,47095
+county,TN.Lauderdale,Lauderdale,47097
+county,TN.Lawrence,Lawrence,47099
+county,TN.Lewis,Lewis,47101
+county,TN.Lincoln,Lincoln,47103
+county,TN.Loudon,Loudon,47105
+county,TN.Macon,Macon,47111
+county,TN.Madison,Madison,47113
+county,TN.Marion,Marion,47115
+county,TN.Marshall,Marshall,47117
+county,TN.Maury,Maury,47119
+county,TN.McMinn,McMinn,47107
+county,TN.McNairy,McNairy,47109
+county,TN.Meigs,Meigs,47121
+county,TN.Monroe,Monroe,47123
+county,TN.Montgomery,Montgomery,47125
+county,TN.Moore,Moore,47127
+county,TN.Morgan,Morgan,47129
+county,TN.Obion,Obion,47131
+county,TN.Overton,Overton,47133
+county,TN.Perry,Perry,47135
+county,TN.Pickett,Pickett,47137
+county,TN.Polk,Polk,47139
+county,TN.Putnam,Putnam,47141
+county,TN.Rhea,Rhea,47143
+county,TN.Roane,Roane,47145
+county,TN.Robertson,Robertson,47147
+county,TN.Rutherford,Rutherford,47149
+county,TN.Scott,Scott,47151
+county,TN.Sequatchie,Sequatchie,47153
+county,TN.Sevier,Sevier,47155
+county,TN.Shelby,Shelby,47157
+county,TN.Smith,Smith,47159
+county,TN.Stewart,Stewart,47161
+county,TN.Sullivan,Sullivan,47163
+county,TN.Sumner,Sumner,47165
+county,TN.Tipton,Tipton,47167
+county,TN.Trousdale,Trousdale,47169
+county,TN.Unicoi,Unicoi,47171
+county,TN.Union,Union,47173
+county,TN.Warren,Warren,47177
+county,TN.Washington,Washington,47179
+county,TN.Wayne,Wayne,47181
+county,TN.Weakley,Weakley,47183
+county,TN.White,White,47185
+county,TN.Williamson,Williamson,47187
+county,TN.Wilson,Wilson,47189
+county,TX.Anderson,Anderson,48001
+county,TX.Andrews,Andrews,48003
+county,TX.Angelina,Angelina,48005
+county,TX.Aransas,Aransas,48007
+county,TX.Archer,Archer,48009
+county,TX.Armstrong,Armstrong,48011
+county,TX.Atascosa,Atascosa,48013
+county,TX.Austin,Austin,48015
+county,TX.Bailey,Bailey,48017
+county,TX.Bandera,Bandera,48019
+county,TX.Bastrop,Bastrop,48021
+county,TX.Baylor,Baylor,48023
+county,TX.Bee,Bee,48025
+county,TX.Bell,Bell,48027
+county,TX.Bexar,Bexar,48029
+county,TX.Blanco,Blanco,48031
+county,TX.Borden,Borden,48033
+county,TX.Bosque,Bosque,48035
+county,TX.Bowie,Bowie,48037
+county,TX.Brazoria,Brazoria,48039
+county,TX.Brazos,Brazos,48041
+county,TX.Brewster,Brewster,48043
+county,TX.Briscoe,Briscoe,48045
+county,TX.Brooks,Brooks,48047
+county,TX.Brown,Brown,48049
+county,TX.Burleson,Burleson,48051
+county,TX.Burnet,Burnet,48053
+county,TX.Caldwell,Caldwell,48055
+county,TX.Calhoun,Calhoun,48057
+county,TX.Callahan,Callahan,48059
+county,TX.Cameron,Cameron,48061
+county,TX.Camp,Camp,48063
+county,TX.Carson,Carson,48065
+county,TX.Cass,Cass,48067
+county,TX.Castro,Castro,48069
+county,TX.Chambers,Chambers,48071
+county,TX.Cherokee,Cherokee,48073
+county,TX.Childress,Childress,48075
+county,TX.Clay,Clay,48077
+county,TX.Coke,Coke,48081
+county,TX.Coleman,Coleman,48083
+county,TX.Collin,Collin,48085
+county,TX.Collingsworth,Collingsworth,48087
+county,TX.Colorado,Colorado,48089
+county,TX.Comal,Comal,48091
+county,TX.Comanche,Comanche,48093
+county,TX.Concho,Concho,48095
+county,TX.Cooke,Cooke,48097
+county,TX.Coryell,Coryell,48099
+county,TX.Cottle,Cottle,48101
+county,TX.Crane,Crane,48103
+county,TX.Crockett,Crockett,48105
+county,TX.Crosby,Crosby,48107
+county,TX.Dallam,Dallam,48111
+county,TX.Dallas,Dallas,48113
+county,TX.Dawson,Dawson,48115
+county,TX.DeWitt,De Witt,48123
+county,TX.DeafSmith,Deaf Smith,48117
+county,TX.Delta,Delta,48119
+county,TX.Denton,Denton,48121
+county,TX.Dickens,Dickens,48125
+county,TX.Dimmit,Dimmit,48127
+county,TX.Donley,Donley,48129
+county,TX.Duval,Duval,48131
+county,TX.Eastland,Eastland,48133
+county,TX.Ector,Ector,48135
+county,TX.Edwards,Edwards,48137
+county,TX.ElPaso,El Paso,48141
+county,TX.Ellis,Ellis,48139
+county,TX.Erath,Erath,48143
+county,TX.Falls,Falls,48145
+county,TX.Fannin,Fannin,48147
+county,TX.Fayette,Fayette,48149
+county,TX.Fisher,Fisher,48151
+county,TX.Floyd,Floyd,48153
+county,TX.Foard,Foard,48155
+county,TX.FortBend,Fort Bend,48157
+county,TX.Franklin,Franklin,48159
+county,TX.Freestone,Freestone,48161
+county,TX.Frio,Frio,48163
+county,TX.Gaines,Gaines,48165
+county,TX.Galveston,Galveston,48167
+county,TX.Garza,Garza,48169
+county,TX.Gillespie,Gillespie,48171
+county,TX.Goliad,Goliad,48175
+county,TX.Gonzales,Gonzales,48177
+county,TX.Gray,Gray,48179
+county,TX.Grayson,Grayson,48181
+county,TX.Gregg,Gregg,48183
+county,TX.Grimes,Grimes,48185
+county,TX.Guadalupe,Guadalupe,48187
+county,TX.Hale,Hale,48189
+county,TX.Hall,Hall,48191
+county,TX.Hamilton,Hamilton,48193
+county,TX.Hansford,Hansford,48195
+county,TX.Hardeman,Hardeman,48197
+county,TX.Hardin,Hardin,48199
+county,TX.Harris,Harris,48201
+county,TX.Harrison,Harrison,48203
+county,TX.Hartley,Hartley,48205
+county,TX.Haskell,Haskell,48207
+county,TX.Hays,Hays,48209
+county,TX.Hemphill,Hemphill,48211
+county,TX.Henderson,Henderson,48213
+county,TX.Hidalgo,Hidalgo,48215
+county,TX.Hill,Hill,48217
+county,TX.Hockley,Hockley,48219
+county,TX.Hood,Hood,48221
+county,TX.Hopkins,Hopkins,48223
+county,TX.Houston,Houston,48225
+county,TX.Howard,Howard,48227
+county,TX.Hudspeth,Hudspeth,48229
+county,TX.Hunt,Hunt,48231
+county,TX.Hutchinson,Hutchinson,48233
+county,TX.Irion,Irion,48235
+county,TX.Jack,Jack,48237
+county,TX.Jackson,Jackson,48239
+county,TX.Jasper,Jasper,48241
+county,TX.JeffDavis,Jeff Davis,48243
+county,TX.Jefferson,Jefferson,48245
+county,TX.JimWells,Jim Wells,48249
+county,TX.Johnson,Johnson,48251
+county,TX.Jones,Jones,48253
+county,TX.Karnes,Karnes,48255
+county,TX.Kaufman,Kaufman,48257
+county,TX.Kendall,Kendall,48259
+county,TX.Kent,Kent,48263
+county,TX.Kerr,Kerr,48265
+county,TX.Kimble,Kimble,48267
+county,TX.King,King,48269
+county,TX.Kinney,Kinney,48271
+county,TX.Kleberg,Kleberg,48273
+county,TX.Knox,Knox,48275
+county,TX.LaSalle,La Salle,48283
+county,TX.Lamar,Lamar,48277
+county,TX.Lamb,Lamb,48279
+county,TX.Lampasas,Lampasas,48281
+county,TX.Lavaca,Lavaca,48285
+county,TX.Lee,Lee,48287
+county,TX.Leon,Leon,48289
+county,TX.Liberty,Liberty,48291
+county,TX.Limestone,Limestone,48293
+county,TX.Lipscomb,Lipscomb,48295
+county,TX.LiveOak,Live Oak,48297
+county,TX.Llano,Llano,48299
+county,TX.Lubbock,Lubbock,48303
+county,TX.Lynn,Lynn,48305
+county,TX.Madison,Madison,48313
+county,TX.Marion,Marion,48315
+county,TX.Martin,Martin,48317
+county,TX.Mason,Mason,48319
+county,TX.Matagorda,Matagorda,48321
+county,TX.Maverick,Maverick,48323
+county,TX.McCulloch,McCulloch,48307
+county,TX.McLennan,McLennan,48309
+county,TX.McMullen,McMullen,48311
+county,TX.Medina,Medina,48325
+county,TX.Menard,Menard,48327
+county,TX.Midland,Midland,48329
+county,TX.Milam,Milam,48331
+county,TX.Mills,Mills,48333
+county,TX.Mitchell,Mitchell,48335
+county,TX.Montague,Montague,48337
+county,TX.Montgomery,Montgomery,48339
+county,TX.Moore,Moore,48341
+county,TX.Morris,Morris,48343
+county,TX.Motley,Motley,48345
+county,TX.Nacogdoches,Nacogdoches,48347
+county,TX.Navarro,Navarro,48349
+county,TX.Newton,Newton,48351
+county,TX.Nolan,Nolan,48353
+county,TX.Nueces,Nueces,48355
+county,TX.Ochiltree,Ochiltree,48357
+county,TX.Oldham,Oldham,48359
+county,TX.Orange,Orange,48361
+county,TX.PaloPinto,Palo Pinto,48363
+county,TX.Panola,Panola,48365
+county,TX.Parker,Parker,48367
+county,TX.Parmer,Parmer,48369
+county,TX.Pecos,Pecos,48371
+county,TX.Polk,Polk,48373
+county,TX.Potter,Potter,48375
+county,TX.Presidio,Presidio,48377
+county,TX.Rains,Rains,48379
+county,TX.Randall,Randall,48381
+county,TX.Reagan,Reagan,48383
+county,TX.Real,Real,48385
+county,TX.RedRiver,Red River,48387
+county,TX.Reeves,Reeves,48389
+county,TX.Refugio,Refugio,48391
+county,TX.Roberts,Roberts,48393
+county,TX.Robertson,Robertson,48395
+county,TX.Rockwall,Rockwall,48397
+county,TX.Runnels,Runnels,48399
+county,TX.Rusk,Rusk,48401
+county,TX.Sabine,Sabine,48403
+county,TX.SanAugustine,San Augustine,48405
+county,TX.SanJacinto,San Jacinto,48407
+county,TX.SanPatricio,San Patricio,48409
+county,TX.SanSaba,San Saba,48411
+county,TX.Schleicher,Schleicher,48413
+county,TX.Scurry,Scurry,48415
+county,TX.Shackelford,Shackelford,48417
+county,TX.Shelby,Shelby,48419
+county,TX.Sherman,Sherman,48421
+county,TX.Smith,Smith,48423
+county,TX.Somervell,Somervell,48425
+county,TX.Starr,Starr,48427
+county,TX.Stephens,Stephens,48429
+county,TX.Sterling,Sterling,48431
+county,TX.Stonewall,Stonewall,48433
+county,TX.Sutton,Sutton,48435
+county,TX.Swisher,Swisher,48437
+county,TX.Tarrant,Tarrant,48439
+county,TX.Taylor,Taylor,48441
+county,TX.Terrell,Terrell,48443
+county,TX.Terry,Terry,48445
+county,TX.Throckmorton,Throckmorton,48447
+county,TX.Titus,Titus,48449
+county,TX.TomGreen,Tom Green,48451
+county,TX.Travis,Travis,48453
+county,TX.Trinity,Trinity,48455
+county,TX.Tyler,Tyler,48457
+county,TX.Upshur,Upshur,48459
+county,TX.Upton,Upton,48461
+county,TX.Uvalde,Uvalde,48463
+county,TX.ValVerde,Val Verde,48465
+county,TX.VanZandt,Van Zandt,48467
+county,TX.Victoria,Victoria,48469
+county,TX.Walker,Walker,48471
+county,TX.Waller,Waller,48473
+county,TX.Ward,Ward,48475
+county,TX.Washington,Washington,48477
+county,TX.Webb,Webb,48479
+county,TX.Wharton,Wharton,48481
+county,TX.Wheeler,Wheeler,48483
+county,TX.Wichita,Wichita,48485
+county,TX.Wilbarger,Wilbarger,48487
+county,TX.Willacy,Willacy,48489
+county,TX.Williamson,Williamson,48491
+county,TX.Wilson,Wilson,48493
+county,TX.Winkler,Winkler,48495
+county,TX.Wise,Wise,48497
+county,TX.Wood,Wood,48499
+county,TX.Yoakum,Yoakum,48501
+county,TX.Young,Young,48503
+county,TX.Zapata,Zapata,48505
+county,TX.Zavala,Zavala,48507
+county,UT.Beaver,Beaver,49001
+county,UT.BoxElder,Box Elder,49003
+county,UT.Cache,Cache,49005
+county,UT.Carbon,Carbon,49007
+county,UT.Davis,Davis,49011
+county,UT.Duchesne,Duchesne,49013
+county,UT.Emery,Emery,49015
+county,UT.Garfield,Garfield,49017
+county,UT.Grand,Grand,49019
+county,UT.Iron,Iron,49021
+county,UT.Juab,Juab,49023
+county,UT.Kane,Kane,49025
+county,UT.Millard,Millard,49027
+county,UT.Morgan,Morgan,49029
+county,UT.Piute,Piute,49031
+county,UT.Rich,Rich,49033
+county,UT.SaltLake,Salt Lake,49035
+county,UT.SanJuan,San Juan,49037
+county,UT.Sanpete,Sanpete,49039
+county,UT.Sevier,Sevier,49041
+county,UT.Summit,Summit,49043
+county,UT.Tooele,Tooele,49045
+county,UT.Uintah,Uintah,49047
+county,UT.Utah,Utah,49049
+county,UT.Wasatch,Wasatch,49051
+county,UT.Washington,Washington,49053
+county,UT.Wayne,Wayne,49055
+county,UT.Weber,Weber,49057
+county,VT.Addison,Addison,50001
+county,VT.Bennington,Bennington,50003
+county,VT.Caledonia,Caledonia,50005
+county,VT.Chittenden,Chittenden,50007
+county,VT.Essex,Essex,50009
+county,VT.Franklin,Franklin,50011
+county,VT.GrandIsle,Grand Isle,50013
+county,VT.Lamoille,Lamoille,50015
+county,VT.Orange,Orange,50017
+county,VT.Orleans,Orleans,50019
+county,VT.Rutland,Rutland,50021
+county,VT.Washington,Washington,50023
+county,VT.Windham,Windham,50025
+county,VT.Windsor,Windsor,50027
+county,VA.Accomack,Accomack,51001
+county,VA.Albemarle,Albemarle,51003
+county,VA.Alexandria(City),Alexandria City,51510
+county,VA.Alleghany,Alleghany,51005
+county,VA.Amelia,Amelia,51007
+county,VA.Amherst,Amherst,51009
+county,VA.Appomattox,Appomattox,51011
+county,VA.Arlington,Arlington,51013
+county,VA.Augusta,Augusta,51015
+county,VA.Bath,Bath,51017
+county,VA.Bedford,Bedford,51019
+county,VA.Bland,Bland,51021
+county,VA.Botetourt,Botetourt,51023
+county,VA.Bristol(City),Bristol City,51520
+county,VA.Brunswick,Brunswick,51025
+county,VA.Buchanan,Buchanan,51027
+county,VA.Buckingham,Buckingham,51029
+county,VA.BuenaVista(City),Buena Vista City,51530
+county,VA.Campbell,Campbell,51031
+county,VA.Caroline,Caroline,51033
+county,VA.Carroll,Carroll,51035
+county,VA.CharlesCity,Charles City,51036
+county,VA.Charlotte,Charlotte,51037
+county,VA.Charlottesville(City),Charlottesville City,51540
+county,VA.Chesapeake(City),Chesapeake City,51550
+county,VA.Chesterfield,Chesterfield,51041
+county,VA.Clarke,Clarke,51043
+county,VA.ColonialHeights(City),Colonial Heights Cit,51570
+county,VA.Covington(City),Covington City,51580
+county,VA.Craig,Craig,51045
+county,VA.Culpeper,Culpeper,51047
+county,VA.Cumberland,Cumberland,51049
+county,VA.Danville(City),Danville City,51590
+county,VA.Dickenson,Dickenson,51051
+county,VA.Dinwiddie,Dinwiddie,51053
+county,VA.Emporia(City),Emporia City,51595
+county,VA.Essex,Essex,51057
+county,VA.Fairfax(City),Fairfax City,51600
+county,VA.Fairfax,Fairfax,51059
+county,VA.FallsChurch(City),Falls Church City,51610
+county,VA.Fauquier,Fauquier,51061
+county,VA.Floyd,Floyd,51063
+county,VA.Fluvanna,Fluvanna,51065
+county,VA.Franklin(City),Franklin City,51620
+county,VA.Franklin,Franklin,51067
+county,VA.Frederick,Frederick,51069
+county,VA.Fredericksburg(City),Fredericksburg City,51630
+county,VA.Galax(City),Galax City,51640
+county,VA.Giles,Giles,51071
+county,VA.Gloucester,Gloucester,51073
+county,VA.Goochland,Goochland,51075
+county,VA.Grayson,Grayson,51077
+county,VA.Greene,Greene,51079
+county,VA.Greensville,Greensville,51081
+county,VA.Halifax,Halifax,51083
+county,VA.Hampton(City),Hampton City,51650
+county,VA.Hanover,Hanover,51085
+county,VA.Harrisonburg(City),Harrisonburg City,51660
+county,VA.Henrico,Henrico,51087
+county,VA.Henry,Henry,51089
+county,VA.Highland,Highland,51091
+county,VA.Hopewell(City),Hopewell City,51670
+county,VA.IsleofWight,Isle of Wight,51093
+county,VA.JamesCity,James City,51095
+county,VA.KingGeorge,King George,51099
+county,VA.KingWilliam,King William,51101
+county,VA.KingandQueen,King and Queen,51097
+county,VA.Lancaster,Lancaster,51103
+county,VA.Lee,Lee,51105
+county,VA.Lexington(City),Lexington City,51678
+county,VA.Loudoun,Loudoun,51107
+county,VA.Louisa,Louisa,51109
+county,VA.Lunenburg,Lunenburg,51111
+county,VA.Lynchburg(City),Lynchburg City,51680
+county,VA.Madison,Madison,51113
+county,VA.Manassas(City),Manassas City,51683
+county,VA.ManassasPark(City),Manassas Park City,51685
+county,VA.Martinsville(City),Martinsville City,51690
+county,VA.Mathews,Mathews,51115
+county,VA.Mecklenburg,Mecklenburg,51117
+county,VA.Middlesex,Middlesex,51119
+county,VA.Montgomery,Montgomery,51121
+county,VA.Nelson,Nelson,51125
+county,VA.NewKent,New Kent,51127
+county,VA.NewportNews(City),Newport News City,51700
+county,VA.Norfolk(City),Norfolk City,51710
+county,VA.Northampton,Northampton,51131
+county,VA.Northumberland,Northumberland,51133
+county,VA.Norton(City),Norton City,51720
+county,VA.Nottoway,Nottoway,51135
+county,VA.Orange,Orange,51137
+county,VA.Page,Page,51139
+county,VA.Patrick,Patrick,51141
+county,VA.Petersburg(City),Petersburg City,51730
+county,VA.Pittsylvania,Pittsylvania,51143
+county,VA.Poquoson(City),Poquoson City,51735
+county,VA.Portsmouth(City),Portsmouth City,51740
+county,VA.Powhatan,Powhatan,51145
+county,VA.PrinceEdward,Prince Edward,51147
+county,VA.PrinceGeorge,Prince George,51149
+county,VA.PrinceWilliam,Prince William,51153
+county,VA.Pulaski,Pulaski,51155
+county,VA.Radford(City),Radford City,51750
+county,VA.Rappahannock,Rappahannock,51157
+county,VA.Richmond(City),Richmond City,51760
+county,VA.Richmond,Richmond,51159
+county,VA.Roanoke(City),Roanoke City,51770
+county,VA.Roanoke,Roanoke,51161
+county,VA.Rockbridge,Rockbridge,51163
+county,VA.Rockingham,Rockingham,51165
+county,VA.Russell,Russell,51167
+county,VA.Salem(City),Salem City,51775
+county,VA.Scott,Scott,51169
+county,VA.Shenandoah,Shenandoah,51171
+county,VA.Smyth,Smyth,51173
+county,VA.Southampton,Southampton,51175
+county,VA.Spotsylvania,Spotsylvania,51177
+county,VA.Stafford,Stafford,51179
+county,VA.Staunton(City),Staunton City,51790
+county,VA.Suffolk(City),Suffolk City,51800
+county,VA.Surry,Surry,51181
+county,VA.Sussex,Sussex,51183
+county,VA.Tazewell,Tazewell,51185
+county,VA.VirginiaBeach(City),Virginia Beach City,51810
+county,VA.Warren,Warren,51187
+county,VA.Washington,Washington,51191
+county,VA.Waynesboro(City),Waynesboro City,51820
+county,VA.Westmoreland,Westmoreland,51193
+county,VA.Williamsburg(City),Williamsburg City,51830
+county,VA.Winchester(City),Winchester City,51840
+county,VA.Wise,Wise,51195
+county,VA.Wythe,Wythe,51197
+county,VA.York,York,51199
+county,WA.Adams,Adams,53001
+county,WA.Asotin,Asotin,53003
+county,WA.Benton,Benton,53005
+county,WA.Chelan,Chelan,53007
+county,WA.Clallam,Clallam,53009
+county,WA.Clark,Clark,53011
+county,WA.Columbia,Columbia,53013
+county,WA.Cowlitz,Cowlitz,53015
+county,WA.Douglas,Douglas,53017
+county,WA.Ferry,Ferry,53019
+county,WA.Franklin,Franklin,53021
+county,WA.Garfield,Garfield,53023
+county,WA.Grant,Grant,53025
+county,WA.GraysHarbor,Grays Harbor,53027
+county,WA.Island,Island,53029
+county,WA.Jefferson,Jefferson,53031
+county,WA.King,King,53033
+county,WA.Kitsap,Kitsap,53035
+county,WA.Kittitas,Kittitas,53037
+county,WA.Klickitat,Klickitat,53039
+county,WA.Lewis,Lewis,53041
+county,WA.Lincoln,Lincoln,53043
+county,WA.Mason,Mason,53045
+county,WA.Okanogan,Okanogan,53047
+county,WA.Pacific,Pacific,53049
+county,WA.PendOreille,Pend Oreille,53051
+county,WA.Pierce,Pierce,53053
+county,WA.SanJuan,San Juan,53055
+county,WA.Skagit,Skagit,53057
+county,WA.Skamania,Skamania,53059
+county,WA.Snohomish,Snohomish,53061
+county,WA.Spokane,Spokane,53063
+county,WA.Stevens,Stevens,53065
+county,WA.Thurston,Thurston,53067
+county,WA.Wahkiakum,Wahkiakum,53069
+county,WA.WallaWalla,Walla Walla,53071
+county,WA.Whatcom,Whatcom,53073
+county,WA.Whitman,Whitman,53075
+county,WA.Yakima,Yakima,53077
+county,WV.Barbour,Barbour,54001
+county,WV.Berkeley,Berkeley,54003
+county,WV.Boone,Boone,54005
+county,WV.Braxton,Braxton,54007
+county,WV.Brooke,Brooke,54009
+county,WV.Cabell,Cabell,54011
+county,WV.Calhoun,Calhoun,54013
+county,WV.Clay,Clay,54015
+county,WV.Doddridge,Doddridge,54017
+county,WV.Fayette,Fayette,54019
+county,WV.Gilmer,Gilmer,54021
+county,WV.Grant,Grant,54023
+county,WV.Greenbrier,Greenbrier,54025
+county,WV.Hampshire,Hampshire,54027
+county,WV.Hancock,Hancock,54029
+county,WV.Hardy,Hardy,54031
+county,WV.Harrison,Harrison,54033
+county,WV.Jackson,Jackson,54035
+county,WV.Jefferson,Jefferson,54037
+county,WV.Kanawha,Kanawha,54039
+county,WV.Lewis,Lewis,54041
+county,WV.Lincoln,Lincoln,54043
+county,WV.Logan,Logan,54045
+county,WV.Marion,Marion,54049
+county,WV.Marshall,Marshall,54051
+county,WV.Mason,Mason,54053
+county,WV.McDowell,McDowell,54047
+county,WV.Mercer,Mercer,54055
+county,WV.Mineral,Mineral,54057
+county,WV.Mingo,Mingo,54059
+county,WV.Monongalia,Monongalia,54061
+county,WV.Monroe,Monroe,54063
+county,WV.Morgan,Morgan,54065
+county,WV.Nicholas,Nicholas,54067
+county,WV.Ohio,Ohio,54069
+county,WV.Pendleton,Pendleton,54071
+county,WV.Pleasants,Pleasants,54073
+county,WV.Pocahontas,Pocahontas,54075
+county,WV.Preston,Preston,54077
+county,WV.Putnam,Putnam,54079
+county,WV.Raleigh,Raleigh,54081
+county,WV.Randolph,Randolph,54083
+county,WV.Ritchie,Ritchie,54085
+county,WV.Roane,Roane,54087
+county,WV.Summers,Summers,54089
+county,WV.Taylor,Taylor,54091
+county,WV.Tucker,Tucker,54093
+county,WV.Tyler,Tyler,54095
+county,WV.Upshur,Upshur,54097
+county,WV.Wayne,Wayne,54099
+county,WV.Webster,Webster,54101
+county,WV.Wetzel,Wetzel,54103
+county,WV.Wirt,Wirt,54105
+county,WV.Wood,Wood,54107
+county,WV.Wyoming,Wyoming,54109
+county,WI.Adams,Adams,55001
+county,WI.Ashland,Ashland,55003
+county,WI.Barron,Barron,55005
+county,WI.Bayfield,Bayfield,55007
+county,WI.Brown,Brown,55009
+county,WI.Buffalo,Buffalo,55011
+county,WI.Burnett,Burnett,55013
+county,WI.Calumet,Calumet,55015
+county,WI.Chippewa,Chippewa,55017
+county,WI.Clark,Clark,55019
+county,WI.Columbia,Columbia,55021
+county,WI.Crawford,Crawford,55023
+county,WI.Dane,Dane,55025
+county,WI.Dodge,Dodge,55027
+county,WI.Door,Door,55029
+county,WI.Douglas,Douglas,55031
+county,WI.Dunn,Dunn,55033
+county,WI.EauClaire,Eau Claire,55035
+county,WI.Florence,Florence,55037
+county,WI.FondduLac,Fond du Lac,55039
+county,WI.Forest,Forest,55041
+county,WI.Grant,Grant,55043
+county,WI.Green,Green,55045
+county,WI.GreenLake,Green Lake,55047
+county,WI.Iowa,Iowa,55049
+county,WI.Iron,Iron,55051
+county,WI.Jackson,Jackson,55053
+county,WI.Jefferson,Jefferson,55055
+county,WI.Juneau,Juneau,55057
+county,WI.Kenosha,Kenosha,55059
+county,WI.Kewaunee,Kewaunee,55061
+county,WI.LaCrosse,La Crosse,55063
+county,WI.Lafayette,Lafayette,55065
+county,WI.Langlade,Langlade,55067
+county,WI.Lincoln,Lincoln,55069
+county,WI.Manitowoc,Manitowoc,55071
+county,WI.Marathon,Marathon,55073
+county,WI.Marinette,Marinette,55075
+county,WI.Marquette,Marquette,55077
+county,WI.Menominee,Menominee,55078
+county,WI.Milwaukee,Milwaukee,55079
+county,WI.Monroe,Monroe,55081
+county,WI.Oconto,Oconto,55083
+county,WI.Oneida,Oneida,55085
+county,WI.Outagamie,Outagamie,55087
+county,WI.Ozaukee,Ozaukee,55089
+county,WI.Pepin,Pepin,55091
+county,WI.Pierce,Pierce,55093
+county,WI.Polk,Polk,55095
+county,WI.Portage,Portage,55097
+county,WI.Price,Price,55099
+county,WI.Racine,Racine,55101
+county,WI.Richland,Richland,55103
+county,WI.Rock,Rock,55105
+county,WI.Rusk,Rusk,55107
+county,WI.Sauk,Sauk,55111
+county,WI.Sawyer,Sawyer,55113
+county,WI.Shawano,Shawano,55115
+county,WI.Sheboygan,Sheboygan,55117
+county,WI.StCroix,St Croix,55109
+county,WI.Taylor,Taylor,55119
+county,WI.Trempealeau,Trempealeau,55121
+county,WI.Vernon,Vernon,55123
+county,WI.Vilas,Vilas,55125
+county,WI.Walworth,Walworth,55127
+county,WI.Washburn,Washburn,55129
+county,WI.Washington,Washington,55131
+county,WI.Waukesha,Waukesha,55133
+county,WI.Waupaca,Waupaca,55135
+county,WI.Waushara,Waushara,55137
+county,WI.Winnebago,Winnebago,55139
+county,WI.Wood,Wood,55141
+county,WY.Albany,Albany,56001
+county,WY.BigHorn,Big Horn,56003
+county,WY.Campbell,Campbell,56005
+county,WY.Carbon,Carbon,56007
+county,WY.Converse,Converse,56009
+county,WY.Crook,Crook,56011
+county,WY.Fremont,Fremont,56013
+county,WY.Goshen,Goshen,56015
+county,WY.HotSprings,Hot Springs,56017
+county,WY.Johnson,Johnson,56019
+county,WY.Laramie,Laramie,56021
+county,WY.Lincoln,Lincoln,56023
+county,WY.Natrona,Natrona,56025
+county,WY.Niobrara,Niobrara,56027
+county,WY.Park,Park,56029
+county,WY.Platte,Platte,56031
+county,WY.Sheridan,Sheridan,56033
+county,WY.Sublette,Sublette,56035
+county,WY.Sweetwater,Sweetwater,56037
+county,WY.Teton,Teton,56039
+county,WY.Uinta,Uinta,56041
+county,WY.Washakie,Washakie,56043
+county,WY.Weston,Weston,56045
+county,AL.DeKalb,De Kalb,01049
+county,AL.St.Clair,St Clair,01115
+county,AK.Dillingham,Dillingham,02070
+county,AK.Haines,Haines,02100
+county,AK.KenaiPeninsulaBorough,Kenai Peninsula,02122
+county,AK.PetersburgBorough,,02195
+county,AK.PrinceofWales-HyderCensusArea,,02198
+county,AR.St.Francis,St Francis,05123
+county,CT.Montgomery,Fairfield,09001
+county,CT.Kent,Tolland,09013
+county,DC.PrinceGeorge's,,11000
+county,DC.Arlington,,11000
+county,FL.DeSoto,De Soto,12027
+county,FL.St.Johns,St Johns,12109
+county,FL.St.Lucie,St Lucie,12111
+county,GA.Crawford,Crawford,13079
+county,GA.DeKalb,De Kalb,13089
+county,GA.Echols,Echols,13101
+county,GA.Schley,Schley,13249
+county,IL.DeKalb,De Kalb,17037
+county,IL.St.Clair,St Clair,17163
+county,IN.LaGrange,La Grange,18087
+county,IN.LaPorte,La Porte,18091
+county,IN.St.Joseph,St Joseph,18141
+county,IA.O'Brien,O Brien,19141
+county,KY.Leslie,Leslie,21131
+county,LA.AcadiaParish,Acadia,22001
+county,LA.AllenParish,Allen,22003
+county,LA.AscensionParish,Ascension,22005
+county,LA.AssumptionParish,Assumption,22007
+county,LA.AvoyellesParish,Avoyelles,22009
+county,LA.BeauregardParish,Beauregard,22011
+county,LA.BienvilleParish,Bienville,22013
+county,LA.BossierParish,Bossier,22015
+county,LA.CaddoParish,Caddo,22017
+county,LA.CalcasieuParish,Calcasieu,22019
+county,LA.CaldwellParish,Caldwell,22021
+county,LA.CatahoulaParish,Catahoula,22025
+county,LA.ClaiborneParish,Claiborne,22027
+county,LA.ConcordiaParish,Concordia,22029
+county,LA.DeSotoParish,De Soto,22031
+county,LA.EastBatonRougeParish,East Baton Rouge,22033
+county,LA.EastCarrollParish,East Carroll,22035
+county,LA.EastFelicianaParish,East Feliciana,22037
+county,LA.EvangelineParish,Evangeline,22039
+county,LA.FranklinParish,Franklin,22041
+county,LA.GrantParish,Grant,22043
+county,LA.IberiaParish,Iberia,22045
+county,LA.IbervilleParish,Iberville,22047
+county,LA.JacksonParish,Jackson,22049
+county,LA.JeffersonParish,Jefferson,22051
+county,LA.JeffersonDavisParish,Jefferson Davis,22053
+county,LA.LafayetteParish,Lafayette,22055
+county,LA.LafourcheParish,Lafourche,22057
+county,LA.LaSalleParish,La Salle,22059
+county,LA.LincolnParish,Lincoln,22061
+county,LA.LivingstonParish,Livingston,22063
+county,LA.MadisonParish,Madison,22065
+county,LA.MorehouseParish,Morehouse,22067
+county,LA.NatchitochesParish,Natchitoches,22069
+county,LA.OrleansParish,Orleans,22071
+county,LA.OuachitaParish,Ouachita,22073
+county,LA.PlaqueminesParish,Plaquemines,22075
+county,LA.PointeCoupeeParish,Pointe Coupee,22077
+county,LA.RapidesParish,Rapides,22079
+county,LA.RichlandParish,Richland,22083
+county,LA.SabineParish,Sabine,22085
+county,LA.St.BernardParish,St Bernard,22087
+county,LA.St.CharlesParish,St Charles,22089
+county,LA.St.JamesParish,St James,22093
+county,LA.St.JohntheBaptistParish,St John the Baptist,22095
+county,LA.St.LandryParish,St Landry,22097
+county,LA.St.MartinParish,St Martin,22099
+county,LA.St.MaryParish,St Mary,22101
+county,LA.St.TammanyParish,St Tammany,22103
+county,LA.TangipahoaParish,Tangipahoa,22105
+county,LA.TensasParish,Tensas,22107
+county,LA.TerrebonneParish,Terrebonne,22109
+county,LA.UnionParish,Union,22111
+county,LA.VermilionParish,Vermilion,22113
+county,LA.VernonParish,Vernon,22115
+county,LA.WashingtonParish,Washington,22117
+county,LA.WebsterParish,Webster,22119
+county,LA.WestBatonRougeParish,West Baton Rouge,22121
+county,LA.WestFelicianaParish,West Feliciana,22125
+county,LA.WinnParish,Winn,22127
+county,MD.QueenAnne's,Queen Annes,24035
+county,MD.St.Mary's,St Marys,24037
+county,MI.St.Clair,St Clair,26147
+county,MI.St.Joseph,St Joseph,26149
+county,MN.LacquiParle,Lac qui Parle,27073
+county,MN.St.Louis,St Louis,27137
+county,MO.DeKalb,De Kalb,29063
+county,MO.St.Charles,St Charles,29183
+county,MO.St.Clair,St Clair,29185
+county,MO.Ste.Genevieve,Ste. Genevieve,29186
+county,MO.St.Francois,St Francois,29187
+county,MO.St.Louis,St Louis,29189
+county,MT.Garfield,Garfield,30033
+county,NE.Loup,Loup,31115
+county,NM.DoñaAna,Dona Ana,35013
+county,NY.St.Lawrence,St Lawrence,36089
+county,ND.LaMoure,La Moure,38045
+county,NJ.Northampton,Northampton,42095
+county,SD.Ziebach,Ziebach,46137
+county,TX.JimHogg,Jim Hogg,48247
+county,WI.St.Croix,St Croix,55109
+county,AK.AleutiansEastBorough,Aleutians East,02013
+county,AK.AleutiansWestCensusArea,Aleutians West,02016
+county,AK.AnchorageMunicipality,Anchorage,02020
+county,AK.BethelCensusArea,Bethel,02050
+county,AK.BristolBayBorough,Bristol Bay,02060
+county,AK.DillinghamCensusArea,Dillingham,02070
+county,AK.FairbanksNorthStarBorough,Fairbanks North Star,02090
+county,AK.HainesBorough,Haines,02100
+county,AK.JuneauCityandBorough,Juneau,02110
+county,AK.KetchikanGatewayBorough,Ketchikan Gateway,02130
+county,AK.KodiakIslandBorough,Kodiak Island,02150
+county,AK.LakeandPeninsulaBorough,Lake and Peninsula,02164
+county,AK.Matanuska-SusitnaBorough,Matanuska-Susitna,02170
+county,AK.NomeCensusArea,Nome,02180
+county,AK.NorthSlopeBorough,North Slope,02185
+county,AK.NorthwestArcticBorough,Northwest Arctic,02188
+county,AK.SitkaCityandBorough,Sitka,02220
+county,AK.SoutheastFairbanksCensusArea,Southeast Fairbanks,02240
+county,AK.Valdez-CordovaCensusArea,Valdez-Cordova,02261
+county,AK.WadeHamptonCensusArea,Wade Hampton,02270
+county,AK.Yukon-KoyukukCensusArea,Yukon-Koyukuk,02290
+county,DC.DistrictofColumbia,Washington,11001
+county,GA.Wheeler,Wheeler,13309
+county,HI.Kalawao,,15005
+county,KY.Clinton,Clinton,21053
+county,KY.Knott,Knott,21119
+county,LA.CameronParish,Cameron,22023
+county,LA.RedRiverParish,Red River,22081
+county,LA.St.HelenaParish,St Helena,22091
+county,LA.WestCarrollParish,West Carroll,22123
+county,MD.Baltimorecity,Baltimore City,24510
+county,MO.St.Louiscity,St Louis City,29510
+county,NE.Arthur,Arthur,31005
+county,NV.CarsonCity,Carson City,32510
+county,NM.Do?aAna,Dona Ana,35013
+county,ND.Oliver,Oliver,38065
+county,SD.Shannon,Shannon,46113
+county,TN.VanBuren,Van Buren,47175
+county,TX.Cochran,Cochran,48079
+county,TX.Culberson,Culberson,48109
+county,TX.Glasscock,Glasscock,48173
+county,TX.Kenedy,Kenedy,48261
+county,TX.Loving,Loving,48301
+county,UT.Daggett,Daggett,49009
+county,VA.Alexandriacity,Alexandria City,51510
+county,VA.Bristolcity,Bristol City,51520
+county,VA.BuenaVistacity,Buena Vista City,51530
+county,VA.Charlottesvillecity,Charlottesville City,51540
+county,VA.Chesapeakecity,Chesapeake City,51550
+county,VA.ColonialHeightscity,Colonial Heights Cit,51570
+county,VA.Covingtoncity,Covington City,51580
+county,VA.Danvillecity,Danville City,51590
+county,VA.Emporiacity,Emporia City,51595
+county,VA.Fairfaxcity,Fairfax City,51600
+county,VA.FallsChurchcity,Falls Church City,51610
+county,VA.Franklincity,Franklin City,51620
+county,VA.Fredericksburgcity,Fredericksburg City,51630
+county,VA.Galaxcity,Galax City,51640
+county,VA.Hamptoncity,Hampton City,51650
+county,VA.Harrisonburgcity,Harrisonburg City,51660
+county,VA.Hopewellcity,Hopewell City,51670
+county,VA.Lexingtoncity,Lexington City,51678
+county,VA.Lynchburgcity,Lynchburg City,51680
+county,VA.Manassascity,Manassas City,51683
+county,VA.ManassasParkcity,Manassas Park City,51685
+county,VA.Martinsvillecity,Martinsville City,51690
+county,VA.NewportNewscity,Newport News City,51700
+county,VA.Norfolkcity,Norfolk City,51710
+county,VA.Nortoncity,Norton City,51720
+county,VA.Petersburgcity,Petersburg City,51730
+county,VA.Poquosoncity,Poquoson City,51735
+county,VA.Portsmouthcity,Portsmouth City,51740
+county,VA.Radfordcity,Radford City,51750
+county,VA.Richmondcity,Richmond City,51760
+county,VA.Roanokecity,Roanoke City,51770
+county,VA.Salemcity,Salem City,51775
+county,VA.Stauntoncity,Staunton City,51790
+county,VA.Suffolkcity,Suffolk City,51800
+county,VA.VirginiaBeachcity,Virginia Beach City,51810
+county,VA.Waynesborocity,Waynesboro City,51820
+county,VA.Williamsburgcity,Williamsburg City,51830
+county,VA.Winchestercity,Winchester City,51840

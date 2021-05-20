@@ -1,4 +1,4 @@
-# CARD
+# MODELS
 
 ## ℹ️ Model Overview
 
@@ -55,7 +55,7 @@ spacy train configs/en_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 | f  |  0.99 |  0.98 |     1 |  0.99 |
 
 
-## :dart: Intended use
+## 🎯 Intended use
 
 `en_ent_uspatent*` have been specifically trained on US patents. The model's performance are not guaranteed out of this scope.
 

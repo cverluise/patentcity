@@ -1,29 +1,34 @@
-# Evaluation
+# CITIZENSHIP
 
-The `CIT` text extracted from the text is just a span of natural language (e.g. "a citizen of the United States"). This cannot be used as such. The task of the Finite State Transducer is to map these spans to a well definite set of codes, here the ISO-3 code of the country of citizenship (e.g. USA). Below we evaluate the FST on US and GB data. Note: since there is no "learning" in the FST, overfitting is not really an issue and we do not distinguish between the training and the test set.
+## Problem
 
-```shell script
-# Eval on gold\_cit\_uspatentocr03.csv
-python patentcity/eval.py cit-fst data/gold\_cit_uspatentocr03.csv --fst-file lib/cit_fst.json --verbose
-```
+The `CIT` text extracted from the text is just a span of natural language (e.g. "a citizen of the United States"). This cannot be used as such.
 
-## Overview
+## Approach
 
-test-file|fuzzy-match|no fuzzy-match
+We use a Finite State Transducer. The task of the Finite State Transducer is to map these spans to a well definite set of codes, here the ISO-3 code of the country of citizenship (e.g. USA). Below we evaluate the FST on US and GB data. Note: since there is no "learning" in the FST, overfitting is not really an issue and we do not distinguish between the training and the test set.
+
+## Results
+
+Data|Accuracy with fuzzy-match| Accuracy w/o no fuzzy-match
 ---|---|---
 `gold_cit_gbpatentocr01.csv`| **98.50%** | 98.25%
 `gold_cit_uspatentocr01.csv` | **98.94%** | 95.21%
 `gold_cit_uspatentocr02.csv` | **93.40%** | 84.49%
 `gold_cit_uspatentocr03.csv` | **92.31%** | 90.60%
 
+In all cases, the fuzzy-match improves the overall FST accuracy.
 
-In all cases, the fuzzy-match improves the overall FST accuracy of the.
+!!! snippet
+    ```shell
+    # Eval on gold_cit_uspatentocr03.csv
+    python patentcity/eval.py cit-fst data/gold_cit_uspatentocr03.csv --fst-file lib/cit_fst.json --verbose
+    ```
 
-## In depth gold\_cit\_gbpatentocr01.csv
+## Error analysis
 
-Accuracy (fuzzy-match True): 98.50%
+###  `gold_cit_gbpatentocr01.csv`
 
-### Errors
 |     | publication\_number   | text                                                                | gold   | pred   | res   |
 |----:|:---------------------|:--------------------------------------------------------------------|:-------|:-------|:------|
 |  54 | GB-1107922-A         | Corporation organized.                                              |        | NIU    | False |
@@ -39,11 +44,8 @@ Accuracy (fuzzy-match True): 98.50%
 | 726 | GB-859666-A          | corporation organized and existing under the laws of the  </p>      |        | NIU    | False |
 | 774 | GB-950313-A          | corporation organized the operative magnification ratio.            |        | NIU    | False |
 
-## In depth gold\_cit\_uspatentocr01.csv
+### `gold_cit_uspatentocr01.csv`
 
-Accuracy (fuzzy-match True): 98.94%
-
-### Errors
 |     | publication\_number   | text                               | gold   | pred   | res   |
 |----:|:---------------------|:-----------------------------------|:-------|:-------|:------|
 |  80 | US-00832896-A1       | CORPORATION OF, NEV                | USA    |        | False |
@@ -53,11 +55,8 @@ Accuracy (fuzzy-match True): 98.94%
 | 386 | US-00330257-A1       | citizen of the Dominion of Can-ada | CAN    | OMN    | False |
 | 431 | US-01249770-A1       | CORPORATION OF PENNSYL-VANTA       | USA    |        | False |
 
-## In depth gold\_cit\_uspatentocr02.csv
+### `gold_cit_uspatentocr02.csv`
 
-Accuracy (fuzzy-match True): 93.40%
-
-### Errors
 |     | publication\_number   | text                         | gold   | pred   | res   |
 |----:|:---------------------|:-----------------------------|:-------|:-------|:------|
 |  10 | US-01731832-A1       | CORPORATION CF. OTLIO        | USA    | LAO    | False |
@@ -82,11 +81,8 @@ Accuracy (fuzzy-match True): 93.40%
 | 284 | US-01694877-A1       | CORPORATIONYORK              | USA    |        | False |
 
 
-## In depth gold\_cit\_uspatentocr03.csv
+### `gold_cit_uspatentocr03.csv`
 
-Accuracy (fuzzy-match True): 92.31%
-
-### Errors
 |    | publication\_number   | text                        | gold   | pred   | res   |
 |---:|:---------------------|:----------------------------|:-------|:-------|:------|
 |  7 | US-02344331-A1       | corporation of Cali-        | USA    | MLI    | False |

@@ -1,4 +1,4 @@
-# GEOCODING REPORT
+# GEOCODING
 
 ## Patentcity
 
