@@ -216,6 +216,7 @@ USA,CA.SanLuisObispo,California,CA,Santa Barbara,,San Luis Obispo,06079
 USA,CA.SanMateo,California,CA,San Francisco,,San Mateo,06081
 USA,CA.SantaBarbara,California,CA,Santa Barbara,,Santa Barbara,06083
 USA,CA.SantaClara,California,CA,San Jose,,Santa Clara,06085
+USA,CA.Stanford,California,CA,San Jose,,Santa Clara,06085
 USA,CA.SantaCruz,California,CA,San Jose,,Santa Cruz,06087
 USA,CA.Shasta,California,CA,Redding,,Shasta,06089
 USA,CA.Sierra,California,CA,Portola,,Sierra,06091
@@ -1188,6 +1189,7 @@ USA,MD.Howard,Maryland,MD,Baltimore,,Howard,24027
 USA,MD.Kent,Maryland,MD,Easton,,Kent,24029
 USA,MD.Montgomery,Maryland,MD,Washington DC,,Montgomery,24031
 USA,MD.PrinceGeorge's,Maryland,MD,Washington DC,,Prince Georges,24033
+USA,MD.PrinceGeorge,Maryland,MD,Washington DC,,Prince Georges,24033
 USA,MD.QueenAnnes,Maryland,MD,Easton,,Queen Annes,24035
 USA,MD.Somerset,Maryland,MD,Dover,,Somerset,24039
 USA,MD.StMarys,Maryland,MD,Washington DC,,St Marys,24037
@@ -3235,6 +3237,7 @@ USA,AK.Valdez-CordovaCensusArea,Alaska,AK,Valdez,,Valdez-Cordova,02261
 USA,AK.WadeHamptonCensusArea,Alaska,AK,Bethel,,Wade Hampton,02270
 USA,AK.Yukon-KoyukukCensusArea,Alaska,AK,Fairbanks,,Yukon-Koyukuk,02290
 USA,DC.DistrictofColumbia,District of Columbia,DC,Washington DC,,Washington,11001
+USA,DC.Washington,District of Columbia,DC,Washington DC,,Washington,11001
 USA,GA.Wheeler,Georgia,GA,Vidalia,,Wheeler,13309
 USA,HI.Kalawao,Hawaii,HI,Maui,,,15005
 USA,KY.Clinton,Kentucky,KY,Somerset,,Clinton,21053

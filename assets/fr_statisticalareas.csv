@@ -1,5 +1,6 @@
 country,key,statisticalArea1,statisticalArea1Code,statisticalArea2,statisticalArea2Code,statisticalArea3,statisticalArea3Code
 FRA,92000,Ile-de-France,FR1,Ile-de-France,FR10,Hauts-de-Seine,FR105
+FRA,92078,Ile-de-France,FR1,Ile-de-France,FR10,Hauts-de-Seine,FR105
 FRA,92100,Ile-de-France,FR1,Ile-de-France,FR10,Hauts-de-Seine,FR105
 FRA,92110,Ile-de-France,FR1,Ile-de-France,FR10,Hauts-de-Seine,FR105
 FRA,92120,Ile-de-France,FR1,Ile-de-France,FR10,Hauts-de-Seine,FR105
@@ -403,6 +404,7 @@ FRA,56370,Bretagne,FRH,Bretagne,FRH0,Morbihan,FRH04
 FRA,56380,Bretagne,FRH,Bretagne,FRH0,Morbihan,FRH04
 FRA,56390,Bretagne,FRH,Bretagne,FRH0,Morbihan,FRH04
 FRA,56400,Bretagne,FRH,Bretagne,FRH0,Morbihan,FRH04
+FRA,56402,Bretagne,FRH,Bretagne,FRH0,Morbihan,FRH04
 FRA,56410,Bretagne,FRH,Bretagne,FRH0,Morbihan,FRH04
 FRA,56420,Bretagne,FRH,Bretagne,FRH0,Morbihan,FRH04
 FRA,56430,Bretagne,FRH,Bretagne,FRH0,Morbihan,FRH04
@@ -794,6 +796,7 @@ FRA,75018,Ile-de-France,FR1,Ile-de-France,FR10,Paris,FR101
 FRA,75019,Ile-de-France,FR1,Ile-de-France,FR10,Paris,FR101
 FRA,75020,Ile-de-France,FR1,Ile-de-France,FR10,Paris,FR101
 FRA,75116,Ile-de-France,FR1,Ile-de-France,FR10,Paris,FR101
+FRA,75231,Ile-de-France,FR1,Ile-de-France,FR10,Paris,FR101
 FRA,94410,Ile-de-France,FR1,Ile-de-France,FR10,Paris,FR101
 FRA,77000,Ile-de-France,FR1,Ile-de-France,FR10,Seine-et-Marne,FR102
 FRA,77090,Ile-de-France,FR1,Ile-de-France,FR10,Seine-et-Marne,FR102
@@ -3727,6 +3730,7 @@ FRA,35360,Bretagne,FRH,Bretagne,FRH0,Ille-et-Vilaine,FRH03
 FRA,35370,Bretagne,FRH,Bretagne,FRH0,Ille-et-Vilaine,FRH03
 FRA,35380,Bretagne,FRH,Bretagne,FRH0,Ille-et-Vilaine,FRH03
 FRA,35390,Bretagne,FRH,Bretagne,FRH0,Ille-et-Vilaine,FRH03
+FRA,35400,Bretagne,FRH,Bretagne,FRH0,Ille-et-Vilaine,FRH03
 FRA,35410,Bretagne,FRH,Bretagne,FRH0,Ille-et-Vilaine,FRH03
 FRA,35420,Bretagne,FRH,Bretagne,FRH0,Ille-et-Vilaine,FRH03
 FRA,35430,Bretagne,FRH,Bretagne,FRH0,Ille-et-Vilaine,FRH03
