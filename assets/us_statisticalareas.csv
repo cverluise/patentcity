@@ -306,7 +306,6 @@ USA,CT.Windham,Connecticut,CT,Bridgeport,,Windham,09015
 USA,DE.Kent,Delaware,DE,Dover,,Kent,10001
 USA,DE.NewCastle,Delaware,DE,Wilmington,,New Castle,10003
 USA,DE.Sussex,Delaware,DE,Dover,,Sussex,10005
-USA,DC.DistrictofColumbia,,,Washington DC,,,11000
 USA,FL.Alachua,Florida,FL,Gainesville,,Alachua,12001
 USA,FL.Baker,Florida,FL,Jacksonville,,Baker,12003
 USA,FL.Bay,Florida,FL,Panama City,,Bay,12005
@@ -3229,12 +3228,13 @@ USA,AK.Matanuska-SusitnaBorough,Alaska,AK,Anchorage,,Matanuska-Susitna,02170
 USA,AK.NomeCensusArea,Alaska,AK,Nome,,Nome,02180
 USA,AK.NorthSlopeBorough,Alaska,AK,Barrow,,North Slope,02185
 USA,AK.NorthwestArcticBorough,Alaska,AK,Kotzebue,,Northwest Arctic,02188
+USA,AK.NorthwestArctic,Alaska,AK,Kotzebue,,Northwest Arctic,02188
 USA,AK.SitkaCityandBorough,Alaska,AK,Sitka,,Sitka,02220
 USA,AK.SoutheastFairbanksCensusArea,Alaska,AK,Fairbanks,,Southeast Fairbanks,02240
 USA,AK.Valdez-CordovaCensusArea,Alaska,AK,Valdez,,Valdez-Cordova,02261
 USA,AK.WadeHamptonCensusArea,Alaska,AK,Bethel,,Wade Hampton,02270
 USA,AK.Yukon-KoyukukCensusArea,Alaska,AK,Fairbanks,,Yukon-Koyukuk,02290
-USA,DC.DistrictofColumbia,,,Washington DC,,Washington,11001
+USA,DC.DistrictofColumbia,District of Columbia,DC,Washington DC,,Washington,11001
 USA,GA.Wheeler,Georgia,GA,Vidalia,,Wheeler,13309
 USA,HI.Kalawao,Hawaii,HI,Maui,,,15005
 USA,KY.Clinton,Kentucky,KY,Somerset,,Clinton,21053
