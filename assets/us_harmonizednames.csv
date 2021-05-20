@@ -2862,7 +2862,7 @@ county,VA.Lunenburg,Lunenburg,51111
 county,VA.Lynchburg(City),Lynchburg City,51680
 county,VA.Madison,Madison,51113
 county,VA.Manassas(City),Manassas City,51683
-county,VA.ManassasPark(City), Manassas Park City, 51685
+county,VA.ManassasPark(City),Manassas Park City,51685
 county,VA.Martinsville(City),Martinsville City,51690
 county,VA.Mathews,Mathews,51115
 county,VA.Mecklenburg,Mecklenburg,51117
@@ -2881,7 +2881,8 @@ county,VA.Page,Page,51139
 county,VA.Patrick,Patrick,51141
 county,VA.Petersburg(City),Petersburg City,51730
 county,VA.Pittsylvania,Pittsylvania,51143
-county,VA.Poquoson(City),Poquoson City, 51735
+county,VA.Poquoson(City),Poquoso
+n City,51735
 county,VA.Portsmouth(City),Portsmouth City,51740
 county,VA.Powhatan,Powhatan,51145
 county,VA.PrinceEdward,Prince Edward,51147
