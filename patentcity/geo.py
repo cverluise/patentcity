@@ -12,6 +12,7 @@ from smart_open import open
 import googlemaps
 import requests
 import typer
+import pandas as pd
 from bs4 import BeautifulSoup
 
 from patentcity.lib import (
@@ -23,7 +24,13 @@ from patentcity.lib import (
     get_countycrossover,
     TYPE2LEVEL,
 )
-from patentcity.utils import clean_text, get_dt_human, get_empty_here_schema, flatten
+from patentcity.utils import (
+    clean_text,
+    get_dt_human,
+    get_empty_here_schema,
+    flatten,
+    read_csv_many,
+)
 from patentcity.utils import ok, not_ok, get_recid
 
 """
@@ -694,6 +701,53 @@ def add_geoc_disamb(
                 geoc_disamb = index.get(get_recid(searchtext))
                 geoc_disamb.update({"recId": recid})
                 writer.writerow(geoc_disamb)
+
+
+def get_statisticalarea_key(x):
+    def prep_us_key(x):
+        state, county, city = x
+        if state and county:
+            key = ".".join([state, county.replace(" ", "")])
+        elif state and city:
+            key = ".".join([state, city.replace(" ", "")])
+        else:
+            key = None
+        return key
+
+    country, state, county, city, postal_code = x
+    if country in ["DEU", "FRA", "GBR", "USA"]:
+        if country == "USA":
+            key = prep_us_key((state, county, city))
+        else:
+            key = postal_code
+    else:
+        key = None
+    return key
+
+
+@app.command(name="add.statisticalareas")
+def add_statisticalareas(file: str, statisticalareas_path: str, verbose: bool = False):
+    """Return `file` with statistical areas to stdout.
+
+    Arguments:
+         file: file path
+         statisticalareas_path: satistical area files path (wildcard allowed)
+         verbose: verbosity
+
+    **Usage:**
+        ```shell
+        patentcity geo add.statisticalareas geoc_gbpatentxx.here.csv "assets/*_statisticalareas.csv"
+        ```
+    """
+    statisticalareas_df = read_csv_many(
+        statisticalareas_path, verbose=verbose, dtype=str
+    )
+    geoc_df = pd.read_csv(file, dtype=str, error_bad_lines=False)
+    geoc_df = geoc_df.where(pd.notnull(geoc_df), None)  # we replace pandas nan by None
+    vars = ["country", "state", "county", "city", "postalCode"]
+    geoc_df["key"] = geoc_df[vars].apply(lambda x: get_statisticalarea_key(x), axis=1)
+    geoc_df = geoc_df.merge(statisticalareas_df, how="left", on=["country", "key"])
+    typer.echo(geoc_df.to_csv(sys.stdout, index=False))
 
 
 if __name__ == "__main__":
