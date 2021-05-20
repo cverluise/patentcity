@@ -1,4 +1,4 @@
-# Data
+# DATA
 
 > ℹ️ File names refer to data files in `gs://patentcity_dev/v1`
 

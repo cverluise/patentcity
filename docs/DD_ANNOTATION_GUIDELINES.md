@@ -1,6 +1,7 @@
 # ANNOTATION GUIDELINES
 
-> ⚠️ GitHub markdown does not fully support visual annotation components (e.g. entity boxes) used below. We invite user interested in the annotation guidelines to download the documents and open it in a development environment supporting extended markdown syntax (e.g. MacDown, PyCharm, etc) and/or save it as a pdf.
+!!! warning
+    GitHub markdown does not fully support visual annotation components (e.g. entity boxes) used below. We invite user interested in the annotation guidelines to download the documents and open it in a development environment supporting extended markdown syntax (e.g. MacDown, PyCharm, etc) and/or save it as a pdf.
 
 ## Preliminary comments
 
@@ -79,33 +80,41 @@ These entities are tied together with 2 types of relations.
 
 ### Format 1
 
-#### The tag `INV`
+#### `INV`
+
+##### General case
 
 The tag `INV` refers to the full name of an inventor. This is a person that is not referred to as the assignee and is specifically referred to as the inventor (*Erfinder*).
 
 ##### Specific cases
+
 - *Inventor only*: some early patents report an inventor but no assignee. We tag the inventor as it is mentioned nonetheless. See example 2.
 - *Secret inventor*: in some patents, it is specifically mentioned  that the inventor remains anonymous. In this case, we do not tag anything. See example 3.
 - *Inventor=Assignee*: sometimes, the inventor and the assignee are the same person and the document won't repeat the name; this may be signalled by the phrase "*Erfinder zugleich Inhaber*". In this case, we tag the name only as the inventor, because a single group of words cannot be tagged twice. See example 4.
 
-##### Examples
 
-**Example 1: *Standard Case* with a person, from patent DD79836**
-> Erfinder: <font style="border:2px solid red">Wilhelm Uhrig`INV`</font>, WD
+!!! example "Examples"
 
+    1. *Standard Case* with a person, from patent DD79836
 
-**Example 2: *Inventor only*, from patent DD5076**
-> Erfinder: Dr <font style="border:2px solid red">ALEXANDER PRANSCHKE`INV`</font>, Schwarzheide.
-Dr <font style="border:2px solid red">ERWIN SAUTER`INV`</font>, Schwarzheide.
+        Erfinder: <font style="border:2px solid red">Wilhelm Uhrig`INV`</font>, WD
 
-**Example 3: *Inventor only*, from patent DD4075**
-> Erfinderbenennung ist ausgesetzt.
+    2. *Inventor only*, from patent DD5076
 
-**Example 4: *Inventor=Assignee*, from patent DD15399**
+        Erfinder: Dr <font style="border:2px solid red">ALEXANDER PRANSCHKE`INV`</font>, Schwarzheide.
+        Dr <font style="border:2px solid red">ERWIN SAUTER`INV`</font>, Schwarzheide.
 
-> Erfinder zugleich Inhaber: <font style="border:2px solid red">Zalter Gleißner`INV`</font>, Weißenfeis (Saale)
+    3. *Inventor only*, from patent DD4075
 
-#### The tag `ASG`
+        Erfinderbenennung ist ausgesetzt.
+
+    4. *Inventor=Assignee*, from patent DD15399
+
+        Erfinder zugleich Inhaber: <font style="border:2px solid red">Zalter Gleißner`INV`</font>, Weißenfeis (Saale)
+
+#### `ASG`
+
+##### General case
 
 The tag `ASG` refers to the full name(s) of the person(s) or firm(s) who own(s) the patent rights.
 
@@ -113,19 +122,24 @@ The tag `ASG` refers to the full name(s) of the person(s) or firm(s) who own(s) 
 
 - *Rechtsträger*: Some patents distinguish between *Inhaber* and *Rechtsträger*: we keep tagging the *Inhaber* person as the assignee. See example 2.
 
-##### Examples
 
-**Example 1: *Standard Case* with a firm, from patent DD79836**
-> Inhaber: <font style="border:2px solid blue"> Dr. Plate GmbH`ASG`</font>, Bonn, WD.
+!!! example "Examples"
 
+    1. *Standard Case* with a firm, from patent DD79836
 
-**Example 2: *Rechtsträger*, from patent DD33554**
+        Inhaber: <font style="border:2px solid blue"> Dr. Plate GmbH`ASG`</font>, Bonn, WD.
 
-> Erfinder: Manfred Gerlach, Dresden; Kurt Jäger, Dresden; Dipl-Ing. Gerhard Kasche, Dresden.
-> Inhaber: <font style="border:2px solid blue">Eigentum des Volkes`ASG`</font>; <font style="border:2px solid blue">Kurt Jäger`ASG`</font>, Dresden; Dipl-Ing. <font style="border:2px solid blue">Gerhard Kasche`ASG`</font>, Dresden.
-> Rechtsträger: VEB Gasturbinenbau und Energiemaschinenentwicklung Pirna, Pirna.
+    2. *Rechtsträger*, from patent DD33554
 
-#### The tag `LOC`
+        Erfinder: Manfred Gerlach, Dresden; Kurt Jäger, Dresden; Dipl-Ing. Gerhard Kasche, Dresden.
+
+        Inhaber: <font style="border:2px solid blue">Eigentum des Volkes`ASG`</font>; <font style="border:2px solid blue">Kurt Jäger`ASG`</font>, Dresden; Dipl-Ing. <font style="border:2px solid blue">Gerhard Kasche`ASG`</font>, Dresden.
+
+        Rechtsträger: VEB Gasturbinenbau und Energiemaschinenentwicklung Pirna, Pirna.
+
+#### `LOC`
+
+##### General case
 
 The tag `LOC` refers to the full location sequence of an assignee or inventor.
 In some patents, no location is reported (see DD86584).
@@ -135,34 +149,46 @@ In some patents, no location is reported (see DD86584).
 
 - *District*: The patents might report the district within a given city, which we tag along. See example 3.
 
-**Example 1: *Standard Case* with a location for the (foreign) assignee and a location for the (foreign) inventor, from patent DD76817**
-> Erfinder: Abraham A.Goldberg, <font style="border:2px solid green">USA`LOC`</font>.
-> Inhaber: COLUMBIA BROADCASTING SYSTEM, INC., <font style="border:2px solid green">New York, USA`LOC`</font>.
+!!! example "Examples"
 
-**Example 2: *Standard Case* with German patentees, from patent DD69242**
-> Erfinder: Dr-Ing. Walter Froede, <font style="border:2px solid green">Neckarsulm (WD)`LOC`</font>.
-> Inhaber: NSU-Motorenwenke AG, <font style="border:2px solid green">Neckarsulm (WD)`LOC`</font>
-> Wandel GmbH, <font style="border:2px solid green">Lindau (WD)`LOC`</font>
+    1. *Standard Case* with a location for the (foreign) assignee and a location for the (foreign) inventor, from patent DD76817
 
-**Example 3: *District* from patent DD62143**
-> Erfinder zugleich Inhaber: Dr. Wolfram Jenichen, <font style="border:2px solid green">Schönow (b. Berlin)`LOC`</font>.
+        Erfinder: Abraham A.Goldberg, <font style="border:2px solid green">USA`LOC`</font>.
+
+        Inhaber: COLUMBIA BROADCASTING SYSTEM, INC., <font style="border:2px solid green">New York, USA`LOC`</font>.
+
+    2. *Standard Case* with German patentees, from patent DD69242
+        Erfinder: Dr-Ing. Walter Froede, <font style="border:2px solid green">Neckarsulm (WD)`LOC`</font>.
+
+        Inhaber: NSU-Motorenwenke AG, <font style="border:2px solid green">Neckarsulm (WD)`LOC`</font>
+
+        Wandel GmbH, <font style="border:2px solid green">Lindau (WD)`LOC`</font>
+
+    3. *District* from patent DD62143
+
+        Erfinder zugleich Inhaber: Dr. Wolfram Jenichen, <font style="border:2px solid green">Schönow (b. Berlin)`LOC`</font>.
 
 
+#### `OCC`
 
-#### The tag `OCC`
+##### General case
 
 This tag concerns the university title of inventors/assignees. When none is reported, we do not tag anything.
 
-##### Examples
 
-**Example 1: *Standard Case* with several inventors from patent DD1393**
-> Erfinder: <font style="border:2px solid magenta">Dr.`OCC`</font> GERHARD HANSEN, <font style="border:2px solid magenta">Dr`OCC`</font> PAUL HEINZ KECK, Jena.
-> <font style="border:2px solid magenta">Dipl.-Ing.`OCC`</font> KARL ILMER, Jena.
+!!! example "Examples"
+
+    1. *Standard Case* with several inventors from patent DD1393
+
+        Erfinder: <font style="border:2px solid magenta">Dr.`OCC`</font> GERHARD HANSEN, <font style="border:2px solid magenta">Dr`OCC`</font> PAUL HEINZ KECK, Jena.
+        <font style="border:2px solid magenta">Dipl.-Ing.`OCC`</font> KARL ILMER, Jena.
 
 
 ### Format 2
 
-#### The tag `INV`
+#### `INV`
+
+##### General case
 
 The tag `INV` refers to the full name of an inventor. This is a person that is not referred to as the assignee and is specifically referred to as the inventor (*Erfinder*).
 
@@ -170,18 +196,25 @@ The tag `INV` refers to the full name of an inventor. This is a person that is n
 - *Secret inventor*: some publications do not report the name of the inventor on purpose. This may be signalled by the sentence "*Erfinder: werden aug Antrag nicht genannt*". See example 2.
 - *Inventor=Assignee*: sometimes, the inventor and the assignee are the same person and the document won't repeat the name; this may be signalled by the phrase "*siehe (72)*" in line 71 (where the assignee should be). In this case, we tag the name only as the inventor, because a single group of words cannot be tagged twice. See example 3.
 
-##### Examples
-**Example 1: *Standard Case* with several inventors, from patent DD251362**
-> (72) <font style="border:2px solid red">Kolitsch, Andreas`INV`</font>, Dr.; <font style="border:2px solid red">Richter, Edgar`INV`</font>, Dr.; <font style="border:2px solid red">Mende, Edgar`INV`</font>; <font style="border:2px solid red">Polnik, Frank`INV`</font>, DD
+!!! example "Examples"
 
-**Example 2: *Secret inventor*, from patent DD126770**
-> Erfinder: werden aug Antrag nicht genannt
+    1. *Standard Case* with several inventors, from patent DD251362
 
-**Example 3: *Inventor=Assignee*, from patent DD148904**
-> (71) siehe (72).
-> (72) <font style="border:2px solid red">Trabert, Erich`INV`</font>, DD
+        (72) <font style="border:2px solid red">Kolitsch, Andreas`INV`</font>, Dr.; <font style="border:2px solid red">Richter, Edgar`INV`</font>, Dr.; <font style="border:2px solid red">Mende, Edgar`INV`</font>; <font style="border:2px solid red">Polnik, Frank`INV`</font>, DD
 
-#### The tag `ASG`
+    2. *Secret inventor*, from patent DD126770
+
+        Erfinder: werden aug Antrag nicht genannt
+
+    3. *Inventor=Assignee*, from patent DD148904
+
+        (71) siehe (72).
+
+        (72) <font style="border:2px solid red">Trabert, Erich`INV`</font>, DD
+
+#### `ASG`
+
+##### General case
 
 The tag `ASG` refers to the full name(s) of the person(s) or firm(s) who own(s) the patent rights.
 
@@ -189,16 +222,21 @@ The tag `ASG` refers to the full name(s) of the person(s) or firm(s) who own(s) 
 
 - *Foreign Assignee*: When the assignee is non-German, it might be reported in line (73) instead of (71). See example 2.
 
-##### Examples
-**Example 1: *Standard Case* with a government-run company, from patent DD133115**
-> (71) <font style="border:2px solid blue">Akademie der Wissenschaften der DDR, Zentralinstitut for Isotopen- und Strahlenforschung`ASG`</font>, Leipzig , DD
+!!! example "Examples"
 
-**Example 2: *Foreign Assignee*, from patent DD202259**
-> (71) siehe (73)
-> (73) <font style="border:2px solid blue">ITERA COMPONENTS AB`ASG`</font>, GOETEBORG, SE
+    1. *Standard Case* with a government-run company, from patent DD133115
+
+        (71) <font style="border:2px solid blue">Akademie der Wissenschaften der DDR, Zentralinstitut for Isotopen- und Strahlenforschung`ASG`</font>, Leipzig , DD
+
+    2. *Foreign Assignee*, from patent DD202259
+        (71) siehe (73)
+
+        (73) <font style="border:2px solid blue">ITERA COMPONENTS AB`ASG`</font>, GOETEBORG, SE
 
 
-#### The tag `LOC`
+#### `LOC`
+
+##### General case
 
 The tag `LOC` refers to the full location sequence of an assignee or inventor. Typically, only the country will be reported for inventors, but greater details may be given for assignees.  Here are a few abbreviations that are used throughout the patents.
 
@@ -213,26 +251,33 @@ The tag `LOC` refers to the full location sequence of an assignee or inventor. T
 - *Full Address*: There is quite a number of Format 2 patents which report the full address of an assignee or inventor, and in this case we tag it all. See example 2.
 
 
-##### Examples
 
-**Example 1: Standard Case with the country and the city from patent DD141623**
-> (71) Akademie der Wissenschaften der DDR, <font style="border:2px solid green">Berlin, DD`LOC`</font>.
+!!! example "Examples"
 
-**Example 2: *Full Address* from patent DD251362**
-> (71) Akademie der Wissenschaften der DDR, <font style="border:2px solid green">Otto-Nuschke Straße 22/23, Berlin 1080, DD`LOC`</font>.
+    1. Standard Case with the country and the city from patent DD141623
 
-#### The tag `OCC`
+        (71) Akademie der Wissenschaften der DDR, <font style="border:2px solid green">Berlin, DD`LOC`</font>.
+
+    2. *Full Address* from patent DD251362
+
+        (71) Akademie der Wissenschaften der DDR, <font style="border:2px solid green">Otto-Nuschke Straße 22/23, Berlin 1080, DD`LOC`</font>.
+
+#### `OCC`
+
+##### General case
 
 This tag concerns the university title of inventors/assignees. When none is reported, we do not tag anything.
 
-##### Examples
 
-**Example 1: *Standard Case* with several inventors from patent DD220001**
-> (72): Lämmer, Hans-Georg, <font style="border:2px solid magenta">Ing-Dipl.`OCC`</font>; Sommer, Peter; Matzner, Dieter, <font style="border:2px solid magenta">Dipl-Ing.`OCC`</font>, DD.
+!!! example "Examples"
+
+    1. *Standard Case* with several inventors from patent DD220001
+
+        (72): Lämmer, Hans-Georg, <font style="border:2px solid magenta">Ing-Dipl.`OCC`</font>; Sommer, Peter; Matzner, Dieter, <font style="border:2px solid magenta">Dipl-Ing.`OCC`</font>, DD.
 
 ## Relationships
 
-See [XX\_REL\_ANNOTATION\_GUIDELINES.md](./XX_REL_ANNOTATION_GUIDELINES.md).
+See the common [annotation guidelines](./XX_REL_ANNOTATION_GUIDELINES.md).
 
 
 ## Examples

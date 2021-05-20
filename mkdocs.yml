@@ -1,0 +1,100 @@
+site_name: patentCity
+site_description: Early age patents for humans and researchers
+site_author: Cyril Verluise
+#site_url:
+repo_url: https://github.com/cverluise/patentcity
+
+##### Nav #####
+nav:
+  - About: index.md
+  - Data: DATA.md
+  - Guides:
+      - DD:
+        - Overview: DD.md
+        - Annotation Guidelines: DD_ANNOTATION_GUIDELINES.md
+        - Models: DD_MODEL_CARD.md
+      - DE:
+        - Overview: DE.md
+        - Annotation Guidelines: DE_ANNOTATION_GUIDELINES.md
+        - Models: DE_MODEL_CARD.md
+      - FR:
+        - Overview: FR.md
+        - Annotation Guidelines: FR_ANNOTATION_GUIDELINES.md
+        - Models: FR_MODEL_CARD.md
+      - GB:
+        - Overview: GB.md
+        - Annotation Guidelines: GB_ANNOTATION_GUIDELINES.md
+        - Models: GB_MODEL_CARD.md
+      - US:
+        - Overview: US.md
+        - Annotation Guidelines: US_ANNOTATION_GUIDELINES.md
+        - Models: US_MODEL_CARD.md
+      - Relationship:
+        - Annotation Guidelines: XX_REL_ANNOTATION_GUIDELINES.md
+        - Models: XX_REL_CARD.md
+      - Enrichment:
+        - DD dates: DD_DATE_IMPUTATION.md
+        - DE dates: DE_DATE_IMPUTATION.md
+        - Geocoding: XX_GEOC_REPORT.md
+        - Citizenship: XX_CIT_EVALUATION.md
+        - Statistical areas: XX_STATISTICAL_AREAS.md
+        - Deduplication: XX_DEDUPLICATION_EVALUATION.md
+      - Recipes:
+        - PatentCity: RECIPE_PATENTCITY.md
+        - WGP: RECIPE_WGP.md
+      - Cheatsheet: CHEATSHEET.md
+  - API:
+      - brew: API_BREW.md
+      - eval: API_EVAL.md
+      - geo: API_GEO.md
+      - io: API_IO.md
+      - search: API_SEARCH.md
+  - License:
+    - Code: LICENSE_CODE.md
+    - Data: LICENSE_DATA.md
+
+
+##### Theme #####
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+  palette:
+    primary: teal
+    accent: teal
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.highlight:
+      use_pygments: true
+  - toc:
+      permalink: true
+
+##### Plugins #####
+plugins:
+  - mkdocstrings:
+      default_handler: python
+      watch:
+        - patentcity
+  - search:
+      lang: en
+
+##### Footer #####
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/cyrilverluise
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/cyril-verluise-80184347/
+#    - icon: fontawesome/brands/github
+#      link: https://cverluise.github.io/PatCit/

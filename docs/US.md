@@ -1,4 +1,4 @@
-# US
+# US OVERVIEW
 
 ## Background
 
@@ -23,10 +23,12 @@ US3554067A-... | Espacenet | OCR | US3564067A| 4
 
 ## 🚜 Extraction schema
 
-See the detailed [annotation guidelines](./US_ANNOTATION_GUIDELINES.md)
+See the [annotation guidelines](./US_ANNOTATION_GUIDELINES.md)
 
-## 🔮 Model
+## 🔮 Models
 
-See the detailed [model card](./US_MODEL_CARD.md)
+See the [models card](./US_MODEL_CARD.md)
 
 ## Other
+
+See the [geocoding](./XX_GEOC_REPORT.md) and [citizenship](./XX_CIT_EVALUATION.md) and [deduplication](./XX_DEDUPLICATION_EVALUATION.md) documentation.

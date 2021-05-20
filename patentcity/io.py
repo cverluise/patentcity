@@ -7,22 +7,22 @@ from patentcity.utils import ok
 app = typer.Typer()
 
 
-def get_bq_client(key_file):
-    credentials = service_account.Credentials.from_service_account_file(
-        key_file, scopes=["https://www.googleapis.com/auth/cloud-platform"]
+def _get_bq_client(credentials):
+    credentials_ = service_account.Credentials.from_service_account_file(
+        credentials, scopes=["https://www.googleapis.com/auth/cloud-platform"]
     )
 
-    client = bigquery.Client(credentials=credentials, project=credentials.project_id)
+    client = bigquery.Client(credentials=credentials_, project=credentials_.project_id)
     return client
 
 
-def get_job_done(
-    query, destination_table, key_file, write_disposition="WRITE_TRUNCATE", **kwargs
+def _get_job_done(
+    query, destination_table, credentials, write_disposition="WRITE_TRUNCATE", **kwargs
 ):
     job_config = bigquery.QueryJobConfig(
         destination=destination_table, write_disposition=write_disposition, **kwargs
     )
-    client = get_bq_client(key_file)
+    client = _get_bq_client(credentials)
     typer.secho(f"Start:\n{query}", fg=typer.colors.BLUE)
     client.query(query, job_config=job_config).result()
 
@@ -32,8 +32,20 @@ def get_job_done(
 
 
 @app.command()
-def augment_patentcity(src_table: str, destination_table: str, key_file: str = None):
-    """Augment patentcity dataset. Mainly for interoperability."""
+def augment_patentcity(src_table: str, destination_table: str, credentials: str = None):
+    """Add (mainly interoperability) variables to `src_table` and save to `destination_table
+
+    Arguments:
+        src_table: source table (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        patentcity io augment-patentcity <src_table> <destination_table> credentials-patentcity.json
+        ```
+
+    """
     query = f"""
     SELECT
       pc.publication_number,
@@ -51,14 +63,29 @@ def augment_patentcity(src_table: str, destination_table: str, key_file: str = N
       pc.publication_number = p.publication_number
     """
 
-    get_job_done(query, destination_table, key_file)
+    _get_job_done(query, destination_table, credentials)
 
 
 @app.command()
 def impute_publication_date(
-    src_table, imputation_table, country_code: str = None, key_file: str = None
+    src_table: str,
+    imputation_table: str,
+    country_code: str = None,
+    credentials: str = None,
 ):
-    """Update publication_date - DE & DD only"""
+    """Update `src_table` publication_date - DE & DD only
+
+    Arguments:
+        src_table: source table (project.dataset.table)
+        imputation_table: imputation table (project.dataset.table)
+        country_code: in ["DE", "DD"]
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        patentcity io impute-publication-date <src_table> <imputation_table> --country-code DE --credentials credentials-patentcity.json
+        ```
+    """
     de_clause = (
         """AND CAST(t.pubnum AS INT64)<330000""" if country_code == "DE" else """"""
     )
@@ -74,7 +101,7 @@ def impute_publication_date(
       {de_clause}
 
     """
-    client = get_bq_client(key_file)
+    client = _get_bq_client(credentials)
     typer.secho(f"Start:\n{query}", fg=typer.colors.BLUE)
     client.query(query).result()
 
@@ -84,12 +111,25 @@ def impute_publication_date(
 @app.command()
 def extract_sample_kepler(
     src_table: str,
-    destination_file: str,
+    dest_file: str,
     sample_ratio: float = 0.1,
     office: str = None,
-    key_file: str = None,
+    credentials: str = None,
 ):
-    """Extract sample for kepler.gl"""
+    """Extract sample for kepler.gl
+
+    Arguments:
+        src_table: source table (project.dataset.table)
+        dest_file: destination file path (local)
+        sample_ratio: share of patents to extract
+        office: patent office two letter-code (e.g. DD, DE, FR, etc)
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        patentcity io extract-sample-kepler <src_table> <dest_file> --office DE --credentials credentials-patentcity.json
+        ```
+    """
     office_clause = f"""AND country_code="{office}" """ if office else ""
     query = f"""
     SELECT
@@ -111,26 +151,41 @@ def extract_sample_kepler(
       AND patentee.loc_latitude IS NOT NULL
       {office_clause}
     """
-    client = get_bq_client(key_file)
+    client = _get_bq_client(credentials)
     typer.secho(f"Start:\n{query}", fg=typer.colors.BLUE)
     df = client.query(query).to_dataframe()
-    df.to_csv(destination_file, index=False)
-    typer.secho(
-        f"{ok}Extract for Kepler saved to {destination_file}.", fg=typer.colors.GREEN
-    )
+    df.to_csv(dest_file, index=False)
+    typer.secho(f"{ok}Extract for Kepler saved to {dest_file}.", fg=typer.colors.GREEN)
 
 
 @app.command()
 def build_wgp_as_patentcity(
-    addresses_table: str = None,
-    patentee_location_table: str = None,
+    addresses_table: str,
+    patentee_location_table: str,
     patstat_patent_properties_table: str = None,
     tls206_table: str = None,
     tls207_table: str = None,
     destination_table: str = None,
     flavor: int = None,
-    key_file: str = None,
+    credentials: str = None,
 ):
+    """Join addresses and individuals from WGP and add data at the patent as well as individual level.
+
+    Arguments:
+        addresses_table: WGP addresses table (project.dataset.table)
+        patentee_location_table: WGP patentees table (project.dataset.table)
+        patstat_patent_properties_table: PATSTAT patent properties table on BQ (project.dataset.table)
+        tls206_table: PATSTAT tls206 table on BQ (project.dataset.table)
+        tls207_table: PATSTAT tls207 table on BQ (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
+        flavor: WGP source data flavor (in [25, 45])
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        patentcity io build-wgp-as-patentcity patentcity.external.addresses_florian45_patentcity patentcity.external.person_location_id --tls206-table patentcity.external.tls206 --tls207-table patentcity.external.tls207 --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity45 --flavor 45 --key-file $KEY_FILE
+        ```
+    """
     assert flavor in [25, 45]
     assert patentee_location_table
     assert addresses_table
@@ -230,37 +285,67 @@ def build_wgp_as_patentcity(
               SPLIT(patstat.publication_number, "-")[OFFSET(0)] IN ("DE", "GB", "FR", "US")
             """
 
-    get_job_done(query, destination_table, key_file)
+    _get_job_done(query, destination_table, credentials)
 
 
 @app.command()
 def order(
-    table: str, by: str = None, destination_table: str = None, key_file: str = None
+    src_table: str,
+    by: str = None,
+    destination_table: str = None,
+    credentials: str = None,
 ):
-    """Order TABLE by BY and stage it to DESTINATION_TABLE (def overwrite)"""
+    """Order `src_table` by `by` and stage it onto `destination_table`
+
+    Arguments:
+        src_table: source table (project.dataset.table)
+        by: ordering dimension (e.g. publication_number)
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        patentcity io order patentcity.tmp.patentcity25 --by publication_number --destination-table patentcity.tmp.tmp25 --key-file credentials-patentcity.json
+        ```
+    """
     query = f"""
     SELECT
       *
     FROM
-      `{table}`
+      `{src_table}`
     ORDER BY
       {by}  # publication_number
     """
-    get_job_done(query, destination_table, key_file)
+    _get_job_done(query, destination_table, credentials)
 
 
 @app.command()
 def get_stratified_sample(
-    table: str,
+    src_table: str,
     bin_size: int = 50,
     preview: bool = False,
     destination_table: str = None,
-    key_file: str = None,
+    credentials: str = None,
 ):
-    """Return a stratified sample of TABLE (based on country_code and publication_decade) with BIN_SIZE samples
-    (if possible) by bin. If --no-preview, then, stratified sample saved to DESTINATION_TABLE, else
+    """Return a stratified sample of `src_table` (based on country_code and publication_decade) with `bin_size` samples
+    in each bin (if possible).
 
-    Doc: https://stackoverflow.com/questions/52901451/stratified-random-sampling-with-bigquery"""
+    Arguments:
+        src_table: source table (project.dataset.table)
+        bin_size: bin size
+        preview: if True, output not saved and table stats to stdout. Else, output saved to `destination_table`
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        patentcity io get-stratified-sample patentcity.patentcity.v1
+        ```
+
+    !!! tip
+        [Stratified random sampling with bigquery - StackOverflow](https://stackoverflow.com/questions/52901451/stratified-random-sampling-with-bigquery)
+
+    """
     if preview:
         prefix = """
         SELECT COUNT(*) nb_samples, country_code, publication_decade, ROUND(100*COUNT(*)/MAX(nb_bin),2) AS percentage
@@ -277,7 +362,7 @@ def get_stratified_sample(
     WITH tmp AS (
       SELECT CAST(publication_date/100000 AS INT64) AS publication_decade,
       * EXCEPT(patentee)
-      FROM `{table}`,  # patentcity.patentcity.wgp_v1
+      FROM `{src_table}`,  # patentcity.patentcity.wgp_v1
             UNNEST(patentee) as patentee
         WHERE
         patentee.loc_text IS NOT NULL
@@ -301,7 +386,7 @@ def get_stratified_sample(
     {suffix}
     """
     if preview:
-        client = get_bq_client(key_file)
+        client = _get_bq_client(credentials)
         tmp = (
             client.query(query)
             .to_dataframe()
@@ -310,19 +395,34 @@ def get_stratified_sample(
         typer.echo(tmp.to_markdown(index=False))
         typer.secho(f"Nb samples: {tmp['nb_samples'].sum()}", fg=typer.colors.BLUE)
     else:
-        get_job_done(query, destination_table, key_file)
+        _get_job_done(query, destination_table, credentials)
 
 
 @app.command()
 def get_wgp25_recid(
     country_code: str,
-    table_ref: str,
+    src_table: str,
     patstat_patent_properties_table: str,
     destination_table: str,
-    key_file: str,
+    credentials: str,
 ):
-    """Extract recId and searchText from wgp25 for patents published in `country_code`. Nb: assume that the recId has been added to
-    inventor_applicant_locationid beforehand (using utils.get_recid(address_))."""
+    """Extract recId and searchText from wgp25 for patents published in `country_code`.
+
+    Arguments:
+        country_code: country code of the patent office (e.g. DE, FR, GB, US, etc)
+        src_table: source table (project.dataset.table)
+        patstat_patent_properties_table: PATSTAT patent properties table on BQ (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        OFFICE=DE
+        python patentcity/io.py get-wgp25-recid $OFFICE patentcity.external.inventor_applicant_recid patentcity.tmp.loc_${(L)OFFICE}patentwgp25 credentials-patentcity.json;
+        ```
+
+    !!! info
+        This function assumes that the recId has been added to inventor_applicant_locationid beforehand (using `utils.get_recid(address_)`)."""
     assert len(country_code) == 2
     query = f"""
     WITH
@@ -332,31 +432,29 @@ def get_wgp25_recid(
         patstat.*,
         SPLIT(patstat.publication_number, "-")[OFFSET(0)] AS country_code
       FROM
-        `{table_ref}` AS loc,  # patentcity.external.inventor_applicant_recid
+        `{src_table}` AS loc,  # patentcity.external.inventor_applicant_recid
         `{patstat_patent_properties_table}` AS patstat  # patentcity.external.patstat_patent_properties
       WHERE
         loc.appln_id = patstat.appln_id
         AND loc.appln_id IS NOT NULL
-        AND SPLIT(patstat.publication_number, "-")[OFFSET(0)] IN ("DE", "GB", "FR", "US")
+        AND SPLIT(patstat.publication_number, "-")[OFFSET(0)] IN "{country_code}"
     SELECT
       recId,
       ANY_VALUE(address_) AS searchText
     FROM
       tmp
-    WHERE
-      country_code="{country_code}"
     GROUP BY
       recId
     """
-    get_job_done(query, destination_table, key_file)
+    _get_job_done(query, destination_table, credentials)
 
 
 @app.command()
 def family_expansion(
-    table_ref: str, destination_table: str, key_file: str, destination_schema: str
+    src_table: str, destination_table: str, credentials: str, destination_schema: str
 ):
     """Expand along families in `table ref`. The returned table contains all publications belonging to a family
-    existing in `table_ref` *but* absent from the latter. Family data are *assigned* from data in `table_ref`."""
+    existing in `src_table` *but* absent from the latter. Family data are *assigned* from data in `src_table`."""
     query = f"""
     WITH
       family_table AS (
@@ -364,14 +462,14 @@ def family_expansion(
         family_id,
         ANY_VALUE(patentee) as patentee
       FROM
-        `{table_ref}`  # patentcity.patentcity.v100rc4
+        `{src_table}`  # patentcity.patentcity.v100rc4
      GROUP BY
       family_id   ),
       publication_list AS (
       SELECT
         DISTINCT(publication_number) AS publication_number
       FROM
-        `{table_ref}`),  # patentcity.patentcity.v100rc4
+        `{src_table}`),  # patentcity.patentcity.v100rc4
       expanded_family_table AS (
       SELECT
         p.publication_number,
@@ -398,23 +496,24 @@ def family_expansion(
     expanded_family_table.publication_number=publication_list.publication_number
     WHERE publication_list.publication_number IS NULL
   """
-    get_job_done(
-        query, destination_table, key_file, destination_schema=destination_schema
+    _get_job_done(
+        query, destination_table, credentials, destination_schema=destination_schema
     )
 
 
 @app.command()
-def filter_kind_codes(table_ref: str, destination_table: str, key_file: str):
-    """Filter `table_ref` to make sure that only *utility patents* are reported. See below the precise definition of
-    utility patents by country code (of the patent office).
+def filter_kind_codes(src_table: str, destination_table: str, credentials: str):
+    """Filter `src_table` to make sure that only *utility patents* are reported.
 
-    |Country code|Kind codes|
-    |---|---|
-    |DD|A, A1, A3, B|
-    |DE|A1, B, B3, C, C1, D1|
-    |FR|A, A1|
-    |GB|A|
-    |US|A (before 2001); B1,B2 (after 2001)|
+    Arguments:
+        src_table: source table (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        patentcity io filter-kind-codes <src_table> <destination_table> credentials-patentcity.json
+        ```
     """
     query = f"""
     WITH keep_list AS (
@@ -429,16 +528,16 @@ def filter_kind_codes(table_ref: str, destination_table: str, key_file: str):
         ELSE FALSE
       END AS keep
     FROM
-      `{table_ref}`) # patentcity.patentcity.v100rc4
+      `{src_table}`) # patentcity.patentcity.v100rc4
     SELECT
       origin.* FROM
-      `{table_ref}` as origin,  # patentcity.patentcity.v100rc4
+      `{src_table}` as origin,  # patentcity.patentcity.v100rc4
       keep_list
       WHERE
         keep_list.publication_number = origin.publication_number
         AND keep_list.keep IS TRUE
     """
-    get_job_done(query, destination_table, key_file)
+    _get_job_done(query, destination_table, credentials)
 
 
 if __name__ == "__main__":

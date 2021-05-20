@@ -111,6 +111,21 @@ def move_file(file, u_bounds):
             typer.secho(f"{ok}Move {file}->group_{group}/", fg=typer.colors.GREEN)
 
 
+def read_csv_many(path: str, verbose=False, **kwargs):
+    """Append tables defined by files in `path` ()"""
+    files = glob(path)
+    for i, file in enumerate(files):
+        tmp_ = pd.read_csv(file, **kwargs)
+        if verbose:
+            typer.secho(f"Using {file}", color=typer.colors.BLUE)
+        # breakpoint()
+        if i == 0:
+            tmp = tmp_.copy()
+        else:
+            tmp = tmp.append(tmp_)  # , error_bad_lines=False
+    return tmp
+
+
 @app.command()
 def make_groups(path: str, u_bounds: str = None, max_workers: int = 10):
     """Distribute files in folders by groups. u_bounds (upper bounds of the groups) should be
@@ -233,52 +248,6 @@ def get_recid_nomatch(file, index, inDelim: str = "|"):
                 typer.secho(f"{recid}{inDelim}{search_text}")
             else:
                 pass
-
-
-@app.command(deprecated=True)
-def debug_duplicates(file: str, duplicates: str = None):
-    """Update loc recId with md5 hashing (new get-recid) when it happens to be duplicated due to
-    adler32 issue (old get_recid).
-    """
-    # E.g. 999425627|Checy (Frankreich) and 999425627|Ablon (Frankreich)
-    list_duplicates = [
-        int(dupl.replace("\n", "")) for dupl in list(open(duplicates, "r"))
-    ]
-    with open(file, "r") as lines:
-        for line in lines:
-            line = json.loads(line)
-            updated_loc = []
-            if line.get("loc"):
-                for loc in line["loc"]:
-                    if loc["recId"] in list_duplicates:
-                        recid = get_recid(loc["raw"], toint=True)
-                        # typer.secho(f"{loc['recId']}|{recid}", fg=typer.colors.YELLOW)
-                        loc.update({"recId": recid})
-
-                    updated_loc += [loc]
-                line.update({"loc": updated_loc})
-            typer.echo(json.dumps(line))
-
-
-@app.command(deprecated=True)
-def remove_duplicates(
-    file: str, inDelim: str = ",", duplicates: str = None, header: bool = True
-):
-    """Remove lines with adler32 duplicated recId from FILE"""
-    list_duplicates = [
-        int(dupl.replace("\n", "")) for dupl in list(open(duplicates, "r"))
-    ]
-    with open(file, "r") as lines:
-        if header:
-            line = next(lines)
-            typer.echo(line)
-        for line in lines:
-            recid = int(line.split(inDelim)[0])
-            if recid in list_duplicates:
-                # typer.secho(line, fg=typer.colors.YELLOW)
-                pass
-            else:  # only lines where recId not in duplicates are preserved
-                typer.echo(line)
 
 
 @app.command()

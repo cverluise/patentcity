@@ -1,4 +1,4 @@
-# CARD
+# MODELS
 
 ## ℹ️ Model Overview
 
@@ -42,7 +42,7 @@ spacy train configs/de_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 
 `de_ent_ddpatent0*` have been specifically trained on DD patents. The model's performance are not guaranteed out of this scope.
 
-### 🔂 Versions and alternative approaches
+## 🔂 Versions and alternative approaches
 
 |Version|Comment|
 |---|---|
