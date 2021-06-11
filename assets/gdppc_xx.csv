@@ -1,0 +1,2534 @@
+country,country_code,year,gdppc
+Australia,AUS,1870,5217.0
+Austria,AUT,1870,2970.0
+Belgium,BEL,1870,4291.0
+Cada,CAN,1870,2702.0
+Switzerland,CHE,1870,2954.0
+Czechoslovakia,CSK,1870,1855.0
+Czech Republic,CZE,1870,
+Denmark,DNK,1870,3193.0
+United Kingdom,GBR,1870,5829.0
+Hungary,HUN,1870,1741.0
+Italy,ITA,1870,2826.0
+Japan,JPN,1870,1580.0
+Netherlands,NLD,1870,4422.0
+Poland,POL,1870,1575.0
+Russian Federation,RUS,1870,
+Sweden,SWE,1870,2144.0
+United States,USA,1870,4803.0
+Australia,AUS,1871,5259.0
+Austria,AUT,1871,3154.0
+Belgium,BEL,1871,4275.0
+Cada,CAN,1871,2797.0
+Switzerland,CHE,1871,3064.0
+Czechoslovakia,CSK,1871,
+Czech Republic,CZE,1871,
+Denmark,DNK,1871,3177.0
+United Kingdom,GBR,1871,5797.0
+Hungary,HUN,1871,
+Italy,ITA,1871,2811.0
+Japan,JPN,1871,
+Netherlands,NLD,1871,4364.0
+Poland,POL,1871,1576.0
+Russian Federation,RUS,1871,
+Sweden,SWE,1871,2219.0
+United States,USA,1871,4919.0
+Australia,AUS,1872,5663.0
+Austria,AUT,1872,3150.0
+Belgium,BEL,1872,4501.0
+Cada,CAN,1872,2718.0
+Switzerland,CHE,1872,3140.0
+Czechoslovakia,CSK,1872,
+Czech Republic,CZE,1872,
+Denmark,DNK,1872,3327.0
+United Kingdom,GBR,1872,5769.0
+Hungary,HUN,1872,
+Italy,ITA,1872,2593.0
+Japan,JPN,1872,
+Netherlands,NLD,1872,4414.0
+Poland,POL,1872,1599.0
+Russian Federation,RUS,1872,
+Sweden,SWE,1872,2259.0
+United States,USA,1872,4992.0
+Australia,AUS,1873,6095.0
+Austria,AUT,1873,3049.0
+Belgium,BEL,1873,4495.0
+Cada,CAN,1873,2936.0
+Switzerland,CHE,1873,3321.0
+Czechoslovakia,CSK,1873,
+Czech Republic,CZE,1873,
+Denmark,DNK,1873,3279.0
+United Kingdom,GBR,1873,5842.0
+Hungary,HUN,1873,
+Italy,ITA,1873,2581.0
+Japan,JPN,1873,
+Netherlands,NLD,1873,4503.0
+Poland,POL,1873,1653.0
+Russian Federation,RUS,1873,
+Sweden,SWE,1873,2284.0
+United States,USA,1873,5117.0
+Australia,AUS,1874,6113.0
+Austria,AUT,1874,3158.0
+Belgium,BEL,1874,4607.0
+Cada,CAN,1874,2955.0
+Switzerland,CHE,1874,3323.0
+Czechoslovakia,CSK,1874,
+Czech Republic,CZE,1874,
+Denmark,DNK,1874,3341.0
+United Kingdom,GBR,1874,5874.0
+Hungary,HUN,1874,
+Italy,ITA,1874,2715.0
+Japan,JPN,1874,1607.0
+Netherlands,NLD,1874,4337.0
+Poland,POL,1874,1682.0
+Russian Federation,RUS,1874,
+Sweden,SWE,1874,2370.0
+United States,USA,1874,4965.0
+Australia,AUS,1875,6596.0
+Austria,AUT,1875,3145.0
+Belgium,BEL,1875,4560.0
+Cada,CAN,1875,2844.0
+Switzerland,CHE,1875,3599.0
+Czechoslovakia,CSK,1875,
+Czech Republic,CZE,1875,
+Denmark,DNK,1875,3366.0
+United Kingdom,GBR,1875,5950.0
+Hungary,HUN,1875,
+Italy,ITA,1875,2727.0
+Japan,JPN,1875,
+Netherlands,NLD,1875,4584.0
+Poland,POL,1875,1686.0
+Russian Federation,RUS,1875,
+Sweden,SWE,1875,2286.0
+United States,USA,1875,5105.0
+Australia,AUS,1876,6387.0
+Austria,AUT,1876,3188.0
+Belgium,BEL,1876,4583.0
+Cada,CAN,1876,2616.0
+Switzerland,CHE,1876,3852.0
+Czechoslovakia,CSK,1876,
+Czech Republic,CZE,1876,
+Denmark,DNK,1876,3395.0
+United Kingdom,GBR,1876,5938.0
+Hungary,HUN,1876,
+Italy,ITA,1876,2662.0
+Japan,JPN,1876,
+Netherlands,NLD,1876,4595.0
+Poland,POL,1876,1733.0
+Russian Federation,RUS,1876,
+Sweden,SWE,1876,2431.0
+United States,USA,1876,5050.0
+Australia,AUS,1877,6433.0
+Austria,AUT,1877,3268.0
+Belgium,BEL,1877,4597.0
+Cada,CAN,1877,2753.0
+Switzerland,CHE,1877,3630.0
+Czechoslovakia,CSK,1877,
+Czech Republic,CZE,1877,
+Denmark,DNK,1877,3261.0
+United Kingdom,GBR,1877,5923.0
+Hungary,HUN,1877,
+Italy,ITA,1877,2678.0
+Japan,JPN,1877,
+Netherlands,NLD,1877,4651.0
+Poland,POL,1877,1761.0
+Russian Federation,RUS,1877,
+Sweden,SWE,1877,2377.0
+United States,USA,1877,5099.0
+Australia,AUS,1878,6817.0
+Austria,AUT,1878,3347.0
+Belgium,BEL,1878,4689.0
+Cada,CAN,1878,2609.0
+Switzerland,CHE,1878,3486.0
+Czechoslovakia,CSK,1878,
+Czech Republic,CZE,1878,
+Denmark,DNK,1878,3351.0
+United Kingdom,GBR,1878,5879.0
+Hungary,HUN,1878,
+Italy,ITA,1878,2745.0
+Japan,JPN,1878,
+Netherlands,NLD,1878,4637.0
+Poland,POL,1878,1800.0
+Russian Federation,RUS,1878,
+Sweden,SWE,1878,2291.0
+United States,USA,1878,5199.0
+Australia,AUS,1879,6703.0
+Austria,AUT,1879,3296.0
+Belgium,BEL,1879,4694.0
+Cada,CAN,1879,2813.0
+Switzerland,CHE,1879,3509.0
+Czechoslovakia,CSK,1879,
+Czech Republic,CZE,1879,
+Denmark,DNK,1879,3425.0
+United Kingdom,GBR,1879,5786.0
+Hungary,HUN,1879,
+Italy,ITA,1879,2753.0
+Japan,JPN,1879,
+Netherlands,NLD,1879,4414.0
+Poland,POL,1879,1835.0
+Russian Federation,RUS,1879,
+Sweden,SWE,1879,2416.0
+United States,USA,1879,5716.0
+Australia,AUS,1880,6830.0
+Austria,AUT,1880,3314.0
+Belgium,BEL,1880,4886.0
+Cada,CAN,1880,2895.0
+Switzerland,CHE,1880,3869.0
+Czechoslovakia,CSK,1880,
+Czech Republic,CZE,1880,
+Denmark,DNK,1880,3476.0
+United Kingdom,GBR,1880,5997.0
+Hungary,HUN,1880,
+Italy,ITA,1880,2796.0
+Japan,JPN,1880,
+Netherlands,NLD,1880,4666.0
+Poland,POL,1880,1886.0
+Russian Federation,RUS,1880,
+Sweden,SWE,1880,2359.0
+United States,USA,1880,6256.0
+Australia,AUS,1881,7101.0
+Austria,AUT,1881,3419.0
+Belgium,BEL,1881,4894.0
+Cada,CAN,1881,3252.0
+Switzerland,CHE,1881,3943.0
+Czechoslovakia,CSK,1881,
+Czech Republic,CZE,1881,
+Denmark,DNK,1881,3480.0
+United Kingdom,GBR,1881,6146.0
+Hungary,HUN,1881,
+Italy,ITA,1881,2880.0
+Japan,JPN,1881,
+Netherlands,NLD,1881,4694.0
+Poland,POL,1881,1927.0
+Russian Federation,RUS,1881,
+Sweden,SWE,1881,2444.0
+United States,USA,1881,6317.0
+Australia,AUS,1882,6476.0
+Austria,AUT,1882,3411.0
+Belgium,BEL,1882,4999.0
+Cada,CAN,1882,3362.0
+Switzerland,CHE,1882,3999.0
+Czechoslovakia,CSK,1882,
+Czech Republic,CZE,1882,
+Denmark,DNK,1882,3571.0
+United Kingdom,GBR,1882,6269.0
+Hungary,HUN,1882,
+Italy,ITA,1882,2915.0
+Japan,JPN,1882,
+Netherlands,NLD,1882,4758.0
+Poland,POL,1882,1978.0
+Russian Federation,RUS,1882,
+Sweden,SWE,1882,2354.0
+United States,USA,1882,6558.0
+Australia,AUS,1883,7133.0
+Austria,AUT,1883,3521.0
+Belgium,BEL,1883,5013.0
+Cada,CAN,1883,3331.0
+Switzerland,CHE,1883,4194.0
+Czechoslovakia,CSK,1883,
+Czech Republic,CZE,1883,
+Denmark,DNK,1883,3665.0
+United Kingdom,GBR,1883,6264.0
+Hungary,HUN,1883,
+Italy,ITA,1883,2942.0
+Japan,JPN,1883,
+Netherlands,NLD,1883,5053.0
+Poland,POL,1883,2026.0
+Russian Federation,RUS,1883,
+Sweden,SWE,1883,2531.0
+United States,USA,1883,6559.0
+Australia,AUS,1884,6861.0
+Austria,AUT,1884,3583.0
+Belgium,BEL,1884,4999.0
+Cada,CAN,1884,3556.0
+Switzerland,CHE,1884,4542.0
+Czechoslovakia,CSK,1884,
+Czech Republic,CZE,1884,
+Denmark,DNK,1884,3642.0
+United Kingdom,GBR,1884,6220.0
+Hungary,HUN,1884,
+Italy,ITA,1884,2898.0
+Japan,JPN,1884,
+Netherlands,NLD,1884,5085.0
+Poland,POL,1884,2056.0
+Russian Federation,RUS,1884,
+Sweden,SWE,1884,2477.0
+United States,USA,1884,6523.0
+Australia,AUS,1885,7049.0
+Austria,AUT,1885,3531.0
+Belgium,BEL,1885,5002.0
+Cada,CAN,1885,3304.0
+Switzerland,CHE,1885,4773.0
+Czechoslovakia,CSK,1885,
+Czech Republic,CZE,1885,
+Denmark,DNK,1885,3625.0
+United Kingdom,GBR,1885,6132.0
+Hungary,HUN,1885,
+Italy,ITA,1885,2941.0
+Japan,JPN,1885,1729.0
+Netherlands,NLD,1885,5137.0
+Poland,POL,1885,2083.0
+Russian Federation,RUS,1885,
+Sweden,SWE,1885,2522.0
+United States,USA,1885,6424.0
+Australia,AUS,1886,6900.0
+Austria,AUT,1886,3615.0
+Belgium,BEL,1886,5026.0
+Cada,CAN,1886,3308.0
+Switzerland,CHE,1886,5037.0
+Czechoslovakia,CSK,1886,
+Czech Republic,CZE,1886,
+Denmark,DNK,1886,3724.0
+United Kingdom,GBR,1886,6170.0
+Hungary,HUN,1886,
+Italy,ITA,1886,3005.0
+Japan,JPN,1886,1832.0
+Netherlands,NLD,1886,5157.0
+Poland,POL,1886,2091.0
+Russian Federation,RUS,1886,
+Sweden,SWE,1886,2547.0
+United States,USA,1886,6472.0
+Australia,AUS,1887,7383.0
+Austria,AUT,1887,3832.0
+Belgium,BEL,1887,5180.0
+Cada,CAN,1887,3379.0
+Switzerland,CHE,1887,5172.0
+Czechoslovakia,CSK,1887,
+Czech Republic,CZE,1887,
+Denmark,DNK,1887,3818.0
+United Kingdom,GBR,1887,6358.0
+Hungary,HUN,1887,
+Italy,ITA,1887,3081.0
+Japan,JPN,1887,1848.0
+Netherlands,NLD,1887,5223.0
+Poland,POL,1887,2087.0
+Russian Federation,RUS,1887,
+Sweden,SWE,1887,2471.0
+United States,USA,1887,6617.0
+Australia,AUS,1888,7179.0
+Austria,AUT,1888,3792.0
+Belgium,BEL,1888,5176.0
+Cada,CAN,1888,3585.0
+Switzerland,CHE,1888,5119.0
+Czechoslovakia,CSK,1888,
+Czech Republic,CZE,1888,
+Denmark,DNK,1888,3808.0
+United Kingdom,GBR,1888,6585.0
+Hungary,HUN,1888,
+Italy,ITA,1888,3065.0
+Japan,JPN,1888,1724.0
+Netherlands,NLD,1888,5231.0
+Poland,POL,1888,2120.0
+Russian Federation,RUS,1888,
+Sweden,SWE,1888,2511.0
+United States,USA,1888,6447.0
+Australia,AUS,1889,7567.0
+Austria,AUT,1889,3725.0
+Belgium,BEL,1889,5386.0
+Cada,CAN,1889,3569.0
+Switzerland,CHE,1889,5137.0
+Czechoslovakia,CSK,1889,
+Czech Republic,CZE,1889,
+Denmark,DNK,1889,3826.0
+United Kingdom,GBR,1889,6876.0
+Hungary,HUN,1889,
+Italy,ITA,1889,2971.0
+Japan,JPN,1889,1755.0
+Netherlands,NLD,1889,5349.0
+Poland,POL,1889,2161.0
+Russian Federation,RUS,1889,
+Sweden,SWE,1889,2549.0
+United States,USA,1889,6706.0
+Australia,AUS,1890,7106.0
+Austria,AUT,1890,3894.0
+Belgium,BEL,1890,5464.0
+Cada,CAN,1890,3790.0
+Switzerland,CHE,1890,5309.0
+Czechoslovakia,CSK,1890,2399.0
+Czech Republic,CZE,1890,
+Denmark,DNK,1890,4022.0
+United Kingdom,GBR,1890,6845.0
+Hungary,HUN,1890,2348.0
+Italy,ITA,1890,2974.0
+Japan,JPN,1890,1854.0
+Netherlands,NLD,1890,5078.0
+Poland,POL,1890,2204.0
+Russian Federation,RUS,1890,
+Sweden,SWE,1890,2606.0
+United States,USA,1890,6665.0
+Australia,AUS,1891,7438.0
+Austria,AUT,1891,3995.0
+Belgium,BEL,1891,5412.0
+Cada,CAN,1891,3840.0
+Switzerland,CHE,1891,4937.0
+Czechoslovakia,CSK,1891,
+Czech Republic,CZE,1891,
+Denmark,DNK,1891,4073.0
+United Kingdom,GBR,1891,6781.0
+Hungary,HUN,1891,
+Italy,ITA,1891,3014.0
+Japan,JPN,1891,1750.0
+Netherlands,NLD,1891,5035.0
+Poland,POL,1891,2235.0
+Russian Federation,RUS,1891,
+Sweden,SWE,1891,2748.0
+United States,USA,1891,6811.0
+Australia,AUS,1892,6368.0
+Austria,AUT,1892,4041.0
+Belgium,BEL,1892,5486.0
+Cada,CAN,1892,3779.0
+Switzerland,CHE,1892,5270.0
+Czechoslovakia,CSK,1892,
+Czech Republic,CZE,1892,
+Denmark,DNK,1892,4141.0
+United Kingdom,GBR,1892,6553.0
+Hungary,HUN,1892,
+Italy,ITA,1892,3017.0
+Japan,JPN,1892,1842.0
+Netherlands,NLD,1892,5131.0
+Poland,POL,1892,2276.0
+Russian Federation,RUS,1892,
+Sweden,SWE,1892,2713.0
+United States,USA,1892,7324.0
+Australia,AUS,1893,5910.0
+Austria,AUT,1893,4025.0
+Belgium,BEL,1893,5507.0
+Cada,CAN,1893,3720.0
+Switzerland,CHE,1893,5340.0
+Czechoslovakia,CSK,1893,
+Czech Republic,CZE,1893,
+Denmark,DNK,1893,4191.0
+United Kingdom,GBR,1893,6486.0
+Hungary,HUN,1893,
+Italy,ITA,1893,3064.0
+Japan,JPN,1893,1832.0
+Netherlands,NLD,1893,5019.0
+Poland,POL,1893,2311.0
+Russian Federation,RUS,1893,
+Sweden,SWE,1893,2778.0
+United States,USA,1893,6834.0
+Australia,AUS,1894,6003.0
+Austria,AUT,1894,4216.0
+Belgium,BEL,1894,5528.0
+Cada,CAN,1894,3857.0
+Switzerland,CHE,1894,5337.0
+Czechoslovakia,CSK,1894,
+Czech Republic,CZE,1894,
+Denmark,DNK,1894,4235.0
+United Kingdom,GBR,1894,6851.0
+Hungary,HUN,1894,
+Italy,ITA,1894,3081.0
+Japan,JPN,1894,2016.0
+Netherlands,NLD,1894,5247.0
+Poland,POL,1894,2340.0
+Russian Federation,RUS,1894,
+Sweden,SWE,1894,2791.0
+United States,USA,1894,6510.0
+Australia,AUS,1895,5558.0
+Austria,AUT,1895,4285.0
+Belgium,BEL,1895,5598.0
+Cada,CAN,1895,3779.0
+Switzerland,CHE,1895,5632.0
+Czechoslovakia,CSK,1895,
+Czech Republic,CZE,1895,
+Denmark,DNK,1895,4415.0
+United Kingdom,GBR,1895,6996.0
+Hungary,HUN,1895,
+Italy,ITA,1895,3107.0
+Japan,JPN,1895,2022.0
+Netherlands,NLD,1895,5212.0
+Poland,POL,1895,2364.0
+Russian Federation,RUS,1895,
+Sweden,SWE,1895,2927.0
+United States,USA,1895,7160.0
+Australia,AUS,1896,5874.0
+Austria,AUT,1896,4305.0
+Belgium,BEL,1896,5660.0
+Cada,CAN,1896,3647.0
+Switzerland,CHE,1896,5967.0
+Czechoslovakia,CSK,1896,
+Czech Republic,CZE,1896,
+Denmark,DNK,1896,4521.0
+United Kingdom,GBR,1896,7211.0
+Hungary,HUN,1896,
+Italy,ITA,1896,3153.0
+Japan,JPN,1896,1904.0
+Netherlands,NLD,1896,5359.0
+Poland,POL,1896,2415.0
+Russian Federation,RUS,1896,
+Sweden,SWE,1896,3003.0
+United States,USA,1896,6886.0
+Australia,AUS,1897,5451.0
+Austria,AUT,1897,4352.0
+Belgium,BEL,1897,5716.0
+Cada,CAN,1897,4004.0
+Switzerland,CHE,1897,6242.0
+Czechoslovakia,CSK,1897,
+Czech Republic,CZE,1897,
+Denmark,DNK,1897,4564.0
+United Kingdom,GBR,1897,7229.0
+Hungary,HUN,1897,
+Italy,ITA,1897,3158.0
+Japan,JPN,1897,1905.0
+Netherlands,NLD,1897,5421.0
+Poland,POL,1897,2477.0
+Russian Federation,RUS,1897,
+Sweden,SWE,1897,3121.0
+United States,USA,1897,7406.0
+Australia,AUS,1898,6202.0
+Austria,AUT,1898,4551.0
+Belgium,BEL,1898,5762.0
+Cada,CAN,1898,4117.0
+Switzerland,CHE,1898,6428.0
+Czechoslovakia,CSK,1898,
+Czech Republic,CZE,1898,
+Denmark,DNK,1898,4575.0
+United Kingdom,GBR,1898,7500.0
+Hungary,HUN,1898,
+Italy,ITA,1898,3145.0
+Japan,JPN,1898,2233.0
+Netherlands,NLD,1898,5431.0
+Poland,POL,1898,2546.0
+Russian Federation,RUS,1898,
+Sweden,SWE,1898,3228.0
+United States,USA,1898,7427.0
+Australia,AUS,1899,6121.0
+Austria,AUT,1899,4600.0
+Belgium,BEL,1899,5828.0
+Cada,CAN,1899,4457.0
+Switzerland,CHE,1899,6337.0
+Czechoslovakia,CSK,1899,
+Czech Republic,CZE,1899,
+Denmark,DNK,1899,4705.0
+United Kingdom,GBR,1899,7729.0
+Hungary,HUN,1899,
+Italy,ITA,1899,3180.0
+Japan,JPN,1899,2105.0
+Netherlands,NLD,1899,5435.0
+Poland,POL,1899,2630.0
+Russian Federation,RUS,1899,
+Sweden,SWE,1899,3308.0
+United States,USA,1899,7959.0
+Australia,AUS,1900,6397.0
+Austria,AUT,1900,4594.0
+Belgium,BEL,1900,5947.0
+Cada,CAN,1900,4640.0
+Switzerland,CHE,1900,6612.0
+Czechoslovakia,CSK,1900,2756.0
+Czech Republic,CZE,1900,
+Denmark,DNK,1900,4809.0
+United Kingdom,GBR,1900,7594.0
+Hungary,HUN,1900,2681.0
+Italy,ITA,1900,3264.0
+Japan,JPN,1900,2123.0
+Netherlands,NLD,1900,5306.0
+Poland,POL,1900,2700.0
+Russian Federation,RUS,1900,
+Sweden,SWE,1900,3320.0
+United States,USA,1900,8038.0
+Australia,AUS,1901,6119.0
+Austria,AUT,1901,4565.0
+Belgium,BEL,1901,5928.0
+Cada,CAN,1901,4937.0
+Switzerland,CHE,1901,6399.0
+Czechoslovakia,CSK,1901,
+Czech Republic,CZE,1901,
+Denmark,DNK,1901,4948.0
+United Kingdom,GBR,1901,7516.0
+Hungary,HUN,1901,
+Italy,ITA,1901,3317.0
+Japan,JPN,1901,2162.0
+Netherlands,NLD,1901,5483.0
+Poland,POL,1901,
+Russian Federation,RUS,1901,
+Sweden,SWE,1901,3406.0
+United States,USA,1901,8770.0
+Australia,AUS,1902,6094.0
+Austria,AUT,1902,4694.0
+Belgium,BEL,1902,5960.0
+Cada,CAN,1902,5310.0
+Switzerland,CHE,1902,6616.0
+Czechoslovakia,CSK,1902,
+Czech Republic,CZE,1902,
+Denmark,DNK,1902,5007.0
+United Kingdom,GBR,1902,7635.0
+Hungary,HUN,1902,
+Italy,ITA,1902,3371.0
+Japan,JPN,1902,2013.0
+Netherlands,NLD,1902,5630.0
+Poland,POL,1902,
+Russian Federation,RUS,1902,
+Sweden,SWE,1902,3362.0
+United States,USA,1902,8684.0
+Australia,AUS,1903,6497.0
+Austria,AUT,1903,4688.0
+Belgium,BEL,1903,6013.0
+Cada,CAN,1903,5314.0
+Switzerland,CHE,1903,6472.0
+Czechoslovakia,CSK,1903,
+Czech Republic,CZE,1903,
+Denmark,DNK,1903,5244.0
+United Kingdom,GBR,1903,7482.0
+Hungary,HUN,1903,
+Italy,ITA,1903,3402.0
+Japan,JPN,1903,2204.0
+Netherlands,NLD,1903,5544.0
+Poland,POL,1903,
+Russian Federation,RUS,1903,
+Sweden,SWE,1903,3539.0
+United States,USA,1903,8941.0
+Australia,AUS,1904,6846.0
+Austria,AUT,1904,4712.0
+Belgium,BEL,1904,6091.0
+Cada,CAN,1904,5228.0
+Switzerland,CHE,1904,6880.0
+Czechoslovakia,CSK,1904,
+Czech Republic,CZE,1904,
+Denmark,DNK,1904,5302.0
+United Kingdom,GBR,1904,7455.0
+Hungary,HUN,1904,
+Italy,ITA,1904,3461.0
+Japan,JPN,1904,2179.0
+Netherlands,NLD,1904,5541.0
+Poland,POL,1904,
+Russian Federation,RUS,1904,
+Sweden,SWE,1904,3599.0
+United States,USA,1904,8664.0
+Australia,AUS,1905,6825.0
+Austria,AUT,1905,4925.0
+Belgium,BEL,1905,6188.0
+Cada,CAN,1905,5678.0
+Switzerland,CHE,1905,7185.0
+Czechoslovakia,CSK,1905,
+Czech Republic,CZE,1905,
+Denmark,DNK,1905,5333.0
+United Kingdom,GBR,1905,7603.0
+Hungary,HUN,1905,
+Italy,ITA,1905,3532.0
+Japan,JPN,1905,2111.0
+Netherlands,NLD,1905,5735.0
+Poland,POL,1905,
+Russian Federation,RUS,1905,
+Sweden,SWE,1905,3547.0
+United States,USA,1905,9121.0
+Australia,AUS,1906,7184.0
+Austria,AUT,1906,5062.0
+Belgium,BEL,1906,6244.0
+Cada,CAN,1906,6130.0
+Switzerland,CHE,1906,7584.0
+Czechoslovakia,CSK,1906,
+Czech Republic,CZE,1906,
+Denmark,DNK,1906,5423.0
+United Kingdom,GBR,1906,7782.0
+Hungary,HUN,1906,
+Italy,ITA,1906,3652.0
+Japan,JPN,1906,2329.0
+Netherlands,NLD,1906,5770.0
+Poland,POL,1906,
+Russian Federation,RUS,1906,
+Sweden,SWE,1906,3830.0
+United States,USA,1906,9980.0
+Australia,AUS,1907,7358.0
+Austria,AUT,1907,5321.0
+Belgium,BEL,1907,6268.0
+Cada,CAN,1907,6177.0
+Switzerland,CHE,1907,7465.0
+Czechoslovakia,CSK,1907,
+Czech Republic,CZE,1907,
+Denmark,DNK,1907,5557.0
+United Kingdom,GBR,1907,7855.0
+Hungary,HUN,1907,
+Italy,ITA,1907,3716.0
+Japan,JPN,1907,2358.0
+Netherlands,NLD,1907,5592.0
+Poland,POL,1907,
+Russian Federation,RUS,1907,
+Sweden,SWE,1907,4085.0
+United States,USA,1907,9951.0
+Australia,AUS,1908,7481.0
+Austria,AUT,1908,5292.0
+Belgium,BEL,1908,6269.0
+Cada,CAN,1908,5694.0
+Switzerland,CHE,1908,7508.0
+Czechoslovakia,CSK,1908,
+Czech Republic,CZE,1908,
+Denmark,DNK,1908,5662.0
+United Kingdom,GBR,1908,7461.0
+Hungary,HUN,1908,
+Italy,ITA,1908,3795.0
+Japan,JPN,1908,2357.0
+Netherlands,NLD,1908,5628.0
+Poland,POL,1908,
+Russian Federation,RUS,1908,
+Sweden,SWE,1908,3959.0
+United States,USA,1908,8976.0
+Australia,AUS,1909,7940.0
+Austria,AUT,1909,5222.0
+Belgium,BEL,1909,6330.0
+Cada,CAN,1909,6137.0
+Switzerland,CHE,1909,7858.0
+Czechoslovakia,CSK,1909,
+Czech Republic,CZE,1909,
+Denmark,DNK,1909,5807.0
+United Kingdom,GBR,1909,7557.0
+Hungary,HUN,1909,
+Italy,ITA,1909,3826.0
+Japan,JPN,1909,2333.0
+Netherlands,NLD,1909,5852.0
+Poland,POL,1909,
+Russian Federation,RUS,1909,
+Sweden,SWE,1909,3980.0
+United States,USA,1909,9798.0
+Australia,AUS,1910,8305.0
+Austria,AUT,1910,5244.0
+Belgium,BEL,1910,6478.0
+Cada,CAN,1910,6481.0
+Switzerland,CHE,1910,8048.0
+Czechoslovakia,CSK,1910,3174.0
+Czech Republic,CZE,1910,
+Denmark,DNK,1910,5906.0
+United Kingdom,GBR,1910,7718.0
+Hungary,HUN,1910,3188.0
+Italy,ITA,1910,3829.0
+Japan,JPN,1910,2317.0
+Netherlands,NLD,1910,6030.0
+Poland,POL,1910,2694.0
+Russian Federation,RUS,1910,
+Sweden,SWE,1910,4053.0
+United States,USA,1910,9637.0
+Australia,AUS,1911,8136.0
+Austria,AUT,1911,5364.0
+Belgium,BEL,1911,6612.0
+Cada,CAN,1911,6715.0
+Switzerland,CHE,1911,8044.0
+Czechoslovakia,CSK,1911,
+Czech Republic,CZE,1911,
+Denmark,DNK,1911,6148.0
+United Kingdom,GBR,1911,7874.0
+Hungary,HUN,1911,
+Italy,ITA,1911,3870.0
+Japan,JPN,1911,2400.0
+Netherlands,NLD,1911,6158.0
+Poland,POL,1911,
+Russian Federation,RUS,1911,
+Sweden,SWE,1911,4154.0
+United States,USA,1911,9736.0
+Australia,AUS,1912,8126.0
+Austria,AUT,1912,5587.0
+Belgium,BEL,1912,6704.0
+Cada,CAN,1912,6977.0
+Switzerland,CHE,1912,8312.0
+Czechoslovakia,CSK,1912,
+Czech Republic,CZE,1912,
+Denmark,DNK,1912,6076.0
+United Kingdom,GBR,1912,7954.0
+Hungary,HUN,1912,
+Italy,ITA,1912,3875.0
+Japan,JPN,1912,2420.0
+Netherlands,NLD,1912,6245.0
+Poland,POL,1912,
+Russian Federation,RUS,1912,
+Sweden,SWE,1912,4312.0
+United States,USA,1912,9977.0
+Australia,AUS,1913,8220.0
+Austria,AUT,1913,5523.0
+Belgium,BEL,1913,6727.0
+Cada,CAN,1913,7088.0
+Switzerland,CHE,1913,8172.0
+Czechoslovakia,CSK,1913,3341.0
+Czech Republic,CZE,1913,
+Denmark,DNK,1913,6236.0
+United Kingdom,GBR,1913,8212.0
+Hungary,HUN,1913,3344.0
+Italy,ITA,1913,4057.0
+Japan,JPN,1913,2431.0
+Netherlands,NLD,1913,6454.0
+Poland,POL,1913,2772.0
+Russian Federation,RUS,1913,
+Sweden,SWE,1913,4581.0
+United States,USA,1913,10108.0
+Australia,AUS,1914,8013.0
+Austria,AUT,1914,4584.0
+Belgium,BEL,1914,6253.0
+Cada,CAN,1914,6416.0
+Switzerland,CHE,1914,7595.0
+Czechoslovakia,CSK,1914,
+Czech Republic,CZE,1914,
+Denmark,DNK,1914,6551.0
+United Kingdom,GBR,1914,8131.0
+Hungary,HUN,1914,
+Italy,ITA,1914,3835.0
+Japan,JPN,1914,2358.0
+Netherlands,NLD,1914,6166.0
+Poland,POL,1914,
+Russian Federation,RUS,1914,
+Sweden,SWE,1914,4678.0
+United States,USA,1914,9096.0
+Australia,AUS,1915,7806.0
+Austria,AUT,1915,4229.0
+Belgium,BEL,1915,6150.0
+Cada,CAN,1915,6747.0
+Switzerland,CHE,1915,7459.0
+Czechoslovakia,CSK,1915,
+Czech Republic,CZE,1915,
+Denmark,DNK,1915,6022.0
+United Kingdom,GBR,1915,8639.0
+Hungary,HUN,1915,
+Italy,ITA,1915,3642.0
+Japan,JPN,1915,2512.0
+Netherlands,NLD,1915,6258.0
+Poland,POL,1915,
+Russian Federation,RUS,1915,
+Sweden,SWE,1915,4841.0
+United States,USA,1915,9164.0
+Australia,AUS,1916,7775.0
+Austria,AUT,1916,4189.0
+Belgium,BEL,1916,6503.0
+Cada,CAN,1916,7406.0
+Switzerland,CHE,1916,8079.0
+Czechoslovakia,CSK,1916,
+Czech Republic,CZE,1916,
+Denmark,DNK,1916,6202.0
+United Kingdom,GBR,1916,8702.0
+Hungary,HUN,1916,
+Italy,ITA,1916,3942.0
+Japan,JPN,1916,2829.0
+Netherlands,NLD,1916,6306.0
+Poland,POL,1916,
+Russian Federation,RUS,1916,
+Sweden,SWE,1916,5109.0
+United States,USA,1916,10222.0
+Australia,AUS,1917,7637.0
+Austria,AUT,1917,4122.0
+Belgium,BEL,1917,5609.0
+Cada,CAN,1917,7653.0
+Switzerland,CHE,1917,7841.0
+Czechoslovakia,CSK,1917,
+Czech Republic,CZE,1917,
+Denmark,DNK,1917,5765.0
+United Kingdom,GBR,1917,8665.0
+Hungary,HUN,1917,
+Italy,ITA,1917,3955.0
+Japan,JPN,1917,2941.0
+Netherlands,NLD,1917,5781.0
+Poland,POL,1917,
+Russian Federation,RUS,1917,
+Sweden,SWE,1917,4799.0
+United States,USA,1917,9769.0
+Australia,AUS,1918,7336.0
+Austria,AUT,1918,4073.0
+Belgium,BEL,1918,4560.0
+Cada,CAN,1918,7079.0
+Switzerland,CHE,1918,7116.0
+Czechoslovakia,CSK,1918,
+Czech Republic,CZE,1918,
+Denmark,DNK,1918,5514.0
+United Kingdom,GBR,1918,8630.0
+Hungary,HUN,1918,
+Italy,ITA,1918,3856.0
+Japan,JPN,1918,2973.0
+Netherlands,NLD,1918,5343.0
+Poland,POL,1918,
+Russian Federation,RUS,1918,
+Sweden,SWE,1918,4434.0
+United States,USA,1918,10471.0
+Australia,AUS,1919,7517.0
+Austria,AUT,1919,3601.0
+Belgium,BEL,1919,5402.0
+Cada,CAN,1919,6406.0
+Switzerland,CHE,1919,6747.0
+Czechoslovakia,CSK,1919,
+Czech Republic,CZE,1919,
+Denmark,DNK,1919,6153.0
+United Kingdom,GBR,1919,7605.0
+Hungary,HUN,1919,
+Italy,ITA,1919,3701.0
+Japan,JPN,1919,3219.0
+Netherlands,NLD,1919,6570.0
+Poland,POL,1919,
+Russian Federation,RUS,1919,
+Sweden,SWE,1919,4503.0
+United States,USA,1919,10450.0
+Australia,AUS,1920,7597.0
+Austria,AUT,1920,3845.0
+Belgium,BEL,1920,6315.0
+Cada,CAN,1920,6154.0
+Switzerland,CHE,1920,7364.0
+Czechoslovakia,CSK,1920,3081.0
+Czech Republic,CZE,1920,
+Denmark,DNK,1920,6363.0
+United Kingdom,GBR,1920,7017.0
+Hungary,HUN,1920,2724.0
+Italy,ITA,1920,3789.0
+Japan,JPN,1920,2974.0
+Netherlands,NLD,1920,6727.0
+Poland,POL,1920,3000.0
+Russian Federation,RUS,1920,
+Sweden,SWE,1920,4788.0
+United States,USA,1920,10153.0
+Australia,AUS,1921,7828.0
+Austria,AUT,1921,4224.0
+Belgium,BEL,1921,6465.0
+Cada,CAN,1921,5351.0
+Switzerland,CHE,1921,5999.0
+Czechoslovakia,CSK,1921,3323.0
+Czech Republic,CZE,1921,
+Denmark,DNK,1921,6099.0
+United Kingdom,GBR,1921,6792.0
+Hungary,HUN,1921,
+Italy,ITA,1921,3660.0
+Japan,JPN,1921,3244.0
+Netherlands,NLD,1921,7063.0
+Poland,POL,1921,
+Russian Federation,RUS,1921,
+Sweden,SWE,1921,4543.0
+United States,USA,1921,9675.0
+Australia,AUS,1922,8072.0
+Austria,AUT,1922,4586.0
+Belgium,BEL,1922,7034.0
+Cada,CAN,1922,6046.0
+Switzerland,CHE,1922,7182.0
+Czechoslovakia,CSK,1922,3198.0
+Czech Republic,CZE,1922,
+Denmark,DNK,1922,6641.0
+United Kingdom,GBR,1922,7391.0
+Hungary,HUN,1922,
+Italy,ITA,1922,3928.0
+Japan,JPN,1922,3244.0
+Netherlands,NLD,1922,7331.0
+Poland,POL,1922,
+Russian Federation,RUS,1922,
+Sweden,SWE,1922,4868.0
+United States,USA,1922,10010.0
+Australia,AUS,1923,8276.0
+Austria,AUT,1923,4530.0
+Belgium,BEL,1923,7226.0
+Cada,CAN,1923,6338.0
+Switzerland,CHE,1923,7670.0
+Czechoslovakia,CSK,1923,3429.0
+Czech Republic,CZE,1923,
+Denmark,DNK,1923,7267.0
+United Kingdom,GBR,1923,7587.0
+Hungary,HUN,1923,
+Italy,ITA,1923,4248.0
+Japan,JPN,1923,3244.0
+Netherlands,NLD,1923,7388.0
+Poland,POL,1923,
+Russian Federation,RUS,1923,
+Sweden,SWE,1923,5023.0
+United States,USA,1923,11071.0
+Australia,AUS,1924,8635.0
+Austria,AUT,1924,5042.0
+Belgium,BEL,1924,7393.0
+Cada,CAN,1924,6339.0
+Switzerland,CHE,1924,8196.0
+Czechoslovakia,CSK,1924,3751.0
+Czech Republic,CZE,1924,
+Denmark,DNK,1924,7218.0
+United Kingdom,GBR,1924,7844.0
+Hungary,HUN,1924,3048.0
+Italy,ITA,1924,4324.0
+Japan,JPN,1924,3316.0
+Netherlands,NLD,1924,7803.0
+Poland,POL,1924,
+Russian Federation,RUS,1924,
+Sweden,SWE,1924,5365.0
+United States,USA,1924,11127.0
+Australia,AUS,1925,8851.0
+Austria,AUT,1925,5367.0
+Belgium,BEL,1925,7438.0
+Cada,CAN,1925,6918.0
+Switzerland,CHE,1925,8385.0
+Czechoslovakia,CSK,1925,4154.0
+Czech Republic,CZE,1925,
+Denmark,DNK,1925,6978.0
+United Kingdom,GBR,1925,8199.0
+Hungary,HUN,1925,3633.0
+Italy,ITA,1925,4580.0
+Japan,JPN,1925,3414.0
+Netherlands,NLD,1925,8019.0
+Poland,POL,1925,
+Russian Federation,RUS,1925,
+Sweden,SWE,1925,5488.0
+United States,USA,1925,11150.0
+Australia,AUS,1926,8883.0
+Austria,AUT,1926,5440.0
+Belgium,BEL,1926,7626.0
+Cada,CAN,1926,7168.0
+Switzerland,CHE,1926,8656.0
+Czechoslovakia,CSK,1926,4105.0
+Czech Republic,CZE,1926,
+Denmark,DNK,1926,7329.0
+United Kingdom,GBR,1926,7868.0
+Hungary,HUN,1926,3446.0
+Italy,ITA,1926,4576.0
+Japan,JPN,1926,3359.0
+Netherlands,NLD,1926,8541.0
+Poland,POL,1926,
+Russian Federation,RUS,1926,
+Sweden,SWE,1926,5756.0
+United States,USA,1926,11648.0
+Australia,AUS,1927,8837.0
+Austria,AUT,1927,5587.0
+Belgium,BEL,1927,7847.0
+Cada,CAN,1927,7726.0
+Switzerland,CHE,1927,9260.0
+Czechoslovakia,CSK,1927,4387.0
+Czech Republic,CZE,1927,
+Denmark,DNK,1927,7425.0
+United Kingdom,GBR,1927,8472.0
+Hungary,HUN,1927,3566.0
+Italy,ITA,1927,4454.0
+Japan,JPN,1927,3347.0
+Netherlands,NLD,1927,8773.0
+Poland,POL,1927,
+Russian Federation,RUS,1927,
+Sweden,SWE,1927,5942.0
+United States,USA,1927,11532.0
+Australia,AUS,1928,8690.0
+Austria,AUT,1928,5829.0
+Belgium,BEL,1928,8191.0
+Cada,CAN,1928,8244.0
+Switzerland,CHE,1928,9659.0
+Czechoslovakia,CSK,1928,4745.0
+Czech Republic,CZE,1928,
+Denmark,DNK,1928,7627.0
+United Kingdom,GBR,1928,8539.0
+Hungary,HUN,1928,3849.0
+Italy,ITA,1928,4693.0
+Japan,JPN,1928,3554.0
+Netherlands,NLD,1928,9118.0
+Poland,POL,1928,
+Russian Federation,RUS,1928,
+Sweden,SWE,1928,6113.0
+United States,USA,1928,11451.0
+Australia,AUS,1929,8389.0
+Austria,AUT,1929,5896.0
+Belgium,BEL,1929,8056.0
+Cada,CAN,1929,8074.0
+Switzerland,CHE,1929,9920.0
+Czechoslovakia,CSK,1929,4849.0
+Czech Republic,CZE,1929,
+Denmark,DNK,1929,8089.0
+United Kingdom,GBR,1929,8772.0
+Hungary,HUN,1929,3947.0
+Italy,ITA,1929,4889.0
+Japan,JPN,1929,3665.0
+Netherlands,NLD,1929,9068.0
+Poland,POL,1929,3374.0
+Russian Federation,RUS,1929,
+Sweden,SWE,1929,6476.0
+United States,USA,1929,11954.0
+Australia,AUS,1930,7504.0
+Austria,AUT,1930,5716.0
+Belgium,BEL,1930,7936.0
+Cada,CAN,1930,7669.0
+Switzerland,CHE,1930,9969.0
+Czechoslovakia,CSK,1930,4664.0
+Czech Republic,CZE,1930,
+Denmark,DNK,1930,8513.0
+United Kingdom,GBR,1930,8673.0
+Hungary,HUN,1930,3832.0
+Italy,ITA,1930,4631.0
+Japan,JPN,1930,3334.0
+Netherlands,NLD,1930,8931.0
+Poland,POL,1930,3178.0
+Russian Federation,RUS,1930,
+Sweden,SWE,1930,6755.0
+United States,USA,1930,10695.0
+Australia,AUS,1931,6940.0
+Austria,AUT,1931,5241.0
+Belgium,BEL,1931,7747.0
+Cada,CAN,1931,6382.0
+Switzerland,CHE,1931,10055.0
+Czechoslovakia,CSK,1931,4477.0
+Czech Republic,CZE,1931,
+Denmark,DNK,1931,8542.0
+United Kingdom,GBR,1931,8190.0
+Hungary,HUN,1931,3615.0
+Italy,ITA,1931,4538.0
+Japan,JPN,1931,3321.0
+Netherlands,NLD,1931,8265.0
+Poland,POL,1931,2906.0
+Russian Federation,RUS,1931,
+Sweden,SWE,1931,6582.0
+United States,USA,1931,9931.0
+Australia,AUS,1932,7275.0
+Austria,AUT,1932,4686.0
+Belgium,BEL,1932,7343.0
+Cada,CAN,1932,5852.0
+Switzerland,CHE,1932,9752.0
+Czechoslovakia,CSK,1932,4272.0
+Czech Republic,CZE,1932,
+Denmark,DNK,1932,8239.0
+United Kingdom,GBR,1932,8206.0
+Hungary,HUN,1932,3494.0
+Italy,ITA,1932,4602.0
+Japan,JPN,1932,3529.0
+Netherlands,NLD,1932,8026.0
+Poland,POL,1932,2643.0
+Russian Federation,RUS,1932,
+Sweden,SWE,1932,6325.0
+United States,USA,1932,8381.0
+Australia,AUS,1933,7718.0
+Austria,AUT,1933,4516.0
+Belgium,BEL,1933,7461.0
+Cada,CAN,1933,5372.0
+Switzerland,CHE,1933,10009.0
+Czechoslovakia,CSK,1933,4068.0
+Czech Republic,CZE,1933,
+Denmark,DNK,1933,8434.0
+United Kingdom,GBR,1933,8411.0
+Hungary,HUN,1933,3784.0
+Italy,ITA,1933,4514.0
+Japan,JPN,1933,3787.0
+Netherlands,NLD,1933,7900.0
+Poland,POL,1933,2534.0
+Russian Federation,RUS,1933,
+Sweden,SWE,1933,6429.0
+United States,USA,1933,8048.0
+Australia,AUS,1934,8066.0
+Austria,AUT,1934,4546.0
+Belgium,BEL,1934,7371.0
+Cada,CAN,1934,5883.0
+Switzerland,CHE,1934,9997.0
+Czechoslovakia,CSK,1934,3894.0
+Czech Republic,CZE,1934,
+Denmark,DNK,1934,8611.0
+United Kingdom,GBR,1934,8939.0
+Hungary,HUN,1934,3778.0
+Italy,ITA,1934,4466.0
+Japan,JPN,1934,3756.0
+Netherlands,NLD,1934,7659.0
+Poland,POL,1934,2539.0
+Russian Federation,RUS,1934,
+Sweden,SWE,1934,6845.0
+United States,USA,1934,8667.0
+Australia,AUS,1935,8477.0
+Austria,AUT,1935,4634.0
+Belgium,BEL,1935,7801.0
+Cada,CAN,1935,6298.0
+Switzerland,CHE,1935,9479.0
+Czechoslovakia,CSK,1935,3841.0
+Czech Republic,CZE,1935,
+Denmark,DNK,1935,8735.0
+United Kingdom,GBR,1935,9244.0
+Hungary,HUN,1935,3939.0
+Italy,ITA,1935,4670.0
+Japan,JPN,1935,3825.0
+Netherlands,NLD,1935,7857.0
+Poland,POL,1935,2546.0
+Russian Federation,RUS,1935,
+Sweden,SWE,1935,7160.0
+United States,USA,1935,9681.0
+Australia,AUS,1936,8792.0
+Austria,AUT,1936,4774.0
+Belgium,BEL,1936,7831.0
+Cada,CAN,1936,6574.0
+Switzerland,CHE,1936,9302.0
+Czechoslovakia,CSK,1936,4143.0
+Czech Republic,CZE,1936,
+Denmark,DNK,1936,8886.0
+United Kingdom,GBR,1936,9620.0
+Hungary,HUN,1936,4173.0
+Italy,ITA,1936,4471.0
+Japan,JPN,1936,3986.0
+Netherlands,NLD,1936,8273.0
+Poland,POL,1936,2590.0
+Russian Federation,RUS,1936,
+Sweden,SWE,1936,7396.0
+United States,USA,1936,10568.0
+Australia,AUS,1937,9159.0
+Austria,AUT,1937,5031.0
+Belgium,BEL,1937,7908.0
+Cada,CAN,1937,7130.0
+Switzerland,CHE,1937,10039.0
+Czechoslovakia,CSK,1937,4594.0
+Czech Republic,CZE,1937,
+Denmark,DNK,1937,9035.0
+United Kingdom,GBR,1937,9911.0
+Hungary,HUN,1937,4053.0
+Italy,ITA,1937,4879.0
+Japan,JPN,1937,4075.0
+Netherlands,NLD,1937,8660.0
+Poland,POL,1937,3052.0
+Russian Federation,RUS,1937,
+Sweden,SWE,1937,7579.0
+United States,USA,1937,11295.0
+Australia,AUS,1938,9382.0
+Austria,AUT,1938,5673.0
+Belgium,BEL,1938,7702.0
+Cada,CAN,1938,7246.0
+Switzerland,CHE,1938,9609.0
+Czechoslovakia,CSK,1938,
+Czech Republic,CZE,1938,
+Denmark,DNK,1938,9185.0
+United Kingdom,GBR,1938,9988.0
+Hungary,HUN,1938,4232.0
+Italy,ITA,1938,4981.0
+Japan,JPN,1938,4257.0
+Netherlands,NLD,1938,8368.0
+Poland,POL,1938,3478.0
+Russian Federation,RUS,1938,
+Sweden,SWE,1938,7812.0
+United States,USA,1938,10526.0
+Australia,AUS,1939,9318.0
+Austria,AUT,1939,6529.0
+Belgium,BEL,1939,8209.0
+Cada,CAN,1939,7600.0
+Switzerland,CHE,1939,9836.0
+Czechoslovakia,CSK,1939,
+Czech Republic,CZE,1939,
+Denmark,DNK,1939,9553.0
+United Kingdom,GBR,1939,9982.0
+Hungary,HUN,1939,4524.0
+Italy,ITA,1939,5246.0
+Japan,JPN,1939,4804.0
+Netherlands,NLD,1939,8837.0
+Poland,POL,1939,
+Russian Federation,RUS,1939,
+Sweden,SWE,1939,8370.0
+United States,USA,1939,11171.0
+Australia,AUS,1940,9828.0
+Austria,AUT,1940,6311.0
+Belgium,BEL,1940,7272.0
+Cada,CAN,1940,8557.0
+Switzerland,CHE,1940,9802.0
+Czechoslovakia,CSK,1940,
+Czech Republic,CZE,1940,
+Denmark,DNK,1940,8155.0
+United Kingdom,GBR,1940,10928.0
+Hungary,HUN,1940,4186.0
+Italy,ITA,1940,5099.0
+Japan,JPN,1940,4882.0
+Netherlands,NLD,1940,7701.0
+Poland,POL,1940,
+Russian Federation,RUS,1940,
+Sweden,SWE,1940,7739.0
+United States,USA,1940,12005.0
+Australia,AUS,1941,10820.0
+Austria,AUT,1941,6722.0
+Belgium,BEL,1941,6947.0
+Cada,CAN,1941,9645.0
+Switzerland,CHE,1941,9217.0
+Czechoslovakia,CSK,1941,
+Czech Republic,CZE,1941,
+Denmark,DNK,1941,7291.0
+United Kingdom,GBR,1941,11926.0
+Hungary,HUN,1941,4186.0
+Italy,ITA,1941,4967.0
+Japan,JPN,1941,4986.0
+Netherlands,NLD,1941,7222.0
+Poland,POL,1941,
+Russian Federation,RUS,1941,
+Sweden,SWE,1941,7511.0
+United States,USA,1941,13553.0
+Australia,AUS,1942,11963.0
+Austria,AUT,1942,6349.0
+Belgium,BEL,1942,6371.0
+Cada,CAN,1942,11210.0
+Switzerland,CHE,1942,8740.0
+Czechoslovakia,CSK,1942,
+Czech Republic,CZE,1942,
+Denmark,DNK,1942,7379.0
+United Kingdom,GBR,1942,12176.0
+Hungary,HUN,1942,4372.0
+Italy,ITA,1942,4661.0
+Japan,JPN,1942,4939.0
+Netherlands,NLD,1942,6546.0
+Poland,POL,1942,
+Russian Federation,RUS,1942,
+Sweden,SWE,1942,7557.0
+United States,USA,1942,14870.0
+Australia,AUS,1943,12278.0
+Austria,AUT,1943,6480.0
+Belgium,BEL,1943,6228.0
+Cada,CAN,1943,11577.0
+Switzerland,CHE,1943,8643.0
+Czechoslovakia,CSK,1943,
+Czech Republic,CZE,1943,
+Denmark,DNK,1943,8097.0
+United Kingdom,GBR,1943,12344.0
+Hungary,HUN,1943,
+Italy,ITA,1943,3931.0
+Japan,JPN,1943,4826.0
+Netherlands,NLD,1943,6346.0
+Poland,POL,1943,
+Russian Federation,RUS,1943,
+Sweden,SWE,1943,7779.0
+United States,USA,1943,16050.0
+Australia,AUS,1944,11735.0
+Austria,AUT,1944,6618.0
+Belgium,BEL,1944,6554.0
+Cada,CAN,1944,11864.0
+Switzerland,CHE,1944,8891.0
+Czechoslovakia,CSK,1944,
+Czech Republic,CZE,1944,
+Denmark,DNK,1944,8835.0
+United Kingdom,GBR,1944,11803.0
+Hungary,HUN,1944,
+Italy,ITA,1944,3162.0
+Japan,JPN,1944,4816.0
+Netherlands,NLD,1944,4222.0
+Poland,POL,1944,
+Russian Federation,RUS,1944,
+Sweden,SWE,1944,7987.0
+United States,USA,1944,16999.0
+Australia,AUS,1945,11026.0
+Austria,AUT,1945,2750.0
+Belgium,BEL,1945,6907.0
+Cada,CAN,1945,11370.0
+Switzerland,CHE,1945,8839.0
+Czechoslovakia,CSK,1945,
+Czech Republic,CZE,1945,
+Denmark,DNK,1945,8075.0
+United Kingdom,GBR,1945,11247.0
+Hungary,HUN,1945,
+Italy,ITA,1945,2831.0
+Japan,JPN,1945,3678.0
+Netherlands,NLD,1945,4281.0
+Poland,POL,1945,
+Russian Federation,RUS,1945,
+Sweden,SWE,1945,8201.0
+United States,USA,1945,16478.0
+Australia,AUS,1946,10512.0
+Austria,AUT,1946,3118.0
+Belgium,BEL,1946,7291.0
+Cada,CAN,1946,11048.0
+Switzerland,CHE,1946,10866.0
+Czechoslovakia,CSK,1946,
+Czech Republic,CZE,1946,
+Denmark,DNK,1946,9208.0
+United Kingdom,GBR,1946,10751.0
+Hungary,HUN,1946,2743.0
+Italy,ITA,1946,3805.0
+Japan,JPN,1946,2771.0
+Netherlands,NLD,1946,7104.0
+Poland,POL,1946,
+Russian Federation,RUS,1946,
+Sweden,SWE,1946,9000.0
+United States,USA,1946,14822.0
+Australia,AUS,1947,10622.0
+Austria,AUT,1947,3453.0
+Belgium,BEL,1947,7651.0
+Cada,CAN,1947,11298.0
+Switzerland,CHE,1947,11021.0
+Czechoslovakia,CSK,1947,
+Czech Republic,CZE,1947,
+Denmark,DNK,1947,9620.0
+United Kingdom,GBR,1947,10527.0
+Hungary,HUN,1947,2828.0
+Italy,ITA,1947,4498.0
+Japan,JPN,1947,2711.0
+Netherlands,NLD,1947,8046.0
+Poland,POL,1947,
+Russian Federation,RUS,1947,
+Sweden,SWE,1947,9709.0
+United States,USA,1947,14312.0
+Australia,AUS,1948,11105.0
+Austria,AUT,1948,4406.0
+Belgium,BEL,1948,8008.0
+Cada,CAN,1948,11261.0
+Switzerland,CHE,1948,11189.0
+Czechoslovakia,CSK,1948,4922.0
+Czech Republic,CZE,1948,
+Denmark,DNK,1948,9776.0
+United Kingdom,GBR,1948,10753.0
+Hungary,HUN,1948,3507.0
+Italy,ITA,1948,4814.0
+Japan,JPN,1948,2857.0
+Netherlands,NLD,1948,8751.0
+Poland,POL,1948,3439.0
+Russian Federation,RUS,1948,
+Sweden,SWE,1948,9822.0
+United States,USA,1948,14734.0
+Australia,AUS,1949,11536.0
+Austria,AUT,1949,5249.0
+Belgium,BEL,1949,8278.0
+Cada,CAN,1949,11260.0
+Switzerland,CHE,1949,10944.0
+Czechoslovakia,CSK,1949,5195.0
+Czech Republic,CZE,1949,
+Denmark,DNK,1949,10351.0
+United Kingdom,GBR,1949,11088.0
+Hungary,HUN,1949,3752.0
+Italy,ITA,1949,5188.0
+Japan,JPN,1949,2867.0
+Netherlands,NLD,1949,9373.0
+Poland,POL,1949,3630.0
+Russian Federation,RUS,1949,
+Sweden,SWE,1949,10127.0
+United States,USA,1949,14197.0
+Australia,AUS,1950,11815.0
+Austria,AUT,1950,5907.0
+Belgium,BEL,1950,8706.0
+Cada,CAN,1950,11622.0
+Switzerland,CHE,1950,11541.0
+Czechoslovakia,CSK,1950,5581.0
+Czech Republic,CZE,1950,
+Denmark,DNK,1950,11067.0
+United Kingdom,GBR,1950,11061.0
+Hungary,HUN,1950,3953.0
+Italy,ITA,1950,5582.0
+Japan,JPN,1950,3062.0
+Netherlands,NLD,1950,9558.0
+Poland,POL,1950,3900.0
+Russian Federation,RUS,1950,
+Sweden,SWE,1950,10742.0
+United States,USA,1950,15240.0
+Australia,AUS,1951,11966.0
+Austria,AUT,1951,6311.0
+Belgium,BEL,1951,9161.0
+Cada,CAN,1951,12007.0
+Switzerland,CHE,1951,11878.0
+Czechoslovakia,CSK,1951,5617.0
+Czech Republic,CZE,1951,
+Denmark,DNK,1951,11056.0
+United Kingdom,GBR,1951,11354.0
+Hungary,HUN,1951,4296.0
+Italy,ITA,1951,5958.0
+Japan,JPN,1951,3389.0
+Netherlands,NLD,1951,9615.0
+Poland,POL,1951,4001.0
+Russian Federation,RUS,1951,
+Sweden,SWE,1951,11077.0
+United States,USA,1951,16125.0
+Australia,AUS,1952,11824.0
+Austria,AUT,1952,6323.0
+Belgium,BEL,1952,9035.0
+Cada,CAN,1952,12486.0
+Switzerland,CHE,1952,12016.0
+Czechoslovakia,CSK,1952,5735.0
+Czech Republic,CZE,1952,
+Denmark,DNK,1952,11086.0
+United Kingdom,GBR,1952,11303.0
+Hungary,HUN,1952,4403.0
+Italy,ITA,1952,6371.0
+Japan,JPN,1952,3724.0
+Netherlands,NLD,1952,9698.0
+Poland,POL,1952,4018.0
+Russian Federation,RUS,1952,
+Sweden,SWE,1952,11152.0
+United States,USA,1952,16444.0
+Australia,AUS,1953,11963.0
+Austria,AUT,1953,6594.0
+Belgium,BEL,1953,9274.0
+Cada,CAN,1953,12726.0
+Switzerland,CHE,1953,12471.0
+Czechoslovakia,CSK,1953,5649.0
+Czech Republic,CZE,1953,
+Denmark,DNK,1953,11623.0
+United Kingdom,GBR,1953,11709.0
+Hungary,HUN,1953,4441.0
+Italy,ITA,1953,6790.0
+Japan,JPN,1953,3944.0
+Netherlands,NLD,1953,10429.0
+Poland,POL,1953,4173.0
+Russian Federation,RUS,1953,
+Sweden,SWE,1953,11389.0
+United States,USA,1953,16917.0
+Australia,AUS,1954,12419.0
+Austria,AUT,1954,7261.0
+Belgium,BEL,1954,9610.0
+Cada,CAN,1954,12272.0
+Switzerland,CHE,1954,13171.0
+Czechoslovakia,CSK,1954,5821.0
+Czech Republic,CZE,1954,
+Denmark,DNK,1954,11749.0
+United Kingdom,GBR,1954,12145.0
+Hungary,HUN,1954,4543.0
+Italy,ITA,1954,7092.0
+Japan,JPN,1954,4116.0
+Netherlands,NLD,1954,11010.0
+Poland,POL,1954,4328.0
+Russian Federation,RUS,1954,
+Sweden,SWE,1954,11799.0
+United States,USA,1954,16512.0
+Australia,AUS,1955,12795.0
+Austria,AUT,1955,8054.0
+Belgium,BEL,1955,10010.0
+Cada,CAN,1955,13072.0
+Switzerland,CHE,1955,13999.0
+Czechoslovakia,CSK,1955,6252.0
+Czech Republic,CZE,1955,
+Denmark,DNK,1955,11788.0
+United Kingdom,GBR,1955,12541.0
+Hungary,HUN,1955,4894.0
+Italy,ITA,1955,7453.0
+Japan,JPN,1955,4417.0
+Netherlands,NLD,1955,11678.0
+Poland,POL,1955,4454.0
+Russian Federation,RUS,1955,
+Sweden,SWE,1955,12060.0
+United States,USA,1955,17370.0
+Australia,AUS,1956,12924.0
+Austria,AUT,1956,8603.0
+Belgium,BEL,1956,10237.0
+Cada,CAN,1956,13791.0
+Switzerland,CHE,1956,14507.0
+Czechoslovakia,CSK,1956,6551.0
+Czech Republic,CZE,1956,
+Denmark,DNK,1956,11858.0
+United Kingdom,GBR,1956,12639.0
+Hungary,HUN,1956,4632.0
+Italy,ITA,1956,7745.0
+Japan,JPN,1956,4699.0
+Netherlands,NLD,1956,11953.0
+Poland,POL,1956,4565.0
+Russian Federation,RUS,1956,
+Sweden,SWE,1956,12428.0
+United States,USA,1956,17397.0
+Australia,AUS,1957,12895.0
+Austria,AUT,1957,9111.0
+Belgium,BEL,1957,10353.0
+Cada,CAN,1957,13719.0
+Switzerland,CHE,1957,14668.0
+Czechoslovakia,CSK,1957,6886.0
+Czech Republic,CZE,1957,
+Denmark,DNK,1957,12696.0
+United Kingdom,GBR,1957,12779.0
+Hungary,HUN,1957,5051.0
+Italy,ITA,1957,8158.0
+Japan,JPN,1957,4999.0
+Netherlands,NLD,1957,12137.0
+Poland,POL,1957,4721.0
+Russian Federation,RUS,1957,
+Sweden,SWE,1957,12899.0
+United States,USA,1957,17406.0
+Australia,AUS,1958,13238.0
+Austria,AUT,1958,9416.0
+Belgium,BEL,1958,10268.0
+Cada,CAN,1958,13603.0
+Switzerland,CHE,1958,14644.0
+Czechoslovakia,CSK,1958,7348.0
+Czech Republic,CZE,1958,
+Denmark,DNK,1958,12903.0
+United Kingdom,GBR,1958,12698.0
+Hungary,HUN,1958,5367.0
+Italy,ITA,1958,8544.0
+Japan,JPN,1958,5243.0
+Netherlands,NLD,1958,11926.0
+Poland,POL,1958,4873.0
+Russian Federation,RUS,1958,
+Sweden,SWE,1958,12884.0
+United States,USA,1958,16946.0
+Australia,AUS,1959,13753.0
+Austria,AUT,1959,9645.0
+Belgium,BEL,1959,10533.0
+Cada,CAN,1959,13829.0
+Switzerland,CHE,1959,15470.0
+Czechoslovakia,CSK,1959,7619.0
+Czech Republic,CZE,1959,
+Denmark,DNK,1959,13767.0
+United Kingdom,GBR,1959,13134.0
+Hungary,HUN,1959,5553.0
+Italy,ITA,1959,9011.0
+Japan,JPN,1959,5665.0
+Netherlands,NLD,1959,12333.0
+Poland,POL,1959,4935.0
+Russian Federation,RUS,1959,
+Sweden,SWE,1959,13211.0
+United States,USA,1959,17900.0
+Australia,AUS,1960,14013.0
+Austria,AUT,1960,10391.0
+Belgium,BEL,1960,11081.0
+Cada,CAN,1960,13952.0
+Switzerland,CHE,1960,16358.0
+Czechoslovakia,CSK,1960,8142.0
+Czech Republic,CZE,1960,
+Denmark,DNK,1960,14046.0
+United Kingdom,GBR,1960,13780.0
+Hungary,HUN,1960,5816.0
+Italy,ITA,1960,9430.0
+Japan,JPN,1960,6354.0
+Netherlands,NLD,1960,13209.0
+Poland,POL,1960,5125.0
+Russian Federation,RUS,1960,5557.0
+Sweden,SWE,1960,13849.0
+United States,USA,1960,18057.0
+Australia,AUS,1961,13793.0
+Austria,AUT,1961,10882.0
+Belgium,BEL,1961,11561.0
+Cada,CAN,1961,14080.0
+Switzerland,CHE,1961,17308.0
+Czechoslovakia,CSK,1961,8389.0
+Czech Republic,CZE,1961,
+Denmark,DNK,1961,14843.0
+United Kingdom,GBR,1961,14118.0
+Hungary,HUN,1961,6083.0
+Italy,ITA,1961,10158.0
+Japan,JPN,1961,7055.0
+Netherlands,NLD,1961,13074.0
+Poland,POL,1961,5461.0
+Russian Federation,RUS,1961,5874.0
+Sweden,SWE,1961,14564.0
+United States,USA,1961,18175.0
+Australia,AUS,1962,14389.0
+Austria,AUT,1962,11078.0
+Belgium,BEL,1962,12087.0
+Cada,CAN,1962,14787.0
+Switzerland,CHE,1962,17794.0
+Czechoslovakia,CSK,1962,8454.0
+Czech Republic,CZE,1962,
+Denmark,DNK,1962,15537.0
+United Kingdom,GBR,1962,14131.0
+Hungary,HUN,1962,6315.0
+Italy,ITA,1962,10882.0
+Japan,JPN,1962,7614.0
+Netherlands,NLD,1962,13770.0
+Poland,POL,1962,5325.0
+Russian Federation,RUS,1962,6229.0
+Sweden,SWE,1962,15093.0
+United States,USA,1962,18976.0
+Australia,AUS,1963,14983.0
+Austria,AUT,1963,11454.0
+Belgium,BEL,1963,12532.0
+Cada,CAN,1963,15248.0
+Switzerland,CHE,1963,18438.0
+Czechoslovakia,CSK,1963,8241.0
+Czech Republic,CZE,1963,
+Denmark,DNK,1963,15513.0
+United Kingdom,GBR,1963,14583.0
+Hungary,HUN,1963,6644.0
+Italy,ITA,1963,11576.0
+Japan,JPN,1963,8176.0
+Netherlands,NLD,1963,14078.0
+Poland,POL,1963,5582.0
+Russian Federation,RUS,1963,6405.0
+Sweden,SWE,1963,15808.0
+United States,USA,1963,19514.0
+Australia,AUS,1964,15699.0
+Austria,AUT,1964,12062.0
+Belgium,BEL,1964,13295.0
+Cada,CAN,1964,15938.0
+Switzerland,CHE,1964,19195.0
+Czechoslovakia,CSK,1964,8563.0
+Czech Republic,CZE,1964,
+Denmark,DNK,1964,16832.0
+United Kingdom,GBR,1964,15251.0
+Hungary,HUN,1964,6994.0
+Italy,ITA,1964,11934.0
+Japan,JPN,1964,9035.0
+Netherlands,NLD,1964,15042.0
+Poland,POL,1964,5773.0
+Russian Federation,RUS,1964,6754.0
+Sweden,SWE,1964,16761.0
+United States,USA,1964,20360.0
+Australia,AUS,1965,16182.0
+Austria,AUT,1965,12328.0
+Belgium,BEL,1965,13643.0
+Cada,CAN,1965,16694.0
+Switzerland,CHE,1965,19803.0
+Czechoslovakia,CSK,1965,8820.0
+Czech Republic,CZE,1965,
+Denmark,DNK,1965,17459.0
+United Kingdom,GBR,1965,15545.0
+Hungary,HUN,1965,7029.0
+Italy,ITA,1965,12111.0
+Japan,JPN,1965,9459.0
+Netherlands,NLD,1965,15618.0
+Poland,POL,1965,6036.0
+Russian Federation,RUS,1965,7068.0
+Sweden,SWE,1965,17239.0
+United States,USA,1965,21390.0
+Australia,AUS,1966,16324.0
+Austria,AUT,1966,12930.0
+Belgium,BEL,1966,13989.0
+Cada,CAN,1966,17448.0
+Switzerland,CHE,1966,20225.0
+Czechoslovakia,CSK,1966,9151.0
+Czech Republic,CZE,1966,
+Denmark,DNK,1966,17789.0
+United Kingdom,GBR,1966,15757.0
+Hungary,HUN,1966,7406.0
+Italy,ITA,1966,12659.0
+Japan,JPN,1966,10370.0
+Netherlands,NLD,1966,15838.0
+Poland,POL,1966,6362.0
+Russian Federation,RUS,1966,7517.0
+Sweden,SWE,1966,17432.0
+United States,USA,1966,22529.0
+Australia,AUS,1967,17108.0
+Austria,AUT,1967,13225.0
+Belgium,BEL,1967,14461.0
+Cada,CAN,1967,17658.0
+Switzerland,CHE,1967,20742.0
+Czechoslovakia,CSK,1967,9507.0
+Czech Republic,CZE,1967,
+Denmark,DNK,1967,18230.0
+United Kingdom,GBR,1967,16018.0
+Hungary,HUN,1967,7801.0
+Italy,ITA,1967,13476.0
+Japan,JPN,1967,11400.0
+Netherlands,NLD,1967,16483.0
+Poland,POL,1967,6540.0
+Russian Federation,RUS,1967,7943.0
+Sweden,SWE,1967,17883.0
+United States,USA,1967,22842.0
+Australia,AUS,1968,17770.0
+Austria,AUT,1968,13742.0
+Belgium,BEL,1968,15009.0
+Cada,CAN,1968,18297.0
+Switzerland,CHE,1968,21395.0
+Czechoslovakia,CSK,1968,9919.0
+Czech Republic,CZE,1968,
+Denmark,DNK,1968,18868.0
+United Kingdom,GBR,1968,16593.0
+Hungary,HUN,1968,7865.0
+Italy,ITA,1968,14513.0
+Japan,JPN,1968,12725.0
+Netherlands,NLD,1968,17365.0
+Poland,POL,1968,6881.0
+Russian Federation,RUS,1968,8391.0
+Sweden,SWE,1968,18428.0
+United States,USA,1968,23691.0
+Australia,AUS,1969,18428.0
+Austria,AUT,1969,14555.0
+Belgium,BEL,1969,15969.0
+Cada,CAN,1969,18988.0
+Switzerland,CHE,1969,22308.0
+Czechoslovakia,CSK,1969,10128.0
+Czech Republic,CZE,1969,
+Denmark,DNK,1969,19974.0
+United Kingdom,GBR,1969,16820.0
+Hungary,HUN,1969,8069.0
+Italy,ITA,1969,15248.0
+Japan,JPN,1969,14145.0
+Netherlands,NLD,1969,18270.0
+Poland,POL,1969,6760.0
+Russian Federation,RUS,1969,8563.0
+Sweden,SWE,1969,19215.0
+United States,USA,1969,24195.0
+Australia,AUS,1970,19166.0
+Austria,AUT,1970,15537.0
+Belgium,BEL,1970,16914.0
+Cada,CAN,1970,19207.0
+Switzerland,CHE,1970,23479.0
+Czechoslovakia,CSK,1970,10307.0
+Czech Republic,CZE,1970,8748.0
+Denmark,DNK,1970,20221.0
+United Kingdom,GBR,1970,17162.0
+Hungary,HUN,1970,8015.0
+Italy,ITA,1970,15492.0
+Japan,JPN,1970,15484.0
+Netherlands,NLD,1970,19075.0
+Poland,POL,1970,7058.0
+Russian Federation,RUS,1970,9234.0
+Sweden,SWE,1970,20269.0
+United States,USA,1970,23958.0
+Australia,AUS,1971,19590.0
+Austria,AUT,1971,16259.0
+Belgium,BEL,1971,17486.0
+Cada,CAN,1971,20024.0
+Switzerland,CHE,1971,24487.0
+Czechoslovakia,CSK,1971,10613.0
+Czech Republic,CZE,1971,9177.0
+Denmark,DNK,1971,20617.0
+United Kingdom,GBR,1971,17440.0
+Hungary,HUN,1971,8349.0
+Italy,ITA,1971,15683.0
+Japan,JPN,1971,16004.0
+Netherlands,NLD,1971,19636.0
+Poland,POL,1971,7503.0
+Russian Federation,RUS,1971,9567.0
+Sweden,SWE,1971,20320.0
+United States,USA,1971,24394.0
+Australia,AUS,1972,19772.0
+Austria,AUT,1972,17169.0
+Belgium,BEL,1972,18336.0
+Cada,CAN,1972,20837.0
+Switzerland,CHE,1972,25357.0
+Czechoslovakia,CSK,1972,10932.0
+Czech Republic,CZE,1972,9626.0
+Denmark,DNK,1972,21579.0
+United Kingdom,GBR,1972,18002.0
+Hungary,HUN,1972,8505.0
+Italy,ITA,1972,16035.0
+Japan,JPN,1972,17110.0
+Netherlands,NLD,1972,20079.0
+Poland,POL,1972,7986.0
+Russian Federation,RUS,1972,9785.0
+Sweden,SWE,1972,20725.0
+United States,USA,1972,25414.0
+Australia,AUS,1973,20527.0
+Austria,AUT,1973,17908.0
+Belgium,BEL,1973,19399.0
+Cada,CAN,1973,22058.0
+Switzerland,CHE,1973,26004.0
+Czechoslovakia,CSK,1973,11223.0
+Czech Republic,CZE,1973,10026.0
+Denmark,DNK,1973,22228.0
+United Kingdom,GBR,1973,19168.0
+Hungary,HUN,1973,8920.0
+Italy,ITA,1973,16950.0
+Japan,JPN,1973,18226.0
+Netherlands,NLD,1973,20851.0
+Poland,POL,1973,8512.0
+Russian Federation,RUS,1973,10492.0
+Sweden,SWE,1973,21509.0
+United States,USA,1973,26602.0
+Australia,AUS,1974,20698.0
+Austria,AUT,1974,18583.0
+Belgium,BEL,1974,20153.0
+Cada,CAN,1974,22643.0
+Switzerland,CHE,1974,25718.0
+Czechoslovakia,CSK,1974,11545.0
+Czech Republic,CZE,1974,10444.0
+Denmark,DNK,1974,21919.0
+United Kingdom,GBR,1974,18903.0
+Hungary,HUN,1974,9111.0
+Italy,ITA,1974,17607.0
+Japan,JPN,1974,17765.0
+Netherlands,NLD,1974,21514.0
+Poland,POL,1974,8928.0
+Russian Federation,RUS,1974,10801.0
+Sweden,SWE,1974,22132.0
+United States,USA,1974,26286.0
+Australia,AUS,1975,20993.0
+Austria,AUT,1975,18564.0
+Belgium,BEL,1975,19831.0
+Cada,CAN,1975,22819.0
+Switzerland,CHE,1975,24468.0
+Czechoslovakia,CSK,1975,11794.0
+Czech Republic,CZE,1975,10954.0
+Denmark,DNK,1975,21712.0
+United Kingdom,GBR,1975,18884.0
+Hungary,HUN,1975,9253.0
+Italy,ITA,1975,17123.0
+Japan,JPN,1975,18082.0
+Netherlands,NLD,1975,21318.0
+Poland,POL,1975,9258.0
+Russian Federation,RUS,1975,11164.0
+Sweden,SWE,1975,22607.0
+United States,USA,1975,25956.0
+Australia,AUS,1976,21613.0
+Austria,AUT,1976,19448.0
+Belgium,BEL,1976,20916.0
+Cada,CAN,1976,23754.0
+Switzerland,CHE,1976,24753.0
+Czechoslovakia,CSK,1976,11893.0
+Czech Republic,CZE,1976,11317.0
+Denmark,DNK,1976,23059.0
+United Kingdom,GBR,1976,19311.0
+Hungary,HUN,1976,9231.0
+Italy,ITA,1976,18147.0
+Japan,JPN,1976,18600.0
+Netherlands,NLD,1976,22132.0
+Poland,POL,1976,9397.0
+Russian Federation,RUS,1976,11426.0
+Sweden,SWE,1976,22765.0
+United States,USA,1976,27058.0
+Australia,AUS,1977,21592.0
+Austria,AUT,1977,20350.0
+Belgium,BEL,1977,21025.0
+Cada,CAN,1977,24265.0
+Switzerland,CHE,1977,25431.0
+Czechoslovakia,CSK,1977,12344.0
+Czech Republic,CZE,1977,11634.0
+Denmark,DNK,1977,23360.0
+United Kingdom,GBR,1977,19740.0
+Hungary,HUN,1977,9765.0
+Italy,ITA,1977,18599.0
+Japan,JPN,1977,19230.0
+Netherlands,NLD,1977,22598.0
+Poland,POL,1977,9483.0
+Russian Federation,RUS,1977,11692.0
+Sweden,SWE,1977,22322.0
+United States,USA,1977,28001.0
+Australia,AUS,1978,21948.0
+Austria,AUT,1978,20293.0
+Belgium,BEL,1978,21605.0
+Cada,CAN,1978,24994.0
+Switzerland,CHE,1978,26159.0
+Czechoslovakia,CSK,1978,12411.0
+Czech Republic,CZE,1978,12055.0
+Denmark,DNK,1978,23632.0
+United Kingdom,GBR,1978,20448.0
+Hungary,HUN,1978,9967.0
+Italy,ITA,1978,19230.0
+Japan,JPN,1978,20060.0
+Netherlands,NLD,1978,22992.0
+Poland,POL,1978,9741.0
+Russian Federation,RUS,1978,11829.0
+Sweden,SWE,1978,22646.0
+United States,USA,1978,29286.0
+Australia,AUS,1979,22826.0
+Austria,AUT,1979,21436.0
+Belgium,BEL,1979,22094.0
+Cada,CAN,1979,25775.0
+Switzerland,CHE,1979,26641.0
+Czechoslovakia,CSK,1979,12439.0
+Czech Republic,CZE,1979,12164.0
+Denmark,DNK,1979,24409.0
+United Kingdom,GBR,1979,20988.0
+Hungary,HUN,1979,9964.0
+Italy,ITA,1979,20275.0
+Japan,JPN,1979,20982.0
+Netherlands,NLD,1979,23347.0
+Poland,POL,1979,9471.0
+Russian Federation,RUS,1979,11867.0
+Sweden,SWE,1979,23465.0
+United States,USA,1979,29949.0
+Australia,AUS,1980,22972.0
+Austria,AUT,1980,21932.0
+Belgium,BEL,1980,23060.0
+Cada,CAN,1980,25784.0
+Switzerland,CHE,1980,27406.0
+Czechoslovakia,CSK,1980,12723.0
+Czech Republic,CZE,1980,12336.0
+Denmark,DNK,1980,24272.0
+United Kingdom,GBR,1980,20612.0
+Hungary,HUN,1980,10052.0
+Italy,ITA,1980,20959.0
+Japan,JPN,1980,21404.0
+Netherlands,NLD,1980,23438.0
+Poland,POL,1980,9149.0
+Russian Federation,RUS,1980,12204.0
+Sweden,SWE,1980,23809.0
+United States,USA,1980,29611.0
+Australia,AUS,1981,23368.0
+Austria,AUT,1981,21866.0
+Belgium,BEL,1981,22760.0
+Cada,CAN,1981,26256.0
+Switzerland,CHE,1981,27730.0
+Czechoslovakia,CSK,1981,12612.0
+Czech Republic,CZE,1981,12306.0
+Denmark,DNK,1981,24063.0
+United Kingdom,GBR,1981,20319.0
+Hungary,HUN,1981,10123.0
+Italy,ITA,1981,21041.0
+Japan,JPN,1981,21924.0
+Netherlands,NLD,1981,23153.0
+Poland,POL,1981,8584.0
+Russian Federation,RUS,1981,12274.0
+Sweden,SWE,1981,23777.0
+United States,USA,1981,30056.0
+Australia,AUS,1982,22972.0
+Austria,AUT,1982,22254.0
+Belgium,BEL,1982,23071.0
+Cada,CAN,1982,25151.0
+Switzerland,CHE,1982,27661.0
+Czechoslovakia,CSK,1982,12824.0
+Czech Republic,CZE,1982,12109.0
+Denmark,DNK,1982,24807.0
+United Kingdom,GBR,1982,20650.0
+Hungary,HUN,1982,10493.0
+Italy,ITA,1982,21123.0
+Japan,JPN,1982,22440.0
+Netherlands,NLD,1982,22780.0
+Poland,POL,1982,8429.0
+Russian Federation,RUS,1982,12267.0
+Sweden,SWE,1982,24002.0
+United States,USA,1982,29210.0
+Australia,AUS,1983,22697.0
+Austria,AUT,1983,22944.0
+Belgium,BEL,1983,23071.0
+Cada,CAN,1983,25625.0
+Switzerland,CHE,1983,28009.0
+Czechoslovakia,CSK,1983,12986.0
+Czech Republic,CZE,1983,12301.0
+Denmark,DNK,1983,25450.0
+United Kingdom,GBR,1983,21366.0
+Hungary,HUN,1983,10401.0
+Italy,ITA,1983,21345.0
+Japan,JPN,1983,22805.0
+Netherlands,NLD,1983,23086.0
+Poland,POL,1983,8764.0
+Russian Federation,RUS,1983,12420.0
+Sweden,SWE,1983,24412.0
+United States,USA,1983,30158.0
+Australia,AUS,1984,24009.0
+Austria,AUT,1984,23016.0
+Belgium,BEL,1984,23644.0
+Cada,CAN,1984,26836.0
+Switzerland,CHE,1984,28315.0
+Czechoslovakia,CSK,1984,13260.0
+Czech Republic,CZE,1984,12573.0
+Denmark,DNK,1984,26581.0
+United Kingdom,GBR,1984,21869.0
+Hungary,HUN,1984,10696.0
+Italy,ITA,1984,21868.0
+Japan,JPN,1984,23548.0
+Netherlands,NLD,1984,23750.0
+Poland,POL,1984,9006.0
+Russian Federation,RUS,1984,12379.0
+Sweden,SWE,1984,25357.0
+United States,USA,1984,32076.0
+Australia,AUS,1985,24927.0
+Austria,AUT,1985,23514.0
+Belgium,BEL,1985,23873.0
+Cada,CAN,1985,28025.0
+Switzerland,CHE,1985,29417.0
+Czechoslovakia,CSK,1985,13337.0
+Czech Republic,CZE,1985,12855.0
+Denmark,DNK,1985,27710.0
+United Kingdom,GBR,1985,22579.0
+Hungary,HUN,1985,10452.0
+Italy,ITA,1985,22469.0
+Japan,JPN,1985,24437.0
+Netherlands,NLD,1985,24361.0
+Poland,POL,1985,9022.0
+Russian Federation,RUS,1985,12475.0
+Sweden,SWE,1985,25805.0
+United States,USA,1985,33023.0
+Australia,AUS,1986,25116.0
+Austria,AUT,1986,24039.0
+Belgium,BEL,1986,24221.0
+Cada,CAN,1986,28472.0
+Switzerland,CHE,1986,30848.0
+Czechoslovakia,CSK,1986,13560.0
+Czech Republic,CZE,1986,13211.0
+Denmark,DNK,1986,28681.0
+United Kingdom,GBR,1986,23498.0
+Hungary,HUN,1986,10678.0
+Italy,ITA,1986,23106.0
+Japan,JPN,1986,24992.0
+Netherlands,NLD,1986,24893.0
+Poland,POL,1986,9240.0
+Russian Federation,RUS,1986,12694.0
+Sweden,SWE,1986,26309.0
+United States,USA,1986,33850.0
+Australia,AUS,1987,25971.0
+Austria,AUT,1987,24409.0
+Belgium,BEL,1987,24772.0
+Cada,CAN,1987,29246.0
+Switzerland,CHE,1987,31774.0
+Czechoslovakia,CSK,1987,13603.0
+Czech Republic,CZE,1987,13514.0
+Denmark,DNK,1987,28728.0
+United Kingdom,GBR,1987,24536.0
+Hungary,HUN,1987,10861.0
+Italy,ITA,1987,23824.0
+Japan,JPN,1987,25904.0
+Netherlands,NLD,1987,25085.0
+Poland,POL,1987,9059.0
+Russian Federation,RUS,1987,12597.0
+Sweden,SWE,1987,27016.0
+United States,USA,1987,34730.0
+Australia,AUS,1988,26702.0
+Austria,AUT,1988,25112.0
+Belgium,BEL,1988,25905.0
+Cada,CAN,1988,30275.0
+Switzerland,CHE,1988,32483.0
+Czechoslovakia,CSK,1988,13882.0
+Czech Republic,CZE,1988,13791.0
+Denmark,DNK,1988,29049.0
+United Kingdom,GBR,1988,25679.0
+Hungary,HUN,1988,11207.0
+Italy,ITA,1988,24743.0
+Japan,JPN,1988,27393.0
+Netherlands,NLD,1988,25574.0
+Poland,POL,1988,9228.0
+Russian Federation,RUS,1988,12720.0
+Sweden,SWE,1988,27468.0
+United States,USA,1988,35863.0
+Australia,AUS,1989,27407.0
+Austria,AUT,1989,26078.0
+Belgium,BEL,1989,26690.0
+Cada,CAN,1989,30458.0
+Switzerland,CHE,1989,33316.0
+Czechoslovakia,CSK,1989,13976.0
+Czech Republic,CZE,1989,14027.0
+Denmark,DNK,1989,29108.0
+United Kingdom,GBR,1989,26164.0
+Hungary,HUN,1989,11003.0
+Italy,ITA,1989,25454.0
+Japan,JPN,1989,28601.0
+Netherlands,NLD,1989,26612.0
+Poland,POL,1989,9060.0
+Russian Federation,RUS,1989,12766.0
+Sweden,SWE,1989,27933.0
+United States,USA,1989,36756.0
+Australia,AUS,1990,27373.0
+Austria,AUT,1990,26930.0
+Belgium,BEL,1990,27412.0
+Cada,CAN,1990,30082.0
+Switzerland,CHE,1990,34250.0
+Czechoslovakia,CSK,1990,13570.0
+Czech Republic,CZE,1990,14178.0
+Denmark,DNK,1990,29412.0
+United Kingdom,GBR,1990,26189.0
+Hungary,HUN,1990,10296.0
+Italy,ITA,1990,26003.0
+Japan,JPN,1990,29949.0
+Netherlands,NLD,1990,27515.0
+Poland,POL,1990,8150.0
+Russian Federation,RUS,1990,12400.0
+Sweden,SWE,1990,28068.0
+United States,USA,1990,36982.0
+Australia,AUS,1991,26861.0
+Austria,AUT,1991,27690.0
+Belgium,BEL,1991,27848.0
+Cada,CAN,1991,29152.0
+Switzerland,CHE,1991,34129.0
+Czechoslovakia,CSK,1991,11950.0
+Czech Republic,CZE,1991,12725.0
+Denmark,DNK,1991,29915.0
+United Kingdom,GBR,1991,25792.0
+Hungary,HUN,1991,9256.0
+Italy,ITA,1991,26570.0
+Japan,JPN,1991,30837.0
+Netherlands,NLD,1991,28127.0
+Poland,POL,1991,7626.0
+Russian Federation,RUS,1991,12012.0
+Sweden,SWE,1991,27614.0
+United States,USA,1991,36464.0
+Australia,AUS,1992,27560.0
+Austria,AUT,1992,28072.0
+Belgium,BEL,1992,28200.0
+Cada,CAN,1992,29141.0
+Switzerland,CHE,1992,34357.0
+Czechoslovakia,CSK,1992,11743.0
+Czech Republic,CZE,1992,12810.0
+Denmark,DNK,1992,30574.0
+United Kingdom,GBR,1992,25790.0
+Hungary,HUN,1992,9154.0
+Italy,ITA,1992,26961.0
+Japan,JPN,1992,30978.0
+Netherlands,NLD,1992,28556.0
+Poland,POL,1992,7874.0
+Russian Federation,RUS,1992,10488.0
+Sweden,SWE,1992,27199.0
+United States,USA,1992,37240.0
+Australia,AUS,1993,28622.0
+Austria,AUT,1993,28101.0
+Belgium,BEL,1993,27857.0
+Cada,CAN,1993,29658.0
+Switzerland,CHE,1993,34626.0
+Czechoslovakia,CSK,1993,11880.0
+Czech Republic,CZE,1993,12974.0
+Denmark,DNK,1993,30650.0
+United Kingdom,GBR,1993,26349.0
+Hungary,HUN,1993,9294.0
+Italy,ITA,1993,26902.0
+Japan,JPN,1993,30921.0
+Netherlands,NLD,1993,28880.0
+Poland,POL,1993,8230.0
+Russian Federation,RUS,1993,9789.0
+Sweden,SWE,1993,26559.0
+United States,USA,1993,37762.0
+Australia,AUS,1994,29844.0
+Austria,AUT,1994,28781.0
+Belgium,BEL,1994,28707.0
+Cada,CAN,1994,30746.0
+Switzerland,CHE,1994,35424.0
+Czechoslovakia,CSK,1994,12358.0
+Czech Republic,CZE,1994,13518.0
+Denmark,DNK,1994,32359.0
+United Kingdom,GBR,1994,27278.0
+Hungary,HUN,1994,9772.0
+Italy,ITA,1994,27668.0
+Japan,JPN,1994,31135.0
+Netherlands,NLD,1994,29728.0
+Poland,POL,1994,8722.0
+Russian Federation,RUS,1994,8744.0
+Sweden,SWE,1994,27506.0
+United States,USA,1994,38807.0
+Australia,AUS,1995,30690.0
+Austria,AUT,1995,29622.0
+Belgium,BEL,1995,29370.0
+Cada,CAN,1995,31331.0
+Switzerland,CHE,1995,36004.0
+Czechoslovakia,CSK,1995,13181.0
+Czech Republic,CZE,1995,14550.0
+Denmark,DNK,1995,33356.0
+United Kingdom,GBR,1995,27861.0
+Hungary,HUN,1995,10135.0
+Italy,ITA,1995,28666.0
+Japan,JPN,1995,31887.0
+Netherlands,NLD,1995,30680.0
+Poland,POL,1995,9408.0
+Russian Federation,RUS,1995,8586.0
+Sweden,SWE,1995,28519.0
+United States,USA,1995,39391.0
+Australia,AUS,1996,31740.0
+Austria,AUT,1996,30413.0
+Belgium,BEL,1996,29820.0
+Cada,CAN,1996,31594.0
+Switzerland,CHE,1996,36720.0
+Czechoslovakia,CSK,1996,13982.0
+Czech Republic,CZE,1996,15386.0
+Denmark,DNK,1996,34325.0
+United Kingdom,GBR,1996,28472.0
+Hungary,HUN,1996,10359.0
+Italy,ITA,1996,29231.0
+Japan,JPN,1996,32784.0
+Netherlands,NLD,1996,31812.0
+Poland,POL,1996,10066.0
+Russian Federation,RUS,1996,8479.0
+Sweden,SWE,1996,29012.0
+United States,USA,1996,40413.0
+Australia,AUS,1997,32858.0
+Austria,AUT,1997,31173.0
+Belgium,BEL,1997,30894.0
+Cada,CAN,1997,32710.0
+Switzerland,CHE,1997,38165.0
+Czechoslovakia,CSK,1997,14199.0
+Czech Republic,CZE,1997,15494.0
+Denmark,DNK,1997,35499.0
+United Kingdom,GBR,1997,29260.0
+Hungary,HUN,1997,10942.0
+Italy,ITA,1997,29961.0
+Japan,JPN,1997,33038.0
+Netherlands,NLD,1997,33200.0
+Poland,POL,1997,10811.0
+Russian Federation,RUS,1997,8813.0
+Sweden,SWE,1997,29863.0
+United States,USA,1997,41723.0
+Australia,AUS,1998,34337.0
+Austria,AUT,1998,32376.0
+Belgium,BEL,1998,31481.0
+Cada,CAN,1998,33786.0
+Switzerland,CHE,1998,39891.0
+Czechoslovakia,CSK,1998,14486.0
+Czech Republic,CZE,1998,15657.0
+Denmark,DNK,1998,36361.0
+United Kingdom,GBR,1998,30077.0
+Hungary,HUN,1998,11663.0
+Italy,ITA,1998,30650.0
+Japan,JPN,1998,32558.0
+Netherlands,NLD,1998,34689.0
+Poland,POL,1998,11413.0
+Russian Federation,RUS,1998,8557.0
+Sweden,SWE,1998,31187.0
+United States,USA,1998,43073.0
+Australia,AUS,1999,35551.0
+Austria,AUT,1999,33608.0
+Belgium,BEL,1999,32572.0
+Cada,CAN,1999,35346.0
+Switzerland,CHE,1999,41092.0
+Czechoslovakia,CSK,1999,14769.0
+Czech Republic,CZE,1999,16103.0
+Denmark,DNK,1999,37523.0
+United Kingdom,GBR,1999,30933.0
+Hungary,HUN,1999,12317.0
+Italy,ITA,1999,31340.0
+Japan,JPN,1999,32395.0
+Netherlands,NLD,1999,36409.0
+Poland,POL,1999,12058.0
+Russian Federation,RUS,1999,9340.0
+Sweden,SWE,1999,32705.0
+United States,USA,1999,44576.0
+Australia,AUS,2000,36603.0
+Austria,AUT,2000,34796.0
+Belgium,BEL,2000,33720.0
+Cada,CAN,2000,36943.0
+Switzerland,CHE,2000,43251.0
+Czechoslovakia,CSK,2000,15378.0
+Czech Republic,CZE,2000,17056.0
+Denmark,DNK,2000,39021.0
+United Kingdom,GBR,2000,31946.0
+Hungary,HUN,2000,13129.0
+Italy,ITA,2000,32717.0
+Japan,JPN,2000,33211.0
+Netherlands,NLD,2000,37900.0
+Poland,POL,2000,12732.0
+Russian Federation,RUS,2000,10553.0
+Sweden,SWE,2000,34203.0
+United States,USA,2000,45886.0
+Australia,AUS,2001,37276.0
+Austria,AUT,2001,35272.0
+Belgium,BEL,2001,33923.0
+Cada,CAN,2001,37307.0
+Switzerland,CHE,2001,44399.0
+Czechoslovakia,CSK,2001,16000.0
+Czech Republic,CZE,2001,17869.0
+Denmark,DNK,2001,39426.0
+United Kingdom,GBR,2001,32660.0
+Hungary,HUN,2001,13934.0
+Italy,ITA,2001,33511.0
+Japan,JPN,2001,33246.0
+Netherlands,NLD,2001,38636.0
+Poland,POL,2001,13018.0
+Russian Federation,RUS,2001,11391.0
+Sweden,SWE,2001,34667.0
+United States,USA,2001,45878.0
+Australia,AUS,2002,38567.0
+Austria,AUT,2002,35824.0
+Belgium,BEL,2002,34420.0
+Cada,CAN,2002,38124.0
+Switzerland,CHE,2002,44934.0
+Czechoslovakia,CSK,2002,16595.0
+Czech Republic,CZE,2002,18431.0
+Denmark,DNK,2002,39709.0
+United Kingdom,GBR,2002,33271.0
+Hungary,HUN,2002,14899.0
+Italy,ITA,2002,33780.0
+Japan,JPN,2002,33195.0
+Netherlands,NLD,2002,38653.0
+Poland,POL,2002,13416.0
+Russian Federation,RUS,2002,12259.0
+Sweden,SWE,2002,35570.0
+United States,USA,2002,46266.0
+Australia,AUS,2003,39524.0
+Austria,AUT,2003,36063.0
+Belgium,BEL,2003,34588.0
+Cada,CAN,2003,38560.0
+Switzerland,CHE,2003,45442.0
+Czechoslovakia,CSK,2003,17407.0
+Czech Republic,CZE,2003,19344.0
+Denmark,DNK,2003,39983.0
+United Kingdom,GBR,2003,34232.0
+Hungary,HUN,2003,15830.0
+Italy,ITA,2003,33918.0
+Japan,JPN,2003,33620.0
+Netherlands,NLD,2003,38804.0
+Poland,POL,2003,14036.0
+Russian Federation,RUS,2003,13521.0
+Sweden,SWE,2003,36436.0
+United States,USA,2003,47158.0
+Australia,AUS,2004,40888.0
+Austria,AUT,2004,36957.0
+Belgium,BEL,2004,35740.0
+Cada,CAN,2004,39492.0
+Switzerland,CHE,2004,47264.0
+Czechoslovakia,CSK,2004,18389.0
+Czech Republic,CZE,2004,20555.0
+Denmark,DNK,2004,41179.0
+United Kingdom,GBR,2004,34866.0
+Hungary,HUN,2004,16999.0
+Italy,ITA,2004,34472.0
+Japan,JPN,2004,34314.0
+Netherlands,NLD,2004,39682.0
+Poland,POL,2004,14906.0
+Russian Federation,RUS,2004,14881.0
+Sweden,SWE,2004,38016.0
+United States,USA,2004,48493.0
+Australia,AUS,2005,41904.0
+Austria,AUT,2005,37643.0
+Belgium,BEL,2005,36338.0
+Cada,CAN,2005,40485.0
+Switzerland,CHE,2005,49274.0
+Czechoslovakia,CSK,2005,19774.0
+Czech Republic,CZE,2005,22129.0
+Denmark,DNK,2005,42265.0
+United Kingdom,GBR,2005,35624.0
+Hungary,HUN,2005,18141.0
+Italy,ITA,2005,34872.0
+Japan,JPN,2005,34858.0
+Netherlands,NLD,2005,40679.0
+Poland,POL,2005,15581.0
+Russian Federation,RUS,2005,16243.0
+Sweden,SWE,2005,39259.0
+United States,USA,2005,49655.0
+Australia,AUS,2006,42651.0
+Austria,AUT,2006,38867.0
+Belgium,BEL,2006,37052.0
+Cada,CAN,2006,41247.0
+Switzerland,CHE,2006,51863.0
+Czechoslovakia,CSK,2006,21409.0
+Czech Republic,CZE,2006,23888.0
+Denmark,DNK,2006,44025.0
+United Kingdom,GBR,2006,36214.0
+Hungary,HUN,2006,19253.0
+Italy,ITA,2006,35714.0
+Japan,JPN,2006,35333.0
+Netherlands,NLD,2006,42287.0
+Poland,POL,2006,16711.0
+Russian Federation,RUS,2006,18008.0
+Sweden,SWE,2006,40992.0
+United States,USA,2006,50490.0
+Australia,AUS,2007,44034.0
+Austria,AUT,2007,40305.0
+Belgium,BEL,2007,38083.0
+Cada,CAN,2007,41807.0
+Switzerland,CHE,2007,54510.0
+Czechoslovakia,CSK,2007,23146.0
+Czech Republic,CZE,2007,25383.0
+Denmark,DNK,2007,44481.0
+United Kingdom,GBR,2007,36817.0
+Hungary,HUN,2007,19764.0
+Italy,ITA,2007,36311.0
+Japan,JPN,2007,35893.0
+Netherlands,NLD,2007,44009.0
+Poland,POL,2007,18067.0
+Russian Federation,RUS,2007,20018.0
+Sweden,SWE,2007,42400.0
+United States,USA,2007,50902.0
+Australia,AUS,2008,44422.0
+Austria,AUT,2008,40965.0
+Belgium,BEL,2008,38117.0
+Cada,CAN,2008,41896.0
+Switzerland,CHE,2008,56055.0
+Czechoslovakia,CSK,2008,24257.0
+Czech Republic,CZE,2008,26186.0
+Denmark,DNK,2008,44246.0
+United Kingdom,GBR,2008,36265.0
+Hungary,HUN,2008,20381.0
+Italy,ITA,2008,35943.0
+Japan,JPN,2008,35496.0
+Netherlands,NLD,2008,44841.0
+Poland,POL,2008,19012.0
+Russian Federation,RUS,2008,21563.0
+Sweden,SWE,2008,42190.0
+United States,USA,2008,50276.0
+Australia,AUS,2009,44687.0
+Austria,AUT,2009,39464.0
+Belgium,BEL,2009,36999.0
+Cada,CAN,2009,40313.0
+Switzerland,CHE,2009,55172.0
+Czechoslovakia,CSK,2009,23659.0
+Czech Republic,CZE,2009,25094.0
+Denmark,DNK,2009,42090.0
+United Kingdom,GBR,2009,34402.0
+Hungary,HUN,2009,19461.0
+Italy,ITA,2009,34055.0
+Japan,JPN,2009,33590.0
+Netherlands,NLD,2009,43179.0
+Poland,POL,2009,19718.0
+Russian Federation,RUS,2009,20336.0
+Sweden,SWE,2009,40116.0
+United States,USA,2009,48453.0
+Australia,AUS,2010,45400.0
+Austria,AUT,2010,40288.0
+Belgium,BEL,2010,37739.0
+Cada,CAN,2010,41209.0
+Switzerland,CHE,2010,57219.0
+Czechoslovakia,CSK,2010,24573.0
+Czech Republic,CZE,2010,25922.0
+Denmark,DNK,2010,42932.0
+United Kingdom,GBR,2010,34754.0
+Hungary,HUN,2010,20036.0
+Italy,ITA,2010,34766.0
+Japan,JPN,2010,35011.0
+Netherlands,NLD,2010,43812.0
+Poland,POL,2010,20609.0
+Russian Federation,RUS,2010,21737.0
+Sweden,SWE,2010,42635.0
+United States,USA,2010,49267.0
+Australia,AUS,2011,46132.0
+Austria,AUT,2011,41446.0
+Belgium,BEL,2011,38130.0
+Cada,CAN,2011,42197.0
+Switzerland,CHE,2011,58686.0
+Czechoslovakia,CSK,2011,25289.0
+Czech Republic,CZE,2011,26725.0
+Denmark,DNK,2011,43575.0
+United Kingdom,GBR,2011,34971.0
+Hungary,HUN,2011,20886.0
+Italy,ITA,2011,35151.0
+Japan,JPN,2011,34979.0
+Netherlands,NLD,2011,44591.0
+Poland,POL,2011,21837.0
+Russian Federation,RUS,2011,23130.0
+Sweden,SWE,2011,42079.0
+United States,USA,2011,49675.0
+Australia,AUS,2012,46999.0
+Austria,AUT,2012,41565.0
+Belgium,BEL,2012,37906.0
+Cada,CAN,2012,42445.0
+Switzerland,CHE,2012,58674.0
+Czechoslovakia,CSK,2012,25279.0
+Czech Republic,CZE,2012,26474.0
+Denmark,DNK,2012,43510.0
+United Kingdom,GBR,2012,35185.0
+Hungary,HUN,2012,20631.0
+Italy,ITA,2012,34068.0
+Japan,JPN,2012,35580.0
+Netherlands,NLD,2012,43957.0
+Poland,POL,2012,22188.0
+Russian Federation,RUS,2012,23931.0
+Sweden,SWE,2012,41650.0
+United States,USA,2012,50394.0
+Australia,AUS,2013,47250.0
+Austria,AUT,2013,41375.0
+Belgium,BEL,2013,37737.0
+Cada,CAN,2013,42994.0
+Switzerland,CHE,2013,59036.0
+Czechoslovakia,CSK,2013,25329.0
+Czech Republic,CZE,2013,26338.0
+Denmark,DNK,2013,43733.0
+United Kingdom,GBR,2013,35618.0
+Hungary,HUN,2013,21126.0
+Italy,ITA,2013,33094.0
+Japan,JPN,2013,36354.0
+Netherlands,NLD,2013,43744.0
+Poland,POL,2013,22510.0
+Russian Federation,RUS,2013,24224.0
+Sweden,SWE,2013,41811.0
+United States,USA,2013,50863.0
+Australia,AUS,2014,47867.0
+Austria,AUT,2014,41338.0
+Belgium,BEL,2014,38228.0
+Cada,CAN,2014,43607.0
+Switzerland,CHE,2014,59485.0
+Czechoslovakia,CSK,2014,25976.0
+Czech Republic,CZE,2014,27024.0
+Denmark,DNK,2014,44241.0
+United Kingdom,GBR,2014,36436.0
+Hungary,HUN,2014,22040.0
+Italy,ITA,2014,32829.0
+Japan,JPN,2014,36537.0
+Netherlands,NLD,2014,44205.0
+Poland,POL,2014,23266.0
+Russian Federation,RUS,2014,24387.0
+Sweden,SWE,2014,42476.0
+United States,USA,2014,51664.0
+Australia,AUS,2015,48357.0
+Austria,AUT,2015,41294.0
+Belgium,BEL,2015,38569.0
+Cada,CAN,2015,43619.0
+Switzerland,CHE,2015,59307.0
+Czechoslovakia,CSK,2015,27041.0
+Czech Republic,CZE,2015,28194.0
+Denmark,DNK,2015,44635.0
+United Kingdom,GBR,2015,36941.0
+Hungary,HUN,2015,22788.0
+Italy,ITA,2015,33118.0
+Japan,JPN,2015,37031.0
+Netherlands,NLD,2015,44869.0
+Poland,POL,2015,24177.0
+Russian Federation,RUS,2015,23691.0
+Sweden,SWE,2015,43746.0
+United States,USA,2015,52591.0
+Australia,AUS,2016,48845.0
+Austria,AUT,2016,41445.0
+Belgium,BEL,2016,38766.0
+Cada,CAN,2016,43745.0
+Switzerland,CHE,2016,59662.0
+Czechoslovakia,CSK,2016,27738.0
+Czech Republic,CZE,2016,28823.0
+Denmark,DNK,2016,44836.0
+United Kingdom,GBR,2016,37334.0
+Hungary,HUN,2016,23279.0
+Italy,ITA,2016,33419.0
+Japan,JPN,2016,37465.0
+Netherlands,NLD,2016,45600.0
+Poland,POL,2016,24838.0
+Russian Federation,RUS,2016,23635.0
+Sweden,SWE,2016,44659.0
+United States,USA,2016,53015.0
+Australia,AUS,2017,49266.0
+Austria,AUT,2017,42177.0
+Belgium,BEL,2017,39352.0
+Cada,CAN,2017,44592.0
+Switzerland,CHE,2017,60171.0
+Czechoslovakia,CSK,2017,28773.0
+Czech Republic,CZE,2017,29998.0
+Denmark,DNK,2017,45456.0
+United Kingdom,GBR,2017,37783.0
+Hungary,HUN,2017,24350.0
+Italy,ITA,2017,34027.0
+Japan,JPN,2017,38415.0
+Netherlands,NLD,2017,46651.0
+Poland,POL,2017,26061.0
+Russian Federation,RUS,2017,24043.0
+Sweden,SWE,2017,45193.0
+United States,USA,2017,54008.0
+Australia,AUS,2018,49831.0
+Austria,AUT,2018,42988.0
+Belgium,BEL,2018,39756.0
+Cada,CAN,2018,44869.0
+Switzerland,CHE,2018,61373.0
+Czechoslovakia,CSK,2018,29601.0
+Czech Republic,CZE,2018,30749.0
+Denmark,DNK,2018,46312.0
+United Kingdom,GBR,2018,38058.0
+Hungary,HUN,2018,25623.0
+Italy,ITA,2018,34364.0
+Japan,JPN,2018,38674.0
+Netherlands,NLD,2018,47474.0
+Poland,POL,2018,27455.0
+Russian Federation,RUS,2018,24669.0
+Sweden,SWE,2018,45542.0
+United States,USA,2018,55335.0
