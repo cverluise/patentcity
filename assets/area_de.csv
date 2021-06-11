@@ -1,0 +1,37 @@
+nutsCode,nuts,area
+DE11,Stuttgart,10558.00
+DE12,Karlsruhe,6919.00
+DE13,Freiburg,9357.00
+DE14,Tübingen,8918.00
+DE21,Oberbayern,17530.00
+DE22,Niederbayern,10329.00
+DE23,Oberpfalz,9690.00
+DE24,Oberfranken,7232.00
+DE25,Mittelfranken,7245.00
+DE26,Unterfranken,8531.00
+DE27,Schwaben,9994.00
+DE30,Berlin,892
+DE40,Brandenburg,29484.00
+DE50,Bremen,419
+DE60,Hamburg,755
+DE71+DE72,Darmstadt and Gießen,12826.00
+DE73,Kassel,8289.00
+DE80,Mecklenburg-Vorpommern,23194.00
+DE91+DE92,Braunschweig und Hannover,17148.00
+DE93,Lüneburg,15495.00
+DE94,Weser-Ems,14971.00
+DEA1,Düsseldorf,5291.00
+DEA2,Köln,7365.00
+DEA3,Münster,6911.00
+DEA4,Detmold,6523.00
+DEA5,Arnsberg,8008.00
+DEB1,Koblenz,8073.00
+DEB2,Trier,4924.00
+DEB3,Rheinhessen-Pfalz,6851.00
+DEC0,Saarland,2569.00
+DED2,Dresden,7931.00
+DED4,Chemnitz,6524.00
+DED5,Leipzig,3965.00
+DEE0,Sachsen-Anhalt,20450.00
+DEF0,Schleswig-Holstein,15800.00
+DEG0,Thüringen,16173.00
