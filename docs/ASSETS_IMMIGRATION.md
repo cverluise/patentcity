@@ -1,62 +1,40 @@
-This README documents the construction of immigration\_us.csv from 1850
-to 2000. This document reports share and the number of foreign-born in
-the US and specifies their origins (data for 1950 and 1940 are missing).
+# Immigration
 
-Notes:
+This document refers to [immigration_us.csv](./assets/immigration_us.csv) and [immigrationbyorigin_us.csv](./assets/immigrationbyorigin_us.csv).  These files report the share and number of foreign-born in the US and their origins.
 
--   The data source is census.gov (e.g
-    > [[https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf]{.underline}](https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf)
-    > )
+## Metadata
 
--   Some countries appeared or were intégrated in larger entities
+File| Source
+---|---
+[immigration_us.csv](./assets/immigration_us.csv)| [US census](https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf)
+[immigrationbyorigin_us.csv](./assets/immigration_us.csv)| [US census](https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf)
 
--   Wales unitary authorities are an aggregation of districts made
-    > thanks to wikipedia historical description of the county.
+## Coverage
 
-Focus on moving boundaries and multi data-source counties
----------------------------------------------------------
+Country| Period
+---|---
+US | [XX]
 
-Some countries appeared or were integrated in larger entities, we
-therefore specify if the data is missing or if there is only integrated
-data.
+## Variables
 
-The table from census.gov proposes different scales, we integer a new
-column to specify the scale and we name each scale in this read me.
+=== "immigration"
 
-Our table should be read as each row is the sum of the rows with a
-strictly lower "key" value (e.g Scandinavia is the sum of Denmark,
-Finland, Iceland, Norway, Sweeden and Other Scandinavia).
+    Variable|Description    | Type
+    ---|---|---
+    name    | [XX] | `str`
+    year    | [XX] | `int`
+    value   | Value | `float`
 
-+------------------------------+--------------------------------------+
-| Missing data/ not applicable | Missing data are left blank          |
-|                              |                                      |
-|                              | Not applicable data "(X)"            |
-+==============================+======================================+
-| "Key" column specifications  | 9: Total                             |
-|                              |                                      |
-|                              | 8:Subtotals                          |
-|                              |                                      |
-|                              | 7: Continent                         |
-|                              |                                      |
-|                              | 6: Continental areas                 |
-|                              |                                      |
-|                              | 5: European regions                  |
-|                              |                                      |
-|                              | 4: Other regions                     |
-|                              |                                      |
-|                              | 3:United Kingdom                     |
-|                              |                                      |
-|                              | 2: Country groups                    |
-|                              |                                      |
-|                              | 1: Countries                         |
-|                              |                                      |
-|                              | (For the moment we note "Europe      |
-|                              | n.e.c", "Soviet Union (former) and   |
-|                              | "In Europe" as key 1)                |
-+------------------------------+--------------------------------------+
+=== "immigrationbyorigin"
 
-Glossary:
+    Variable|Description    | Type
+    ---|---|---
+    region    | Region | `str`
+    level   | Geographical level of the entity defined by `name`. `1`: Countries, `2`: Country groups, `3`:United Kingdom, `4`: Other regions, `5`: European regions, `6`: Continental areas, `7`: Continent, `8`:Subtotals, `9`: Total, `"n.e.c."` Not elsewhere classified  (e.g. Europe)| `int`
+    year    | Year | `int`
+    immigrants | Number of immigrants (in [XX: add unit]) | `float`
 
-Low countries = BelgiumLuxembourgNetherlands
+    !!! info "Focus"
 
-n.e.c. Not elsewhere classified
+        - Geographical levels: The table from census.gov proposes different scales. We add a column `level` to specify the geographical level at which a given entry is defined.
+        - Wales: Wales unitary authorities are an aggregation of districts made using wikipedia historical data.
