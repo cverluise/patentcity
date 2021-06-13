@@ -1,4 +1,4 @@
-origin_country,destination_country,distance
+origin_country_code,destination_country_code,distance
 AUS,AUS,1042.817
 AUS,AUT,15988.95
 AUS,BEL,16759.6
