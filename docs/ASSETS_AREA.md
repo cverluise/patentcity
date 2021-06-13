@@ -1,15 +1,19 @@
 # AREA
 
-This document refers to [area_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets) which reports the area of the statistical areas of interest.
-
 ## Metadata
 
-Country |Geographical level |Source(s)
+File|Source
+---|---
+[area_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets) |DE [Wikipedia](https://en.wikipedia.org/wiki/List_of_German_states_by_area), FR [Wikipedia](https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais_class%C3%A9s_par_population_et_superficie), GB [Wikipedia](https://simple.wikipedia.org/wiki/List_of_counties_of_the_United_Kingdom), US  [XX]
+
+## Coverage
+
+Country |Geographical level | Time
 ---|---|---
-DE  |[XX] |[Wikipedia](https://en.wikipedia.org/wiki/List_of_German_states_by_area)
-FR  |[XX] |[Wikipedia](https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais_class%C3%A9s_par_population_et_superficie)
-GB  |[XX] |[Wikipedia](https://simple.wikipedia.org/wiki/List_of_counties_of_the_United_Kingdom)
-US  |[XX] |[XX]
+DE  |[XX]   | [XX]
+FR  |[XX]   | [XX]
+GB  |[XX]   | [XX]
+US  |[XX]   | [XX]
 
 ## Variables
 
