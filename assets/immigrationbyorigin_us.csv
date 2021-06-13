@@ -1,1361 +1,1361 @@
-name,year,value
-africa_excl_atlantic_islands,1850,551.0
-africa_excl_atlantic_islands,1860,526.0
-africa_excl_atlantic_islands,1870,2657.0
-africa_excl_atlantic_islands,1880,2204.0
-africa_excl_atlantic_islands,1890,2207.0
-africa_excl_atlantic_islands,1900,2538.0
-africa_excl_atlantic_islands,1910,3992.0
-africa_excl_atlantic_islands,1920,5781.0
-africa_excl_atlantic_islands,1930,8859.0
-africa_excl_atlantic_islands,1940,
-africa_excl_atlantic_islands,1950,
-africa_excl_atlantic_islands,1960,27053.0
-africa_excl_atlantic_islands,1970,61463.0
-africa_excl_atlantic_islands,1980,189266.0
-africa_excl_atlantic_islands,1990,349451.0
-africa_excl_atlantic_islands,2000,854694.0
-africa,1850,551.0
-africa,1860,526.0
-africa,1870,2657.0
-africa,1880,2204.0
-africa,1890,2207.0
-africa,1900,2538.0
-africa,1910,3992.0
-africa,1920,16126.0
-africa,1930,18326.0
-africa,1940,
-africa,1950,
-africa,1960,35355.0
-africa,1970,80143.0
-africa,1980,199723.0
-africa,1990,363819.0
-africa,2000,881300.0
-albania,1850,
-albania,1860,
-albania,1870,
-albania,1880,
-albania,1890,
-albania,1900,
-albania,1910,
-albania,1920,5608.0
-albania,1930,8814.0
-albania,1940,
-albania,1950,
-albania,1960,9618.0
-albania,1970,9180.0
-albania,1980,7381.0
-albania,1990,5627.0
-albania,2000,38663.0
-armenia,1850,
-armenia,1860,
-armenia,1870,
-armenia,1880,
-armenia,1890,
-armenia,1900,
-armenia,1910,
-armenia,1920,36628.0
-armenia,1930,32166.0
-armenia,1940,
-armenia,1950,
-armenia,1960,
-armenia,1970,
-armenia,1980,
-armenia,1990,
-armenia,2000,
-asia,1850,1135.0
-asia,1860,36796.0
-asia,1870,64565.0
-asia,1880,107630.0
-asia,1890,113383.0
-asia,1900,120248.0
-asia,1910,191484.0
-asia,1920,237950.0
-asia,1930,275665.0
-asia,1940,
-asia,1950,
-asia,1960,490996.0
-asia,1970,824887.0
-asia,1980,2539777.0
-asia,1990,4979037.0
-asia,2000,8226254.0
-atlantic_islands,1850,
-atlantic_islands,1860,
-atlantic_islands,1870,
-atlantic_islands,1880,
-atlantic_islands,1890,
-atlantic_islands,1900,
-atlantic_islands,1910,
-atlantic_islands,1920,10345.0
-atlantic_islands,1930,9467.0
-atlantic_islands,1940,
-atlantic_islands,1950,
-atlantic_islands,1960,8302.0
-atlantic_islands,1970,18680.0
-atlantic_islands,1980,10457.0
-atlantic_islands,1990,14368.0
-atlantic_islands,2000,26606.0
-australia,1850,
-australia,1860,1419.0
-australia,1870,3118.0
-australia,1880,4906.0
-australia,1890,5984.0
-australia,1900,6807.0
-australia,1910,9035.0
-australia,1920,10914.0
-australia,1930,12816.0
-australia,1940,
-australia,1950,
-australia,1960,22209.0
-australia,1970,24271.0
-australia,1980,36120.0
-australia,1990,42267.0
-australia,2000,60965.0
-austria,1850,946.0
-austria,1860,25061.0
-austria,1870,30508.0
-austria,1880,38663.0
-austria,1890,123271.0
-austria,1900,275907.0
-austria,1910,626341.0
-austria,1920,575627.0
-austria,1930,370914.0
-austria,1940,
-austria,1950,
-austria,1960,304507.0
-austria,1970,214014.0
-austria,1980,145607.0
-austria,1990,87673.0
-austria,2000,63648.0
-belgium,1850,1313.0
-belgium,1860,9072.0
-belgium,1870,12553.0
-belgium,1880,15535.0
-belgium,1890,22639.0
-belgium,1900,29757.0
-belgium,1910,49400.0
-belgium,1920,62687.0
-belgium,1930,64194.0
-belgium,1940,
-belgium,1950,
-belgium,1960,50294.0
-belgium,1970,41412.0
-belgium,1980,36487.0
-belgium,1990,34366.0
-belgium,2000,33895.0
-born_at_sea,1850,
-born_at_sea,1860,2522.0
-born_at_sea,1870,2638.0
-born_at_sea,1880,4068.0
-born_at_sea,1890,5533.0
-born_at_sea,1900,8196.0
-born_at_sea,1910,6927.0
-born_at_sea,1920,5336.0
-born_at_sea,1930,5008.0
-born_at_sea,1940,
-born_at_sea,1950,
-born_at_sea,1960,
-born_at_sea,1970,
-born_at_sea,1980,
-born_at_sea,1990,
-born_at_sea,2000,316.0
-british_isles,1850,1340812.0
-british_isles,1860,2199079.0
-british_isles,1870,2626241.0
-british_isles,1880,2772169.0
-british_isles,1890,3122911.0
-british_isles,1900,2783082.0
-british_isles,1910,2573534.0
-british_isles,1920,2172723.0
-british_isles,1930,2147733.0
-british_isles,1940,
-british_isles,1950,
-british_isles,1960,1171777.0
-british_isles,1970,937474.0
-british_isles,1980,866966.0
-british_isles,1990,809972.0
-british_isles,2000,834225.0
-bulgaria,1850,
-bulgaria,1860,
-bulgaria,1870,
-bulgaria,1880,
-bulgaria,1890,
-bulgaria,1900,
-bulgaria,1910,11498.0
-bulgaria,1920,10477.0
-bulgaria,1930,9399.0
-bulgaria,1940,
-bulgaria,1950,
-bulgaria,1960,8223.0
-bulgaria,1970,8609.0
-bulgaria,1980,8463.0
-bulgaria,1990,8579.0
-bulgaria,2000,35090.0
-canada,1850,147711.0
-canada,1860,249970.0
-canada,1870,493464.0
-canada,1880,717157.0
-canada,1890,980938.0
-canada,1900,1179922.0
-canada,1910,1209717.0
-canada,1920,1138174.0
-canada,1930,1310369.0
-canada,1940,
-canada,1950,
-canada,1960,952500.0
-canada,1970,812421.0
-canada,1980,842859.0
-canada,1990,744830.0
-canada,2000,820771.0
-caribbean,1850,5772.0
-caribbean,1860,7353.0
-caribbean,1870,11570.0
-caribbean,1880,16401.0
-caribbean,1890,23256.0
-caribbean,1900,25435.0
-caribbean,1910,47635.0
-caribbean,1920,78962.0
-caribbean,1930,106241.0
-caribbean,1940,
-caribbean,1950,
-caribbean,1960,193922.0
-caribbean,1970,675108.0
-caribbean,1980,1258363.0
-caribbean,1990,1938348.0
-caribbean,2000,2953066.0
-central_america,1850,13458.0
-central_america,1860,27699.0
-central_america,1870,42736.0
-central_america,1880,69106.0
-central_america,1890,79045.0
-central_america,1900,107290.0
-central_america,1910,223651.0
-central_america,1920,491330.0
-central_america,1930,651976.0
-central_america,1940,
-central_america,1950,
-central_america,1960,624851.0
-central_america,1970,873624.0
-central_america,1980,2553113.0
-central_america,1990,5431992.0
-central_america,2000,11203637.0
-china,1850,758.0
-china,1860,35565.0
-china,1870,63042.0
-china,1880,104468.0
-china,1890,106688.0
-china,1900,81534.0
-china,1910,56756.0
-china,1920,43560.0
-china,1930,46129.0
-china,1940,
-china,1950,
-china,1960,99735.0
-china,1970,172132.0
-china,1980,286120.0
-china,1990,529837.0
-china,2000,988857.0
-cuba,1850,
-cuba,1860,
-cuba,1870,5319.0
-cuba,1880,6917.0
-cuba,1890,
-cuba,1900,11081.0
-cuba,1910,15133.0
-cuba,1920,14872.0
-cuba,1930,18493.0
-cuba,1940,
-cuba,1950,
-cuba,1960,79150.0
-cuba,1970,439048.0
-cuba,1980,607814.0
-cuba,1990,736971.0
-cuba,2000,872716.0
-czechoslovakia,1850,
-czechoslovakia,1860,
-czechoslovakia,1870,40289.0
-czechoslovakia,1880,85361.0
-czechoslovakia,1890,118106.0
-czechoslovakia,1900,156891.0
-czechoslovakia,1910,219214.0
-czechoslovakia,1920,362438.0
-czechoslovakia,1930,491638.0
-czechoslovakia,1940,
-czechoslovakia,1950,
-czechoslovakia,1960,227618.0
-czechoslovakia,1970,160899.0
-czechoslovakia,1980,112707.0
-czechoslovakia,1990,87020.0
-czechoslovakia,2000,83081.0
-denmark,1850,1838.0
-denmark,1860,9962.0
-denmark,1870,30107.0
-denmark,1880,64196.0
-denmark,1890,132543.0
-denmark,1900,153690.0
-denmark,1910,181649.0
-denmark,1920,189154.0
-denmark,1930,179474.0
-denmark,1940,
-denmark,1950,
-denmark,1960,85060.0
-denmark,1970,61410.0
-denmark,1980,42732.0
-denmark,1990,34999.0
-denmark,2000,31422.0
-eastern_europe,1850,1520.0
-eastern_europe,1860,10586.0
-eastern_europe,1870,63408.0
-eastern_europe,1880,182371.0
-eastern_europe,1890,512464.0
-eastern_europe,1900,1134680.0
-eastern_europe,1910,2956783.0
-eastern_europe,1920,3731327.0
-eastern_europe,1930,3785890.0
-eastern_europe,1940,
-eastern_europe,1950,
-eastern_europe,1960,2365579.0
-eastern_europe,1970,1727796.0
-eastern_europe,1980,1411742.0
-eastern_europe,1990,1231372.0
-eastern_europe,2000,1906056.0
-england,1850,278675.0
-england,1860,431692.0
-england,1870,550924.0
-england,1880,662676.0
-england,1890,908141.0
-england,1900,840513.0
-england,1910,877719.0
-england,1920,813853.0
-england,1930,809563.0
-england,1940,
-england,1950,
-england,1960,528205.0
-england,1970,458114.0
-england,1980,442499.0
-england,1990,405588.0
-england,2000,423609.0
-estonia,1850,
-estonia,1860,
-estonia,1870,
-estonia,1880,
-estonia,1890,
-estonia,1900,
-estonia,1910,
-estonia,1920,
-estonia,1930,3550.0
-estonia,1940,
-estonia,1950,
-estonia,1960,13991.0
-estonia,1970,12163.0
-estonia,1980,12169.0
-estonia,1990,9210.0
-estonia,2000,9785.0
-europe_nec,1850,
-europe_nec,1860,
-europe_nec,1870,
-europe_nec,1880,
-europe_nec,1890,
-europe_nec,1900,
-europe_nec,1910,10013.0
-europe_nec,1920,2433.0
-europe_nec,1930,1483.0
-europe_nec,1940,
-europe_nec,1950,
-europe_nec,1960,
-europe_nec,1970,
-europe_nec,1980,
-europe_nec,1990,
-europe_nec,2000,
-europe,1850,2031867.0
-europe,1860,3807062.0
-europe,1870,4941049.0
-europe,1880,5751823.0
-europe,1890,8030347.0
-europe,1900,8881548.0
-europe,1910,11810115.0
-europe,1920,11916048.0
-europe,1930,11784010.0
-europe,1940,
-europe,1950,
-europe,1960,7256311.0
-europe,1970,5740891.0
-europe,1980,5149572.0
-europe,1990,4350403.0
-europe,2000,4915557.0
-finland,1850,
-finland,1860,
-finland,1870,
-finland,1880,
-finland,1890,
-finland,1900,62641.0
-finland,1910,129680.0
-finland,1920,149824.0
-finland,1930,142478.0
-finland,1940,
-finland,1950,
-finland,1960,67624.0
-finland,1970,45499.0
-finland,1980,29172.0
-finland,1990,22313.0
-finland,2000,21408.0
-france,1850,54069.0
-france,1860,109870.0
-france,1870,116402.0
-france,1880,106971.0
-france,1890,113174.0
-france,1900,104197.0
-france,1910,117418.0
-france,1920,153072.0
-france,1930,135592.0
-france,1940,
-france,1950,
-france,1960,111582.0
-france,1970,105385.0
-france,1980,120215.0
-france,1990,119233.0
-france,2000,151154.0
-germany,1850,583774.0
-germany,1860,1276075.0
-germany,1870,1690533.0
-germany,1880,1966742.0
-germany,1890,2784894.0
-germany,1900,2663418.0
-germany,1910,2311237.0
-germany,1920,1686108.0
-germany,1930,1608814.0
-germany,1940,
-germany,1950,
-germany,1960,989815.0
-germany,1970,832965.0
-germany,1980,849384.0
-germany,1990,711929.0
-germany,2000,706704.0
-great_britain_nec,1850,
-great_britain_nec,1860,1802.0
-great_britain_nec,1870,4122.0
-great_britain_nec,1880,1484.0
-great_britain_nec,1890,951.0
-great_britain_nec,1900,
-great_britain_nec,1910,
-great_britain_nec,1920,
-great_britain_nec,1930,
-great_britain_nec,1940,
-great_britain_nec,1950,
-great_britain_nec,1960,
-great_britain_nec,1970,
-great_britain_nec,1980,51290.0
-great_britain_nec,1990,103220.0
-great_britain_nec,2000,141572.0
-great_britain,1850,379093.0
-great_britain,1860,587775.0
-great_britain,1870,770414.0
-great_britain,1880,917598.0
-great_britain,1890,1251402.0
-great_britain,1900,1167623.0
-great_britain,1910,1221283.0
-great_britain,1920,1135489.0
-great_britain,1930,1224091.0
-great_britain,1940,
-great_britain,1950,
-great_britain,1960,764893.0
-great_britain,1970,645262.0
-great_britain,1980,649318.0
-great_britain,1990,623614.0
-great_britain,2000,664574.0
-greece,1850,86.0
-greece,1860,328.0
-greece,1870,390.0
-greece,1880,776.0
-greece,1890,1887.0
-greece,1900,8515.0
-greece,1910,101282.0
-greece,1920,175976.0
-greece,1930,174526.0
-greece,1940,
-greece,1950,
-greece,1960,159167.0
-greece,1970,177275.0
-greece,1980,210998.0
-greece,1990,177398.0
-greece,2000,165750.0
-hungary,1850,
-hungary,1860,
-hungary,1870,3737.0
-hungary,1880,11526.0
-hungary,1890,62435.0
-hungary,1900,145714.0
-hungary,1910,495609.0
-hungary,1920,397283.0
-hungary,1930,274450.0
-hungary,1940,
-hungary,1950,
-hungary,1960,245252.0
-hungary,1970,183236.0
-hungary,1980,144368.0
-hungary,1990,110337.0
-hungary,2000,92017.0
-iceland,1850,
-iceland,1860,
-iceland,1870,
-iceland,1880,
-iceland,1890,
-iceland,1900,
-iceland,1910,
-iceland,1920,
-iceland,1930,2764.0
-iceland,1940,
-iceland,1950,
-iceland,1960,2780.0
-iceland,1970,2895.0
-iceland,1980,4156.0
-iceland,1990,5071.0
-iceland,2000,5553.0
-in_europe,1850,
-in_europe,1860,
-in_europe,1870,
-in_europe,1880,
-in_europe,1890,
-in_europe,1900,
-in_europe,1910,
-in_europe,1920,
-in_europe,1930,
-in_europe,1940,
-in_europe,1950,
-in_europe,1960,
-in_europe,1970,
-in_europe,1980,
-in_europe,1990,
-in_europe,2000,710676.0
-india,1850,
-india,1860,
-india,1870,586.0
-india,1880,1707.0
-india,1890,2143.0
-india,1900,2031.0
-india,1910,4664.0
-india,1920,4901.0
-india,1930,5850.0
-india,1940,
-india,1950,
-india,1960,12296.0
-india,1970,51000.0
-india,1980,206087.0
-india,1990,450406.0
-india,2000,1022552.0
-ireland,1850,961719.0
-ireland,1860,1611304.0
-ireland,1870,1855827.0
-ireland,1880,1854571.0
-ireland,1890,1871509.0
-ireland,1900,1615459.0
-ireland,1910,1352251.0
-ireland,1920,1037234.0
-ireland,1930,744810.0
-ireland,1940,
-ireland,1950,
-ireland,1960,338722.0
-ireland,1970,251375.0
-ireland,1980,197817.0
-ireland,1990,169827.0
-ireland,2000,156474.0
-italy,1850,3679.0
-italy,1860,11677.0
-italy,1870,17157.0
-italy,1880,44230.0
-italy,1890,182580.0
-italy,1900,484027.0
-italy,1910,1343125.0
-italy,1920,1610113.0
-italy,1930,1790429.0
-italy,1940,
-italy,1950,
-italy,1960,1256999.0
-italy,1970,1008533.0
-italy,1980,831922.0
-italy,1990,580592.0
-italy,2000,473338.0
-japan,1850,
-japan,1860,
-japan,1870,73.0
-japan,1880,401.0
-japan,1890,2292.0
-japan,1900,24788.0
-japan,1910,67744.0
-japan,1920,81502.0
-japan,1930,70993.0
-japan,1940,
-japan,1950,
-japan,1960,109175.0
-japan,1970,120235.0
-japan,1980,221794.0
-japan,1990,290128.0
-japan,2000,347539.0
-latin_america,1850,20773.0
-latin_america,1860,38315.0
-latin_america,1870,57871.0
-latin_america,1880,90073.0
-latin_america,1890,107307.0
-latin_america,1900,137458.0
-latin_america,1910,279514.0
-latin_america,1920,588843.0
-latin_america,1930,791840.0
-latin_america,1940,
-latin_america,1950,
-latin_america,1960,908309.0
-latin_america,1970,1803970.0
-latin_america,1980,4372487.0
-latin_america,1990,8407837.0
-latin_america,2000,16086974.0
-latvia,1850,
-latvia,1860,
-latvia,1870,
-latvia,1880,
-latvia,1890,
-latvia,1900,
-latvia,1910,
-latvia,1920,
-latvia,1930,20673.0
-latvia,1940,
-latvia,1950,
-latvia,1960,50681.0
-latvia,1970,41707.0
-latvia,1980,34349.0
-latvia,1990,26179.0
-latvia,2000,27232.0
-lithuania,1850,
-lithuania,1860,
-lithuania,1870,
-lithuania,1880,
-lithuania,1890,
-lithuania,1900,
-lithuania,1910,
-lithuania,1920,135068.0
-lithuania,1930,193606.0
-lithuania,1940,
-lithuania,1950,
-lithuania,1960,121475.0
-lithuania,1970,76001.0
-lithuania,1980,48194.0
-lithuania,1990,29745.0
-lithuania,2000,28490.0
-low_countries,1850,11161.0
-low_countries,1860,37353.0
-low_countries,1870,65157.0
-low_countries,1880,86461.0
-low_countries,1890,107349.0
-low_countries,1900,127719.0
-low_countries,1910,172534.0
-low_countries,1920,207038.0
-low_countries,1930,206375.0
-low_countries,1940,
-low_countries,1950,
-low_countries,1960,173069.0
-low_countries,1970,155513.0
-low_countries,1980,142748.0
-low_countries,1990,132617.0
-low_countries,2000,130615.0
-luxembourg,1850,
-luxembourg,1860,
-luxembourg,1870,5802.0
-luxembourg,1880,16.0
-luxembourg,1890,2882.0
-luxembourg,1900,3031.0
-luxembourg,1910,3071.0
-luxembourg,1920,12585.0
-luxembourg,1930,9048.0
-luxembourg,1940,
-luxembourg,1950,
-luxembourg,1960,4360.0
-luxembourg,1970,3531.0
-luxembourg,1980,3125.0
-luxembourg,1990,2053.0
-luxembourg,2000,2150.0
-mexico,1850,13317.0
-mexico,1860,27466.0
-mexico,1870,42435.0
-mexico,1880,68399.0
-mexico,1890,77853.0
-mexico,1900,103393.0
-mexico,1910,221915.0
-mexico,1920,486418.0
-mexico,1930,641462.0
-mexico,1940,
-mexico,1950,
-mexico,1960,575902.0
-mexico,1970,759711.0
-mexico,1980,2199221.0
-mexico,1990,4298014.0
-mexico,2000,9177487.0
-netherlands,1850,9848.0
-netherlands,1860,28281.0
-netherlands,1870,46802.0
-netherlands,1880,58090.0
-netherlands,1890,81828.0
-netherlands,1900,94931.0
-netherlands,1910,120063.0
-netherlands,1920,131766.0
-netherlands,1930,133133.0
-netherlands,1940,
-netherlands,1950,
-netherlands,1960,118415.0
-netherlands,1970,110570.0
-netherlands,1980,103136.0
-netherlands,1990,96198.0
-netherlands,2000,94570.0
-newfoundland,1850,
-newfoundland,1860,
-newfoundland,1870,
-newfoundland,1880,
-newfoundland,1890,
-newfoundland,1900,
-newfoundland,1910,5080.0
-newfoundland,1920,13249.0
-newfoundland,1930,23980.0
-newfoundland,1940,
-newfoundland,1950,
-newfoundland,1960,
-newfoundland,1970,
-newfoundland,1980,
-newfoundland,1990,
-newfoundland,2000,
-northern_america,1850,147711.0
-northern_america,1860,249970.0
-northern_america,1870,493467.0
-northern_america,1880,717286.0
-northern_america,1890,980938.0
-northern_america,1900,1179922.0
-northern_america,1910,1209717.0
-northern_america,1920,1138174.0
-northern_america,1930,1310369.0
-northern_america,1940,
-northern_america,1950,
-northern_america,1960,952500.0
-northern_america,1970,812421.0
-northern_america,1980,853427.0
-northern_america,1990,753917.0
-northern_america,2000,829442.0
-northern_and_western_europe,1850,2022195.0
-northern_and_western_europe,1860,3773347.0
-northern_and_western_europe,1870,4845679.0
-northern_and_western_europe,1880,5499889.0
-northern_and_western_europe,1890,7288917.0
-northern_and_western_europe,1900,7204649.0
-northern_and_western_europe,1910,7306325.0
-northern_and_western_europe,1920,6241916.0
-northern_and_western_europe,1930,5850256.0
-northern_and_western_europe,1940,
-northern_and_western_europe,1950,
-northern_and_western_europe,1960,3334971.0
-northern_and_western_europe,1970,2629200.0
-northern_and_western_europe,1980,2384257.0
-northern_and_western_europe,1990,2058853.0
-northern_and_western_europe,2000,2070466.0
-northern_europe,1850,1358887.0
-northern_europe,1860,2271661.0
-northern_europe,1870,2867926.0
-northern_europe,1880,3212431.0
-northern_europe,1890,4056160.0
-northern_europe,1900,3917815.0
-northern_europe,1910,3953947.0
-northern_europe,1920,3501149.0
-northern_europe,1930,3415551.0
-northern_europe,1940,
-northern_europe,1950,
-northern_europe,1960,1694430.0
-northern_europe,1970,1271591.0
-northern_europe,1980,1083499.0
-northern_europe,1990,968271.0
-northern_europe,2000,974619.0
-northern_ireland,1850,
-northern_ireland,1860,
-northern_ireland,1870,
-northern_ireland,1880,
-northern_ireland,1890,
-northern_ireland,1900,
-northern_ireland,1910,
-northern_ireland,1920,
-northern_ireland,1930,178832.0
-northern_ireland,1940,
-northern_ireland,1950,
-northern_ireland,1960,68162.0
-northern_ireland,1970,40837.0
-northern_ireland,1980,19831.0
-northern_ireland,1990,16531.0
-northern_ireland,2000,13177.0
-norway,1850,12678.0
-norway,1860,43995.0
-norway,1870,114246.0
-norway,1880,181729.0
-norway,1890,322665.0
-norway,1900,336388.0
-norway,1910,403877.0
-norway,1920,363863.0
-norway,1930,347852.0
-norway,1940,
-norway,1950,
-norway,1960,152698.0
-norway,1970,97243.0
-norway,1980,63316.0
-norway,1990,42240.0
-norway,2000,32207.0
-not_reported,1850,41977.0
-not_reported,1860,1366.0
-not_reported,1870,954.0
-not_reported,1880,0.0
-not_reported,1890,479.0
-not_reported,1900,2546.0
-not_reported,1910,2687.0
-not_reported,1920,3589.0
-not_reported,1930,1588.0
-not_reported,1940,
-not_reported,1950,
-not_reported,1960,
-not_reported,1970,
-not_reported,1980,
-not_reported,1990,
-not_reported,2000,
-oceania,1850,588.0
-oceania,1860,2140.0
-oceania,1870,4028.0
-oceania,1880,6859.0
-oceania,1890,9353.0
-oceania,1900,8820.0
-oceania,1910,11450.0
-oceania,1920,14626.0
-oceania,1930,17343.0
-oceania,1940,
-oceania,1950,
-oceania,1960,34730.0
-oceania,1970,41258.0
-oceania,1980,77577.0
-oceania,1990,104145.0
-oceania,2000,168046.0
-other_asia,1850,377.0
-other_asia,1860,1231.0
-other_asia,1870,864.0
-other_asia,1880,1054.0
-other_asia,1890,2260.0
-other_asia,1900,11895.0
-other_asia,1910,2591.0
-other_asia,1920,5236.0
-other_asia,1930,10509.0
-other_asia,1940,
-other_asia,1950,
-other_asia,1960,200845.0
-other_asia,1970,418473.0
-other_asia,1980,1751780.0
-other_asia,1990,3595727.0
-other_asia,2000,5734367.0
-other_caribbean,1850,
-other_caribbean,1860,
-other_caribbean,1870,6251.0
-other_caribbean,1880,9484.0
-other_caribbean,1890,
-other_caribbean,1900,14354.0
-other_caribbean,1910,32502.0
-other_caribbean,1920,64090.0
-other_caribbean,1930,87748.0
-other_caribbean,1940,
-other_caribbean,1950,
-other_caribbean,1960,114772.0
-other_caribbean,1970,236060.0
-other_caribbean,1980,650549.0
-other_caribbean,1990,1201377.0
-other_caribbean,2000,2080350.0
-other_central_america,1850,141.0
-other_central_america,1860,233.0
-other_central_america,1870,301.0
-other_central_america,1880,707.0
-other_central_america,1890,1192.0
-other_central_america,1900,3897.0
-other_central_america,1910,1736.0
-other_central_america,1920,4912.0
-other_central_america,1930,10514.0
-other_central_america,1940,
-other_central_america,1950,
-other_central_america,1960,48949.0
-other_central_america,1970,113913.0
-other_central_america,1980,353892.0
-other_central_america,1990,1133978.0
-other_central_america,2000,2026150.0
-other_eastern_europe,1850,
-other_eastern_europe,1860,1403.0
-other_eastern_europe,1870,1546.0
-other_eastern_europe,1880,3314.0
-other_eastern_europe,1890,12579.0
-other_eastern_europe,1900,2251.0
-other_eastern_europe,1910,2858.0
-other_eastern_europe,1920,3205.0
-other_eastern_europe,1930,14772.0
-other_eastern_europe,1940,
-other_eastern_europe,1950,
-other_eastern_europe,1960,14320.0
-other_eastern_europe,1970,20700.0
-other_eastern_europe,1980,16768.0
-other_eastern_europe,1990,
-other_eastern_europe,2000,
-other_northern_america,1850,
-other_northern_america,1860,
-other_northern_america,1870,3.0
-other_northern_america,1880,129.0
-other_northern_america,1890,
-other_northern_america,1900,
-other_northern_america,1910,
-other_northern_america,1920,
-other_northern_america,1930,
-other_northern_america,1940,
-other_northern_america,1950,
-other_northern_america,1960,
-other_northern_america,1970,
-other_northern_america,1980,10568.0
-other_northern_america,1990,9087.0
-other_northern_america,2000,8671.0
-other_oceania,1850,
-other_oceania,1860,286.0
-other_oceania,1870,326.0
-other_oceania,1880,806.0
-other_oceania,1890,2065.0
-other_oceania,1900,2013.0
-other_oceania,1910,2415.0
-other_oceania,1920,3712.0
-other_oceania,1930,4527.0
-other_oceania,1940,
-other_oceania,1950,
-other_oceania,1960,12521.0
-other_oceania,1970,16987.0
-other_oceania,1980,41457.0
-other_oceania,1990,61878.0
-other_oceania,2000,107081.0
-other_scandinavia,1850,
-other_scandinavia,1860,
-other_scandinavia,1870,
-other_scandinavia,1880,
-other_scandinavia,1890,
-other_scandinavia,1900,
-other_scandinavia,1910,
-other_scandinavia,1920,
-other_scandinavia,1930,
-other_scandinavia,1940,
-other_scandinavia,1950,
-other_scandinavia,1960,
-other_scandinavia,1970,
-other_scandinavia,1980,
-other_scandinavia,1990,
-other_scandinavia,2000,80.0
-other_southern_europe,1850,
-other_southern_europe,1860,
-other_southern_europe,1870,132.0
-other_southern_europe,1880,472.0
-other_southern_europe,1890,
-other_southern_europe,1900,
-other_southern_europe,1910,
-other_southern_europe,1920,
-other_southern_europe,1930,
-other_southern_europe,1940,
-other_southern_europe,1950,
-other_southern_europe,1960,
-other_southern_europe,1970,
-other_southern_europe,1980,10182.0
-other_southern_europe,1990,9614.0
-other_southern_europe,2000,9600.0
-other_western_europe,1850,
-other_western_europe,1860,
-other_western_europe,1870,
-other_western_europe,1880,
-other_western_europe,1890,
-other_western_europe,1900,
-other_western_europe,1910,
-other_western_europe,1920,263.0
-other_western_europe,1930,
-other_western_europe,1940,
-other_western_europe,1950,
-other_western_europe,1960,
-other_western_europe,1970,
-other_western_europe,1980,
-other_western_europe,1990,
-other_western_europe,2000,620.0
-palestine,1850,
-palestine,1860,
-palestine,1870,
-palestine,1880,
-palestine,1890,
-palestine,1900,
-palestine,1910,
-palestine,1920,3203.0
-palestine,1930,6137.0
-palestine,1940,
-palestine,1950,
-palestine,1960,
-palestine,1970,
-palestine,1980,
-palestine,1990,21070.0
-palestine,2000,
-poland,1850,
-poland,1860,7298.0
-poland,1870,14436.0
-poland,1880,48557.0
-poland,1890,147440.0
-poland,1900,383407.0
-poland,1910,937884.0
-poland,1920,1139979.0
-poland,1930,1268583.0
-poland,1940,
-poland,1950,
-poland,1960,747750.0
-poland,1970,548107.0
-poland,1980,418128.0
-poland,1990,388328.0
-poland,2000,466742.0
-portugal,1850,1274.0
-portugal,1860,5477.0
-portugal,1870,8973.0
-portugal,1880,15650.0
-portugal,1890,25735.0
-portugal,1900,40376.0
-portugal,1910,77634.0
-portugal,1920,103976.0
-portugal,1930,108775.0
-portugal,1940,
-portugal,1950,
-portugal,1960,80276.0
-portugal,1970,119899.0
-portugal,1980,209968.0
-portugal,1990,210122.0
-portugal,2000,203119.0
-region_or_country_not_reported,1850,41977.0
-region_or_country_not_reported,1860,3888.0
-region_or_country_not_reported,1870,3592.0
-region_or_country_not_reported,1880,4068.0
-region_or_country_not_reported,1890,6012.0
-region_or_country_not_reported,1900,10742.0
-region_or_country_not_reported,1910,9614.0
-region_or_country_not_reported,1920,8925.0
-region_or_country_not_reported,1930,6596.0
-region_or_country_not_reported,1940,
-region_or_country_not_reported,1950,
-region_or_country_not_reported,1960,59890.0
-region_or_country_not_reported,1970,315732.0
-region_or_country_not_reported,1980,887343.0
-region_or_country_not_reported,1990,808158.0
-region_or_country_not_reported,2000,316.0
-reported_by_region_and/or_country,1850,2202625.0
-reported_by_region_and/or_country,1860,4134809.0
-reported_by_region_and/or_country,1870,5563637.0
-reported_by_region_and/or_country,1880,6675875.0
-reported_by_region_and/or_country,1890,9243535.0
-reported_by_region_and/or_country,1900,10330534.0
-reported_by_region_and/or_country,1910,13506272.0
-reported_by_region_and/or_country,1920,13911767.0
-reported_by_region_and/or_country,1930,14197553.0
-reported_by_region_and/or_country,1940,
-reported_by_region_and/or_country,1950,
-reported_by_region_and/or_country,1960,9678201.0
-reported_by_region_and/or_country,1970,9303570.0
-reported_by_region_and/or_country,1980,13192563.0
-reported_by_region_and/or_country,1990,18959158.0
-reported_by_region_and/or_country,2000,31107573.0
-romania,1850,
-romania,1860,
-romania,1870,
-romania,1880,
-romania,1890,
-romania,1900,15032.0
-romania,1910,65923.0
-romania,1920,102823.0
-romania,1930,146393.0
-romania,1940,
-romania,1950,
-romania,1960,84575.0
-romania,1970,70687.0
-romania,1980,66994.0
-romania,1990,91106.0
-romania,2000,135966.0
-sandwich_islands_(hawaii),1850,588.0
-sandwich_islands_(hawaii),1860,435.0
-sandwich_islands_(hawaii),1870,584.0
-sandwich_islands_(hawaii),1880,1147.0
-sandwich_islands_(hawaii),1890,1304.0
-sandwich_islands_(hawaii),1900,
-sandwich_islands_(hawaii),1910,
-sandwich_islands_(hawaii),1920,
-sandwich_islands_(hawaii),1930,
-sandwich_islands_(hawaii),1940,
-sandwich_islands_(hawaii),1950,
-sandwich_islands_(hawaii),1960,
-sandwich_islands_(hawaii),1970,
-sandwich_islands_(hawaii),1980,
-sandwich_islands_(hawaii),1990,
-sandwich_islands_(hawaii),2000,
-scandinavia,1850,18075.0
-scandinavia,1860,72582.0
-scandinavia,1870,241685.0
-scandinavia,1880,440262.0
-scandinavia,1890,933249.0
-scandinavia,1900,1134733.0
-scandinavia,1910,1380413.0
-scandinavia,1920,1328426.0
-scandinavia,1930,1267818.0
-scandinavia,1940,
-scandinavia,1950,
-scandinavia,1960,522653.0
-scandinavia,1970,334117.0
-scandinavia,1980,216533.0
-scandinavia,1990,158299.0
-scandinavia,2000,140394.0
-scotland,1850,70550.0
-scotland,1860,108518.0
-scotland,1870,140835.0
-scotland,1880,170136.0
-scotland,1890,242231.0
-scotland,1900,233524.0
-scotland,1910,261076.0
-scotland,1920,254570.0
-scotland,1930,354323.0
-scotland,1940,
-scotland,1950,
-scotland,1960,213219.0
-scotland,1970,170134.0
-scotland,1980,142001.0
-scotland,1990,104168.0
-scotland,2000,88445.0
-south_america,1850,1543.0
-south_america,1860,3263.0
-south_america,1870,3565.0
-south_america,1880,4566.0
-south_america,1890,5006.0
-south_america,1900,4733.0
-south_america,1910,8228.0
-south_america,1920,18551.0
-south_america,1930,33623.0
-south_america,1940,
-south_america,1950,
-south_america,1960,89536.0
-south_america,1970,255238.0
-south_america,1980,561011.0
-south_america,1990,1037497.0
-south_america,2000,1930271.0
-southern_and_eastern_europe,1850,9672.0
-southern_and_eastern_europe,1860,32312.0
-southern_and_eastern_europe,1870,93824.0
-southern_and_eastern_europe,1880,248620.0
-southern_and_eastern_europe,1890,728851.0
-southern_and_eastern_europe,1900,1674648.0
-southern_and_eastern_europe,1910,4500932.0
-southern_and_eastern_europe,1920,5670927.0
-southern_and_eastern_europe,1930,5918982.0
-southern_and_eastern_europe,1940,
-southern_and_eastern_europe,1950,
-southern_and_eastern_europe,1960,3907020.0
-southern_and_eastern_europe,1970,3090991.0
-southern_and_eastern_europe,1980,2748547.0
-southern_and_eastern_europe,1990,2285513.0
-southern_and_eastern_europe,2000,2840721.0
-southern_europe,1850,8152.0
-southern_europe,1860,21726.0
-southern_europe,1870,30416.0
-southern_europe,1880,66249.0
-southern_europe,1890,216387.0
-southern_europe,1900,539968.0
-southern_europe,1910,1544149.0
-southern_europe,1920,1939600.0
-southern_europe,1930,2133092.0
-southern_europe,1940,
-southern_europe,1950,
-southern_europe,1960,1541441.0
-southern_europe,1970,1363195.0
-southern_europe,1980,1336805.0
-southern_europe,1990,1054141.0
-southern_europe,2000,934665.0
-soviet_union_(former),1850,1414.0
-soviet_union_(former),1860,3160.0
-soviet_union_(former),1870,4644.0
-soviet_union_(former),1880,35722.0
-soviet_union_(former),1890,182644.0
-soviet_union_(former),1900,423726.0
-soviet_union_(former),1910,1184412.0
-soviet_union_(former),1920,1400495.0
-soviet_union_(former),1930,1153628.0
-soviet_union_(former),1940,
-soviet_union_(former),1950,
-soviet_union_(former),1960,690598.0
-soviet_union_(former),1970,463462.0
-soviet_union_(former),1980,406022.0
-soviet_union_(former),1990,333725.0
-soviet_union_(former),2000,838809.0
-spain,1850,3113.0
-spain,1860,4244.0
-spain,1870,3764.0
-spain,1880,5121.0
-spain,1890,6185.0
-spain,1900,7050.0
-spain,1910,22108.0
-spain,1920,49535.0
-spain,1930,59362.0
-spain,1940,
-spain,1950,
-spain,1960,44999.0
-spain,1970,57488.0
-spain,1980,73735.0
-spain,1990,76415.0
-spain,2000,82858.0
-sweden,1850,3559.0
-sweden,1860,18625.0
-sweden,1870,97332.0
-sweden,1880,194337.0
-sweden,1890,478041.0
-sweden,1900,582014.0
-sweden,1910,665207.0
-sweden,1920,625585.0
-sweden,1930,595250.0
-sweden,1940,
-sweden,1950,
-sweden,1960,214491.0
-sweden,1970,127070.0
-sweden,1980,77157.0
-sweden,1990,53676.0
-sweden,2000,49724.0
-switzerland,1850,13358.0
-switzerland,1860,53327.0
-switzerland,1870,75153.0
-switzerland,1880,88621.0
-switzerland,1890,104069.0
-switzerland,1900,115593.0
-switzerland,1910,124848.0
-switzerland,1920,118659.0
-switzerland,1930,113010.0
-switzerland,1940,
-switzerland,1950,
-switzerland,1960,61568.0
-switzerland,1970,49732.0
-switzerland,1980,42804.0
-switzerland,1990,39130.0
-switzerland,2000,43106.0
-syria,1850,
-syria,1860,
-syria,1870,
-syria,1880,
-syria,1890,
-syria,1900,
-syria,1910,
-syria,1920,51901.0
-syria,1930,57227.0
-syria,1940,
-syria,1950,
-syria,1960,16717.0
-syria,1970,14962.0
-syria,1980,22081.0
-syria,1990,36782.0
-syria,2000,54561.0
-total,1850,2244602.0
-total,1860,4138697.0
-total,1870,5567229.0
-total,1880,6679943.0
-total,1890,9249547.0
-total,1900,10341276.0
-total,1910,13515886.0
-total,1920,13920692.0
-total,1930,14204149.0
-total,1940,
-total,1950,
-total,1960,9738091.0
-total,1970,9619302.0
-total,1980,14079906.0
-total,1990,19767316.0
-total,2000,31107889.0
-turkey_in_asia,1850,
-turkey_in_asia,1860,
-turkey_in_asia,1870,
-turkey_in_asia,1880,
-turkey_in_asia,1890,
-turkey_in_asia,1900,
-turkey_in_asia,1910,59729.0
-turkey_in_asia,1920,11019.0
-turkey_in_asia,1930,46654.0
-turkey_in_asia,1940,
-turkey_in_asia,1950,
-turkey_in_asia,1960,52228.0
-turkey_in_asia,1970,48085.0
-turkey_in_asia,1980,51915.0
-turkey_in_asia,1990,55087.0
-turkey_in_asia,2000,78378.0
-turkey_in_europe,1850,106.0
-turkey_in_europe,1860,128.0
-turkey_in_europe,1870,302.0
-turkey_in_europe,1880,1205.0
-turkey_in_europe,1890,1839.0
-turkey_in_europe,1900,9910.0
-turkey_in_europe,1910,32230.0
-turkey_in_europe,1920,5284.0
-turkey_in_europe,1930,2257.0
-turkey_in_europe,1940,
-turkey_in_europe,1950,
-turkey_in_europe,1960,
-turkey_in_europe,1970,
-turkey_in_europe,1980,
-turkey_in_europe,1990,
-turkey_in_europe,2000,
-united_kingdom,1850,
-united_kingdom,1860,
-united_kingdom,1870,
-united_kingdom,1880,
-united_kingdom,1890,
-united_kingdom,1900,
-united_kingdom,1910,
-united_kingdom,1920,
-united_kingdom,1930,1402923.0
-united_kingdom,1940,
-united_kingdom,1950,
-united_kingdom,1960,833055.0
-united_kingdom,1970,686099.0
-united_kingdom,1980,669149.0
-united_kingdom,1990,640145.0
-united_kingdom,2000,677751.0
-wales,1850,29868.0
-wales,1860,45763.0
-wales,1870,74533.0
-wales,1880,83302.0
-wales,1890,100079.0
-wales,1900,93586.0
-wales,1910,82488.0
-wales,1920,67066.0
-wales,1930,60205.0
-wales,1940,
-wales,1950,
-wales,1960,23469.0
-wales,1970,17014.0
-wales,1980,13528.0
-wales,1990,10638.0
-wales,2000,10948.0
-western_europe,1850,663308.0
-western_europe,1860,1501686.0
-western_europe,1870,1977753.0
-western_europe,1880,2287458.0
-western_europe,1890,3232757.0
-western_europe,1900,3286834.0
-western_europe,1910,3352378.0
-western_europe,1920,2740767.0
-western_europe,1930,2434705.0
-western_europe,1940,
-western_europe,1950,
-western_europe,1960,1640541.0
-western_europe,1970,1357609.0
-western_europe,1980,1300758.0
-western_europe,1990,1090582.0
-western_europe,2000,1095847.0
-yugoslavia,1850,
-yugoslavia,1860,
-yugoslavia,1870,
-yugoslavia,1880,
-yugoslavia,1890,
-yugoslavia,1900,
-yugoslavia,1910,
-yugoslavia,1920,169439.0
-yugoslavia,1930,211416.0
-yugoslavia,1940,
-yugoslavia,1950,
-yugoslavia,1960,165798.0
-yugoslavia,1970,153745.0
-yugoslavia,1980,152967.0
-yugoslavia,1990,141516.0
-yugoslavia,2000,278314.0
+name,level,year,value
+Africa,7,2000,881300.0
+Africa,7,1990,363819.0
+Africa,7,1980,199723.0
+Africa,7,1970,80143.0
+Africa,7,1960,35355.0
+Africa,7,1950,
+Africa,7,1940,
+Africa,7,1930,18326.0
+Africa,7,1920,16126.0
+Africa,7,1910,3992.0
+Africa,7,1900,2538.0
+Africa,7,1890,2207.0
+Africa,7,1880,2204.0
+Africa,7,1870,2657.0
+Africa,7,1860,52600.0
+Africa,7,1850,55100.0
+Africa excl. Atlantic Islands,6,2000,854694.0
+Africa excl. Atlantic Islands,6,1990,349451.0
+Africa excl. Atlantic Islands,6,1980,189266.0
+Africa excl. Atlantic Islands,6,1970,61463.0
+Africa excl. Atlantic Islands,6,1960,27053.0
+Africa excl. Atlantic Islands,6,1950,
+Africa excl. Atlantic Islands,6,1940,
+Africa excl. Atlantic Islands,6,1930,8859.0
+Africa excl. Atlantic Islands,6,1920,5781.0
+Africa excl. Atlantic Islands,6,1910,3992.0
+Africa excl. Atlantic Islands,6,1900,2538.0
+Africa excl. Atlantic Islands,6,1890,2207.0
+Africa excl. Atlantic Islands,6,1880,2204.0
+Africa excl. Atlantic Islands,6,1870,2657.0
+Africa excl. Atlantic Islands,6,1860,52600.0
+Africa excl. Atlantic Islands,6,1850,55100.0
+Albania,1,2000,3866300.0
+Albania,1,1990,562700.0
+Albania,1,1980,738100.0
+Albania,1,1970,918000.0
+Albania,1,1960,961800.0
+Albania,1,1950,
+Albania,1,1940,
+Albania,1,1930,881400.0
+Albania,1,1920,560800.0
+Albania,1,1910,
+Albania,1,1900,
+Albania,1,1890,
+Albania,1,1880,
+Albania,1,1870,
+Albania,1,1860,
+Albania,1,1850,
+Armenia,1,2000,
+Armenia,1,1990,
+Armenia,1,1980,
+Armenia,1,1970,
+Armenia,1,1960,
+Armenia,1,1950,
+Armenia,1,1940,
+Armenia,1,1930,32166.0
+Armenia,1,1920,36628.0
+Armenia,1,1910,
+Armenia,1,1900,
+Armenia,1,1890,
+Armenia,1,1880,
+Armenia,1,1870,
+Armenia,1,1860,
+Armenia,1,1850,
+Asia,7,2000,8226254.0
+Asia,7,1990,4979037.0
+Asia,7,1980,2539777.0
+Asia,7,1970,824887.0
+Asia,7,1960,490996.0
+Asia,7,1950,
+Asia,7,1940,
+Asia,7,1930,275665.0
+Asia,7,1920,237950.0
+Asia,7,1910,191484.0
+Asia,7,1900,120248.0
+Asia,7,1890,113383.0
+Asia,7,1880,107630.0
+Asia,7,1870,64565.0
+Asia,7,1860,36796.0
+Asia,7,1850,1135.0
+Atlantic Islands,6,2000,26606.0
+Atlantic Islands,6,1990,14368.0
+Atlantic Islands,6,1980,10457.0
+Atlantic Islands,6,1970,18680.0
+Atlantic Islands,6,1960,8302.0
+Atlantic Islands,6,1950,
+Atlantic Islands,6,1940,
+Atlantic Islands,6,1930,9467.0
+Atlantic Islands,6,1920,10345.0
+Atlantic Islands,6,1910,
+Atlantic Islands,6,1900,
+Atlantic Islands,6,1890,
+Atlantic Islands,6,1880,
+Atlantic Islands,6,1870,
+Atlantic Islands,6,1860,
+Atlantic Islands,6,1850,
+Australia,1,2000,60965.0
+Australia,1,1990,42267.0
+Australia,1,1980,36120.0
+Australia,1,1970,24271.0
+Australia,1,1960,22209.0
+Australia,1,1950,
+Australia,1,1940,
+Australia,1,1930,12816.0
+Australia,1,1920,10914.0
+Australia,1,1910,9035.0
+Australia,1,1900,6807.0
+Australia,1,1890,5984.0
+Australia,1,1880,4906.0
+Australia,1,1870,3118.0
+Australia,1,1860,1419.0
+Australia,1,1850,
+Austria,1,2000,63648.0
+Austria,1,1990,87673.0
+Austria,1,1980,145607.0
+Austria,1,1970,214014.0
+Austria,1,1960,304507.0
+Austria,1,1950,
+Austria,1,1940,
+Austria,1,1930,370914.0
+Austria,1,1920,575627.0
+Austria,1,1910,626341.0
+Austria,1,1900,275907.0
+Austria,1,1890,123271.0
+Austria,1,1880,38663.0
+Austria,1,1870,30508.0
+Austria,1,1860,25061.0
+Austria,1,1850,94600.0
+Belgium,1,2000,3389500.0
+Belgium,1,1990,3436600.0
+Belgium,1,1980,3648700.0
+Belgium,1,1970,4141200.0
+Belgium,1,1960,5029400.0
+Belgium,1,1950,
+Belgium,1,1940,
+Belgium,1,1930,6419400.0
+Belgium,1,1920,6268700.0
+Belgium,1,1910,4940000.0
+Belgium,1,1900,2975700.0
+Belgium,1,1890,2263900.0
+Belgium,1,1880,1553500.0
+Belgium,1,1870,1255300.0
+Belgium,1,1860,907200.0
+Belgium,1,1850,131300.0
+Born at sea,1,2000,31600.0
+Born at sea,1,1990,
+Born at sea,1,1980,
+Born at sea,1,1970,
+Born at sea,1,1960,
+Born at sea,1,1950,
+Born at sea,1,1940,
+Born at sea,1,1930,5008.0
+Born at sea,1,1920,5336.0
+Born at sea,1,1910,6927.0
+Born at sea,1,1900,8196.0
+Born at sea,1,1890,5533.0
+Born at sea,1,1880,4068.0
+Born at sea,1,1870,2638.0
+Born at sea,1,1860,2522.0
+Born at sea,1,1850,
+British Isles,4,2000,834225.0
+British Isles,4,1990,809972.0
+British Isles,4,1980,866966.0
+British Isles,4,1970,937474.0
+British Isles,4,1960,1171777.0
+British Isles,4,1950,
+British Isles,4,1940,
+British Isles,4,1930,2147733.0
+British Isles,4,1920,2172723.0
+British Isles,4,1910,2573534.0
+British Isles,4,1900,2783082.0
+British Isles,4,1890,3122911.0
+British Isles,4,1880,2772169.0
+British Isles,4,1870,2626241.0
+British Isles,4,1860,2199079.0
+British Isles,4,1850,1340812.0
+Bulgaria,1,2000,3509000.0
+Bulgaria,1,1990,857900.0
+Bulgaria,1,1980,846300.0
+Bulgaria,1,1970,860900.0
+Bulgaria,1,1960,822300.0
+Bulgaria,1,1950,
+Bulgaria,1,1940,
+Bulgaria,1,1930,939900.0
+Bulgaria,1,1920,1047700.0
+Bulgaria,1,1910,1149800.0
+Bulgaria,1,1900,
+Bulgaria,1,1890,
+Bulgaria,1,1880,
+Bulgaria,1,1870,
+Bulgaria,1,1860,
+Bulgaria,1,1850,
+Canada,1,2000,820771.0
+Canada,1,1990,744830.0
+Canada,1,1980,842859.0
+Canada,1,1970,812421.0
+Canada,1,1960,952500.0
+Canada,1,1950,
+Canada,1,1940,
+Canada,1,1930,1310369.0
+Canada,1,1920,1138174.0
+Canada,1,1910,1209717.0
+Canada,1,1900,1179922.0
+Canada,1,1890,980938.0
+Canada,1,1880,717157.0
+Canada,1,1870,493464.0
+Canada,1,1860,249970.0
+Canada,1,1850,147711.0
+Caribbean,6,2000,2953066.0
+Caribbean,6,1990,1938348.0
+Caribbean,6,1980,1258363.0
+Caribbean,6,1970,675108.0
+Caribbean,6,1960,193922.0
+Caribbean,6,1950,
+Caribbean,6,1940,
+Caribbean,6,1930,106241.0
+Caribbean,6,1920,78962.0
+Caribbean,6,1910,47635.0
+Caribbean,6,1900,25435.0
+Caribbean,6,1890,23256.0
+Caribbean,6,1880,16401.0
+Caribbean,6,1870,11570.0
+Caribbean,6,1860,7353.0
+Caribbean,6,1850,5772.0
+Central America,7,2000,11203637.0
+Central America,7,1990,5431992.0
+Central America,7,1980,2553113.0
+Central America,7,1970,873624.0
+Central America,7,1960,624851.0
+Central America,7,1950,
+Central America,7,1940,
+Central America,7,1930,651976.0
+Central America,7,1920,491330.0
+Central America,7,1910,223651.0
+Central America,7,1900,107290.0
+Central America,7,1890,79045.0
+Central America,7,1880,69106.0
+Central America,7,1870,42736.0
+Central America,7,1860,27699.0
+Central America,7,1850,13458.0
+China,1,2000,988857.0
+China,1,1990,529837.0
+China,1,1980,286120.0
+China,1,1970,172132.0
+China,1,1960,99735.0
+China,1,1950,
+China,1,1940,
+China,1,1930,46129.0
+China,1,1920,43560.0
+China,1,1910,56756.0
+China,1,1900,81534.0
+China,1,1890,106688.0
+China,1,1880,104468.0
+China,1,1870,63042.0
+China,1,1860,35565.0
+China,1,1850,75800.0
+Cuba,1,2000,872716.0
+Cuba,1,1990,736971.0
+Cuba,1,1980,607814.0
+Cuba,1,1970,439048.0
+Cuba,1,1960,79150.0
+Cuba,1,1950,
+Cuba,1,1940,
+Cuba,1,1930,18493.0
+Cuba,1,1920,14872.0
+Cuba,1,1910,15133.0
+Cuba,1,1900,11081.0
+Cuba,1,1890,
+Cuba,1,1880,6917.0
+Cuba,1,1870,5319.0
+Cuba,1,1860,
+Cuba,1,1850,
+Czechoslovakia,1,2000,83081.0
+Czechoslovakia,1,1990,87020.0
+Czechoslovakia,1,1980,112707.0
+Czechoslovakia,1,1970,160899.0
+Czechoslovakia,1,1960,227618.0
+Czechoslovakia,1,1950,
+Czechoslovakia,1,1940,
+Czechoslovakia,1,1930,491638.0
+Czechoslovakia,1,1920,362438.0
+Czechoslovakia,1,1910,219214.0
+Czechoslovakia,1,1900,156891.0
+Czechoslovakia,1,1890,118106.0
+Czechoslovakia,1,1880,85361.0
+Czechoslovakia,1,1870,40289.0
+Czechoslovakia,1,1860,
+Czechoslovakia,1,1850,
+Denmark,1,2000,31422.0
+Denmark,1,1990,34999.0
+Denmark,1,1980,42732.0
+Denmark,1,1970,61410.0
+Denmark,1,1960,85060.0
+Denmark,1,1950,
+Denmark,1,1940,
+Denmark,1,1930,179474.0
+Denmark,1,1920,189154.0
+Denmark,1,1910,181649.0
+Denmark,1,1900,153690.0
+Denmark,1,1890,132543.0
+Denmark,1,1880,64196.0
+Denmark,1,1870,30107.0
+Denmark,1,1860,9962.0
+Denmark,1,1850,1838.0
+Eastern Europe,5,2000,1906056.0
+Eastern Europe,5,1990,1231372.0
+Eastern Europe,5,1980,1411742.0
+Eastern Europe,5,1970,1727796.0
+Eastern Europe,5,1960,2365579.0
+Eastern Europe,5,1950,
+Eastern Europe,5,1940,
+Eastern Europe,5,1930,3785890.0
+Eastern Europe,5,1920,3731327.0
+Eastern Europe,5,1910,2956783.0
+Eastern Europe,5,1900,1134680.0
+Eastern Europe,5,1890,512464.0
+Eastern Europe,5,1880,182371.0
+Eastern Europe,5,1870,63408.0
+Eastern Europe,5,1860,10586.0
+Eastern Europe,5,1850,1520.0
+England,1,2000,423609.0
+England,1,1990,405588.0
+England,1,1980,442499.0
+England,1,1970,458114.0
+England,1,1960,528205.0
+England,1,1950,
+England,1,1940,
+England,1,1930,809563.0
+England,1,1920,813853.0
+England,1,1910,877719.0
+England,1,1900,840513.0
+England,1,1890,908141.0
+England,1,1880,662676.0
+England,1,1870,550924.0
+England,1,1860,431692.0
+England,1,1850,278675.0
+Estonia,1,2000,9785.0
+Estonia,1,1990,9210.0
+Estonia,1,1980,12169.0
+Estonia,1,1970,12163.0
+Estonia,1,1960,13991.0
+Estonia,1,1950,
+Estonia,1,1940,
+Estonia,1,1930,3550.0
+Estonia,1,1920,
+Estonia,1,1910,
+Estonia,1,1900,
+Estonia,1,1890,
+Estonia,1,1880,
+Estonia,1,1870,
+Estonia,1,1860,
+Estonia,1,1850,
+Europe,7,2000,4915557.0
+Europe,7,1990,4350403.0
+Europe,7,1980,5149572.0
+Europe,7,1970,5740891.0
+Europe,7,1960,7256311.0
+Europe,7,1950,
+Europe,7,1940,
+Europe,7,1930,11784010.0
+Europe,7,1920,11916048.0
+Europe,7,1910,11810115.0
+Europe,7,1900,8881548.0
+Europe,7,1890,8030347.0
+Europe,7,1880,5751823.0
+Europe,7,1870,4941049.0
+Europe,7,1860,3807062.0
+Europe,7,1850,2031867.0
+Europe n.e.c,1,2000,
+Europe n.e.c,1,1990,
+Europe n.e.c,1,1980,
+Europe n.e.c,1,1970,
+Europe n.e.c,1,1960,
+Europe n.e.c,1,1950,
+Europe n.e.c,1,1940,
+Europe n.e.c,1,1930,1483.0
+Europe n.e.c,1,1920,2433.0
+Europe n.e.c,1,1910,10013.0
+Europe n.e.c,1,1900,
+Europe n.e.c,1,1890,
+Europe n.e.c,1,1880,
+Europe n.e.c,1,1870,
+Europe n.e.c,1,1860,
+Europe n.e.c,1,1850,
+Finland,1,2000,21408.0
+Finland,1,1990,22313.0
+Finland,1,1980,29172.0
+Finland,1,1970,45499.0
+Finland,1,1960,67624.0
+Finland,1,1950,
+Finland,1,1940,
+Finland,1,1930,142478.0
+Finland,1,1920,149824.0
+Finland,1,1910,129680.0
+Finland,1,1900,62641.0
+Finland,1,1890,
+Finland,1,1880,
+Finland,1,1870,
+Finland,1,1860,
+Finland,1,1850,
+France,1,2000,151154.0
+France,1,1990,119233.0
+France,1,1980,120215.0
+France,1,1970,105385.0
+France,1,1960,111582.0
+France,1,1950,
+France,1,1940,
+France,1,1930,135592.0
+France,1,1920,153072.0
+France,1,1910,117418.0
+France,1,1900,104197.0
+France,1,1890,113174.0
+France,1,1880,106971.0
+France,1,1870,116402.0
+France,1,1860,109870.0
+France,1,1850,54069.0
+Germany,1,2000,706704.0
+Germany,1,1990,711929.0
+Germany,1,1980,849384.0
+Germany,1,1970,832965.0
+Germany,1,1960,989815.0
+Germany,1,1950,
+Germany,1,1940,
+Germany,1,1930,1608814.0
+Germany,1,1920,1686108.0
+Germany,1,1910,2311237.0
+Germany,1,1900,2663418.0
+Germany,1,1890,2784894.0
+Germany,1,1880,1966742.0
+Germany,1,1870,1690533.0
+Germany,1,1860,1276075.0
+Germany,1,1850,583774.0
+Great Britain,2,2000,664574.0
+Great Britain,2,1990,623614.0
+Great Britain,2,1980,649318.0
+Great Britain,2,1970,645262.0
+Great Britain,2,1960,764893.0
+Great Britain,2,1950,
+Great Britain,2,1940,
+Great Britain,2,1930,1224091.0
+Great Britain,2,1920,1135489.0
+Great Britain,2,1910,1221283.0
+Great Britain,2,1900,1167623.0
+Great Britain,2,1890,1251402.0
+Great Britain,2,1880,917598.0
+Great Britain,2,1870,770414.0
+Great Britain,2,1860,587775.0
+Great Britain,2,1850,379093.0
+Great britain n.e.c,1,2000,14157200.0
+Great britain n.e.c,1,1990,10322000.0
+Great britain n.e.c,1,1980,5129000.0
+Great britain n.e.c,1,1970,
+Great britain n.e.c,1,1960,
+Great britain n.e.c,1,1950,
+Great britain n.e.c,1,1940,
+Great britain n.e.c,1,1930,
+Great britain n.e.c,1,1920,
+Great britain n.e.c,1,1910,
+Great britain n.e.c,1,1900,
+Great britain n.e.c,1,1890,95100.0
+Great britain n.e.c,1,1880,148400.0
+Great britain n.e.c,1,1870,412200.0
+Great britain n.e.c,1,1860,180200.0
+Great britain n.e.c,1,1850,
+Greece,1,2000,165750.0
+Greece,1,1990,177398.0
+Greece,1,1980,210998.0
+Greece,1,1970,177275.0
+Greece,1,1960,159167.0
+Greece,1,1950,
+Greece,1,1940,
+Greece,1,1930,174526.0
+Greece,1,1920,175976.0
+Greece,1,1910,101282.0
+Greece,1,1900,8515.0
+Greece,1,1890,1887.0
+Greece,1,1880,77600.0
+Greece,1,1870,39000.0
+Greece,1,1860,32800.0
+Greece,1,1850,8600.0
+Hungary,1,2000,92017.0
+Hungary,1,1990,110337.0
+Hungary,1,1980,144368.0
+Hungary,1,1970,183236.0
+Hungary,1,1960,245252.0
+Hungary,1,1950,
+Hungary,1,1940,
+Hungary,1,1930,274450.0
+Hungary,1,1920,397283.0
+Hungary,1,1910,495609.0
+Hungary,1,1900,145714.0
+Hungary,1,1890,62435.0
+Hungary,1,1880,11526.0
+Hungary,1,1870,3737.0
+Hungary,1,1860,
+Hungary,1,1850,
+Iceland,1,2000,5553.0
+Iceland,1,1990,5071.0
+Iceland,1,1980,4156.0
+Iceland,1,1970,2895.0
+Iceland,1,1960,2780.0
+Iceland,1,1950,
+Iceland,1,1940,
+Iceland,1,1930,2764.0
+Iceland,1,1920,
+Iceland,1,1910,
+Iceland,1,1900,
+Iceland,1,1890,
+Iceland,1,1880,
+Iceland,1,1870,
+Iceland,1,1860,
+Iceland,1,1850,
+In Europe,1,2000,710676.0
+In Europe,1,1990,
+In Europe,1,1980,
+In Europe,1,1970,
+In Europe,1,1960,
+In Europe,1,1950,
+In Europe,1,1940,
+In Europe,1,1930,
+In Europe,1,1920,
+In Europe,1,1910,
+In Europe,1,1900,
+In Europe,1,1890,
+In Europe,1,1880,
+In Europe,1,1870,
+In Europe,1,1860,
+In Europe,1,1850,
+India,1,2000,1022552.0
+India,1,1990,450406.0
+India,1,1980,206087.0
+India,1,1970,51000.0
+India,1,1960,12296.0
+India,1,1950,
+India,1,1940,
+India,1,1930,5850.0
+India,1,1920,4901.0
+India,1,1910,4664.0
+India,1,1900,2031.0
+India,1,1890,2143.0
+India,1,1880,1707.0
+India,1,1870,58600.0
+India,1,1860,
+India,1,1850,
+Ireland,1,2000,156474.0
+Ireland,1,1990,169827.0
+Ireland,1,1980,197817.0
+Ireland,1,1970,251375.0
+Ireland,1,1960,338722.0
+Ireland,1,1950,
+Ireland,1,1940,
+Ireland,1,1930,744810.0
+Ireland,1,1920,1037234.0
+Ireland,1,1910,1352251.0
+Ireland,1,1900,1615459.0
+Ireland,1,1890,1871509.0
+Ireland,1,1880,1854571.0
+Ireland,1,1870,1855827.0
+Ireland,1,1860,1611304.0
+Ireland,1,1850,961719.0
+Italy,1,2000,473338.0
+Italy,1,1990,580592.0
+Italy,1,1980,831922.0
+Italy,1,1970,1008533.0
+Italy,1,1960,1256999.0
+Italy,1,1950,
+Italy,1,1940,
+Italy,1,1930,1790429.0
+Italy,1,1920,1610113.0
+Italy,1,1910,1343125.0
+Italy,1,1900,484027.0
+Italy,1,1890,182580.0
+Italy,1,1880,44230.0
+Italy,1,1870,17157.0
+Italy,1,1860,11677.0
+Italy,1,1850,3679.0
+Japan,1,2000,347539.0
+Japan,1,1990,290128.0
+Japan,1,1980,221794.0
+Japan,1,1970,120235.0
+Japan,1,1960,109175.0
+Japan,1,1950,
+Japan,1,1940,
+Japan,1,1930,70993.0
+Japan,1,1920,81502.0
+Japan,1,1910,67744.0
+Japan,1,1900,24788.0
+Japan,1,1890,2292.0
+Japan,1,1880,40100.0
+Japan,1,1870,7300.0
+Japan,1,1860,
+Japan,1,1850,
+Latin America,7,2000,16086974.0
+Latin America,7,1990,8407837.0
+Latin America,7,1980,4372487.0
+Latin America,7,1970,1803970.0
+Latin America,7,1960,908309.0
+Latin America,7,1950,
+Latin America,7,1940,
+Latin America,7,1930,791840.0
+Latin America,7,1920,588843.0
+Latin America,7,1910,279514.0
+Latin America,7,1900,137458.0
+Latin America,7,1890,107307.0
+Latin America,7,1880,90073.0
+Latin America,7,1870,57871.0
+Latin America,7,1860,38315.0
+Latin America,7,1850,20773.0
+Latvia,1,2000,27232.0
+Latvia,1,1990,26179.0
+Latvia,1,1980,34349.0
+Latvia,1,1970,41707.0
+Latvia,1,1960,50681.0
+Latvia,1,1950,
+Latvia,1,1940,
+Latvia,1,1930,20673.0
+Latvia,1,1920,
+Latvia,1,1910,
+Latvia,1,1900,
+Latvia,1,1890,
+Latvia,1,1880,
+Latvia,1,1870,
+Latvia,1,1860,
+Latvia,1,1850,
+Lithuania,1,2000,28490.0
+Lithuania,1,1990,29745.0
+Lithuania,1,1980,48194.0
+Lithuania,1,1970,76001.0
+Lithuania,1,1960,121475.0
+Lithuania,1,1950,
+Lithuania,1,1940,
+Lithuania,1,1930,193606.0
+Lithuania,1,1920,135068.0
+Lithuania,1,1910,
+Lithuania,1,1900,
+Lithuania,1,1890,
+Lithuania,1,1880,
+Lithuania,1,1870,
+Lithuania,1,1860,
+Lithuania,1,1850,
+Low countries,4,2000,13061500.0
+Low countries,4,1990,13261700.0
+Low countries,4,1980,14274800.0
+Low countries,4,1970,15551300.0
+Low countries,4,1960,17306900.0
+Low countries,4,1950,
+Low countries,4,1940,
+Low countries,4,1930,20637500.0
+Low countries,4,1920,20703800.0
+Low countries,4,1910,17253400.0
+Low countries,4,1900,12771900.0
+Low countries,4,1890,10734900.0
+Low countries,4,1880,8646100.0
+Low countries,4,1870,6515700.0
+Low countries,4,1860,3735300.0
+Low countries,4,1850,1116100.0
+Luxembourg,1,2000,2150.0
+Luxembourg,1,1990,2053.0
+Luxembourg,1,1980,3125.0
+Luxembourg,1,1970,3531.0
+Luxembourg,1,1960,4360.0
+Luxembourg,1,1950,
+Luxembourg,1,1940,
+Luxembourg,1,1930,9048.0
+Luxembourg,1,1920,12585.0
+Luxembourg,1,1910,3071.0
+Luxembourg,1,1900,3031.0
+Luxembourg,1,1890,2882.0
+Luxembourg,1,1880,1600.0
+Luxembourg,1,1870,5802.0
+Luxembourg,1,1860,
+Luxembourg,1,1850,
+Mexico,1,2000,9177487.0
+Mexico,1,1990,4298014.0
+Mexico,1,1980,2199221.0
+Mexico,1,1970,759711.0
+Mexico,1,1960,575902.0
+Mexico,1,1950,
+Mexico,1,1940,
+Mexico,1,1930,641462.0
+Mexico,1,1920,486418.0
+Mexico,1,1910,221915.0
+Mexico,1,1900,103393.0
+Mexico,1,1890,77853.0
+Mexico,1,1880,68399.0
+Mexico,1,1870,42435.0
+Mexico,1,1860,27466.0
+Mexico,1,1850,13317.0
+Netherlands,1,2000,94570.0
+Netherlands,1,1990,96198.0
+Netherlands,1,1980,103136.0
+Netherlands,1,1970,110570.0
+Netherlands,1,1960,118415.0
+Netherlands,1,1950,
+Netherlands,1,1940,
+Netherlands,1,1930,133133.0
+Netherlands,1,1920,131766.0
+Netherlands,1,1910,120063.0
+Netherlands,1,1900,94931.0
+Netherlands,1,1890,81828.0
+Netherlands,1,1880,58090.0
+Netherlands,1,1870,46802.0
+Netherlands,1,1860,28281.0
+Netherlands,1,1850,9848.0
+Newfoundland,1,2000,
+Newfoundland,1,1990,
+Newfoundland,1,1980,
+Newfoundland,1,1970,
+Newfoundland,1,1960,
+Newfoundland,1,1950,
+Newfoundland,1,1940,
+Newfoundland,1,1930,23980.0
+Newfoundland,1,1920,13249.0
+Newfoundland,1,1910,5080.0
+Newfoundland,1,1900,
+Newfoundland,1,1890,
+Newfoundland,1,1880,
+Newfoundland,1,1870,
+Newfoundland,1,1860,
+Newfoundland,1,1850,
+Northern America,7,2000,829442.0
+Northern America,7,1990,753917.0
+Northern America,7,1980,853427.0
+Northern America,7,1970,812421.0
+Northern America,7,1960,952500.0
+Northern America,7,1950,
+Northern America,7,1940,
+Northern America,7,1930,1310369.0
+Northern America,7,1920,1138174.0
+Northern America,7,1910,1209717.0
+Northern America,7,1900,1179922.0
+Northern America,7,1890,980938.0
+Northern America,7,1880,717286.0
+Northern America,7,1870,493467.0
+Northern America,7,1860,249970.0
+Northern America,7,1850,147711.0
+Northern Europe,5,2000,974619.0
+Northern Europe,5,1990,968271.0
+Northern Europe,5,1980,1083499.0
+Northern Europe,5,1970,1271591.0
+Northern Europe,5,1960,1694430.0
+Northern Europe,5,1950,
+Northern Europe,5,1940,
+Northern Europe,5,1930,3415551.0
+Northern Europe,5,1920,3501149.0
+Northern Europe,5,1910,3953947.0
+Northern Europe,5,1900,3917815.0
+Northern Europe,5,1890,4056160.0
+Northern Europe,5,1880,3212431.0
+Northern Europe,5,1870,2867926.0
+Northern Europe,5,1860,2271661.0
+Northern Europe,5,1850,1358887.0
+Northern Ireland,1,2000,13177.0
+Northern Ireland,1,1990,16531.0
+Northern Ireland,1,1980,19831.0
+Northern Ireland,1,1970,40837.0
+Northern Ireland,1,1960,68162.0
+Northern Ireland,1,1950,
+Northern Ireland,1,1940,
+Northern Ireland,1,1930,178832.0
+Northern Ireland,1,1920,
+Northern Ireland,1,1910,
+Northern Ireland,1,1900,
+Northern Ireland,1,1890,
+Northern Ireland,1,1880,
+Northern Ireland,1,1870,
+Northern Ireland,1,1860,
+Northern Ireland,1,1850,
+Northern and Western Europe,6,2000,2070466.0
+Northern and Western Europe,6,1990,2058853.0
+Northern and Western Europe,6,1980,2384257.0
+Northern and Western Europe,6,1970,2629200.0
+Northern and Western Europe,6,1960,3334971.0
+Northern and Western Europe,6,1950,
+Northern and Western Europe,6,1940,
+Northern and Western Europe,6,1930,5850256.0
+Northern and Western Europe,6,1920,6241916.0
+Northern and Western Europe,6,1910,7306325.0
+Northern and Western Europe,6,1900,7204649.0
+Northern and Western Europe,6,1890,7288917.0
+Northern and Western Europe,6,1880,5499889.0
+Northern and Western Europe,6,1870,4845679.0
+Northern and Western Europe,6,1860,3773347.0
+Northern and Western Europe,6,1850,2022195.0
+Norway,1,2000,32207.0
+Norway,1,1990,42240.0
+Norway,1,1980,63316.0
+Norway,1,1970,97243.0
+Norway,1,1960,152698.0
+Norway,1,1950,
+Norway,1,1940,
+Norway,1,1930,347852.0
+Norway,1,1920,363863.0
+Norway,1,1910,403877.0
+Norway,1,1900,336388.0
+Norway,1,1890,322665.0
+Norway,1,1880,181729.0
+Norway,1,1870,114246.0
+Norway,1,1860,43995.0
+Norway,1,1850,12678.0
+Not reported,1,2000,
+Not reported,1,1990,
+Not reported,1,1980,
+Not reported,1,1970,
+Not reported,1,1960,
+Not reported,1,1950,
+Not reported,1,1940,
+Not reported,1,1930,1588.0
+Not reported,1,1920,3589.0
+Not reported,1,1910,2687.0
+Not reported,1,1900,2546.0
+Not reported,1,1890,47900.0
+Not reported,1,1880,0.0
+Not reported,1,1870,95400.0
+Not reported,1,1860,1366.0
+Not reported,1,1850,41977.0
+Oceania,7,2000,168046.0
+Oceania,7,1990,104145.0
+Oceania,7,1980,77577.0
+Oceania,7,1970,41258.0
+Oceania,7,1960,34730.0
+Oceania,7,1950,
+Oceania,7,1940,
+Oceania,7,1930,17343.0
+Oceania,7,1920,14626.0
+Oceania,7,1910,11450.0
+Oceania,7,1900,8820.0
+Oceania,7,1890,9353.0
+Oceania,7,1880,6859.0
+Oceania,7,1870,4028.0
+Oceania,7,1860,2140.0
+Oceania,7,1850,58800.0
+Other Asia,4,2000,5734367.0
+Other Asia,4,1990,3595727.0
+Other Asia,4,1980,1751780.0
+Other Asia,4,1970,418473.0
+Other Asia,4,1960,200845.0
+Other Asia,4,1950,
+Other Asia,4,1940,
+Other Asia,4,1930,10509.0
+Other Asia,4,1920,5236.0
+Other Asia,4,1910,2591.0
+Other Asia,4,1900,11895.0
+Other Asia,4,1890,2260.0
+Other Asia,4,1880,1054.0
+Other Asia,4,1870,86400.0
+Other Asia,4,1860,1231.0
+Other Asia,4,1850,37700.0
+Other Carabbean,6,2000,2080350.0
+Other Carabbean,6,1990,1201377.0
+Other Carabbean,6,1980,650549.0
+Other Carabbean,6,1970,236060.0
+Other Carabbean,6,1960,114772.0
+Other Carabbean,6,1950,
+Other Carabbean,6,1940,
+Other Carabbean,6,1930,87748.0
+Other Carabbean,6,1920,64090.0
+Other Carabbean,6,1910,32502.0
+Other Carabbean,6,1900,14354.0
+Other Carabbean,6,1890,
+Other Carabbean,6,1880,9484.0
+Other Carabbean,6,1870,6251.0
+Other Carabbean,6,1860,
+Other Carabbean,6,1850,
+Other Eastern Europe,4,2000,
+Other Eastern Europe,4,1990,
+Other Eastern Europe,4,1980,16768.0
+Other Eastern Europe,4,1970,20700.0
+Other Eastern Europe,4,1960,14320.0
+Other Eastern Europe,4,1950,
+Other Eastern Europe,4,1940,
+Other Eastern Europe,4,1930,14772.0
+Other Eastern Europe,4,1920,3205.0
+Other Eastern Europe,4,1910,2858.0
+Other Eastern Europe,4,1900,2251.0
+Other Eastern Europe,4,1890,12579.0
+Other Eastern Europe,4,1880,3314.0
+Other Eastern Europe,4,1870,1546.0
+Other Eastern Europe,4,1860,1403.0
+Other Eastern Europe,4,1850,
+Other Northern America,6,2000,867100.0
+Other Northern America,6,1990,9087.0
+Other Northern America,6,1980,10568.0
+Other Northern America,6,1970,
+Other Northern America,6,1960,
+Other Northern America,6,1950,
+Other Northern America,6,1940,
+Other Northern America,6,1930,
+Other Northern America,6,1920,
+Other Northern America,6,1910,
+Other Northern America,6,1900,
+Other Northern America,6,1890,
+Other Northern America,6,1880,12900.0
+Other Northern America,6,1870,300.0
+Other Northern America,6,1860,
+Other Northern America,6,1850,
+Other Oceania,4,2000,107081.0
+Other Oceania,4,1990,61878.0
+Other Oceania,4,1980,41457.0
+Other Oceania,4,1970,16987.0
+Other Oceania,4,1960,12521.0
+Other Oceania,4,1950,
+Other Oceania,4,1940,
+Other Oceania,4,1930,4527.0
+Other Oceania,4,1920,3712.0
+Other Oceania,4,1910,2415.0
+Other Oceania,4,1900,2013.0
+Other Oceania,4,1890,2065.0
+Other Oceania,4,1880,80600.0
+Other Oceania,4,1870,32600.0
+Other Oceania,4,1860,28600.0
+Other Oceania,4,1850,
+Other Scandinavia,1,2000,8000.0
+Other Scandinavia,1,1990,
+Other Scandinavia,1,1980,
+Other Scandinavia,1,1970,
+Other Scandinavia,1,1960,
+Other Scandinavia,1,1950,
+Other Scandinavia,1,1940,
+Other Scandinavia,1,1930,
+Other Scandinavia,1,1920,
+Other Scandinavia,1,1910,
+Other Scandinavia,1,1900,
+Other Scandinavia,1,1890,
+Other Scandinavia,1,1880,
+Other Scandinavia,1,1870,
+Other Scandinavia,1,1860,
+Other Scandinavia,1,1850,
+Other Southern Europe,4,2000,9600.0
+Other Southern Europe,4,1990,9614.0
+Other Southern Europe,4,1980,10182.0
+Other Southern Europe,4,1970,
+Other Southern Europe,4,1960,
+Other Southern Europe,4,1950,
+Other Southern Europe,4,1940,
+Other Southern Europe,4,1930,
+Other Southern Europe,4,1920,
+Other Southern Europe,4,1910,
+Other Southern Europe,4,1900,
+Other Southern Europe,4,1890,
+Other Southern Europe,4,1880,47200.0
+Other Southern Europe,4,1870,13200.0
+Other Southern Europe,4,1860,
+Other Southern Europe,4,1850,
+Other Western Europe,4,2000,62000.0
+Other Western Europe,4,1990,
+Other Western Europe,4,1980,
+Other Western Europe,4,1970,
+Other Western Europe,4,1960,
+Other Western Europe,4,1950,
+Other Western Europe,4,1940,
+Other Western Europe,4,1930,
+Other Western Europe,4,1920,26300.0
+Other Western Europe,4,1910,
+Other Western Europe,4,1900,
+Other Western Europe,4,1890,
+Other Western Europe,4,1880,
+Other Western Europe,4,1870,
+Other Western Europe,4,1860,
+Other Western Europe,4,1850,
+Other central America,6,2000,2026150.0
+Other central America,6,1990,1133978.0
+Other central America,6,1980,353892.0
+Other central America,6,1970,113913.0
+Other central America,6,1960,48949.0
+Other central America,6,1950,
+Other central America,6,1940,
+Other central America,6,1930,10514.0
+Other central America,6,1920,4912.0
+Other central America,6,1910,1736.0
+Other central America,6,1900,3897.0
+Other central America,6,1890,1192.0
+Other central America,6,1880,70700.0
+Other central America,6,1870,30100.0
+Other central America,6,1860,23300.0
+Other central America,6,1850,14100.0
+Palestine,1,2000,
+Palestine,1,1990,21070.0
+Palestine,1,1980,
+Palestine,1,1970,
+Palestine,1,1960,
+Palestine,1,1950,
+Palestine,1,1940,
+Palestine,1,1930,6137.0
+Palestine,1,1920,3203.0
+Palestine,1,1910,
+Palestine,1,1900,
+Palestine,1,1890,
+Palestine,1,1880,
+Palestine,1,1870,
+Palestine,1,1860,
+Palestine,1,1850,
+Poland,1,2000,466742.0
+Poland,1,1990,388328.0
+Poland,1,1980,418128.0
+Poland,1,1970,548107.0
+Poland,1,1960,747750.0
+Poland,1,1950,
+Poland,1,1940,
+Poland,1,1930,1268583.0
+Poland,1,1920,1139979.0
+Poland,1,1910,937884.0
+Poland,1,1900,383407.0
+Poland,1,1890,147440.0
+Poland,1,1880,48557.0
+Poland,1,1870,14436.0
+Poland,1,1860,7298.0
+Poland,1,1850,
+Portugal,1,2000,203119.0
+Portugal,1,1990,210122.0
+Portugal,1,1980,209968.0
+Portugal,1,1970,119899.0
+Portugal,1,1960,80276.0
+Portugal,1,1950,
+Portugal,1,1940,
+Portugal,1,1930,108775.0
+Portugal,1,1920,103976.0
+Portugal,1,1910,77634.0
+Portugal,1,1900,40376.0
+Portugal,1,1890,25735.0
+Portugal,1,1880,15650.0
+Portugal,1,1870,8973.0
+Portugal,1,1860,5477.0
+Portugal,1,1850,1274.0
+Region or country not reported,8,2000,31600.0
+Region or country not reported,8,1990,808158.0
+Region or country not reported,8,1980,887343.0
+Region or country not reported,8,1970,315732.0
+Region or country not reported,8,1960,59890.0
+Region or country not reported,8,1950,
+Region or country not reported,8,1940,
+Region or country not reported,8,1930,6596.0
+Region or country not reported,8,1920,8925.0
+Region or country not reported,8,1910,9614.0
+Region or country not reported,8,1900,10742.0
+Region or country not reported,8,1890,6012.0
+Region or country not reported,8,1880,4068.0
+Region or country not reported,8,1870,3592.0
+Region or country not reported,8,1860,3888.0
+Region or country not reported,8,1850,41977.0
+Reported by region and/or country,8,2000,31107573.0
+Reported by region and/or country,8,1990,18959158.0
+Reported by region and/or country,8,1980,13192563.0
+Reported by region and/or country,8,1970,9303570.0
+Reported by region and/or country,8,1960,9678201.0
+Reported by region and/or country,8,1950,
+Reported by region and/or country,8,1940,
+Reported by region and/or country,8,1930,14197553.0
+Reported by region and/or country,8,1920,13911767.0
+Reported by region and/or country,8,1910,13506272.0
+Reported by region and/or country,8,1900,10330534.0
+Reported by region and/or country,8,1890,9243535.0
+Reported by region and/or country,8,1880,6675875.0
+Reported by region and/or country,8,1870,5563637.0
+Reported by region and/or country,8,1860,4134809.0
+Reported by region and/or country,8,1850,2202625.0
+Romania,1,2000,135966.0
+Romania,1,1990,91106.0
+Romania,1,1980,66994.0
+Romania,1,1970,70687.0
+Romania,1,1960,84575.0
+Romania,1,1950,
+Romania,1,1940,
+Romania,1,1930,146393.0
+Romania,1,1920,102823.0
+Romania,1,1910,65923.0
+Romania,1,1900,15032.0
+Romania,1,1890,
+Romania,1,1880,
+Romania,1,1870,
+Romania,1,1860,
+Romania,1,1850,
+Sandwich Islands (Hawaii),1,2000,
+Sandwich Islands (Hawaii),1,1990,
+Sandwich Islands (Hawaii),1,1980,
+Sandwich Islands (Hawaii),1,1970,
+Sandwich Islands (Hawaii),1,1960,
+Sandwich Islands (Hawaii),1,1950,
+Sandwich Islands (Hawaii),1,1940,
+Sandwich Islands (Hawaii),1,1930,
+Sandwich Islands (Hawaii),1,1920,
+Sandwich Islands (Hawaii),1,1910,
+Sandwich Islands (Hawaii),1,1900,
+Sandwich Islands (Hawaii),1,1890,1304.0
+Sandwich Islands (Hawaii),1,1880,1147.0
+Sandwich Islands (Hawaii),1,1870,58400.0
+Sandwich Islands (Hawaii),1,1860,43500.0
+Sandwich Islands (Hawaii),1,1850,58800.0
+Scandinavia,2,2000,140394.0
+Scandinavia,2,1990,158299.0
+Scandinavia,2,1980,216533.0
+Scandinavia,2,1970,334117.0
+Scandinavia,2,1960,522653.0
+Scandinavia,2,1950,
+Scandinavia,2,1940,
+Scandinavia,2,1930,1267818.0
+Scandinavia,2,1920,1328426.0
+Scandinavia,2,1910,1380413.0
+Scandinavia,2,1900,1134733.0
+Scandinavia,2,1890,933249.0
+Scandinavia,2,1880,440262.0
+Scandinavia,2,1870,241685.0
+Scandinavia,2,1860,72582.0
+Scandinavia,2,1850,18075.0
+Scotland,1,2000,88445.0
+Scotland,1,1990,104168.0
+Scotland,1,1980,142001.0
+Scotland,1,1970,170134.0
+Scotland,1,1960,213219.0
+Scotland,1,1950,
+Scotland,1,1940,
+Scotland,1,1930,354323.0
+Scotland,1,1920,254570.0
+Scotland,1,1910,261076.0
+Scotland,1,1900,233524.0
+Scotland,1,1890,242231.0
+Scotland,1,1880,170136.0
+Scotland,1,1870,140835.0
+Scotland,1,1860,108518.0
+Scotland,1,1850,70550.0
+South America,7,2000,1930271.0
+South America,7,1990,1037497.0
+South America,7,1980,561011.0
+South America,7,1970,255238.0
+South America,7,1960,89536.0
+South America,7,1950,
+South America,7,1940,
+South America,7,1930,33623.0
+South America,7,1920,18551.0
+South America,7,1910,8228.0
+South America,7,1900,4733.0
+South America,7,1890,5006.0
+South America,7,1880,4566.0
+South America,7,1870,3565.0
+South America,7,1860,3263.0
+South America,7,1850,1543.0
+Southern Europe,5,2000,934665.0
+Southern Europe,5,1990,1054141.0
+Southern Europe,5,1980,1336805.0
+Southern Europe,5,1970,1363195.0
+Southern Europe,5,1960,1541441.0
+Southern Europe,5,1950,
+Southern Europe,5,1940,
+Southern Europe,5,1930,2133092.0
+Southern Europe,5,1920,1939600.0
+Southern Europe,5,1910,1544149.0
+Southern Europe,5,1900,539968.0
+Southern Europe,5,1890,216387.0
+Southern Europe,5,1880,66249.0
+Southern Europe,5,1870,30416.0
+Southern Europe,5,1860,21726.0
+Southern Europe,5,1850,8152.0
+Southern and Eastern Europe,6,2000,2840721.0
+Southern and Eastern Europe,6,1990,2285513.0
+Southern and Eastern Europe,6,1980,2748547.0
+Southern and Eastern Europe,6,1970,3090991.0
+Southern and Eastern Europe,6,1960,3907020.0
+Southern and Eastern Europe,6,1950,
+Southern and Eastern Europe,6,1940,
+Southern and Eastern Europe,6,1930,5918982.0
+Southern and Eastern Europe,6,1920,5670927.0
+Southern and Eastern Europe,6,1910,4500932.0
+Southern and Eastern Europe,6,1900,1674648.0
+Southern and Eastern Europe,6,1890,728851.0
+Southern and Eastern Europe,6,1880,248620.0
+Southern and Eastern Europe,6,1870,93824.0
+Southern and Eastern Europe,6,1860,32312.0
+Southern and Eastern Europe,6,1850,9672.0
+Soviet Union (former),1,2000,838809.0
+Soviet Union (former),1,1990,333725.0
+Soviet Union (former),1,1980,406022.0
+Soviet Union (former),1,1970,463462.0
+Soviet Union (former),1,1960,690598.0
+Soviet Union (former),1,1950,
+Soviet Union (former),1,1940,
+Soviet Union (former),1,1930,1153628.0
+Soviet Union (former),1,1920,1400495.0
+Soviet Union (former),1,1910,1184412.0
+Soviet Union (former),1,1900,423726.0
+Soviet Union (former),1,1890,182644.0
+Soviet Union (former),1,1880,35722.0
+Soviet Union (former),1,1870,4644.0
+Soviet Union (former),1,1860,3160.0
+Soviet Union (former),1,1850,1414.0
+Spain,1,2000,82858.0
+Spain,1,1990,76415.0
+Spain,1,1980,73735.0
+Spain,1,1970,57488.0
+Spain,1,1960,44999.0
+Spain,1,1950,
+Spain,1,1940,
+Spain,1,1930,59362.0
+Spain,1,1920,49535.0
+Spain,1,1910,22108.0
+Spain,1,1900,7050.0
+Spain,1,1890,6185.0
+Spain,1,1880,5121.0
+Spain,1,1870,3764.0
+Spain,1,1860,4244.0
+Spain,1,1850,3113.0
+Sweeden,1,2000,49724.0
+Sweeden,1,1990,53676.0
+Sweeden,1,1980,77157.0
+Sweeden,1,1970,127070.0
+Sweeden,1,1960,214491.0
+Sweeden,1,1950,
+Sweeden,1,1940,
+Sweeden,1,1930,595250.0
+Sweeden,1,1920,625585.0
+Sweeden,1,1910,665207.0
+Sweeden,1,1900,582014.0
+Sweeden,1,1890,478041.0
+Sweeden,1,1880,194337.0
+Sweeden,1,1870,97332.0
+Sweeden,1,1860,18625.0
+Sweeden,1,1850,3559.0
+Switzerland,1,2000,43106.0
+Switzerland,1,1990,39130.0
+Switzerland,1,1980,42804.0
+Switzerland,1,1970,49732.0
+Switzerland,1,1960,61568.0
+Switzerland,1,1950,
+Switzerland,1,1940,
+Switzerland,1,1930,113010.0
+Switzerland,1,1920,118659.0
+Switzerland,1,1910,124848.0
+Switzerland,1,1900,115593.0
+Switzerland,1,1890,104069.0
+Switzerland,1,1880,88621.0
+Switzerland,1,1870,75153.0
+Switzerland,1,1860,53327.0
+Switzerland,1,1850,13358.0
+Syria,1,2000,54561.0
+Syria,1,1990,36782.0
+Syria,1,1980,22081.0
+Syria,1,1970,14962.0
+Syria,1,1960,16717.0
+Syria,1,1950,
+Syria,1,1940,
+Syria,1,1930,57227.0
+Syria,1,1920,51901.0
+Syria,1,1910,
+Syria,1,1900,
+Syria,1,1890,
+Syria,1,1880,
+Syria,1,1870,
+Syria,1,1860,
+Syria,1,1850,
+Total,9,2000,31107889.0
+Total,9,1990,19767316.0
+Total,9,1980,14079906.0
+Total,9,1970,9619302.0
+Total,9,1960,9738091.0
+Total,9,1950,
+Total,9,1940,
+Total,9,1930,14204149.0
+Total,9,1920,13920692.0
+Total,9,1910,13515886.0
+Total,9,1900,10341276.0
+Total,9,1890,9249547.0
+Total,9,1880,6679943.0
+Total,9,1870,5567229.0
+Total,9,1860,4138697.0
+Total,9,1850,2244602.0
+Turkey in Asia,1,2000,78378.0
+Turkey in Asia,1,1990,55087.0
+Turkey in Asia,1,1980,51915.0
+Turkey in Asia,1,1970,48085.0
+Turkey in Asia,1,1960,52228.0
+Turkey in Asia,1,1950,
+Turkey in Asia,1,1940,
+Turkey in Asia,1,1930,46654.0
+Turkey in Asia,1,1920,11019.0
+Turkey in Asia,1,1910,59729.0
+Turkey in Asia,1,1900,
+Turkey in Asia,1,1890,
+Turkey in Asia,1,1880,
+Turkey in Asia,1,1870,
+Turkey in Asia,1,1860,
+Turkey in Asia,1,1850,
+Turkey in Europe,1,2000,
+Turkey in Europe,1,1990,
+Turkey in Europe,1,1980,
+Turkey in Europe,1,1970,
+Turkey in Europe,1,1960,
+Turkey in Europe,1,1950,
+Turkey in Europe,1,1940,
+Turkey in Europe,1,1930,2257.0
+Turkey in Europe,1,1920,5284.0
+Turkey in Europe,1,1910,32230.0
+Turkey in Europe,1,1900,9910.0
+Turkey in Europe,1,1890,1839.0
+Turkey in Europe,1,1880,1205.0
+Turkey in Europe,1,1870,30200.0
+Turkey in Europe,1,1860,12800.0
+Turkey in Europe,1,1850,10600.0
+United Kingdom,3,2000,677751.0
+United Kingdom,3,1990,640145.0
+United Kingdom,3,1980,669149.0
+United Kingdom,3,1970,686099.0
+United Kingdom,3,1960,833055.0
+United Kingdom,3,1950,
+United Kingdom,3,1940,
+United Kingdom,3,1930,1402923.0
+United Kingdom,3,1920,
+United Kingdom,3,1910,
+United Kingdom,3,1900,
+United Kingdom,3,1890,
+United Kingdom,3,1880,
+United Kingdom,3,1870,
+United Kingdom,3,1860,
+United Kingdom,3,1850,
+Wales,1,2000,1094800.0
+Wales,1,1990,1063800.0
+Wales,1,1980,1352800.0
+Wales,1,1970,1701400.0
+Wales,1,1960,2346900.0
+Wales,1,1950,
+Wales,1,1940,
+Wales,1,1930,6020500.0
+Wales,1,1920,6706600.0
+Wales,1,1910,8248800.0
+Wales,1,1900,9358600.0
+Wales,1,1890,10007900.0
+Wales,1,1880,8330200.0
+Wales,1,1870,7453300.0
+Wales,1,1860,4576300.0
+Wales,1,1850,2986800.0
+Western Europe,5,2000,1095847.0
+Western Europe,5,1990,1090582.0
+Western Europe,5,1980,1300758.0
+Western Europe,5,1970,1357609.0
+Western Europe,5,1960,1640541.0
+Western Europe,5,1950,
+Western Europe,5,1940,
+Western Europe,5,1930,2434705.0
+Western Europe,5,1920,2740767.0
+Western Europe,5,1910,3352378.0
+Western Europe,5,1900,3286834.0
+Western Europe,5,1890,3232757.0
+Western Europe,5,1880,2287458.0
+Western Europe,5,1870,1977753.0
+Western Europe,5,1860,1501686.0
+Western Europe,5,1850,663308.0
+Yugoslavia,1,2000,27831400.0
+Yugoslavia,1,1990,14151600.0
+Yugoslavia,1,1980,15296700.0
+Yugoslavia,1,1970,15374500.0
+Yugoslavia,1,1960,16579800.0
+Yugoslavia,1,1950,
+Yugoslavia,1,1940,
+Yugoslavia,1,1930,21141600.0
+Yugoslavia,1,1920,16943900.0
+Yugoslavia,1,1910,
+Yugoslavia,1,1900,
+Yugoslavia,1,1890,
+Yugoslavia,1,1880,
+Yugoslavia,1,1870,
+Yugoslavia,1,1860,
+Yugoslavia,1,1850,
