@@ -1,0 +1,817 @@
+country_code,statisticalAreaCode,statisticalArea,year,indsh
+FRA,FR10,Île de France,1900,0.467
+FRA,FR21,Champagne-Ardenne,1900,0.38
+FRA,FR22,Picardie,1900,0.408
+FRA,FR23,Haute-Normandie,1900,0.431
+FRA,FR24,Centre,1900,0.251
+FRA,FR25,Basse-Normandie,1900,0.24
+FRA,FR26,Bourgogne,1900,0.255
+FRA,FR30,Nord - Pas-de-Calais,1900,0.556
+FRA,FR41,Lorraine,1900,0.416
+FRA,FR42,Alsace,1900,0.366
+FRA,FR43,Franche-Comté,1900,0.291
+FRA,FR51,Pays de la Loire,1900,0.236
+FRA,FR52,Bretagne,1900,0.181
+FRA,FR53,Poitou-Charentes,1900,0.238
+FRA,FR61,Aquitaine,1900,0.222
+FRA,FR62,Midi-Pyrénées,1900,0.227
+FRA,FR63,Limousin,1900,0.21
+FRA,FR71,Rhône-Alpes,1900,0.355
+FRA,FR72,Auvergne,1900,0.227
+FRA,FR81,Languedoc-Roussillon,1900,0.262
+FRA,FR82,Provence-Alpes-Côte d'Azur,1900,0.313
+FRA,FR83,Corse,1900,
+DEU,DE11,"Stuttgart, Regierungsbezirk",1900,0.36
+DEU,DE12,"Karlsruhe, Regierungsbezirk",1900,0.4
+DEU,DE13,"Freiburg, Regierungsbezirk",1900,0.301
+DEU,DE14,"Tübingen, Regierungsbezirk",1900,0.309
+DEU,DE21,"Oberbayern, Regierungsbezirk",1900,0.291
+DEU,DE22,"Niederbayern, Regierungsbezirk",1900,0.17
+DEU,DE23,"Oberpfalz, Regierungsbezirk",1900,0.217
+DEU,DE24,"Oberfranken, Regierungsbezirk",1900,0.358
+DEU,DE25,"Mittelfranken, Regierungsbezirk",1900,0.367
+DEU,DE26,"Unterfranken, Regierungsbezirk",1900,0.221
+DEU,DE27,"Schwaben, Regierungsbezirk",1900,0.284
+DEU,DE30,Berlin,1900,0.468
+DEU,DE40,Brandenburg,1900,0.376
+DEU,DE50,Bremen,1900,0.426
+DEU,DE60,Hamburg,1900,0.393
+DEU,DE71+DE72,Darmstadt and Giessen,1900,0.393
+DEU,DE73,"Kassel, Regierungsbezirk",1900,0.305
+DEU,DE80,Mecklenburg-Vorpommern,1900,0.257
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,1900,0.391
+DEU,DE93,Statistische Region Lüneburg,1900,0.259
+DEU,DE94,Statistische Region Weser-Ems,1900,0.261
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",1900,0.613
+DEU,DEA2,"Köln, Regierungsbezirk",1900,0.457
+DEU,DEA3,"Münster, Regierungsbezirk",1900,0.443
+DEU,DEA4,"Detmold, Regierungsbezirk",1900,0.368
+DEU,DEA5,"Arnsberg, Regierungsbezirk",1900,0.632
+DEU,DEB1,Statistische Region Koblenz,1900,0.3
+DEU,DEB2,Statistische Region Trier,1900,0.197
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,1900,0.373
+DEU,DEC0,Saarland,1900,0.561
+DEU,DED2,"Dresden, NUTS 2-Region",1900,0.7
+DEU,DED4,"Chemnitz, NUTS 2-Region",1900,0.493
+DEU,DED5,"Leipzig, NUTS 2-Region",1900,0.507
+DEU,DEE0,Sachsen-Anhalt,1900,0.381
+DEU,DEF0,Schleswig-Holstein,1900,0.308
+DEU,DEG0,Thüringen,1900,0.458
+GBR,UKI,London Counties,1900,0.346
+GBR,UKH+UKJ,Rest of SouthEast,1900,0.295
+GBR,UKK,SouthWest,1900,0.344
+GBR,UKG,West Midlands,1900,0.587
+GBR,UKF,East  Midlands,1900,0.44
+GBR,UKC+UKD,North,1900,0.543
+GBR,UKE,Yorks  & Humberside,1900,0.579
+GBR,UKL,Wales,1900,0.467
+GBR,UKM,Scotland,1900,0.475
+GBR,UKN,Northern Ireland,1900,0.364
+FRA,FR10,Île de France,1910,0.526
+FRA,FR21,Champagne-Ardenne,1910,0.43
+FRA,FR22,Picardie,1910,0.388
+FRA,FR23,Haute-Normandie,1910,0.566
+FRA,FR24,Centre,1910,0.29
+FRA,FR25,Basse-Normandie,1910,0.276
+FRA,FR26,Bourgogne,1910,0.288
+FRA,FR30,Nord - Pas-de-Calais,1910,0.611
+FRA,FR41,Lorraine,1910,0.524
+FRA,FR42,Alsace,1910,0.375
+FRA,FR43,Franche-Comté,1910,0.353
+FRA,FR51,Pays de la Loire,1910,0.27
+FRA,FR52,Bretagne,1910,0.217
+FRA,FR53,Poitou-Charentes,1910,0.344
+FRA,FR61,Aquitaine,1910,0.257
+FRA,FR62,Midi-Pyrénées,1910,0.295
+FRA,FR63,Limousin,1910,0.224
+FRA,FR71,Rhône-Alpes,1910,0.384
+FRA,FR72,Auvergne,1910,0.261
+FRA,FR81,Languedoc-Roussillon,1910,0.287
+FRA,FR82,Provence-Alpes-Côte d'Azur,1910,0.391
+FRA,FR83,Corse,1910,
+DEU,DE11,"Stuttgart, Regierungsbezirk",1910,0.392
+DEU,DE12,"Karlsruhe, Regierungsbezirk",1910,0.442
+DEU,DE13,"Freiburg, Regierungsbezirk",1910,0.316
+DEU,DE14,"Tübingen, Regierungsbezirk",1910,0.327
+DEU,DE21,"Oberbayern, Regierungsbezirk",1910,0.276
+DEU,DE22,"Niederbayern, Regierungsbezirk",1910,0.163
+DEU,DE23,"Oberpfalz, Regierungsbezirk",1910,0.215
+DEU,DE24,"Oberfranken, Regierungsbezirk",1910,0.362
+DEU,DE25,"Mittelfranken, Regierungsbezirk",1910,0.386
+DEU,DE26,"Unterfranken, Regierungsbezirk",1910,0.218
+DEU,DE27,"Schwaben, Regierungsbezirk",1910,0.275
+DEU,DE30,Berlin,1910,0.537
+DEU,DE40,Brandenburg,1910,0.406
+DEU,DE50,Bremen,1910,0.425
+DEU,DE60,Hamburg,1910,0.407
+DEU,DE71+DE72,Darmstadt and Giessen,1910,0.429
+DEU,DE73,"Kassel, Regierungsbezirk",1910,0.32
+DEU,DE80,Mecklenburg-Vorpommern,1910,0.26
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,1910,0.392
+DEU,DE93,Statistische Region Lüneburg,1910,0.273
+DEU,DE94,Statistische Region Weser-Ems,1910,0.268
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",1910,0.632
+DEU,DEA2,"Köln, Regierungsbezirk",1910,0.489
+DEU,DEA3,"Münster, Regierungsbezirk",1910,0.521
+DEU,DEA4,"Detmold, Regierungsbezirk",1910,0.396
+DEU,DEA5,"Arnsberg, Regierungsbezirk",1910,0.645
+DEU,DEB1,Statistische Region Koblenz,1910,0.308
+DEU,DEB2,Statistische Region Trier,1910,0.193
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,1910,0.389
+DEU,DEC0,Saarland,1910,0.577
+DEU,DED2,"Dresden, NUTS 2-Region",1910,0.723
+DEU,DED4,"Chemnitz, NUTS 2-Region",1910,0.506
+DEU,DED5,"Leipzig, NUTS 2-Region",1910,0.545
+DEU,DEE0,Sachsen-Anhalt,1910,0.394
+DEU,DEF0,Schleswig-Holstein,1910,0.324
+DEU,DEG0,Thüringen,1910,0.487
+GBR,UKI,London Counties,1910,0.339
+GBR,UKH+UKJ,Rest of SouthEast,1910,0.273
+GBR,UKK,SouthWest,1910,0.325
+GBR,UKG,West Midlands,1910,0.54
+GBR,UKF,East  Midlands,1910,0.503
+GBR,UKC+UKD,North,1910,0.542
+GBR,UKE,Yorks  & Humberside,1910,0.573
+GBR,UKL,Wales,1910,0.482
+GBR,UKM,Scotland,1910,0.477
+GBR,UKN,Northern Ireland,1910,0.346
+FRA,FR10,Île de France,1925,0.493
+FRA,FR21,Champagne-Ardenne,1925,0.419
+FRA,FR22,Picardie,1925,0.446
+FRA,FR23,Haute-Normandie,1925,0.452
+FRA,FR24,Centre,1925,0.25
+FRA,FR25,Basse-Normandie,1925,0.237
+FRA,FR26,Bourgogne,1925,0.284
+FRA,FR30,Nord - Pas-de-Calais,1925,0.619
+FRA,FR41,Lorraine,1925,0.492
+FRA,FR42,Alsace,1925,0.428
+FRA,FR43,Franche-Comté,1925,0.358
+FRA,FR51,Pays de la Loire,1925,0.248
+FRA,FR52,Bretagne,1925,0.181
+FRA,FR53,Poitou-Charentes,1925,0.189
+FRA,FR61,Aquitaine,1925,0.231
+FRA,FR62,Midi-Pyrénées,1925,0.208
+FRA,FR63,Limousin,1925,0.189
+FRA,FR71,Rhône-Alpes,1925,0.393
+FRA,FR72,Auvergne,1925,0.233
+FRA,FR81,Languedoc-Roussillon,1925,0.25
+FRA,FR82,Provence-Alpes-Côte d'Azur,1925,0.299
+FRA,FR83,Corse,1925,
+DEU,DE11,"Stuttgart, Regierungsbezirk",1925,0.407
+DEU,DE12,"Karlsruhe, Regierungsbezirk",1925,0.438
+DEU,DE13,"Freiburg, Regierungsbezirk",1925,0.336
+DEU,DE14,"Tübingen, Regierungsbezirk",1925,0.346
+DEU,DE21,"Oberbayern, Regierungsbezirk",1925,0.329
+DEU,DE22,"Niederbayern, Regierungsbezirk",1925,0.191
+DEU,DE23,"Oberpfalz, Regierungsbezirk",1925,0.252
+DEU,DE24,"Oberfranken, Regierungsbezirk",1925,0.411
+DEU,DE25,"Mittelfranken, Regierungsbezirk",1925,0.426
+DEU,DE26,"Unterfranken, Regierungsbezirk",1925,0.263
+DEU,DE27,"Schwaben, Regierungsbezirk",1925,0.302
+DEU,DE30,Berlin,1925,0.509
+DEU,DE40,Brandenburg,1925,0.355
+DEU,DE50,Bremen,1925,0.395
+DEU,DE60,Hamburg,1925,0.376
+DEU,DE71+DE72,Darmstadt and Giessen,1925,0.425
+DEU,DE73,"Kassel, Regierungsbezirk",1925,0.322
+DEU,DE80,Mecklenburg-Vorpommern,1925,0.24
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,1925,0.406
+DEU,DE93,Statistische Region Lüneburg,1925,0.243
+DEU,DE94,Statistische Region Weser-Ems,1925,0.239
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",1925,0.61
+DEU,DEA2,"Köln, Regierungsbezirk",1925,0.47
+DEU,DEA3,"Münster, Regierungsbezirk",1925,0.525
+DEU,DEA4,"Detmold, Regierungsbezirk",1925,0.439
+DEU,DEA5,"Arnsberg, Regierungsbezirk",1925,0.611
+DEU,DEB1,Statistische Region Koblenz,1925,0.306
+DEU,DEB2,Statistische Region Trier,1925,0.17
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,1925,0.423
+DEU,DEC0,Saarland,1925,0.591
+DEU,DED2,"Dresden, NUTS 2-Region",1925,0.706
+DEU,DED4,"Chemnitz, NUTS 2-Region",1925,0.524
+DEU,DED5,"Leipzig, NUTS 2-Region",1925,0.543
+DEU,DEE0,Sachsen-Anhalt,1925,0.413
+DEU,DEF0,Schleswig-Holstein,1925,0.323
+DEU,DEG0,Thüringen,1925,0.485
+GBR,UKI,London Counties,1925,0.414
+GBR,UKH+UKJ,Rest of SouthEast,1925,0.283
+GBR,UKK,SouthWest,1925,0.349
+GBR,UKG,West Midlands,1925,0.605
+GBR,UKF,East  Midlands,1925,0.552
+GBR,UKC+UKD,North,1925,0.567
+GBR,UKE,Yorks  & Humberside,1925,0.605
+GBR,UKL,Wales,1925,0.487
+GBR,UKM,Scotland,1925,0.478
+GBR,UKN,Northern Ireland,1925,0.396
+FRA,FR10,Île de France,1938,0.403
+FRA,FR21,Champagne-Ardenne,1938,0.368
+FRA,FR22,Picardie,1938,0.357
+FRA,FR23,Haute-Normandie,1938,0.364
+FRA,FR24,Centre,1938,0.269
+FRA,FR25,Basse-Normandie,1938,0.255
+FRA,FR26,Bourgogne,1938,0.3
+FRA,FR30,Nord - Pas-de-Calais,1938,0.576
+FRA,FR41,Lorraine,1938,0.499
+FRA,FR42,Alsace,1938,0.452
+FRA,FR43,Franche-Comté,1938,0.393
+FRA,FR51,Pays de la Loire,1938,0.276
+FRA,FR52,Bretagne,1938,0.215
+FRA,FR53,Poitou-Charentes,1938,0.256
+FRA,FR61,Aquitaine,1938,0.265
+FRA,FR62,Midi-Pyrénées,1938,0.282
+FRA,FR63,Limousin,1938,0.256
+FRA,FR71,Rhône-Alpes,1938,0.44
+FRA,FR72,Auvergne,1938,0.319
+FRA,FR81,Languedoc-Roussillon,1938,0.292
+FRA,FR82,Provence-Alpes-Côte d'Azur,1938,0.378
+FRA,FR83,Corse,1938,
+DEU,DE11,"Stuttgart, Regierungsbezirk",1938,0.455
+DEU,DE12,"Karlsruhe, Regierungsbezirk",1938,0.521
+DEU,DE13,"Freiburg, Regierungsbezirk",1938,0.341
+DEU,DE14,"Tübingen, Regierungsbezirk",1938,0.393
+DEU,DE21,"Oberbayern, Regierungsbezirk",1938,0.332
+DEU,DE22,"Niederbayern, Regierungsbezirk",1938,0.209
+DEU,DE23,"Oberpfalz, Regierungsbezirk",1938,0.269
+DEU,DE24,"Oberfranken, Regierungsbezirk",1938,0.42
+DEU,DE25,"Mittelfranken, Regierungsbezirk",1938,0.437
+DEU,DE26,"Unterfranken, Regierungsbezirk",1938,0.283
+DEU,DE27,"Schwaben, Regierungsbezirk",1938,0.318
+DEU,DE30,Berlin,1938,0.475
+DEU,DE40,Brandenburg,1938,0.383
+DEU,DE50,Bremen,1938,0.459
+DEU,DE60,Hamburg,1938,0.384
+DEU,DE71+DE72,Darmstadt and Giessen,1938,0.431
+DEU,DE73,"Kassel, Regierungsbezirk",1938,0.333
+DEU,DE80,Mecklenburg-Vorpommern,1938,0.261
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,1938,0.402
+DEU,DE93,Statistische Region Lüneburg,1938,0.261
+DEU,DE94,Statistische Region Weser-Ems,1938,0.249
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",1938,0.587
+DEU,DEA2,"Köln, Regierungsbezirk",1938,0.461
+DEU,DEA3,"Münster, Regierungsbezirk",1938,0.499
+DEU,DEA4,"Detmold, Regierungsbezirk",1938,0.421
+DEU,DEA5,"Arnsberg, Regierungsbezirk",1938,0.573
+DEU,DEB1,Statistische Region Koblenz,1938,0.312
+DEU,DEB2,Statistische Region Trier,1938,0.182
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,1938,0.42
+DEU,DEC0,Saarland,1938,0.524
+DEU,DED2,"Dresden, NUTS 2-Region",1938,0.675
+DEU,DED4,"Chemnitz, NUTS 2-Region",1938,0.522
+DEU,DED5,"Leipzig, NUTS 2-Region",1938,0.51
+DEU,DEE0,Sachsen-Anhalt,1938,0.425
+DEU,DEF0,Schleswig-Holstein,1938,0.318
+DEU,DEG0,Thüringen,1938,0.488
+GBR,UKI,London Counties,1938,0.398
+GBR,UKH+UKJ,Rest of SouthEast,1938,0.268
+GBR,UKK,SouthWest,1938,0.284
+GBR,UKG,West Midlands,1938,0.53
+GBR,UKF,East  Midlands,1938,0.496
+GBR,UKC+UKD,North,1938,0.435
+GBR,UKE,Yorks  & Humberside,1938,0.505
+GBR,UKL,Wales,1938,0.356
+GBR,UKM,Scotland,1938,0.412
+GBR,UKN,Northern Ireland,1938,0.396
+FRA,FR10,Île de France,1950,0.456
+FRA,FR21,Champagne-Ardenne,1950,0.383
+FRA,FR22,Picardie,1950,0.365
+FRA,FR23,Haute-Normandie,1950,0.365
+FRA,FR24,Centre,1950,0.255
+FRA,FR25,Basse-Normandie,1950,0.226
+FRA,FR26,Bourgogne,1950,0.28
+FRA,FR30,Nord - Pas-de-Calais,1950,0.558
+FRA,FR41,Lorraine,1950,0.491
+FRA,FR42,Alsace,1950,0.449
+FRA,FR43,Franche-Comté,1950,0.399
+FRA,FR51,Pays de la Loire,1950,0.241
+FRA,FR52,Bretagne,1950,0.189
+FRA,FR53,Poitou-Charentes,1950,0.21
+FRA,FR61,Aquitaine,1950,0.218
+FRA,FR62,Midi-Pyrénées,1950,0.24
+FRA,FR63,Limousin,1950,0.215
+FRA,FR71,Rhône-Alpes,1950,0.409
+FRA,FR72,Auvergne,1950,0.264
+FRA,FR81,Languedoc-Roussillon,1950,0.246
+FRA,FR82,Provence-Alpes-Côte d'Azur,1950,0.313
+FRA,FR83,Corse,1950,0.151
+DEU,DE11,"Stuttgart, Regierungsbezirk",1950,0.49
+DEU,DE12,"Karlsruhe, Regierungsbezirk",1950,0.459
+DEU,DE13,"Freiburg, Regierungsbezirk",1950,0.379
+DEU,DE14,"Tübingen, Regierungsbezirk",1950,0.433
+DEU,DE21,"Oberbayern, Regierungsbezirk",1950,0.364
+DEU,DE22,"Niederbayern, Regierungsbezirk",1950,0.295
+DEU,DE23,"Oberpfalz, Regierungsbezirk",1950,0.34
+DEU,DE24,"Oberfranken, Regierungsbezirk",1950,0.478
+DEU,DE25,"Mittelfranken, Regierungsbezirk",1950,0.43
+DEU,DE26,"Unterfranken, Regierungsbezirk",1950,0.355
+DEU,DE27,"Schwaben, Regierungsbezirk",1950,0.392
+DEU,DE30,Berlin,1950,0.491
+DEU,DE40,Brandenburg,1950,0.363
+DEU,DE50,Bremen,1950,0.416
+DEU,DE60,Hamburg,1950,0.385
+DEU,DE71+DE72,Darmstadt and Giessen,1950,0.426
+DEU,DE73,"Kassel, Regierungsbezirk",1950,0.357
+DEU,DE80,Mecklenburg-Vorpommern,1950,0.243
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,1950,0.412
+DEU,DE93,Statistische Region Lüneburg,1950,0.301
+DEU,DE94,Statistische Region Weser-Ems,1950,0.317
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",1950,0.583
+DEU,DEA2,"Köln, Regierungsbezirk",1950,0.488
+DEU,DEA3,"Münster, Regierungsbezirk",1950,0.536
+DEU,DEA4,"Detmold, Regierungsbezirk",1950,0.462
+DEU,DEA5,"Arnsberg, Regierungsbezirk",1950,0.59
+DEU,DEB1,Statistische Region Koblenz,1950,0.335
+DEU,DEB2,Statistische Region Trier,1950,0.209
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,1950,0.414
+DEU,DEC0,Saarland,1950,0.554
+DEU,DED2,"Dresden, NUTS 2-Region",1950,0.506
+DEU,DED4,"Chemnitz, NUTS 2-Region",1950,0.668
+DEU,DED5,"Leipzig, NUTS 2-Region",1950,0.517
+DEU,DEE0,Sachsen-Anhalt,1950,0.437
+DEU,DEF0,Schleswig-Holstein,1950,0.351
+DEU,DEG0,Thüringen,1950,0.456
+GBR,UKI,London Counties,1950,0.413
+GBR,UKH+UKJ,Rest of SouthEast,1950,0.375
+GBR,UKK,SouthWest,1950,0.35
+GBR,UKG,West Midlands,1950,0.597
+GBR,UKF,East  Midlands,1950,0.55
+GBR,UKC+UKD,North,1950,0.543
+GBR,UKE,Yorks  & Humberside,1950,0.577
+GBR,UKL,Wales,1950,0.475
+GBR,UKM,Scotland,1950,0.48
+GBR,UKN,Northern Ireland,1950,0.435
+FRA,FR10,Île de France,1960,0.432
+FRA,FR21,Champagne-Ardenne,1960,0.417
+FRA,FR22,Picardie,1960,0.418
+FRA,FR23,Haute-Normandie,1960,0.402
+FRA,FR24,Centre,1960,0.332
+FRA,FR25,Basse-Normandie,1960,0.269
+FRA,FR26,Bourgogne,1960,0.343
+FRA,FR30,Nord - Pas-de-Calais,1960,0.536
+FRA,FR41,Lorraine,1960,0.434
+FRA,FR42,Alsace,1960,0.456
+FRA,FR43,Franche-Comté,1960,0.466
+FRA,FR51,Pays de la Loire,1960,0.301
+FRA,FR52,Bretagne,1960,0.236
+FRA,FR53,Poitou-Charentes,1960,0.266
+FRA,FR61,Aquitaine,1960,0.278
+FRA,FR62,Midi-Pyrénées,1960,0.293
+FRA,FR63,Limousin,1960,0.269
+FRA,FR71,Rhône-Alpes,1960,0.455
+FRA,FR72,Auvergne,1960,0.324
+FRA,FR81,Languedoc-Roussillon,1960,0.28
+FRA,FR82,Provence-Alpes-Côte d'Azur,1960,0.334
+FRA,FR83,Corse,1960,0.207
+DEU,DE11,"Stuttgart, Regierungsbezirk",1960,0.556
+DEU,DE12,"Karlsruhe, Regierungsbezirk",1960,0.511
+DEU,DE13,"Freiburg, Regierungsbezirk",1960,0.467
+DEU,DE14,"Tübingen, Regierungsbezirk",1960,0.533
+DEU,DE21,"Oberbayern, Regierungsbezirk",1960,0.417
+DEU,DE22,"Niederbayern, Regierungsbezirk",1960,0.356
+DEU,DE23,"Oberpfalz, Regierungsbezirk",1960,0.429
+DEU,DE24,"Oberfranken, Regierungsbezirk",1960,0.537
+DEU,DE25,"Mittelfranken, Regierungsbezirk",1960,0.491
+DEU,DE26,"Unterfranken, Regierungsbezirk",1960,0.441
+DEU,DE27,"Schwaben, Regierungsbezirk",1960,0.461
+DEU,DE30,Berlin,1960,0.508
+DEU,DE40,Brandenburg,1960,0.506
+DEU,DE50,Bremen,1960,0.415
+DEU,DE60,Hamburg,1960,0.395
+DEU,DE71+DE72,Darmstadt and Giessen,1960,0.482
+DEU,DE73,"Kassel, Regierungsbezirk",1960,0.419
+DEU,DE80,Mecklenburg-Vorpommern,1960,0.382
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,1960,0.474
+DEU,DE93,Statistische Region Lüneburg,1960,0.388
+DEU,DE94,Statistische Region Weser-Ems,1960,0.382
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",1960,0.583
+DEU,DEA2,"Köln, Regierungsbezirk",1960,0.508
+DEU,DEA3,"Münster, Regierungsbezirk",1960,0.558
+DEU,DEA4,"Detmold, Regierungsbezirk",1960,0.527
+DEU,DEA5,"Arnsberg, Regierungsbezirk",1960,0.604
+DEU,DEB1,Statistische Region Koblenz,1960,0.406
+DEU,DEB2,Statistische Region Trier,1960,0.282
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,1960,0.479
+DEU,DEC0,Saarland,1960,0.542
+DEU,DED2,"Dresden, NUTS 2-Region",1960,0.656
+DEU,DED4,"Chemnitz, NUTS 2-Region",1960,0.732
+DEU,DED5,"Leipzig, NUTS 2-Region",1960,0.635
+DEU,DEE0,Sachsen-Anhalt,1960,0.578
+DEU,DEF0,Schleswig-Holstein,1960,0.393
+DEU,DEG0,Thüringen,1960,0.605
+GBR,UKI,London Counties,1960,0.392
+GBR,UKH+UKJ,Rest of SouthEast,1960,0.41
+GBR,UKK,SouthWest,1960,0.365
+GBR,UKG,West Midlands,1960,0.637
+GBR,UKF,East  Midlands,1960,0.494
+GBR,UKC+UKD,North,1960,0.531
+GBR,UKE,Yorks  & Humberside,1960,0.564
+GBR,UKL,Wales,1960,0.474
+GBR,UKM,Scotland,1960,0.458
+GBR,UKN,Northern Ireland,1960,0.431
+FRA,FR10,Île de France,1970,0.397
+FRA,FR21,Champagne-Ardenne,1970,0.437
+FRA,FR22,Picardie,1970,0.452
+FRA,FR23,Haute-Normandie,1970,0.428
+FRA,FR24,Centre,1970,0.392
+FRA,FR25,Basse-Normandie,1970,0.313
+FRA,FR26,Bourgogne,1970,0.388
+FRA,FR30,Nord - Pas-de-Calais,1970,0.503
+FRA,FR41,Lorraine,1970,0.362
+FRA,FR42,Alsace,1970,0.45
+FRA,FR43,Franche-Comté,1970,0.507
+FRA,FR51,Pays de la Loire,1970,0.356
+FRA,FR52,Bretagne,1970,0.279
+FRA,FR53,Poitou-Charentes,1970,0.319
+FRA,FR61,Aquitaine,1970,0.321
+FRA,FR62,Midi-Pyrénées,1970,0.326
+FRA,FR63,Limousin,1970,0.317
+FRA,FR71,Rhône-Alpes,1970,0.468
+FRA,FR72,Auvergne,1970,0.37
+FRA,FR81,Languedoc-Roussillon,1970,0.295
+FRA,FR82,Provence-Alpes-Côte d'Azur,1970,0.336
+FRA,FR83,Corse,1970,0.25
+DEU,DE11,"Stuttgart, Regierungsbezirk",1970,0.574
+DEU,DE12,"Karlsruhe, Regierungsbezirk",1970,0.53
+DEU,DE13,"Freiburg, Regierungsbezirk",1970,0.503
+DEU,DE14,"Tübingen, Regierungsbezirk",1970,0.564
+DEU,DE21,"Oberbayern, Regierungsbezirk",1970,0.433
+DEU,DE22,"Niederbayern, Regierungsbezirk",1970,0.424
+DEU,DE23,"Oberpfalz, Regierungsbezirk",1970,0.468
+DEU,DE24,"Oberfranken, Regierungsbezirk",1970,0.557
+DEU,DE25,"Mittelfranken, Regierungsbezirk",1970,0.508
+DEU,DE26,"Unterfranken, Regierungsbezirk",1970,0.499
+DEU,DE27,"Schwaben, Regierungsbezirk",1970,0.485
+DEU,DE30,Berlin,1970,0.45
+DEU,DE40,Brandenburg,1970,0.454
+DEU,DE50,Bremen,1970,0.378
+DEU,DE60,Hamburg,1970,0.358
+DEU,DE71+DE72,Darmstadt and Giessen,1970,0.5
+DEU,DE73,"Kassel, Regierungsbezirk",1970,0.452
+DEU,DE80,Mecklenburg-Vorpommern,1970,0.334
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,1970,0.48
+DEU,DE93,Statistische Region Lüneburg,1970,0.423
+DEU,DE94,Statistische Region Weser-Ems,1970,0.415
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",1970,0.553
+DEU,DEA2,"Köln, Regierungsbezirk",1970,0.484
+DEU,DEA3,"Münster, Regierungsbezirk",1970,0.528
+DEU,DEA4,"Detmold, Regierungsbezirk",1970,0.539
+DEU,DEA5,"Arnsberg, Regierungsbezirk",1970,0.58
+DEU,DEB1,Statistische Region Koblenz,1970,0.439
+DEU,DEB2,Statistische Region Trier,1970,0.343
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,1970,0.507
+DEU,DEC0,Saarland,1970,0.517
+DEU,DED2,"Dresden, NUTS 2-Region",1970,0.571
+DEU,DED4,"Chemnitz, NUTS 2-Region",1970,0.642
+DEU,DED5,"Leipzig, NUTS 2-Region",1970,0.554
+DEU,DEE0,Sachsen-Anhalt,1970,0.514
+DEU,DEF0,Schleswig-Holstein,1970,0.372
+DEU,DEG0,Thüringen,1970,0.546
+GBR,UKI,London Counties,1970,0.35
+GBR,UKH+UKJ,Rest of SouthEast,1970,0.401
+GBR,UKK,SouthWest,1970,0.378
+GBR,UKG,West Midlands,1970,0.569
+GBR,UKF,East  Midlands,1970,0.516
+GBR,UKC+UKD,North,1970,0.493
+GBR,UKE,Yorks  & Humberside,1970,0.523
+GBR,UKL,Wales,1970,0.465
+GBR,UKM,Scotland,1970,0.436
+GBR,UKN,Northern Ireland,1970,0.436
+FRA,FR10,Île de France,1980,0.322
+FRA,FR21,Champagne-Ardenne,1980,0.396
+FRA,FR22,Picardie,1980,0.42
+FRA,FR23,Haute-Normandie,1980,0.408
+FRA,FR24,Centre,1980,0.379
+FRA,FR25,Basse-Normandie,1980,0.328
+FRA,FR26,Bourgogne,1980,0.37
+FRA,FR30,Nord - Pas-de-Calais,1980,0.433
+FRA,FR41,Lorraine,1980,0.357
+FRA,FR42,Alsace,1980,0.421
+FRA,FR43,Franche-Comté,1980,0.463
+FRA,FR51,Pays de la Loire,1980,0.359
+FRA,FR52,Bretagne,1980,0.286
+FRA,FR53,Poitou-Charentes,1980,0.32
+FRA,FR61,Aquitaine,1980,0.302
+FRA,FR62,Midi-Pyrénées,1980,0.3
+FRA,FR63,Limousin,1980,0.319
+FRA,FR71,Rhône-Alpes,1980,0.412
+FRA,FR72,Auvergne,1980,0.363
+FRA,FR81,Languedoc-Roussillon,1980,0.265
+FRA,FR82,Provence-Alpes-Côte d'Azur,1980,0.283
+FRA,FR83,Corse,1980,0.235
+DEU,DE11,"Stuttgart, Regierungsbezirk",1980,0.505
+DEU,DE12,"Karlsruhe, Regierungsbezirk",1980,0.457
+DEU,DE13,"Freiburg, Regierungsbezirk",1980,0.452
+DEU,DE14,"Tübingen, Regierungsbezirk",1980,0.476
+DEU,DE21,"Oberbayern, Regierungsbezirk",1980,0.355
+DEU,DE22,"Niederbayern, Regierungsbezirk",1980,0.392
+DEU,DE23,"Oberpfalz, Regierungsbezirk",1980,0.402
+DEU,DE24,"Oberfranken, Regierungsbezirk",1980,0.488
+DEU,DE25,"Mittelfranken, Regierungsbezirk",1980,0.431
+DEU,DE26,"Unterfranken, Regierungsbezirk",1980,0.423
+DEU,DE27,"Schwaben, Regierungsbezirk",1980,0.416
+DEU,DE30,Berlin,1980,0.347
+DEU,DE40,Brandenburg,1980,0.477
+DEU,DE50,Bremen,1980,0.333
+DEU,DE60,Hamburg,1980,0.283
+DEU,DE71+DE72,Darmstadt and Giessen,1980,0.391
+DEU,DE73,"Kassel, Regierungsbezirk",1980,0.381
+DEU,DE80,Mecklenburg-Vorpommern,1980,0.365
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,1980,0.4
+DEU,DE93,Statistische Region Lüneburg,1980,0.301
+DEU,DE94,Statistische Region Weser-Ems,1980,0.359
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",1980,0.445
+DEU,DEA2,"Köln, Regierungsbezirk",1980,0.399
+DEU,DEA3,"Münster, Regierungsbezirk",1980,0.444
+DEU,DEA4,"Detmold, Regierungsbezirk",1980,0.47
+DEU,DEA5,"Arnsberg, Regierungsbezirk",1980,0.495
+DEU,DEB1,Statistische Region Koblenz,1980,0.376
+DEU,DEB2,Statistische Region Trier,1980,0.318
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,1980,0.432
+DEU,DEC0,Saarland,1980,0.449
+DEU,DED2,"Dresden, NUTS 2-Region",1980,0.572
+DEU,DED4,"Chemnitz, NUTS 2-Region",1980,0.629
+DEU,DED5,"Leipzig, NUTS 2-Region",1980,0.544
+DEU,DEE0,Sachsen-Anhalt,1980,0.52
+DEU,DEF0,Schleswig-Holstein,1980,0.302
+DEU,DEG0,Thüringen,1980,0.56
+GBR,UKI,London Counties,1980,0.315
+GBR,UKH+UKJ,Rest of SouthEast,1980,0.402
+GBR,UKK,SouthWest,1980,0.334
+GBR,UKG,West Midlands,1980,0.471
+GBR,UKF,East  Midlands,1980,0.409
+GBR,UKC+UKD,North,1980,0.39
+GBR,UKE,Yorks  & Humberside,1980,0.426
+GBR,UKL,Wales,1980,0.38
+GBR,UKM,Scotland,1980,0.365
+GBR,UKN,Northern Ireland,1980,0.33
+FRA,FR10,Île de France,1990,0.261
+FRA,FR21,Champagne-Ardenne,1990,0.342
+FRA,FR22,Picardie,1990,0.363
+FRA,FR23,Haute-Normandie,1990,0.359
+FRA,FR24,Centre,1990,0.348
+FRA,FR25,Basse-Normandie,1990,0.306
+FRA,FR26,Bourgogne,1990,0.324
+FRA,FR30,Nord - Pas-de-Calais,1990,0.331
+FRA,FR41,Lorraine,1990,0.345
+FRA,FR42,Alsace,1990,0.368
+FRA,FR43,Franche-Comté,1990,0.405
+FRA,FR51,Pays de la Loire,1990,0.329
+FRA,FR52,Bretagne,1990,0.267
+FRA,FR53,Poitou-Charentes,1990,0.286
+FRA,FR61,Aquitaine,1990,0.26
+FRA,FR62,Midi-Pyrénées,1990,0.267
+FRA,FR63,Limousin,1990,0.281
+FRA,FR71,Rhône-Alpes,1990,0.353
+FRA,FR72,Auvergne,1990,0.316
+FRA,FR81,Languedoc-Roussillon,1990,0.22
+FRA,FR82,Provence-Alpes-Côte d'Azur,1990,0.23
+FRA,FR83,Corse,1990,0.189
+DEU,DE11,"Stuttgart, Regierungsbezirk",1990,0.462
+DEU,DE12,"Karlsruhe, Regierungsbezirk",1990,0.4
+DEU,DE13,"Freiburg, Regierungsbezirk",1990,0.41
+DEU,DE14,"Tübingen, Regierungsbezirk",1990,0.435
+DEU,DE21,"Oberbayern, Regierungsbezirk",1990,0.318
+DEU,DE22,"Niederbayern, Regierungsbezirk",1990,0.402
+DEU,DE23,"Oberpfalz, Regierungsbezirk",1990,0.395
+DEU,DE24,"Oberfranken, Regierungsbezirk",1990,0.454
+DEU,DE25,"Mittelfranken, Regierungsbezirk",1990,0.39
+DEU,DE26,"Unterfranken, Regierungsbezirk",1990,0.399
+DEU,DE27,"Schwaben, Regierungsbezirk",1990,0.402
+DEU,DE30,Berlin,1990,0.343
+DEU,DE40,Brandenburg,1990,0.438
+DEU,DE50,Bremen,1990,0.294
+DEU,DE60,Hamburg,1990,0.229
+DEU,DE71+DE72,Darmstadt and Giessen,1990,0.342
+DEU,DE73,"Kassel, Regierungsbezirk",1990,0.359
+DEU,DE80,Mecklenburg-Vorpommern,1990,0.338
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,1990,0.352
+DEU,DE93,Statistische Region Lüneburg,1990,0.271
+DEU,DE94,Statistische Region Weser-Ems,1990,0.324
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",1990,0.375
+DEU,DEA2,"Köln, Regierungsbezirk",1990,0.339
+DEU,DEA3,"Münster, Regierungsbezirk",1990,0.384
+DEU,DEA4,"Detmold, Regierungsbezirk",1990,0.429
+DEU,DEA5,"Arnsberg, Regierungsbezirk",1990,0.431
+DEU,DEB1,Statistische Region Koblenz,1990,0.341
+DEU,DEB2,Statistische Region Trier,1990,0.301
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,1990,0.386
+DEU,DEC0,Saarland,1990,0.39
+DEU,DED2,"Dresden, NUTS 2-Region",1990,0.539
+DEU,DED4,"Chemnitz, NUTS 2-Region",1990,0.595
+DEU,DED5,"Leipzig, NUTS 2-Region",1990,0.503
+DEU,DEE0,Sachsen-Anhalt,1990,0.484
+DEU,DEF0,Schleswig-Holstein,1990,0.269
+DEU,DEG0,Thüringen,1990,0.522
+GBR,UKI,London Counties,1990,0.203
+GBR,UKH+UKJ,Rest of SouthEast,1990,0.285
+GBR,UKK,SouthWest,1990,0.281
+GBR,UKG,West Midlands,1990,0.384
+GBR,UKF,East  Midlands,1990,0.376
+GBR,UKC+UKD,North,1990,0.335
+GBR,UKE,Yorks  & Humberside,1990,0.347
+GBR,UKL,Wales,1990,0.322
+GBR,UKM,Scotland,1990,0.3
+GBR,UKN,Northern Ireland,1990,0.267
+FRA,FR10,Île de France,2000,0.17
+FRA,FR21,Champagne-Ardenne,2000,0.275
+FRA,FR22,Picardie,2000,0.286
+FRA,FR23,Haute-Normandie,2000,0.289
+FRA,FR24,Centre,2000,0.279
+FRA,FR25,Basse-Normandie,2000,0.264
+FRA,FR26,Bourgogne,2000,0.268
+FRA,FR30,Nord - Pas-de-Calais,2000,0.257
+FRA,FR41,Lorraine,2000,0.34
+FRA,FR42,Alsace,2000,0.299
+FRA,FR43,Franche-Comté,2000,0.325
+FRA,FR51,Pays de la Loire,2000,0.28
+FRA,FR52,Bretagne,2000,0.241
+FRA,FR53,Poitou-Charentes,2000,0.243
+FRA,FR61,Aquitaine,2000,0.21
+FRA,FR62,Midi-Pyrénées,2000,0.22
+FRA,FR63,Limousin,2000,0.24
+FRA,FR71,Rhône-Alpes,2000,0.279
+FRA,FR72,Auvergne,2000,0.27
+FRA,FR81,Languedoc-Roussillon,2000,0.173
+FRA,FR82,Provence-Alpes-Côte d'Azur,2000,0.172
+FRA,FR83,Corse,2000,0.154
+DEU,DE11,"Stuttgart, Regierungsbezirk",2000,0.366
+DEU,DE12,"Karlsruhe, Regierungsbezirk",2000,0.321
+DEU,DE13,"Freiburg, Regierungsbezirk",2000,0.352
+DEU,DE14,"Tübingen, Regierungsbezirk",2000,0.363
+DEU,DE21,"Oberbayern, Regierungsbezirk",2000,0.249
+DEU,DE22,"Niederbayern, Regierungsbezirk",2000,0.359
+DEU,DE23,"Oberpfalz, Regierungsbezirk",2000,0.35
+DEU,DE24,"Oberfranken, Regierungsbezirk",2000,0.375
+DEU,DE25,"Mittelfranken, Regierungsbezirk",2000,0.316
+DEU,DE26,"Unterfranken, Regierungsbezirk",2000,0.341
+DEU,DE27,"Schwaben, Regierungsbezirk",2000,0.344
+DEU,DE30,Berlin,2000,0.177
+DEU,DE40,Brandenburg,2000,0.274
+DEU,DE50,Bremen,2000,0.239
+DEU,DE60,Hamburg,2000,0.169
+DEU,DE71+DE72,Darmstadt and Giessen,2000,0.246
+DEU,DE73,"Kassel, Regierungsbezirk",2000,0.297
+DEU,DE80,Mecklenburg-Vorpommern,2000,0.234
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,2000,0.283
+DEU,DE93,Statistische Region Lüneburg,2000,0.244
+DEU,DE94,Statistische Region Weser-Ems,2000,0.282
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",2000,0.264
+DEU,DEA2,"Köln, Regierungsbezirk",2000,0.239
+DEU,DEA3,"Münster, Regierungsbezirk",2000,0.289
+DEU,DEA4,"Detmold, Regierungsbezirk",2000,0.344
+DEU,DEA5,"Arnsberg, Regierungsbezirk",2000,0.337
+DEU,DEB1,Statistische Region Koblenz,2000,0.295
+DEU,DEB2,Statistische Region Trier,2000,0.282
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,2000,0.301
+DEU,DEC0,Saarland,2000,0.319
+DEU,DED2,"Dresden, NUTS 2-Region",2000,0.296
+DEU,DED4,"Chemnitz, NUTS 2-Region",2000,0.348
+DEU,DED5,"Leipzig, NUTS 2-Region",2000,0.252
+DEU,DEE0,Sachsen-Anhalt,2000,0.288
+DEU,DEF0,Schleswig-Holstein,2000,0.227
+DEU,DEG0,Thüringen,2000,0.318
+GBR,UKI,London Counties,2000,0.139
+GBR,UKH+UKJ,Rest of SouthEast,2000,0.218
+GBR,UKK,SouthWest,2000,0.224
+GBR,UKG,West Midlands,2000,0.292
+GBR,UKF,East  Midlands,2000,0.279
+GBR,UKC+UKD,North,2000,0.255
+GBR,UKE,Yorks  & Humberside,2000,0.264
+GBR,UKL,Wales,2000,0.233
+GBR,UKM,Scotland,2000,0.228
+GBR,UKN,Northern Ireland,2000,0.239
+FRA,FR10,Île de France,2010,0.14
+FRA,FR21,Champagne-Ardenne,2010,0.246
+FRA,FR22,Picardie,2010,0.246
+FRA,FR23,Haute-Normandie,2010,0.259
+FRA,FR24,Centre,2010,0.248
+FRA,FR25,Basse-Normandie,2010,0.247
+FRA,FR26,Bourgogne,2010,0.236
+FRA,FR30,Nord - Pas-de-Calais,2010,0.219
+FRA,FR41,Lorraine,2010,0.26
+FRA,FR42,Alsace,2010,0.263
+FRA,FR43,Franche-Comté,2010,0.283
+FRA,FR51,Pays de la Loire,2010,0.254
+FRA,FR52,Bretagne,2010,0.223
+FRA,FR53,Poitou-Charentes,2010,0.223
+FRA,FR61,Aquitaine,2010,0.198
+FRA,FR62,Midi-Pyrénées,2010,0.208
+FRA,FR63,Limousin,2010,0.211
+FRA,FR71,Rhône-Alpes,2010,0.245
+FRA,FR72,Auvergne,2010,0.243
+FRA,FR81,Languedoc-Roussillon,2010,0.166
+FRA,FR82,Provence-Alpes-Côte d'Azur,2010,0.165
+FRA,FR83,Corse,2010,0.169
+DEU,DE11,"Stuttgart, Regierungsbezirk",2010,0.324
+DEU,DE12,"Karlsruhe, Regierungsbezirk",2010,0.281
+DEU,DE13,"Freiburg, Regierungsbezirk",2010,0.317
+DEU,DE14,"Tübingen, Regierungsbezirk",2010,0.334
+DEU,DE21,"Oberbayern, Regierungsbezirk",2010,0.215
+DEU,DE22,"Niederbayern, Regierungsbezirk",2010,0.331
+DEU,DE23,"Oberpfalz, Regierungsbezirk",2010,0.333
+DEU,DE24,"Oberfranken, Regierungsbezirk",2010,0.323
+DEU,DE25,"Mittelfranken, Regierungsbezirk",2010,0.279
+DEU,DE26,"Unterfranken, Regierungsbezirk",2010,0.306
+DEU,DE27,"Schwaben, Regierungsbezirk",2010,0.315
+DEU,DE30,Berlin,2010,0.125
+DEU,DE40,Brandenburg,2010,0.221
+DEU,DE50,Bremen,2010,0.192
+DEU,DE60,Hamburg,2010,0.13
+DEU,DE71+DE72,Darmstadt and Giessen,2010,0.204
+DEU,DE73,"Kassel, Regierungsbezirk",2010,0.268
+DEU,DE80,Mecklenburg-Vorpommern,2010,0.189
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,2010,0.236
+DEU,DE93,Statistische Region Lüneburg,2010,0.207
+DEU,DE94,Statistische Region Weser-Ems,2010,0.256
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",2010,0.212
+DEU,DEA2,"Köln, Regierungsbezirk",2010,0.189
+DEU,DEA3,"Münster, Regierungsbezirk",2010,0.241
+DEU,DEA4,"Detmold, Regierungsbezirk",2010,0.288
+DEU,DEA5,"Arnsberg, Regierungsbezirk",2010,0.279
+DEU,DEB1,Statistische Region Koblenz,2010,0.265
+DEU,DEB2,Statistische Region Trier,2010,0.261
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,2010,0.256
+DEU,DEC0,Saarland,2010,0.279
+DEU,DED2,"Dresden, NUTS 2-Region",2010,0.255
+DEU,DED4,"Chemnitz, NUTS 2-Region",2010,0.315
+DEU,DED5,"Leipzig, NUTS 2-Region",2010,0.201
+DEU,DEE0,Sachsen-Anhalt,2010,0.254
+DEU,DEF0,Schleswig-Holstein,2010,0.195
+DEU,DEG0,Thüringen,2010,0.294
+GBR,UKI,London Counties,2010,0.108
+GBR,UKH+UKJ,Rest of SouthEast,2010,0.177
+GBR,UKK,SouthWest,2010,0.189
+GBR,UKG,West Midlands,2010,0.22
+GBR,UKF,East  Midlands,2010,0.229
+GBR,UKC+UKD,North,2010,0.2
+GBR,UKE,Yorks  & Humberside,2010,0.212
+GBR,UKL,Wales,2010,0.208
+GBR,UKM,Scotland,2010,0.207
+GBR,UKN,Northern Ireland,2010,0.197
+FRA,FR10,Île de France,2015,0.12
+FRA,FR21,Champagne-Ardenne,2015,0.217
+FRA,FR22,Picardie,2015,0.215
+FRA,FR23,Haute-Normandie,2015,0.23
+FRA,FR24,Centre,2015,0.214
+FRA,FR25,Basse-Normandie,2015,0.216
+FRA,FR26,Bourgogne,2015,0.199
+FRA,FR30,Nord - Pas-de-Calais,2015,0.186
+FRA,FR41,Lorraine,2015,0.213
+FRA,FR42,Alsace,2015,0.223
+FRA,FR43,Franche-Comté,2015,0.237
+FRA,FR51,Pays de la Loire,2015,0.23
+FRA,FR52,Bretagne,2015,0.198
+FRA,FR53,Poitou-Charentes,2015,0.194
+FRA,FR61,Aquitaine,2015,0.184
+FRA,FR62,Midi-Pyrénées,2015,0.184
+FRA,FR63,Limousin,2015,0.173
+FRA,FR71,Rhône-Alpes,2015,0.213
+FRA,FR72,Auvergne,2015,0.209
+FRA,FR81,Languedoc-Roussillon,2015,0.144
+FRA,FR82,Provence-Alpes-Côte d'Azur,2015,0.144
+FRA,FR83,Corse,2015,0.169
+DEU,DE11,"Stuttgart, Regierungsbezirk",2015,0.327
+DEU,DE12,"Karlsruhe, Regierungsbezirk",2015,0.273
+DEU,DE13,"Freiburg, Regierungsbezirk",2015,0.312
+DEU,DE14,"Tübingen, Regierungsbezirk",2015,0.336
+DEU,DE21,"Oberbayern, Regierungsbezirk",2015,0.219
+DEU,DE22,"Niederbayern, Regierungsbezirk",2015,0.331
+DEU,DE23,"Oberpfalz, Regierungsbezirk",2015,0.339
+DEU,DE24,"Oberfranken, Regierungsbezirk",2015,0.321
+DEU,DE25,"Mittelfranken, Regierungsbezirk",2015,0.278
+DEU,DE26,"Unterfranken, Regierungsbezirk",2015,0.303
+DEU,DE27,"Schwaben, Regierungsbezirk",2015,0.316
+DEU,DE30,Berlin,2015,0.12
+DEU,DE40,Brandenburg,2015,0.221
+DEU,DE50,Bremen,2015,0.194
+DEU,DE60,Hamburg,2015,0.128
+DEU,DE71+DE72,Darmstadt and Giessen,2015,0.165
+DEU,DE73,"Kassel, Regierungsbezirk",2015,0.271
+DEU,DE80,Mecklenburg-Vorpommern,2015,0.185
+DEU,DE91+DE92,Statistische Regionen Braunschweig und Hannover,2015,0.237
+DEU,DE93,Statistische Region Lüneburg,2015,0.204
+DEU,DE94,Statistische Region Weser-Ems,2015,0.251
+DEU,DEA1,"Düsseldorf, Regierungsbezirk",2015,0.209
+DEU,DEA2,"Köln, Regierungsbezirk",2015,0.186
+DEU,DEA3,"Münster, Regierungsbezirk",2015,0.239
+DEU,DEA4,"Detmold, Regierungsbezirk",2015,0.286
+DEU,DEA5,"Arnsberg, Regierungsbezirk",2015,0.275
+DEU,DEB1,Statistische Region Koblenz,2015,0.268
+DEU,DEB2,Statistische Region Trier,2015,0.263
+DEU,DEB3,Statistische Region Rheinhessen-Pfalz,2015,0.251
+DEU,DEC0,Saarland,2015,0.276
+DEU,DED2,"Dresden, NUTS 2-Region",2015,0.256
+DEU,DED4,"Chemnitz, NUTS 2-Region",2015,0.317
+DEU,DED5,"Leipzig, NUTS 2-Region",2015,0.192
+DEU,DEE0,Sachsen-Anhalt,2015,0.251
+DEU,DEF0,Schleswig-Holstein,2015,0.196
+DEU,DEG0,Thüringen,2015,0.293
+GBR,UKI,London Counties,2015,0.099
+GBR,UKH+UKJ,Rest of SouthEast,2015,0.158
+GBR,UKK,SouthWest,2015,0.177
+GBR,UKG,West Midlands,2015,0.188
+GBR,UKF,East  Midlands,2015,0.188
+GBR,UKC+UKD,North,2015,0.16
+GBR,UKE,Yorks  & Humberside,2015,0.181
+GBR,UKL,Wales,2015,0.191
+GBR,UKM,Scotland,2015,0.177
+GBR,UKN,Northern Ireland,2015,0.198
