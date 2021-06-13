@@ -1,13 +1,17 @@
 # Exports
 
-This document refers to [exports_xx.csv](https://github.com/cverluise/patentcity/tree/feature/assets/assets) which reports the pairwise exports between countries.
-
-!!! info "Coverage"
-    Australia (AUS), Austria (AUT), Belgium (BEL), Canada (CAN), Czech Republic (CZE), Denmark (DNK), France (FRA), Germany (DEU), Great Britain (GBR), Hungary (HUN), Italy (ITA), Japan (JPN), Netherlands (NLD), Poland (POL), Russia (RUS), Sweden (SWE), Switzerland (CHE), United States of America (USA)
-
 ## Metadata
 
-Source: [XX]
+File | Source
+---|---
+[exports_xx.csv](https://github.com/cverluise/patentcity/tree/feature/assets/assets) | [XX]
+
+## Coverage
+
+Country | Period
+---|---
+AUS, AUT, BEL, CAN, CZE, DNK, FRA, DEU, GBR, HUN, ITA, JPN, NLD, POL, RUS, SWE, CHE, USA | [XX]
+
 
 ## Variables
 

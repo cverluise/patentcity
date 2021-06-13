@@ -1,13 +1,18 @@
 # Distance
 
-This document refers to [distance_xx.csv](https://github.com/cverluise/patentcity/tree/feature/assets/assets) which reports the pairwise distance between countries.
-
-!!! info "Coverage"
-    Australia (AUS), Austria (AUT), Belgium (BEL), Canada (CAN), Czech Republic (CZE), Denmark (DNK), France (FRA), Germany (DEU), Great Britain (GBR), Hungary (HUN), Italy (ITA), Japan (JPN), Netherlands (NLD), Poland (POL), Russia (RUS), Sweden (SWE), Switzerland (CHE), United States of America (USA)
 
 ## Metadata
 
-Source: [Mayer, T. & Zignago, S. "Notes on CEPII's distances measures: the GeoDist Database". *CEPII Working  Paper 2011-25*. 2011](http://www.cepii.fr/CEPII/en/publications/wp/abstract.asp?NoDoc=3877)
+File | Source
+---|---
+[distance_xx.csv](https://github.com/cverluise/patentcity/tree/feature/assets/assets)| [Mayer, T. & Zignago, S. "Notes on CEPII's distances measures: the GeoDist Database". *CEPII Working  Paper 2011-25*. 2011](http://www.cepii.fr/CEPII/en/publications/wp/abstract.asp?NoDoc=3877)
+
+## Coverage
+
+Country | Period
+---|---
+AUS, AUT, BEL, CAN, CZE, DNK, FRA, DEU, GBR, HUN, ITA, JPN, NLD, POL, RUS, SWE, CHE, USA | [XX]
+
 
 ## Variables
 
