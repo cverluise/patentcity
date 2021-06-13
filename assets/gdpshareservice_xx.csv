@@ -1,4 +1,4 @@
-country_code,statisticalAreaCode,statisticalArea,year,sersh
+country_code,statisticalAreaCode,statisticalArea,year,share_service
 FRA,FR10,Île de France,1900,0.454
 FRA,FR21,Champagne-Ardenne,1900,0.219
 FRA,FR22,Picardie,1900,0.225
