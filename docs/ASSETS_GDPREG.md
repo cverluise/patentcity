@@ -10,7 +10,10 @@ File |Source
 
 Country | Period
 ---|---
-DE,FR,GB,US| [XX]
+DE, FR, GB| [XX]
+
+!!! warning
+    US not supported yet
 
 ## Variables
 
