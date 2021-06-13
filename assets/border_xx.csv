@@ -1,4 +1,4 @@
-origin_country,destination_country,common_border
+origin_country_code,destination_country_code,common_border
 AUS,AUS,0
 AUS,AUT,0
 AUS,BEL,0
