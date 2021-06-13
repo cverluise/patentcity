@@ -1,4 +1,4 @@
-country_code,statisticalAreaCode,statisticalArea,year,agsh
+country_code,statisticalAreaCode,statisticalArea,year,share_agriculture
 FRA,FR10,Île de France,1900,0.079
 FRA,FR21,Champagne-Ardenne,1900,0.401
 FRA,FR22,Picardie,1900,0.368
