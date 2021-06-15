@@ -11,9 +11,9 @@ File| Source
 
 ## Coverage
 
-Country| Period
----|---
-US | 1850-2000
+Country| Geographical level| Period
+---|---|---
+US | 0(country) | 1850-2000
 
 ## Variables
 
