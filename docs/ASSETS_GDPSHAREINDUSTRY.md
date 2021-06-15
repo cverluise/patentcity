@@ -1,7 +1,5 @@
 # GDP share industry
 
-## Metadata
-
 File |Source
 ---|---
 [gdpshareindustry_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets)| [Rosés-Wolf database on regional GDP (version 6, 2020)](https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp)
@@ -10,9 +8,9 @@ File |Source
 
 Country |Geographical level | Period
 ---|---|---
-DE  |2(nuts2)       | 1900-2015
-FR  |3(nuts3)       | 1900-2015
-GB  |2(nuts2)       | 1900-2015
+DE  |2 (nuts2)       | 1900-2015
+FR  |3 (nuts3)       | 1900-2015
+GB  |2 (nuts2)       | 1900-2015
 
 !!! warning
     US not supported yet

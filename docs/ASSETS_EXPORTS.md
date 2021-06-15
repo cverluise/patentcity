@@ -1,7 +1,5 @@
 # Exports
 
-## Metadata
-
 File | Source
 ---|---
 [exports_xx.csv](https://github.com/cverluise/patentcity/tree/feature/assets/assets) | [Barbieri, Katherine and Omar M. G. Omar Keshk. 2016. Correlates of War Project Trade Data Set Codebook, Version 4.0. Online: http://correlatesofwar.org.](https://correlatesofwar.org/data-sets/bilateral-trade)

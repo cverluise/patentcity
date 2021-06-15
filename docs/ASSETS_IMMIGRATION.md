@@ -1,13 +1,9 @@
 # Immigration
 
-This document refers to [immigration_us.csv](./assets/immigration_us.csv) and [immigrationbyorigin_us.csv](./assets/immigrationbyorigin_us.csv).  These files report the share and number of foreign-born in the US and their origins.
-
-## Metadata
-
 File| Source
 ---|---
-[immigration_us.csv](./assets/immigration_us.csv)| [US census](https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf)
-[immigrationbyorigin_us.csv](./assets/immigration_us.csv)| [US census](https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf)
+[immigration_us.csv](https://github.com/cverluise/patentcity/tree/master/assets)| [US census](https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf)
+[immigrationbyorigin_us.csv](https://github.com/cverluise/patentcity/tree/master/assets)| [US census](https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf)
 
 ## Coverage
 
