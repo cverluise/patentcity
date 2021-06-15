@@ -738,7 +738,7 @@ def add_statisticalareas(file: str, statisticalareas_path: str, verbose: bool = 
 
     **Usage:**
         ```shell
-        patentcity geo add.statisticalareas geoc_gbpatentxx.here.csv "assets/*_statisticalareas.csv"
+        patentcity geo add.statisticalareas geoc_gbpatentxx.here.csv "assets/statisticalareas_*.csv"
         ```
     """
     statisticalareas_df = read_csv_many(
