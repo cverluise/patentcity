@@ -13,7 +13,7 @@ File| Source
 
 Country| Period
 ---|---
-US | [XX]
+US | 1850-2000
 
 ## Variables
 
@@ -21,8 +21,8 @@ US | [XX]
 
     Variable|Description    | Type
     ---|---|---
-    name    | [XX] | `str`
-    year    | [XX] | `int`
+    name    | Name of the origin country/region | `str`
+    year    | Year | `int`
     value   | Value | `float`
 
 === "immigrationbyorigin"
