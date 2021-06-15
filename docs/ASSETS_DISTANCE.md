@@ -20,4 +20,4 @@ Variable|Description    | Type
 ---|---|---
 origin_country_code     | Country code of the origin country| `str`
 destination_country_code| Country code of the destination country | `str`
-distance                | Distance between origin country and destination country (in [XX: add unit]) | `float`
+distance                | Distance between origin country and destination country (in kilometers) | `float`
