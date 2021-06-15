@@ -14,10 +14,10 @@ US  | [Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method 
 
 Country |Geographical level | Time
 ---|---|---
-DE  |2   | [XX]
-FR  |3   | [XX]
-GB  |2   | [XX]
-US  |2(commuting zone)   | [XX]
+DE  |2   | 2020
+FR  |3   | 2020
+GB  |2   | 2020
+US  |2(commuting zone)   | 2020
 
 ## Variables
 
