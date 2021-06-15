@@ -19,4 +19,4 @@ country_code            | Country code | `str`
 statisticalAreaCode     | Statistical area code (nuts/fips) | `str`
 statisticalAreaName     | Statistical area name (literal)| `str`
 year                    | Year | `int`
-population              | Population in the statistical area (in thousands)| `float
+population              | Population in the statistical area (in thousands)| `float`
