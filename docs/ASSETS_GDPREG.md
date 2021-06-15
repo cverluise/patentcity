@@ -8,9 +8,11 @@ File |Source
 
 ## Coverage
 
-Country | Period
----|---
-DE, FR, GB| 1900-2015
+Country |Geographical level | Period
+---|---|---
+DE  |2(nuts2)       | 1900-2015
+FR  |3(nuts3)       | 1900-2015
+GB  |2(nuts2)       | 1900-2015
 
 !!! warning
     US not supported yet
