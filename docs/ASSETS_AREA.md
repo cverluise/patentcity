@@ -1,14 +1,10 @@
 # AREA
-This document refers to [area_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets) which reports the area by statistical areas.
 
 ## Metadata
 
-Country|Source
+File|Source
 ---|---
-DE  | [Rosés-Wolf database on regional GDP (version 6, 2020)](https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp)
-FR  | [Wikipedia](https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais_class%C3%A9s_par_population_et_superficie)
-GB  | [Wikipedia](https://simple.wikipedia.org/wiki/List_of_counties_of_the_United_Kingdom)
-US  | [Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020](http://fpeckert.me/eglp/)
+[area_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets)  | DE [Rosés-Wolf database on regional GDP (version 6, 2020)](https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp), FR [Wikipedia](https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais_class%C3%A9s_par_population_et_superficie), GB  [Wikipedia](https://simple.wikipedia.org/wiki/List_of_counties_of_the_United_Kingdom), US [Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020](http://fpeckert.me/eglp/)
 
 ## Coverage
 
