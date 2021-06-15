@@ -32,7 +32,7 @@ US | 1850-2000
     region    | Region | `str`
     level   | Geographical level of the entity defined by `name`. `1`: Countries, `2`: Country groups, `3`:United Kingdom, `4`: Other regions, `5`: European regions, `6`: Continental areas, `7`: Continent, `8`:Subtotals, `9`: Total, `"n.e.c."` Not elsewhere classified  (e.g. Europe)| `int`
     year    | Year | `int`
-    immigrants | Number of immigrants (in [XX: add unit]) | `float`
+    immigrants | Number of immigrants (in units) | `float`
 
     !!! info "Focus"
 
