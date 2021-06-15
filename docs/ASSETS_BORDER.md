@@ -8,9 +8,9 @@ File |Source
 
 ## Coverage
 
-Country | Period
+Country | Time
 ---|---
-AUS, AUT, BEL, CAN, CZE, DNK, FRA, DEU, GBR, HUN, ITA, JPN, NLD, POL, RUS, SWE, CHE, USA | [XX]
+AUS, AUT, BEL, CAN, CZE, DNK, FRA, DEU, GBR, HUN, ITA, JPN, NLD, POL, RUS, SWE, CHE, USA | 2011
 
 ## Variables
 
