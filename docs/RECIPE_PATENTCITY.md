@@ -159,7 +159,15 @@ ls entrel_*patentxx.jsonl | parallel "wc -l {}*"
     # The output is a GMAPS like file (md5|{})
     ```
 
+## Merge all geocoded data chunks by country and service
+
+```shell
+```
+
 ## Add geocoded data
+
+!!! warning
+    Incorporating data is hard on memory. Upgrade to a 32Gb memory machine for this stage.
 
 ```shell
 # Harmonize GMAPS and MANUAL as HERE geocoded data
@@ -170,21 +178,22 @@ for OFFICE in ${MANUALDISAMB}; do
 done;
 
 # Stack geocoded data
-for SERVICE in here gmaps; do
-  for OFFICE in dd de fr gb us; do
-    rm -f geoc_${OFFICE}patentxx.${SERVICE}.csv_xx
-    head -n 1 geoc_${OFFICE}patentxx.${SERVICE}.csv_00 >> geoc_${OFFICE}patentxx.${SERVICE}.csv_xx &&
-    for i in 0 1; do  # up until last round
-      tail -n +2 geoc_${OFFICE}patentxx.${SERVICE}.csv_0${i} >> geoc_${OFFICE}patentxx.${SERVICE}.csv_xx;
-    done;
-  done;
-done;
+# we assume that there have been several rounds of geocoding (e.g. due to limited credits) and each round result is suffixed by 0x (e.g. geoc_ddpatentxx.gmaps.csv_00.gz
+parallel --eta 'zcat $(ls geoc_{1}patentxx.{2}.csv_*.gz | head -n 1) | head -n 1 >> geoc_{1}patentxx.{2}.csv_xx' ::: dd de fr gb us ::: gmaps here
+parallel --eta 'zcat geoc_{1}patentxx.{2}.csv_*.gz | grep -v "recId" | sort -u >> geoc_{1}patentxx.{2}.csv_xx' ::: dd de fr gb us ::: gmaps here
+gzip geoc_*patentxx.*.csv_xx  # overwrite existing file if any
+
+# Add statistical areas
+parallel -j2 --eta 'patentcity geo add.statisticalareas geoc_{1}patentxx.{2}.csv_xx.gz "assets/statisticalareas_*.csv" >> geoc_{1}patentxx.{2}.csv_xx' ::: dd de fr gb us ::: gmaps here
+parallel -j2 --eta 'patentcity geo add.statisticalareas geoc_{1}patentxx.manual.csv.gz "assets/statisticalareas_*.csv" >> geoc_{1}patentxx.manual.csv' ::: dd fr
+gzip geoc_*patentxx.*.csv_xx  # overwrite existing file if any
+gzip geoc_*patentxx.manual.csv  # overwrite existing file if any
 
 # Incorporate geocoded data
 # HERE and GMAPS
 for OFFICE in dd de fr gb us; do
   echo ${OFFICE}
-  patentcity geo add entrel_${OFFICE}patentxx.jsonl geoc_${OFFICE}patentxx.here.csv_xx.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
+  patentcity geo add entrel_${OFFICE}patentxx.jsonl.gz geoc_${OFFICE}patentxx.here.csv_xx.gz --source HERE >> entrelgeoc_${OFFICE}patentxx.jsonl_tmp &&
   patentcity geo add entrelgeoc_${OFFICE}patentxx.jsonl_tmp geoc_${OFFICE}patentxx.gmaps.csv_xx.gz --source GMAPS >> entrelgeoc_${OFFICE}patentxx.jsonl &&
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
 done;
@@ -196,8 +205,15 @@ for OFFICE in ${MANUALDISAMB}; do
   rm entrelgeoc_${OFFICE}patentxx.jsonl_tmp;
 done;
 
-# prep var name
-ls entrelgeoc_*patentxx.jsonl | parallel --eta """mv {} {}_tmp && sed 's/\"seqNumber\":/\"loc_seqNumber\":/g; s/\"seqLength\":/\"loc_seqLength\":/g; s/\"latitude\":/\"loc_latitude\":/g; s/\"longitude\":/\"loc_longitude\":/g; s/\"locationLabel\":/\"loc_locationLabel\":/g; s/\"addressLines\":/\"loc_addressLines\":/g; s/\"street\":/\"loc_street\":/g; s/\"houseNumber\":/\"loc_houseNumber\":/g; s/\"building\":/\"loc_building\":/g; s/\"subdistrict\":/\"loc_subdistrict\":/g; s/\"district\":/\"loc_district\":/g; s/\"city\":/\"loc_city\":/g; s/\"postalCode\":/\"loc_postalCode\":/g; s/\"county\":/\"loc_county\":/g; s/\"state\":/\"loc_state\":/g; s/\"country\":/\"loc_country\":/g; s/\"relevance\":/\"loc_relevance\":/g; s/\"matchType\":/\"loc_matchType\":/g; s/\"matchCode\":/\"loc_matchCode\":/g; s/\"matchLevel\":/\"loc_matchLevel\":/g; s/\"matchQualityStreet\":/\"loc_matchQualityStreet\":/g; s/\"matchQualityHouseNumber\":/\"loc_matchQualityHouseNumber\":/g; s/\"matchQualityBuilding\":/\"loc_matchQualityBuilding\":/g; s/\"matchQualityDistrict\":/\"loc_matchQualityDistrict\":/g; s/\"matchQualityCity\":/\"loc_matchQualityCity\":/g; s/\"matchQualityPostalCode\":/\"loc_matchQualityPostalCode\":/g; s/\"matchQualityCounty\":/\"loc_matchQualityCounty\":/g; s/\"matchQualityState\":/\"loc_matchQualityState\":/g; s/\"matchQualityCountry\\r\":/\"loc_matchQualityCountry\":/g' {}_tmp >> {} """
+# Add origin
+for file in $(ls entrelgeoc_*patentxx.jsonl); do
+  mv ${file} ${file}_tmp &&
+  jq -c --arg origin PC '. + {origin: $origin}' ${file}_tmp >> ${file} &&
+  rm ${file}_tmp;
+done;
+
+# Prep var name
+ls entrelgeoc_*patentxx.jsonl | parallel --eta """mv {} {}_tmp && sed 's/\"seqNumber\":/\"loc_seqNumber\":/g; s/\"seqLength\":/\"loc_seqLength\":/g; s/\"latitude\":/\"loc_latitude\":/g; s/\"longitude\":/\"loc_longitude\":/g; s/\"locationLabel\":/\"loc_locationLabel\":/g; s/\"addressLines\":/\"loc_addressLines\":/g; s/\"street\":/\"loc_street\":/g; s/\"houseNumber\":/\"loc_houseNumber\":/g; s/\"building\":/\"loc_building\":/g; s/\"subdistrict\":/\"loc_subdistrict\":/g; s/\"district\":/\"loc_district\":/g; s/\"city\":/\"loc_city\":/g; s/\"postalCode\":/\"loc_postalCode\":/g; s/\"county\":/\"loc_county\":/g; s/\"state\":/\"loc_state\":/g; s/\"country\":/\"loc_country\":/g; s/\"relevance\":/\"loc_relevance\":/g; s/\"matchType\":/\"loc_matchType\":/g; s/\"matchCode\":/\"loc_matchCode\":/g; s/\"matchLevel\":/\"loc_matchLevel\":/g; s/\"matchQualityStreet\":/\"loc_matchQualityStreet\":/g; s/\"matchQualityHouseNumber\":/\"loc_matchQualityHouseNumber\":/g; s/\"matchQualityBuilding\":/\"loc_matchQualityBuilding\":/g; s/\"matchQualityDistrict\":/\"loc_matchQualityDistrict\":/g; s/\"matchQualityCity\":/\"loc_matchQualityCity\":/g; s/\"matchQualityPostalCode\":/\"loc_matchQualityPostalCode\":/g; s/\"matchQualityCounty\":/\"loc_matchQualityCounty\":/g; s/\"matchQualityState\":/\"loc_matchQualityState\":/g; s/\"matchQualityCountry\":/\"loc_matchQualityCountry\":/g; s/\"statisticalArea1\":/\"loc_statisticalArea1\":/g; s/\"statisticalArea1Code\":/\"loc_statisticalArea1Code\":/g; s/\"statisticalArea2\":/\"loc_statisticalArea2\":/g; s/\"statisticalArea2Code\":/\"loc_statisticalArea2Code\":/g; s/\"statisticalArea3\":/\"loc_statisticalArea3\":/g; s/\"statisticalArea3Code\":/\"loc_statisticalArea3Code\":/g; s/\"key\":/\"loc_key\":/g ' {}_tmp >> {} """
 ```
 
 ## Build data
