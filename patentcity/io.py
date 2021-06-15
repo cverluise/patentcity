@@ -485,7 +485,8 @@ def family_expansion(
     expanded_family_table.*, #EXCEPT(appln_id, pat_publn_id, docdb_family_id, inpadoc_family_id),
     SPLIT(expanded_family_table.publication_number, "-")[OFFSET(0)] as country_code,
     SPLIT(expanded_family_table.publication_number, "-")[OFFSET(1)] as pubnum,
-    SPLIT(expanded_family_table.publication_number, "-")[OFFSET(2)] as kind_code
+    SPLIT(expanded_family_table.publication_number, "-")[OFFSET(2)] as kind_code,
+    "EXP" AS origin
     FROM
     publication_list
     RIGHT JOIN
