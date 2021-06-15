@@ -1,16 +1,16 @@
-# Border
+# Language
 
 ## Metadata
 
 File |Source
 ---|---
-[language_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets)| [XX]
+[language_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets)| [Mayer, T. & Zignago, S. (2011); Notes on CEPII’s distances measures : the GeoDist Database; CEPII Working Paper 2011-25](http://www.cepii.fr/CEPII/fr/bdd_modele/presentation.asp?id=6)
 
 ## Coverage
 
-Country | Period
+Country | Time
 ---|---
-AUS, AUT, BEL, CAN, CZE, DNK, FRA, DEU, GBR, HUN, ITA, JPN, NLD, POL, RUS, SWE, CHE, USA | [XX]
+AUS, AUT, BEL, CAN, CZE, DNK, FRA, DEU, GBR, HUN, ITA, JPN, NLD, POL, RUS, SWE, CHE, USA | 2011
 
 ## Variables
 
