@@ -48,11 +48,11 @@ Total   |788904 |788904 |209753 |209753 |15737
 
 Office | HERE | GMAPS| Comment
 ---|---|---|---
-DD  |38097  | 15411 |HERE=expected,GMAPS>expected
-DE  |548606 | 157412|HERE=expected,GMAPS>expected
-FR  |63488  | 39010 |HERE=expected,GMAPS<expected
-GB  |942732 | 201006|HERE<expected,GMAPS<expected
-US  |1074909| 382691|HERE<expected,GMAPS<expected
+DD  |38097  | 10944 |HERE=expected,GMAPS=expected
+DE  |548606 | 172420|HERE=expected,GMAPS>expected
+FR  |63488  | 34489 |HERE=expected,GMAPS=expected
+GB  |942732 | 230727|HERE<expected,GMAPS~expected
+US  |1074909| 281366|HERE<expected,GMAPS~expected
 
 ## WGP25
 
