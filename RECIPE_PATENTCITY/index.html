@@ -951,6 +951,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#prep-geocoded-data" class="md-nav__link">
+    Prep geocoded data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#add-geocoded-data" class="md-nav__link">
     Add geocoded data
   </a>
@@ -1492,6 +1499,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#prep-geocoded-data" class="md-nav__link">
+    Prep geocoded data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#add-geocoded-data" class="md-nav__link">
     Add geocoded data
   </a>
@@ -1660,30 +1674,37 @@ patentcity geo add.disamb <span class="si">${</span><span class="nv">DISAMBFILE<
 </code></pre></div>
 </div>
 </div>
-<h2 id="add-geocoded-data">Add geocoded data<a class="headerlink" href="#add-geocoded-data" title="Permanent link">&para;</a></h2>
+<h2 id="prep-geocoded-data">Prep geocoded data<a class="headerlink" href="#prep-geocoded-data" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># Harmonize GMAPS and MANUAL as HERE geocoded data</span>
-ls geoc_*patentxx.gmaps.txt.gz <span class="p">|</span> cut -d. -f1,2 <span class="p">|</span>parallel --eta <span class="s1">&#39;patentcity geo gmaps.harmonize {}.txt.gz --out-format csv &gt;&gt; {}.csv &amp;&amp; gzip {}.csv&#39;</span>
+parallel --eta <span class="s1">&#39;test -f geoc_{1}patentxx.gmaps.txt_{2}.gz &amp;&amp; patentcity geo gmaps.harmonize  geoc_{1}patentxx.gmaps.txt_{2}.gz --out-format csv &gt;&gt; geoc_{1}patentxx.gmaps.csv_{2} &amp;&amp; gzip geoc_{1}patentxx.gmaps.csv_{2}&#39;</span> ::: dd de fr gb us ::: <span class="m">00</span> <span class="m">01</span> <span class="m">02</span>
 <span class="nv">MANUALDISAMB</span><span class="o">=</span><span class="s2">&quot;fr&quot;</span>
 <span class="k">for</span> OFFICE in <span class="si">${</span><span class="nv">MANUALDISAMB</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>
-  patentcity geo gmaps.harmonize geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.txt --out-format csv &gt;&gt; geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.csv<span class="p">;</span>
+  patentcity geo gmaps.harmonize geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.txt.gz --out-format csv &gt;&gt; geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.csv <span class="o">&amp;&amp;</span>
+  gzip geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.manual.csv<span class="p">;</span>
 <span class="k">done</span><span class="p">;</span>
 
 <span class="c1"># Stack geocoded data</span>
-<span class="k">for</span> SERVICE in here gmaps<span class="p">;</span> <span class="k">do</span>
-  <span class="k">for</span> OFFICE in dd de fr gb us<span class="p">;</span> <span class="k">do</span>
-    rm -f geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.<span class="si">${</span><span class="nv">SERVICE</span><span class="si">}</span>.csv_xx
-    head -n <span class="m">1</span> geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.<span class="si">${</span><span class="nv">SERVICE</span><span class="si">}</span>.csv_00 &gt;&gt; geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.<span class="si">${</span><span class="nv">SERVICE</span><span class="si">}</span>.csv_xx <span class="o">&amp;&amp;</span>
-    <span class="k">for</span> i in <span class="m">0</span> <span class="m">1</span><span class="p">;</span> <span class="k">do</span>  <span class="c1"># up until last round</span>
-      tail -n +2 geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.<span class="si">${</span><span class="nv">SERVICE</span><span class="si">}</span>.csv_0<span class="si">${</span><span class="nv">i</span><span class="si">}</span> &gt;&gt; geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.<span class="si">${</span><span class="nv">SERVICE</span><span class="si">}</span>.csv_xx<span class="p">;</span>
-    <span class="k">done</span><span class="p">;</span>
-  <span class="k">done</span><span class="p">;</span>
-<span class="k">done</span><span class="p">;</span>
+<span class="c1"># we assume that there have been several rounds of geocoding (e.g. due to limited credits) and each round result is suffixed by 0x (e.g. geoc_ddpatentxx.gmaps.csv_00.gz</span>
+parallel --eta <span class="s1">&#39;zcat $(ls geoc_{1}patentxx.{2}.csv_*.gz | head -n 1) | head -n 1 &gt;&gt; geoc_{1}patentxx.{2}.csv_xx&#39;</span> ::: dd de fr gb us ::: gmaps here
+parallel --eta <span class="s1">&#39;zcat geoc_{1}patentxx.{2}.csv_*.gz | grep -v &quot;recId&quot; | sort -u &gt;&gt; geoc_{1}patentxx.{2}.csv_xx&#39;</span> ::: dd de fr gb us ::: gmaps here
+gzip geoc_*patentxx.*.csv_xx  <span class="c1"># overwrite existing file if any</span>
 
-<span class="c1"># Incorporate geocoded data</span>
+<span class="c1"># Add statistical areas</span>
+parallel -j2 --eta <span class="s1">&#39;patentcity geo add.statisticalareas geoc_{1}patentxx.{2}.csv_xx.gz &quot;assets/statisticalareas_*.csv&quot; &gt;&gt; geoc_{1}patentxx.{2}.csv_xx&#39;</span> ::: dd de fr gb us ::: gmaps here
+parallel -j2 --eta <span class="s1">&#39;patentcity geo add.statisticalareas geoc_{1}patentxx.manual.csv.gz &quot;assets/statisticalareas_*.csv&quot; &gt;&gt; geoc_{1}patentxx.manual.csv&#39;</span> ::: dd fr
+gzip geoc_*patentxx.*.csv_xx  <span class="c1"># overwrite existing file if any</span>
+gzip geoc_*patentxx.manual.csv  <span class="c1"># overwrite existing file if any</span>
+</code></pre></div>
+<h2 id="add-geocoded-data">Add geocoded data<a class="headerlink" href="#add-geocoded-data" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">level up</p>
+<p>Incorporating data is hard on memory. Upgrade to a 32Gb memory machine for this stage.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Incorporate geocoded data</span>
 <span class="c1"># HERE and GMAPS</span>
 <span class="k">for</span> OFFICE in dd de fr gb us<span class="p">;</span> <span class="k">do</span>
   <span class="nb">echo</span> <span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>
-  patentcity geo add entrel_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.here.csv_xx.gz --source HERE &gt;&gt; entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp <span class="o">&amp;&amp;</span>
+  patentcity geo add entrel_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl.gz geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.here.csv_xx.gz --source HERE &gt;&gt; entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp <span class="o">&amp;&amp;</span>
   patentcity geo add entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp geoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.gmaps.csv_xx.gz --source GMAPS &gt;&gt; entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl <span class="o">&amp;&amp;</span>
   rm entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp<span class="p">;</span>
 <span class="k">done</span><span class="p">;</span>
@@ -1695,14 +1716,25 @@ ls geoc_*patentxx.gmaps.txt.gz <span class="p">|</span> cut -d. -f1,2 <span clas
   rm entrelgeoc_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>patentxx.jsonl_tmp<span class="p">;</span>
 <span class="k">done</span><span class="p">;</span>
 
-<span class="c1"># prep var name</span>
-ls entrelgeoc_*patentxx.jsonl <span class="p">|</span> parallel --eta <span class="s2">&quot;&quot;&quot;mv {} {}_tmp &amp;&amp; sed &#39;s/\&quot;seqNumber\&quot;:/\&quot;loc_seqNumber\&quot;:/g; s/\&quot;seqLength\&quot;:/\&quot;loc_seqLength\&quot;:/g; s/\&quot;latitude\&quot;:/\&quot;loc_latitude\&quot;:/g; s/\&quot;longitude\&quot;:/\&quot;loc_longitude\&quot;:/g; s/\&quot;locationLabel\&quot;:/\&quot;loc_locationLabel\&quot;:/g; s/\&quot;addressLines\&quot;:/\&quot;loc_addressLines\&quot;:/g; s/\&quot;street\&quot;:/\&quot;loc_street\&quot;:/g; s/\&quot;houseNumber\&quot;:/\&quot;loc_houseNumber\&quot;:/g; s/\&quot;building\&quot;:/\&quot;loc_building\&quot;:/g; s/\&quot;subdistrict\&quot;:/\&quot;loc_subdistrict\&quot;:/g; s/\&quot;district\&quot;:/\&quot;loc_district\&quot;:/g; s/\&quot;city\&quot;:/\&quot;loc_city\&quot;:/g; s/\&quot;postalCode\&quot;:/\&quot;loc_postalCode\&quot;:/g; s/\&quot;county\&quot;:/\&quot;loc_county\&quot;:/g; s/\&quot;state\&quot;:/\&quot;loc_state\&quot;:/g; s/\&quot;country\&quot;:/\&quot;loc_country\&quot;:/g; s/\&quot;relevance\&quot;:/\&quot;loc_relevance\&quot;:/g; s/\&quot;matchType\&quot;:/\&quot;loc_matchType\&quot;:/g; s/\&quot;matchCode\&quot;:/\&quot;loc_matchCode\&quot;:/g; s/\&quot;matchLevel\&quot;:/\&quot;loc_matchLevel\&quot;:/g; s/\&quot;matchQualityStreet\&quot;:/\&quot;loc_matchQualityStreet\&quot;:/g; s/\&quot;matchQualityHouseNumber\&quot;:/\&quot;loc_matchQualityHouseNumber\&quot;:/g; s/\&quot;matchQualityBuilding\&quot;:/\&quot;loc_matchQualityBuilding\&quot;:/g; s/\&quot;matchQualityDistrict\&quot;:/\&quot;loc_matchQualityDistrict\&quot;:/g; s/\&quot;matchQualityCity\&quot;:/\&quot;loc_matchQualityCity\&quot;:/g; s/\&quot;matchQualityPostalCode\&quot;:/\&quot;loc_matchQualityPostalCode\&quot;:/g; s/\&quot;matchQualityCounty\&quot;:/\&quot;loc_matchQualityCounty\&quot;:/g; s/\&quot;matchQualityState\&quot;:/\&quot;loc_matchQualityState\&quot;:/g; s/\&quot;matchQualityCountry\\r\&quot;:/\&quot;loc_matchQualityCountry\&quot;:/g&#39; {}_tmp &gt;&gt; {} &quot;&quot;&quot;</span>
+<span class="c1"># Add origin</span>
+<span class="k">for</span> file in <span class="k">$(</span>ls entrelgeoc_*patentxx.jsonl<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+  mv <span class="si">${</span><span class="nv">file</span><span class="si">}</span> <span class="si">${</span><span class="nv">file</span><span class="si">}</span>_tmp <span class="o">&amp;&amp;</span>
+  jq -c --arg origin PC <span class="s1">&#39;. + {origin: $origin}&#39;</span> <span class="si">${</span><span class="nv">file</span><span class="si">}</span>_tmp &gt;&gt; <span class="si">${</span><span class="nv">file</span><span class="si">}</span> <span class="o">&amp;&amp;</span>
+  rm <span class="si">${</span><span class="nv">file</span><span class="si">}</span>_tmp<span class="p">;</span>
+<span class="k">done</span><span class="p">;</span>
+
+<span class="c1"># Prep var name</span>
+ls entrelgeoc_*patentxx.jsonl <span class="p">|</span> parallel --eta <span class="s2">&quot;&quot;&quot;mv {} {}_tmp &amp;&amp; sed &#39;s/\&quot;seqNumber\&quot;:/\&quot;loc_seqNumber\&quot;:/g; s/\&quot;seqLength\&quot;:/\&quot;loc_seqLength\&quot;:/g; s/\&quot;latitude\&quot;:/\&quot;loc_latitude\&quot;:/g; s/\&quot;longitude\&quot;:/\&quot;loc_longitude\&quot;:/g; s/\&quot;locationLabel\&quot;:/\&quot;loc_locationLabel\&quot;:/g; s/\&quot;addressLines\&quot;:/\&quot;loc_addressLines\&quot;:/g; s/\&quot;street\&quot;:/\&quot;loc_street\&quot;:/g; s/\&quot;houseNumber\&quot;:/\&quot;loc_houseNumber\&quot;:/g; s/\&quot;building\&quot;:/\&quot;loc_building\&quot;:/g; s/\&quot;subdistrict\&quot;:/\&quot;loc_subdistrict\&quot;:/g; s/\&quot;district\&quot;:/\&quot;loc_district\&quot;:/g; s/\&quot;city\&quot;:/\&quot;loc_city\&quot;:/g; s/\&quot;postalCode\&quot;:/\&quot;loc_postalCode\&quot;:/g; s/\&quot;county\&quot;:/\&quot;loc_county\&quot;:/g; s/\&quot;state\&quot;:/\&quot;loc_state\&quot;:/g; s/\&quot;country\&quot;:/\&quot;loc_country\&quot;:/g; s/\&quot;relevance\&quot;:/\&quot;loc_relevance\&quot;:/g; s/\&quot;matchType\&quot;:/\&quot;loc_matchType\&quot;:/g; s/\&quot;matchCode\&quot;:/\&quot;loc_matchCode\&quot;:/g; s/\&quot;matchLevel\&quot;:/\&quot;loc_matchLevel\&quot;:/g; s/\&quot;matchQualityStreet\&quot;:/\&quot;loc_matchQualityStreet\&quot;:/g; s/\&quot;matchQualityHouseNumber\&quot;:/\&quot;loc_matchQualityHouseNumber\&quot;:/g; s/\&quot;matchQualityBuilding\&quot;:/\&quot;loc_matchQualityBuilding\&quot;:/g; s/\&quot;matchQualityDistrict\&quot;:/\&quot;loc_matchQualityDistrict\&quot;:/g; s/\&quot;matchQualityCity\&quot;:/\&quot;loc_matchQualityCity\&quot;:/g; s/\&quot;matchQualityPostalCode\&quot;:/\&quot;loc_matchQualityPostalCode\&quot;:/g; s/\&quot;matchQualityCounty\&quot;:/\&quot;loc_matchQualityCounty\&quot;:/g; s/\&quot;matchQualityState\&quot;:/\&quot;loc_matchQualityState\&quot;:/g; s/\&quot;matchQualityCountry\&quot;:/\&quot;loc_matchQualityCountry\&quot;:/g; s/\&quot;statisticalArea1\&quot;:/\&quot;loc_statisticalArea1\&quot;:/g; s/\&quot;statisticalArea1Code\&quot;:/\&quot;loc_statisticalArea1Code\&quot;:/g; s/\&quot;statisticalArea2\&quot;:/\&quot;loc_statisticalArea2\&quot;:/g; s/\&quot;statisticalArea2Code\&quot;:/\&quot;loc_statisticalArea2Code\&quot;:/g; s/\&quot;statisticalArea3\&quot;:/\&quot;loc_statisticalArea3\&quot;:/g; s/\&quot;statisticalArea3Code\&quot;:/\&quot;loc_statisticalArea3Code\&quot;:/g; s/\&quot;key\&quot;:/\&quot;loc_key\&quot;:/g &#39; {}_tmp &gt;&gt; {} &quot;&quot;&quot;</span>
+rm entrelgeoc_*patentxx.jsonl_tmp
+
+<span class="c1"># Sync data</span>
+gsutil -m rsync ./ gs://patentcity_dev/v1/
 </code></pre></div>
 <h2 id="build-data">Build data<a class="headerlink" href="#build-data" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">patentcity + wgp</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="nv">KEYFILE</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="c1"># &quot;credentials-patentcity.json&quot;</span>
 <span class="nv">URIPC</span><span class="o">=</span><span class="s2">&quot;&quot;</span>  <span class="c1"># &quot;gs://patentcity_dev/v1/entrelgeoc_*patentxx.jsonl&quot;</span>
-<span class="nv">URIWGP</span><span class="o">=</span><span class="s2">&quot;&quot;</span>  <span class="c1"># &quot;gs://gder_dev/v100rc4/patentcity*.jsonl.gz&quot;</span>
+<span class="nv">URIWGP</span><span class="o">=</span><span class="s2">&quot;&quot;</span>  <span class="c1"># &quot;gs://gder_dev/v100rc5/patentcity*.jsonl.gz&quot;</span>
 <span class="nv">STAGETABLE</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="c1">#e.g &quot;patentcity:tmp.v100rc5&quot;</span>
 <span class="nv">RELEASETABLE</span><span class="o">=</span><span class="s2">&quot;&quot;</span>  <span class="c1"># &quot;patentcity:patentcity.v100rc5&quot;</span>
 
@@ -1710,24 +1742,28 @@ bq load --source_format NEWLINE_DELIMITED_JSON --replace --ignore_unknown_values
 bq load --source_format NEWLINE_DELIMITED_JSON --noreplace --ignore_unknown_values --max_bad_records <span class="m">1000</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="si">${</span><span class="nv">URIWGP</span><span class="si">}</span> schema/patentcity_v1.sm.json
 
 <span class="c1"># Augment data</span>
-patentcity io augment-patentcity <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> --key-file <span class="si">${</span><span class="nv">KEYFILE</span><span class="si">}</span>
+patentcity io augment-patentcity <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> --credentials <span class="si">${</span><span class="nv">KEYFILE</span><span class="si">}</span>
 
 <span class="c1"># Impute missing dates</span>
 <span class="c1">#for OFFICE in dd de; do</span>
 <span class="c1">#  patentcity utils expand-pubdate-imputation lib/pubdate_${OFFICE}patentxx.imputation.csv --output pubdate_${OFFICE}patentxx.imputation.expanded.csv;</span>
 <span class="c1">#done;</span>
 <span class="c1"># gsutil -m cp &quot;pubdate_*patentxx.imputation.expanded.csv&quot; gs://patentcity_dev/v1/</span>
-
 <span class="k">for</span> OFFICE in dd de<span class="p">;</span> <span class="k">do</span>
   bq load --source_format CSV --replace --ignore_unknown_values --max_bad_records <span class="m">1000</span> patentcity:tmp.de_pubdate_imputation <span class="s2">&quot;gs://patentcity_dev/v1/pubdate_</span><span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span><span class="s2">patentxx.imputation.expanded.csv&quot;</span> schema/date_imputation.json
-  patentcity io impute-publication-date <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> patentcity.tmp.<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>_pubdate_imputation --country-code <span class="si">${</span><span class="nv">OFFICE</span><span class="p">:</span><span class="nv">u</span><span class="si">}</span> --key-file <span class="si">${</span><span class="nv">KEYFILE</span><span class="si">}</span><span class="p">;</span>
+  python patentcity io impute-publication-date <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> patentcity.tmp.<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>_pubdate_imputation --country-code <span class="si">${</span><span class="nv">OFFICE</span><span class="p">:</span><span class="nv">u</span><span class="si">}</span> --credentials <span class="si">${</span><span class="nv">KEYFILE</span><span class="si">}</span><span class="p">;</span>
 <span class="k">done</span><span class="p">;</span>
 
+<span class="c1"># Deduplicate data (pc, wgp25 and wgp45 have a small overlap)</span>
+patentcity io deduplicate <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span>  <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> <span class="nv">$KEYFILE</span>
 
+<span class="c1"># Expand (we use the family of publications in the dataset to expand to publications in the same family but not yet in the dataset)</span>
 patentcity io family-expansion <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span>_expansion <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> <span class="nv">$KEYFILE</span> schema/patentcity_v1.json
 gsutil -m rm <span class="s2">&quot;gs://tmp/family_expansion_*.jsonl.gz&quot;</span>
 bq extract --destination_format NEWLINE_DELIMITED_JSON --compression GZIP <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span>_expansion <span class="s2">&quot;gs://tmp/family_expansion_*.jsonl.gz&quot;</span>
 bq load --source_format NEWLINE_DELIMITED_JSON --noreplace --ignore_unknown_values --max_bad_records <span class="m">1000</span> <span class="nv">$STAGETABLE</span> <span class="s2">&quot;gs://tmp/family_expansion_*.jsonl.gz&quot;</span>
+
+<span class="c1"># Filter kind codes (we have kind codes that do not correspond to utility patents - we filter them out)</span>
 patentcity io filter-kind-codes <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">STAGETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> <span class="k">$(</span><span class="nb">echo</span> <span class="si">${</span><span class="nv">RELEASETABLE</span><span class="si">}</span> <span class="p">|</span> sed -e <span class="s1">&#39;s/:/./&#39;</span><span class="k">)</span> <span class="nv">$KEYFILE</span>
 </code></pre></div>
 </div>

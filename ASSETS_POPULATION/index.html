@@ -1005,8 +1005,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
-    Metadata
+  <a href="#coverage" class="md-nav__link">
+    Coverage
   </a>
   
 </li>
@@ -1410,8 +1410,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
-    Metadata
+  <a href="#coverage" class="md-nav__link">
+    Coverage
   </a>
   
 </li>
@@ -1441,36 +1441,49 @@
                 
                 
                 <h1 id="population">Population<a class="headerlink" href="#population" title="Permanent link">&para;</a></h1>
-<p>This document refers to <a href="https://github.com/cverluise/patentcity/tree/master/assets">population_xx.csv</a> which reports the population by statistical areas.</p>
-<h2 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Country</th>
-<th>Geographical level</th>
+<th>File</th>
 <th>Source(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><a href="https://github.com/cverluise/patentcity/tree/master/assets">population_xx.csv</a></td>
+<td>DE <a href="https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp">Rosés-Wolf database on regional GDP (version 6, 2020)</a>, FR <a href="https://www.insee.fr/fr/statistiques/3698339">INSEE</a>, GB <a href="https://www.visionofbritain.org.uk/">Vision of Britain</a>&amp;<a href="http://www.isle-of-man.com/manxnotebook/history/pop.htm">Isle of man</a>, US <a href="https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip">Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="coverage">Coverage<a class="headerlink" href="#coverage" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Country</th>
+<th>Geographical level</th>
+<th>Period</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td>DE</td>
-<td>[XX]</td>
-<td>[XX]</td>
+<td>2 (nuts2)</td>
+<td>1900-2015</td>
 </tr>
 <tr>
 <td>FR</td>
-<td>[XX]</td>
-<td>[XX]</td>
+<td>3 (nuts3)</td>
+<td>1876-2018</td>
 </tr>
 <tr>
 <td>GB</td>
-<td>[XX]</td>
-<td>[XX]</td>
+<td>2 (nuts2)</td>
+<td>1851-2011</td>
 </tr>
 <tr>
 <td>US</td>
 <td>2 (commuting zone)</td>
-<td>[XX]</td>
+<td>1830-2000</td>
 </tr>
 </tbody>
 </table>
@@ -1506,11 +1519,79 @@
 </tr>
 <tr>
 <td>population</td>
-<td>Population in the statistical area (in [XX: add unit])</td>
+<td>Population in the statistical area (in thousands)</td>
 <td><code>float</code></td>
 </tr>
 </tbody>
 </table>
+<details class="note"><summary>Focus on GB statistical areas construction</summary><p>Some modern counties are made of a couple of older ones. In this case, we recompose modern counties or use the old name.</p>
+<table>
+<thead>
+<tr>
+<th>statisticalAreaName</th>
+<th>Construction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outer London — West and North West</td>
+<td>Barnet + Brent + Ealing + Harrow + Hillingdon + Hounslow + Richmond upon Thames</td>
+</tr>
+<tr>
+<td>Outer London — South</td>
+<td>Bromley + Croydon + Merton + Kingston upon Thames + Sutton</td>
+</tr>
+<tr>
+<td>Outer London — East and North East</td>
+<td>Bexley + Greenwich + Barking and Dagenham + Havering + Redbridge + Waltham Forest + Enfield</td>
+</tr>
+<tr>
+<td>Inner London — East</td>
+<td>Hackney + Newham + Tower Hamlets + Haringey + Islington + Lewisham + Southwark + Lambeth</td>
+</tr>
+<tr>
+<td>Inner London — West</td>
+<td>Camden + City of London + Westminster +Kensington &amp; Chelsea + Hammersmith &amp; Fulham + Wandsworth</td>
+</tr>
+<tr>
+<td>Tweeddale</td>
+<td>Peebles+Selkirkshire</td>
+</tr>
+<tr>
+<td>Roxburgh Ettrick and Lauderdale</td>
+<td>Roxburghshire + Selkirkshire + Berwickshire/4 + Midlothian/4</td>
+</tr>
+<tr>
+<td>Cheshire</td>
+<td>Halton + Warrington + Cheshire east + Cheshire West and Chester</td>
+</tr>
+<tr>
+<td>Mid Glamorgan</td>
+<td>Caerphilly/2 + Bridgend + Merthyr Tydfil + Rhondda; Cynon; Taff</td>
+</tr>
+<tr>
+<td>South Glamorgan</td>
+<td>Vale of Glamorgan + Cardiff</td>
+</tr>
+<tr>
+<td>Clwyd</td>
+<td>Flintshire + Wrexham + Denbighshire</td>
+</tr>
+<tr>
+<td>Dyfed</td>
+<td>Carmarthenshire + Ceredigion + Pembrokeshire</td>
+</tr>
+<tr>
+<td>Gwent</td>
+<td>Blaenau Gwent + Caerphilly/2 + Monmouthshire + Newport + Torfaen</td>
+</tr>
+<tr>
+<td>Vale of Glamorgan</td>
+<td>Glamorganshire</td>
+</tr>
+</tbody>
+</table>
+</details>
                 
               
               

@@ -1458,14 +1458,19 @@ bq load --replace --source_format CSV --autodetect patentcity:external.person_lo
 patentcity utils get-gmaps-index-wgp --flavor <span class="m">45</span> addresses_florian45.csv &gt;&gt; addresses_florian45.jsonl
 patentcity geo gmaps.harmonize addresses_florian45.jsonl --out-format csv &gt;&gt; addresses_florian45_patentcity.csv
 mv addresses_florian45_patentcity.csv addresses_florian45_patentcity.tmp.csv <span class="o">&amp;&amp;</span> csvstack -n <span class="nb">source</span> -g GMAPS addresses_florian45_patentcity.tmp.csv &gt;&gt; addresses_florian45_patentcity.csv
+mv addresses_florian45_patentcity.csv addresses_florian45_patentcity.tmp.csv <span class="o">&amp;&amp;</span> csvstack -n origin -g WGP45 addresses_florian45_patentcity.tmp.csv &gt;&gt; addresses_florian45_patentcity.csv
+
+<span class="c1"># Add statistical areas</span>
+mv addresses_florian45_patentcity.csv addresses_florian45_patentcity.tmp.csv <span class="o">&amp;&amp;</span> patentcity geo add.statisticalareas addresses_florian45_patentcity.tmp.csv <span class="s2">&quot;assets/statisticalareas_*.csv&quot;</span> &gt;&gt; addresses_florian45_patentcity.csv
 
 <span class="c1"># Load addresses</span>
+gzip addresses_florian45_patentcity.csv
 gsutil -m cp <span class="s2">&quot;addresses*patentcity.csv.gz&quot;</span> gs://gder_dev/
 bq load --replace --autodetect --source_format CSV  --max_bad_records <span class="m">100</span> patentcity:external.addresses_florian45_patentcity gs://gder_dev/addresses_florian45_patentcity.csv.gz
 
 <span class="c1"># Join</span>
 <span class="nv">KEY_FILE</span><span class="o">=</span><span class="s2">&quot;credentials-patentcity.json&quot;</span>
-patentcity io build-wgp-as-patentcity  patentcity.external.addresses_florian45_patentcity  patentcity.external.person_location_id --tls206-table patentcity.external.tls206 --tls207-table patentcity.external.tls207 --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity45 --flavor <span class="m">45</span> --key-file <span class="nv">$KEY_FILE</span>
+patentcity io build-wgp-as-patentcity  patentcity.external.addresses_florian45_patentcity  patentcity.external.person_location_id --tls206-table patentcity.external.tls206 --tls207-table patentcity.external.tls207 --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity45 --flavor <span class="m">45</span> --credentials <span class="nv">$KEY_FILE</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">wgp25 (fixed)</label><div class="tabbed-content">
@@ -1486,12 +1491,21 @@ bq load --replace --source_format CSV --autodetect patentcity:external.inventor_
 ls geoc_*patentwgp25.gmaps.txt <span class="p">|</span> cut -d. -f1,2 <span class="p">|</span>parallel --eta <span class="s1">&#39;patentcity geo gmaps.harmonize {}.txt --out-format csv &gt;&gt; {}.csv&#39;</span>
 <span class="c1">## remove extra recId field (returned by HERE)</span>
 ls geoc_*patentwgp25.here.csv.gz <span class="p">|</span> parallel --eta <span class="s1">&#39;mv {} {.}.tmp.gz &amp;&amp; csvcut -C 4 {.}.tmp.gz &gt;&gt; {.} &amp;&amp; gzip {.}&#39;</span>
-<span class="c1"># add source</span>
+
+<span class="c1"># add source and origin</span>
 ls geoc_*patentwgp25.here.csv.gz <span class="p">|</span> parallel --eta <span class="s1">&#39;mv {} {.}.tmp.gz &amp;&amp; csvstack -n source -g HERE {.}.tmp.gz &gt;&gt; {.} &amp;&amp; gzip {.}&#39;</span>
 ls geoc_*patentwgp25.gmaps.csv.gz <span class="p">|</span> parallel --eta <span class="s1">&#39;mv {} {.}.tmp.gz &amp;&amp; csvstack -n source -g GMAPS {.}.tmp.gz &gt;&gt; {.} &amp;&amp; gzip {.}&#39;</span>
+
 <span class="c1"># pack everything together in addresses_cyril25_patentcity.csv</span>
 zcat geoc_depatentwgp25.gmaps.csv.gz <span class="p">|</span> head -n <span class="m">1</span> &gt;&gt; addresses_cyril25_patentcity.csv  <span class="c1"># this is just the header</span>
-<span class="k">for</span> FILE in <span class="k">$(</span>ls geoc_*patentwgp25.*.csv.gz<span class="k">)</span><span class="p">;</span> <span class="k">do</span> zcat <span class="si">${</span><span class="nv">FILE</span><span class="si">}</span> <span class="p">|</span> grep -v <span class="s2">&quot;recId&quot;</span> &gt;&gt; addresses_cyril25_patentcity.csv <span class="p">;</span> <span class="k">done</span>
+zcat geoc_*patentwgp25.*.csv*.gz <span class="p">|</span>  grep -v <span class="s2">&quot;recId&quot;</span> <span class="p">|</span> sort -u &gt;&gt; addresses_cyril25_patentcity.csv
+gzip addresses_cyril25_patentcity.csv
+
+<span class="c1"># add origin</span>
+mv addresses_cyril25_patentcity.csv.gz addresses_cyril25_patentcity.csv.tmp.gz <span class="o">&amp;&amp;</span> csvstack -n origin -g WGP25 addresses_cyril25_patentcity.csv.tmp.gz &gt;&gt; addresses_cyril25_patentcity.csv
+
+<span class="c1"># Add statistical areas</span>
+mv addresses_cyril25_patentcity.csv addresses_cyril25_patentcity.tmp.csv <span class="o">&amp;&amp;</span> patentcity geo add.statisticalareas addresses_cyril25_patentcity.tmp.csv <span class="s2">&quot;assets/statisticalareas_*.csv&quot;</span> &gt;&gt; addresses_cyril25_patentcity.csv
 gzip addresses_cyril25_patentcity.csv
 
 <span class="c1"># Load addresses</span>
@@ -1500,7 +1514,7 @@ bq load --replace --autodetect --source_format CSV  --max_bad_records <span clas
 
 <span class="c1"># Join</span>
 <span class="nv">KEY_FILE</span><span class="o">=</span><span class="s2">&quot;credentials-patentcity.json&quot;</span>
-patentcity io build-wgp-as-patentcity  patentcity.external.addresses_cyril25_patentcity  patentcity.external.inventor_applicant_recid --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor <span class="m">25</span> --key-file <span class="nv">$KEY_FILE</span>
+patentcity io build-wgp-as-patentcity  patentcity.external.addresses_cyril25_patentcity  patentcity.external.inventor_applicant_recid --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor <span class="m">25</span> --credentials <span class="nv">$KEY_FILE</span>
 </code></pre></div>
 </div>
 <input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">wgp25 (broken)</label><div class="tabbed-content">
@@ -1511,6 +1525,7 @@ bq load --replace --source_format CSV --autodetect patentcity:external.inventor_
 patentcity utils get-gmaps-index-wgp --flavor <span class="m">25</span> addresses_florian25.csv &gt;&gt; addresses_florian25.jsonl
 patentcity geo gmaps.harmonize addresses_florian25.jsonl --out-format csv &gt;&gt; addresses_florian25_patentcity.csv
 mv addresses_florian25_patentcity.csv addresses_florian25_patentcity.tmp.csv <span class="o">&amp;&amp;</span> csvstack -n <span class="nb">source</span> -g GMAPS addresses_florian25_patentcity.tmp.csv &gt;&gt; addresses_florian25_patentcity.csv
+mv addresses_florian25_patentcity.csv addresses_florian25_patentcity.tmp.csv <span class="o">&amp;&amp;</span> csvstack -n origin -g WGP25 addresses_florian25_patentcity.tmp.csv &gt;&gt; addresses_florian25_patentcity.csv
 
 <span class="c1"># Load addresses</span>
 gsutil -m cp <span class="s2">&quot;addresses*patentcity.csv.gz&quot;</span> gs://gder_dev/
@@ -1518,16 +1533,17 @@ bq load --replace --autodetect --source_format CSV  --max_bad_records <span clas
 
 <span class="c1"># Join</span>
 <span class="nv">KEY_FILE</span><span class="o">=</span><span class="s2">&quot;credentials-patentcity.json&quot;</span>
-patentcity io build-wgp-as-patentcity  patentcity.external.addresses_florian25_patentcity  patentcity.external.inventor_applicant_location_id --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor <span class="m">25</span> --key-file <span class="nv">$KEY_FILE</span>
+patentcity io build-wgp-as-patentcity  patentcity.external.addresses_florian25_patentcity  patentcity.external.inventor_applicant_location_id --patstat-patent-properties-table patentcity.external.patstat_patent_properties --destination-table patentcity.tmp.patentcity25 --flavor <span class="m">25</span> --credentials <span class="nv">$KEY_FILE</span>
 </code></pre></div>
 </div>
 </div>
 <h2 id="build-data">Build data<a class="headerlink" href="#build-data" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># Format data as patentcity v1</span>
 <span class="c1">## sort data (required since chunked at extraction)</span>
-patentcity io order patentcity.tmp.patentcity25 --by publication_number --destination-table patentcity.tmp.tmp25 --key-file credentials-patentcity.json
-patentcity io order patentcity.tmp.patentcity45 --by publication_number --destination-table patentcity.tmp.tmp45 --key-file credentials-patentcity.json
+patentcity io order patentcity.tmp.patentcity25 --by publication_number --destination-table patentcity.tmp.tmp25 --credentials credentials-patentcity.json
+patentcity io order patentcity.tmp.patentcity45 --by publication_number --destination-table patentcity.tmp.tmp45 --credentials credentials-patentcity.json
 <span class="c1">## extract data</span>
+gsutil -m rm <span class="s2">&quot;gs://tmp/flat_patentcity*.jsonl.gz&quot;</span>
 bq extract --destination_format NEWLINE_DELIMITED_JSON --compression GZIP patentcity:tmp.tmp25 <span class="s2">&quot;gs://tmp/flat_patentcity25_*.jsonl.gz&quot;</span>
 bq extract --destination_format NEWLINE_DELIMITED_JSON --compression GZIP patentcity:tmp.tmp45 <span class="s2">&quot;gs://tmp/flat_patentcity45_*.jsonl.gz&quot;</span>
 <span class="c1">## remove staged tables</span>
@@ -1536,8 +1552,9 @@ bq rm patentcity:tmp.tmp45
 <span class="c1">## download data</span>
 gsutil -m cp <span class="s2">&quot;gs://tmp/flat_patentcity*.jsonl.gz&quot;</span> ./
 <span class="c1">## nest</span>
-ls flat_patentcity25_*.jsonl.gz <span class="p">|</span> cut -d_ -f <span class="m">2</span>,3 <span class="p">|</span> parallel -j+0 --eta <span class="s2">&quot;&quot;&quot;gunzip flat_{} &amp;&amp; jq -s -c &#39;group_by(.publication_number)[] | {publication_number: .[0].publication_number, publication_date: .[0].publication_date, country_code: .[0].country_code, pubnum: .[0].pubnum, kind_code: .[0].kindcode, appln_id: .[0].appln_id, family_id: .[0].docdb_family_id, patentee: [ .[] | {is_inv: .is_inv, is_asg: .is_app, loc_text: .address_, loc_recId: .recId, loc_locationLabel: .locationLabel, loc_country: .country, loc_state: .state, loc_county: .county, loc_city: .city, loc_district: .district, loc_postalCode: .postalCode, loc_street: .street, loc_building: .building, loc_houseNumber: .houseNumber, loc_longitude: .longitude, loc_latitude: .latitude, loc_matchType: .matchType, loc_matchLevel: .matchLevel, loc_seqNumber: .seqNumber, loc_source: .source} ] }&#39; flat_{.} &gt;&gt; {.} &amp;&amp; gzip {.} &amp;&amp; gzip flat_{.}&quot;&quot;&quot;</span>
-ls flat_patentcity45_*.jsonl.gz <span class="p">|</span> cut -d_ -f <span class="m">2</span>,3 <span class="p">|</span> parallel -j+0 --eta <span class="s2">&quot;&quot;&quot;gunzip flat_{} &amp;&amp; jq -s -c &#39;group_by(.publication_number)[] | {publication_number: .[0].publication_number, publication_date: .[0].publication_date, country_code: .[0].country_code, pubnum: .[0].pubnum, kind_code: .[0].kind_code, appln_id: .[0].appln_id, family_id: .[0].docdb_family_id, patentee: [.[] | {name_text: .person_name, person_id: .person_id, is_inv: .is_inv, is_asg: .is_asg, loc_text: .address_, loc_recId: .recId, loc_locationLabel: .locationLabel, loc_country: .country, loc_state: .state, loc_county: .county, loc_city: .city, loc_district: .district, loc_postalCode: .postalCode, loc_street: .street, loc_building: .building, loc_houseNumber: .houseNumber, loc_longitude: .longitude, loc_latitude: .latitude, loc_matchType: .matchType, loc_matchLevel: .matchLevel, loc_seqNumber: .seqNumber, loc_source: .source}]}&#39; flat_{.} &gt;&gt; {.} &amp;&amp; gzip {.} &amp;&amp; gzip flat_{.}&quot;&quot;&quot;</span>
+ls flat_patentcity25_*.jsonl.gz <span class="p">|</span> cut -d_ -f <span class="m">2</span>,3 <span class="p">|</span> parallel -j+0 --eta <span class="s2">&quot;&quot;&quot;gunzip flat_{} &amp;&amp; jq -s -c &#39;group_by(.publication_number)[] | {publication_number: .[0].publication_number, publication_date: .[0].publication_date, country_code: .[0].country_code, pubnum: .[0].pubnum, kind_code: .[0].kind_code, appln_id: .[0].appln_id, family_id: .[0].docdb_family_id, origin: .[0].origin, patentee: [ .[] | {is_inv: .is_inv, is_asg: .is_app, loc_text: .address_, loc_recId: .recId, loc_locationLabel: .locationLabel, loc_country: .country, loc_state: .state, loc_county: .county, loc_city: .city, loc_district: .district, loc_postalCode: .postalCode, loc_street: .street, loc_building: .building, loc_houseNumber: .houseNumber, loc_longitude: .longitude, loc_latitude: .latitude, loc_matchType: .matchType, loc_matchLevel: .matchLevel, loc_seqNumber: .seqNumber, loc_source: .source, loc_key: .key, loc_statisticalArea1: .statisticalArea1, loc_statisticalArea1Code: .statisticalArea1Code, loc_statisticalArea2: .statisticalArea2, loc_statisticalArea2Code: .statisticalArea2Code, loc_statisticalArea3: .statisticalArea3, loc_statisticalArea3Code: .statisticalArea3Code} ] }&#39; flat_{.} &gt;&gt; {.} &amp;&amp; gzip {.} &amp;&amp; gzip flat_{.}&quot;&quot;&quot;</span>
+ls flat_patentcity45_*.jsonl.gz <span class="p">|</span> cut -d_ -f <span class="m">2</span>,3 <span class="p">|</span> parallel -j+0 --eta <span class="s2">&quot;&quot;&quot;gunzip flat_{} &amp;&amp; jq -s -c &#39;group_by(.publication_number)[] | {publication_number: .[0].publication_number, publication_date: .[0].publication_date, country_code: .[0].country_code, pubnum: .[0].pubnum, kind_code: .[0].kind_code, appln_id: .[0].appln_id, family_id: .[0].docdb_family_id, origin: .[0].origin, patentee: [.[] | {name_text: .person_name, person_id: .person_id, is_inv: .is_inv, is_asg: .is_asg, loc_text: .address_, loc_recId: .recId, loc_locationLabel: .locationLabel, loc_country: .country, loc_state: .state, loc_county: .county, loc_city: .city, loc_district: .district, loc_postalCode: .postalCode, loc_street: .street, loc_building: .building, loc_houseNumber: .houseNumber, loc_longitude: .longitude, loc_latitude: .latitude, loc_matchType: .matchType, loc_matchLevel: .matchLevel, loc_seqNumber: .seqNumber, loc_source: .source, loc_key: .key, loc_statisticalArea1: .statisticalArea1, loc_statisticalArea1Code: .statisticalArea1Code, loc_statisticalArea2: .statisticalArea2, loc_statisticalArea2Code: .statisticalArea2Code, loc_statisticalArea3: .statisticalArea3, loc_statisticalArea3Code: .statisticalArea3Code}]}&#39; flat_{.} &gt;&gt; {.} &amp;&amp; gzip {.} &amp;&amp; gzip flat_{.}&quot;&quot;&quot;</span>
+
 <span class="c1">## upload data</span>
 gsutil -m mv  <span class="s2">&quot;./patentcity*.jsonl.gz&quot;</span> gs://gder_dev/v1/
 

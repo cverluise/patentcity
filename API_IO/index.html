@@ -1306,6 +1306,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#patentcity.io.deduplicate" class="md-nav__link">
+    deduplicate()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#patentcity.io.extract_sample_kepler" class="md-nav__link">
     extract_sample_kepler()
   </a>
@@ -1474,6 +1481,13 @@
         <li class="md-nav__item">
   <a href="#patentcity.io.build_wgp_as_patentcity" class="md-nav__link">
     build_wgp_as_patentcity()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patentcity.io.deduplicate" class="md-nav__link">
+    deduplicate()
   </a>
   
 </li>
@@ -2032,6 +2046,156 @@
 
 
 
+<h2 id="patentcity.io.deduplicate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">deduplicate</span><span class="p">(</span><span class="n">src_table</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">,</span> <span class="n">credentials</span><span class="p">)</span></code>
+
+
+<a href="#patentcity.io.deduplicate" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Deduplicate patentcity table from publications which are both in at least 2 of the following data sources PC, WGP45
+and WGP25. We prioritize PC, then WGP45 and then WGP25.</p>
+<div class="admonition argument">
+<p class="admonition-title">Argument</p>
+<p>src_table: source table (project.dataset.table)
+destination_table: destination table (project.dataset.table)
+credentials: BQ credentials file path</p>
+</div>
+<p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity io deduplicate &lt;src-table&gt; &lt;destination-table&gt; credentials-patentcity.json
+</code></pre></div></p>
+
+        <details class="quote">
+          <summary>Source code in <code>patentcity/io.py</code></summary>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">deduplicate</span><span class="p">(</span><span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Deduplicate patentcity table from publications which are both in at least 2 of the following data sources PC, WGP45</span>
+<span class="sd">    and WGP25. We prioritize PC, then WGP45 and then WGP25.</span>
+
+<span class="sd">    Argument:</span>
+<span class="sd">        src_table: source table (project.dataset.table)</span>
+<span class="sd">        destination_table: destination table (project.dataset.table)</span>
+<span class="sd">        credentials: BQ credentials file path</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity io deduplicate &lt;src-table&gt; &lt;destination-table&gt; credentials-patentcity.json</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    WITH</span>
+<span class="s2">      duplicates AS (</span>
+<span class="s2">      SELECT</span>
+<span class="s2">        publication_number,</span>
+<span class="s2">        COUNT(publication_number) AS nb_occ,</span>
+<span class="s2">        STRING_AGG(DISTINCT(origin)) AS origins</span>
+<span class="s2">      FROM</span>
+<span class="s2">        </span><span class="si">{</span><span class="n">src_table</span><span class="si">}</span><span class="s2"> #`patentcity.tmp.v100rc5`</span>
+<span class="s2">      GROUP BY</span>
+<span class="s2">        publication_number),</span>
+<span class="s2">      keep_list AS (</span>
+<span class="s2">      SELECT</span>
+<span class="s2">        tmp.publication_number,</span>
+<span class="s2">        tmp.origin,</span>
+<span class="s2">        duplicates.* EXCEPT(publication_number),</span>
+<span class="s2">        CASE</span>
+<span class="s2">          WHEN nb_occ = 1 THEN TRUE</span>
+<span class="s2">          WHEN nb_occ &gt; 1 AND origins LIKE &quot;%PC%&quot; AND origin=&quot;PC&quot; THEN TRUE</span>
+<span class="s2">          WHEN nb_occ &gt; 1 AND origins LIKE &quot;%WGP45%&quot; AND origins NOT LIKE &quot;%PC%&quot; AND origin=&quot;WGP45&quot; THEN TRUE</span>
+<span class="s2">          WHEN nb_occ &gt; 1 AND origins LIKE &quot;%WGP25%&quot; AND origins NOT LIKE &quot;%PC%&quot; AND origins NOT LIKE &quot;%WGP45%&quot; AND origin=&quot;WGP25&quot; THEN TRUE</span>
+<span class="s2">        ELSE FALSE</span>
+<span class="s2">      END</span>
+<span class="s2">        AS keep</span>
+<span class="s2">      FROM</span>
+<span class="s2">        </span><span class="si">{</span><span class="n">src_table</span><span class="si">}</span><span class="s2"> AS tmp  # `patentcity.tmp.v100rc5`</span>
+<span class="s2">      LEFT JOIN</span>
+<span class="s2">        duplicates</span>
+<span class="s2">      ON</span>
+<span class="s2">        tmp.publication_number = duplicates.publication_number )</span>
+<span class="s2">    SELECT</span>
+<span class="s2">      tmp.*#,</span>
+<span class="s2">      #keep_list.* EXCEPT(publication_number, origin) ## for dbg</span>
+<span class="s2">    FROM</span>
+<span class="s2">      </span><span class="si">{</span><span class="n">src_table</span><span class="si">}</span><span class="s2"> AS tmp  # `patentcity.tmp.v100rc5`</span>
+<span class="s2">    LEFT JOIN</span>
+<span class="s2">      keep_list</span>
+<span class="s2">    ON</span>
+<span class="s2">      tmp.publication_number=keep_list.publication_number</span>
+<span class="s2">      AND tmp.origin=keep_list.origin</span>
+<span class="s2">    WHERE keep IS TRUE  &quot;&quot;&quot;</span>
+    <span class="n">_get_job_done</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">,</span> <span class="n">credentials</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-function">
+
+
+
 <h2 id="patentcity.io.extract_sample_kepler" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">extract_sample_kepler</span><span class="p">(</span><span class="n">src_table</span><span class="p">,</span> <span class="n">dest_file</span><span class="p">,</span> <span class="n">sample_ratio</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">office</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">credentials</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
@@ -2209,6 +2373,46 @@
       <p>Expand along families in <code>table ref</code>. The returned table contains all publications belonging to a family
 existing in <code>src_table</code> <em>but</em> absent from the latter. Family data are <em>assigned</em> from data in <code>src_table</code>.</p>
 
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>src_table</code></td>
+        <td><code>str</code></td>
+        <td><p>source table (project.dataset.table)</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>destination_table</code></td>
+        <td><code>str</code></td>
+        <td><p>destination table (project.dataset.table)</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>credentials</code></td>
+        <td><code>str</code></td>
+        <td><p>BQ credentials file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>destination_schema</code></td>
+        <td><code>str</code></td>
+        <td><p>destination schema file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage:</strong>
+    <div class="highlight"><pre><span></span><code>patentcity io family-expansion &lt;src-table&gt; &lt;destination-table&gt;  credentials-patentcity.json schema/patentcity_v1.json
+</code></pre></div></p>
+
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
           <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>450
@@ -2260,12 +2464,37 @@ existing in <code>src_table</code> <em>but</em> absent from the latter. Family d
 496
 497
 498
-499</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">family_expansion</span><span class="p">(</span>
     <span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_schema</span><span class="p">:</span> <span class="nb">str</span>
 <span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Expand along families in `table ref`. The returned table contains all publications belonging to a family</span>
-<span class="sd">    existing in `src_table` *but* absent from the latter. Family data are *assigned* from data in `src_table`.&quot;&quot;&quot;</span>
+<span class="sd">    existing in `src_table` *but* absent from the latter. Family data are *assigned* from data in `src_table`.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        src_table: source table (project.dataset.table)</span>
+<span class="sd">        destination_table: destination table (project.dataset.table)</span>
+<span class="sd">        credentials: BQ credentials file path</span>
+<span class="sd">        destination_schema: destination schema file path</span>
+
+<span class="sd">    **Usage:**</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        patentcity io family-expansion &lt;src-table&gt; &lt;destination-table&gt;  credentials-patentcity.json schema/patentcity_v1.json</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    WITH</span>
 <span class="s2">      family_table AS (</span>
@@ -2298,7 +2527,8 @@ existing in <code>src_table</code> <em>but</em> absent from the latter. Family d
 <span class="s2">    expanded_family_table.*, #EXCEPT(appln_id, pat_publn_id, docdb_family_id, inpadoc_family_id),</span>
 <span class="s2">    SPLIT(expanded_family_table.publication_number, &quot;-&quot;)[OFFSET(0)] as country_code,</span>
 <span class="s2">    SPLIT(expanded_family_table.publication_number, &quot;-&quot;)[OFFSET(1)] as pubnum,</span>
-<span class="s2">    SPLIT(expanded_family_table.publication_number, &quot;-&quot;)[OFFSET(2)] as kind_code</span>
+<span class="s2">    SPLIT(expanded_family_table.publication_number, &quot;-&quot;)[OFFSET(2)] as kind_code,</span>
+<span class="s2">    &quot;EXP&quot; AS origin</span>
 <span class="s2">    FROM</span>
 <span class="s2">    publication_list</span>
 <span class="s2">    RIGHT JOIN</span>
@@ -2369,43 +2599,43 @@ existing in <code>src_table</code> <em>but</em> absent from the latter. Family d
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>502
-503
-504
-505
-506
-507
-508
-509
-510
-511
-512
-513
-514
-515
-516
-517
-518
-519
-520
-521
-522
-523
-524
-525
-526
-527
-528
-529
-530
-531
-532
-533
-534
-535
-536
-537
-538</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+610
+611</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">filter_kind_codes</span><span class="p">(</span><span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Filter `src_table` to make sure that only *utility patents* are reported.</span>
 
@@ -2738,7 +2968,7 @@ in each bin (if possible).</p>
   </tbody>
 </table>      <p><strong>Usage:</strong>
     <div class="highlight"><pre><span></span><code><span class="nv">OFFICE</span><span class="o">=</span>DE
-python patentcity/io.py get-wgp25-recid <span class="nv">$OFFICE</span> patentcity.external.inventor_applicant_recid patentcity.tmp.loc_<span class="si">${</span><span class="p">(L)OFFICE</span><span class="si">}</span>patentwgp25 credentials-patentcity.json<span class="p">;</span>
+patentcity io get-wgp25-recid <span class="nv">$OFFICE</span> patentcity.external.inventor_applicant_recid patentcity.tmp.loc_<span class="si">${</span><span class="p">(L)OFFICE</span><span class="si">}</span>patentwgp25 credentials-patentcity.json
 </code></pre></div></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -2815,7 +3045,7 @@ python patentcity/io.py get-wgp25-recid <span class="nv">$OFFICE</span> patentci
 <span class="sd">    **Usage:**</span>
 <span class="sd">        ```shell</span>
 <span class="sd">        OFFICE=DE</span>
-<span class="sd">        python patentcity/io.py get-wgp25-recid $OFFICE patentcity.external.inventor_applicant_recid patentcity.tmp.loc_${(L)OFFICE}patentwgp25 credentials-patentcity.json;</span>
+<span class="sd">        patentcity io get-wgp25-recid $OFFICE patentcity.external.inventor_applicant_recid patentcity.tmp.loc_${(L)OFFICE}patentwgp25 credentials-patentcity.json</span>
 <span class="sd">        ```</span>
 
 <span class="sd">    !!! info</span>

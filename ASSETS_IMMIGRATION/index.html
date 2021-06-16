@@ -1017,13 +1017,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
-    Metadata
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#coverage" class="md-nav__link">
     Coverage
   </a>
@@ -1417,13 +1410,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#metadata" class="md-nav__link">
-    Metadata
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#coverage" class="md-nav__link">
     Coverage
   </a>
@@ -1455,8 +1441,6 @@
                 
                 
                 <h1 id="immigration">Immigration<a class="headerlink" href="#immigration" title="Permanent link">&para;</a></h1>
-<p>This document refers to <a href="./assets/immigration_us.csv">immigration_us.csv</a> and <a href="./assets/immigrationbyorigin_us.csv">immigrationbyorigin_us.csv</a>.  These files report the share and number of foreign-born in the US and their origins.</p>
-<h2 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1466,11 +1450,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="./assets/immigration_us.csv">immigration_us.csv</a></td>
+<td><a href="https://github.com/cverluise/patentcity/tree/master/assets">immigration_us.csv</a></td>
 <td><a href="https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf">US census</a></td>
 </tr>
 <tr>
-<td><a href="./assets/immigration_us.csv">immigrationbyorigin_us.csv</a></td>
+<td><a href="https://github.com/cverluise/patentcity/tree/master/assets">immigrationbyorigin_us.csv</a></td>
 <td><a href="https://www.census.gov/content/dam/Census/library/working-papers/2006/demo/POP-twps0081.pdf">US census</a></td>
 </tr>
 </tbody>
@@ -1480,13 +1464,15 @@
 <thead>
 <tr>
 <th>Country</th>
+<th>Geographical level</th>
 <th>Period</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>US</td>
-<td>[XX]</td>
+<td>0(country)</td>
+<td>1850-2000</td>
 </tr>
 </tbody>
 </table>
@@ -1503,12 +1489,12 @@
 <tbody>
 <tr>
 <td>name</td>
-<td>[XX]</td>
+<td>Name of the origin country/region</td>
 <td><code>str</code></td>
 </tr>
 <tr>
 <td>year</td>
-<td>[XX]</td>
+<td>Year</td>
 <td><code>int</code></td>
 </tr>
 <tr>
@@ -1546,7 +1532,7 @@
 </tr>
 <tr>
 <td>immigrants</td>
-<td>Number of immigrants (in [XX: add unit])</td>
+<td>Number of immigrants (in units)</td>
 <td><code>float</code></td>
 </tr>
 </tbody>
