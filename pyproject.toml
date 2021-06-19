@@ -28,6 +28,7 @@ spacy-transformers = "^1.0.1"
 python-levenshtein = "^0.12.2"
 fuzzyset = "^0.0.19"
 dvc = "^2.0.18"
+Cython = "^0.29.23"
 
 [tool.poetry.dev-dependencies]
 typer-cli = "^0.0.11"

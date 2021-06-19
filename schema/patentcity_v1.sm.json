@@ -4,6 +4,11 @@
     "name": "publication_number",
     "type": "STRING"
   },
+  { "description": "Indicates the origin of the patentee data (PC: patentcity, WGP25: Worldwide Geocoding of Patent - slot 25, WGP45: Worldwide Geocoding of Patent - slot 45, EXP: expansion ).",
+    "mode": "NULLABLE",
+    "name": "origin",
+    "type": "STRING"
+  },
   {
     "description": "",
     "mode": "REPEATED",
@@ -267,6 +272,48 @@
         "mode": "NULLABLE",
         "name": "loc_matchQualityBuilding",
         "type": "FLOAT"
+      },
+      {
+        "description": "Key used for statistical area mapping (internal use).",
+        "mode": "NULLABLE",
+        "name": "loc_key",
+        "type": "STRING"
+      },
+      {
+        "description": "Name of the high level Statistical Area.",
+        "mode": "NULLABLE",
+        "name": "loc_statisticalArea1",
+        "type": "STRING"
+      },
+      {
+        "description": "Code of the high level Statistical Area.",
+        "mode": "NULLABLE",
+        "name": "loc_statisticalArea1Code",
+        "type": "STRING"
+      },
+      {
+        "description": "Name of the mid level Statistical Area.",
+        "mode": "NULLABLE",
+        "name": "loc_statisticalArea2",
+        "type": "STRING"
+      },
+      {
+        "description": "Code of the mid level Statistical Area.",
+        "mode": "NULLABLE",
+        "name": "loc_statisticalArea2Code",
+        "type": "STRING"
+      },
+      {
+        "description": "Name of the low level Statistical Area.",
+        "mode": "NULLABLE",
+        "name": "loc_statisticalArea3",
+        "type": "STRING"
+      },
+      {
+        "description": "Code of the low level Statistical Area.",
+        "mode": "NULLABLE",
+        "name": "loc_statisticalArea3Code",
+        "type": "STRING"
       },
       {
         "description": "Identifier of the input address in the response.",

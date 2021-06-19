@@ -43,6 +43,24 @@ nav:
         - PatentCity: RECIPE_PATENTCITY.md
         - WGP: RECIPE_WGP.md
       - Cheatsheet: CHEATSHEET.md
+
+  - Assets:
+    - Demography:
+      - Population: ASSETS_POPULATION.md
+      - Immigration: ASSETS_IMMIGRATION.md
+      - Area: ASSETS_AREA.md
+    - Structure:
+      - Regional GDP: ASSETS_GDPREG.md
+      - Share agriculture: ASSETS_GDPSHAREAGRICULTURE.md
+      - Share industry: ASSETS_GDPSHAREINDUSTRY.md
+      - Share service: ASSETS_GDPSHARESERVICE.md
+    - Gravity:
+      - Border: ASSETS_BORDER.md
+      - Language: ASSETS_LANGUAGE.md
+      - Distance: ASSETS_DISTANCE.md
+      - GDP per capita: ASSETS_GDPPCCOUNTRY.md
+      - Exports: ASSETS_EXPORTS.md
+      - Imports: ASSETS_IMPORTS.md
   - API:
       - brew: API_BREW.md
       - eval: API_EVAL.md
