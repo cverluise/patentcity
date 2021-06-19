@@ -1,0 +1,4 @@
+outs:
+- md5: 52a3b9426be512ae97e23b35056ddad5
+  size: 210749
+  path: train_ispers_xxpatentxx.spacy
