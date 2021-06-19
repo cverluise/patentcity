@@ -82,6 +82,6 @@
 /test_ispers_xxpatentxx.spacy
 /train_ispers_xxpatentxx.jsonl
 /train_ispers_xxpatentxx.spacy
-/gold_pers_xxpatentxx.jsonl
-/gold_pers_xxpatentxx.jsonl
-/gold_pers_xxpatentxx.jsonl
+/gold_ispers_xxpatentxx.jsonl
+/gold_ispers_xxpatentxx.jsonl
+/gold_ispers_xxpatentxx.jsonl
