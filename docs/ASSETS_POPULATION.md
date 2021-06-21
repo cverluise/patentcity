@@ -2,7 +2,7 @@
 
 File | Source(s)
 ---|---
-[population_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets)  |DE [Rosés-Wolf database on regional GDP (version 6, 2020)](https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp), FR [INSEE](https://www.insee.fr/fr/statistiques/3698339), GB [Vision of Britain](https://www.visionofbritain.org.uk/)&[Isle of man](http://www.isle-of-man.com/manxnotebook/history/pop.htm), US [Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020](https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip)
+[population_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets)  |DE [Rosés-Wolf database on regional GDP (version 6, 2020)](https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp), FR [INSEE](https://www.insee.fr/fr/statistiques/3698339), GB [Vision of Britain](https://www.visionofbritain.org.uk/)&[ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/13221populationestimatesbylocalauthoritiesofgreatbritainmid1981tomid2019)&[Wiki](https://en.wikipedia.org/wiki/Demography_of_Northern_Ireland), US [Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020](https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip)
 
 ## Coverage
 
