@@ -10,7 +10,7 @@ Country |Geographical level |Period
 ---|---|---
 DE  |2 (nuts2)       | 1900-2015
 FR  |3 (nuts3)       | 1876-2018
-GB  |2 (nuts2)       | 1851-2011
+GB  |2 (nuts2)       | 1851-2019
 US  |2 (commuting zone) | 1830-2000
 
 ## Variables
@@ -44,3 +44,8 @@ population              | Population in the statistical area (in thousands)| `fl
     Dyfed    | Carmarthenshire + Ceredigion + Pembrokeshire
     Gwent    | Blaenau Gwent + Caerphilly/2 + Monmouthshire + Newport + Torfaen
     Vale of Glamorgan    | Glamorganshire
+    
+    Then, with the "Conversion_VoB_NUTS_GB.csv" document we convert VoB data into NUTS 2 level data. To do so, we complete the VOB dataset with linear interpolation because one missing data prevent us from reconstituting the whole NUTS 2 entity in 1871, 1901 and 1941 (e.g. Bedfordshire in 1941).
+    For Wales and Scotland data are missing since 1981. We suppose population increased homogeneously in each NUTS so we determine 1981 NUTS population by multiplying 1971 NUTS population by the population growth rate in those countries from 1971 to 1981.
+    NUTS 3 data are available for each year since 1981, we convert them into NUTS 2 data thanks to an online conversion table (e.g https://en.wikipedia.org/wiki/NUTS_statistical_regions_of_the_United_Kingdom).
+    As pre-1981 data are constructed with  VOB data and not NUTS 3 data, we correct potential errors by retropolating the data, based on a comparison between our NUTS 2 "artificial" data (constructed with VOB) in 1981 and "official" NUTS 2 data (constructed with NUTS 3) in 1981.
