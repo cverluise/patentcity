@@ -1,2721 +1,2133 @@
-statisticalAreaCode,statisticalArea,source,useful,year,population
-,Bedfordshire,VoB,1.0,1851,42229.0
-,Berkshire,Wiki,1.0,1851,224739.0
-,Bristol,VoB,1.0,1851,119327.0
-,Buckinghamshire,VoB,1.0,1851,135526.0
-,Cambridgeshire,VoB,1.0,1851,241872.0
-,Cheshire,VoB,1.0,1851,325651.0
-,Cornwall,VoB,1.0,1851,354137.0
-,Cumbria,VoB,1.0,1851,288795.0
-,Derbyshire,VoB,1.0,1851,284026.0
-,Devon,VoB,1.0,1851,450642.0
-,Dorset,VoB,1.0,1851,176015.0
-,Durham,VoB,1.0,1851,172970.0
-,East Sussex,VoB,1.0,1851,129279.0
-,Essex,VoB,1.0,1851,306930.0
-,Gloucestershire,VoB,1.0,1851,264566.0
-,Greater Manchester,VoB,1.0,1851,1051730.0
-,Hampshire,VoB,1.0,1851,237814.0
-,Herefordshire,VoB,1.0,1851,115367.0
-,Hertfordshire,VoB,1.0,1851,171415.0
-,Isle of Wight,VoB,1.0,1851,50324.0
-,Kent,VoB,1.0,1851,412416.0
-,Lancashire,VoB,1.0,1851,460379.0
-,Leicestershire,VoB,1.0,1851,160506.0
-,Lincolnshire,VoB,1.0,1851,352743.0
-,City and County of the City of London,VoB,1.0,1851,2300392.0
-,Merseyside,VoB,1.0,1851,523454.0
-,Norfolk,VoB,1.0,1851,455307.0
-,Northamptonshire,VoB,1.0,1851,198168.0
-,Northumberland,VoB,1.0,1851,174578.0
-,North Yorkshire,VoB,1.0,1851,370126.0
-,Nottinghamshire,VoB,1.0,1851,175078.0
-,Oxfordshire,VoB,1.0,1851,213419.0
-,Rutland,VoB,1.0,1851,23189.0
-,Shropshire,VoB,1.0,1851,184662.0
-,Somerset,VoB,1.0,1851,298792.0
-,Suffolk,VoB,1.0,1851,327913.0
-,Surrey,VoB,1.0,1851,142089.0
-,Tyne & Wear,VoB,1.0,1851,310075.0
-,Warwickshire,VoB,1.0,1851,179442.0
-,West Midlands,VoB,1.0,1851,612139.0
-,West Sussex,VoB,1.0,1851,135834.0
-,West Yorkshire,VoB,1.0,1851,855367.0
-,Wiltshire,VoB,1.0,1851,236649.0
-,Worcestershire,VoB,1.0,1851,186784.0
-,East Riding of Yorkshire,VoB,1.0,1851,135820.0
-,South Yorkshire,VoB,1.0,1851,288902.0
-,Staffordshire,VoB,1.0,1851,319057.0
-,Aberdeenshire,VoB,1.0,1851,134630.0
-,Angus,VoB,1.0,1851,125685.0
-,City of Aberdeen,VoB,1.0,1851,77879.0
-,Caithness,VoB,1.0,1851,38709.0
-,Berwickshire,VoB,1.0,1851,36297.0
-,Ayrshire and Arran,VoB,1.0,1851,189858.0
-,Banffshire,VoB,1.0,1851,54171.0
-,Argyll and Bute,VoB,1.0,1851,87651.0
-,Clackmannan,VoB,1.0,1851,832.0
-,City of Glasgow,VoB,1.0,1851,390373.0
-,City of Edinburgh,VoB,1.0,1851,212976.0
-,City of Dundee,VoB,1.0,1851,65104.0
-,Dumfries,VoB,1.0,1851,78123.0
-,Dunbartonshire,VoB,1.0,1851,45103.0
-,East Lothian,VoB,1.0,1851,36386.0
-,Fife,VoB,1.0,1851,153546.0
-,Inverness,VoB,1.0,1851,96500.0
-,Kincardineshire,VoB,1.0,1851,34598.0
-,Lanarkshire,VoB,1.0,1851,530169.0
-,Midlothian,VoB,1.0,1851,30350.0
-,Moray,VoB,1.0,1851,1071.0
-,Nairn,VoB,1.0,1851,9956.0
-,Perth and Kinross,VoB,1.0,1851,118912.0
-,Renfrewshire,VoB,1.0,1851,161091.0
-,Ross and Cromarty,VoB,1.0,1851,82707.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1851,135384.0
-,Stirling and Falkirk,VoB,1.0,1851,86237.0
-,Sutherland,VoB,1.0,1851,25793.0
-,Tweeddale,VoB,1.0,1851,20547.0
-,West Lothian,VoB,1.0,1851,30135.0
-,Wigtown,VoB,1.0,1851,43389.0
-,Western Isles,VoB,1.0,1851,35925.0
-,Orkney,VoB,1.0,1851,31455.0
-,Shetland,VoB,1.0,1851,31078.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1851,43121.0
-,West Glamorgan,VoB,1.0,1851,81327.0
-,Powys,VoB,1.0,1851,159891.0
-,Gwent,VoB,1.0,1851,163674.0
-,Gwynedd,VoB,1.0,1851,100214.0
-,Dyfed,VoB,1.0,1851,275622.0
-,Northern Ireland,Wiki,1.0,1851,1442517.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1851,52387.0
-,Clwyd,VoB,1.0,1851,136288.0
-,South Glamorgan,VoB,1.0,1851,255914.0
-,Mid Glamorgan,VoB,1.0,1851,106816.0
-,Inner London — West,data.london,1.0,1851,938000.0
-,Inner London — East,data.london,1.0,1851,1294000.0
-,Outer London — East and North East,data.london,1.0,1851,160000.0
-,Outer London — South,data.london,1.0,1851,67000.0
-,Outer London — West and North West,data.london,,1851,115000.0
-,Swansea,VoB,0.0,1851,48227.0
-,Neath Port Talbot,VoB,0.0,1851,33100.0
-,Blaenau Gwent,VoB,0.0,1851,15804.0
-,Caerphilly,VoB,0.0,1851,35410.0
-,Monmouthshire,VoB,0.0,1851,90273.0
-,Newport,VoB,0.0,1851,23223.0
-,Torfaen,VoB,0.0,1851,16669.0
-,Flintshire,VoB,0.0,1851,56690.0
-,Wrexham,VoB,0.0,1851,44551.0
-,Denbighshire,VoB,0.0,1851,35047.0
-,Vale of Glamorgan,VoB,0.0,1851,240095.0
-,Cardiff,VoB,0.0,1851,15819.0
-,Bridgend,VoB,0.0,1851,13745.0
-,Merthyr Tydfil,VoB,0.0,1851,17262.0
-,Rhondda; Cynon; Taff,VoB,0.0,1851,58104.0
-,Carmarthenshire,VoB,0.0,1851,112580.0
-,Ceredigion,VoB,0.0,1851,68076.0
-,Pembrokeshire,VoB,0.0,1851,94966.0
-,Halton,VoB,0.0,1851,16296.0
-,Warrington,VoB,0.0,1851,45745.0
-,Cheshire east,VoB,0.0,1851,151229.0
-,Cheshire West and Chester,VoB,0.0,1851,112381.0
-,Roxburghshire,VoB,0.0,1851,51642.0
-,Selkirkshire,VoB,0.0,1851,9809.0
-,Berwickshire,VoB,0.0,1851,36297.0
-,Midlothian,VoB,0.0,1851,259435.0
-,Peebles,VoB,0.0,1851,10738.0
-00AA,City of London,data.london,0.0,1851,128000.0
-00AB,Barking and Dagenham,data.london,0.0,1851,8000.0
-00AC,Barnet,data.london,0.0,1851,15000.0
-00AD,Bexley,data.london,0.0,1851,12000.0
-00AE,Brent,data.london,0.0,1851,5000.0
-00AF,Bromley,data.london,0.0,1851,16000.0
-00AG,Camden,data.london,0.0,1851,270000.0
-00AH,Croydon,data.london,0.0,1851,23000.0
-00AJ,Ealing,data.london,0.0,1851,14000.0
-00AK,Enfield,data.london,0.0,1851,19000.0
-00AL,Greenwich,data.london,0.0,1851,90000.0
-,Hackney,data.london,0.0,1851,170000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1851,30000.0
-00AP,Haringey,data.london,0.0,1851,14000.0
-00AQ,Harrow,data.london,0.0,1851,8000.0
-00AR,Havering,data.london,0.0,1851,11000.0
-00AS,Hillingdon,data.london,0.0,1851,18000.0
-00AT,Hounslow,data.london,0.0,1851,27000.0
-00AU,Islington,data.london,0.0,1851,220000.0
-00AW,Kensington and Chelsea,data.london,0.0,1851,88000.0
-00AX,Kingston upon Thames,data.london,0.0,1851,12000.0
-00AY,Lambeth,data.london,0.0,1851,155000.0
-00AZ,Lewisham,data.london,0.0,1851,44000.0
-00BA,Merton,data.london,0.0,1851,8000.0
-00BB,Newham,data.london,0.0,1851,22000.0
-00BC,Redbridge,data.london,0.0,1851,7000.0
-00BD,Richmond upon Thames,data.london,0.0,1851,28000.0
-00BE,Southwark,data.london,0.0,1851,292000.0
-00BF,Sutton,data.london,0.0,1851,8000.0
-00BG,Tower Hamlets,data.london,0.0,1851,377000.0
-00BH,Waltham Forest,data.london,0.0,1851,13000.0
-00BJ,Wandsworth,data.london,0.0,1851,36000.0
-00BK,Westminster,data.london,0.0,1851,462000.0
-UKI1,Inner London,data.london,0.0,1851,2308000.0
-UKI2,Outer London,data.london,0.0,1851,342000.0
-H,Greater London,data.london,0.0,1851,2651000.0
-,Bedfordshire,VoB,1.0,1861,45103.0
-,Berkshire,Wiki,1.0,1861,250931.0
-,Bristol,VoB,1.0,1861,130334.0
-,Buckinghamshire,VoB,1.0,1861,137461.0
-,Cambridgeshire,VoB,1.0,1861,233957.0
-,Cheshire,VoB,1.0,1861,345419.0
-,Cornwall,VoB,1.0,1861,361438.0
-,Cumbria,VoB,1.0,1861,305876.0
-,Derbyshire,VoB,1.0,1861,323727.0
-,Devon,VoB,1.0,1861,456806.0
-,Dorset,VoB,1.0,1861,181534.0
-,Durham,VoB,1.0,1861,225641.0
-,East Sussex,VoB,1.0,1861,134935.0
-,Essex,VoB,1.0,1861,316970.0
-,Gloucestershire,VoB,1.0,1861,271407.0
-,Greater Manchester,VoB,1.0,1861,1232562.0
-,Hampshire,VoB,1.0,1861,256975.0
-,Herefordshire,VoB,1.0,1861,123540.0
-,Hertfordshire,VoB,1.0,1861,180842.0
-,Isle of Wight,VoB,1.0,1861,55362.0
-,Kent,VoB,1.0,1861,459784.0
-,Lancashire,VoB,1.0,1861,544752.0
-,Leicestershire,VoB,1.0,1861,161072.0
-,Lincolnshire,VoB,1.0,1861,357257.0
-,City and County of the City of London,VoB,1.0,1861,2719956.0
-,Merseyside,VoB,1.0,1861,656956.0
-,Norfolk,VoB,1.0,1861,447934.0
-,Northamptonshire,VoB,1.0,1861,210588.0
-,Northumberland,VoB,1.0,1861,184164.0
-,North Yorkshire,VoB,1.0,1861,397290.0
-,Nottinghamshire,VoB,1.0,1861,181075.0
-,Oxfordshire,VoB,1.0,1861,213923.0
-,Rutland,VoB,1.0,1861,22143.0
-,Shropshire,VoB,1.0,1861,195283.0
-,Somerset,VoB,1.0,1861,290544.0
-,Suffolk,VoB,1.0,1861,325310.0
-,Surrey,VoB,1.0,1861,182686.0
-,Tyne & Wear,VoB,1.0,1861,385302.0
-,Warwickshire,VoB,1.0,1861,186884.0
-,West Midlands,VoB,1.0,1861,776415.0
-,West Sussex,VoB,1.0,1861,143870.0
-,West Yorkshire,VoB,1.0,1861,945731.0
-,Wiltshire,VoB,1.0,1861,229821.0
-,Worcestershire,VoB,1.0,1861,199507.0
-,East Riding of Yorkshire,VoB,1.0,1861,145398.0
-,South Yorkshire,VoB,1.0,1861,370706.0
-,Staffordshire,VoB,1.0,1861,369434.0
-,Aberdeenshire,VoB,1.0,1861,189409.0
-,Angus,VoB,1.0,1861,110506.0
-,City of Aberdeen,VoB,1.0,1861,79070.0
-,Caithness,VoB,1.0,1861,42200.0
-,Berwickshire,VoB,1.0,1861,36488.0
-,Ayrshire and Arran,VoB,1.0,1861,199063.0
-,Banffshire,VoB,1.0,1861,56020.0
-,Argyll and Bute,VoB,1.0,1861,92096.0
-,Clackmannan,VoB,1.0,1861,21600.0
-,City of Glasgow,VoB,1.0,1861,459081.0
-,City of Edinburgh,VoB,1.0,1861,213005.0
-,City of Dundee,VoB,1.0,1861,93388.0
-,Dumfries,VoB,1.0,1861,75904.0
-,Dunbartonshire,VoB,1.0,1861,54179.0
-,East Lothian,VoB,1.0,1861,37626.0
-,Fife,VoB,1.0,1861,155021.0
-,Inverness,VoB,1.0,1861,84902.0
-,Kincardineshire,VoB,1.0,1861,34854.0
-,Lanarkshire,VoB,1.0,1861,640444.0
-,Midlothian,VoB,1.0,1861,33382.0
-,Moray,VoB,1.0,1861,72603.0
-,Nairn,VoB,1.0,1861,8347.0
-,Perth and Kinross,VoB,1.0,1861,121555.0
-,Renfrewshire,VoB,1.0,1861,168746.0
-,Ross and Cromarty,VoB,1.0,1861,82427.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1861,141777.25
-,Stirling and Falkirk,VoB,1.0,1861,88138.0
-,Sutherland,VoB,1.0,1861,24157.0
-,Tweeddale,VoB,1.0,1861,21710.0
-,West Lothian,VoB,1.0,1861,39045.0
-,Wigtown,VoB,1.0,1861,42095.0
-,Western Isles,VoB,1.0,1861,26027.0
-,Orkney,VoB,1.0,1861,32395.0
-,Shetland,VoB,1.0,1861,31670.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1861,42495.0
-,West Glamorgan,VoB,1.0,1861,103461.0
-,Powys,VoB,1.0,1861,163224.0
-,Gwent,VoB,1.0,1861,181341.0
-,Gwynedd,VoB,1.0,1861,101543.0
-,Dyfed,VoB,1.0,1861,279653.0
-,Northern Ireland,Wiki,1.0,1861,1396453.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1861,52469.0
-,Clwyd,VoB,1.0,1861,142979.0
-,South Glamorgan,VoB,1.0,1861,350495.0
-,Mid Glamorgan,VoB,1.0,1861,150835.0
-,Inner London — West,data.london,1.0,1861,1041000.0
-,Inner London — East,data.london,1.0,1861,1602000.0
-,Outer London — East and North East,data.london,1.0,1861,209000.0
-,Outer London — South,data.london,1.0,1861,95000.0
-,Outer London — West and North West,data.london,,1861,141000.0
-,Swansea,VoB,0.0,1861,60100.0
-,Neath Port Talbot,VoB,0.0,1861,43361.0
-,Blaenau Gwent,VoB,0.0,1861,34475.0
-,Caerphilly,VoB,0.0,1861,56706.0
-,Monmouthshire,VoB,0.0,1861,73552.0
-,Newport,VoB,0.0,1861,26635.0
-,Torfaen,VoB,0.0,1861,18326.0
-,Flintshire,VoB,0.0,1861,58157.0
-,Wrexham,VoB,0.0,1861,49307.0
-,Denbighshire,VoB,0.0,1861,35515.0
-,Vale of Glamorgan,VoB,0.0,1861,326254.0
-,Cardiff,VoB,0.0,1861,24241.0
-,Bridgend,VoB,0.0,1861,15702.0
-,Merthyr Tydfil,VoB,0.0,1861,24055.0
-,Rhondda; Cynon; Taff,VoB,0.0,1861,82725.0
-,Carmarthenshire,VoB,0.0,1861,113022.0
-,Ceredigion,VoB,0.0,1861,69461.0
-,Pembrokeshire,VoB,0.0,1861,97170.0
-,Halton,VoB,0.0,1861,17678.0
-,Warrington,VoB,0.0,1861,54066.0
-,Cheshire east,VoB,0.0,1861,160838.0
-,Cheshire West and Chester,VoB,0.0,1861,112837.0
-,Roxburghshire,VoB,0.0,1861,53722.0
-,Selkirkshire,VoB,0.0,1861,10410.0
-,Berwickshire,VoB,0.0,1861,36488.0
-,Midlothian,VoB,0.0,1861,274093.0
-,Peebles,VoB,0.0,1861,11300.0
-00AA,City of London,data.london,0.0,1861,112000.0
-00AB,Barking and Dagenham,data.london,0.0,1861,8000.0
-00AC,Barnet,data.london,0.0,1861,20000.0
-00AD,Bexley,data.london,0.0,1861,15000.0
-00AE,Brent,data.london,0.0,1861,6000.0
-00AF,Bromley,data.london,0.0,1861,22000.0
-00AG,Camden,data.london,0.0,1861,307000.0
-00AH,Croydon,data.london,0.0,1861,33000.0
-00AJ,Ealing,data.london,0.0,1861,20000.0
-00AK,Enfield,data.london,0.0,1861,23000.0
-00AL,Greenwich,data.london,0.0,1861,125000.0
-,Hackney,data.london,0.0,1861,218000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1861,40000.0
-00AP,Haringey,data.london,0.0,1861,21000.0
-00AQ,Harrow,data.london,0.0,1861,9000.0
-00AR,Havering,data.london,0.0,1861,12000.0
-00AS,Hillingdon,data.london,0.0,1861,20000.0
-00AT,Hounslow,data.london,0.0,1861,32000.0
-00AU,Islington,data.london,0.0,1861,283000.0
-00AW,Kensington and Chelsea,data.london,0.0,1861,120000.0
-00AX,Kingston upon Thames,data.london,0.0,1861,18000.0
-00AY,Lambeth,data.london,0.0,1861,182000.0
-00AZ,Lewisham,data.london,0.0,1861,67000.0
-00BA,Merton,data.london,0.0,1861,11000.0
-00BB,Newham,data.london,0.0,1861,43000.0
-00BC,Redbridge,data.london,0.0,1861,9000.0
-00BD,Richmond upon Thames,data.london,0.0,1861,34000.0
-00BE,Southwark,data.london,0.0,1861,346000.0
-00BF,Sutton,data.london,0.0,1861,11000.0
-00BG,Tower Hamlets,data.london,0.0,1861,442000.0
-00BH,Waltham Forest,data.london,0.0,1861,17000.0
-00BJ,Wandsworth,data.london,0.0,1861,52000.0
-00BK,Westminster,data.london,0.0,1861,512000.0
-UKI1,Inner London,data.london,0.0,1861,2745000.0
-UKI2,Outer London,data.london,0.0,1861,445000.0
-H,Greater London,data.london,0.0,1861,3188000.0
-,Bedfordshire,VoB,1.0,1871,
-,Berkshire,Wiki,1.0,1871,277123.0
-,Bristol,VoB,1.0,1871,
-,Buckinghamshire,VoB,1.0,1871,
-,Cambridgeshire,VoB,1.0,1871,
-,Cheshire,VoB,1.0,1871,
-,Cornwall,VoB,1.0,1871,
-,Cumbria,VoB,1.0,1871,
-,Derbyshire,VoB,1.0,1871,
-,Devon,VoB,1.0,1871,
-,Dorset,VoB,1.0,1871,
-,Durham,VoB,1.0,1871,
-,East Sussex,VoB,1.0,1871,
-,Essex,VoB,1.0,1871,
-,Gloucestershire,VoB,1.0,1871,
-,Greater Manchester,VoB,1.0,1871,
-,Hampshire,VoB,1.0,1871,
-,Herefordshire,VoB,1.0,1871,
-,Hertfordshire,VoB,1.0,1871,
-,Isle of Wight,VoB,1.0,1871,
-,Kent,VoB,1.0,1871,
-,Lancashire,VoB,1.0,1871,
-,Leicestershire,VoB,1.0,1871,
-,Lincolnshire,VoB,1.0,1871,
-,City and County of the City of London,VoB,1.0,1871,
-,Merseyside,VoB,1.0,1871,
-,Norfolk,VoB,1.0,1871,
-,Northamptonshire,VoB,1.0,1871,
-,Northumberland,VoB,1.0,1871,
-,North Yorkshire,VoB,1.0,1871,
-,Nottinghamshire,VoB,1.0,1871,
-,Oxfordshire,VoB,1.0,1871,
-,Rutland,VoB,1.0,1871,
-,Shropshire,VoB,1.0,1871,
-,Somerset,VoB,1.0,1871,
-,Suffolk,VoB,1.0,1871,
-,Surrey,VoB,1.0,1871,
-,Tyne & Wear,VoB,1.0,1871,
-,Warwickshire,VoB,1.0,1871,
-,West Midlands,VoB,1.0,1871,
-,West Sussex,VoB,1.0,1871,
-,West Yorkshire,VoB,1.0,1871,
-,Wiltshire,VoB,1.0,1871,
-,Worcestershire,VoB,1.0,1871,
-,East Riding of Yorkshire,VoB,1.0,1871,
-,South Yorkshire,VoB,1.0,1871,
-,Staffordshire,VoB,1.0,1871,
-,Aberdeenshire,VoB,1.0,1871,
-,Angus,VoB,1.0,1871,
-,City of Aberdeen,VoB,1.0,1871,
-,Caithness,VoB,1.0,1871,41011.0
-,Berwickshire,VoB,1.0,1871,36382.0
-,Ayrshire and Arran,VoB,1.0,1871,200908.0
-,Banffshire,VoB,1.0,1871,58883.0
-,Argyll and Bute,VoB,1.0,1871,
-,Clackmannan,VoB,1.0,1871,
-,City of Glasgow,VoB,1.0,1871,
-,City of Edinburgh,VoB,1.0,1871,
-,City of Dundee,VoB,1.0,1871,
-,Dumfries,VoB,1.0,1871,74842.0
-,Dunbartonshire,VoB,1.0,1871,61116.0
-,East Lothian,VoB,1.0,1871,37755.0
-,Fife,VoB,1.0,1871,160924.0
-,Inverness,VoB,1.0,1871,84258.0
-,Kincardineshire,VoB,1.0,1871,35097.0
-,Lanarkshire,VoB,1.0,1871,787005.0
-,Midlothian,VoB,1.0,1871,
-,Moray,VoB,1.0,1871,
-,Nairn,VoB,1.0,1871,8372.0
-,Perth and Kinross,VoB,1.0,1871,
-,Renfrewshire,VoB,1.0,1871,195305.0
-,Ross and Cromarty,VoB,1.0,1871,82093.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1871,159022.0
-,Stirling and Falkirk,VoB,1.0,1871,93345.0
-,Sutherland,VoB,1.0,1871,23298.0
-,Tweeddale,VoB,1.0,1871,31869.0
-,West Lothian,VoB,1.0,1871,41379.0
-,Wigtown,VoB,1.0,1871,38602.0
-,Western Isles,VoB,1.0,1871,
-,Orkney,VoB,1.0,1871,31274.0
-,Shetland,VoB,1.0,1871,31608.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1871,42087.0
-,West Glamorgan,VoB,1.0,1871,
-,Powys,VoB,1.0,1871,
-,Gwent,VoB,1.0,1871,
-,Gwynedd,VoB,1.0,1871,
-,Dyfed,VoB,1.0,1871,
-,Northern Ireland,Wiki,1.0,1871,1359190.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1871,54042.0
-,Clwyd,VoB,1.0,1871,
-,South Glamorgan,VoB,1.0,1871,
-,Mid Glamorgan,VoB,1.0,1871,
-,Inner London — West,data.london,1.0,1871,1133000.0
-,Inner London — East,data.london,1.0,1871,1961000.0
-,Outer London — East and North East,data.london,1.0,1871,240000.0
-,Outer London — South,data.london,1.0,1871,162000.0
-,Outer London — West and North West,data.london,,1871,200000.0
-,Swansea,VoB,0.0,1871,
-,Neath Port Talbot,VoB,0.0,1871,
-,Blaenau Gwent,VoB,0.0,1871,
-,Caerphilly,VoB,0.0,1871,
-,Monmouthshire,VoB,0.0,1871,
-,Newport,VoB,0.0,1871,
-,Torfaen,VoB,0.0,1871,
-,Flintshire,VoB,0.0,1871,
-,Wrexham,VoB,0.0,1871,
-,Denbighshire,VoB,0.0,1871,
-,Vale of Glamorgan,VoB,0.0,1871,405798.0
-,Cardiff,VoB,0.0,1871,
-,Bridgend,VoB,0.0,1871,
-,Merthyr Tydfil,VoB,0.0,1871,
-,Rhondda; Cynon; Taff,VoB,0.0,1871,
-,Carmarthenshire,VoB,0.0,1871,
-,Ceredigion,VoB,0.0,1871,
-,Pembrokeshire,VoB,0.0,1871,
-,Halton,VoB,0.0,1871,
-,Warrington,VoB,0.0,1871,
-,Cheshire east,VoB,0.0,1871,
-,Cheshire West and Chester,VoB,0.0,1871,
-,Roxburghshire,VoB,0.0,1871,48241.0
-,Selkirkshire,VoB,0.0,1871,19651.0
-,Berwickshire,VoB,0.0,1871,36382.0
-,Midlothian,VoB,0.0,1871,328138.0
-,Peebles,VoB,0.0,1871,12218.0
-00AA,City of London,data.london,0.0,1871,75000.0
-00AB,Barking and Dagenham,data.london,0.0,1871,10000.0
-00AC,Barnet,data.london,0.0,1871,29000.0
-00AD,Bexley,data.london,0.0,1871,22000.0
-00AE,Brent,data.london,0.0,1871,19000.0
-00AF,Bromley,data.london,0.0,1871,42000.0
-00AG,Camden,data.london,0.0,1871,342000.0
-00AH,Croydon,data.london,0.0,1871,60000.0
-00AJ,Ealing,data.london,0.0,1871,31000.0
-00AK,Enfield,data.london,0.0,1871,30000.0
-00AL,Greenwich,data.london,0.0,1871,123000.0
-,Hackney,data.london,0.0,1871,261000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1871,66000.0
-00AP,Haringey,data.london,0.0,1871,37000.0
-00AQ,Harrow,data.london,0.0,1871,11000.0
-00AR,Havering,data.london,0.0,1871,15000.0
-00AS,Hillingdon,data.london,0.0,1871,21000.0
-00AT,Hounslow,data.london,0.0,1871,41000.0
-00AU,Islington,data.london,0.0,1871,337000.0
-00AW,Kensington and Chelsea,data.london,0.0,1871,177000.0
-00AX,Kingston upon Thames,data.london,0.0,1871,27000.0
-00AY,Lambeth,data.london,0.0,1871,236000.0
-00AZ,Lewisham,data.london,0.0,1871,101000.0
-00BA,Merton,data.london,0.0,1871,17000.0
-00BB,Newham,data.london,0.0,1871,70000.0
-00BC,Redbridge,data.london,0.0,1871,12000.0
-00BD,Richmond upon Thames,data.london,0.0,1871,48000.0
-00BE,Southwark,data.london,0.0,1871,407000.0
-00BF,Sutton,data.london,0.0,1871,16000.0
-00BG,Tower Hamlets,data.london,0.0,1871,512000.0
-00BH,Waltham Forest,data.london,0.0,1871,28000.0
-00BJ,Wandsworth,data.london,0.0,1871,99000.0
-00BK,Westminster,data.london,0.0,1871,524000.0
-UKI1,Inner London,data.london,0.0,1871,3244000.0
-UKI2,Outer London,data.london,0.0,1871,602000.0
-H,Greater London,data.london,0.0,1871,3841000.0
-,Bedfordshire,VoB,1.0,1881,47944.0
-,Berkshire,Wiki,1.0,1881,303315.0
-,Bristol,VoB,1.0,1881,263652.0
-,Buckinghamshire,VoB,1.0,1881,130714.0
-,Cambridgeshire,VoB,1.0,1881,234935.0
-,Cheshire,VoB,1.0,1881,418184.0
-,Cornwall,VoB,1.0,1881,329301.0
-,Cumbria,VoB,1.0,1881,410762.0
-,Derbyshire,VoB,1.0,1881,360812.0
-,Devon,VoB,1.0,1881,415904.0
-,Dorset,VoB,1.0,1881,183812.0
-,Durham,VoB,1.0,1881,329876.0
-,East Sussex,VoB,1.0,1881,191228.0
-,Essex,VoB,1.0,1881,307297.0
-,Gloucestershire,VoB,1.0,1881,296874.0
-,Greater Manchester,VoB,1.0,1881,1866274.0
-,Hampshire,VoB,1.0,1881,281964.0
-,Herefordshire,VoB,1.0,1881,122635.0
-,Hertfordshire,VoB,1.0,1881,199069.0
-,Isle of Wight,VoB,1.0,1881,73633.0
-,Kent,VoB,1.0,1881,560912.0
-,Lancashire,VoB,1.0,1881,630792.0
-,Leicestershire,VoB,1.0,1881,185925.0
-,Lincolnshire,VoB,1.0,1881,366962.0
-,City and County of the City of London,VoB,1.0,1881,3899900.0
-,Merseyside,VoB,1.0,1881,952923.0
-,Norfolk,VoB,1.0,1881,453299.0
-,Northamptonshire,VoB,1.0,1881,240235.0
-,Northumberland,VoB,1.0,1881,184063.0
-,North Yorkshire,VoB,1.0,1881,344723.0
-,Nottinghamshire,VoB,1.0,1881,207098.0
-,Oxfordshire,VoB,1.0,1881,227684.0
-,Rutland,VoB,1.0,1881,21586.0
-,Shropshire,VoB,1.0,1881,190393.0
-,Somerset,VoB,1.0,1881,276867.0
-,Suffolk,VoB,1.0,1881,347879.0
-,Surrey,VoB,1.0,1881,229886.0
-,Tyne & Wear,VoB,1.0,1881,646079.0
-,Warwickshire,VoB,1.0,1881,193631.0
-,West Midlands,VoB,1.0,1881,1159366.0
-,West Sussex,VoB,1.0,1881,163977.0
-,West Yorkshire,VoB,1.0,1881,1430639.0
-,Wiltshire,VoB,1.0,1881,220350.0
-,Worcestershire,VoB,1.0,1881,228725.0
-,East Riding of Yorkshire,VoB,1.0,1881,132228.0
-,South Yorkshire,VoB,1.0,1881,572686.0
-,Staffordshire,VoB,1.0,1881,398475.0
-,Aberdeenshire,VoB,1.0,1881,205164.0
-,Angus,VoB,1.0,1881,123243.0
-,City of Aberdeen,VoB,1.0,1881,110481.0
-,Caithness,VoB,1.0,1881,39859.0
-,Berwickshire,VoB,1.0,1881,35273.0
-,Ayrshire and Arran,VoB,1.0,1881,217630.0
-,Banffshire,VoB,1.0,1881,59783.0
-,Argyll and Bute,VoB,1.0,1881,94767.0
-,Clackmannan,VoB,1.0,1881,25486.0
-,City of Glasgow,VoB,1.0,1881,629464.0
-,City of Edinburgh,VoB,1.0,1881,296680.0
-,City of Dundee,VoB,1.0,1881,142158.0
-,Dumfries,VoB,1.0,1881,76167.0
-,Dunbartonshire,VoB,1.0,1881,78182.0
-,East Lothian,VoB,1.0,1881,38510.0
-,Fife,VoB,1.0,1881,172131.0
-,Inverness,VoB,1.0,1881,86389.0
-,Kincardineshire,VoB,1.0,1881,35465.0
-,Lanarkshire,VoB,1.0,1881,942206.0
-,Midlothian,VoB,1.0,1881,49143.0
-,Moray,VoB,1.0,1881,76170.0
-,Nairn,VoB,1.0,1881,8847.0
-,Perth and Kinross,VoB,1.0,1881,118949.0
-,Renfrewshire,VoB,1.0,1881,225611.0
-,Ross and Cromarty,VoB,1.0,1881,79467.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1881,184965.25
-,Stirling and Falkirk,VoB,1.0,1881,106883.0
-,Sutherland,VoB,1.0,1881,22376.0
-,Tweeddale,VoB,1.0,1881,40034.0
-,West Lothian,VoB,1.0,1881,44005.0
-,Wigtown,VoB,1.0,1881,38448.0
-,Western Isles,VoB,1.0,1881,25439.0
-,Orkney,VoB,1.0,1881,32044.0
-,Shetland,VoB,1.0,1881,29705.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1881,42290.0
-,West Glamorgan,VoB,1.0,1881,174966.0
-,Powys,VoB,1.0,1881,136782.0
-,Gwent,VoB,1.0,1881,210106.5
-,Gwynedd,VoB,1.0,1881,135911.0
-,Dyfed,VoB,1.0,1881,287094.0
-,Northern Ireland,Wiki,1.0,1881,1304816.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1881,53558.0
-,Clwyd,VoB,1.0,1881,167368.0
-,South Glamorgan,VoB,1.0,1881,612285.0
-,Mid Glamorgan,VoB,1.0,1881,237080.5
-,Inner London — West,data.london,1.0,1881,1245000.0
-,Inner London — East,data.london,1.0,1881,2463000.0
-,Outer London — East and North East,data.london,1.0,1881,311000.0
-,Outer London — South,data.london,1.0,1881,235000.0
-,Outer London — West and North West,data.london,,1881,271000.0
-,Swansea,VoB,0.0,1881,111689.0
-,Neath Port Talbot,VoB,0.0,1881,63277.0
-,Blaenau Gwent,VoB,0.0,1881,38428.0
-,Caerphilly,VoB,0.0,1881,56971.0
-,Monmouthshire,VoB,0.0,1881,56874.0
-,Newport,VoB,0.0,1881,48339.0
-,Torfaen,VoB,0.0,1881,37980.0
-,Flintshire,VoB,0.0,1881,60229.0
-,Wrexham,VoB,0.0,1881,61308.0
-,Denbighshire,VoB,0.0,1881,45831.0
-,Vale of Glamorgan,VoB,0.0,1881,518383.0
-,Cardiff,VoB,0.0,1881,93902.0
-,Bridgend,VoB,0.0,1881,31826.0
-,Merthyr Tydfil,VoB,0.0,1881,52991.0
-,Rhondda; Cynon; Taff,VoB,0.0,1881,123778.0
-,Carmarthenshire,VoB,0.0,1881,124560.0
-,Ceredigion,VoB,0.0,1881,70567.0
-,Pembrokeshire,VoB,0.0,1881,91967.0
-,Halton,VoB,0.0,1881,46181.0
-,Warrington,VoB,0.0,1881,68032.0
-,Cheshire east,VoB,0.0,1881,177147.0
-,Cheshire West and Chester,VoB,0.0,1881,126824.0
-,Roxburghshire,VoB,0.0,1881,52592.0
-,Selkirkshire,VoB,0.0,1881,26346.0
-,Berwickshire,VoB,0.0,1881,35273.0
-,Midlothian,VoB,0.0,1881,388836.0
-,Peebles,VoB,0.0,1881,13688.0
-00AA,City of London,data.london,0.0,1881,51000.0
-00AB,Barking and Dagenham,data.london,0.0,1881,13000.0
-00AC,Barnet,data.london,0.0,1881,41000.0
-00AD,Bexley,data.london,0.0,1881,29000.0
-00AE,Brent,data.london,0.0,1881,31000.0
-00AF,Bromley,data.london,0.0,1881,62000.0
-00AG,Camden,data.london,0.0,1881,357000.0
-00AH,Croydon,data.london,0.0,1881,85000.0
-00AJ,Ealing,data.london,0.0,1881,47000.0
-00AK,Enfield,data.london,0.0,1881,42000.0
-00AL,Greenwich,data.london,0.0,1881,139000.0
-,Hackney,data.london,0.0,1881,329000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1881,115000.0
-00AP,Haringey,data.london,0.0,1881,73000.0
-00AQ,Harrow,data.london,0.0,1881,13000.0
-00AR,Havering,data.london,0.0,1881,16000.0
-00AS,Hillingdon,data.london,0.0,1881,23000.0
-00AT,Hounslow,data.london,0.0,1881,55000.0
-00AU,Islington,data.london,0.0,1881,401000.0
-00AW,Kensington and Chelsea,data.london,0.0,1881,234000.0
-00AX,Kingston upon Thames,data.london,0.0,1881,36000.0
-00AY,Lambeth,data.london,0.0,1881,293000.0
-00AZ,Lewisham,data.london,0.0,1881,145000.0
-00BA,Merton,data.london,0.0,1881,28000.0
-00BB,Newham,data.london,0.0,1881,142000.0
-00BC,Redbridge,data.london,0.0,1881,18000.0
-00BD,Richmond upon Thames,data.london,0.0,1881,61000.0
-00BE,Southwark,data.london,0.0,1881,514000.0
-00BF,Sutton,data.london,0.0,1881,24000.0
-00BG,Tower Hamlets,data.london,0.0,1881,566000.0
-00BH,Waltham Forest,data.london,0.0,1881,54000.0
-00BJ,Wandsworth,data.london,0.0,1881,173000.0
-00BK,Westminster,data.london,0.0,1881,513000.0
-UKI1,Inner London,data.london,0.0,1881,3906000.0
-UKI2,Outer London,data.london,0.0,1881,817000.0
-H,Greater London,data.london,0.0,1881,4713000.0
-,Bedfordshire,VoB,1.0,1891,55826.0
-,Berkshire,Wiki,1.0,1891,324494.0
-,Bristol,VoB,1.0,1891,297932.0
-,Buckinghamshire,VoB,1.0,1891,137196.0
-,Cambridgeshire,VoB,1.0,1891,234808.0
-,Cheshire,VoB,1.0,1891,464717.0
-,Cornwall,VoB,1.0,1891,321486.0
-,Cumbria,VoB,1.0,1891,433937.0
-,Derbyshire,VoB,1.0,1891,405124.0
-,Devon,VoB,1.0,1891,418200.0
-,Dorset,VoB,1.0,1891,189232.0
-,Durham,VoB,1.0,1891,359955.0
-,East Sussex,VoB,1.0,1891,223644.0
-,Essex,VoB,1.0,1891,321929.0
-,Gloucestershire,VoB,1.0,1891,301538.0
-,Greater Manchester,VoB,1.0,1891,2125441.0
-,Hampshire,VoB,1.0,1891,298644.0
-,Herefordshire,VoB,1.0,1891,117626.0
-,Hertfordshire,VoB,1.0,1891,216736.0
-,Isle of Wight,VoB,1.0,1891,78672.0
-,Kent,VoB,1.0,1891,613697.0
-,Lancashire,VoB,1.0,1891,736960.0
-,Leicestershire,VoB,1.0,1891,201414.0
-,Lincolnshire,VoB,1.0,1891,358029.0
-,City and County of the City of London,VoB,1.0,1891,4411522.0
-,Merseyside,VoB,1.0,1891,1060884.0
-,Norfolk,VoB,1.0,1891,470732.0
-,Northamptonshire,VoB,1.0,1891,266945.0
-,Northumberland,VoB,1.0,1891,192818.0
-,North Yorkshire,VoB,1.0,1891,343585.0
-,Nottinghamshire,VoB,1.0,1891,235122.0
-,Oxfordshire,VoB,1.0,1891,233618.0
-,Rutland,VoB,1.0,1891,20940.0
-,Shropshire,VoB,1.0,1891,185489.0
-,Somerset,VoB,1.0,1891,274338.0
-,Suffolk,VoB,1.0,1891,359173.0
-,Surrey,VoB,1.0,1891,282467.0
-,Tyne & Wear,VoB,1.0,1891,800083.0
-,Warwickshire,VoB,1.0,1891,201537.0
-,West Midlands,VoB,1.0,1891,1296988.0
-,West Sussex,VoB,1.0,1891,175233.0
-,West Yorkshire,VoB,1.0,1891,1595505.0
-,Wiltshire,VoB,1.0,1891,214734.0
-,Worcestershire,VoB,1.0,1891,240512.0
-,East Riding of Yorkshire,VoB,1.0,1891,138388.0
-,South Yorkshire,VoB,1.0,1891,666693.0
-,Staffordshire,VoB,1.0,1891,428938.0
-,Aberdeenshire,VoB,1.0,1891,
-,Angus,VoB,1.0,1891,
-,City of Aberdeen,VoB,1.0,1891,
-,Caithness,VoB,1.0,1891,37177.0
-,Berwickshire,VoB,1.0,1891,32290.0
-,Ayrshire and Arran,VoB,1.0,1891,226386.0
-,Banffshire,VoB,1.0,1891,61684.0
-,Argyll and Bute,VoB,1.0,1891,
-,Clackmannan,VoB,1.0,1891,
-,City of Glasgow,VoB,1.0,1891,
-,City of Edinburgh,VoB,1.0,1891,
-,City of Dundee,VoB,1.0,1891,
-,Dumfries,VoB,1.0,1891,74245.0
-,Dunbartonshire,VoB,1.0,1891,98014.0
-,East Lothian,VoB,1.0,1891,37377.0
-,Fife,VoB,1.0,1891,190365.0
-,Inverness,VoB,1.0,1891,90121.0
-,Kincardineshire,VoB,1.0,1891,35492.0
-,Lanarkshire,VoB,1.0,1891,1105899.0
-,Midlothian,VoB,1.0,1891,
-,Moray,VoB,1.0,1891,
-,Nairn,VoB,1.0,1891,9155.0
-,Perth and Kinross,VoB,1.0,1891,
-,Renfrewshire,VoB,1.0,1891,230812.0
-,Ross and Cromarty,VoB,1.0,1891,78727.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1891,197853.5
-,Stirling and Falkirk,VoB,1.0,1891,118021.0
-,Sutherland,VoB,1.0,1891,21896.0
-,Tweeddale,VoB,1.0,1891,42462.0
-,West Lothian,VoB,1.0,1891,52808.0
-,Wigtown,VoB,1.0,1891,36062.0
-,Western Isles,VoB,1.0,1891,
-,Orkney,VoB,1.0,1891,30453.0
-,Shetland,VoB,1.0,1891,28711.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1891,39985.0
-,West Glamorgan,VoB,1.0,1891,202720.0
-,Powys,VoB,1.0,1891,125382.0
-,Gwent,VoB,1.0,1891,250277.0
-,Gwynedd,VoB,1.0,1891,131001.0
-,Dyfed,VoB,1.0,1891,282416.0
-,Northern Ireland,Wiki,1.0,1891,1236056.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1891,55608.0
-,Clwyd,VoB,1.0,1891,171927.0
-,South Glamorgan,VoB,1.0,1891,835061.0
-,Mid Glamorgan,VoB,1.0,1891,318719.0
-,Inner London — West,data.london,1.0,1891,1374000.0
-,Inner London — East,data.london,1.0,1891,2860000.0
-,Outer London — East and North East,data.london,1.0,1891,462000.0
-,Outer London — South,data.london,1.0,1891,309000.0
-,Outer London — West and North West,data.london,,1891,371000.0
-,Swansea,VoB,0.0,1891,132933.0
-,Neath Port Talbot,VoB,0.0,1891,69787.0
-,Blaenau Gwent,VoB,0.0,1891,46669.0
-,Caerphilly,VoB,0.0,1891,71638.0
-,Monmouthshire,VoB,0.0,1891,57958.0
-,Newport,VoB,0.0,1891,65495.0
-,Torfaen,VoB,0.0,1891,44336.0
-,Flintshire,VoB,0.0,1891,57260.0
-,Wrexham,VoB,0.0,1891,70778.0
-,Denbighshire,VoB,0.0,1891,43889.0
-,Vale of Glamorgan,VoB,0.0,1891,693072.0
-,Cardiff,VoB,0.0,1891,141989.0
-,Bridgend,VoB,0.0,1891,43094.0
-,Merthyr Tydfil,VoB,0.0,1891,62509.0
-,Rhondda; Cynon; Taff,VoB,0.0,1891,177297.0
-,Carmarthenshire,VoB,0.0,1891,130190.0
-,Ceredigion,VoB,0.0,1891,62892.0
-,Pembrokeshire,VoB,0.0,1891,89334.0
-,Halton,VoB,0.0,1891,58042.0
-,Warrington,VoB,0.0,1891,81810.0
-,Cheshire east,VoB,0.0,1891,182383.0
-,Cheshire West and Chester,VoB,0.0,1891,142482.0
-,Roxburghshire,VoB,0.0,1891,53500.0
-,Selkirkshire,VoB,0.0,1891,27712.0
-,Berwickshire,VoB,0.0,1891,32290.0
-,Midlothian,VoB,0.0,1891,434276.0
-,Peebles,VoB,0.0,1891,14750.0
-00AA,City of London,data.london,0.0,1891,38000.0
-00AB,Barking and Dagenham,data.london,0.0,1891,19000.0
-00AC,Barnet,data.london,0.0,1891,58000.0
-00AD,Bexley,data.london,0.0,1891,37000.0
-00AE,Brent,data.london,0.0,1891,65000.0
-00AF,Bromley,data.london,0.0,1891,83000.0
-00AG,Camden,data.london,0.0,1891,370000.0
-00AH,Croydon,data.london,0.0,1891,110000.0
-00AJ,Ealing,data.london,0.0,1891,63000.0
-00AK,Enfield,data.london,0.0,1891,68000.0
-00AL,Greenwich,data.london,0.0,1891,175000.0
-,Hackney,data.london,0.0,1891,372000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1891,189000.0
-00AP,Haringey,data.london,0.0,1891,142000.0
-00AQ,Harrow,data.london,0.0,1891,15000.0
-00AR,Havering,data.london,0.0,1891,20000.0
-00AS,Hillingdon,data.london,0.0,1891,25000.0
-00AT,Hounslow,data.london,0.0,1891,68000.0
-00AU,Islington,data.london,0.0,1891,429000.0
-00AW,Kensington and Chelsea,data.london,0.0,1891,243000.0
-00AX,Kingston upon Thames,data.london,0.0,1891,45000.0
-00AY,Lambeth,data.london,0.0,1891,333000.0
-00AZ,Lewisham,data.london,0.0,1891,191000.0
-00BA,Merton,data.london,0.0,1891,41000.0
-00BB,Newham,data.london,0.0,1891,240000.0
-00BC,Redbridge,data.london,0.0,1891,31000.0
-00BD,Richmond upon Thames,data.london,0.0,1891,77000.0
-00BE,Southwark,data.london,0.0,1891,572000.0
-00BF,Sutton,data.london,0.0,1891,30000.0
-00BG,Tower Hamlets,data.london,0.0,1891,581000.0
-00BH,Waltham Forest,data.london,0.0,1891,112000.0
-00BJ,Wandsworth,data.london,0.0,1891,251000.0
-00BK,Westminster,data.london,0.0,1891,481000.0
-UKI1,Inner London,data.london,0.0,1891,4432000.0
-UKI2,Outer London,data.london,0.0,1891,1142000.0
-H,Greater London,data.london,0.0,1891,5572000.0
-,Bedfordshire,VoB,1.0,1901,
-,Berkshire,Wiki,1.0,1901,343557.0
-,Bristol,VoB,1.0,1901,
-,Buckinghamshire,VoB,1.0,1901,
-,Cambridgeshire,VoB,1.0,1901,
-,Cheshire,VoB,1.0,1901,
-,Cornwall,VoB,1.0,1901,
-,Cumbria,VoB,1.0,1901,
-,Derbyshire,VoB,1.0,1901,
-,Devon,VoB,1.0,1901,
-,Dorset,VoB,1.0,1901,
-,Durham,VoB,1.0,1901,
-,East Sussex,VoB,1.0,1901,
-,Essex,VoB,1.0,1901,
-,Gloucestershire,VoB,1.0,1901,
-,Greater Manchester,VoB,1.0,1901,
-,Hampshire,VoB,1.0,1901,
-,Herefordshire,VoB,1.0,1901,
-,Hertfordshire,VoB,1.0,1901,
-,Isle of Wight,VoB,1.0,1901,
-,Kent,VoB,1.0,1901,
-,Lancashire,VoB,1.0,1901,
-,Leicestershire,VoB,1.0,1901,
-,Lincolnshire,VoB,1.0,1901,
-,City and County of the City of London,VoB,1.0,1901,
-,Merseyside,VoB,1.0,1901,
-,Norfolk,VoB,1.0,1901,
-,Northamptonshire,VoB,1.0,1901,
-,Northumberland,VoB,1.0,1901,
-,North Yorkshire,VoB,1.0,1901,
-,Nottinghamshire,VoB,1.0,1901,
-,Oxfordshire,VoB,1.0,1901,
-,Rutland,VoB,1.0,1901,
-,Shropshire,VoB,1.0,1901,
-,Somerset,VoB,1.0,1901,
-,Suffolk,VoB,1.0,1901,
-,Surrey,VoB,1.0,1901,
-,Tyne & Wear,VoB,1.0,1901,
-,Warwickshire,VoB,1.0,1901,
-,West Midlands,VoB,1.0,1901,
-,West Sussex,VoB,1.0,1901,
-,West Yorkshire,VoB,1.0,1901,
-,Wiltshire,VoB,1.0,1901,
-,Worcestershire,VoB,1.0,1901,
-,East Riding of Yorkshire,VoB,1.0,1901,
-,South Yorkshire,VoB,1.0,1901,
-,Staffordshire,VoB,1.0,1901,
-,Aberdeenshire,VoB,1.0,1901,
-,Angus,VoB,1.0,1901,
-,City of Aberdeen,VoB,1.0,1901,
-,Caithness,VoB,1.0,1901,33870.0
-,Berwickshire,VoB,1.0,1901,30824.0
-,Ayrshire and Arran,VoB,1.0,1901,254468.0
-,Banffshire,VoB,1.0,1901,61488.0
-,Argyll and Bute,VoB,1.0,1901,
-,Clackmannan,VoB,1.0,1901,
-,City of Glasgow,VoB,1.0,1901,
-,City of Edinburgh,VoB,1.0,1901,
-,City of Dundee,VoB,1.0,1901,
-,Dumfries,VoB,1.0,1901,72571.0
-,Dunbartonshire,VoB,1.0,1901,113865.0
-,East Lothian,VoB,1.0,1901,38665.0
-,Fife,VoB,1.0,1901,218840.0
-,Inverness,VoB,1.0,1901,90104.0
-,Kincardineshire,VoB,1.0,1901,40923.0
-,Lanarkshire,VoB,1.0,1901,1339327.0
-,Midlothian,VoB,1.0,1901,
-,Moray,VoB,1.0,1901,
-,Nairn,VoB,1.0,1901,9291.0
-,Perth and Kinross,VoB,1.0,1901,
-,Renfrewshire,VoB,1.0,1901,268980.0
-,Ross and Cromarty,VoB,1.0,1901,76450.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1901,202065.0
-,Stirling and Falkirk,VoB,1.0,1901,142291.0
-,Sutherland,VoB,1.0,1901,21440.0
-,Tweeddale,VoB,1.0,1901,38422.0
-,West Lothian,VoB,1.0,1901,65708.0
-,Wigtown,VoB,1.0,1901,32685.0
-,Western Isles,VoB,1.0,1901,
-,Orkney,VoB,1.0,1901,28699.0
-,Shetland,VoB,1.0,1901,28166.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1901,39383.0
-,West Glamorgan,VoB,1.0,1901,
-,Powys,VoB,1.0,1901,
-,Gwent,VoB,1.0,1901,
-,Gwynedd,VoB,1.0,1901,
-,Dyfed,VoB,1.0,1901,
-,Northern Ireland,Wiki,1.0,1901,1236952.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1901,
-,Clwyd,VoB,1.0,1901,
-,South Glamorgan,VoB,1.0,1901,
-,Mid Glamorgan,VoB,1.0,1901,
-,Inner London — West,data.london,1.0,1901,1489000.0
-,Inner London — East,data.london,1.0,1901,3215000.0
-,Outer London — East and North East,data.london,1.0,1901,686000.0
-,Outer London — South,data.london,1.0,1901,399000.0
-,Outer London — West and North West,data.london,,1901,524000.0
-,Swansea,VoB,0.0,1901,
-,Neath Port Talbot,VoB,0.0,1901,
-,Blaenau Gwent,VoB,0.0,1901,
-,Caerphilly,VoB,0.0,1901,
-,Monmouthshire,VoB,0.0,1901,
-,Newport,VoB,0.0,1901,
-,Torfaen,VoB,0.0,1901,
-,Flintshire,VoB,0.0,1901,
-,Wrexham,VoB,0.0,1901,
-,Denbighshire,VoB,0.0,1901,
-,Vale of Glamorgan,VoB,0.0,1901,866250.0
-,Cardiff,VoB,0.0,1901,
-,Bridgend,VoB,0.0,1901,
-,Merthyr Tydfil,VoB,0.0,1901,
-,Rhondda; Cynon; Taff,VoB,0.0,1901,
-,Carmarthenshire,VoB,0.0,1901,
-,Ceredigion,VoB,0.0,1901,
-,Pembrokeshire,VoB,0.0,1901,
-,Halton,VoB,0.0,1901,
-,Warrington,VoB,0.0,1901,
-,Cheshire east,VoB,0.0,1901,
-,Cheshire West and Chester,VoB,0.0,1901,
-,Roxburghshire,VoB,0.0,1901,48804.0
-,Selkirkshire,VoB,0.0,1901,23356.0
-,Berwickshire,VoB,0.0,1901,30824.0
-,Midlothian,VoB,0.0,1901,488796.0
-,Peebles,VoB,0.0,1901,15066.0
-00AA,City of London,data.london,0.0,1901,27000.0
-00AB,Barking and Dagenham,data.london,0.0,1901,27000.0
-00AC,Barnet,data.london,0.0,1901,76000.0
-00AD,Bexley,data.london,0.0,1901,54000.0
-00AE,Brent,data.london,0.0,1901,120000.0
-00AF,Bromley,data.london,0.0,1901,100000.0
-00AG,Camden,data.london,0.0,1901,377000.0
-00AH,Croydon,data.london,0.0,1901,143000.0
-00AJ,Ealing,data.london,0.0,1901,95000.0
-00AK,Enfield,data.london,0.0,1901,105000.0
-00AL,Greenwich,data.london,0.0,1901,210000.0
-,Hackney,data.london,0.0,1901,389000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1901,250000.0
-00AP,Haringey,data.london,0.0,1901,209000.0
-00AQ,Harrow,data.london,0.0,1901,24000.0
-00AR,Havering,data.london,0.0,1901,26000.0
-00AS,Hillingdon,data.london,0.0,1901,29000.0
-00AT,Hounslow,data.london,0.0,1901,85000.0
-00AU,Islington,data.london,0.0,1901,436000.0
-00AW,Kensington and Chelsea,data.london,0.0,1901,250000.0
-00AX,Kingston upon Thames,data.london,0.0,1901,56000.0
-00AY,Lambeth,data.london,0.0,1901,384000.0
-00AZ,Lewisham,data.london,0.0,1901,238000.0
-00BA,Merton,data.london,0.0,1901,62000.0
-00BB,Newham,data.london,0.0,1901,366000.0
-00BC,Redbridge,data.london,0.0,1901,66000.0
-00BD,Richmond upon Thames,data.london,0.0,1901,95000.0
-00BE,Southwark,data.london,0.0,1901,596000.0
-00BF,Sutton,data.london,0.0,1901,38000.0
-00BG,Tower Hamlets,data.london,0.0,1901,597000.0
-00BH,Waltham Forest,data.london,0.0,1901,198000.0
-00BJ,Wandsworth,data.london,0.0,1901,319000.0
-00BK,Westminster,data.london,0.0,1901,460000.0
-UKI1,Inner London,data.london,0.0,1901,4898000.0
-UKI2,Outer London,data.london,0.0,1901,1609000.0
-H,Greater London,data.london,0.0,1901,6510000.0
-,Bedfordshire,VoB,1.0,1911,67133.0
-,Berkshire,Wiki,1.0,1911,364179.0
-,Bristol,VoB,1.0,1911,347971.0
-,Buckinghamshire,VoB,1.0,1911,152209.0
-,Cambridgeshire,VoB,1.0,1911,246924.0
-,Cheshire,VoB,1.0,1911,531352.0
-,Cornwall,VoB,1.0,1911,326626.0
-,Cumbria,VoB,1.0,1911,439645.0
-,Derbyshire,VoB,1.0,1911,540356.0
-,Devon,VoB,1.0,1911,428052.0
-,Dorset,VoB,1.0,1911,190553.0
-,Durham,VoB,1.0,1911,492580.0
-,East Sussex,VoB,1.0,1911,260683.0
-,Essex,VoB,1.0,1911,374637.0
-,Gloucestershire,VoB,1.0,1911,313990.0
-,Greater Manchester,VoB,1.0,1911,2617248.0
-,Hampshire,VoB,1.0,1911,385914.0
-,Herefordshire,VoB,1.0,1911,114980.0
-,Hertfordshire,VoB,1.0,1911,290814.0
-,Isle of Wight,VoB,1.0,1911,88186.0
-,Kent,VoB,1.0,1911,731316.0
-,Lancashire,VoB,1.0,1911,879719.0
-,Leicestershire,VoB,1.0,1911,246695.0
-,Lincolnshire,VoB,1.0,1911,387105.0
-,City and County of the City of London,VoB,1.0,1911,4986291.0
-,Merseyside,VoB,1.0,1911,1379704.0
-,Norfolk,VoB,1.0,1911,501589.0
-,Northamptonshire,VoB,1.0,1911,304936.0
-,Northumberland,VoB,1.0,1911,250755.0
-,North Yorkshire,VoB,1.0,1911,371049.0
-,Nottinghamshire,VoB,1.0,1911,338665.0
-,Oxfordshire,VoB,1.0,1911,238507.0
-,Rutland,VoB,1.0,1911,20693.0
-,Shropshire,VoB,1.0,1911,189067.0
-,Somerset,VoB,1.0,1911,280912.0
-,Suffolk,VoB,1.0,1911,390662.0
-,Surrey,VoB,1.0,1911,394499.0
-,Tyne & Wear,VoB,1.0,1911,1104489.0
-,Warwickshire,VoB,1.0,1911,242823.0
-,West Midlands,VoB,1.0,1911,1735849.0
-,West Sussex,VoB,1.0,1911,220315.0
-,West Yorkshire,VoB,1.0,1911,1848762.0
-,Wiltshire,VoB,1.0,1911,224638.0
-,Worcestershire,VoB,1.0,1911,262854.0
-,East Riding of Yorkshire,VoB,1.0,1911,152242.0
-,South Yorkshire,VoB,1.0,1911,968802.0
-,Staffordshire,VoB,1.0,1911,416726.0
-,Aberdeenshire,VoB,1.0,1911,196155.0
-,Angus,VoB,1.0,1911,113084.0
-,City of Aberdeen,VoB,1.0,1911,180075.0
-,Caithness,VoB,1.0,1911,32010.0
-,Berwickshire,VoB,1.0,1911,29643.0
-,Ayrshire and Arran,VoB,1.0,1911,268337.0
-,Banffshire,VoB,1.0,1911,61402.0
-,Argyll and Bute,VoB,1.0,1911,101925.0
-,Clackmannan,VoB,1.0,1911,31411.0
-,City of Glasgow,VoB,1.0,1911,1004268.0
-,City of Edinburgh,VoB,1.0,1911,436456.0
-,City of Dundee,VoB,1.0,1911,167310.0
-,Dumfries,VoB,1.0,1911,72825.0
-,Dunbartonshire,VoB,1.0,1911,139831.0
-,East Lothian,VoB,1.0,1911,43254.0
-,Fife,VoB,1.0,1911,267739.0
-,Inverness,VoB,1.0,1911,87272.0
-,Kincardineshire,VoB,1.0,1911,29580.0
-,Lanarkshire,VoB,1.0,1911,662575.0
-,Midlothian,VoB,1.0,1911,43377.0
-,Moray,VoB,1.0,1911,79203.0
-,Nairn,VoB,1.0,1911,9319.0
-,Perth and Kinross,VoB,1.0,1911,117057.0
-,Renfrewshire,VoB,1.0,1911,314515.0
-,Ross and Cromarty,VoB,1.0,1911,77364.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1911,126040.75
-,Stirling and Falkirk,VoB,1.0,1911,160991.0
-,Sutherland,VoB,1.0,1911,20179.0
-,Tweeddale,VoB,1.0,1911,39859.0
-,West Lothian,VoB,1.0,1911,80155.0
-,Wigtown,VoB,1.0,1911,31998.0
-,Western Isles,VoB,1.0,1911,46732.0
-,Orkney,VoB,1.0,1911,25897.0
-,Shetland,VoB,1.0,1911,27911.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1911,38367.0
-,West Glamorgan,VoB,1.0,1911,302932.0
-,Powys,VoB,1.0,1911,121254.0
-,Gwent,VoB,1.0,1911,395258.0
-,Gwynedd,VoB,1.0,1911,128227.0
-,Dyfed,VoB,1.0,1911,310958.0
-,Northern Ireland,Wiki,1.0,1911,1250531.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1911,
-,Clwyd,VoB,1.0,1911,207385.0
-,South Glamorgan,VoB,1.0,1911,1340303.0
-,Mid Glamorgan,VoB,1.0,1911,559332.0
-,Inner London — West,data.london,1.0,1911,1506000.0
-,Inner London — East,data.london,1.0,1911,3325000.0
-,Outer London — East and North East,data.london,1.0,1911,871000.0
-,Outer London — South,data.london,1.0,1911,527000.0
-,Outer London — West and North West,data.london,,1911,762000.0
-,Swansea,VoB,0.0,1911,177354.0
-,Neath Port Talbot,VoB,0.0,1911,125578.0
-,Blaenau Gwent,VoB,0.0,1911,110202.0
-,Caerphilly,VoB,0.0,1911,141598.0
-,Monmouthshire,VoB,0.0,1911,50321.0
-,Newport,VoB,0.0,1911,96974.0
-,Torfaen,VoB,0.0,1911,66962.0
-,Flintshire,VoB,0.0,1911,68822.0
-,Wrexham,VoB,0.0,1911,89788.0
-,Denbighshire,VoB,0.0,1911,48775.0
-,Vale of Glamorgan,VoB,0.0,1911,1130668.0
-,Cardiff,VoB,0.0,1911,209635.0
-,Bridgend,VoB,0.0,1911,84860.0
-,Merthyr Tydfil,VoB,0.0,1911,89486.0
-,Rhondda; Cynon; Taff,VoB,0.0,1911,314187.0
-,Carmarthenshire,VoB,0.0,1911,160671.0
-,Ceredigion,VoB,0.0,1911,59344.0
-,Pembrokeshire,VoB,0.0,1911,90943.0
-,Halton,VoB,0.0,1911,56656.0
-,Warrington,VoB,0.0,1911,110165.0
-,Cheshire east,VoB,0.0,1911,203041.0
-,Cheshire West and Chester,VoB,0.0,1911,161490.0
-,Roxburghshire,VoB,0.0,1911,47192.0
-,Selkirkshire,VoB,0.0,1911,24601.0
-,Berwickshire,VoB,0.0,1911,29643.0
-,Midlothian,VoB,0.0,1911,187348.0
-,Peebles,VoB,0.0,1911,15258.0
-00AA,City of London,data.london,0.0,1911,20000.0
-00AB,Barking and Dagenham,data.london,0.0,1911,39000.0
-00AC,Barnet,data.london,0.0,1911,118000.0
-00AD,Bexley,data.london,0.0,1911,60000.0
-00AE,Brent,data.london,0.0,1911,166000.0
-00AF,Bromley,data.london,0.0,1911,116000.0
-00AG,Camden,data.london,0.0,1911,353000.0
-00AH,Croydon,data.london,0.0,1911,190000.0
-00AJ,Ealing,data.london,0.0,1911,165000.0
-00AK,Enfield,data.london,0.0,1911,155000.0
-00AL,Greenwich,data.london,0.0,1911,213000.0
-,Hackney,data.london,0.0,1911,385000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1911,275000.0
-00AP,Haringey,data.london,0.0,1911,271000.0
-00AQ,Harrow,data.london,0.0,1911,42000.0
-00AR,Havering,data.london,0.0,1911,33000.0
-00AS,Hillingdon,data.london,0.0,1911,38000.0
-00AT,Hounslow,data.london,0.0,1911,109000.0
-00AU,Islington,data.london,0.0,1911,415000.0
-00AW,Kensington and Chelsea,data.london,0.0,1911,239000.0
-00AX,Kingston upon Thames,data.london,0.0,1911,68000.0
-00AY,Lambeth,data.london,0.0,1911,408000.0
-00AZ,Lewisham,data.london,0.0,1911,270000.0
-00BA,Merton,data.london,0.0,1911,99000.0
-00BB,Newham,data.london,0.0,1911,427000.0
-00BC,Redbridge,data.london,0.0,1911,113000.0
-00BD,Richmond upon Thames,data.london,0.0,1911,124000.0
-00BE,Southwark,data.london,0.0,1911,579000.0
-00BF,Sutton,data.london,0.0,1911,54000.0
-00BG,Tower Hamlets,data.london,0.0,1911,570000.0
-00BH,Waltham Forest,data.london,0.0,1911,258000.0
-00BJ,Wandsworth,data.london,0.0,1911,369000.0
-00BK,Westminster,data.london,0.0,1911,421000.0
-UKI1,Inner London,data.london,0.0,1911,5002000.0
-UKI2,Outer London,data.london,0.0,1911,2160000.0
-H,Greater London,data.london,0.0,1911,7162000.0
-,Bedfordshire,VoB,1.0,1921,68881.0
-,Berkshire,Wiki,1.0,1921,379157.0
-,Bristol,VoB,1.0,1921,367620.0
-,Buckinghamshire,VoB,1.0,1921,165948.0
-,Cambridgeshire,VoB,1.0,1921,250532.0
-,Cheshire,VoB,1.0,1921,550008.0
-,Cornwall,VoB,1.0,1921,319562.0
-,Cumbria,VoB,1.0,1921,466340.0
-,Derbyshire,VoB,1.0,1921,561843.0
-,Devon,VoB,1.0,1921,431669.0
-,Dorset,VoB,1.0,1921,190537.0
-,Durham,VoB,1.0,1921,529982.0
-,East Sussex,VoB,1.0,1921,286158.0
-,Essex,VoB,1.0,1921,395001.0
-,Gloucestershire,VoB,1.0,1921,313548.0
-,Greater Manchester,VoB,1.0,1921,2652944.0
-,Hampshire,VoB,1.0,1921,391804.0
-,Herefordshire,VoB,1.0,1921,113893.0
-,Hertfordshire,VoB,1.0,1921,311634.0
-,Isle of Wight,VoB,1.0,1921,94666.0
-,Kent,VoB,1.0,1921,799342.0
-,Lancashire,VoB,1.0,1921,893368.0
-,Leicestershire,VoB,1.0,1921,256671.0
-,Lincolnshire,VoB,1.0,1921,398805.0
-,City and County of the City of London,VoB,1.0,1921,4969917.0
-,Merseyside,VoB,1.0,1921,1498542.0
-,Norfolk,VoB,1.0,1921,506847.0
-,Northamptonshire,VoB,1.0,1921,303554.0
-,Northumberland,VoB,1.0,1921,273244.0
-,North Yorkshire,VoB,1.0,1921,391373.0
-,Nottinghamshire,VoB,1.0,1921,380765.0
-,Oxfordshire,VoB,1.0,1921,238940.0
-,Rutland,VoB,1.0,1921,18789.0
-,Shropshire,VoB,1.0,1921,187316.0
-,Somerset,VoB,1.0,1921,277465.0
-,Suffolk,VoB,1.0,1921,396613.0
-,Surrey,VoB,1.0,1921,424078.0
-,Tyne & Wear,VoB,1.0,1921,1179780.0
-,Warwickshire,VoB,1.0,1921,265713.0
-,West Midlands,VoB,1.0,1921,1924744.0
-,West Sussex,VoB,1.0,1921,241258.0
-,West Yorkshire,VoB,1.0,1921,1872355.0
-,Wiltshire,VoB,1.0,1921,222547.0
-,Worcestershire,VoB,1.0,1921,254612.0
-,East Riding of Yorkshire,VoB,1.0,1921,166113.0
-,South Yorkshire,VoB,1.0,1921,1073193.0
-,Staffordshire,VoB,1.0,1921,436723.0
-,Aberdeenshire,VoB,1.0,1921,197032.0
-,Angus,VoB,1.0,1921,1021200.0
-,City of Aberdeen,VoB,1.0,1921,166729.0
-,Caithness,VoB,1.0,1921,28285.0
-,Berwickshire,VoB,1.0,1921,28246.0
-,Ayrshire and Arran,VoB,1.0,1921,299273.0
-,Banffshire,VoB,1.0,1921,57298.0
-,Argyll and Bute,VoB,1.0,1921,121836.0
-,Clackmannan,VoB,1.0,1921,33074.0
-,City of Glasgow,VoB,1.0,1921,1049207.0
-,City of Edinburgh,VoB,1.0,1921,420880.0
-,City of Dundee,VoB,1.0,1921,167332.0
-,Dumfries,VoB,1.0,1921,75370.0
-,Dunbartonshire,VoB,1.0,1921,150861.0
-,East Lothian,VoB,1.0,1921,47487.0
-,Fife,VoB,1.0,1921,292925.0
-,Inverness,VoB,1.0,1921,82455.0
-,Kincardineshire,VoB,1.0,1921,30440.0
-,Lanarkshire,VoB,1.0,1921,505268.0
-,Midlothian,VoB,1.0,1921,51501.0
-,Moray,VoB,1.0,1921,74709.0
-,Nairn,VoB,1.0,1921,8790.0
-,Perth and Kinross,VoB,1.0,1921,118330.0
-,Renfrewshire,VoB,1.0,1921,298904.0
-,Ross and Cromarty,VoB,1.0,1921,70818.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1921,96185.75
-,Stirling and Falkirk,VoB,1.0,1921,161719.0
-,Sutherland,VoB,1.0,1921,17802.0
-,Tweeddale,VoB,1.0,1921,37939.0
-,West Lothian,VoB,1.0,1921,83962.0
-,Wigtown,VoB,1.0,1921,30783.0
-,Western Isles,VoB,1.0,1921,44177.0
-,Orkney,VoB,1.0,1921,24111.0
-,Shetland,VoB,1.0,1921,25520.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1921,37155.0
-,West Glamorgan,VoB,1.0,1921,343521.0
-,Powys,VoB,1.0,1921,121050.0
-,Gwent,VoB,1.0,1921,443946.0
-,Gwynedd,VoB,1.0,1921,121861.0
-,Dyfed,VoB,1.0,1921,328911.0
-,Northern Ireland,Wiki,1.0,1921,
-,Isle of Man,Isle-of-Man & Wiki,1.0,1921,
-,Clwyd,VoB,1.0,1921,224744.0
-,South Glamorgan,VoB,1.0,1921,1487685.0
-,Mid Glamorgan,VoB,1.0,1921,621763.0
-,Inner London — West,data.london,1.0,1921,1487000.0
-,Inner London — East,data.london,1.0,1921,3325000.0
-,Outer London — East and North East,data.london,1.0,1921,953000.0
-,Outer London — South,data.london,1.0,1921,588000.0
-,Outer London — West and North West,data.london,,1921,867000.0
-,Swansea,VoB,0.0,1921,195747.0
-,Neath Port Talbot,VoB,0.0,1921,147774.0
-,Blaenau Gwent,VoB,0.0,1921,121289.0
-,Caerphilly,VoB,0.0,1921,174862.0
-,Monmouthshire,VoB,0.0,1921,55046.0
-,Newport,VoB,0.0,1921,108146.0
-,Torfaen,VoB,0.0,1921,72034.0
-,Flintshire,VoB,0.0,1921,74807.0
-,Wrexham,VoB,0.0,1921,92898.0
-,Denbighshire,VoB,0.0,1921,57039.0
-,Vale of Glamorgan,VoB,0.0,1921,1252481.0
-,Cardiff,VoB,0.0,1921,235204.0
-,Bridgend,VoB,0.0,1921,101646.0
-,Merthyr Tydfil,VoB,0.0,1921,89923.0
-,Rhondda; Cynon; Taff,VoB,0.0,1921,342763.0
-,Carmarthenshire,VoB,0.0,1921,175603.0
-,Ceredigion,VoB,0.0,1921,60349.0
-,Pembrokeshire,VoB,0.0,1921,92959.0
-,Halton,VoB,0.0,1921,61977.0
-,Warrington,VoB,0.0,1921,113862.0
-,Cheshire east,VoB,0.0,1921,204234.0
-,Cheshire West and Chester,VoB,0.0,1921,169935.0
-,Roxburghshire,VoB,0.0,1921,44989.0
-,Selkirkshire,VoB,0.0,1921,22607.0
-,Berwickshire,VoB,0.0,1921,28246.0
-,Midlothian,VoB,0.0,1921,86113.0
-,Peebles,VoB,0.0,1921,15332.0
-00AA,City of London,data.london,0.0,1921,14000.0
-00AB,Barking and Dagenham,data.london,0.0,1921,44000.0
-00AC,Barnet,data.london,0.0,1921,147000.0
-00AD,Bexley,data.london,0.0,1921,76000.0
-00AE,Brent,data.london,0.0,1921,184000.0
-00AF,Bromley,data.london,0.0,1921,127000.0
-00AG,Camden,data.london,0.0,1921,341000.0
-00AH,Croydon,data.london,0.0,1921,213000.0
-00AJ,Ealing,data.london,0.0,1921,181000.0
-00AK,Enfield,data.london,0.0,1921,167000.0
-00AL,Greenwich,data.london,0.0,1921,237000.0
-,Hackney,data.london,0.0,1921,379000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1921,288000.0
-00AP,Haringey,data.london,0.0,1921,285000.0
-00AQ,Harrow,data.london,0.0,1921,49000.0
-00AR,Havering,data.london,0.0,1921,38000.0
-00AS,Hillingdon,data.london,0.0,1921,48000.0
-00AT,Hounslow,data.london,0.0,1921,117000.0
-00AU,Islington,data.london,0.0,1921,407000.0
-00AW,Kensington and Chelsea,data.london,0.0,1921,240000.0
-00AX,Kingston upon Thames,data.london,0.0,1921,74000.0
-00AY,Lambeth,data.london,0.0,1921,419000.0
-00AZ,Lewisham,data.london,0.0,1921,287000.0
-00BA,Merton,data.london,0.0,1921,114000.0
-00BB,Newham,data.london,0.0,1921,448000.0
-00BC,Redbridge,data.london,0.0,1921,124000.0
-00BD,Richmond upon Thames,data.london,0.0,1921,141000.0
-00BE,Southwark,data.london,0.0,1921,571000.0
-00BF,Sutton,data.london,0.0,1921,60000.0
-00BG,Tower Hamlets,data.london,0.0,1921,529000.0
-00BH,Waltham Forest,data.london,0.0,1921,267000.0
-00BJ,Wandsworth,data.london,0.0,1921,380000.0
-00BK,Westminster,data.london,0.0,1921,390000.0
-UKI1,Inner London,data.london,0.0,1921,4978000.0
-UKI2,Outer London,data.london,0.0,1921,2408000.0
-H,Greater London,data.london,0.0,1921,7387000.0
-,Bedfordshire,VoB,1.0,1931,70145.0
-,Berkshire,Wiki,1.0,1931,395717.0
-,Bristol,VoB,1.0,1931,382574.0
-,Buckinghamshire,VoB,1.0,1931,190597.0
-,Cambridgeshire,VoB,1.0,1931,263656.0
-,Cheshire,VoB,1.0,1931,584227.0
-,Cornwall,VoB,1.0,1931,316799.0
-,Cumbria,VoB,1.0,1931,441841.0
-,Derbyshire,VoB,1.0,1931,587807.0
-,Devon,VoB,1.0,1931,442600.0
-,Dorset,VoB,1.0,1931,197731.0
-,Durham,VoB,1.0,1931,518675.0
-,East Sussex,VoB,1.0,1931,290424.0
-,Essex,VoB,1.0,1931,455642.0
-,Gloucestershire,VoB,1.0,1931,316190.0
-,Greater Manchester,VoB,1.0,1931,2706596.0
-,Hampshire,VoB,1.0,1931,446324.0
-,Herefordshire,VoB,1.0,1931,112457.0
-,Hertfordshire,VoB,1.0,1931,377916.0
-,Isle of Wight,VoB,1.0,1931,88454.0
-,Kent,VoB,1.0,1931,818862.0
-,Lancashire,VoB,1.0,1931,905844.0
-,Leicestershire,VoB,1.0,1931,290444.0
-,Lincolnshire,VoB,1.0,1931,404519.0
-,City and County of the City of London,VoB,1.0,1931,4875736.0
-,Merseyside,VoB,1.0,1931,1585983.0
-,Norfolk,VoB,1.0,1931,507749.0
-,Northamptonshire,VoB,1.0,1931,310332.0
-,Northumberland,VoB,1.0,1931,263922.0
-,North Yorkshire,VoB,1.0,1931,394907.0
-,Nottinghamshire,VoB,1.0,1931,438142.0
-,Oxfordshire,VoB,1.0,1931,261286.0
-,Rutland,VoB,1.0,1931,18223.0
-,Shropshire,VoB,1.0,1931,188287.0
-,Somerset,VoB,1.0,1931,284350.0
-,Suffolk,VoB,1.0,1931,397590.0
-,Surrey,VoB,1.0,1931,511579.0
-,Tyne & Wear,VoB,1.0,1931,1199121.0
-,Warwickshire,VoB,1.0,1931,283608.0
-,West Midlands,VoB,1.0,1931,2109967.0
-,West Sussex,VoB,1.0,1931,271939.0
-,West Yorkshire,VoB,1.0,1931,1934825.0
-,Wiltshire,VoB,1.0,1931,229167.0
-,Worcestershire,VoB,1.0,1931,262611.0
-,East Riding of Yorkshire,VoB,1.0,1931,170825.0
-,South Yorkshire,VoB,1.0,1931,1178520.0
-,Staffordshire,VoB,1.0,1931,456403.0
-,Aberdeenshire,VoB,1.0,1931,185017.0
-,Angus,VoB,1.0,1931,94172.0
-,City of Aberdeen,VoB,1.0,1931,175323.0
-,Caithness,VoB,1.0,1931,25656.0
-,Berwickshire,VoB,1.0,1931,26612.0
-,Ayrshire and Arran,VoB,1.0,1931,285217.0
-,Banffshire,VoB,1.0,1931,54907.0
-,Argyll and Bute,VoB,1.0,1931,97961.0
-,Clackmannan,VoB,1.0,1931,32417.0
-,City of Glasgow,VoB,1.0,1931,1088083.0
-,City of Edinburgh,VoB,1.0,1931,438297.0
-,City of Dundee,VoB,1.0,1931,174511.0
-,Dumfries,VoB,1.0,1931,81047.0
-,Dunbartonshire,VoB,1.0,1931,147744.0
-,East Lothian,VoB,1.0,1931,47338.0
-,Fife,VoB,1.0,1931,276368.0
-,Inverness,VoB,1.0,1931,82108.0
-,Kincardineshire,VoB,1.0,1931,27442.0
-,Lanarkshire,VoB,1.0,1931,497586.0
-,Midlothian,VoB,1.0,1931,54663.0
-,Moray,VoB,1.0,1931,72585.0
-,Nairn,VoB,1.0,1931,8294.0
-,Perth and Kinross,VoB,1.0,1931,114275.0
-,Renfrewshire,VoB,1.0,1931,288586.0
-,Ross and Cromarty,VoB,1.0,1931,62799.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1931,96870.5
-,Stirling and Falkirk,VoB,1.0,1931,166447.0
-,Sutherland,VoB,1.0,1931,16101.0
-,Tweeddale,VoB,1.0,1931,37659.0
-,West Lothian,VoB,1.0,1931,81431.0
-,Wigtown,VoB,1.0,1931,29331.0
-,Western Isles,VoB,1.0,1931,38986.0
-,Orkney,VoB,1.0,1931,22077.0
-,Shetland,VoB,1.0,1931,21421.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1931,30341.0
-,West Glamorgan,VoB,1.0,1931,357855.0
-,Powys,VoB,1.0,1931,114370.0
-,Gwent,VoB,1.0,1931,423383.0
-,Gwynedd,VoB,1.0,1931,118436.0
-,Dyfed,VoB,1.0,1931,322486.0
-,Northern Ireland,Wiki,1.0,1931,
-,Isle of Man,Isle-of-Man & Wiki,1.0,1931,51000.0
-,Clwyd,VoB,1.0,1931,231469.0
-,South Glamorgan,VoB,1.0,1931,1472257.0
-,Mid Glamorgan,VoB,1.0,1931,571233.0
-,Inner London — West,data.london,1.0,1931,1476000.0
-,Inner London — East,data.london,1.0,1931,3275000.0
-,Outer London — East and North East,data.london,1.0,1931,1217000.0
-,Outer London — South,data.london,1.0,1931,790000.0
-,Outer London — West and North West,data.london,,1931,1206000.0
-,Swansea,VoB,0.0,1931,205284.0
-,Neath Port Talbot,VoB,0.0,1931,152571.0
-,Blaenau Gwent,VoB,0.0,1931,105014.0
-,Caerphilly,VoB,0.0,1931,171798.0
-,Monmouthshire,VoB,0.0,1931,52037.0
-,Newport,VoB,0.0,1931,111279.0
-,Torfaen,VoB,0.0,1931,69154.0
-,Flintshire,VoB,0.0,1931,81118.0
-,Wrexham,VoB,0.0,1931,93941.0
-,Denbighshire,VoB,0.0,1931,56410.0
-,Vale of Glamorgan,VoB,0.0,1931,1225717.0
-,Cardiff,VoB,0.0,1931,246540.0
-,Bridgend,VoB,0.0,1931,97779.0
-,Merthyr Tydfil,VoB,0.0,1931,80240.0
-,Rhondda; Cynon; Taff,VoB,0.0,1931,307315.0
-,Carmarthenshire,VoB,0.0,1931,179652.0
-,Ceredigion,VoB,0.0,1931,54635.0
-,Pembrokeshire,VoB,0.0,1931,88199.0
-,Halton,VoB,0.0,1931,64979.0
-,Warrington,VoB,0.0,1931,122487.0
-,Cheshire east,VoB,0.0,1931,212903.0
-,Cheshire West and Chester,VoB,0.0,1931,183858.0
-,Roxburghshire,VoB,0.0,1931,45788.0
-,Selkirkshire,VoB,0.0,1931,22608.0
-,Berwickshire,VoB,0.0,1931,26612.0
-,Midlothian,VoB,0.0,1931,87286.0
-,Peebles,VoB,0.0,1931,15051.0
-00AA,City of London,data.london,0.0,1931,11000.0
-00AB,Barking and Dagenham,data.london,0.0,1931,138000.0
-00AC,Barnet,data.london,0.0,1931,231000.0
-00AD,Bexley,data.london,0.0,1931,95000.0
-00AE,Brent,data.london,0.0,1931,251000.0
-00AF,Bromley,data.london,0.0,1931,165000.0
-00AG,Camden,data.london,0.0,1931,326000.0
-00AH,Croydon,data.london,0.0,1931,271000.0
-00AJ,Ealing,data.london,0.0,1931,226000.0
-00AK,Enfield,data.london,0.0,1931,201000.0
-00AL,Greenwich,data.london,0.0,1931,244000.0
-,Hackney,data.london,0.0,1931,364000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1931,286000.0
-00AP,Haringey,data.london,0.0,1931,307000.0
-00AQ,Harrow,data.london,0.0,1931,97000.0
-00AR,Havering,data.london,0.0,1931,77000.0
-00AS,Hillingdon,data.london,0.0,1931,84000.0
-00AT,Hounslow,data.london,0.0,1931,156000.0
-00AU,Islington,data.london,0.0,1931,392000.0
-00AW,Kensington and Chelsea,data.london,0.0,1931,240000.0
-00AX,Kingston upon Thames,data.london,0.0,1931,93000.0
-00AY,Lambeth,data.london,0.0,1931,421000.0
-00AZ,Lewisham,data.london,0.0,1931,327000.0
-00BA,Merton,data.london,0.0,1931,158000.0
-00BB,Newham,data.london,0.0,1931,440000.0
-00BC,Redbridge,data.london,0.0,1931,179000.0
-00BD,Richmond upon Thames,data.london,0.0,1931,161000.0
-00BE,Southwark,data.london,0.0,1931,535000.0
-00BF,Sutton,data.london,0.0,1931,103000.0
-00BG,Tower Hamlets,data.london,0.0,1931,489000.0
-00BH,Waltham Forest,data.london,0.0,1931,283000.0
-00BJ,Wandsworth,data.london,0.0,1931,388000.0
-00BK,Westminster,data.london,0.0,1931,372000.0
-UKI1,Inner London,data.london,0.0,1931,4898000.0
-UKI2,Outer London,data.london,0.0,1931,3213000.0
-H,Greater London,data.london,0.0,1931,8110000.0
-,Bedfordshire,VoB,1.0,1941,
-,Berkshire,Wiki,1.0,1941,431335.0
-,Bristol,VoB,1.0,1941,
-,Buckinghamshire,VoB,1.0,1941,
-,Cambridgeshire,VoB,1.0,1941,
-,Cheshire,VoB,1.0,1941,
-,Cornwall,VoB,1.0,1941,
-,Cumbria,VoB,1.0,1941,
-,Derbyshire,VoB,1.0,1941,
-,Devon,VoB,1.0,1941,
-,Dorset,VoB,1.0,1941,
-,Durham,VoB,1.0,1941,
-,East Sussex,VoB,1.0,1941,
-,Essex,VoB,1.0,1941,
-,Gloucestershire,VoB,1.0,1941,
-,Greater Manchester,VoB,1.0,1941,
-,Hampshire,VoB,1.0,1941,
-,Herefordshire,VoB,1.0,1941,
-,Hertfordshire,VoB,1.0,1941,
-,Isle of Wight,VoB,1.0,1941,
-,Kent,VoB,1.0,1941,
-,Lancashire,VoB,1.0,1941,
-,Leicestershire,VoB,1.0,1941,
-,Lincolnshire,VoB,1.0,1941,
-,City and County of the City of London,VoB,1.0,1941,
-,Merseyside,VoB,1.0,1941,
-,Norfolk,VoB,1.0,1941,
-,Northamptonshire,VoB,1.0,1941,
-,Northumberland,VoB,1.0,1941,
-,North Yorkshire,VoB,1.0,1941,
-,Nottinghamshire,VoB,1.0,1941,
-,Oxfordshire,VoB,1.0,1941,
-,Rutland,VoB,1.0,1941,
-,Shropshire,VoB,1.0,1941,
-,Somerset,VoB,1.0,1941,
-,Suffolk,VoB,1.0,1941,
-,Surrey,VoB,1.0,1941,
-,Tyne & Wear,VoB,1.0,1941,
-,Warwickshire,VoB,1.0,1941,
-,West Midlands,VoB,1.0,1941,
-,West Sussex,VoB,1.0,1941,
-,West Yorkshire,VoB,1.0,1941,
-,Wiltshire,VoB,1.0,1941,
-,Worcestershire,VoB,1.0,1941,
-,East Riding of Yorkshire,VoB,1.0,1941,
-,South Yorkshire,VoB,1.0,1941,
-,Staffordshire,VoB,1.0,1941,
-,Aberdeenshire,VoB,1.0,1941,182720.0
-,Angus,VoB,1.0,1941,97375.0
-,City of Aberdeen,VoB,1.0,1941,191400.0
-,Caithness,VoB,1.0,1941,
-,Berwickshire,VoB,1.0,1941,
-,Ayrshire and Arran,VoB,1.0,1941,
-,Banffshire,VoB,1.0,1941,
-,Argyll and Bute,VoB,1.0,1941,
-,Clackmannan,VoB,1.0,1941,
-,City of Glasgow,VoB,1.0,1941,
-,City of Edinburgh,VoB,1.0,1941,
-,City of Dundee,VoB,1.0,1941,
-,Dumfries,VoB,1.0,1941,
-,Dunbartonshire,VoB,1.0,1941,
-,East Lothian,VoB,1.0,1941,
-,Fife,VoB,1.0,1941,
-,Inverness,VoB,1.0,1941,
-,Kincardineshire,VoB,1.0,1941,
-,Lanarkshire,VoB,1.0,1941,
-,Midlothian,VoB,1.0,1941,
-,Moray,VoB,1.0,1941,
-,Nairn,VoB,1.0,1941,
-,Perth and Kinross,VoB,1.0,1941,
-,Renfrewshire,VoB,1.0,1941,
-,Ross and Cromarty,VoB,1.0,1941,
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1941,
-,Stirling and Falkirk,VoB,1.0,1941,
-,Sutherland,VoB,1.0,1941,
-,Tweeddale,VoB,1.0,1941,
-,West Lothian,VoB,1.0,1941,
-,Wigtown,VoB,1.0,1941,
-,Western Isles,VoB,1.0,1941,
-,Orkney,VoB,1.0,1941,
-,Shetland,VoB,1.0,1941,
-,The Stewartry of Kirkcudbright,VoB,1.0,1941,
-,West Glamorgan,VoB,1.0,1941,
-,Powys,VoB,1.0,1941,
-,Gwent,VoB,1.0,1941,
-,Gwynedd,VoB,1.0,1941,
-,Dyfed,VoB,1.0,1941,
-,Northern Ireland,Wiki,1.0,1941,
-,Isle of Man,Isle-of-Man & Wiki,1.0,1941,53000.0
-,Clwyd,VoB,1.0,1941,
-,South Glamorgan,VoB,1.0,1941,
-,Mid Glamorgan,VoB,1.0,1941,
-,Inner London — West,data.london,1.0,1941,1403000.0
-,Inner London — East,data.london,1.0,1941,2939000.0
-,Outer London — East and North East,data.london,1.0,1941,1535000.0
-,Outer London — South,data.london,1.0,1941,1027000.0
-,Outer London — West and North West,data.london,,1941,1614000.0
-,Swansea,VoB,0.0,1941,
-,Neath Port Talbot,VoB,0.0,1941,
-,Blaenau Gwent,VoB,0.0,1941,
-,Caerphilly,VoB,0.0,1941,
-,Monmouthshire,VoB,0.0,1941,
-,Newport,VoB,0.0,1941,
-,Torfaen,VoB,0.0,1941,
-,Flintshire,VoB,0.0,1941,
-,Wrexham,VoB,0.0,1941,
-,Denbighshire,VoB,0.0,1941,
-,Vale of Glamorgan,VoB,0.0,1941,
-,Cardiff,VoB,0.0,1941,
-,Bridgend,VoB,0.0,1941,
-,Merthyr Tydfil,VoB,0.0,1941,
-,Rhondda; Cynon; Taff,VoB,0.0,1941,
-,Carmarthenshire,VoB,0.0,1941,
-,Ceredigion,VoB,0.0,1941,
-,Pembrokeshire,VoB,0.0,1941,
-,Halton,VoB,0.0,1941,
-,Warrington,VoB,0.0,1941,
-,Cheshire east,VoB,0.0,1941,
-,Cheshire West and Chester,VoB,0.0,1941,
-,Roxburghshire,VoB,0.0,1941,
-,Selkirkshire,VoB,0.0,1941,
-,Berwickshire,VoB,0.0,1941,
-,Midlothian,VoB,0.0,1941,
-,Peebles,VoB,0.0,1941,
-00AA,City of London,data.london,0.0,1941,9000.0
-00AB,Barking and Dagenham,data.london,0.0,1941,184000.0
-00AC,Barnet,data.london,0.0,1941,296000.0
-00AD,Bexley,data.london,0.0,1941,179000.0
-00AE,Brent,data.london,0.0,1941,310000.0
-00AF,Bromley,data.london,0.0,1941,237000.0
-00AG,Camden,data.london,0.0,1941,301000.0
-00AH,Croydon,data.london,0.0,1941,297000.0
-00AJ,Ealing,data.london,0.0,1941,285000.0
-00AK,Enfield,data.london,0.0,1941,272000.0
-00AL,Greenwich,data.london,0.0,1941,243000.0
-,Hackney,data.london,0.0,1941,332000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1941,259000.0
-00AP,Haringey,data.london,0.0,1941,292000.0
-00AQ,Harrow,data.london,0.0,1941,190000.0
-00AR,Havering,data.london,0.0,1941,139000.0
-00AS,Hillingdon,data.london,0.0,1941,159000.0
-00AT,Hounslow,data.london,0.0,1941,196000.0
-00AU,Islington,data.london,0.0,1941,343000.0
-00AW,Kensington and Chelsea,data.london,0.0,1941,228000.0
-00AX,Kingston upon Thames,data.london,0.0,1941,129000.0
-00AY,Lambeth,data.london,0.0,1941,391000.0
-00AZ,Lewisham,data.london,0.0,1941,325000.0
-00BA,Merton,data.london,0.0,1941,197000.0
-00BB,Newham,data.london,0.0,1941,381000.0
-00BC,Redbridge,data.london,0.0,1941,232000.0
-00BD,Richmond upon Thames,data.london,0.0,1941,178000.0
-00BE,Southwark,data.london,0.0,1941,456000.0
-00BF,Sutton,data.london,0.0,1941,167000.0
-00BG,Tower Hamlets,data.london,0.0,1941,419000.0
-00BH,Waltham Forest,data.london,0.0,1941,286000.0
-00BJ,Wandsworth,data.london,0.0,1941,358000.0
-00BK,Westminster,data.london,0.0,1941,347000.0
-UKI1,Inner London,data.london,0.0,1941,4441000.0
-UKI2,Outer London,data.london,0.0,1941,4176000.0
-H,Greater London,data.london,0.0,1941,8615000.0
-,Bedfordshire,VoB,1.0,1951,92062.0
-,Berkshire,Wiki,1.0,1951,471438.0
-,Bristol,VoB,1.0,1951,420710.0
-,Buckinghamshire,VoB,1.0,1951,262573.0
-,Cambridgeshire,VoB,1.0,1951,312933.0
-,Cheshire,VoB,1.0,1951,708917.0
-,Cornwall,VoB,1.0,1951,343857.0
-,Cumbria,VoB,1.0,1951,471488.0
-,Derbyshire,VoB,1.0,1951,636007.0
-,Devon,VoB,1.0,1951,498468.0
-,Dorset,VoB,1.0,1951,233872.0
-,Durham,VoB,1.0,1951,504864.0
-,East Sussex,VoB,1.0,1951,318945.0
-,Essex,VoB,1.0,1951,617633.0
-,Gloucestershire,VoB,1.0,1951,391254.0
-,Greater Manchester,VoB,1.0,1951,2688139.0
-,Hampshire,VoB,1.0,1951,604907.0
-,Herefordshire,VoB,1.0,1951,127929.0
-,Hertfordshire,VoB,1.0,1951,570078.0
-,Isle of Wight,VoB,1.0,1951,95625.0
-,Kent,VoB,1.0,1951,935161.0
-,Lancashire,VoB,1.0,1951,953732.0
-,Leicestershire,VoB,1.0,1951,352098.0
-,Lincolnshire,VoB,1.0,1951,456491.0
-,City and County of the City of London,VoB,1.0,1951,3676014.0
-,Merseyside,VoB,1.0,1951,1649792.0
-,Norfolk,VoB,1.0,1951,552312.0
-,Northamptonshire,VoB,1.0,1951,360834.0
-,Northumberland,VoB,1.0,1951,276090.0
-,North Yorkshire,VoB,1.0,1951,439347.0
-,Nottinghamshire,VoB,1.0,1951,531635.0
-,Oxfordshire,VoB,1.0,1951,354747.0
-,Rutland,VoB,1.0,1951,21443.0
-,Shropshire,VoB,1.0,1951,221483.0
-,Somerset,VoB,1.0,1951,327333.0
-,Suffolk,VoB,1.0,1951,438747.0
-,Surrey,VoB,1.0,1951,756821.0
-,Tyne & Wear,VoB,1.0,1951,1194726.0
-,Warwickshire,VoB,1.0,1951,350013.0
-,West Midlands,VoB,1.0,1951,2508417.0
-,West Sussex,VoB,1.0,1951,384857.0
-,West Yorkshire,VoB,1.0,1951,1979026.0
-,Wiltshire,VoB,1.0,1951,298876.0
-,Worcestershire,VoB,1.0,1951,331445.0
-,East Riding of Yorkshire,VoB,1.0,1951,209713.0
-,South Yorkshire,VoB,1.0,1951,1253781.0
-,Staffordshire,VoB,1.0,1951,540608.0
-,Aberdeenshire,VoB,1.0,1951,170462.0
-,Angus,VoB,1.0,1951,99212.0
-,City of Aberdeen,VoB,1.0,1951,194485.0
-,Caithness,VoB,1.0,1951,22710.0
-,Berwickshire,VoB,1.0,1951,25068.0
-,Ayrshire and Arran,VoB,1.0,1951,321237.0
-,Banffshire,VoB,1.0,1951,50148.0
-,Argyll and Bute,VoB,1.0,1951,102693.0
-,Clackmannan,VoB,1.0,1951,37943.0
-,City of Glasgow,VoB,1.0,1951,1072758.0
-,City of Edinburgh,VoB,1.0,1951,466553.0
-,City of Dundee,VoB,1.0,1951,176198.0
-,Dumfries,VoB,1.0,1951,85660.0
-,Dunbartonshire,VoB,1.0,1951,164269.0
-,East Lothian,VoB,1.0,1951,52258.0
-,Fife,VoB,1.0,1951,306778.0
-,Inverness,VoB,1.0,1951,84930.0
-,Kincardineshire,VoB,1.0,1951,27882.0
-,Lanarkshire,VoB,1.0,1951,524596.0
-,Midlothian,VoB,1.0,1951,64666.0
-,Moray,VoB,1.0,1951,76803.0
-,Nairn,VoB,1.0,1951,8719.0
-,Perth and Kinross,VoB,1.0,1951,122133.0
-,Renfrewshire,VoB,1.0,1951,324660.0
-,Ross and Cromarty,VoB,1.0,1951,60508.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1951,98296.5
-,Stirling and Falkirk,VoB,1.0,1951,187527.0
-,Sutherland,VoB,1.0,1951,13670.0
-,Tweeddale,VoB,1.0,1951,36961.0
-,West Lothian,VoB,1.0,1951,88577.0
-,Wigtown,VoB,1.0,1951,31620.0
-,Western Isles,VoB,1.0,1951,35591.0
-,Orkney,VoB,1.0,1951,21255.0
-,Shetland,VoB,1.0,1951,19352.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1951,30725.0
-,West Glamorgan,VoB,1.0,1951,354329.0
-,Powys,VoB,1.0,1951,109847.0
-,Gwent,VoB,1.0,1951,419243.0
-,Gwynedd,VoB,1.0,1951,119725.0
-,Dyfed,VoB,1.0,1951,317106.0
-,Northern Ireland,Wiki,1.0,1951,1370921.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1951,55000.0
-,Clwyd,VoB,1.0,1951,272513.0
-,South Glamorgan,VoB,1.0,1951,1469192.0
-,Mid Glamorgan,VoB,1.0,1951,511624.0
-,Inner London — West,data.london,1.0,1951,1282000.0
-,Inner London — East,data.london,1.0,1951,2326000.0
-,Outer London — East and North East,data.london,1.0,1951,1642000.0
-,Outer London — South,data.london,1.0,1951,1101000.0
-,Outer London — West and North West,data.london,,1951,1770000.0
-,Swansea,VoB,0.0,1951,202671.0
-,Neath Port Talbot,VoB,0.0,1951,151658.0
-,Blaenau Gwent,VoB,0.0,1951,93478.0
-,Caerphilly,VoB,0.0,1951,159458.0
-,Monmouthshire,VoB,0.0,1951,55245.0
-,Newport,VoB,0.0,1951,123052.0
-,Torfaen,VoB,0.0,1951,67739.0
-,Flintshire,VoB,0.0,1951,98977.0
-,Wrexham,VoB,0.0,1951,103983.0
-,Denbighshire,VoB,0.0,1951,69553.0
-,Vale of Glamorgan,VoB,0.0,1951,1202581.0
-,Cardiff,VoB,0.0,1951,266611.0
-,Bridgend,VoB,0.0,1951,102857.0
-,Merthyr Tydfil,VoB,0.0,1951,69557.0
-,Rhondda; Cynon; Taff,VoB,0.0,1951,259481.0
-,Carmarthenshire,VoB,0.0,1951,172530.0
-,Ceredigion,VoB,0.0,1951,52273.0
-,Pembrokeshire,VoB,0.0,1951,92303.0
-,Halton,VoB,0.0,1951,80072.0
-,Warrington,VoB,0.0,1951,155988.0
-,Cheshire east,VoB,0.0,1951,241842.0
-,Cheshire West and Chester,VoB,0.0,1951,231015.0
-,Roxburghshire,VoB,0.0,1951,45557.0
-,Selkirkshire,VoB,0.0,1951,21729.0
-,Berwickshire,VoB,0.0,1951,25068.0
-,Midlothian,VoB,0.0,1951,98974.0
-,Peebles,VoB,0.0,1951,15232.0
-00AA,City of London,data.london,0.0,1951,5000.0
-00AB,Barking and Dagenham,data.london,0.0,1951,189000.0
-00AC,Barnet,data.london,0.0,1951,320000.0
-00AD,Bexley,data.london,0.0,1951,205000.0
-00AE,Brent,data.london,0.0,1951,311000.0
-00AF,Bromley,data.london,0.0,1951,268000.0
-00AG,Camden,data.london,0.0,1951,258000.0
-00AH,Croydon,data.london,0.0,1951,310000.0
-00AJ,Ealing,data.london,0.0,1951,311000.0
-00AK,Enfield,data.london,0.0,1951,288000.0
-00AL,Greenwich,data.london,0.0,1951,236000.0
-,Hackney,data.london,0.0,1951,265000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1951,241000.0
-00AP,Haringey,data.london,0.0,1951,277000.0
-00AQ,Harrow,data.london,0.0,1951,219000.0
-00AR,Havering,data.london,0.0,1951,192000.0
-00AS,Hillingdon,data.london,0.0,1951,210000.0
-00AT,Hounslow,data.london,0.0,1951,211000.0
-00AU,Islington,data.london,0.0,1951,271000.0
-00AW,Kensington and Chelsea,data.london,0.0,1951,219000.0
-00AX,Kingston upon Thames,data.london,0.0,1951,147000.0
-00AY,Lambeth,data.london,0.0,1951,347000.0
-00AZ,Lewisham,data.london,0.0,1951,303000.0
-00BA,Merton,data.london,0.0,1951,200000.0
-00BB,Newham,data.london,0.0,1951,294000.0
-00BC,Redbridge,data.london,0.0,1951,257000.0
-00BD,Richmond upon Thames,data.london,0.0,1951,188000.0
-00BE,Southwark,data.london,0.0,1951,338000.0
-00BF,Sutton,data.london,0.0,1951,176000.0
-00BG,Tower Hamlets,data.london,0.0,1951,231000.0
-00BH,Waltham Forest,data.london,0.0,1951,275000.0
-00BJ,Wandsworth,data.london,0.0,1951,331000.0
-00BK,Westminster,data.london,0.0,1951,300000.0
-UKI1,Inner London,data.london,0.0,1951,3680000.0
-UKI2,Outer London,data.london,0.0,1951,4513000.0
-H,Greater London,data.london,0.0,1951,8197000.0
-,Bedfordshire,VoB,1.0,1961,105824.0
-,Berkshire,Wiki,1.0,1961,533642.0
-,Bristol,VoB,1.0,1961,427113.0
-,Buckinghamshire,VoB,1.0,1961,343310.0
-,Cambridgeshire,VoB,1.0,1961,342999.0
-,Cheshire,VoB,1.0,1961,744593.0
-,Cornwall,VoB,1.0,1961,340790.0
-,Cumbria,VoB,1.0,1961,478413.0
-,Derbyshire,VoB,1.0,1961,668033.0
-,Devon,VoB,1.0,1961,517299.0
-,Dorset,VoB,1.0,1961,253606.0
-,Durham,VoB,1.0,1961,512147.0
-,East Sussex,VoB,1.0,1961,338187.0
-,Essex,VoB,1.0,1961,847462.0
-,Gloucestershire,VoB,1.0,1961,426649.0
-,Greater Manchester,VoB,1.0,1961,2692693.0
-,Hampshire,VoB,1.0,1961,728375.0
-,Herefordshire,VoB,1.0,1961,131838.0
-,Hertfordshire,VoB,1.0,1961,790233.0
-,Isle of Wight,VoB,1.0,1961,95752.0
-,Kent,VoB,1.0,1961,1011786.0
-,Lancashire,VoB,1.0,1961,970090.0
-,Leicestershire,VoB,1.0,1961,406714.0
-,Lincolnshire,VoB,1.0,1961,467754.0
-,City and County of the City of London,VoB,1.0,1961,3488536.0
-,Merseyside,VoB,1.0,1961,1711083.0
-,Norfolk,VoB,1.0,1961,566817.0
-,Northamptonshire,VoB,1.0,1961,398545.0
-,Northumberland,VoB,1.0,1961,280815.0
-,North Yorkshire,VoB,1.0,1961,432627.0
-,Nottinghamshire,VoB,1.0,1961,584427.0
-,Oxfordshire,VoB,1.0,1961,410255.0
-,Rutland,VoB,1.0,1961,24715.0
-,Shropshire,VoB,1.0,1961,227137.0
-,Somerset,VoB,1.0,1961,347320.0
-,Suffolk,VoB,1.0,1961,467008.0
-,Surrey,VoB,1.0,1961,904815.0
-,Tyne & Wear,VoB,1.0,1961,1235239.0
-,Warwickshire,VoB,1.0,1961,400539.0
-,West Midlands,VoB,1.0,1961,2670072.0
-,West Sussex,VoB,1.0,1961,494207.0
-,West Yorkshire,VoB,1.0,1961,2001203.0
-,Wiltshire,VoB,1.0,1961,306747.0
-,Worcestershire,VoB,1.0,1961,369089.0
-,East Riding of Yorkshire,VoB,1.0,1961,222334.0
-,South Yorkshire,VoB,1.0,1961,1302659.0
-,Staffordshire,VoB,1.0,1961,621891.0
-,Aberdeenshire,VoB,1.0,1961,168845.0
-,Angus,VoB,1.0,1961,101200.0
-,City of Aberdeen,VoB,1.0,1961,194060.0
-,Caithness,VoB,1.0,1961,27370.0
-,Berwickshire,VoB,1.0,1961,22437.0
-,Ayrshire and Arran,VoB,1.0,1961,342822.0
-,Banffshire,VoB,1.0,1961,46454.0
-,Argyll and Bute,VoB,1.0,1961,97370.0
-,Clackmannan,VoB,1.0,1961,41812.0
-,City of Glasgow,VoB,1.0,1961,1038387.0
-,City of Edinburgh,VoB,1.0,1961,475387.0
-,City of Dundee,VoB,1.0,1961,177881.0
-,Dumfries,VoB,1.0,1961,88440.0
-,Dunbartonshire,VoB,1.0,1961,184559.0
-,East Lothian,VoB,1.0,1961,52677.0
-,Fife,VoB,1.0,1961,320692.0
-,Inverness,VoB,1.0,1961,83480.0
-,Kincardineshire,VoB,1.0,1961,25564.0
-,Lanarkshire,VoB,1.0,1961,571407.0
-,Midlothian,VoB,1.0,1961,68086.0
-,Moray,VoB,1.0,1961,75251.0
-,Nairn,VoB,1.0,1961,8423.0
-,Perth and Kinross,VoB,1.0,1961,120517.0
-,Renfrewshire,VoB,1.0,1961,338872.0
-,Ross and Cromarty,VoB,1.0,1961,57642.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1961,97836.25
-,Stirling and Falkirk,VoB,1.0,1961,194876.0
-,Sutherland,VoB,1.0,1961,13507.0
-,Tweeddale,VoB,1.0,1961,35208.0
-,West Lothian,VoB,1.0,1961,92768.0
-,Wigtown,VoB,1.0,1961,29124.0
-,Western Isles,VoB,1.0,1961,32609.0
-,Orkney,VoB,1.0,1961,18747.0
-,Shetland,VoB,1.0,1961,17812.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1961,28870.0
-,West Glamorgan,VoB,1.0,1961,313880.0
-,Powys,VoB,1.0,1961,104460.0
-,Gwent,VoB,1.0,1961,437571.0
-,Gwynedd,VoB,1.0,1961,113504.0
-,Dyfed,VoB,1.0,1961,316924.0
-,Northern Ireland,Wiki,1.0,1961,1425042.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1961,47200.0
-,Clwyd,VoB,1.0,1961,276534.0
-,South Glamorgan,VoB,1.0,1961,1518994.0
-,Mid Glamorgan,VoB,1.0,1961,500346.0
-,Inner London — West,data.london,1.0,1961,1225762.0
-,Inner London — East,data.london,1.0,1961,2194601.0
-,Outer London — East and North East,data.london,1.0,1961,1634921.0
-,Outer London — South,data.london,1.0,1961,1125985.0
-,Outer London — West and North West,data.london,,1961,1743307.0
-,Swansea,VoB,0.0,1961,210093.0
-,Neath Port Talbot,VoB,0.0,1961,103787.0
-,Blaenau Gwent,VoB,0.0,1961,90732.0
-,Caerphilly,VoB,0.0,1961,158194.0
-,Monmouthshire,VoB,0.0,1961,59366.0
-,Newport,VoB,0.0,1961,128243.0
-,Torfaen,VoB,0.0,1961,80133.0
-,Flintshire,VoB,0.0,1961,101745.0
-,Wrexham,VoB,0.0,1961,101388.0
-,Denbighshire,VoB,0.0,1961,73401.0
-,Vale of Glamorgan,VoB,0.0,1961,1229728.0
-,Cardiff,VoB,0.0,1961,289266.0
-,Bridgend,VoB,0.0,1961,108521.0
-,Merthyr Tydfil,VoB,0.0,1961,68178.0
-,Rhondda; Cynon; Taff,VoB,0.0,1961,244550.0
-,Carmarthenshire,VoB,0.0,1961,168641.0
-,Ceredigion,VoB,0.0,1961,52594.0
-,Pembrokeshire,VoB,0.0,1961,95689.0
-,Halton,VoB,0.0,1961,82119.0
-,Warrington,VoB,0.0,1961,150233.0
-,Cheshire east,VoB,0.0,1961,260952.0
-,Cheshire West and Chester,VoB,0.0,1961,251289.0
-,Roxburghshire,VoB,0.0,1961,43183.0
-,Selkirkshire,VoB,0.0,1961,21052.0
-,Berwickshire,VoB,0.0,1961,22437.0
-,Midlothian,VoB,0.0,1961,111968.0
-,Peebles,VoB,0.0,1961,14156.0
-00AA,City of London,data.london,0.0,1961,4767.0
-00AB,Barking and Dagenham,data.london,0.0,1961,177092.0
-00AC,Barnet,data.london,0.0,1961,318373.0
-00AD,Bexley,data.london,0.0,1961,209893.0
-00AE,Brent,data.london,0.0,1961,295893.0
-00AF,Bromley,data.london,0.0,1961,294440.0
-00AG,Camden,data.london,0.0,1961,245707.0
-00AH,Croydon,data.london,0.0,1961,327427.0
-00AJ,Ealing,data.london,0.0,1961,301646.0
-00AK,Enfield,data.london,0.0,1961,273857.0
-00AL,Greenwich,data.london,0.0,1961,229810.0
-,Hackney,data.london,0.0,1961,257522.0
-00AN,Hammersmith and Fulham,data.london,0.0,1961,222124.0
-00AP,Haringey,data.london,0.0,1961,259156.0
-00AQ,Harrow,data.london,0.0,1961,209080.0
-00AR,Havering,data.london,0.0,1961,245598.0
-00AS,Hillingdon,data.london,0.0,1961,228370.0
-00AT,Hounslow,data.london,0.0,1961,208893.0
-00AU,Islington,data.london,0.0,1961,261232.0
-00AW,Kensington and Chelsea,data.london,0.0,1961,218528.0
-00AX,Kingston upon Thames,data.london,0.0,1961,146010.0
-00AY,Lambeth,data.london,0.0,1961,341626.0
-00AZ,Lewisham,data.london,0.0,1961,290582.0
-00BA,Merton,data.london,0.0,1961,189013.0
-00BB,Newham,data.london,0.0,1961,265388.0
-00BC,Redbridge,data.london,0.0,1961,250080.0
-00BD,Richmond upon Thames,data.london,0.0,1961,181052.0
-00BE,Southwark,data.london,0.0,1961,313413.0
-00BF,Sutton,data.london,0.0,1961,169095.0
-00BG,Tower Hamlets,data.london,0.0,1961,205682.0
-00BH,Waltham Forest,data.london,0.0,1961,248591.0
-00BJ,Wandsworth,data.london,0.0,1961,335451.0
-00BK,Westminster,data.london,0.0,1961,271703.0
-UKI1,Inner London,data.london,0.0,1961,3492881.0
-UKI2,Outer London,data.london,0.0,1961,4504213.0
-H,Greater London,data.london,0.0,1961,7997094.0
-,Bedfordshire,VoB,1.0,1971,126288.0
-,Berkshire,Wiki,1.0,1971,605918.0
-,Bristol,VoB,1.0,1971,406042.0
-,Buckinghamshire,VoB,1.0,1971,421355.0
-,Cambridgeshire,VoB,1.0,1971,397787.0
-,Cheshire,VoB,1.0,1971,889987.0
-,Cornwall,VoB,1.0,1971,379063.0
-,Cumbria,VoB,1.0,1971,487954.0
-,Derbyshire,VoB,1.0,1971,690344.0
-,Devon,VoB,1.0,1971,556617.0
-,Dorset,VoB,1.0,1971,294106.0
-,Durham,VoB,1.0,1971,510836.0
-,East Sussex,VoB,1.0,1971,403056.0
-,Essex,VoB,1.0,1971,1085133.0
-,Gloucestershire,VoB,1.0,1971,467784.0
-,Greater Manchester,VoB,1.0,1971,2709027.0
-,Hampshire,VoB,1.0,1971,956949.0
-,Herefordshire,VoB,1.0,1971,139163.0
-,Hertfordshire,VoB,1.0,1971,936836.0
-,Isle of Wight,VoB,1.0,1971,109510.0
-,Kent,VoB,1.0,1971,1205015.0
-,Lancashire,VoB,1.0,1971,1084718.0
-,Leicestershire,VoB,1.0,1971,496333.0
-,Lincolnshire,VoB,1.0,1971,502860.0
-,City and County of the City of London,VoB,1.0,1971,2992840.0
-,Merseyside,VoB,1.0,1971,1639774.0
-,Norfolk,VoB,1.0,1971,626666.0
-,Northamptonshire,VoB,1.0,1971,470146.0
-,Northumberland,VoB,1.0,1971,282625.0
-,North Yorkshire,VoB,1.0,1971,687527.0
-,Nottinghamshire,VoB,1.0,1971,675571.0
-,Oxfordshire,VoB,1.0,1971,502630.0
-,Rutland,VoB,1.0,1971,28811.0
-,Shropshire,VoB,1.0,1971,239553.0
-,Somerset,VoB,1.0,1971,388598.0
-,Suffolk,VoB,1.0,1971,537062.0
-,Surrey,VoB,1.0,1971,981240.0
-,Tyne & Wear,VoB,1.0,1971,1206800.0
-,Warwickshire,VoB,1.0,1971,464284.0
-,West Midlands,VoB,1.0,1971,2769209.0
-,West Sussex,VoB,1.0,1971,595312.0
-,West Yorkshire,VoB,1.0,1971,4120990.0
-,Wiltshire,VoB,1.0,1971,350765.0
-,Worcestershire,VoB,1.0,1971,422052.0
-,East Riding of Yorkshire,VoB,1.0,1971,276269.0
-,South Yorkshire,VoB,1.0,1971,2637099.0
-,Staffordshire,VoB,1.0,1971,716744.0
-,Aberdeenshire,VoB,1.0,1971,179020.0
-,Angus,VoB,1.0,1971,124114.0
-,City of Aberdeen,VoB,1.0,1971,195659.0
-,Caithness,VoB,1.0,1971,27785.0
-,Berwickshire,VoB,1.0,1971,20780.0
-,Ayrshire and Arran,VoB,1.0,1971,361255.0
-,Banffshire,VoB,1.0,1971,43500.0
-,Argyll and Bute,VoB,1.0,1971,104441.0
-,Clackmannan,VoB,1.0,1971,45960.0
-,City of Glasgow,VoB,1.0,1971,887505.0
-,City of Edinburgh,VoB,1.0,1971,468050.0
-,City of Dundee,VoB,1.0,1971,177018.0
-,Dumfries,VoB,1.0,1971,88215.0
-,Dunbartonshire,VoB,1.0,1971,237550.0
-,East Lothian,VoB,1.0,1971,55905.0
-,Fife,VoB,1.0,1971,327130.0
-,Inverness,VoB,1.0,1971,89660.0
-,Kincardineshire,VoB,1.0,1971,26055.0
-,Lanarkshire,VoB,1.0,1971,626790.0
-,Midlothian,VoB,1.0,1971,82601.0
-,Moray,VoB,1.0,1971,75556.0
-,Nairn,VoB,1.0,1971,11050.0
-,Perth and Kinross,VoB,1.0,1971,119528.0
-,Renfrewshire,VoB,1.0,1971,362125.0
-,Ross and Cromarty,VoB,1.0,1971,58285.0
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1971,103577.5
-,Stirling and Falkirk,VoB,1.0,1971,208965.0
-,Sutherland,VoB,1.0,1971,13055.0
-,Tweeddale,VoB,1.0,1971,34550.0
-,West Lothian,VoB,1.0,1971,10848.0
-,Wigtown,VoB,1.0,1971,27340.0
-,Western Isles,VoB,1.0,1971,29895.0
-,Orkney,VoB,1.0,1971,17080.0
-,Shetland,VoB,1.0,1971,17325.0
-,The Stewartry of Kirkcudbright,VoB,1.0,1971,27635.0
-,West Glamorgan,VoB,1.0,1971,370659.0
-,Powys,VoB,1.0,1971,101137.0
-,Gwent,VoB,1.0,1971,460061.5
-,Gwynedd,VoB,1.0,1971,109694.0
-,Dyfed,VoB,1.0,1971,317649.0
-,Northern Ireland,Wiki,1.0,1971,1536065.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1971,53200.0
-,Clwyd,VoB,1.0,1971,311516.0
-,South Glamorgan,VoB,1.0,1971,
-,Mid Glamorgan,VoB,1.0,1971,508299.5
-,Inner London — West,data.london,1.0,1971,1081000.0
-,Inner London — East,data.london,1.0,1971,1903000.0
-,Outer London — East and North East,data.london,1.0,1971,1587000.0
-,Outer London — South,data.london,1.0,1971,1126000.0
-,Outer London — West and North West,data.london,,1971,1709000.0
-,Swansea,VoB,0.0,1971,219882.0
-,Neath Port Talbot,VoB,0.0,1971,150777.0
-,Blaenau Gwent,VoB,0.0,1971,81009.0
-,Caerphilly,VoB,0.0,1971,166363.0
-,Monmouthshire,VoB,0.0,1971,70475.0
-,Newport,VoB,0.0,1971,138282.0
-,Torfaen,VoB,0.0,1971,87114.0
-,Flintshire,VoB,0.0,1971,121235.0
-,Wrexham,VoB,0.0,1971,111372.0
-,Denbighshire,VoB,0.0,1971,78909.0
-,Vale of Glamorgan,VoB,0.0,1971,
-,Cardiff,VoB,0.0,1971,285544.0
-,Bridgend,VoB,0.0,1971,121566.0
-,Merthyr Tydfil,VoB,0.0,1971,63923.0
-,Rhondda; Cynon; Taff,VoB,0.0,1971,239629.0
-,Carmarthenshire,VoB,0.0,1971,163296.0
-,Ceredigion,VoB,0.0,1971,53820.0
-,Pembrokeshire,VoB,0.0,1971,100533.0
-,Halton,VoB,0.0,1971,99749.0
-,Warrington,VoB,0.0,1971,172584.0
-,Cheshire east,VoB,0.0,1971,308690.0
-,Cheshire West and Chester,VoB,0.0,1971,308964.0
-,Roxburghshire,VoB,0.0,1971,41960.0
-,Selkirkshire,VoB,0.0,1971,20870.0
-,Berwickshire,VoB,0.0,1971,20780.0
-,Midlothian,VoB,0.0,1971,142210.0
-,Peebles,VoB,0.0,1971,13680.0
-00AA,City of London,data.london,0.0,1971,4000.0
-00AB,Barking and Dagenham,data.london,0.0,1971,161000.0
-00AC,Barnet,data.london,0.0,1971,307000.0
-00AD,Bexley,data.london,0.0,1971,217000.0
-00AE,Brent,data.london,0.0,1971,281000.0
-00AF,Bromley,data.london,0.0,1971,305000.0
-00AG,Camden,data.london,0.0,1971,207000.0
-00AH,Croydon,data.london,0.0,1971,334000.0
-00AJ,Ealing,data.london,0.0,1971,301000.0
-00AK,Enfield,data.london,0.0,1971,268000.0
-00AL,Greenwich,data.london,0.0,1971,218000.0
-,Hackney,data.london,0.0,1971,220000.0
-00AN,Hammersmith and Fulham,data.london,0.0,1971,187000.0
-00AP,Haringey,data.london,0.0,1971,240000.0
-00AQ,Harrow,data.london,0.0,1971,203000.0
-00AR,Havering,data.london,0.0,1971,248000.0
-00AS,Hillingdon,data.london,0.0,1971,235000.0
-00AT,Hounslow,data.london,0.0,1971,207000.0
-00AU,Islington,data.london,0.0,1971,202000.0
-00AW,Kensington and Chelsea,data.london,0.0,1971,188000.0
-00AX,Kingston upon Thames,data.london,0.0,1971,141000.0
-00AY,Lambeth,data.london,0.0,1971,308000.0
-00AZ,Lewisham,data.london,0.0,1971,268000.0
-00BA,Merton,data.london,0.0,1971,177000.0
-00BB,Newham,data.london,0.0,1971,237000.0
-00BC,Redbridge,data.london,0.0,1971,240000.0
-00BD,Richmond upon Thames,data.london,0.0,1971,175000.0
-00BE,Southwark,data.london,0.0,1971,262000.0
-00BF,Sutton,data.london,0.0,1971,169000.0
-00BG,Tower Hamlets,data.london,0.0,1971,166000.0
-00BH,Waltham Forest,data.london,0.0,1971,235000.0
-00BJ,Wandsworth,data.london,0.0,1971,302000.0
-00BK,Westminster,data.london,0.0,1971,240000.0
-UKI1,Inner London,data.london,0.0,1971,3031000.0
-UKI2,Outer London,data.london,0.0,1971,4422000.0
-H,Greater London,data.london,0.0,1971,7452000.0
-,Bedfordshire,VoB,1.0,1981,132366.0
-,Berkshire,Wiki,1.0,1981,632630.0
-,Bristol,VoB,1.0,1981,375364.0
-,Buckinghamshire,VoB,1.0,1981,430112.0
-,Cambridgeshire,VoB,1.0,1981,426460.0
-,Cheshire,VoB,1.0,1981,927284.0
-,Cornwall,VoB,1.0,1981,406825.0
-,Cumbria,VoB,1.0,1981,464214.0
-,Derbyshire,VoB,1.0,1981,686610.0
-,Devon,VoB,1.0,1981,564572.0
-,Dorset,VoB,1.0,1981,322599.0
-,Durham,VoB,1.0,1981,497506.0
-,East Sussex,VoB,1.0,1981,402421.0
-,Essex,VoB,1.0,1981,1168454.0
-,Gloucestershire,VoB,1.0,1981,486993.0
-,Greater Manchester,VoB,1.0,1981,2542764.0
-,Hampshire,VoB,1.0,1981,1040978.0
-,Herefordshire,VoB,1.0,1981,144049.0
-,Hertfordshire,VoB,1.0,1981,941592.0
-,Isle of Wight,VoB,1.0,1981,111261.0
-,Kent,VoB,1.0,1981,1193001.0
-,Lancashire,VoB,1.0,1981,1070641.0
-,Leicestershire,VoB,1.0,1981,525912.0
-,Lincolnshire,VoB,1.0,1981,531113.0
-,City and County of the City of London,VoB,1.0,1981,2353049.0
-,Merseyside,VoB,1.0,1981,1466598.0
-,Norfolk,VoB,1.0,1981,675004.0
-,Northamptonshire,VoB,1.0,1981,519005.0
-,Northumberland,VoB,1.0,1981,290984.0
-,North Yorkshire,VoB,1.0,1981,486173.0
-,Nottinghamshire,VoB,1.0,1981,701035.0
-,Oxfordshire,VoB,1.0,1981,496584.0
-,Rutland,VoB,1.0,1981,30141.0
-,Shropshire,VoB,1.0,1981,242559.0
-,Somerset,VoB,1.0,1981,410630.0
-,Suffolk,VoB,1.0,1981,579838.0
-,Surrey,VoB,1.0,1981,963516.0
-,Tyne & Wear,VoB,1.0,1981,1123838.0
-,Warwickshire,VoB,1.0,1981,465308.0
-,West Midlands,VoB,1.0,1981,2597372.0
-,West Sussex,VoB,1.0,1981,637231.0
-,West Yorkshire,VoB,1.0,1981,1995772.0
-,Wiltshire,VoB,1.0,1981,355077.0
-,Worcestershire,VoB,1.0,1981,472268.0
-,East Riding of Yorkshire,VoB,1.0,1981,265030.0
-,South Yorkshire,VoB,1.0,1981,1279538.0
-,Staffordshire,VoB,1.0,1981,752010.0
-,Aberdeenshire,VoB,1.0,1981,215517.0
-,Angus,VoB,1.0,1981,111385.0
-,City of Aberdeen,VoB,1.0,1981,204248.0
-,Caithness,VoB,1.0,1981,
-,Berwickshire,VoB,1.0,1981,
-,Ayrshire and Arran,VoB,1.0,1981,
-,Banffshire,VoB,1.0,1981,
-,Argyll and Bute,VoB,1.0,1981,93440.0
-,Clackmannan,VoB,1.0,1981,46805.0
-,City of Glasgow,VoB,1.0,1981,685143.0
-,City of Edinburgh,VoB,1.0,1981,415820.0
-,City of Dundee,VoB,1.0,1981,138206.0
-,Dumfries,VoB,1.0,1981,
-,Dunbartonshire,VoB,1.0,1981,
-,East Lothian,VoB,1.0,1981,
-,Fife,VoB,1.0,1981,
-,Inverness,VoB,1.0,1981,
-,Kincardineshire,VoB,1.0,1981,
-,Lanarkshire,VoB,1.0,1981,
-,Midlothian,VoB,1.0,1981,81069.0
-,Moray,VoB,1.0,1981,78379.0
-,Nairn,VoB,1.0,1981,
-,Perth and Kinross,VoB,1.0,1981,113533.0
-,Renfrewshire,VoB,1.0,1981,
-,Ross and Cromarty,VoB,1.0,1981,
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1981,0.0
-,Stirling and Falkirk,VoB,1.0,1981,
-,Sutherland,VoB,1.0,1981,
-,Tweeddale,VoB,1.0,1981,
-,West Lothian,VoB,1.0,1981,
-,Wigtown,VoB,1.0,1981,
-,Western Isles,VoB,1.0,1981,30226.0
-,Orkney,VoB,1.0,1981,
-,Shetland,VoB,1.0,1981,
-,The Stewartry of Kirkcudbright,VoB,1.0,1981,
-,West Glamorgan,VoB,1.0,1981,360306.0
-,Powys,VoB,1.0,1981,108009.0
-,Gwent,VoB,1.0,1981,451708.5
-,Gwynedd,VoB,1.0,1981,104275.0
-,Dyfed,VoB,1.0,1981,318871.0
-,Northern Ireland,Wiki,1.0,1981,1543000.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1981,64700.0
-,Clwyd,VoB,1.0,1981,334780.0
-,South Glamorgan,VoB,1.0,1981,
-,Mid Glamorgan,VoB,1.0,1981,501405.5
-,Inner London — West,data.london,1.0,1981,905278.0
-,Inner London — East,data.london,1.0,1981,1586820.0
-,Outer London — East and North East,data.london,1.0,1981,1518705.0
-,Outer London — South,data.london,1.0,1981,1082919.0
-,Outer London — West and North West,data.london,,1981,1613563.0
-,Swansea,VoB,0.0,1981,217776.0
-,Neath Port Talbot,VoB,0.0,1981,142530.0
-,Blaenau Gwent,VoB,0.0,1981,74640.0
-,Caerphilly,VoB,0.0,1981,170133.0
-,Monmouthshire,VoB,0.0,1981,73776.0
-,Newport,VoB,0.0,1981,130308.0
-,Torfaen,VoB,0.0,1981,87918.0
-,Flintshire,VoB,0.0,1981,136269.0
-,Wrexham,VoB,0.0,1981,117084.0
-,Denbighshire,VoB,0.0,1981,81427.0
-,Vale of Glamorgan,VoB,0.0,1981,
-,Cardiff,VoB,0.0,1981,268653.0
-,Bridgend,VoB,0.0,1981,123985.0
-,Merthyr Tydfil,VoB,0.0,1981,58988.0
-,Rhondda; Cynon; Taff,VoB,0.0,1981,233366.0
-,Carmarthenshire,VoB,0.0,1981,160061.0
-,Ceredigion,VoB,0.0,1981,53860.0
-,Pembrokeshire,VoB,0.0,1981,104950.0
-,Halton,VoB,0.0,1981,129187.0
-,Warrington,VoB,0.0,1981,168980.0
-,Cheshire east,VoB,0.0,1981,321879.0
-,Cheshire West and Chester,VoB,0.0,1981,307238.0
-,Roxburghshire,VoB,0.0,1981,
-,Selkirkshire,VoB,0.0,1981,
-,Berwickshire,VoB,0.0,1981,
-,Midlothian,VoB,0.0,1981,
-,Peebles,VoB,0.0,1981,
-00AA,City of London,data.london,0.0,1981,5864.0
-00AB,Barking and Dagenham,data.london,0.0,1981,149786.0
-00AC,Barnet,data.london,0.0,1981,293436.0
-00AD,Bexley,data.london,0.0,1981,215233.0
-00AE,Brent,data.london,0.0,1981,253275.0
-00AF,Bromley,data.london,0.0,1981,296539.0
-00AG,Camden,data.london,0.0,1981,172014.0
-00AH,Croydon,data.london,0.0,1981,317980.0
-00AJ,Ealing,data.london,0.0,1981,279846.0
-00AK,Enfield,data.london,0.0,1981,258770.0
-00AL,Greenwich,data.london,0.0,1981,211840.0
-,Hackney,data.london,0.0,1981,180434.0
-00AN,Hammersmith and Fulham,data.london,0.0,1981,148447.0
-00AP,Haringey,data.london,0.0,1981,203553.0
-00AQ,Harrow,data.london,0.0,1981,196571.0
-00AR,Havering,data.london,0.0,1981,240849.0
-00AS,Hillingdon,data.london,0.0,1981,229913.0
-00AT,Hounslow,data.london,0.0,1981,200829.0
-00AU,Islington,data.london,0.0,1981,160890.0
-00AW,Kensington and Chelsea,data.london,0.0,1981,138837.0
-00AX,Kingston upon Thames,data.london,0.0,1981,132957.0
-00AY,Lambeth,data.london,0.0,1981,246426.0
-00AZ,Lewisham,data.london,0.0,1981,231324.0
-00BA,Merton,data.london,0.0,1981,166100.0
-00BB,Newham,data.london,0.0,1981,209494.0
-00BC,Redbridge,data.london,0.0,1981,226280.0
-00BD,Richmond upon Thames,data.london,0.0,1981,159693.0
-00BE,Southwark,data.london,0.0,1981,211858.0
-00BF,Sutton,data.london,0.0,1981,169343.0
-00BG,Tower Hamlets,data.london,0.0,1981,142841.0
-00BH,Waltham Forest,data.london,0.0,1981,215947.0
-00BJ,Wandsworth,data.london,0.0,1981,254898.0
-00BK,Westminster,data.london,0.0,1981,191098.0
-UKI1,Inner London,data.london,0.0,1981,2497978.0
-UKI2,Outer London,data.london,0.0,1981,4215187.0
-H,Greater London,data.london,0.0,1981,6713165.0
-,Bedfordshire,VoB,1.0,1991,133680.0
-,Berkshire,Wiki,1.0,1991,656050.0
-,Bristol,VoB,1.0,1991,376116.0
-,Buckinghamshire,VoB,1.0,1991,454388.0
-,Cambridgeshire,VoB,1.0,1991,490068.0
-,Cheshire,VoB,1.0,1991,968903.0
-,Cornwall,VoB,1.0,1991,466364.0
-,Cumbria,VoB,1.0,1991,483118.0
-,Derbyshire,VoB,1.0,1991,711344.0
-,Devon,VoB,1.0,1991,646953.0
-,Dorset,VoB,1.0,1991,360669.0
-,Durham,VoB,1.0,1991,496787.0
-,East Sussex,VoB,1.0,1991,461708.0
-,Essex,VoB,1.0,1991,1246585.0
-,Gloucestershire,VoB,1.0,1991,528361.0
-,Greater Manchester,VoB,1.0,1991,2490435.0
-,Hampshire,VoB,1.0,1991,1169082.0
-,Herefordshire,VoB,1.0,1991,159808.0
-,Hertfordshire,VoB,1.0,1991,980582.0
-,Isle of Wight,VoB,1.0,1991,124602.0
-,Kent,VoB,1.0,1991,1271354.0
-,Lancashire,VoB,1.0,1991,1109230.0
-,Leicestershire,VoB,1.0,1991,565483.0
-,Lincolnshire,VoB,1.0,1991,584541.0
-,City and County of the City of London,VoB,1.0,1991,2504429.0
-,Merseyside,VoB,1.0,1991,1392198.0
-,Norfolk,VoB,1.0,1991,745545.0
-,Northamptonshire,VoB,1.0,1991,578851.0
-,Northumberland,VoB,1.0,1991,306457.0
-,North Yorkshire,VoB,1.0,1991,540848.0
-,Nottinghamshire,VoB,1.0,1991,728830.0
-,Oxfordshire,VoB,1.0,1991,547569.0
-,Rutland,VoB,1.0,1991,31501.0
-,Shropshire,VoB,1.0,1991,266882.0
-,Somerset,VoB,1.0,1991,460388.0
-,Suffolk,VoB,1.0,1991,636796.0
-,Surrey,VoB,1.0,1991,1014355.0
-,Tyne & Wear,VoB,1.0,1991,1091191.0
-,Warwickshire,VoB,1.0,1991,484587.0
-,West Midlands,VoB,1.0,1991,2549559.0
-,West Sussex,VoB,1.0,1991,702436.0
-,West Yorkshire,VoB,1.0,1991,2009492.0
-,Wiltshire,VoB,1.0,1991,394677.0
-,Worcestershire,VoB,1.0,1991,515981.0
-,East Riding of Yorkshire,VoB,1.0,1991,292051.0
-,South Yorkshire,VoB,1.0,1991,1261233.0
-,Staffordshire,VoB,1.0,1991,789058.0
-,Aberdeenshire,VoB,1.0,1991,227073.0
-,Angus,VoB,1.0,1991,108509.0
-,City of Aberdeen,VoB,1.0,1991,211939.0
-,Caithness,VoB,1.0,1991,
-,Berwickshire,VoB,1.0,1991,
-,Ayrshire and Arran,VoB,1.0,1991,
-,Banffshire,VoB,1.0,1991,
-,Argyll and Bute,VoB,1.0,1991,96680.0
-,Clackmannan,VoB,1.0,1991,47624.0
-,City of Glasgow,VoB,1.0,1991,606219.0
-,City of Edinburgh,VoB,1.0,1991,416730.0
-,City of Dundee,VoB,1.0,1991,146812.0
-,Dumfries,VoB,1.0,1991,
-,Dunbartonshire,VoB,1.0,1991,
-,East Lothian,VoB,1.0,1991,
-,Fife,VoB,1.0,1991,
-,Inverness,VoB,1.0,1991,
-,Kincardineshire,VoB,1.0,1991,
-,Lanarkshire,VoB,1.0,1991,
-,Midlothian,VoB,1.0,1991,81118.0
-,Moray,VoB,1.0,1991,83772.0
-,Nairn,VoB,1.0,1991,
-,Perth and Kinross,VoB,1.0,1991,125702.0
-,Renfrewshire,VoB,1.0,1991,
-,Ross and Cromarty,VoB,1.0,1991,
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,1991,0.0
-,Stirling and Falkirk,VoB,1.0,1991,
-,Sutherland,VoB,1.0,1991,
-,Tweeddale,VoB,1.0,1991,
-,West Lothian,VoB,1.0,1991,
-,Wigtown,VoB,1.0,1991,
-,Western Isles,VoB,1.0,1991,29502.0
-,Orkney,VoB,1.0,1991,
-,Shetland,VoB,1.0,1991,
-,The Stewartry of Kirkcudbright,VoB,1.0,1991,
-,West Glamorgan,VoB,1.0,1991,361417.0
-,Powys,VoB,1.0,1991,118852.0
-,Gwent,VoB,1.0,1991,460889.5
-,Gwynedd,VoB,1.0,1991,113377.0
-,Dyfed,VoB,1.0,1991,343487.0
-,Northern Ireland,Wiki,1.0,1991,1607300.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,1991,69800.0
-,Clwyd,VoB,1.0,1991,353403.0
-,South Glamorgan,VoB,1.0,1991,
-,Mid Glamorgan,VoB,1.0,1991,505712.5
-,Inner London — West,data.london,1.0,1991,855565.0
-,Inner London — East,data.london,1.0,1991,1492719.0
-,Outer London — East and North East,data.london,1.0,1991,1454021.0
-,Outer London — South,data.london,1.0,1991,1043869.0
-,Outer London — West and North West,data.london,,1991,1552545.0
-,Swansea,VoB,0.0,1991,223159.0
-,Neath Port Talbot,VoB,0.0,1991,138258.0
-,Blaenau Gwent,VoB,0.0,1991,72176.0
-,Caerphilly,VoB,0.0,1991,169599.0
-,Monmouthshire,VoB,0.0,1991,79988.0
-,Newport,VoB,0.0,1991,133319.0
-,Torfaen,VoB,0.0,1991,90607.0
-,Flintshire,VoB,0.0,1991,141346.0
-,Wrexham,VoB,0.0,1991,121790.0
-,Denbighshire,VoB,0.0,1991,90267.0
-,Vale of Glamorgan,VoB,0.0,1991,
-,Cardiff,VoB,0.0,1991,283121.0
-,Bridgend,VoB,0.0,1991,129030.0
-,Merthyr Tydfil,VoB,0.0,1991,59330.0
-,Rhondda; Cynon; Taff,VoB,0.0,1991,232553.0
-,Carmarthenshire,VoB,0.0,1991,167719.0
-,Ceredigion,VoB,0.0,1991,61675.0
-,Pembrokeshire,VoB,0.0,1991,114093.0
-,Halton,VoB,0.0,1991,128525.0
-,Warrington,VoB,0.0,1991,186860.0
-,Cheshire east,VoB,0.0,1991,339968.0
-,Cheshire West and Chester,VoB,0.0,1991,313550.0
-,Roxburghshire,VoB,0.0,1991,
-,Selkirkshire,VoB,0.0,1991,
-,Berwickshire,VoB,0.0,1991,
-,Midlothian,VoB,0.0,1991,
-,Peebles,VoB,0.0,1991,
-00AA,City of London,data.london,0.0,1991,4230.0
-00AB,Barking and Dagenham,data.london,0.0,1991,140728.0
-00AC,Barnet,data.london,0.0,1991,284106.0
-00AD,Bexley,data.london,0.0,1991,211404.0
-00AE,Brent,data.london,0.0,1991,227903.0
-00AF,Bromley,data.london,0.0,1991,282920.0
-00AG,Camden,data.london,0.0,1991,165274.0
-00AH,Croydon,data.london,0.0,1991,301904.0
-00AJ,Ealing,data.london,0.0,1991,264867.0
-00AK,Enfield,data.london,0.0,1991,250750.0
-00AL,Greenwich,data.london,0.0,1991,201545.0
-,Hackney,data.london,0.0,1991,162772.0
-00AN,Hammersmith and Fulham,data.london,0.0,1991,137720.0
-00AP,Haringey,data.london,0.0,1991,186490.0
-00AQ,Harrow,data.london,0.0,1991,194893.0
-00AR,Havering,data.london,0.0,1991,225144.0
-00AS,Hillingdon,data.london,0.0,1991,228476.0
-00AT,Hounslow,data.london,0.0,1991,196602.0
-00AU,Islington,data.london,0.0,1991,154873.0
-00AW,Kensington and Chelsea,data.london,0.0,1991,126285.0
-00AX,Kingston upon Thames,data.london,0.0,1991,131436.0
-00AY,Lambeth,data.london,0.0,1991,220252.0
-00AZ,Lewisham,data.london,0.0,1991,215483.0
-00BA,Merton,data.london,0.0,1991,162741.0
-00BB,Newham,data.london,0.0,1991,200678.0
-00BC,Redbridge,data.london,0.0,1991,221107.0
-00BD,Richmond upon Thames,data.london,0.0,1991,155698.0
-00BE,Southwark,data.london,0.0,1991,198916.0
-00BF,Sutton,data.london,0.0,1991,164868.0
-00BG,Tower Hamlets,data.london,0.0,1991,153255.0
-00BH,Waltham Forest,data.london,0.0,1991,203343.0
-00BJ,Wandsworth,data.london,0.0,1991,239162.0
-00BK,Westminster,data.london,0.0,1991,177743.0
-UKI1,Inner London,data.london,0.0,1991,2343133.0
-UKI2,Outer London,data.london,0.0,1991,4050435.0
-H,Greater London,data.london,0.0,1991,6393568.0
-,Bedfordshire,VoB,1.0,2001,147946.0
-,Berkshire,Wiki,1.0,2001,673777.0
-,Bristol,VoB,1.0,2001,380641.0
-,Buckinghamshire,VoB,1.0,2001,479028.0
-,Cambridgeshire,VoB,1.0,2001,552563.0
-,Cheshire,VoB,1.0,2001,983112.0
-,Cornwall,VoB,1.0,2001,499090.0
-,Cumbria,VoB,1.0,2001,487650.0
-,Derbyshire,VoB,1.0,2001,734791.0
-,Devon,VoB,1.0,2001,704521.0
-,Dorset,VoB,1.0,2001,390998.0
-,Durham,VoB,1.0,2001,493439.0
-,East Sussex,VoB,1.0,2001,492387.0
-,Essex,VoB,1.0,2001,1310885.0
-,Gloucestershire,VoB,1.0,2001,564578.0
-,Greater Manchester,VoB,1.0,2001,2482180.0
-,Hampshire,VoB,1.0,2001,1240039.0
-,Herefordshire,VoB,1.0,2001,174887.0
-,Hertfordshire,VoB,1.0,2001,1033921.0
-,Isle of Wight,VoB,1.0,2001,132741.0
-,Kent,VoB,1.0,2001,1329751.0
-,Lancashire,VoB,1.0,2001,1135070.0
-,Leicestershire,VoB,1.0,2001,609548.0
-,Lincolnshire,VoB,1.0,2001,646679.0
-,City and County of the City of London,VoB,1.0,2001,2765717.0
-,Merseyside,VoB,1.0,2001,1362052.0
-,Norfolk,VoB,1.0,2001,796751.0
-,Northamptonshire,VoB,1.0,2001,629692.0
-,Northumberland,VoB,1.0,2001,307252.0
-,North Yorkshire,VoB,1.0,2001,569681.0
-,Nottinghamshire,VoB,1.0,2001,748465.0
-,Oxfordshire,VoB,1.0,2001,605479.0
-,Rutland,VoB,1.0,2001,34562.0
-,Shropshire,VoB,1.0,2001,283144.0
-,Somerset,VoB,1.0,2001,498069.0
-,Suffolk,VoB,1.0,2001,668524.0
-,Surrey,VoB,1.0,2001,1059079.0
-,Tyne & Wear,VoB,1.0,2001,1075974.0
-,Warwickshire,VoB,1.0,2001,505854.0
-,West Midlands,VoB,1.0,2001,2555531.0
-,West Sussex,VoB,1.0,2001,753578.0
-,West Yorkshire,VoB,1.0,2001,2079249.0
-,Wiltshire,VoB,1.0,2001,432982.0
-,Worcestershire,VoB,1.0,2001,542125.0
-,East Riding of Yorkshire,VoB,1.0,2001,314083.0
-,South Yorkshire,VoB,1.0,2001,1266244.0
-,Staffordshire,VoB,1.0,2001,806690.0
-,Aberdeenshire,VoB,1.0,2001,252973.0
-,Angus,VoB,1.0,2001,115978.0
-,City of Aberdeen,VoB,1.0,2001,222793.0
-,Caithness,VoB,1.0,2001,
-,Berwickshire,VoB,1.0,2001,
-,Ayrshire and Arran,VoB,1.0,2001,
-,Banffshire,VoB,1.0,2001,
-,Argyll and Bute,VoB,1.0,2001,91328.0
-,Clackmannan,VoB,1.0,2001,48022.0
-,City of Glasgow,VoB,1.0,2001,576702.0
-,City of Edinburgh,VoB,1.0,2001,448409.0
-,City of Dundee,VoB,1.0,2001,145574.0
-,Dumfries,VoB,1.0,2001,
-,Dunbartonshire,VoB,1.0,2001,
-,East Lothian,VoB,1.0,2001,
-,Fife,VoB,1.0,2001,
-,Inverness,VoB,1.0,2001,
-,Kincardineshire,VoB,1.0,2001,
-,Lanarkshire,VoB,1.0,2001,
-,Midlothian,VoB,1.0,2001,80995.0
-,Moray,VoB,1.0,2001,86945.0
-,Nairn,VoB,1.0,2001,
-,Perth and Kinross,VoB,1.0,2001,135028.0
-,Renfrewshire,VoB,1.0,2001,
-,Ross and Cromarty,VoB,1.0,2001,
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,2001,
-,Stirling and Falkirk,VoB,1.0,2001,
-,Sutherland,VoB,1.0,2001,
-,Tweeddale,VoB,1.0,2001,
-,West Lothian,VoB,1.0,2001,
-,Wigtown,VoB,1.0,2001,
-,Western Isles,VoB,1.0,2001,26502.0
-,Orkney,VoB,1.0,2001,
-,Shetland,VoB,1.0,2001,
-,The Stewartry of Kirkcudbright,VoB,1.0,2001,
-,West Glamorgan,VoB,1.0,2001,357732.0
-,Powys,VoB,1.0,2001,126426.0
-,Gwent,VoB,1.0,2001,467626.5
-,Gwynedd,VoB,1.0,2001,116828.0
-,Dyfed,VoB,1.0,2001,361814.0
-,Northern Ireland,Wiki,1.0,2001,1685267.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,2001,76400.0
-,Clwyd,VoB,1.0,2001,370158.0
-,South Glamorgan,VoB,1.0,2001,
-,Mid Glamorgan,VoB,1.0,2001,501328.5
-,Inner London — West,data.london,1.0,2001,959375.0
-,Inner London — East,data.london,1.0,2001,1795040.0
-,Outer London — East and North East,data.london,1.0,2001,1551432.0
-,Outer London — South,data.london,1.0,2001,1141076.0
-,Outer London — West and North West,data.london,,2001,1713484.0
-,Swansea,VoB,0.0,2001,223279.0
-,Neath Port Talbot,VoB,0.0,2001,134453.0
-,Blaenau Gwent,VoB,0.0,2001,70061.0
-,Caerphilly,VoB,0.0,2001,169467.0
-,Monmouthshire,VoB,0.0,2001,84844.0
-,Newport,VoB,0.0,2001,137041.0
-,Torfaen,VoB,0.0,2001,90947.0
-,Flintshire,VoB,0.0,2001,148613.0
-,Wrexham,VoB,0.0,2001,128506.0
-,Denbighshire,VoB,0.0,2001,93039.0
-,Vale of Glamorgan,VoB,0.0,2001,
-,Cardiff,VoB,0.0,2001,305347.0
-,Bridgend,VoB,0.0,2001,128627.0
-,Merthyr Tydfil,VoB,0.0,2001,55964.0
-,Rhondda; Cynon; Taff,VoB,0.0,2001,232004.0
-,Carmarthenshire,VoB,0.0,2001,172795.0
-,Ceredigion,VoB,0.0,2001,74890.0
-,Pembrokeshire,VoB,0.0,2001,114129.0
-,Halton,VoB,0.0,2001,118242.0
-,Warrington,VoB,0.0,2001,191095.0
-,Cheshire east,VoB,0.0,2001,351796.0
-,Cheshire West and Chester,VoB,0.0,2001,321979.0
-,Roxburghshire,VoB,0.0,2001,
-,Selkirkshire,VoB,0.0,2001,
-,Berwickshire,VoB,0.0,2001,
-,Midlothian,VoB,0.0,2001,
-,Peebles,VoB,0.0,2001,
-00AA,City of London,data.london,0.0,2001,7181.0
-00AB,Barking and Dagenham,data.london,0.0,2001,163944.0
-00AC,Barnet,data.london,0.0,2001,314565.0
-00AD,Bexley,data.london,0.0,2001,218301.0
-00AE,Brent,data.london,0.0,2001,263466.0
-00AF,Bromley,data.london,0.0,2001,295535.0
-00AG,Camden,data.london,0.0,2001,198022.0
-00AH,Croydon,data.london,0.0,2001,330584.0
-00AJ,Ealing,data.london,0.0,2001,300943.0
-00AK,Enfield,data.london,0.0,2001,273565.0
-00AL,Greenwich,data.london,0.0,2001,214402.0
-,Hackney,data.london,0.0,2001,202825.0
-00AN,Hammersmith and Fulham,data.london,0.0,2001,165238.0
-00AP,Haringey,data.london,0.0,2001,216505.0
-00AQ,Harrow,data.london,0.0,2001,206822.0
-00AR,Havering,data.london,0.0,2001,224262.0
-00AS,Hillingdon,data.london,0.0,2001,243006.0
-00AT,Hounslow,data.london,0.0,2001,212352.0
-00AU,Islington,data.london,0.0,2001,175789.0
-00AW,Kensington and Chelsea,data.london,0.0,2001,158921.0
-00AX,Kingston upon Thames,data.london,0.0,2001,147271.0
-00AY,Lambeth,data.london,0.0,2001,266170.0
-00AZ,Lewisham,data.london,0.0,2001,248917.0
-00BA,Merton,data.london,0.0,2001,187919.0
-00BB,Newham,data.london,0.0,2001,243884.0
-00BC,Redbridge,data.london,0.0,2001,238623.0
-00BD,Richmond upon Thames,data.london,0.0,2001,172330.0
-00BE,Southwark,data.london,0.0,2001,244867.0
-00BF,Sutton,data.london,0.0,2001,179767.0
-00BG,Tower Hamlets,data.london,0.0,2001,196083.0
-00BH,Waltham Forest,data.london,0.0,2001,218335.0
-00BJ,Wandsworth,data.london,0.0,2001,260379.0
-00BK,Westminster,data.london,0.0,2001,181284.0
-UKI1,Inner London,data.london,0.0,2001,2766065.0
-UKI2,Outer London,data.london,0.0,2001,4405992.0
-H,Greater London,data.london,0.0,2001,7172057.0
-,Bedfordshire,VoB,1.0,2011,157479.0
-,Berkshire,Wiki,1.0,2011,699735.0
-,Bristol,VoB,1.0,2011,428234.0
-,Buckinghamshire,VoB,1.0,2011,505283.0
-,Cambridgeshire,VoB,1.0,2011,621210.0
-,Cheshire,VoB,1.0,2011,1027709.0
-,Cornwall,VoB,1.0,2011,532273.0
-,Cumbria,VoB,1.0,2011,499858.0
-,Derbyshire,VoB,1.0,2011,769686.0
-,Devon,VoB,1.0,2011,746399.0
-,Dorset,VoB,1.0,2011,412905.0
-,Durham,VoB,1.0,2011,513242.0
-,East Sussex,VoB,1.0,2011,526671.0
-,Essex,VoB,1.0,2011,1393587.0
-,Gloucestershire,VoB,1.0,2011,596984.0
-,Greater Manchester,VoB,1.0,2011,2682528.0
-,Hampshire,VoB,1.0,2011,1317788.0
-,Herefordshire,VoB,1.0,2011,183477.0
-,Hertfordshire,VoB,1.0,2011,1116062.0
-,Isle of Wight,VoB,1.0,2011,138265.0
-,Kent,VoB,1.0,2011,1463740.0
-,Lancashire,VoB,1.0,2011,1171339.0
-,Leicestershire,VoB,1.0,2011,650489.0
-,Lincolnshire,VoB,1.0,2011,713653.0
-,City and County of the City of London,VoB,1.0,2011,3231901.0
-,Merseyside,VoB,1.0,2011,1381189.0
-,Norfolk,VoB,1.0,2011,857888.0
-,Northamptonshire,VoB,1.0,2011,691952.0
-,Northumberland,VoB,1.0,2011,316028.0
-,North Yorkshire,VoB,1.0,2011,598376.0
-,Nottinghamshire,VoB,1.0,2011,785802.0
-,Oxfordshire,VoB,1.0,2011,653798.0
-,Rutland,VoB,1.0,2011,37369.0
-,Shropshire,VoB,1.0,2011,306129.0
-,Somerset,VoB,1.0,2011,529972.0
-,Suffolk,VoB,1.0,2011,728163.0
-,Surrey,VoB,1.0,2011,1132390.0
-,Tyne & Wear,VoB,1.0,2011,1104825.0
-,Warwickshire,VoB,1.0,2011,545474.0
-,West Midlands,VoB,1.0,2011,2736460.0
-,West Sussex,VoB,1.0,2011,806892.0
-,West Yorkshire,VoB,1.0,2011,2226058.0
-,Wiltshire,VoB,1.0,2011,470981.0
-,Worcestershire,VoB,1.0,2011,566169.0
-,East Riding of Yorkshire,VoB,1.0,2011,334179.0
-,South Yorkshire,VoB,1.0,2011,1343601.0
-,Staffordshire,VoB,1.0,2011,848489.0
-,Aberdeenshire,VoB,1.0,2011,848489.0
-,Angus,VoB,1.0,2011,848489.0
-,City of Aberdeen,VoB,1.0,2011,848489.0
-,Caithness,VoB,1.0,2011,
-,Berwickshire,VoB,1.0,2011,
-,Ayrshire and Arran,VoB,1.0,2011,
-,Banffshire,VoB,1.0,2011,
-,Argyll and Bute,VoB,1.0,2011,88166.0
-,Clackmannan,VoB,1.0,2011,51442.0
-,City of Glasgow,VoB,1.0,2011,593245.0
-,City of Edinburgh,VoB,1.0,2011,476626.0
-,City of Dundee,VoB,1.0,2011,147268.0
-,Dumfries,VoB,1.0,2011,
-,Dunbartonshire,VoB,1.0,2011,
-,East Lothian,VoB,1.0,2011,
-,Fife,VoB,1.0,2011,
-,Inverness,VoB,1.0,2011,
-,Kincardineshire,VoB,1.0,2011,
-,Lanarkshire,VoB,1.0,2011,
-,Midlothian,VoB,1.0,2011,83187.0
-,Moray,VoB,1.0,2011,93295.0
-,Nairn,VoB,1.0,2011,
-,Perth and Kinross,VoB,1.0,2011,146652.0
-,Renfrewshire,VoB,1.0,2011,
-,Ross and Cromarty,VoB,1.0,2011,
-,Roxburgh Ettrick and Lauderdale,VoB,1.0,2011,
-,Stirling and Falkirk,VoB,1.0,2011,
-,Sutherland,VoB,1.0,2011,
-,Tweeddale,VoB,1.0,2011,
-,West Lothian,VoB,1.0,2011,
-,Wigtown,VoB,1.0,2011,
-,Western Isles,VoB,1.0,2011,27684.0
-,Orkney,VoB,1.0,2011,
-,Shetland,VoB,1.0,2011,
-,The Stewartry of Kirkcudbright,VoB,1.0,2011,
-,West Glamorgan,VoB,1.0,2011,378835.0
-,Powys,VoB,1.0,2011,132976.0
-,Gwent,VoB,1.0,2011,487351.0
-,Gwynedd,VoB,1.0,2011,121874.0
-,Dyfed,VoB,1.0,2011,382138.0
-,Northern Ireland,Wiki,1.0,2011,1810863.0
-,Isle of Man,Isle-of-Man & Wiki,1.0,2011,83834.0
-,Clwyd,VoB,1.0,2011,381084.0
-,South Glamorgan,VoB,1.0,2011,
-,Mid Glamorgan,VoB,1.0,2011,521793.0
-,Inner London — West,data.london,1.0,2011,1096657.0
-,Inner London — East,data.london,1.0,2011,2136655.0
-,Outer London — East and North East,data.london,1.0,2011,1759382.0
-,Outer London — South,data.london,1.0,2011,1222669.0
-,Outer London — West and North West,data.london,,2011,1959989.0
-,Swansea,VoB,0.0,2011,239023.0
-,Neath Port Talbot,VoB,0.0,2011,139812.0
-,Blaenau Gwent,VoB,0.0,2011,69814.0
-,Caerphilly,VoB,0.0,2011,178806.0
-,Monmouthshire,VoB,0.0,2011,91323.0
-,Newport,VoB,0.0,2011,145736.0
-,Torfaen,VoB,0.0,2011,91075.0
-,Flintshire,VoB,0.0,2011,152506.0
-,Wrexham,VoB,0.0,2011,134844.0
-,Denbighshire,VoB,0.0,2011,93734.0
-,Vale of Glamorgan,VoB,0.0,2011,
-,Cardiff,VoB,0.0,2011,346090.0
-,Bridgend,VoB,0.0,2011,139178.0
-,Merthyr Tydfil,VoB,0.0,2011,58802.0
-,Rhondda; Cynon; Taff,VoB,0.0,2011,234410.0
-,Carmarthenshire,VoB,0.0,2011,183777.0
-,Ceredigion,VoB,0.0,2011,75922.0
-,Pembrokeshire,VoB,0.0,2011,122439.0
-,Halton,VoB,0.0,2011,125746.0
-,Warrington,VoB,0.0,2011,202228.0
-,Cheshire east,VoB,0.0,2011,370127.0
-,Cheshire West and Chester,VoB,0.0,2011,329608.0
-,Roxburghshire,VoB,0.0,2011,
-,Selkirkshire,VoB,0.0,2011,
-,Berwickshire,VoB,0.0,2011,
-,Midlothian,VoB,0.0,2011,
-,Peebles,VoB,0.0,2011,
-00AA,City of London,data.london,0.0,2011,7375.0
-00AB,Barking and Dagenham,data.london,0.0,2011,185911.0
-00AC,Barnet,data.london,0.0,2011,356386.0
-00AD,Bexley,data.london,0.0,2011,231997.0
-00AE,Brent,data.london,0.0,2011,311215.0
-00AF,Bromley,data.london,0.0,2011,309392.0
-00AG,Camden,data.london,0.0,2011,220338.0
-00AH,Croydon,data.london,0.0,2011,363378.0
-00AJ,Ealing,data.london,0.0,2011,338449.0
-00AK,Enfield,data.london,0.0,2011,312466.0
-00AL,Greenwich,data.london,0.0,2011,254557.0
-,Hackney,data.london,0.0,2011,246270.0
-00AN,Hammersmith and Fulham,data.london,0.0,2011,182493.0
-00AP,Haringey,data.london,0.0,2011,254926.0
-00AQ,Harrow,data.london,0.0,2011,239056.0
-00AR,Havering,data.london,0.0,2011,237232.0
-00AS,Hillingdon,data.london,0.0,2011,273936.0
-00AT,Hounslow,data.london,0.0,2011,253957.0
-00AU,Islington,data.london,0.0,2011,206125.0
-00AW,Kensington and Chelsea,data.london,0.0,2011,158649.0
-00AX,Kingston upon Thames,data.london,0.0,2011,160060.0
-00AY,Lambeth,data.london,0.0,2011,303086.0
-00AZ,Lewisham,data.london,0.0,2011,275885.0
-00BA,Merton,data.london,0.0,2011,199693.0
-00BB,Newham,data.london,0.0,2011,307984.0
-00BC,Redbridge,data.london,0.0,2011,278970.0
-00BD,Richmond upon Thames,data.london,0.0,2011,186990.0
-00BE,Southwark,data.london,0.0,2011,288283.0
-00BF,Sutton,data.london,0.0,2011,190146.0
-00BG,Tower Hamlets,data.london,0.0,2011,254096.0
-00BH,Waltham Forest,data.london,0.0,2011,258249.0
-00BJ,Wandsworth,data.london,0.0,2011,306995.0
-00BK,Westminster,data.london,0.0,2011,219396.0
-UKI1,Inner London,data.london,0.0,2011,3231901.0
-UKI2,Outer London,data.london,0.0,2011,4942040.0
-H,Greater London,data.london,0.0,2011,8173941.0
+statisticalAreaCode ,statisticalArea ,year ,population 
+UKH2,Bedfordshire and Hertfordshire,1851,294259.370291948
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1851,665393.1778217
+UKD6,Cheshire,1851,284321.793107613
+UKK3,Cornwall and Isles of Scilly,1851,371263.886191852
+UKD1,Cumbria,1851,299362.263955848
+UKF1,Derbyshire and Nottinghamshire,1851,631396.411618245
+UKK4,Devon,1851,770663.176707311
+UKK2,Dorset and Somerset,1851,666659.129003354
+UKH1,East Anglia,1851,1154591.33481076
+UKL2,East Wales,1851,378269.694433684
+UKE1,East Yorkshire and Northern Lincolnshire,1851,439494.517601781
+UKM7,Eastern Scotland,1851,636488.831280802
+UKH3,Essex,1851,389292.39833147
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1851,999853.123208322
+UKD3,Greater Manchester,1851,1082972.96131297
+UKJ3,Hampshire and Isle of Wight,1851,401509.038315836
+UKG1,Herefordshire Worcestershire and Warwickshire,1851,492000.707269155
+UKM6,Highlands and Islands,1851,824529.627024484
+UKI4,Inner London - East,1851,1322769.69032404
+UKI3,Inner London - West,1851,961543.304929536
+UKJ4,Kent,1851,513289.826915485
+UKD4,Lancashire,1851,595812.361379772
+UKF2,Leicestershire Rutland and Northamptonshire,1851,494192.8639199
+UKF3,Lincolnshire,1851,367345.844104738
+UKD7,Merseyside,1851,587342.886326042
+UKM5,North Eastern Scotland,1851,248795.463072067
+UKE2,North Yorkshire,1851,515251.313421354
+UKN0,Northern Ireland,1851,1442517
+UKC2,Northumberland and Tyne and Wear,1851,498587.41346968
+UKI5,Outer London - East and North East,1851,161685.119888326
+UKI6,Outer London - South,1851,67568.0267868603
+UKI7,Outer London - West and North West,1851,116036.064287543
+UKG2,Shropshire and Staffordshire,1851,708601.66856196
+UKE3,South Yorkshire,1851,297518.452285122
+UKM9,Southern Scotland,1851,140469.257733503
+UKJ2,Surrey East and West Sussex,1851,476506.318092142
+UKC1,Tees Valley and Durham,1851,410533.694066001
+UKM8,West Central Scotland,1851,1126768.3685064
+UKG3,West Midlands,1851,632272.354210333
+UKL1,West Wales and The Valleys,1851,1069701.07673293
+UKE4,West Yorkshire,1851,885723.139817574
+UKH2,Bedfordshire and Hertfordshire,1861,311201.968792076
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1861,698601.132155816
+UKD6,Cheshire,1861,301580.985329198
+UKK3,Cornwall and Isles of Scilly,1861,378917.979475204
+UKD1,Cumbria,1861,317068.272822448
+UKF1,Derbyshire and Nottinghamshire,1861,694243.943371684
+UKK4,Devon,1861,781204.510673572
+UKK2,Dorset and Somerset,1861,662827.439994872
+UKH1,East Anglia,1861,1134440.17416264
+UKL2,East Wales,1861,445955.030343897
+UKE1,East Yorkshire and Northern Lincolnshire,1861,470487.585556352
+UKM7,Eastern Scotland,1861,690260.373384285
+UKH3,Essex,1861,402026.558170026
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1861,1017609.18390648
+UKD3,Greater Manchester,1861,1269176.80311661
+UKJ3,Hampshire and Isle of Wight,1861,435229.398761889
+UKG1,Herefordshire Worcestershire and Warwickshire,1861,520951.119842829
+UKM6,Highlands and Islands,1861,909745.868596134
+UKI4,Inner London - East,1861,1637617.49914924
+UKI3,Inner London - West,1861,1067128.55056679
+UKJ4,Kent,1861,572243.680600435
+UKD4,Lancashire,1861,705006.039559479
+UKF2,Leicestershire Rutland and Northamptonshire,1861,509645.166958434
+UKF3,Lincolnshire,1861,372046.714540973
+UKD7,Merseyside,1861,737139.143514446
+UKM5,North Eastern Scotland,1861,304954.084655109
+UKE2,North Yorkshire,1861,553066.237738418
+UKN0,Northern Ireland,1861,1396453
+UKC2,Northumberland and Tyne and Wear,1861,585838.899168941
+UKI5,Outer London - East and North East,1861,211201.187854126
+UKI6,Outer London - South,1861,95805.4111156975
+UKI7,Outer London - West and North West,1861,142270.304909074
+UKG2,Shropshire and Staffordshire,1861,794409.995384936
+UKE3,South Yorkshire,1861,381762.24246564
+UKM9,Southern Scotland,1861,136937.752763303
+UKJ2,Surrey East and West Sussex,1861,540035.11093428
+UKC1,Tees Valley and Durham,1861,535545.084481393
+UKM8,West Central Scotland,1861,1322487.99091472
+UKG3,West Midlands,1861,801951.41935772
+UKL1,West Wales and The Valleys,1861,1198239.9935818
+UKE4,West Yorkshire,1861,979294.069963904
+UKH2,Bedfordshire and Hertfordshire,1871,325710.81625166
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1871,733047.817069683
+UKD6,Cheshire,1871,333346.088576962
+UKK3,Cornwall and Isles of Scilly,1871,362072.369569225
+UKD1,Cumbria,1871,371430.208481433
+UKF1,Derbyshire and Nottinghamshire,1871,737639.519041253
+UKK4,Devon,1871,746230.334660592
+UKK2,Dorset and Somerset,1871,654824.980667704
+UKH1,East Anglia,1871,1150722.39306204
+UKL2,East Wales,1871,523247.8396859
+UKE1,East Yorkshire and Northern Lincolnshire,1871,449179.446855073
+UKM7,Eastern Scotland,1871,760330.545352034
+UKH3,Essex,1871,395892.219120308
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1871,1137900.85573427
+UKD3,Greater Manchester,1871,1595445.40877565
+UKJ3,Hampshire and Isle of Wight,1871,465369.958142365
+UKG1,Herefordshire Worcestershire and Warwickshire,1871,538859.960707269
+UKM6,Highlands and Islands,1871,910381.225330974
+UKI4,Inner London - East,1871,2004599.19839679
+UKI3,Inner London - West,1871,1161437.70200977
+UKJ4,Kent,1871,635175.251655279
+UKD4,Lancashire,1871,760681.575990458
+UKF2,Leicestershire Rutland and Northamptonshire,1871,544550.677126257
+UKF3,Lincolnshire,1871,377100.098190027
+UKD7,Merseyside,1871,903184.404451663
+UKM5,North Eastern Scotland,1871,328430.090404741
+UKE2,North Yorkshire,1871,516477.054875528
+UKN0,Northern Ireland,1871,1359190
+UKC2,Northumberland and Tyne and Wear,1871,719924.28870911
+UKI5,Outer London - East and North East,1871,242527.679832489
+UKI6,Outer London - South,1871,163373.437902558
+UKI7,Outer London - West and North West,1871,201801.850934857
+UKG2,Shropshire and Staffordshire,1871,811397.084314914
+UKE3,South Yorkshire,1871,485764.251784629
+UKM9,Southern Scotland,1871,132703.18906021
+UKJ2,Surrey East and West Sussex,1871,612353.249003578
+UKC1,Tees Valley and Durham,1871,659242.776569529
+UKM8,West Central Scotland,1871,1587744.11088761
+UKG3,West Midlands,1871,999724.58061456
+UKL1,West Wales and The Valleys,1871,1385630.89842555
+UKE4,West Yorkshire,1871,1230352.52573941
+UKH2,Bedfordshire and Hertfordshire,1881,340219.663711244
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1881,767494.501983549
+UKD6,Cheshire,1881,365111.191824727
+UKK3,Cornwall and Isles of Scilly,1881,345226.759663246
+UKD1,Cumbria,1881,425792.144140418
+UKF1,Derbyshire and Nottinghamshire,1881,781035.094710823
+UKK4,Devon,1881,711256.158647613
+UKK2,Dorset and Somerset,1881,646822.521340536
+UKH1,East Anglia,1881,1167004.61196144
+UKL2,East Wales,1881,600540.649027903
+UKE1,East Yorkshire and Northern Lincolnshire,1881,427871.308153794
+UKM7,Eastern Scotland,1881,841905.77006693
+UKH3,Essex,1881,389757.880070589
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1881,1258192.52756207
+UKD3,Greater Manchester,1881,1921714.01443469
+UKJ3,Hampshire and Isle of Wight,1881,495510.51752284
+UKG1,Herefordshire Worcestershire and Warwickshire,1881,556768.801571709
+UKM6,Highlands and Islands,1881,931716.661365113
+UKI4,Inner London - East,1881,2517760.23745604
+UKI3,Inner London - West,1881,1276248.84289688
+UKJ4,Kent,1881,698106.822710123
+UKD4,Lancashire,1881,816357.112421437
+UKF2,Leicestershire Rutland and Northamptonshire,1881,579456.187294081
+UKF3,Lincolnshire,1881,382153.481839081
+UKD7,Merseyside,1881,1069229.66538888
+UKM5,North Eastern Scotland,1881,350903.138631398
+UKE2,North Yorkshire,1881,479887.872012638
+UKN0,Northern Ireland,1881,1304816
+UKC2,Northumberland and Tyne and Wear,1881,854009.678249278
+UKI5,Outer London - East and North East,1881,314275.451782933
+UKI6,Outer London - South,1881,236992.332759883
+UKI7,Outer London - West and North West,1881,273441.508016731
+UKG2,Shropshire and Staffordshire,1881,828384.173244893
+UKE3,South Yorkshire,1881,589766.261103617
+UKM9,Southern Scotland,1881,133875.522432777
+UKJ2,Surrey East and West Sussex,1881,684671.387072877
+UKC1,Tees Valley and Durham,1881,782940.468657665
+UKM8,West Central Scotland,1881,1875516.87769284
+UKG3,West Midlands,1881,1197497.7418714
+UKL1,West Wales and The Valleys,1881,1573021.80326929
+UKE4,West Yorkshire,1881,1481410.98151492
+UKH2,Bedfordshire and Hertfordshire,1891,375409.197007704
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1891,806460.0018213
+UKD6,Cheshire,1891,405738.568982103
+UKK3,Cornwall and Isles of Scilly,1891,337033.808148467
+UKD1,Cumbria,1891,449815.137845907
+UKF1,Derbyshire and Nottinghamshire,1891,880517.327126174
+UKK4,Devon,1891,715182.651636992
+UKK2,Dorset and Somerset,1891,650881.668619217
+UKH1,East Anglia,1891,1199217.63496386
+UKL2,East Wales,1891,743935.215037974
+UKE1,East Yorkshire and Northern Lincolnshire,1891,447804.206316266
+UKM7,Eastern Scotland,1891,887721.377154176
+UKH3,Essex,1891,408316.269189887
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1891,1311892.52674067
+UKD3,Greater Manchester,1891,2188579.89585349
+UKJ3,Hampshire and Isle of Wight,1891,525775.094923883
+UKG1,Herefordshire Worcestershire and Warwickshire,1891,571770.137524558
+UKM6,Highlands and Islands,1891,960544.339060505
+UKI4,Inner London - East,1891,2923586.79623398
+UKI3,Inner London - West,1891,1408486.67481149
+UKJ4,Kent,1891,763802.633526711
+UKD4,Lancashire,1891,953757.399539155
+UKF2,Leicestershire Rutland and Northamptonshire,1891,633232.531361099
+UKF3,Lincolnshire,1891,372850.673773754
+UKD7,Merseyside,1891,1190367.57884574
+UKM5,North Eastern Scotland,1891,378211.48207475
+UKE2,North Yorkshire,1891,478303.665567607
+UKN0,Northern Ireland,1891,1236056
+UKC2,Northumberland and Tyne and Wear,1891,1021448.21433368
+UKI5,Outer London - East and North East,1891,466865.783677541
+UKI6,Outer London - South,1891,311619.705628953
+UKI7,Outer London - West and North West,1891,374342.433484159
+UKG2,Shropshire and Staffordshire,1891,864339.041031844
+UKE3,South Yorkshire,1891,686577.003652881
+UKM9,Southern Scotland,1891,128233.134810662
+UKJ2,Surrey East and West Sussex,1891,797306.302017604
+UKC1,Tees Valley and Durham,1891,854331.131684844
+UKM8,West Central Scotland,1891,2251655.68297604
+UKG3,West Midlands,1891,1339646.15249568
+UKL1,West Wales and The Valleys,1891,1747778.19384629
+UKE4,West Yorkshire,1891,1652127.91491212
+UKH2,Bedfordshire and Hertfordshire,1901,434211.073803631
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1901,840112.182571188
+UKD6,Cheshire,1901,434827.659271593
+UKK3,Cornwall and Isles of Scilly,1901,339728.099305598
+UKD1,Cumbria,1901,452773.568225
+UKF1,Derbyshire and Nottinghamshire,1901,1044708.53236959
+UKK4,Devon,1901,723606.826055844
+UKK2,Dorset and Somerset,1901,656424.208876081
+UKH1,East Anglia,1901,1241152.00767025
+UKL2,East Wales,1901,931943.955286063
+UKE1,East Yorkshire and Northern Lincolnshire,1901,470219.009168773
+UKM7,Eastern Scotland,1901,929681.779074107
+UKH3,Essex,1901,441742.170423483
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1901,1370216.03010923
+UKD3,Greater Manchester,1901,2441788.26833713
+UKJ3,Hampshire and Isle of Wight,1901,593207.455050558
+UKG1,Herefordshire Worcestershire and Warwickshire,1901,602920.078585462
+UKM6,Highlands and Islands,1901,996800.199816312
+UKI4,Inner London - East,1901,3286479.56289938
+UKI3,Inner London - West,1901,1526373.11411522
+UKJ4,Kent,1901,836996.491369244
+UKD4,Lancashire,1901,1046135.17621686
+UKF2,Leicestershire Rutland and Northamptonshire,1901,686956.461837408
+UKF3,Lincolnshire,1901,387990.517460503
+UKD7,Merseyside,1901,1369233.9730451
+UKM5,North Eastern Scotland,1901,391891.152716502
+UKE2,North Yorkshire,1901,497419.94228392
+UKN0,Northern Ireland,1901,1236952
+UKC2,Northumberland and Tyne and Wear,1901,1207828.63409673
+UKI5,Outer London - East and North East,1901,693224.951521197
+UKI6,Outer London - South,1901,402382.726685929
+UKI7,Outer London - West and North West,1901,528720.849449324
+UKG2,Shropshire and Staffordshire,1901,858266.144430402
+UKE3,South Yorkshire,1901,842136.678043169
+UKM9,Southern Scotland,1901,123409.844741432
+UKJ2,Surrey East and West Sussex,1901,910904.873705051
+UKC1,Tees Valley and Durham,1901,1011719.78629403
+UKM8,West Central Scotland,1901,2632814.63247218
+UKG3,West Midlands,1901,1566293.75838347
+UKL1,West Wales and The Valleys,1901,2079459.52844919
+UKE4,West Yorkshire,1901,1783250.33676191
+UKH2,Bedfordshire and Hertfordshire,1911,493012.950599558
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1911,875572.585206685
+UKD6,Cheshire,1911,463916.749561084
+UKK3,Cornwall and Isles of Scilly,1911,342422.39046273
+UKD1,Cumbria,1911,455731.998604092
+UKF1,Derbyshire and Nottinghamshire,1911,1208899.73761301
+UKK4,Devon,1911,732031.000474696
+UKK2,Dorset and Somerset,1911,661966.749132945
+UKH1,East Anglia,1911,1283086.38037664
+UKL2,East Wales,1911,1119952.69553415
+UKE1,East Yorkshire and Northern Lincolnshire,1911,492633.812021281
+UKM7,Eastern Scotland,1911,922268.10285468
+UKH3,Essex,1911,475168.071657078
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1911,1428539.53347779
+UKD3,Greater Manchester,1911,2694996.64082078
+UKJ3,Hampshire and Isle of Wight,1911,660639.815177233
+UKG1,Herefordshire Worcestershire and Warwickshire,1911,634070.019646365
+UKM6,Highlands and Islands,1911,1014673.85676844
+UKI4,Inner London - East,1911,3398925.20890838
+UKI3,Inner London - West,1911,1543799.80514273
+UKJ4,Kent,1911,910190.349211778
+UKD4,Lancashire,1911,1138512.95289457
+UKF2,Leicestershire Rutland and Northamptonshire,1911,740680.392313717
+UKF3,Lincolnshire,1911,403130.361147251
+UKD7,Merseyside,1911,1548100.36724447
+UKM5,North Eastern Scotland,1911,405855.81128851
+UKE2,North Yorkshire,1911,516536.219000232
+UKN0,Northern Ireland,1911,1250531
+UKC2,Northumberland and Tyne and Wear,1911,1394209.05385978
+UKI5,Outer London - East and North East,1911,880173.371392074
+UKI6,Outer London - South,1911,531467.912189185
+UKI7,Outer London - West and North West,1911,768865.052061804
+UKG2,Shropshire and Staffordshire,1911,852193.247828959
+UKE3,South Yorkshire,1911,997696.352433457
+UKM9,Southern Scotland,1911,122173.519372546
+UKJ2,Surrey East and West Sussex,1911,1024503.4453925
+UKC1,Tees Valley and Durham,1911,1169108.44090323
+UKM8,West Central Scotland,1911,2121249.93682967
+UKG3,West Midlands,1911,1792941.36427127
+UKL1,West Wales and The Valleys,1911,2411140.86305209
+UKE4,West Yorkshire,1911,1914372.75861171
+UKH2,Bedfordshire and Hertfordshire,1921,524096.648099833
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1921,909382.506929276
+UKD6,Cheshire,1921,480205.068565833
+UKK3,Cornwall and Isles of Scilly,1921,335016.759048731
+UKD1,Cumbria,1921,483403.792216521
+UKF1,Derbyshire and Nottinghamshire,1921,1296349.64792869
+UKK4,Devon,1921,738216.595048993
+UKK2,Dorset and Somerset,1921,657104.477591585
+UKH1,East Anglia,1921,1299775.20421673
+UKL2,East Wales,1921,1233847.59334944
+UKE1,East Yorkshire and Northern Lincolnshire,1921,537518.427347847
+UKM7,Eastern Scotland,1921,1779421.42331556
+UKH3,Essex,1921,500996.600636397
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1921,1456117.82158211
+UKD3,Greater Manchester,1921,2731753.03535837
+UKJ3,Hampshire and Isle of Wight,1921,677876.926575129
+UKG1,Herefordshire Worcestershire and Warwickshire,1921,647924.086444008
+UKM6,Highlands and Islands,1921,1042947.23146883
+UKI4,Inner London - East,1921,3398925.20890838
+UKI3,Inner London - West,1921,1524322.91517081
+UKJ4,Kent,1921,994854.993080475
+UKD4,Lancashire,1921,1156177.18805837
+UKF2,Leicestershire Rutland and Northamptonshire,1921,749338.341001137
+UKF3,Lincolnshire,1921,415314.717395357
+UKD7,Merseyside,1921,1681442.84609689
+UKM5,North Eastern Scotland,1921,391990.398513267
+UKE2,North Yorkshire,1921,544829.199482489
+UKN0,Northern Ireland,1921,1264000
+UKC2,Northumberland and Tyne and Wear,1921,1494800.35792488
+UKI5,Outer London - East and North East,1921,963036.995334841
+UKI6,Outer London - South,1921,592985.07090558
+UKI7,Outer London - West and North West,1921,874811.023802603
+UKG2,Shropshire and Staffordshire,1921,877860.625959587
+UKE3,South Yorkshire,1921,1105200.79599043
+UKM9,Southern Scotland,1921,122274.200113421
+UKJ2,Surrey East and West Sussex,1921,1113434.86187878
+UKC1,Tees Valley and Durham,1921,1257879.79562056
+UKM8,West Central Scotland,1921,2004297.57715673
+UKG3,West Midlands,1921,1988049.15245102
+UKL1,West Wales and The Valleys,1921,2630555.78160195
+UKE4,West Yorkshire,1921,1938803.05115013
+UKH2,Bedfordshire and Hertfordshire,1931,617130.121662114
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1931,983097.41516527
+UKD6,Cheshire,1931,510081.247169152
+UKK3,Cornwall and Isles of Scilly,1931,332120.133964235
+UKD1,Cumbria,1931,458008.352182399
+UKF1,Derbyshire and Nottinghamshire,1931,1410966.83344804
+UKK4,Devon,1931,756910.190374301
+UKK2,Dorset and Somerset,1931,676872.286147984
+UKH1,East Anglia,1931,1316673.52533929
+UKL2,East Wales,1931,1214222.26898948
+UKE1,East Yorkshire and Northern Lincolnshire,1931,552765.800098102
+UKM7,Eastern Scotland,1931,900132.299059943
+UKH3,Essex,1931,577910.165055706
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1931,1495136.03990032
+UKD3,Greater Manchester,1931,2786998.83544049
+UKJ3,Hampshire and Isle of Wight,1931,745192.235985763
+UKG1,Herefordshire Worcestershire and Warwickshire,1931,672910.648330059
+UKM6,Highlands and Islands,1931,958532.376066844
+UKI4,Inner London - East,1931,3347813.55163157
+UKI3,Inner London - West,1931,1513046.82097654
+UKJ4,Kent,1931,1019149.43709184
+UKD4,Lancashire,1931,1172323.35245895
+UKF2,Leicestershire Rutland and Northamptonshire,1931,801085.437901955
+UKF3,Lincolnshire,1931,421265.2653955
+UKD7,Merseyside,1931,1779556.24158767
+UKM5,North Eastern Scotland,1931,386935.612592391
+UKE2,North Yorkshire,1931,549748.870463806
+UKN0,Northern Ireland,1931,1243000
+UKC2,Northumberland and Tyne and Wear,1931,1505107.4173995
+UKI5,Outer London - East and North East,1931,1229817.44315058
+UKI6,Outer London - South,1931,796697.629277905
+UKI7,Outer London - West and North West,1931,1216865.16113719
+UKG2,Shropshire and Staffordshire,1931,906911.213802159
+UKE3,South Yorkshire,1931,1213669.15558584
+UKM9,Southern Scotland,1931,120065.196400484
+UKJ2,Surrey East and West Sussex,1931,1256723.07175434
+UKC1,Tees Valley and Durham,1931,1231043.32410061
+UKM8,West Central Scotland,1931,2022057.08733152
+UKG3,West Midlands,1931,2179364.1679359
+UKL1,West Wales and The Valleys,1931,2547206.64858183
+UKE4,West Yorkshire,1931,2003490.05046669
+UKH2,Bedfordshire and Hertfordshire,1941,764559.377182348
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1941,1120351.19910782
+UKD6,Cheshire,1941,564513.882693975
+UKK3,Cornwall and Isles of Scilly,1941,346303.427763781
+UKD1,Cumbria,1941,473374.257131409
+UKF1,Derbyshire and Nottinghamshire,1941,1508400.58674949
+UKK4,Devon,1941,804681.381648399
+UKK2,Dorset and Somerset,1941,732419.842232099
+UKH1,East Anglia,1941,1392699.07544867
+UKL2,East Wales,1941,1218715.8608981
+UKE1,East Yorkshire and Northern Lincolnshire,1941,615683.863713542
+UKM7,Eastern Scotland,1941,932758.554084207
+UKH3,Essex,1941,680640.209199506
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1941,1642492.81423059
+UKD3,Greater Manchester,1941,2777496.19125094
+UKJ3,Hampshire and Isle of Wight,1941,860678.095429854
+UKG1,Herefordshire Worcestershire and Warwickshire,1941,749894.656188605
+UKM6,Highlands and Islands,1941,980928.70096996
+UKI4,Inner London - East,1941,3004343.21473135
+UKI3,Inner London - West,1941,1438214.55950548
+UKJ4,Kent,1941,1091521.86393809
+UKD4,Lancashire,1941,1203311.14986256
+UKF2,Leicestershire Rutland and Northamptonshire,1941,875743.09767473
+UKF3,Lincolnshire,1941,448327.033041933
+UKD7,Merseyside,1941,1815354.76660953
+UKM5,North Eastern Scotland,1941,399943.061703914
+UKE2,North Yorkshire,1941,580681.266956413
+UKN0,Northern Ireland,1941,1308000
+UKC2,Northumberland and Tyne and Wear,1941,1509105.6594045
+UKI5,Outer London - East and North East,1941,1551166.61892863
+UKI6,Outer London - South,1941,1035706.91806128
+UKI7,Outer London - West and North West,1941,1628540.93704429
+UKG2,Shropshire and Staffordshire,1941,989487.555463724
+UKE3,South Yorkshire,1941,1252421.97875327
+UKM9,Southern Scotland,1941,123173.50096836
+UKJ2,Surrey East and West Sussex,1941,1482969.43054701
+UKC1,Tees Valley and Durham,1941,1214653.54307285
+UKM8,West Central Scotland,1941,2054200.01069647
+UKG3,West Midlands,1941,2385141.71154536
+UKL1,West Wales and The Valleys,1941,2498917.72344924
+UKE4,West Yorkshire,1941,2026374.8756371
+UKH2,Bedfordshire and Hertfordshire,1951,911988.632702582
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1951,1262806.95556927
+UKD6,Cheshire,1951,618946.518218798
+UKK3,Cornwall and Isles of Scilly,1951,360486.721563326
+UKD1,Cumbria,1951,488740.16208042
+UKF1,Derbyshire and Nottinghamshire,1951,1605834.34005095
+UKK4,Devon,1951,852452.572922497
+UKK2,Dorset and Somerset,1951,787967.398316215
+UKH1,East Anglia,1951,1468724.62555805
+UKL2,East Wales,1951,1223209.45280672
+UKE1,East Yorkshire and Northern Lincolnshire,1951,678601.927328982
+UKM7,Eastern Scotland,1951,964107.145431987
+UKH3,Essex,1951,783370.253343307
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1951,1789849.58856086
+UKD3,Greater Manchester,1951,2767993.54706139
+UKJ3,Hampshire and Isle of Wight,1951,976163.954873945
+UKG1,Herefordshire Worcestershire and Warwickshire,1951,826878.664047151
+UKM6,Highlands and Islands,1951,1003325.02587308
+UKI4,Inner London - East,1951,2377714.29651756
+UKI3,Inner London - West,1951,1314177.52336851
+UKJ4,Kent,1951,1163894.29078433
+UKD4,Lancashire,1951,1234298.94726617
+UKF2,Leicestershire Rutland and Northamptonshire,1951,950400.757447505
+UKF3,Lincolnshire,1951,475388.800688366
+UKD7,Merseyside,1951,1851153.29163138
+UKM5,North Eastern Scotland,1951,389998.482874417
+UKE2,North Yorkshire,1951,611613.663449019
+UKN0,Northern Ireland,1951,1370921
+UKC2,Northumberland and Tyne and Wear,1951,1513103.90140951
+UKI5,Outer London - East and North East,1951,1659293.54285394
+UKI6,Outer London - South,1951,1110334.29093035
+UKI7,Outer London - West and North West,1951,1785946.38077348
+UKG2,Shropshire and Staffordshire,1951,1072063.89712529
+UKE3,South Yorkshire,1951,1291174.80192069
+UKM9,Southern Scotland,1951,126281.805536236
+UKJ2,Surrey East and West Sussex,1951,1709215.78933969
+UKC1,Tees Valley and Durham,1951,1198263.76204508
+UKM8,West Central Scotland,1951,2086342.93406143
+UKG3,West Midlands,1951,2590919.25515483
+UKL1,West Wales and The Valleys,1951,2450628.79831666
+UKE4,West Yorkshire,1951,2049259.70080751
+UKH2,Bedfordshire and Hertfordshire,1961,1234170.71654571
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1961,1492980.03124427
+UKD6,Cheshire,1961,650094.78520065
+UKK3,Cornwall and Isles of Scilly,1961,357271.394334173
+UKD1,Cumbria,1961,495918.553942794
+UKF1,Derbyshire and Nottinghamshire,1961,1722482.81368794
+UKK4,Devon,1961,884656.313986524
+UKK2,Dorset and Somerset,1961,843738.200480341
+UKH1,East Anglia,1961,1550757.45392559
+UKL2,East Wales,1961,1258171.28159828
+UKE1,East Yorkshire and Northern Lincolnshire,1961,719441.71754141
+UKM7,Eastern Scotland,1961,987710.952989713
+UKH3,Essex,1961,1074872.16783887
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1961,1869879.15106692
+UKD3,Greater Manchester,1961,2772682.8293542
+UKJ3,Hampshire and Isle of Wight,1961,1148388.75545785
+UKG1,Herefordshire Worcestershire and Warwickshire,1961,920947.583497053
+UKM6,Highlands and Islands,1961,1013214.8894514
+UKI4,Inner London - East,1961,2243393.88342723
+UKI3,Inner London - West,1961,1256527.97925057
+UKJ4,Kent,1961,1259261.1848607
+UKD4,Lancashire,1961,1255469.11056087
+UKF2,Leicestershire Rutland and Northamptonshire,1961,1074121.42061173
+UKF3,Lincolnshire,1961,487118.066023615
+UKD7,Merseyside,1961,1919925.01339835
+UKM5,North Eastern Scotland,1961,385325.680775851
+UKE2,North Yorkshire,1961,602258.771260436
+UKN0,Northern Ireland,1961,1425042
+UKC2,Northumberland and Tyne and Wear,1961,1559642.55362159
+UKI5,Outer London - East and North East,1961,1652139.98683089
+UKI6,Outer London - South,1961,1135531.11405378
+UKI7,Outer London - West and North West,1961,1759012.89673846
+UKG2,Shropshire and Staffordshire,1961,1194361.6529371
+UKE3,South Yorkshire,1961,1341510.57983428
+UKM9,Southern Scotland,1961,124941.386520004
+UKJ2,Surrey East and West Sussex,1961,2032875.73328847
+UKC1,Tees Valley and Durham,1961,1215549.51618674
+UKM8,West Central Scotland,1961,2133286.28259598
+UKG3,West Midlands,1961,2757891.11517334
+UKL1,West Wales and The Valleys,1961,2353695.58699158
+UKE4,West Yorkshire,1961,2072223.74088824
+UKH2,Bedfordshire and Hertfordshire,1971,1464277.95202419
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1971,1774473.43647191
+UKD6,Cheshire,1971,777036.45830188
+UKK3,Cornwall and Isles of Scilly,1971,397395.365329073
+UKD1,Cumbria,1971,505808.667554188
+UKF1,Derbyshire and Nottinghamshire,1971,1878515.17210814
+UKK4,Devon,1971,951895.796284619
+UKK2,Dorset and Somerset,1971,958559.696902332
+UKH1,East Anglia,1971,1758780.37110525
+UKL2,East Wales,1971,1119135.64079914
+UKE1,East Yorkshire and Northern Lincolnshire,1971,893967.831566238
+UKM7,Eastern Scotland,1971,1761800
+UKH3,Essex,1971,1376320.42510873
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1971,1973131.77190714
+UKD3,Greater Manchester,1971,2789502.05135042
+UKJ3,Hampshire and Isle of Wight,1971,1486068.92354798
+UKG1,Herefordshire Worcestershire and Warwickshire,1971,1047661.06090373
+UKM6,Highlands and Islands,1971,583600
+UKI4,Inner London - East,1971,1945309.67595569
+UKI3,Inner London - West,1971,1108132.52945504
+UKJ4,Kent,1971,1499752.53331724
+UKD4,Lancashire,1971,1403818.14333656
+UKF2,Leicestershire Rutland and Northamptonshire,1971,1288067.22707054
+UKF3,Lincolnshire,1971,523677.38315575
+UKD7,Merseyside,1971,1839912.5693612
+UKM5,North Eastern Scotland,1971,401400
+UKE2,North Yorkshire,1971,957104.309782732
+UKN0,Northern Ireland,1971,1536065
+UKC2,Northumberland and Tyne and Wear,1971,1532247.93472253
+UKI5,Outer London - East and North East,1971,1603714.28289233
+UKI6,Outer London - South,1971,1135546.24122395
+UKI7,Outer London - West and North West,1971,1724396.81623835
+UKG2,Shropshire and Staffordshire,1971,1345261.2465299
+UKE3,South Yorkshire,1971,2715750.02250812
+UKM9,Southern Scotland,1971,797400
+UKJ2,Surrey East and West Sussex,1971,2316530.17260659
+UKC1,Tees Valley and Durham,1971,1212437.93803492
+UKM8,West Central Scotland,1971,1636100
+UKG3,West Midlands,1971,2860288.74770345
+UKL1,West Wales and The Valleys,1971,2473617.44457128
+UKE4,West Yorkshire,1971,4267239.91217434
+UKH2,Bedfordshire and Hertfordshire,1981,1479200
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1981,1808600
+UKD6,Cheshire,1981,809600
+UKK3,Cornwall and Isles of Scilly,1981,426500
+UKD1,Cumbria,1981,481200
+UKF1,Derbyshire and Nottinghamshire,1981,1908400
+UKK4,Devon,1981,965500
+UKK2,Dorset and Somerset,1981,1029500
+UKH1,East Anglia,1981,1893700
+UKL2,East Wales,1981,980100
+UKE1,East Yorkshire and Northern Lincolnshire,1981,857600
+UKM7,Eastern Scotland,1981,1761800
+UKH3,Essex,1981,1482000
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1981,1961600
+UKD3,Greater Manchester,1981,2618300
+UKJ3,Hampshire and Isle of Wight,1981,1605600
+UKG1,Herefordshire Worcestershire and Warwickshire,1981,1105000
+UKM6,Highlands and Islands,1981,583600
+UKI4,Inner London - East,1981,1622100
+UKI3,Inner London - West,1981,928000
+UKJ4,Kent,1981,1484800
+UKD4,Lancashire,1981,1385600
+UKF2,Leicestershire Rutland and Northamptonshire,1981,1391300
+UKF3,Lincolnshire,1981,553100
+UKD7,Merseyside,1981,1645600
+UKM5,North Eastern Scotland,1981,401400
+UKE2,North Yorkshire,1981,676800
+UKN0,Northern Ireland,1981,1543000
+UKC2,Northumberland and Tyne and Wear,1981,1455500
+UKI5,Outer London - East and North East,1981,1534700
+UKI6,Outer London - South,1981,1092100
+UKI7,Outer London - West and North West,1981,1628100
+UKG2,Shropshire and Staffordshire,1981,1399100
+UKE3,South Yorkshire,1981,1317700
+UKM9,Southern Scotland,1981,797400
+UKJ2,Surrey East and West Sussex,1981,2344100
+UKC1,Tees Valley and Durham,1981,1180800
+UKM8,West Central Scotland,1981,1636100
+UKG3,West Midlands,1981,2682800
+UKL1,West Wales and The Valleys,1981,1833500
+UKE4,West Yorkshire,1981,2066600
+UKH2,Bedfordshire and Hertfordshire,1982,1479900
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1982,1826400
+UKD6,Cheshire,1982,809000
+UKK3,Cornwall and Isles of Scilly,1982,430100
+UKD1,Cumbria,1982,482100
+UKF1,Derbyshire and Nottinghamshire,1982,1901600
+UKK4,Devon,1982,967000
+UKK2,Dorset and Somerset,1982,1036700
+UKH1,East Anglia,1982,1910000
+UKL2,East Wales,1982,979100
+UKE1,East Yorkshire and Northern Lincolnshire,1982,856700
+UKM7,Eastern Scotland,1982,1759800
+UKH3,Essex,1982,1483000
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1982,1965900
+UKD3,Greater Manchester,1982,2598700
+UKJ3,Hampshire and Isle of Wight,1982,1606700
+UKG1,Herefordshire Worcestershire and Warwickshire,1982,1107100
+UKM6,Highlands and Islands,1982,582300
+UKI4,Inner London - East,1982,1604200
+UKI3,Inner London - West,1982,916800
+UKJ4,Kent,1982,1486600
+UKD4,Lancashire,1982,1384100
+UKF2,Leicestershire Rutland and Northamptonshire,1982,1396000
+UKF3,Lincolnshire,1982,552000
+UKD7,Merseyside,1982,1633300
+UKM5,North Eastern Scotland,1982,405800
+UKE2,North Yorkshire,1982,676900
+UKN0,Northern Ireland,1982,1545000
+UKC2,Northumberland and Tyne and Wear,1982,1450100
+UKI5,Outer London - East and North East,1982,1530900
+UKI6,Outer London - South,1982,1090300
+UKI7,Outer London - West and North West,1982,1623000
+UKG2,Shropshire and Staffordshire,1982,1397300
+UKE3,South Yorkshire,1982,1312500
+UKM9,Southern Scotland,1982,794700
+UKJ2,Surrey East and West Sussex,1982,2353500
+UKC1,Tees Valley and Durham,1982,1174200
+UKM8,West Central Scotland,1982,1622200
+UKG3,West Midlands,1982,2674500
+UKL1,West Wales and The Valleys,1982,1825200
+UKE4,West Yorkshire,1982,2060900
+UKH2,Bedfordshire and Hertfordshire,1983,1487900
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1983,1832500
+UKD6,Cheshire,1983,810100
+UKK3,Cornwall and Isles of Scilly,1983,432600
+UKD1,Cumbria,1983,481800
+UKF1,Derbyshire and Nottinghamshire,1983,1902000
+UKK4,Devon,1983,973600
+UKK2,Dorset and Somerset,1983,1043800
+UKH1,East Anglia,1983,1922700
+UKL2,East Wales,1983,981000
+UKE1,East Yorkshire and Northern Lincolnshire,1983,855700
+UKM7,Eastern Scotland,1983,1755400
+UKH3,Essex,1983,1491200
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1983,1976600
+UKD3,Greater Manchester,1983,2587700
+UKJ3,Hampshire and Isle of Wight,1983,1621000
+UKG1,Herefordshire Worcestershire and Warwickshire,1983,1110000
+UKM6,Highlands and Islands,1983,582700
+UKI4,Inner London - East,1983,1603500
+UKI3,Inner London - West,1983,914300
+UKJ4,Kent,1983,1486300
+UKD4,Lancashire,1983,1378500
+UKF2,Leicestershire Rutland and Northamptonshire,1983,1399400
+UKF3,Lincolnshire,1983,553100
+UKD7,Merseyside,1983,1623100
+UKM5,North Eastern Scotland,1983,409600
+UKE2,North Yorkshire,1983,681100
+UKN0,Northern Ireland,1983,1551000
+UKC2,Northumberland and Tyne and Wear,1983,1445900
+UKI5,Outer London - East and North East,1983,1525600
+UKI6,Outer London - South,1983,1088500
+UKI7,Outer London - West and North West,1983,1621100
+UKG2,Shropshire and Staffordshire,1983,1399400
+UKE3,South Yorkshire,1983,1309500
+UKM9,Southern Scotland,1983,792300
+UKJ2,Surrey East and West Sussex,1983,2363300
+UKC1,Tees Valley and Durham,1983,1170800
+UKM8,West Central Scotland,1983,1608400
+UKG3,West Midlands,1983,2665100
+UKL1,West Wales and The Valleys,1983,1822100
+UKE4,West Yorkshire,1983,2056200
+UKH2,Bedfordshire and Hertfordshire,1984,1493600
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1984,1858400
+UKD6,Cheshire,1984,813700
+UKK3,Cornwall and Isles of Scilly,1984,439700
+UKD1,Cumbria,1984,481900
+UKF1,Derbyshire and Nottinghamshire,1984,1910100
+UKK4,Devon,1984,978700
+UKK2,Dorset and Somerset,1984,1057800
+UKH1,East Anglia,1984,1936600
+UKL2,East Wales,1984,983000
+UKE1,East Yorkshire and Northern Lincolnshire,1984,854600
+UKM7,Eastern Scotland,1984,1755000
+UKH3,Essex,1984,1496700
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1984,1987900
+UKD3,Greater Manchester,1984,2572700
+UKJ3,Hampshire and Isle of Wight,1984,1633700
+UKG1,Herefordshire Worcestershire and Warwickshire,1984,1115500
+UKM6,Highlands and Islands,1984,583500
+UKI4,Inner London - East,1984,1604800
+UKI3,Inner London - West,1984,918500
+UKJ4,Kent,1984,1491200
+UKD4,Lancashire,1984,1380400
+UKF2,Leicestershire Rutland and Northamptonshire,1984,1402000
+UKF3,Lincolnshire,1984,554700
+UKD7,Merseyside,1984,1612000
+UKM5,North Eastern Scotland,1984,413100
+UKE2,North Yorkshire,1984,686200
+UKN0,Northern Ireland,1984,1557000
+UKC2,Northumberland and Tyne and Wear,1984,1443300
+UKI5,Outer London - East and North East,1984,1522600
+UKI6,Outer London - South,1984,1084400
+UKI7,Outer London - West and North West,1984,1624500
+UKG2,Shropshire and Staffordshire,1984,1404900
+UKE3,South Yorkshire,1984,1303400
+UKM9,Southern Scotland,1984,791800
+UKJ2,Surrey East and West Sussex,1984,2377100
+UKC1,Tees Valley and Durham,1984,1166200
+UKM8,West Central Scotland,1984,1595700
+UKG3,West Midlands,1984,2653700
+UKL1,West Wales and The Valleys,1984,1817800
+UKE4,West Yorkshire,1984,2050900
+UKH2,Bedfordshire and Hertfordshire,1985,1498200
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1985,1881000
+UKD6,Cheshire,1985,818000
+UKK3,Cornwall and Isles of Scilly,1985,444700
+UKD1,Cumbria,1985,482300
+UKF1,Derbyshire and Nottinghamshire,1985,1917000
+UKK4,Devon,1985,988700
+UKK2,Dorset and Somerset,1985,1073600
+UKH1,East Anglia,1985,1960700
+UKL2,East Wales,1985,986300
+UKE1,East Yorkshire and Northern Lincolnshire,1985,853600
+UKM7,Eastern Scotland,1985,1753200
+UKH3,Essex,1985,1505200
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1985,1997500
+UKD3,Greater Manchester,1985,2562200
+UKJ3,Hampshire and Isle of Wight,1985,1651500
+UKG1,Herefordshire Worcestershire and Warwickshire,1985,1123700
+UKM6,Highlands and Islands,1985,585000
+UKI4,Inner London - East,1985,1609300
+UKI3,Inner London - West,1985,922700
+UKJ4,Kent,1985,1495200
+UKD4,Lancashire,1985,1382500
+UKF2,Leicestershire Rutland and Northamptonshire,1985,1412900
+UKF3,Lincolnshire,1985,557600
+UKD7,Merseyside,1985,1602700
+UKM5,North Eastern Scotland,1985,416600
+UKE2,North Yorkshire,1985,689500
+UKN0,Northern Ireland,1985,1565000
+UKC2,Northumberland and Tyne and Wear,1985,1440400
+UKI5,Outer London - East and North East,1985,1523500
+UKI6,Outer London - South,1985,1083900
+UKI7,Outer London - West and North West,1985,1627700
+UKG2,Shropshire and Staffordshire,1985,1409900
+UKE3,South Yorkshire,1985,1300100
+UKM9,Southern Scotland,1985,790100
+UKJ2,Surrey East and West Sussex,1985,2385700
+UKC1,Tees Valley and Durham,1985,1161300
+UKM8,West Central Scotland,1985,1583300
+UKG3,West Midlands,1985,2648000
+UKL1,West Wales and The Valleys,1985,1817200
+UKE4,West Yorkshire,1985,2046200
+UKH2,Bedfordshire and Hertfordshire,1986,1499900
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1986,1908500
+UKD6,Cheshire,1986,821600
+UKK3,Cornwall and Isles of Scilly,1986,449400
+UKD1,Cumbria,1986,483800
+UKF1,Derbyshire and Nottinghamshire,1986,1921600
+UKK4,Devon,1986,999900
+UKK2,Dorset and Somerset,1986,1085300
+UKH1,East Anglia,1986,1986500
+UKL2,East Wales,1986,988600
+UKE1,East Yorkshire and Northern Lincolnshire,1986,853400
+UKM7,Eastern Scotland,1986,1747700
+UKH3,Essex,1986,1513000
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1986,2013000
+UKD3,Greater Manchester,1986,2554300
+UKJ3,Hampshire and Isle of Wight,1986,1658600
+UKG1,Herefordshire Worcestershire and Warwickshire,1986,1129000
+UKM6,Highlands and Islands,1986,585800
+UKI4,Inner London - East,1986,1614200
+UKI3,Inner London - West,1986,922400
+UKJ4,Kent,1986,1500700
+UKD4,Lancashire,1986,1383500
+UKF2,Leicestershire Rutland and Northamptonshire,1986,1422200
+UKF3,Lincolnshire,1986,564100
+UKD7,Merseyside,1986,1589400
+UKM5,North Eastern Scotland,1986,419700
+UKE2,North Yorkshire,1986,691500
+UKN0,Northern Ireland,1986,1574000
+UKC2,Northumberland and Tyne and Wear,1986,1436300
+UKI5,Outer London - East and North East,1986,1523700
+UKI6,Outer London - South,1986,1081900
+UKI7,Outer London - West and North West,1986,1632000
+UKG2,Shropshire and Staffordshire,1986,1413000
+UKE3,South Yorkshire,1986,1294000
+UKM9,Southern Scotland,1986,788000
+UKJ2,Surrey East and West Sussex,1986,2400600
+UKC1,Tees Valley and Durham,1986,1157800
+UKM8,West Central Scotland,1986,1570900
+UKG3,West Midlands,1986,2637900
+UKL1,West Wales and The Valleys,1986,1822100
+UKE4,West Yorkshire,1986,2044700
+UKH2,Bedfordshire and Hertfordshire,1987,1502700
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1987,1922800
+UKD6,Cheshire,1987,825900
+UKK3,Cornwall and Isles of Scilly,1987,454500
+UKD1,Cumbria,1987,483400
+UKF1,Derbyshire and Nottinghamshire,1987,1923400
+UKK4,Devon,1987,1010300
+UKK2,Dorset and Somerset,1987,1097500
+UKH1,East Anglia,1987,2005900
+UKL2,East Wales,1987,994300
+UKE1,East Yorkshire and Northern Lincolnshire,1987,852000
+UKM7,Eastern Scotland,1987,1748400
+UKH3,Essex,1987,1522400
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1987,2027600
+UKD3,Greater Manchester,1987,2549500
+UKJ3,Hampshire and Isle of Wight,1987,1670500
+UKG1,Herefordshire Worcestershire and Warwickshire,1987,1143100
+UKM6,Highlands and Islands,1987,586200
+UKI4,Inner London - East,1987,1621300
+UKI3,Inner London - West,1987,919300
+UKJ4,Kent,1987,1509100
+UKD4,Lancashire,1987,1383700
+UKF2,Leicestershire Rutland and Northamptonshire,1987,1431800
+UKF3,Lincolnshire,1987,570400
+UKD7,Merseyside,1987,1578400
+UKM5,North Eastern Scotland,1987,419100
+UKE2,North Yorkshire,1987,695100
+UKN0,Northern Ireland,1987,1582000
+UKC2,Northumberland and Tyne and Wear,1987,1435800
+UKI5,Outer London - East and North East,1987,1515900
+UKI6,Outer London - South,1987,1079300
+UKI7,Outer London - West and North West,1987,1629700
+UKG2,Shropshire and Staffordshire,1987,1422800
+UKE3,South Yorkshire,1987,1290500
+UKM9,Southern Scotland,1987,787900
+UKJ2,Surrey East and West Sussex,1987,2402500
+UKC1,Tees Valley and Durham,1987,1154000
+UKM8,West Central Scotland,1987,1557800
+UKG3,West Midlands,1987,2628600
+UKL1,West Wales and The Valleys,1987,1828500
+UKE4,West Yorkshire,1987,2041500
+UKH2,Bedfordshire and Hertfordshire,1988,1504200
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1988,1932900
+UKD6,Cheshire,1988,829100
+UKK3,Cornwall and Isles of Scilly,1988,462000
+UKD1,Cumbria,1988,485100
+UKF1,Derbyshire and Nottinghamshire,1988,1928400
+UKK4,Devon,1988,1021400
+UKK2,Dorset and Somerset,1988,1109200
+UKH1,East Anglia,1988,2025100
+UKL2,East Wales,1988,1002000
+UKE1,East Yorkshire and Northern Lincolnshire,1988,856900
+UKM7,Eastern Scotland,1988,1744200
+UKH3,Essex,1988,1530600
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1988,2042500
+UKD3,Greater Manchester,1988,2542600
+UKJ3,Hampshire and Isle of Wight,1988,1681100
+UKG1,Herefordshire Worcestershire and Warwickshire,1988,1149800
+UKM6,Highlands and Islands,1988,586800
+UKI4,Inner London - East,1988,1622400
+UKI3,Inner London - West,1988,904600
+UKJ4,Kent,1988,1519000
+UKD4,Lancashire,1988,1384700
+UKF2,Leicestershire Rutland and Northamptonshire,1988,1445000
+UKF3,Lincolnshire,1988,577500
+UKD7,Merseyside,1988,1570100
+UKM5,North Eastern Scotland,1988,418100
+UKE2,North Yorkshire,1988,700900
+UKN0,Northern Ireland,1988,1585000
+UKC2,Northumberland and Tyne and Wear,1988,1430800
+UKI5,Outer London - East and North East,1988,1508600
+UKI6,Outer London - South,1988,1078600
+UKI7,Outer London - West and North West,1988,1615400
+UKG2,Shropshire and Staffordshire,1988,1432500
+UKE3,South Yorkshire,1988,1286800
+UKM9,Southern Scotland,1988,787100
+UKJ2,Surrey East and West Sussex,1988,2417800
+UKC1,Tees Valley and Durham,1988,1151500
+UKM8,West Central Scotland,1988,1541500
+UKG3,West Midlands,1988,2621200
+UKL1,West Wales and The Valleys,1988,1839200
+UKE4,West Yorkshire,1988,2044300
+UKH2,Bedfordshire and Hertfordshire,1989,1502900
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1989,1936100
+UKD6,Cheshire,1989,830700
+UKK3,Cornwall and Isles of Scilly,1989,465900
+UKD1,Cumbria,1989,487100
+UKF1,Derbyshire and Nottinghamshire,1989,1940200
+UKK4,Devon,1989,1030000
+UKK2,Dorset and Somerset,1989,1113100
+UKH1,East Anglia,1989,2033800
+UKL2,East Wales,1989,1005800
+UKE1,East Yorkshire and Northern Lincolnshire,1989,863600
+UKM7,Eastern Scotland,1989,1747700
+UKH3,Essex,1989,1533500
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1989,2044500
+UKD3,Greater Manchester,1989,2542300
+UKJ3,Hampshire and Isle of Wight,1989,1685900
+UKG1,Herefordshire Worcestershire and Warwickshire,1989,1153300
+UKM6,Highlands and Islands,1989,587800
+UKI4,Inner London - East,1989,1628800
+UKI3,Inner London - West,1989,913300
+UKJ4,Kent,1989,1522400
+UKD4,Lancashire,1989,1394200
+UKF2,Leicestershire Rutland and Northamptonshire,1989,1455000
+UKF3,Lincolnshire,1989,580600
+UKD7,Merseyside,1989,1570600
+UKM5,North Eastern Scotland,1989,422400
+UKE2,North Yorkshire,1989,708000
+UKN0,Northern Ireland,1989,1590000
+UKC2,Northumberland and Tyne and Wear,1989,1430300
+UKI5,Outer London - East and North East,1989,1503300
+UKI6,Outer London - South,1989,1081600
+UKI7,Outer London - West and North West,1989,1624400
+UKG2,Shropshire and Staffordshire,1989,1441500
+UKE3,South Yorkshire,1989,1288400
+UKM9,Southern Scotland,1989,789200
+UKJ2,Surrey East and West Sussex,1989,2424000
+UKC1,Tees Valley and Durham,1989,1151900
+UKM8,West Central Scotland,1989,1531300
+UKG3,West Midlands,1989,2618800
+UKL1,West Wales and The Valleys,1989,1849600
+UKE4,West Yorkshire,1989,2052200
+UKH2,Bedfordshire and Hertfordshire,1990,1506400
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1990,1955600
+UKD6,Cheshire,1990,832100
+UKK3,Cornwall and Isles of Scilly,1990,469700
+UKD1,Cumbria,1990,487000
+UKF1,Derbyshire and Nottinghamshire,1990,1945300
+UKK4,Devon,1990,1030800
+UKK2,Dorset and Somerset,1990,1118000
+UKH1,East Anglia,1990,2046000
+UKL2,East Wales,1990,1008100
+UKE1,East Yorkshire and Northern Lincolnshire,1990,867600
+UKM7,Eastern Scotland,1990,1754100
+UKH3,Essex,1990,1535600
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1990,2049700
+UKD3,Greater Manchester,1990,2545800
+UKJ3,Hampshire and Isle of Wight,1990,1688300
+UKG1,Herefordshire Worcestershire and Warwickshire,1990,1154700
+UKM6,Highlands and Islands,1990,589500
+UKI4,Inner London - East,1990,1646900
+UKI3,Inner London - West,1990,924600
+UKJ4,Kent,1990,1524300
+UKD4,Lancashire,1990,1399200
+UKF2,Leicestershire Rutland and Northamptonshire,1990,1463400
+UKF3,Lincolnshire,1990,584300
+UKD7,Merseyside,1990,1565100
+UKM5,North Eastern Scotland,1990,424800
+UKE2,North Yorkshire,1990,710100
+UKN0,Northern Ireland,1990,1596000
+UKC2,Northumberland and Tyne and Wear,1990,1430100
+UKI5,Outer London - East and North East,1990,1511100
+UKI6,Outer London - South,1990,1087700
+UKI7,Outer London - West and North West,1990,1628500
+UKG2,Shropshire and Staffordshire,1990,1445800
+UKE3,South Yorkshire,1990,1288700
+UKM9,Southern Scotland,1990,790400
+UKJ2,Surrey East and West Sussex,1990,2429400
+UKC1,Tees Valley and Durham,1990,1154300
+UKM8,West Central Scotland,1990,1522500
+UKG3,West Midlands,1990,2617900
+UKL1,West Wales and The Valleys,1990,1853400
+UKE4,West Yorkshire,1990,2054400
+UKH2,Bedfordshire and Hertfordshire,1991,1513800
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1991,1962000
+UKD6,Cheshire,1991,837900
+UKK3,Cornwall and Isles of Scilly,1991,471600
+UKD1,Cumbria,1991,486300
+UKF1,Derbyshire and Nottinghamshire,1991,1950800
+UKK4,Devon,1991,1031800
+UKK2,Dorset and Somerset,1991,1122200
+UKH1,East Anglia,1991,2068300
+UKL2,East Wales,1991,1016600
+UKE1,East Yorkshire and Northern Lincolnshire,1991,871600
+UKM7,Eastern Scotland,1991,1755500
+UKH3,Essex,1991,1539100
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1991,2062700
+UKD3,Greater Manchester,1991,2553500
+UKJ3,Hampshire and Isle of Wight,1991,1696200
+UKG1,Herefordshire Worcestershire and Warwickshire,1991,1159800
+UKM6,Highlands and Islands,1991,590700
+UKI4,Inner London - East,1991,1668800
+UKI3,Inner London - West,1991,930500
+UKJ4,Kent,1991,1528200
+UKD4,Lancashire,1991,1402400
+UKF2,Leicestershire Rutland and Northamptonshire,1991,1471900
+UKF3,Lincolnshire,1991,588500
+UKD7,Merseyside,1991,1562800
+UKM5,North Eastern Scotland,1991,430000
+UKE2,North Yorkshire,1991,714000
+UKN0,Northern Ireland,1991,1607000
+UKC2,Northumberland and Tyne and Wear,1991,1429400
+UKI5,Outer London - East and North East,1991,1513400
+UKI6,Outer London - South,1991,1086500
+UKI7,Outer London - West and North West,1991,1630200
+UKG2,Shropshire and Staffordshire,1991,1450900
+UKE3,South Yorkshire,1991,1288700
+UKM9,Southern Scotland,1991,790600
+UKJ2,Surrey East and West Sussex,1991,2443000
+UKC1,Tees Valley and Durham,1991,1157700
+UKM8,West Central Scotland,1991,1516500
+UKG3,West Midlands,1991,2618900
+UKL1,West Wales and The Valleys,1991,1856300
+UKE4,West Yorkshire,1991,2061700
+UKH2,Bedfordshire and Hertfordshire,1992,1522900
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1992,1977900
+UKD6,Cheshire,1992,839900
+UKK3,Cornwall and Isles of Scilly,1992,473100
+UKD1,Cumbria,1992,487100
+UKF1,Derbyshire and Nottinghamshire,1992,1958000
+UKK4,Devon,1992,1037500
+UKK2,Dorset and Somerset,1992,1130000
+UKH1,East Anglia,1992,2072700
+UKL2,East Wales,1992,1019200
+UKE1,East Yorkshire and Northern Lincolnshire,1992,875400
+UKM7,Eastern Scotland,1992,1758600
+UKH3,Essex,1992,1546900
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1992,2073100
+UKD3,Greater Manchester,1992,2551200
+UKJ3,Hampshire and Isle of Wight,1992,1702200
+UKG1,Herefordshire Worcestershire and Warwickshire,1992,1167800
+UKM6,Highlands and Islands,1992,592000
+UKI4,Inner London - East,1992,1675500
+UKI3,Inner London - West,1992,922600
+UKJ4,Kent,1992,1528900
+UKD4,Lancashire,1992,1405200
+UKF2,Leicestershire Rutland and Northamptonshire,1992,1483300
+UKF3,Lincolnshire,1992,595300
+UKD7,Merseyside,1992,1557200
+UKM5,North Eastern Scotland,1992,436100
+UKE2,North Yorkshire,1992,717800
+UKN0,Northern Ireland,1992,1623000
+UKC2,Northumberland and Tyne and Wear,1992,1433000
+UKI5,Outer London - East and North East,1992,1516000
+UKI6,Outer London - South,1992,1087900
+UKI7,Outer London - West and North West,1992,1627400
+UKG2,Shropshire and Staffordshire,1992,1454100
+UKE3,South Yorkshire,1992,1288200
+UKM9,Southern Scotland,1992,792300
+UKJ2,Surrey East and West Sussex,1992,2447500
+UKC1,Tees Valley and Durham,1992,1158100
+UKM8,West Central Scotland,1992,1506900
+UKG3,West Midlands,1992,2615600
+UKL1,West Wales and The Valleys,1992,1858400
+UKE4,West Yorkshire,1992,2067500
+UKH2,Bedfordshire and Hertfordshire,1993,1527900
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1993,1985700
+UKD6,Cheshire,1993,845700
+UKK3,Cornwall and Isles of Scilly,1993,474700
+UKD1,Cumbria,1993,487200
+UKF1,Derbyshire and Nottinghamshire,1993,1962500
+UKK4,Devon,1993,1040600
+UKK2,Dorset and Somerset,1993,1135000
+UKH1,East Anglia,1993,2075800
+UKL2,East Wales,1993,1023200
+UKE1,East Yorkshire and Northern Lincolnshire,1993,878300
+UKM7,Eastern Scotland,1993,1764700
+UKH3,Essex,1993,1550700
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1993,2083400
+UKD3,Greater Manchester,1993,2551100
+UKJ3,Hampshire and Isle of Wight,1993,1707300
+UKG1,Herefordshire Worcestershire and Warwickshire,1993,1174000
+UKM6,Highlands and Islands,1993,593900
+UKI4,Inner London - East,1993,1685300
+UKI3,Inner London - West,1993,916400
+UKJ4,Kent,1993,1528600
+UKD4,Lancashire,1993,1411600
+UKF2,Leicestershire Rutland and Northamptonshire,1993,1492700
+UKF3,Lincolnshire,1993,600800
+UKD7,Merseyside,1993,1551100
+UKM5,North Eastern Scotland,1993,441400
+UKE2,North Yorkshire,1993,716500
+UKN0,Northern Ireland,1993,1636000
+UKC2,Northumberland and Tyne and Wear,1993,1436300
+UKI5,Outer London - East and North East,1993,1518700
+UKI6,Outer London - South,1993,1091500
+UKI7,Outer London - West and North West,1993,1632700
+UKG2,Shropshire and Staffordshire,1993,1456500
+UKE3,South Yorkshire,1993,1287000
+UKM9,Southern Scotland,1993,793700
+UKJ2,Surrey East and West Sussex,1993,2451700
+UKC1,Tees Valley and Durham,1993,1157500
+UKM8,West Central Scotland,1993,1498900
+UKG3,West Midlands,1993,2615200
+UKL1,West Wales and The Valleys,1993,1860300
+UKE4,West Yorkshire,1993,2072500
+UKH2,Bedfordshire and Hertfordshire,1994,1535500
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1994,2e+06
+UKD6,Cheshire,1994,850200
+UKK3,Cornwall and Isles of Scilly,1994,477400
+UKD1,Cumbria,1994,487000
+UKF1,Derbyshire and Nottinghamshire,1994,1964900
+UKK4,Devon,1994,1043700
+UKK2,Dorset and Somerset,1994,1143700
+UKH1,East Anglia,1994,2083900
+UKL2,East Wales,1994,1025900
+UKE1,East Yorkshire and Northern Lincolnshire,1994,883000
+UKM7,Eastern Scotland,1994,1771500
+UKH3,Essex,1994,1558600
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1994,2092500
+UKD3,Greater Manchester,1994,2545700
+UKJ3,Hampshire and Isle of Wight,1994,1718800
+UKG1,Herefordshire Worcestershire and Warwickshire,1994,1181600
+UKM6,Highlands and Islands,1994,596500
+UKI4,Inner London - East,1994,1697700
+UKI3,Inner London - West,1994,914600
+UKJ4,Kent,1994,1532900
+UKD4,Lancashire,1994,1413900
+UKF2,Leicestershire Rutland and Northamptonshire,1994,1501200
+UKF3,Lincolnshire,1994,605700
+UKD7,Merseyside,1994,1542300
+UKM5,North Eastern Scotland,1994,445100
+UKE2,North Yorkshire,1994,720400
+UKN0,Northern Ireland,1994,1644000
+UKC2,Northumberland and Tyne and Wear,1994,1430900
+UKI5,Outer London - East and North East,1994,1521100
+UKI6,Outer London - South,1994,1097900
+UKI7,Outer London - West and North West,1994,1642300
+UKG2,Shropshire and Staffordshire,1994,1462300
+UKE3,South Yorkshire,1994,1283800
+UKM9,Southern Scotland,1994,795700
+UKJ2,Surrey East and West Sussex,1994,2460000
+UKC1,Tees Valley and Durham,1994,1157800
+UKM8,West Central Scotland,1994,1493900
+UKG3,West Midlands,1994,2605800
+UKL1,West Wales and The Valleys,1994,1861600
+UKE4,West Yorkshire,1994,2072800
+UKH2,Bedfordshire and Hertfordshire,1995,1542300
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1995,2024900
+UKD6,Cheshire,1995,853400
+UKK3,Cornwall and Isles of Scilly,1995,480400
+UKD1,Cumbria,1995,486800
+UKF1,Derbyshire and Nottinghamshire,1995,1968000
+UKK4,Devon,1995,1048300
+UKK2,Dorset and Somerset,1995,1151900
+UKH1,East Anglia,1995,2098700
+UKL2,East Wales,1995,1028500
+UKE1,East Yorkshire and Northern Lincolnshire,1995,882800
+UKM7,Eastern Scotland,1995,1778800
+UKH3,Essex,1995,1564800
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1995,2101200
+UKD3,Greater Manchester,1995,2540100
+UKJ3,Hampshire and Isle of Wight,1995,1729300
+UKG1,Herefordshire Worcestershire and Warwickshire,1995,1186500
+UKM6,Highlands and Islands,1995,597500
+UKI4,Inner London - East,1995,1712500
+UKI3,Inner London - West,1995,916200
+UKJ4,Kent,1995,1535300
+UKD4,Lancashire,1995,1414700
+UKF2,Leicestershire Rutland and Northamptonshire,1995,1511400
+UKF3,Lincolnshire,1995,612500
+UKD7,Merseyside,1995,1533000
+UKM5,North Eastern Scotland,1995,446000
+UKE2,North Yorkshire,1995,725000
+UKN0,Northern Ireland,1995,1649000
+UKC2,Northumberland and Tyne and Wear,1995,1427100
+UKI5,Outer London - East and North East,1995,1524700
+UKI6,Outer London - South,1995,1106500
+UKI7,Outer London - West and North West,1995,1653300
+UKG2,Shropshire and Staffordshire,1995,1466800
+UKE3,South Yorkshire,1995,1280100
+UKM9,Southern Scotland,1995,795700
+UKJ2,Surrey East and West Sussex,1995,2473700
+UKC1,Tees Valley and Durham,1995,1155700
+UKM8,West Central Scotland,1995,1485900
+UKG3,West Midlands,1995,2603600
+UKL1,West Wales and The Valleys,1995,1860000
+UKE4,West Yorkshire,1995,2072800
+UKH2,Bedfordshire and Hertfordshire,1996,1547700
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1996,2040300
+UKD6,Cheshire,1996,855800
+UKK3,Cornwall and Isles of Scilly,1996,480900
+UKD1,Cumbria,1996,486800
+UKF1,Derbyshire and Nottinghamshire,1996,1970000
+UKK4,Devon,1996,1047900
+UKK2,Dorset and Somerset,1996,1156000
+UKH1,East Anglia,1996,2113500
+UKL2,East Wales,1996,1035100
+UKE1,East Yorkshire and Northern Lincolnshire,1996,880200
+UKM7,Eastern Scotland,1996,1779000
+UKH3,Essex,1996,1571200
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1996,2108400
+UKD3,Greater Manchester,1996,2531500
+UKJ3,Hampshire and Isle of Wight,1996,1739600
+UKG1,Herefordshire Worcestershire and Warwickshire,1996,1190100
+UKM6,Highlands and Islands,1996,596600
+UKI4,Inner London - East,1996,1729000
+UKI3,Inner London - West,1996,927600
+UKJ4,Kent,1996,1538900
+UKD4,Lancashire,1996,1412100
+UKF2,Leicestershire Rutland and Northamptonshire,1996,1520800
+UKF3,Lincolnshire,1996,617200
+UKD7,Merseyside,1996,1523600
+UKM5,North Eastern Scotland,1996,445400
+UKE2,North Yorkshire,1996,728200
+UKN0,Northern Ireland,1996,1662000
+UKC2,Northumberland and Tyne and Wear,1996,1423000
+UKI5,Outer London - East and North East,1996,1529700
+UKI6,Outer London - South,1996,1116600
+UKI7,Outer London - West and North West,1996,1671700
+UKG2,Shropshire and Staffordshire,1996,1467100
+UKE3,South Yorkshire,1996,1278700
+UKM9,Southern Scotland,1996,794700
+UKJ2,Surrey East and West Sussex,1996,2481600
+UKC1,Tees Valley and Durham,1996,1153500
+UKM8,West Central Scotland,1996,1476600
+UKG3,West Midlands,1996,2606000
+UKL1,West Wales and The Valleys,1996,1856100
+UKE4,West Yorkshire,1996,2074300
+UKH2,Bedfordshire and Hertfordshire,1997,1558400
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1997,2057100
+UKD6,Cheshire,1997,858800
+UKK3,Cornwall and Isles of Scilly,1997,485100
+UKD1,Cumbria,1997,488100
+UKF1,Derbyshire and Nottinghamshire,1997,1971800
+UKK4,Devon,1997,1051800
+UKK2,Dorset and Somerset,1997,1164900
+UKH1,East Anglia,1997,2129900
+UKL2,East Wales,1997,1039500
+UKE1,East Yorkshire and Northern Lincolnshire,1997,878200
+UKM7,Eastern Scotland,1997,1782700
+UKH3,Essex,1997,1578700
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1997,2125200
+UKD3,Greater Manchester,1997,2521900
+UKJ3,Hampshire and Isle of Wight,1997,1748300
+UKG1,Herefordshire Worcestershire and Warwickshire,1997,1198000
+UKM6,Highlands and Islands,1997,595700
+UKI4,Inner London - East,1997,1740800
+UKI3,Inner London - West,1997,931500
+UKJ4,Kent,1997,1545500
+UKD4,Lancashire,1997,1411500
+UKF2,Leicestershire Rutland and Northamptonshire,1997,1527400
+UKF3,Lincolnshire,1997,621100
+UKD7,Merseyside,1997,1513800
+UKM5,North Eastern Scotland,1997,443300
+UKE2,North Yorkshire,1997,730500
+UKN0,Northern Ireland,1997,1671000
+UKC2,Northumberland and Tyne and Wear,1997,1417200
+UKI5,Outer London - East and North East,1997,1534400
+UKI6,Outer London - South,1997,1124000
+UKI7,Outer London - West and North West,1997,1683800
+UKG2,Shropshire and Staffordshire,1997,1472900
+UKE3,South Yorkshire,1997,1276200
+UKM9,Southern Scotland,1997,793900
+UKJ2,Surrey East and West Sussex,1997,2502300
+UKC1,Tees Valley and Durham,1997,1150700
+UKM8,West Central Scotland,1997,1467900
+UKG3,West Midlands,1997,2591500
+UKL1,West Wales and The Valleys,1997,1855200
+UKE4,West Yorkshire,1997,2072700
+UKH2,Bedfordshire and Hertfordshire,1998,1569800
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1998,2067800
+UKD6,Cheshire,1998,861900
+UKK3,Cornwall and Isles of Scilly,1998,488000
+UKD1,Cumbria,1998,489100
+UKF1,Derbyshire and Nottinghamshire,1998,1974800
+UKK4,Devon,1998,1055200
+UKK2,Dorset and Somerset,1998,1170800
+UKH1,East Anglia,1998,2145700
+UKL2,East Wales,1998,1046000
+UKE1,East Yorkshire and Northern Lincolnshire,1998,876600
+UKM7,Eastern Scotland,1998,1785500
+UKH3,Essex,1998,1586800
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1998,2135500
+UKD3,Greater Manchester,1998,2522000
+UKJ3,Hampshire and Isle of Wight,1998,1756300
+UKG1,Herefordshire Worcestershire and Warwickshire,1998,1205300
+UKM6,Highlands and Islands,1998,594700
+UKI4,Inner London - East,1998,1765300
+UKI3,Inner London - West,1998,933900
+UKJ4,Kent,1998,1552000
+UKD4,Lancashire,1998,1412600
+UKF2,Leicestershire Rutland and Northamptonshire,1998,1531900
+UKF3,Lincolnshire,1998,626000
+UKD7,Merseyside,1998,1506800
+UKM5,North Eastern Scotland,1998,441900
+UKE2,North Yorkshire,1998,734400
+UKN0,Northern Ireland,1998,1678000
+UKC2,Northumberland and Tyne and Wear,1998,1411100
+UKI5,Outer London - East and North East,1998,1540400
+UKI6,Outer London - South,1998,1128800
+UKI7,Outer London - West and North West,1998,1697100
+UKG2,Shropshire and Staffordshire,1998,1479400
+UKE3,South Yorkshire,1998,1273600
+UKM9,Southern Scotland,1998,792300
+UKJ2,Surrey East and West Sussex,1998,2512600
+UKC1,Tees Valley and Durham,1998,1149900
+UKM8,West Central Scotland,1998,1462600
+UKG3,West Midlands,1998,2586500
+UKL1,West Wales and The Valleys,1998,1853600
+UKE4,West Yorkshire,1998,2073000
+UKH2,Bedfordshire and Hertfordshire,1999,1583500
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,1999,2083100
+UKD6,Cheshire,1999,860800
+UKK3,Cornwall and Isles of Scilly,1999,492600
+UKD1,Cumbria,1999,488300
+UKF1,Derbyshire and Nottinghamshire,1999,1978000
+UKK4,Devon,1999,1060600
+UKK2,Dorset and Somerset,1999,1175800
+UKH1,East Anglia,1999,2158000
+UKL2,East Wales,1999,1048100
+UKE1,East Yorkshire and Northern Lincolnshire,1999,875000
+UKM7,Eastern Scotland,1999,1789800
+UKH3,Essex,1999,1597600
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,1999,2152000
+UKD3,Greater Manchester,1999,2515500
+UKJ3,Hampshire and Isle of Wight,1999,1766800
+UKG1,Herefordshire Worcestershire and Warwickshire,1999,1209200
+UKM6,Highlands and Islands,1999,593900
+UKI4,Inner London - East,1999,1792400
+UKI3,Inner London - West,1999,958300
+UKJ4,Kent,1999,1563100
+UKD4,Lancashire,1999,1410800
+UKF2,Leicestershire Rutland and Northamptonshire,1999,1541700
+UKF3,Lincolnshire,1999,632700
+UKD7,Merseyside,1999,1497800
+UKM5,North Eastern Scotland,1999,441800
+UKE2,North Yorkshire,1999,739000
+UKN0,Northern Ireland,1999,1679000
+UKC2,Northumberland and Tyne and Wear,1999,1403000
+UKI5,Outer London - East and North East,1999,1549700
+UKI6,Outer London - South,1999,1137500
+UKI7,Outer London - West and North West,1999,1716200
+UKG2,Shropshire and Staffordshire,1999,1480700
+UKE3,South Yorkshire,1999,1269800
+UKM9,Southern Scotland,1999,790100
+UKJ2,Surrey East and West Sussex,1999,2542400
+UKC1,Tees Valley and Durham,1999,1147300
+UKM8,West Central Scotland,1999,1456500
+UKG3,West Midlands,1999,2582200
+UKL1,West Wales and The Valleys,1999,1852400
+UKE4,West Yorkshire,1999,2072200
+UKH2,Bedfordshire and Hertfordshire,2000,1593400
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2000,2094900
+UKD6,Cheshire,2000,863100
+UKK3,Cornwall and Isles of Scilly,2000,497400
+UKD1,Cumbria,2000,487600
+UKF1,Derbyshire and Nottinghamshire,2000,1978800
+UKK4,Devon,2000,1071100
+UKK2,Dorset and Somerset,2000,1184700
+UKH1,East Anglia,2000,2174100
+UKL2,East Wales,2000,1053800
+UKE1,East Yorkshire and Northern Lincolnshire,2000,873900
+UKM7,Eastern Scotland,2000,1794400
+UKH3,Essex,2000,1607300
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2000,2163900
+UKD3,Greater Manchester,2000,2516400
+UKJ3,Hampshire and Isle of Wight,2000,1773100
+UKG1,Herefordshire Worcestershire and Warwickshire,2000,1214300
+UKM6,Highlands and Islands,2000,591600
+UKI4,Inner London - East,2000,1818500
+UKI3,Inner London - West,2000,986500
+UKJ4,Kent,2000,1573200
+UKD4,Lancashire,2000,1414200
+UKF2,Leicestershire Rutland and Northamptonshire,2000,1548900
+UKF3,Lincolnshire,2000,640200
+UKD7,Merseyside,2000,1493200
+UKM5,North Eastern Scotland,2000,440300
+UKE2,North Yorkshire,2000,744700
+UKN0,Northern Ireland,2000,1683000
+UKC2,Northumberland and Tyne and Wear,2000,1396500
+UKI5,Outer London - East and North East,2000,1558400
+UKI6,Outer London - South,2000,1145500
+UKI7,Outer London - West and North West,2000,1727700
+UKG2,Shropshire and Staffordshire,2000,1483800
+UKE3,South Yorkshire,2000,1266400
+UKM9,Southern Scotland,2000,788500
+UKJ2,Surrey East and West Sussex,2000,2549700
+UKC1,Tees Valley and Durham,2000,1147000
+UKM8,West Central Scotland,2000,1448300
+UKG3,West Midlands,2000,2571400
+UKL1,West Wales and The Valleys,2000,1852900
+UKE4,West Yorkshire,2000,2073600
+UKH2,Bedfordshire and Hertfordshire,2001,1603600
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2001,2102400
+UKD6,Cheshire,2001,865500
+UKK3,Cornwall and Isles of Scilly,2001,502000
+UKD1,Cumbria,2001,487900
+UKF1,Derbyshire and Nottinghamshire,2001,1983300
+UKK4,Devon,2001,1076600
+UKK2,Dorset and Somerset,2001,1192200
+UKH1,East Anglia,2001,2180600
+UKL2,East Wales,2001,1055500
+UKE1,East Yorkshire and Northern Lincolnshire,2001,875800
+UKM7,Eastern Scotland,2001,1797500
+UKH3,Essex,2001,1616500
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2001,2172600
+UKD3,Greater Manchester,2001,2516200
+UKJ3,Hampshire and Isle of Wight,2001,1782100
+UKG1,Herefordshire Worcestershire and Warwickshire,2001,1223400
+UKM6,Highlands and Islands,2001,590700
+UKI4,Inner London - East,2001,1842800
+UKI3,Inner London - West,2001,1016600
+UKJ4,Kent,2001,1580800
+UKD4,Lancashire,2001,1417300
+UKF2,Leicestershire Rutland and Northamptonshire,2001,1558700
+UKF3,Lincolnshire,2001,647700
+UKD7,Merseyside,2001,1486400
+UKM5,North Eastern Scotland,2001,438800
+UKE2,North Yorkshire,2001,751500
+UKN0,Northern Ireland,2001,1689000
+UKC2,Northumberland and Tyne and Wear,2001,1394200
+UKI5,Outer London - East and North East,2001,1567900
+UKI6,Outer London - South,2001,1152900
+UKI7,Outer London - West and North West,2001,1742300
+UKG2,Shropshire and Staffordshire,2001,1489400
+UKE3,South Yorkshire,2001,1266400
+UKM9,Southern Scotland,2001,789600
+UKJ2,Surrey East and West Sussex,2001,2558300
+UKC1,Tees Valley and Durham,2001,1146000
+UKM8,West Central Scotland,2001,1448000
+UKG3,West Midlands,2001,2568000
+UKL1,West Wales and The Valleys,2001,1854700
+UKE4,West Yorkshire,2001,2083200
+UKH2,Bedfordshire and Hertfordshire,2002,1611800
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2002,2104700
+UKD6,Cheshire,2002,867600
+UKK3,Cornwall and Isles of Scilly,2002,506800
+UKD1,Cumbria,2002,488600
+UKF1,Derbyshire and Nottinghamshire,2002,1994900
+UKK4,Devon,2002,1083200
+UKK2,Dorset and Somerset,2002,1202400
+UKH1,East Anglia,2002,2195700
+UKL2,East Wales,2002,1061000
+UKE1,East Yorkshire and Northern Lincolnshire,2002,880300
+UKM7,Eastern Scotland,2002,1799500
+UKH3,Essex,2002,1625100
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2002,2183900
+UKD3,Greater Manchester,2002,2523300
+UKJ3,Hampshire and Isle of Wight,2002,1787900
+UKG1,Herefordshire Worcestershire and Warwickshire,2002,1230500
+UKM6,Highlands and Islands,2002,592100
+UKI4,Inner London - East,2002,1860900
+UKI3,Inner London - West,2002,1030100
+UKJ4,Kent,2002,1589300
+UKD4,Lancashire,2002,1420000
+UKF2,Leicestershire Rutland and Northamptonshire,2002,1571300
+UKF3,Lincolnshire,2002,655600
+UKD7,Merseyside,2002,1485400
+UKM5,North Eastern Scotland,2002,439500
+UKE2,North Yorkshire,2002,755100
+UKN0,Northern Ireland,2002,1697000
+UKC2,Northumberland and Tyne and Wear,2002,1395000
+UKI5,Outer London - East and North East,2002,1580900
+UKI6,Outer London - South,2002,1153600
+UKI7,Outer London - West and North West,2002,1751400
+UKG2,Shropshire and Staffordshire,2002,1494500
+UKE3,South Yorkshire,2002,1271300
+UKM9,Southern Scotland,2002,789600
+UKJ2,Surrey East and West Sussex,2002,2563600
+UKC1,Tees Valley and Durham,2002,1145500
+UKM8,West Central Scotland,2002,1445300
+UKG3,West Midlands,2002,2576300
+UKL1,West Wales and The Valleys,2002,1861700
+UKE4,West Yorkshire,2002,2093200
+UKH2,Bedfordshire and Hertfordshire,2003,1619400
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2003,2115600
+UKD6,Cheshire,2003,871900
+UKK3,Cornwall and Isles of Scilly,2003,510800
+UKD1,Cumbria,2003,491400
+UKF1,Derbyshire and Nottinghamshire,2003,2007000
+UKK4,Devon,2003,1088800
+UKK2,Dorset and Somerset,2003,1208800
+UKH1,East Anglia,2003,2221100
+UKL2,East Wales,2003,1066300
+UKE1,East Yorkshire and Northern Lincolnshire,2003,887100
+UKM7,Eastern Scotland,2003,1801100
+UKH3,Essex,2003,1633500
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2003,2198600
+UKD3,Greater Manchester,2003,2538400
+UKJ3,Hampshire and Isle of Wight,2003,1797600
+UKG1,Herefordshire Worcestershire and Warwickshire,2003,1237900
+UKM6,Highlands and Islands,2003,595500
+UKI4,Inner London - East,2003,1862500
+UKI3,Inner London - West,2003,1036000
+UKJ4,Kent,2003,1600100
+UKD4,Lancashire,2003,1427600
+UKF2,Leicestershire Rutland and Northamptonshire,2003,1584900
+UKF3,Lincolnshire,2003,663200
+UKD7,Merseyside,2003,1485300
+UKM5,North Eastern Scotland,2003,440600
+UKE2,North Yorkshire,2003,760200
+UKN0,Northern Ireland,2003,1703000
+UKC2,Northumberland and Tyne and Wear,2003,1394100
+UKI5,Outer London - East and North East,2003,1589000
+UKI6,Outer London - South,2003,1153500
+UKI7,Outer London - West and North West,2003,1753700
+UKG2,Shropshire and Staffordshire,2003,1502000
+UKE3,South Yorkshire,2003,1276500
+UKM9,Southern Scotland,2003,791300
+UKJ2,Surrey East and West Sussex,2003,2574500
+UKC1,Tees Valley and Durham,2003,1146300
+UKM8,West Central Scotland,2003,1440300
+UKG3,West Midlands,2003,2585600
+UKL1,West Wales and The Valleys,2003,1871300
+UKE4,West Yorkshire,2003,2102800
+UKH2,Bedfordshire and Hertfordshire,2004,1622800
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2004,2125800
+UKD6,Cheshire,2004,874700
+UKK3,Cornwall and Isles of Scilly,2004,514000
+UKD1,Cumbria,2004,494900
+UKF1,Derbyshire and Nottinghamshire,2004,2020400
+UKK4,Devon,2004,1094700
+UKK2,Dorset and Somerset,2004,1214500
+UKH1,East Anglia,2004,2242700
+UKL2,East Wales,2004,1074600
+UKE1,East Yorkshire and Northern Lincolnshire,2004,894800
+UKM7,Eastern Scotland,2004,1809000
+UKH3,Essex,2004,1643200
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2004,2215000
+UKD3,Greater Manchester,2004,2549800
+UKJ3,Hampshire and Isle of Wight,2004,1808600
+UKG1,Herefordshire Worcestershire and Warwickshire,2004,1243400
+UKM6,Highlands and Islands,2004,599700
+UKI4,Inner London - East,2004,1870600
+UKI3,Inner London - West,2004,1045500
+UKJ4,Kent,2004,1612800
+UKD4,Lancashire,2004,1434100
+UKF2,Leicestershire Rutland and Northamptonshire,2004,1598500
+UKF3,Lincolnshire,2004,672300
+UKD7,Merseyside,2004,1487000
+UKM5,North Eastern Scotland,2004,442500
+UKE2,North Yorkshire,2004,766500
+UKN0,Northern Ireland,2004,1710000
+UKC2,Northumberland and Tyne and Wear,2004,1392900
+UKI5,Outer London - East and North East,2004,1595500
+UKI6,Outer London - South,2004,1155500
+UKI7,Outer London - West and North West,2004,1765800
+UKG2,Shropshire and Staffordshire,2004,1509100
+UKE3,South Yorkshire,2004,1283400
+UKM9,Southern Scotland,2004,795900
+UKJ2,Surrey East and West Sussex,2004,2586100
+UKC1,Tees Valley and Durham,2004,1147500
+UKM8,West Central Scotland,2004,1437500
+UKG3,West Midlands,2004,2594100
+UKL1,West Wales and The Valleys,2004,1882800
+UKE4,West Yorkshire,2004,2118200
+UKH2,Bedfordshire and Hertfordshire,2005,1634700
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2005,2148500
+UKD6,Cheshire,2005,880000
+UKK3,Cornwall and Isles of Scilly,2005,517300
+UKD1,Cumbria,2005,497000
+UKF1,Derbyshire and Nottinghamshire,2005,2034800
+UKK4,Devon,2005,1105400
+UKK2,Dorset and Somerset,2005,1223600
+UKH1,East Anglia,2005,2271500
+UKL2,East Wales,2005,1081400
+UKE1,East Yorkshire and Northern Lincolnshire,2005,900900
+UKM7,Eastern Scotland,2005,1822600
+UKH3,Essex,2005,1656400
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2005,2239900
+UKD3,Greater Manchester,2005,2563900
+UKJ3,Hampshire and Isle of Wight,2005,1823100
+UKG1,Herefordshire Worcestershire and Warwickshire,2005,1251500
+UKM6,Highlands and Islands,2005,604500
+UKI4,Inner London - East,2005,1890800
+UKI3,Inner London - West,2005,1066200
+UKJ4,Kent,2005,1627400
+UKD4,Lancashire,2005,1440200
+UKF2,Leicestershire Rutland and Northamptonshire,2005,1616800
+UKF3,Lincolnshire,2005,677400
+UKD7,Merseyside,2005,1488900
+UKM5,North Eastern Scotland,2005,446300
+UKE2,North Yorkshire,2005,772300
+UKN0,Northern Ireland,2005,1724000
+UKC2,Northumberland and Tyne and Wear,2005,1396200
+UKI5,Outer London - East and North East,2005,1609300
+UKI6,Outer London - South,2005,1163700
+UKI7,Outer London - West and North West,2005,1789000
+UKG2,Shropshire and Staffordshire,2005,1517200
+UKE3,South Yorkshire,2005,1293200
+UKM9,Southern Scotland,2005,799100
+UKJ2,Surrey East and West Sussex,2005,2604100
+UKC1,Tees Valley and Durham,2005,1151100
+UKM8,West Central Scotland,2005,1437900
+UKG3,West Midlands,2005,2611900
+UKL1,West Wales and The Valleys,2005,1887900
+UKE4,West Yorkshire,2005,2142300
+UKH2,Bedfordshire and Hertfordshire,2006,1647300
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2006,2167400
+UKD6,Cheshire,2006,885000
+UKK3,Cornwall and Isles of Scilly,2006,520300
+UKD1,Cumbria,2006,498800
+UKF1,Derbyshire and Nottinghamshire,2006,2045000
+UKK4,Devon,2006,1110500
+UKK2,Dorset and Somerset,2006,1230900
+UKH1,East Anglia,2006,2290900
+UKL2,East Wales,2006,1088500
+UKE1,East Yorkshire and Northern Lincolnshire,2006,903900
+UKM7,Eastern Scotland,2006,1834300
+UKH3,Essex,2006,1668200
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2006,2257800
+UKD3,Greater Manchester,2006,2582100
+UKJ3,Hampshire and Isle of Wight,2006,1832900
+UKG1,Herefordshire Worcestershire and Warwickshire,2006,1261900
+UKM6,Highlands and Islands,2006,608900
+UKI4,Inner London - East,2006,1921200
+UKI3,Inner London - West,2006,1068500
+UKJ4,Kent,2006,1643300
+UKD4,Lancashire,2006,1445900
+UKF2,Leicestershire Rutland and Northamptonshire,2006,1636200
+UKF3,Lincolnshire,2006,685600
+UKD7,Merseyside,2006,1489700
+UKM5,North Eastern Scotland,2006,450800
+UKE2,North Yorkshire,2006,776400
+UKN0,Northern Ireland,2006,1742000
+UKC2,Northumberland and Tyne and Wear,2006,1398000
+UKI5,Outer London - East and North East,2006,1626400
+UKI6,Outer London - South,2006,1170500
+UKI7,Outer London - West and North West,2006,1811200
+UKG2,Shropshire and Staffordshire,2006,1527700
+UKE3,South Yorkshire,2006,1299600
+UKM9,Southern Scotland,2006,801700
+UKJ2,Surrey East and West Sussex,2006,2627300
+UKC1,Tees Valley and Durham,2006,1154700
+UKM8,West Central Scotland,2006,1437600
+UKG3,West Midlands,2006,2626000
+UKL1,West Wales and The Valleys,2006,1897100
+UKE4,West Yorkshire,2006,2154300
+UKH2,Bedfordshire and Hertfordshire,2007,1662500
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2007,2189900
+UKD6,Cheshire,2007,891000
+UKK3,Cornwall and Isles of Scilly,2007,524300
+UKD1,Cumbria,2007,500800
+UKF1,Derbyshire and Nottinghamshire,2007,2056100
+UKK4,Devon,2007,1119800
+UKK2,Dorset and Somerset,2007,1244800
+UKH1,East Anglia,2007,2310700
+UKL2,East Wales,2007,1098000
+UKE1,East Yorkshire and Northern Lincolnshire,2007,908100
+UKM7,Eastern Scotland,2007,1849800
+UKH3,Essex,2007,1680000
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2007,2281700
+UKD3,Greater Manchester,2007,2598700
+UKJ3,Hampshire and Isle of Wight,2007,1843800
+UKG1,Herefordshire Worcestershire and Warwickshire,2007,1272300
+UKM6,Highlands and Islands,2007,613800
+UKI4,Inner London - East,2007,1960300
+UKI3,Inner London - West,2007,1070500
+UKJ4,Kent,2007,1663400
+UKD4,Lancashire,2007,1449400
+UKF2,Leicestershire Rutland and Northamptonshire,2007,1655200
+UKF3,Lincolnshire,2007,693600
+UKD7,Merseyside,2007,1489600
+UKM5,North Eastern Scotland,2007,456900
+UKE2,North Yorkshire,2007,781000
+UKN0,Northern Ireland,2007,1759000
+UKC2,Northumberland and Tyne and Wear,2007,1402400
+UKI5,Outer London - East and North East,2007,1647100
+UKI6,Outer London - South,2007,1179600
+UKI7,Outer London - West and North West,2007,1836100
+UKG2,Shropshire and Staffordshire,2007,1537800
+UKE3,South Yorkshire,2007,1306300
+UKM9,Southern Scotland,2007,806400
+UKJ2,Surrey East and West Sussex,2007,2654000
+UKC1,Tees Valley and Durham,2007,1159600
+UKM8,West Central Scotland,2007,1443300
+UKG3,West Midlands,2007,2641700
+UKL1,West Wales and The Valleys,2007,1908400
+UKE4,West Yorkshire,2007,2169000
+UKH2,Bedfordshire and Hertfordshire,2008,1680600
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2008,2211700
+UKD6,Cheshire,2008,894800
+UKK3,Cornwall and Isles of Scilly,2008,527300
+UKD1,Cumbria,2008,500900
+UKF1,Derbyshire and Nottinghamshire,2008,2070200
+UKK4,Devon,2008,1124600
+UKK2,Dorset and Somerset,2008,1253000
+UKH1,East Anglia,2008,2332700
+UKL2,East Wales,2008,1108100
+UKE1,East Yorkshire and Northern Lincolnshire,2008,912400
+UKM7,Eastern Scotland,2008,1863900
+UKH3,Essex,2008,1694900
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2008,2300500
+UKD3,Greater Manchester,2008,2620100
+UKJ3,Hampshire and Isle of Wight,2008,1856600
+UKG1,Herefordshire Worcestershire and Warwickshire,2008,1281900
+UKM6,Highlands and Islands,2008,618100
+UKI4,Inner London - East,2008,2008600
+UKI3,Inner London - West,2008,1070400
+UKJ4,Kent,2008,1681600
+UKD4,Lancashire,2008,1451100
+UKF2,Leicestershire Rutland and Northamptonshire,2008,1670500
+UKF3,Lincolnshire,2008,700900
+UKD7,Merseyside,2008,1491700
+UKM5,North Eastern Scotland,2008,460800
+UKE2,North Yorkshire,2008,785700
+UKN0,Northern Ireland,2008,1775000
+UKC2,Northumberland and Tyne and Wear,2008,1405200
+UKI5,Outer London - East and North East,2008,1675700
+UKI6,Outer London - South,2008,1192100
+UKI7,Outer London - West and North West,2008,1865600
+UKG2,Shropshire and Staffordshire,2008,1548200
+UKE3,South Yorkshire,2008,1315500
+UKM9,Southern Scotland,2008,809900
+UKJ2,Surrey East and West Sussex,2008,2676400
+UKC1,Tees Valley and Durham,2008,1164100
+UKM8,West Central Scotland,2008,1450100
+UKG3,West Midlands,2008,2666100
+UKL1,West Wales and The Valleys,2008,1917700
+UKE4,West Yorkshire,2008,2185100
+UKH2,Bedfordshire and Hertfordshire,2009,1697200
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2009,2230600
+UKD6,Cheshire,2009,897200
+UKK3,Cornwall and Isles of Scilly,2009,528700
+UKD1,Cumbria,2009,500900
+UKF1,Derbyshire and Nottinghamshire,2009,2083100
+UKK4,Devon,2009,1125800
+UKK2,Dorset and Somerset,2009,1257100
+UKH1,East Anglia,2009,2349800
+UKL2,East Wales,2009,1116700
+UKE1,East Yorkshire and Northern Lincolnshire,2009,913100
+UKM7,Eastern Scotland,2009,1876400
+UKH3,Essex,2009,1704500
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2009,2315500
+UKD3,Greater Manchester,2009,2639800
+UKJ3,Hampshire and Isle of Wight,2009,1869200
+UKG1,Herefordshire Worcestershire and Warwickshire,2009,1286700
+UKM6,Highlands and Islands,2009,620400
+UKI4,Inner London - East,2009,2055600
+UKI3,Inner London - West,2009,1078700
+UKJ4,Kent,2009,1695600
+UKD4,Lancashire,2009,1453000
+UKF2,Leicestershire Rutland and Northamptonshire,2009,1682700
+UKF3,Lincolnshire,2009,705600
+UKD7,Merseyside,2009,1495500
+UKM5,North Eastern Scotland,2009,466000
+UKE2,North Yorkshire,2009,788700
+UKN0,Northern Ireland,2009,1789000
+UKC2,Northumberland and Tyne and Wear,2009,1409100
+UKI5,Outer London - East and North East,2009,1704000
+UKI6,Outer London - South,2009,1203300
+UKI7,Outer London - West and North West,2009,1900900
+UKG2,Shropshire and Staffordshire,2009,1554200
+UKE3,South Yorkshire,2009,1323900
+UKM9,Southern Scotland,2009,811600
+UKJ2,Surrey East and West Sussex,2009,2695500
+UKC1,Tees Valley and Durham,2009,1166400
+UKM8,West Central Scotland,2009,1457600
+UKG3,West Midlands,2009,2687200
+UKL1,West Wales and The Valleys,2009,1922300
+UKE4,West Yorkshire,2009,2197700
+UKH2,Bedfordshire and Hertfordshire,2010,1716300
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2010,2254500
+UKD6,Cheshire,2010,9e+05
+UKK3,Cornwall and Isles of Scilly,2010,532000
+UKD1,Cumbria,2010,500100
+UKF1,Derbyshire and Nottinghamshire,2010,2098400
+UKK4,Devon,2010,1129600
+UKK2,Dorset and Somerset,2010,1266700
+UKH1,East Anglia,2010,2373500
+UKL2,East Wales,2010,1122600
+UKE1,East Yorkshire and Northern Lincolnshire,2010,915300
+UKM7,Eastern Scotland,2010,1891200
+UKH3,Essex,2010,1717600
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2010,2333000
+UKD3,Greater Manchester,2010,2661900
+UKJ3,Hampshire and Isle of Wight,2010,1886600
+UKG1,Herefordshire Worcestershire and Warwickshire,2010,1291200
+UKM6,Highlands and Islands,2010,622700
+UKI4,Inner London - East,2010,2096200
+UKI3,Inner London - West,2010,1083100
+UKJ4,Kent,2010,1714700
+UKD4,Lancashire,2010,1457200
+UKF2,Leicestershire Rutland and Northamptonshire,2010,1696700
+UKF3,Lincolnshire,2010,711900
+UKD7,Merseyside,2010,1500700
+UKM5,North Eastern Scotland,2010,471100
+UKE2,North Yorkshire,2010,794100
+UKN0,Northern Ireland,2010,1799000
+UKC2,Northumberland and Tyne and Wear,2010,1415600
+UKI5,Outer London - East and North East,2010,1735600
+UKI6,Outer London - South,2010,1213600
+UKI7,Outer London - West and North West,2010,1932800
+UKG2,Shropshire and Staffordshire,2010,1562900
+UKE3,South Yorkshire,2010,1332900
+UKM9,Southern Scotland,2010,813000
+UKJ2,Surrey East and West Sussex,2010,2722100
+UKC1,Tees Valley and Durham,2010,1171400
+UKM8,West Central Scotland,2010,1464100
+UKG3,West Midlands,2010,2711900
+UKL1,West Wales and The Valleys,2010,1927500
+UKE4,West Yorkshire,2010,2212500
+UKH2,Bedfordshire and Hertfordshire,2011,1736800
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2011,2275100
+UKD6,Cheshire,2011,902900
+UKK3,Cornwall and Isles of Scilly,2011,536000
+UKD1,Cumbria,2011,499800
+UKF1,Derbyshire and Nottinghamshire,2011,2110100
+UKK4,Devon,2011,1135700
+UKK2,Dorset and Somerset,2011,1276800
+UKH1,East Anglia,2011,2396200
+UKL2,East Wales,2011,1130300
+UKE1,East Yorkshire and Northern Lincolnshire,2011,918000
+UKM7,Eastern Scotland,2011,1910300
+UKH3,Essex,2011,1729200
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2011,2352400
+UKD3,Greater Manchester,2011,2685400
+UKJ3,Hampshire and Isle of Wight,2011,1902000
+UKG1,Herefordshire Worcestershire and Warwickshire,2011,1296600
+UKM6,Highlands and Islands,2011,625500
+UKI4,Inner London - East,2011,2145600
+UKI3,Inner London - West,2011,1095500
+UKJ4,Kent,2011,1731400
+UKD4,Lancashire,2011,1461400
+UKF2,Leicestershire Rutland and Northamptonshire,2011,1712300
+UKF3,Lincolnshire,2011,714800
+UKD7,Merseyside,2011,1506500
+UKM5,North Eastern Scotland,2011,476200
+UKE2,North Yorkshire,2011,799000
+UKN0,Northern Ireland,2011,1809000
+UKC2,Northumberland and Tyne and Wear,2011,1420400
+UKI5,Outer London - East and North East,2011,1768200
+UKI6,Outer London - South,2011,1227400
+UKI7,Outer London - West and North West,2011,1967400
+UKG2,Shropshire and Staffordshire,2011,1572200
+UKE3,South Yorkshire,2011,1343900
+UKM9,Southern Scotland,2011,814900
+UKJ2,Surrey East and West Sussex,2011,2744600
+UKC1,Tees Valley and Durham,2011,1176100
+UKM8,West Central Scotland,2011,1473100
+UKG3,West Midlands,2011,2739800
+UKL1,West Wales and The Valleys,2011,1933600
+UKE4,West Yorkshire,2011,2227400
+UKH2,Bedfordshire and Hertfordshire,2012,1753700
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2012,2294600
+UKD6,Cheshire,2012,906400
+UKK3,Cornwall and Isles of Scilly,2012,540500
+UKD1,Cumbria,2012,499200
+UKF1,Derbyshire and Nottinghamshire,2012,2123000
+UKK4,Devon,2012,1142200
+UKK2,Dorset and Somerset,2012,1285000
+UKH1,East Anglia,2012,2410400
+UKL2,East Wales,2012,1135000
+UKE1,East Yorkshire and Northern Lincolnshire,2012,921100
+UKM7,Eastern Scotland,2012,1920700
+UKH3,Essex,2012,1741900
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2012,2371900
+UKD3,Greater Manchester,2012,2701300
+UKJ3,Hampshire and Isle of Wight,2012,1915300
+UKG1,Herefordshire Worcestershire and Warwickshire,2012,1302800
+UKM6,Highlands and Islands,2012,622600
+UKI4,Inner London - East,2012,2184800
+UKI3,Inner London - West,2012,1103600
+UKJ4,Kent,2012,1748300
+UKD4,Lancashire,2012,1465300
+UKF2,Leicestershire Rutland and Northamptonshire,2012,1725800
+UKF3,Lincolnshire,2012,719200
+UKD7,Merseyside,2012,1512200
+UKM5,North Eastern Scotland,2012,480500
+UKE2,North Yorkshire,2012,803200
+UKN0,Northern Ireland,2012,1820000
+UKC2,Northumberland and Tyne and Wear,2012,1424200
+UKI5,Outer London - East and North East,2012,1789100
+UKI6,Outer London - South,2012,1241900
+UKI7,Outer London - West and North West,2012,1989400
+UKG2,Shropshire and Staffordshire,2012,1578000
+UKE3,South Yorkshire,2012,1352400
+UKM9,Southern Scotland,2012,814400
+UKJ2,Surrey East and West Sussex,2012,2767000
+UKC1,Tees Valley and Durham,2012,1178300
+UKM8,West Central Scotland,2012,1475200
+UKG3,West Midlands,2012,2761900
+UKL1,West Wales and The Valleys,2012,1939000
+UKE4,West Yorkshire,2012,2240400
+UKH2,Bedfordshire and Hertfordshire,2013,1773400
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2013,2314000
+UKD6,Cheshire,2013,909300
+UKK3,Cornwall and Isles of Scilly,2013,544000
+UKD1,Cumbria,2013,498600
+UKF1,Derbyshire and Nottinghamshire,2013,2135100
+UKK4,Devon,2013,1148600
+UKK2,Dorset and Somerset,2013,1292100
+UKH1,East Anglia,2013,2423300
+UKL2,East Wales,2013,1140200
+UKE1,East Yorkshire and Northern Lincolnshire,2013,922000
+UKM7,Eastern Scotland,2013,1928600
+UKH3,Essex,2013,1755100
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2013,2393000
+UKD3,Greater Manchester,2013,2713600
+UKJ3,Hampshire and Isle of Wight,2013,1925500
+UKG1,Herefordshire Worcestershire and Warwickshire,2013,1308600
+UKM6,Highlands and Islands,2013,624500
+UKI4,Inner London - East,2013,2225800
+UKI3,Inner London - West,2013,1113400
+UKJ4,Kent,2013,1763900
+UKD4,Lancashire,2013,1468000
+UKF2,Leicestershire Rutland and Northamptonshire,2013,1739000
+UKF3,Lincolnshire,2013,724500
+UKD7,Merseyside,2013,1514300
+UKM5,North Eastern Scotland,2013,484900
+UKE2,North Yorkshire,2013,806800
+UKN0,Northern Ireland,2013,1830000
+UKC2,Northumberland and Tyne and Wear,2013,1429000
+UKI5,Outer London - East and North East,2013,1812500
+UKI6,Outer London - South,2013,1256900
+UKI7,Outer London - West and North West,2013,2008900
+UKG2,Shropshire and Staffordshire,2013,1584700
+UKE3,South Yorkshire,2013,1358500
+UKM9,Southern Scotland,2013,814300
+UKJ2,Surrey East and West Sussex,2013,2790100
+UKC1,Tees Valley and Durham,2013,1181600
+UKM8,West Central Scotland,2013,1475600
+UKG3,West Midlands,2013,2781800
+UKL1,West Wales and The Valleys,2013,1942200
+UKE4,West Yorkshire,2013,2250500
+UKH2,Bedfordshire and Hertfordshire,2014,1796100
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2014,2336600
+UKD6,Cheshire,2014,913600
+UKK3,Cornwall and Isles of Scilly,2014,548300
+UKD1,Cumbria,2014,498400
+UKF1,Derbyshire and Nottinghamshire,2014,2148800
+UKK4,Devon,2014,1158400
+UKK2,Dorset and Somerset,2014,1300100
+UKH1,East Anglia,2014,2445500
+UKL2,East Wales,2014,1145000
+UKE1,East Yorkshire and Northern Lincolnshire,2014,923800
+UKM7,Eastern Scotland,2014,1939500
+UKH3,Essex,2014,1775600
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2014,2416600
+UKD3,Greater Manchester,2014,2730100
+UKJ3,Hampshire and Isle of Wight,2014,1939000
+UKG1,Herefordshire Worcestershire and Warwickshire,2014,1316000
+UKM6,Highlands and Islands,2014,624200
+UKI4,Inner London - East,2014,2271300
+UKI3,Inner London - West,2014,1128000
+UKJ4,Kent,2014,1782400
+UKD4,Lancashire,2014,1470900
+UKF2,Leicestershire Rutland and Northamptonshire,2014,1756700
+UKF3,Lincolnshire,2014,731900
+UKD7,Merseyside,2014,1520100
+UKM5,North Eastern Scotland,2014,489400
+UKE2,North Yorkshire,2014,808400
+UKN0,Northern Ireland,2014,1840000
+UKC2,Northumberland and Tyne and Wear,2014,1434200
+UKI5,Outer London - East and North East,2014,1839700
+UKI6,Outer London - South,2014,1269700
+UKI7,Outer London - West and North West,2014,2030600
+UKG2,Shropshire and Staffordshire,2014,1591400
+UKE3,South Yorkshire,2014,1366200
+UKM9,Southern Scotland,2014,813900
+UKJ2,Surrey East and West Sussex,2014,2816000
+UKC1,Tees Valley and Durham,2014,1184600
+UKM8,West Central Scotland,2014,1480500
+UKG3,West Midlands,2014,2805900
+UKL1,West Wales and The Valleys,2014,1947000
+UKE4,West Yorkshire,2014,2261700
+UKH2,Bedfordshire and Hertfordshire,2015,1817800
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2015,2357800
+UKD6,Cheshire,2015,917400
+UKK3,Cornwall and Isles of Scilly,2015,552600
+UKD1,Cumbria,2015,498700
+UKF1,Derbyshire and Nottinghamshire,2015,2162100
+UKK4,Devon,2015,1167700
+UKK2,Dorset and Somerset,2015,1309000
+UKH1,East Anglia,2015,2467800
+UKL2,East Wales,2015,1148500
+UKE1,East Yorkshire and Northern Lincolnshire,2015,925200
+UKM7,Eastern Scotland,2015,1953700
+UKH3,Essex,2015,1790500
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2015,2442500
+UKD3,Greater Manchester,2015,2754000
+UKJ3,Hampshire and Isle of Wight,2015,1953500
+UKG1,Herefordshire Worcestershire and Warwickshire,2015,1322700
+UKM6,Highlands and Islands,2015,624600
+UKI4,Inner London - East,2015,2318600
+UKI3,Inner London - West,2015,1148800
+UKJ4,Kent,2015,1798200
+UKD4,Lancashire,2015,1477000
+UKF2,Leicestershire Rutland and Northamptonshire,2015,1778100
+UKF3,Lincolnshire,2015,737400
+UKD7,Merseyside,2015,1528300
+UKM5,North Eastern Scotland,2015,492400
+UKE2,North Yorkshire,2015,811800
+UKN0,Northern Ireland,2015,1851000
+UKC2,Northumberland and Tyne and Wear,2015,1437000
+UKI5,Outer London - East and North East,2015,1866700
+UKI6,Outer London - South,2015,1282900
+UKI7,Outer London - West and North West,2015,2049900
+UKG2,Shropshire and Staffordshire,2015,1597800
+UKE3,South Yorkshire,2015,1375500
+UKM9,Southern Scotland,2015,814400
+UKJ2,Surrey East and West Sussex,2015,2840200
+UKC1,Tees Valley and Durham,2015,1187500
+UKM8,West Central Scotland,2015,1488200
+UKG3,West Midlands,2015,2834500
+UKL1,West Wales and The Valleys,2015,1950500
+UKE4,West Yorkshire,2015,2277800
+UKH2,Bedfordshire and Hertfordshire,2016,1837800
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2016,2379300
+UKD6,Cheshire,2016,922000
+UKK3,Cornwall and Isles of Scilly,2016,557400
+UKD1,Cumbria,2016,498700
+UKF1,Derbyshire and Nottinghamshire,2016,2179100
+UKK4,Devon,2016,1175500
+UKK2,Dorset and Somerset,2016,1318600
+UKH1,East Anglia,2016,2484200
+UKL2,East Wales,2016,1155200
+UKE1,East Yorkshire and Northern Lincolnshire,2016,928400
+UKM7,Eastern Scotland,2016,1970400
+UKH3,Essex,2016,1807000
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2016,2465200
+UKD3,Greater Manchester,2016,2780700
+UKJ3,Hampshire and Isle of Wight,2016,1969000
+UKG1,Herefordshire Worcestershire and Warwickshire,2016,1332000
+UKM6,Highlands and Islands,2016,625900
+UKI4,Inner London - East,2016,2356500
+UKI3,Inner London - West,2016,1158500
+UKJ4,Kent,2016,1817400
+UKD4,Lancashire,2016,1484000
+UKF2,Leicestershire Rutland and Northamptonshire,2016,1801500
+UKF3,Lincolnshire,2016,744700
+UKD7,Merseyside,2016,1538500
+UKM5,North Eastern Scotland,2016,492000
+UKE2,North Yorkshire,2016,816500
+UKN0,Northern Ireland,2016,1862000
+UKC2,Northumberland and Tyne and Wear,2016,1443800
+UKI5,Outer London - East and North East,2016,1893400
+UKI6,Outer London - South,2016,1293200
+UKI7,Outer London - West and North West,2016,2068100
+UKG2,Shropshire and Staffordshire,2016,1608200
+UKE3,South Yorkshire,2016,1385400
+UKM9,Southern Scotland,2016,815800
+UKJ2,Surrey East and West Sussex,2016,2864500
+UKC1,Tees Valley and Durham,2016,1192700
+UKM8,West Central Scotland,2016,1500800
+UKG3,West Midlands,2016,2870600
+UKL1,West Wales and The Valleys,2016,1958100
+UKE4,West Yorkshire,2016,2295000
+UKH2,Bedfordshire and Hertfordshire,2017,1845500
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2017,2391800
+UKD6,Cheshire,2017,926500
+UKK3,Cornwall and Isles of Scilly,2017,563600
+UKD1,Cumbria,2017,498400
+UKF1,Derbyshire and Nottinghamshire,2017,2196100
+UKK4,Devon,2017,1185300
+UKK2,Dorset and Somerset,2017,1325900
+UKH1,East Anglia,2017,2502500
+UKL2,East Wales,2017,1161900
+UKE1,East Yorkshire and Northern Lincolnshire,2017,929900
+UKM7,Eastern Scotland,2017,1982500
+UKH3,Essex,2017,1820500
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2017,2484300
+UKD3,Greater Manchester,2017,2798800
+UKJ3,Hampshire and Isle of Wight,2017,1978900
+UKG1,Herefordshire Worcestershire and Warwickshire,2017,1344100
+UKM6,Highlands and Islands,2017,625700
+UKI4,Inner London - East,2017,2377600
+UKI3,Inner London - West,2017,1167900
+UKJ4,Kent,2017,1832100
+UKD4,Lancashire,2017,1490600
+UKF2,Leicestershire Rutland and Northamptonshire,2017,1824500
+UKF3,Lincolnshire,2017,751100
+UKD7,Merseyside,2017,1544400
+UKM5,North Eastern Scotland,2017,490600
+UKE2,North Yorkshire,2017,819800
+UKN0,Northern Ireland,2017,1871000
+UKC2,Northumberland and Tyne and Wear,2017,1448500
+UKI5,Outer London - East and North East,2017,1905600
+UKI6,Outer London - South,2017,1298100
+UKI7,Outer London - West and North West,2017,2075600
+UKG2,Shropshire and Staffordshire,2017,1619600
+UKE3,South Yorkshire,2017,1393400
+UKM9,Southern Scotland,2017,817000
+UKJ2,Surrey East and West Sussex,2017,2878200
+UKC1,Tees Valley and Durham,2017,1196100
+UKM8,West Central Scotland,2017,1509100
+UKG3,West Midlands,2017,2897200
+UKL1,West Wales and The Valleys,2017,1963600
+UKE4,West Yorkshire,2017,2307000
+UKH2,Bedfordshire and Hertfordshire,2018,1853700
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2018,2407600
+UKD6,Cheshire,2018,930800
+UKK3,Cornwall and Isles of Scilly,2018,568200
+UKD1,Cumbria,2018,498800
+UKF1,Derbyshire and Nottinghamshire,2018,2207600
+UKK4,Devon,2018,1194000
+UKK2,Dorset and Somerset,2018,1331800
+UKH1,East Anglia,2018,2514800
+UKL2,East Wales,2018,1167900
+UKE1,East Yorkshire and Northern Lincolnshire,2018,932000
+UKM7,Eastern Scotland,2018,1991700
+UKH3,Essex,2018,1832900
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2018,2505600
+UKD3,Greater Manchester,2018,2812600
+UKJ3,Hampshire and Isle of Wight,2018,1985700
+UKG1,Herefordshire Worcestershire and Warwickshire,2018,1355300
+UKM6,Highlands and Islands,2018,624600
+UKI4,Inner London - East,2018,2405800
+UKI3,Inner London - West,2018,1194300
+UKJ4,Kent,2018,1846700
+UKD4,Lancashire,2018,1498100
+UKF2,Leicestershire Rutland and Northamptonshire,2018,1840700
+UKF3,Lincolnshire,2018,755900
+UKD7,Merseyside,2018,1551400
+UKM5,North Eastern Scotland,2018,489100
+UKE2,North Yorkshire,2018,824200
+UKN0,Northern Ireland,2018,1882000
+UKC2,Northumberland and Tyne and Wear,2018,1456700
+UKI5,Outer London - East and North East,2018,1917800
+UKI6,Outer London - South,2018,1302600
+UKI7,Outer London - West and North West,2018,2087500
+UKG2,Shropshire and Staffordshire,2018,1629200
+UKE3,South Yorkshire,2018,1402900
+UKM9,Southern Scotland,2018,817500
+UKJ2,Surrey East and West Sussex,2018,2893900
+UKC1,Tees Valley and Durham,2018,1201200
+UKM8,West Central Scotland,2018,1515200
+UKG3,West Midlands,2018,2916500
+UKL1,West Wales and The Valleys,2018,1970700
+UKE4,West Yorkshire,2018,2320200
+UKH2,Bedfordshire and Hertfordshire,2019,1864500
+UKJ1,Berkshire Buckinghamshire and Oxfordshire,2019,2420000
+UKD6,Cheshire,2019,937300
+UKK3,Cornwall and Isles of Scilly,2019,571800
+UKD1,Cumbria,2019,500100
+UKF1,Derbyshire and Nottinghamshire,2019,2221200
+UKK4,Devon,2019,1200800
+UKK2,Dorset and Somerset,2019,1336000
+UKH1,East Anglia,2019,2525000
+UKL2,East Wales,2019,1174300
+UKE1,East Yorkshire and Northern Lincolnshire,2019,932900
+UKM7,Eastern Scotland,2019,2005300
+UKH3,Essex,2019,1846700
+UKK1,Gloucestershire Wiltshire and Bath/Bristol area,2019,2516200
+UKD3,Greater Manchester,2019,2835800
+UKJ3,Hampshire and Isle of Wight,2019,1991800
+UKG1,Herefordshire Worcestershire and Warwickshire,2019,1366600
+UKM6,Highlands and Islands,2019,624100
+UKI4,Inner London - East,2019,2420600
+UKI3,Inner London - West,2019,1211900
+UKJ4,Kent,2019,1860100
+UKD4,Lancashire,2019,1508800
+UKF2,Leicestershire Rutland and Northamptonshire,2019,1853500
+UKF3,Lincolnshire,2019,761200
+UKD7,Merseyside,2019,1559300
+UKM5,North Eastern Scotland,2019,489900
+UKE2,North Yorkshire,2019,828600
+UKN0,Northern Ireland,2019,1893700
+UKC2,Northumberland and Tyne and Wear,2019,1463900
+UKI5,Outer London - East and North East,2019,1924700
+UKI6,Outer London - South,2019,1309300
+UKI7,Outer London - West and North West,2019,2095100
+UKG2,Shropshire and Staffordshire,2019,1639000
+UKE3,South Yorkshire,2019,1409100
+UKM9,Southern Scotland,2019,819500
+UKJ2,Surrey East and West Sussex,2019,2908200
+UKC1,Tees Valley and Durham,2019,1206100
+UKM8,West Central Scotland,2019,1524400
+UKG3,West Midlands,2019,2928700
+UKL1,West Wales and The Valleys,2019,1978700
+UKE4,West Yorkshire,2019,2332500
