@@ -55,4 +55,6 @@ population\_raw         | Population in the statistical area before correction (
 
     **Data harmonization**
 
-    As pre-1981 data are constructed using a collection of sources creating potential flaws or approximations. Hence, we found it desirable to compare the two datasets in 1981 (the only year of overlap) to compute a correction coefficient obtained as $\frac{population~in~1981~using~ONS~data_{NUTS2}}{population~in~1981~using~VoB~data_{NUTS2}}$. We then apply this correction coefficient to all pre-1981 data to make sure that the time series is consistent for each NUTS2 despite the data source change. Note that for Wales and Scotland, 1981 data are missing from VoB. We used the 1971 data and applied the national population growth rate to (roughly) estimate the VoB data and hence the correction coefficient.
+    As pre-1981 data are constructed using a collection of sources creating potential flaws or approximations. Hence, we found it desirable to compare the two datasets in 1981 (the only year of overlap) to compute a correction coefficient obtained as $\frac{population~in~1981~using~ONS~data_{NUTS2}}{population~in~1981~using~VoB~data_{NUTS2}}$. We then apply this correction coefficient to all pre-1981 data to make sure that the time series is consistent for each NUTS2 despite the data source change.
+
+    Note that for Wales and Scotland, 1981 data are missing from VoB. We used the 1971 data and applied the national population growth rate to (roughly) estimate the VoB data and hence the correction coefficient.
