@@ -2,7 +2,7 @@
 
 File | Source(s)
 ---|---
-[population_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets)  |DE [Rosés-Wolf database on regional GDP (version 6, 2020)](https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp), FR [INSEE](https://www.insee.fr/fr/statistiques/3698339), GB [Vision of Britain](https://www.visionofbritain.org.uk/)&[ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/13221populationestimatesbylocalauthoritiesofgreatbritainmid1981tomid2019)&[Wiki](https://en.wikipedia.org/wiki/Demography_of_Northern_Ireland), US [Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020](https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip)
+[population_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets) |DE: [Rosés-Wolf database on regional GDP (version 6, 2020)](https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp), FR: [INSEE](https://www.insee.fr/fr/statistiques/3698339), GB: [Vision of Britain](https://www.visionofbritain.org.uk/) (pre 1981) & [ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/13221populationestimatesbylocalauthoritiesofgreatbritainmid1981tomid2019) (post 1981) & [Wiki](https://en.wikipedia.org/wiki/Demography_of_Northern_Ireland) (Northern Ireland) and [Census](https://data.london.gov.uk/dataset/historic-census-population) (London), US: [Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020](https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip)
 
 ## Coverage
 
@@ -22,19 +22,19 @@ statisticalAreaCode     | Statistical area code (nuts/fips) | `str`
 statisticalAreaName     | Statistical area name (literal)| `str`
 year                    | Year | `int`
 population              | Population in the statistical area (in thousands)| `float`
+population\_raw         | Population in the statistical area before correction (in thousands). Relevant for GB only (see notes below)| `float`
 
 
-??? note  "Focus on GB statistical areas construction"
+??? note  "Focus on GB data"
 
-    Some modern counties are made of a couple of older ones. In this case, we recompose modern counties or use the old name.
+    GB population data are not available at a sufficiently detailed NUTS level over long period - at least we did not find it. For instance, Rosés and Wolf (2020) only provides data at the NUTS1 level for GB. Hence, we had to build the population data for GB at the NUTS2 level ourselves. This includes 3 main stages: 1. Pre-1981 data collection, 2. Post-1981 data collection, 3. Data harmonization
 
-    statisticalAreaName | Construction
+    **Pre-1981 data collection**:
+
+    We use Vision of Britain (VoB) population data, except for London where we use data from the Census. Some VoB geographic entities have no population data though. In this case, we made our best to reconstitute the data from smaller entities with known population data. Below we detail the contruction of these entities
+
+    VoB | Construction
     ---|---
-    Outer London — West and North West | Barnet + Brent + Ealing + Harrow + Hillingdon + Hounslow + Richmond upon Thames
-    Outer London — South       | Bromley + Croydon + Merton + Kingston upon Thames + Sutton
-    Outer London — East and North East | Bexley + Greenwich + Barking and Dagenham + Havering + Redbridge + Waltham Forest + Enfield
-    Inner London — East      | Hackney + Newham + Tower Hamlets + Haringey + Islington + Lewisham + Southwark + Lambeth
-    Inner London — West               | Camden + City of London + Westminster +Kensington & Chelsea + Hammersmith & Fulham + Wandsworth
     Tweeddale    | Peebles+Selkirkshire
     Roxburgh Ettrick and Lauderdale    | Roxburghshire + Selkirkshire + Berwickshire/4 + Midlothian/4
     Cheshire    | Halton + Warrington + Cheshire east + Cheshire West and Chester
@@ -44,8 +44,15 @@ population              | Population in the statistical area (in thousands)| `fl
     Dyfed    | Carmarthenshire + Ceredigion + Pembrokeshire
     Gwent    | Blaenau Gwent + Caerphilly/2 + Monmouthshire + Newport + Torfaen
     Vale of Glamorgan    | Glamorganshire
-    
-    Then, with the "Conversion_VoB_NUTS_GB.csv" document we convert VoB data into NUTS 2 level data. To do so, we complete the VOB dataset with linear interpolation because one missing data prevent us from reconstituting the whole NUTS 2 entity in 1871, 1901 and 1941 (e.g. Bedfordshire in 1941).
-    For Wales and Scotland data are missing since 1981. We suppose population increased homogeneously in each NUTS so we determine 1981 NUTS population by multiplying 1971 NUTS population by the population growth rate in those countries from 1971 to 1981.
-    NUTS 3 data are available for each year since 1981, we convert them into NUTS 2 data thanks to an online conversion table (e.g https://en.wikipedia.org/wiki/NUTS_statistical_regions_of_the_United_Kingdom).
-    As pre-1981 data are constructed with  VOB data and not NUTS 3 data, we correct potential errors by retropolating the data, based on a comparison between our NUTS 2 "artificial" data (constructed with VOB) in 1981 and "official" NUTS 2 data (constructed with NUTS 3) in 1981.
+
+    Missing VoB data (concentrated in 1871, 1901 and 1941) are filled with linear interpolation.
+
+    Once we have data for all VoB entities (real or imputed), we caggregate them to obtain population data at the NUTS2 level using the conversion table reported in [statisticalareasvob_gb.csv](https://github.com/cverluise/patentcity/tree/master/assets).
+
+    **Post-1981 data collection**
+
+    After 1981, the ONS  provides data at the local authority level for each year. Same as before, we aggregate them to obtain population data at the NUTS2 level using the conversion table reported in [XX]. The conversion table is based on the [local authority to NUTS crossover table](https://data.gov.uk/dataset/86beb640-9fa4-4131-b330-fc26d74c074f/local-authority-district-december-2018-to-nuts3-to-nuts2-to-nuts1-january-2018-lookup-in-united-kingdom) and the [Scotish Review of NUTS boundaries](https://www.gov.scot/publications/review-nomenclature-units-territorial-statistics-nuts-boundaries/).
+
+    **Data harmonization**
+
+    As pre-1981 data are constructed using a collection of sources creating potential flaws or approximations. Hence, we found it desirable to compare the two datasets in 1981 (the only year of overlap) to compute a correction coefficient obtained as $\frac{population~in~1981~using~ONS~data_{NUTS2}}{population~in~1981~using~VoB~data_{NUTS2}}$. We then apply this correction coefficient to all pre-1981 data to make sure that the time series is consistent for each NUTS2 despite the data source change. Note that for Wales and Scotland, 1981 data are missing from VoB. We used the 1971 data and applied the national population growth rate to (roughly) estimate the VoB data and hence the correction coefficient.
