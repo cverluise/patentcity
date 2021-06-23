@@ -1,4 +1,4 @@
-<h1 align="center">patentCity<img src="./patentcity-logo.svg" height="25">
+<h1 align="center">patentCity
 </h1>
 
 <p align="center">
@@ -23,17 +23,19 @@
 
 ***
 
-🗃️ This repository is the codebase of the patenCity database.
+🗃️ This repository is the codebase of the patentCity database.
 
-📚 The patentCity database is a comprehensive database reporting patentees' data extracted from patent texts (name, location, occupation, citizenship) as well as enriched data (geocoded addresses, disambiguated citizenship, etc) since the 19th century in Germany (including East Germany), France, Great Britain and the USA.
+📚 The patentCity database is a comprehensive database reporting patentees' data extracted from patent texts as well as enriched data since the 19th century in Germany (including East Germany), France, Great Britain and the USA.
 
 💥 The goal of the database is to spur research on the history of innovation and to deepen the set of natural experiments from which historians, economists and scientists in general can learn to improve our understanding of innovation dynamics.
 
-🤗 We open source our code ([MIT](docs/LICENSE_CODE.md)) to support future extensions, and a collaborative way to create and continuously improve research databases. The database is also open access ([CC-BY-4](docs/LICENSE_DATA.md)).
-
 🌎 Explore and visualize the patentCity database online at [patentcity.xyz](http://www.patentcity.xyz) (click on the map under the "Explore" section).
 
-📥 [Not available yet] Download the patentCity database.
+📥 [Not available yet] Download the patentCity database ([CC-BY-4](docs/LICENSE_DATA.md)).
+
+📝 The patentCity codebase and database are documented at [doc.patentcity.xyz](http://www.doc.patentcity.xyz).
+
+🤗 We open source our code ([MIT](docs/LICENSE_CODE.md)) to support future extensions, and a collaborative way to create and continuously improve research databases.
 
 💌 patentCity is due to expand and improve continuously in the coming years. Make sure to receive updates, [join our newsletter](http://www.patentcity.xyz) and star the GitHub repository!
 
