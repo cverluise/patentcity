@@ -67,6 +67,9 @@ nav:
       - geo: API_GEO.md
       - io: API_IO.md
       - search: API_SEARCH.md
+  - Contribute:
+      - Guidelines: CONTRIBUTION_GUIDELINES.md
+      - Code of conduct: CODE_OF_CONDUCT.md
   - License:
     - Code: LICENSE_CODE.md
     - Data: LICENSE_DATA.md
