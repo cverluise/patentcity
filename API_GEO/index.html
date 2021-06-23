@@ -2249,7 +2249,8 @@
 311
 312
 313
-314</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.get&quot;</span><span class="p">)</span>
+314
+315</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;here.get&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">get_geoc_data_here</span><span class="p">(</span>
     <span class="n">request_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">unzip</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="p">):</span>
@@ -2297,6 +2298,7 @@
             <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">not_ok</span><span class="si">}</span><span class="s2">Failed with status </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
             <span class="n">fg</span><span class="o">=</span><span class="n">typer</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span>
         <span class="p">)</span>
+    <span class="c1"># return response</span>
 </code></pre></div>
 </td></tr></table>
         </details>
@@ -2684,7 +2686,9 @@
 654
 655
 656
-657</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;gmaps.harmonize&quot;</span><span class="p">)</span>
+657
+658
+659</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;gmaps.harmonize&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">harmonize_geoc_data_gmaps</span><span class="p">(</span>
     <span class="n">file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">inDelim</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span><span class="p">,</span> <span class="n">out_format</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="p">):</span>
@@ -2728,6 +2732,8 @@
                 <span class="p">)</span>
             <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
                 <span class="k">pass</span>
+                <span class="c1"># occurs when there is still an inDelim in the result</span>
+                <span class="c1"># (e.g. &quot;long_name&quot;: &quot;S2|02 Robert-Piloty-Geb\u00e4ude&quot;)</span>
 </code></pre></div>
 </td></tr></table>
         </details>
@@ -3214,6 +3220,12 @@ sort -u loc_uspatent01.txt
     
     
       <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

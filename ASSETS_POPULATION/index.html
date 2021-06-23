@@ -1451,7 +1451,7 @@
 <tbody>
 <tr>
 <td><a href="https://github.com/cverluise/patentcity/tree/master/assets">population_xx.csv</a></td>
-<td>DE <a href="https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp">Rosés-Wolf database on regional GDP (version 6, 2020)</a>, FR <a href="https://www.insee.fr/fr/statistiques/3698339">INSEE</a>, GB <a href="https://www.visionofbritain.org.uk/">Vision of Britain</a>&amp;<a href="http://www.isle-of-man.com/manxnotebook/history/pop.htm">Isle of man</a>, US <a href="https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip">Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020</a></td>
+<td>DE: <a href="https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp">Rosés-Wolf database on regional GDP (version 6, 2020)</a>, FR: <a href="https://www.insee.fr/fr/statistiques/3698339">INSEE</a>, GB: <a href="https://www.visionofbritain.org.uk/">Vision of Britain</a> (pre 1981) &amp; <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/13221populationestimatesbylocalauthoritiesofgreatbritainmid1981tomid2019">ONS</a> (post 1981) &amp; <a href="https://en.wikipedia.org/wiki/Demography_of_Northern_Ireland">Wiki</a> (Northern Ireland) and <a href="https://data.london.gov.uk/dataset/historic-census-population">Census</a> (London), US: <a href="https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip">Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020</a></td>
 </tr>
 </tbody>
 </table>
@@ -1478,7 +1478,7 @@
 <tr>
 <td>GB</td>
 <td>2 (nuts2)</td>
-<td>1851-2011</td>
+<td>1851-2019</td>
 </tr>
 <tr>
 <td>US</td>
@@ -1522,37 +1522,24 @@
 <td>Population in the statistical area (in thousands)</td>
 <td><code>float</code></td>
 </tr>
+<tr>
+<td>population_raw</td>
+<td>Population in the statistical area before correction (in thousands). Relevant for GB only (see notes below)</td>
+<td><code>float</code></td>
+</tr>
 </tbody>
 </table>
-<details class="note"><summary>Focus on GB statistical areas construction</summary><p>Some modern counties are made of a couple of older ones. In this case, we recompose modern counties or use the old name.</p>
+<details class="note"><summary>Focus on GB data</summary><p>GB population data are not available at a sufficiently detailed NUTS level over long period - at least we did not find it. For instance, Rosés and Wolf (2020) only provides data at the NUTS1 level for GB. Hence, we had to build the population data for GB at the NUTS2 level ourselves. This includes 3 main stages: 1. Pre-1981 data collection, 2. Post-1981 data collection, 3. Data harmonization</p>
+<p><strong>Pre-1981 data collection</strong>:</p>
+<p>We use Vision of Britain (VoB) population data, except for London where we use data from the Census. Some VoB geographic entities have no population data though. In this case, we made our best to reconstitute the data from smaller entities with known population data. Below we detail the contruction of these entities</p>
 <table>
 <thead>
 <tr>
-<th>statisticalAreaName</th>
+<th>VoB</th>
 <th>Construction</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Outer London — West and North West</td>
-<td>Barnet + Brent + Ealing + Harrow + Hillingdon + Hounslow + Richmond upon Thames</td>
-</tr>
-<tr>
-<td>Outer London — South</td>
-<td>Bromley + Croydon + Merton + Kingston upon Thames + Sutton</td>
-</tr>
-<tr>
-<td>Outer London — East and North East</td>
-<td>Bexley + Greenwich + Barking and Dagenham + Havering + Redbridge + Waltham Forest + Enfield</td>
-</tr>
-<tr>
-<td>Inner London — East</td>
-<td>Hackney + Newham + Tower Hamlets + Haringey + Islington + Lewisham + Southwark + Lambeth</td>
-</tr>
-<tr>
-<td>Inner London — West</td>
-<td>Camden + City of London + Westminster +Kensington &amp; Chelsea + Hammersmith &amp; Fulham + Wandsworth</td>
-</tr>
 <tr>
 <td>Tweeddale</td>
 <td>Peebles+Selkirkshire</td>
@@ -1591,6 +1578,13 @@
 </tr>
 </tbody>
 </table>
+<p>Missing VoB data (concentrated in 1871, 1901 and 1941) are filled with linear interpolation.</p>
+<p>Once we have data for all VoB entities (real or imputed), we caggregate them to obtain population data at the NUTS2 level using the conversion table reported in <a href="https://github.com/cverluise/patentcity/tree/master/assets">statisticalareasvob_gb.csv</a>.</p>
+<p><strong>Post-1981 data collection</strong></p>
+<p>After 1981, the ONS  provides data at the local authority level for each year. Same as before, we aggregate them to obtain population data at the NUTS2 level using the conversion table reported in [XX]. The conversion table is based on the <a href="https://data.gov.uk/dataset/86beb640-9fa4-4131-b330-fc26d74c074f/local-authority-district-december-2018-to-nuts3-to-nuts2-to-nuts1-january-2018-lookup-in-united-kingdom">local authority to NUTS crossover table</a> and the <a href="https://www.gov.scot/publications/review-nomenclature-units-territorial-statistics-nuts-boundaries/">Scotish Review of NUTS boundaries</a>.</p>
+<p><strong>Data harmonization</strong></p>
+<p>As pre-1981 data are constructed using a collection of sources creating potential flaws or approximations. Hence, we found it desirable to compare the two datasets in 1981 (the only year of overlap) to compute a correction coefficient obtained as <span class="arithmatex">\(\frac{population~in~1981~using~ONS~data_{NUTS2}}{population~in~1981~using~VoB~data_{NUTS2}}\)</span>. We then apply this correction coefficient to all pre-1981 data to make sure that the time series is consistent for each NUTS2 despite the data source change.</p>
+<p>Note that for East Wales and Scotland, 1981 (and 1971 for East Wales) data are missing from VoB. We used the 1971 data and applied the national population growth rate to (roughly) estimate the VoB data and hence the correction coefficient.</p>
 </details>
                 
               
@@ -1686,6 +1680,12 @@
     
     
       <script src="../assets/javascripts/bundle.4ea5477f.min.js"></script>
+      
+        <script src="../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
