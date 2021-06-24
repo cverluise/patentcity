@@ -9,7 +9,7 @@ File |Source
 Country |Geographical level | Period
 ---|---|---
 DE  |2 (nuts2)       | 1900-2015
-FR  |3 (nuts3)       | 1900-2015
+FR  |2 (nuts2)       | 1900-2015
 GB  |1 (nuts1)       | 1900-2015
 
 !!! warning
