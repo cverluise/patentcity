@@ -51,7 +51,7 @@ population\_raw         | Population in the statistical area before correction (
 
     **Post-1981 data collection**
 
-    After 1981, the ONS  provides data at the local authority level for each year. Same as before, we aggregate them to obtain population data at the NUTS2 level using the conversion table reported in [XX]. The conversion table is based on the [local authority to NUTS crossover table](https://data.gov.uk/dataset/86beb640-9fa4-4131-b330-fc26d74c074f/local-authority-district-december-2018-to-nuts3-to-nuts2-to-nuts1-january-2018-lookup-in-united-kingdom) and the [Scotish Review of NUTS boundaries](https://www.gov.scot/publications/review-nomenclature-units-territorial-statistics-nuts-boundaries/).
+    After 1981, the ONS  provides data at the local authority level for each year. Same as before, we aggregate them to obtain population data at the NUTS2 level using the conversion table reported in [statisticalareaslau_gb.csv](https://github.com/cverluise/patentcity/tree/master/assets). The conversion table is based on the [local authority to NUTS crossover table](https://data.gov.uk/dataset/86beb640-9fa4-4131-b330-fc26d74c074f/local-authority-district-december-2018-to-nuts3-to-nuts2-to-nuts1-january-2018-lookup-in-united-kingdom) and the [Scotish Review of NUTS boundaries](https://www.gov.scot/publications/review-nomenclature-units-territorial-statistics-nuts-boundaries/).
 
     **Data harmonization**
 

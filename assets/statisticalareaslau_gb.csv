@@ -1,0 +1,362 @@
+localAuthority,nutsCode,statisticalArea2
+Luton,UKH2,Bedfordshire and Hertfordshire
+Dacorum,UKH2,Bedfordshire and Hertfordshire
+Watford,UKH2,Bedfordshire and Hertfordshire
+Hertsmere,UKH2,Bedfordshire and Hertfordshire
+St Albans,UKH2,Bedfordshire and Hertfordshire
+Stevenage,UKH2,Bedfordshire and Hertfordshire
+Broxbourne,UKH2,Bedfordshire and Hertfordshire
+Three Rivers,UKH2,Bedfordshire and Hertfordshire
+Welwyn Hatfield,UKH2,Bedfordshire and Hertfordshire
+East Hertfordshire,UKH2,Bedfordshire and Hertfordshire
+North Hertfordshire,UKH2,Bedfordshire and Hertfordshire
+Bedford,UKH2,Bedfordshire and Hertfordshire
+Central Bedfordshire,UKH2,Bedfordshire and Hertfordshire
+Slough,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Reading,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Wokingham,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+West Berkshire,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Bracknell Forest,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Windsor and Maidenhead,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Milton Keynes,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Wycombe,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Chiltern,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+South Bucks,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Aylesbury Vale,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Oxford,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Cherwell,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+West Oxfordshire,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+South Oxfordshire,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Vale of White Horse,UKJ1,Berkshire Buckinghamshire and Oxfordshire
+Warrington,UKD6,Cheshire
+Cheshire East,UKD6,Cheshire
+Cheshire West and Chester,UKD6,Cheshire
+Cornwall,UKK3,Cornwall and Isles of Scilly
+Isles of Scilly,UKK3,Cornwall and Isles of Scilly
+Copeland,UKD1,Cumbria
+Allerdale,UKD1,Cumbria
+Barrow-in-Furness,UKD1,Cumbria
+Eden,UKD1,Cumbria
+Carlisle,UKD1,Cumbria
+South Lakeland,UKD1,Cumbria
+Derby,UKF1,Derbyshire and Nottinghamshire
+Bolsover,UKF1,Derbyshire and Nottinghamshire
+Chesterfield,UKF1,Derbyshire and Nottinghamshire
+North East Derbyshire,UKF1,Derbyshire and Nottinghamshire
+Erewash,UKF1,Derbyshire and Nottinghamshire
+High Peak,UKF1,Derbyshire and Nottinghamshire
+Amber Valley,UKF1,Derbyshire and Nottinghamshire
+Derbyshire Dales,UKF1,Derbyshire and Nottinghamshire
+South Derbyshire,UKF1,Derbyshire and Nottinghamshire
+Nottingham,UKF1,Derbyshire and Nottinghamshire
+Ashfield,UKF1,Derbyshire and Nottinghamshire
+Bassetlaw,UKF1,Derbyshire and Nottinghamshire
+Mansfield,UKF1,Derbyshire and Nottinghamshire
+Newark and Sherwood,UKF1,Derbyshire and Nottinghamshire
+Gedling,UKF1,Derbyshire and Nottinghamshire
+Broxtowe,UKF1,Derbyshire and Nottinghamshire
+Rushcliffe,UKF1,Derbyshire and Nottinghamshire
+Plymouth,UKK4,Devon
+Torbay,UKK4,Devon
+Exeter,UKK4,Devon
+Torridge,UKK4,Devon
+Mid Devon,UKK4,Devon
+East Devon,UKK4,Devon
+South Hams,UKK4,Devon
+West Devon,UKK4,Devon
+North Devon,UKK4,Devon
+Teignbridge,UKK4,Devon
+Poole,UKK2,Dorset and Somerset
+Bournemouth,UKK2,Dorset and Somerset
+Purbeck,UKK2,Dorset and Somerset
+East Dorset,UKK2,Dorset and Somerset
+West Dorset,UKK2,Dorset and Somerset
+Christchurch,UKK2,Dorset and Somerset
+North Dorset,UKK2,Dorset and Somerset
+Weymouth and Portland,UKK2,Dorset and Somerset
+Mendip,UKK2,Dorset and Somerset
+Sedgemoor,UKK2,Dorset and Somerset
+Taunton Deane,UKK2,Dorset and Somerset
+West Somerset,UKK2,Dorset and Somerset
+South Somerset,UKK2,Dorset and Somerset
+Peterborough,UKH1,East Anglia
+Fenland,UKH1,East Anglia
+Cambridge,UKH1,East Anglia
+Huntingdonshire,UKH1,East Anglia
+East Cambridgeshire,UKH1,East Anglia
+South Cambridgeshire,UKH1,East Anglia
+Babergh,UKH1,East Anglia
+Ipswich,UKH1,East Anglia
+Waveney,UKH1,East Anglia
+Mid Suffolk,UKH1,East Anglia
+Forest Heath,UKH1,East Anglia
+St Edmundsbury,UKH1,East Anglia
+Suffolk Coastal,UKH1,East Anglia
+Norwich,UKH1,East Anglia
+Broadland,UKH1,East Anglia
+Great Yarmouth,UKH1,East Anglia
+North Norfolk,UKH1,East Anglia
+King's Lynn and West Norfolk,UKH1,East Anglia
+Breckland,UKH1,East Anglia
+South Norfolk,UKH1,East Anglia
+Newport,UKL2,East Wales
+Monmouthshire,UKL2,East Wales
+Cardiff,UKL2,East Wales
+Vale of Glamorgan,UKL2,East Wales
+Wrexham,UKL2,East Wales
+Flintshire,UKL2,East Wales
+Powys,UKL2,East Wales
+Kingston upon Hull City of,UKE1,East Yorkshire and Northern Lincolnshire
+East Riding of Yorkshire,UKE1,East Yorkshire and Northern Lincolnshire
+North Lincolnshire,UKE1,East Yorkshire and Northern Lincolnshire
+North East Lincolnshire,UKE1,East Yorkshire and Northern Lincolnshire
+Angus,UKM7,Eastern Scotland
+City of Dundee,UKM7,Eastern Scotland
+Fife,UKM7,Eastern Scotland
+Clackmannan,UKM7,Eastern Scotland
+Midlothian,UKM7,Eastern Scotland
+East Lothian,UKM7,Eastern Scotland
+City of Edinburgh,UKM7,Eastern Scotland
+Stirling and Falkirk,UKM7,Eastern Scotland
+Perth and Kinross,UKM7,Eastern Scotland
+West Lothian,UKM7,Eastern Scotland
+Southend-on-Sea,UKH3,Essex
+Thurrock,UKH3,Essex
+Tendring,UKH3,Essex
+Braintree,UKH3,Essex
+Colchester,UKH3,Essex
+Harlow,UKH3,Essex
+Uttlesford,UKH3,Essex
+Epping Forest,UKH3,Essex
+Maldon,UKH3,Essex
+Brentwood,UKH3,Essex
+Chelmsford,UKH3,Essex
+Basildon,UKH3,Essex
+Rochford,UKH3,Essex
+Castle Point,UKH3,Essex
+Bristol City of,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+North Somerset,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+South Gloucestershire,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Bath and North East Somerset,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Stroud,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Cotswold,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Cheltenham,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Gloucester,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Tewkesbury,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Forest of Dean,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Swindon,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Wiltshire,UKK1,Gloucestershire Wiltshire and Bath/Bristol area
+Manchester,UKD3,Greater Manchester
+Salford,UKD3,Greater Manchester
+Trafford,UKD3,Greater Manchester
+Tameside,UKD3,Greater Manchester
+Stockport,UKD3,Greater Manchester
+Wigan,UKD3,Greater Manchester
+Bolton,UKD3,Greater Manchester
+Bury,UKD3,Greater Manchester
+Oldham,UKD3,Greater Manchester
+Rochdale,UKD3,Greater Manchester
+Portsmouth,UKJ3,Hampshire and Isle of Wight
+Southampton,UKJ3,Hampshire and Isle of Wight
+Isle of Wight,UKJ3,Hampshire and Isle of Wight
+Havant,UKJ3,Hampshire and Isle of Wight
+Fareham,UKJ3,Hampshire and Isle of Wight
+Gosport,UKJ3,Hampshire and Isle of Wight
+Eastleigh,UKJ3,Hampshire and Isle of Wight
+New Forest,UKJ3,Hampshire and Isle of Wight
+Winchester,UKJ3,Hampshire and Isle of Wight
+Test Valley,UKJ3,Hampshire and Isle of Wight
+East Hampshire,UKJ3,Hampshire and Isle of Wight
+Hart,UKJ3,Hampshire and Isle of Wight
+Rushmoor,UKJ3,Hampshire and Isle of Wight
+Basingstoke and Deane,UKJ3,Hampshire and Isle of Wight
+Herefordshire County of,UKG1,Herefordshire Worcestershire and Warwickshire
+Redditch,UKG1,Herefordshire Worcestershire and Warwickshire
+Wychavon,UKG1,Herefordshire Worcestershire and Warwickshire
+Worcester,UKG1,Herefordshire Worcestershire and Warwickshire
+Bromsgrove,UKG1,Herefordshire Worcestershire and Warwickshire
+Wyre Forest,UKG1,Herefordshire Worcestershire and Warwickshire
+Malvern Hills,UKG1,Herefordshire Worcestershire and Warwickshire
+Rugby,UKG1,Herefordshire Worcestershire and Warwickshire
+Warwick,UKG1,Herefordshire Worcestershire and Warwickshire
+Stratford-on-Avon,UKG1,Herefordshire Worcestershire and Warwickshire
+North Warwickshire,UKG1,Herefordshire Worcestershire and Warwickshire
+Nuneaton and Bedworth,UKG1,Herefordshire Worcestershire and Warwickshire
+Ross and Cromarty,UKM6,Highlands and Islands
+Caithness and Sutherland,UKM6,Highlands and Islands
+West Moray,UKM6,Highlands and Islands
+North East Moray,UKM6,Highlands and Islands
+Inverness and Nairn,UKM6,Highlands and Islands
+Badenoch and Strathspey,UKM6,Highlands and Islands
+Lochaber,UKM6,Highlands and Islands
+Skye and Lochalsh,UKM6,Highlands and Islands
+Arran and Cumbrae,UKM6,Highlands and Islands
+Argyll and Bute Islands,UKM6,Highlands and Islands
+Caithness,UKM6,Highlands and Islands
+Argyll and Bute,UKM6,Highlands and Islands
+Inverness,UKM6,Highlands and Islands
+Moray,UKM6,Highlands and Islands
+Nairn,UKM6,Highlands and Islands
+Ross and Cromarty,UKM6,Highlands and Islands
+Sutherland,UKM6,Highlands and Islands
+Western Isles,UKM6,Highlands and Islands
+Orkney,UKM6,Highlands and Islands
+Shetland,UKM6,Highlands and Islands
+Medway,UKJ4,Kent
+Swale,UKJ4,Kent
+Dartford,UKJ4,Kent
+Gravesham,UKJ4,Kent
+Dover,UKJ4,Kent
+Thanet,UKJ4,Kent
+Canterbury,UKJ4,Kent
+Folkestone and Hythe,UKJ4,Kent
+Ashford,UKJ4,Kent
+Maidstone,UKJ4,Kent
+Sevenoaks,UKJ4,Kent
+Tunbridge Wells,UKJ4,Kent
+Tonbridge and Malling,UKJ4,Kent
+Blackburn with Darwen,UKD4,Lancashire
+Blackpool,UKD4,Lancashire
+Wyre,UKD4,Lancashire
+Lancaster,UKD4,Lancashire
+Fylde,UKD4,Lancashire
+Preston,UKD4,Lancashire
+South Ribble,UKD4,Lancashire
+Ribble Valley,UKD4,Lancashire
+Pendle,UKD4,Lancashire
+Burnley,UKD4,Lancashire
+Hyndburn,UKD4,Lancashire
+Rossendale,UKD4,Lancashire
+Chorley,UKD4,Lancashire
+West Lancashire,UKD4,Lancashire
+South Northamptonshire,UKF2,Leicestershire Rutland and Northamptonshire
+Corby,UKF2,Leicestershire Rutland and Northamptonshire
+Kettering,UKF2,Leicestershire Rutland and Northamptonshire
+Wellingborough,UKF2,Leicestershire Rutland and Northamptonshire
+East Northamptonshire,UKF2,Leicestershire Rutland and Northamptonshire
+Leicester,UKF2,Leicestershire Rutland and Northamptonshire
+Blaby,UKF2,Leicestershire Rutland and Northamptonshire
+Melton,UKF2,Leicestershire Rutland and Northamptonshire
+Rutland,UKF2,Leicestershire Rutland and Northamptonshire
+Charnwood,UKF2,Leicestershire Rutland and Northamptonshire
+Harborough,UKF2,Leicestershire Rutland and Northamptonshire
+Oadby and Wigston,UKF2,Leicestershire Rutland and Northamptonshire
+Hinckley and Bosworth,UKF2,Leicestershire Rutland and Northamptonshire
+North West Leicestershire,UKF2,Leicestershire Rutland and Northamptonshire
+Daventry,UKF2,Leicestershire Rutland and Northamptonshire
+Northampton,UKF2,Leicestershire Rutland and Northamptonshire
+Boston,UKF3,Lincolnshire
+Lincoln,UKF3,Lincolnshire
+East Lindsey,UKF3,Lincolnshire
+West Lindsey,UKF3,Lincolnshire
+South Holland,UKF3,Lincolnshire
+North Kesteven,UKF3,Lincolnshire
+South Kesteven,UKF3,Lincolnshire
+Halton,UKD7,Merseyside
+Knowsley,UKD7,Merseyside
+.St.. Helens.,UKD7,Merseyside
+Liverpool,UKD7,Merseyside
+Sefton,UKD7,Merseyside
+Wirral,UKD7,Merseyside
+Aberdeen City,UKM5,North Eastern Scotland
+Aberdeenshire,UKM5,North Eastern Scotland
+Kincardineshire,UKM5,North Eastern Scotland
+Banffshire,UKM5,North Eastern Scotland
+York,UKE2,North Yorkshire
+Selby,UKE2,North Yorkshire
+Craven,UKE2,North Yorkshire
+Ryedale,UKE2,North Yorkshire
+Hambleton,UKE2,North Yorkshire
+Harrogate,UKE2,North Yorkshire
+Scarborough,UKE2,North Yorkshire
+Richmondshire,UKE2,North Yorkshire
+Northumberland,UKC2,Northumberland and Tyne and Wear
+Gateshead,UKC2,Northumberland and Tyne and Wear
+North Tyneside,UKC2,Northumberland and Tyne and Wear
+South Tyneside,UKC2,Northumberland and Tyne and Wear
+Newcastle upon Tyne,UKC2,Northumberland and Tyne and Wear
+Sunderland,UKC2,Northumberland and Tyne and Wear
+Telford and Wrekin,UKG2,Shropshire and Staffordshire
+Shropshire,UKG2,Shropshire and Staffordshire
+Stoke-on-Trent,UKG2,Shropshire and Staffordshire
+Stafford,UKG2,Shropshire and Staffordshire
+Tamworth,UKG2,Shropshire and Staffordshire
+Lichfield,UKG2,Shropshire and Staffordshire
+Cannock Chase,UKG2,Shropshire and Staffordshire
+East Staffordshire,UKG2,Shropshire and Staffordshire
+South Staffordshire,UKG2,Shropshire and Staffordshire
+Newcastle-under-Lyme,UKG2,Shropshire and Staffordshire
+Staffordshire Moorlands,UKG2,Shropshire and Staffordshire
+Barnsley,UKE3,South Yorkshire
+Doncaster,UKE3,South Yorkshire
+Rotherham,UKE3,South Yorkshire
+Sheffield,UKE3,South Yorkshire
+Dumfries,UKM9,Southern Scotland
+Ayrshire and Arran,UKM9,Southern Scotland
+South Lanarkshire,UKM9,Southern Scotland
+Brighton and Hove,UKJ2,Surrey East and West Sussex
+Lewes,UKJ2,Surrey East and West Sussex
+Rother,UKJ2,Surrey East and West Sussex
+Wealden,UKJ2,Surrey East and West Sussex
+Hastings,UKJ2,Surrey East and West Sussex
+Eastbourne,UKJ2,Surrey East and West Sussex
+Woking,UKJ2,Surrey East and West Sussex
+Waverley,UKJ2,Surrey East and West Sussex
+Elmbridge,UKJ2,Surrey East and West Sussex
+Guildford,UKJ2,Surrey East and West Sussex
+Runnymede,UKJ2,Surrey East and West Sussex
+Spelthorne,UKJ2,Surrey East and West Sussex
+Surrey Heath,UKJ2,Surrey East and West Sussex
+Tandridge,UKJ2,Surrey East and West Sussex
+Mole Valley,UKJ2,Surrey East and West Sussex
+Epsom and Ewell,UKJ2,Surrey East and West Sussex
+Reigate and Banstead,UKJ2,Surrey East and West Sussex
+Adur,UKJ2,Surrey East and West Sussex
+Arun,UKJ2,Surrey East and West Sussex
+Worthing,UKJ2,Surrey East and West Sussex
+Chichester,UKJ2,Surrey East and West Sussex
+Crawley,UKJ2,Surrey East and West Sussex
+Horsham,UKJ2,Surrey East and West Sussex
+Mid Sussex,UKJ2,Surrey East and West Sussex
+Hartlepool,UKC1,Tees Valley and Durham
+Stockton-on-Tees,UKC1,Tees Valley and Durham
+Middlesbrough,UKC1,Tees Valley and Durham
+Redcar and Cleveland,UKC1,Tees Valley and Durham
+Darlington,UKC1,Tees Valley and Durham
+County Durham,UKC1,Tees Valley and Durham
+Dunbartonshire,UKM8,West Central Scotland
+City of Glasgow,UKM8,West Central Scotland
+Renfrewshire,UKM8,West Central Scotland
+North Lanarkshire,UKM8,West Central Scotland
+Berwickshire,UKM8,West Central Scotland
+Roxburgh Ettrick and Lauderdale,UKM8,West Central Scotland
+Tweeddale,UKM8,West Central Scotland
+Wigtown,UKM8,West Central Scotland
+The Stewartry of Kirkcudbright,UKM8,West Central Scotland
+Birmingham,UKG3,West Midlands
+Solihull,UKG3,West Midlands
+Coventry,UKG3,West Midlands
+Dudley,UKG3,West Midlands
+Sandwell,UKG3,West Midlands
+Walsall,UKG3,West Midlands
+Wolverhampton,UKG3,West Midlands
+Isle of Anglesey,UKL1,West Wales and The Valleys
+Gwynedd,UKL1,West Wales and The Valleys
+Conwy,UKL1,West Wales and The Valleys
+Denbighshire,UKL1,West Wales and The Valleys
+Ceredigion,UKL1,West Wales and The Valleys
+Pembrokeshire,UKL1,West Wales and The Valleys
+Carmarthenshire,UKL1,West Wales and The Valleys
+Merthyr Tydfil,UKL1,West Wales and The Valleys
+Rhondda Cynon Taf,UKL1,West Wales and The Valleys
+Torfaen,UKL1,West Wales and The Valleys
+Caerphilly,UKL1,West Wales and The Valleys
+Blaenau Gwent,UKL1,West Wales and The Valleys
+Bridgend,UKL1,West Wales and The Valleys
+Neath Port Talbot,UKL1,West Wales and The Valleys
+Swansea,UKL1,West Wales and The Valleys
+Bradford,UKE4,West Yorkshire
+Leeds,UKE4,West Yorkshire
+Kirklees,UKE4,West Yorkshire
+Calderdale,UKE4,West Yorkshire
+Wakefield,UKE4,West Yorkshire
