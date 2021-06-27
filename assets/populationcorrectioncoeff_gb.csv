@@ -1,0 +1,42 @@
+statisticalAreaCode,statisticalArea,correction_coefficient
+UKC1,Tees Valley and Durham,2.37343871229694
+UKC2,Northumberland and Tyne and Wear,1.02875131995403
+UKD1,Cumbria,1.03659088265326
+UKD3,Greater Manchester,1.02970625665614
+UKD4,Lancashire,1.29417797375591
+UKD6,Cheshire,0.873087425211693
+UKD7,Merseyside,1.12205253245947
+UKE1,East Yorkshire and Northern Lincolnshire,3.23586009131042
+UKE2,North Yorkshire,1.39209705187248
+UKE3,South Yorkshire,1.02982482739864
+UKE4,West Yorkshire,1.03548902379631
+UKF1,Derbyshire and Nottinghamshire,1.37527970049977
+UKF2,"Leicestershire, Rutland and Northamptonshire",1.29416273354554
+UKF3,Lincolnshire,1.04139796992354
+UKG1,"Herefordshire, Worcestershire and Warwickshire",1.02161100196464
+UKG2,Shropshire and Staffordshire,1.40674000496698
+UKG3,West Midlands,1.03289016744617
+UKH1,East Anglia,1.12632947560878
+UKH2,Bedfordshire and Hertfordshire,1.37733505407102
+UKH3,Essex,1.26834261340198
+UKI3,Inner London - West,1.02509947220633
+UKI4,Inner London - East,1.02223314553636
+UKI5,Outer London - East and North East,1.01053199930204
+UKI6,Outer London - South,1.00847801174418
+UKI7,Outer London - West and North West,1.00900925467428
+UKJ1,"Berkshire, Buckinghamshire and Oxfordshire",1.15986009339933
+UKJ2,"Surrey, East and West Sussex",1.17019640888832
+UKJ3,Hampshire and Isle of Wight,1.39346090524622
+UKJ4,Kent,1.2445924186149
+UKK1,"Gloucestershire, Wiltshire and Bath/Bristol area",1.61125777660226
+UKK2,Dorset and Somerset,1.40406339629229
+UKK3,Cornwall and Isles of Scilly,1.04836231794998
+UKK4,Devon,1.71014503021758
+UKL1,West Wales and The Valleys,1.34196062386714
+UKL2,East Wales,0.410153914728535
+UKM5,North Eastern Scotland,0.938392958658775
+UKM6,Highlands and Islands,1.57079432020342
+UKM7,Eastern Scotland,1.12935078310322
+UKM8,West Central Scotland,0.943664887144831
+UKM9,Southern Scotland,0.847838414368637
+UKN0,Northern Ireland,1

@@ -1,0 +1,4 @@
+outs:
+- md5: 22213ba5ad750cf7eb6f14777de61bc2
+  size: 651767
+  path: train_ispers_xxpatentxx.jsonl

@@ -416,7 +416,7 @@ def get_wgp25_recid(
     **Usage:**
         ```shell
         OFFICE=DE
-        python patentcity/io.py get-wgp25-recid $OFFICE patentcity.external.inventor_applicant_recid patentcity.tmp.loc_${(L)OFFICE}patentwgp25 credentials-patentcity.json;
+        patentcity io get-wgp25-recid $OFFICE patentcity.external.inventor_applicant_recid patentcity.tmp.loc_${(L)OFFICE}patentwgp25 credentials-patentcity.json
         ```
 
     !!! info
@@ -452,7 +452,19 @@ def family_expansion(
     src_table: str, destination_table: str, credentials: str, destination_schema: str
 ):
     """Expand along families in `table ref`. The returned table contains all publications belonging to a family
-    existing in `src_table` *but* absent from the latter. Family data are *assigned* from data in `src_table`."""
+    existing in `src_table` *but* absent from the latter. Family data are *assigned* from data in `src_table`.
+
+    Arguments:
+        src_table: source table (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
+        destination_schema: destination schema file path
+
+    **Usage:**
+        ```shell
+        patentcity io family-expansion <src-table> <destination-table>  credentials-patentcity.json schema/patentcity_v1.json
+        ```
+    """
     query = f"""
     WITH
       family_table AS (
@@ -485,7 +497,8 @@ def family_expansion(
     expanded_family_table.*, #EXCEPT(appln_id, pat_publn_id, docdb_family_id, inpadoc_family_id),
     SPLIT(expanded_family_table.publication_number, "-")[OFFSET(0)] as country_code,
     SPLIT(expanded_family_table.publication_number, "-")[OFFSET(1)] as pubnum,
-    SPLIT(expanded_family_table.publication_number, "-")[OFFSET(2)] as kind_code
+    SPLIT(expanded_family_table.publication_number, "-")[OFFSET(2)] as kind_code,
+    "EXP" AS origin
     FROM
     publication_list
     RIGHT JOIN
@@ -497,6 +510,66 @@ def family_expansion(
     _get_job_done(
         query, destination_table, credentials, destination_schema=destination_schema
     )
+
+
+@app.command()
+def deduplicate(src_table: str, destination_table: str, credentials: str):
+    """
+    Deduplicate patentcity table from publications which are both in at least 2 of the following data sources PC, WGP45
+    and WGP25. We prioritize PC, then WGP45 and then WGP25.
+
+    Argument:
+        src_table: source table (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        patentcity io deduplicate <src-table> <destination-table> credentials-patentcity.json
+        ```
+    """
+    query = f"""
+    WITH
+      duplicates AS (
+      SELECT
+        publication_number,
+        COUNT(publication_number) AS nb_occ,
+        STRING_AGG(DISTINCT(origin)) AS origins
+      FROM
+        {src_table} #`patentcity.tmp.v100rc5`
+      GROUP BY
+        publication_number),
+      keep_list AS (
+      SELECT
+        tmp.publication_number,
+        tmp.origin,
+        duplicates.* EXCEPT(publication_number),
+        CASE
+          WHEN nb_occ = 1 THEN TRUE
+          WHEN nb_occ > 1 AND origins LIKE "%PC%" AND origin="PC" THEN TRUE
+          WHEN nb_occ > 1 AND origins LIKE "%WGP45%" AND origins NOT LIKE "%PC%" AND origin="WGP45" THEN TRUE
+          WHEN nb_occ > 1 AND origins LIKE "%WGP25%" AND origins NOT LIKE "%PC%" AND origins NOT LIKE "%WGP45%" AND origin="WGP25" THEN TRUE
+        ELSE FALSE
+      END
+        AS keep
+      FROM
+        {src_table} AS tmp  # `patentcity.tmp.v100rc5`
+      LEFT JOIN
+        duplicates
+      ON
+        tmp.publication_number = duplicates.publication_number )
+    SELECT
+      tmp.*#,
+      #keep_list.* EXCEPT(publication_number, origin) ## for dbg
+    FROM
+      {src_table} AS tmp  # `patentcity.tmp.v100rc5`
+    LEFT JOIN
+      keep_list
+    ON
+      tmp.publication_number=keep_list.publication_number
+      AND tmp.origin=keep_list.origin
+    WHERE keep IS TRUE  """
+    _get_job_done(query, destination_table, credentials)
 
 
 @app.command()

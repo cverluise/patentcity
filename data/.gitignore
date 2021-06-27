@@ -78,3 +78,10 @@
 /gold_rel_uspatent04.jsonl
 /gold_deduplication_uspatent01.jsonl
 /gold_geoc_v100rc3.csv
+/test_ispers_xxpatentxx.jsonl
+/test_ispers_xxpatentxx.spacy
+/train_ispers_xxpatentxx.jsonl
+/train_ispers_xxpatentxx.spacy
+/gold_ispers_xxpatentxx.jsonl
+/gold_ispers_xxpatentxx.jsonl
+/gold_ispers_xxpatentxx.jsonl

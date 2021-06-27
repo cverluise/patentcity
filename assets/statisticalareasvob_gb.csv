@@ -1,0 +1,91 @@
+nutsCode,statisticalArea1,statisticalArea2,vob
+UKC1,North East (England),Tees Valley and Durham,Durham
+UKC2,North East (England),Northumberland and Tyne and Wear,Northumberland
+UKC2,North East (England),Northumberland and Tyne and Wear,Tyne & Wear
+UKD1,North West (England),Cumbria,Cumbria
+UKD3,North West (England),Greater Manchester,Greater Manchester
+UKD4,North West (England),Lancashire,Lancashire
+UKD6,North West (England),Cheshire,Cheshire
+UKD7,North West (England),Merseyside,Merseyside
+UKE1,Yorkshire and the Humber,East Yorkshire and Northern Lincolnshire,East Riding of Yorkshire
+UKE2,Yorkshire and the Humber,North Yorkshire,North Yorkshire
+UKE3,Yorkshire and the Humber,South Yorkshire,South Yorkshire
+UKE4,Yorkshire and the Humber,West Yorkshire,West Yorkshire
+UKF1,East Midlands (England),Derbyshire and Nottinghamshire,Derbyshire
+UKF1,East Midlands (England),Derbyshire and Nottinghamshire,Nottinghamshire
+UKF2,East Midlands (England),"Leicestershire, Rutland and Northamptonshire",Leicestershire
+UKF2,East Midlands (England),"Leicestershire, Rutland and Northamptonshire",Rutland
+UKF2,East Midlands (England),"Leicestershire, Rutland and Northamptonshire",Northamptonshire
+UKF3,East Midlands (England),Lincolnshire,Lincolnshire
+UKG1,West Midlands (England),"Herefordshire, Worcestershire and Warwickshire",Herefordshire
+UKG1,West Midlands (England),"Herefordshire, Worcestershire and Warwickshire",Worcestershire
+UKG1,West Midlands (England),"Herefordshire, Worcestershire and Warwickshire",Warwickshire
+UKG2,West Midlands (England),Shropshire and Staffordshire,Shropshire
+UKG2,West Midlands (England),Shropshire and Staffordshire,Staffordshire
+UKG3,West Midlands (England),West Midlands,West Midlands
+UKH1,East of England,East Anglia,Cambridgeshire
+UKH1,East of England,East Anglia,Suffolk
+UKH1,East of England,East Anglia,Norfolk
+UKH2,East of England,Bedfordshire and Hertfordshire,Hertfordshire
+UKH2,East of England,Bedfordshire and Hertfordshire,Bedfordshire
+UKH3,East of England,Essex,Essex
+UKJ1,South East (England),"Berkshire, Buckinghamshire and Oxfordshire",Berkshire
+UKJ1,South East (England),"Berkshire, Buckinghamshire and Oxfordshire",Buckinghamshire
+UKJ1,South East (England),"Berkshire, Buckinghamshire and Oxfordshire",Oxfordshire
+UKJ2,South East (England),"Surrey, East and West Sussex",Surrey
+UKJ2,South East (England),"Surrey, East and West Sussex",West Sussex
+UKJ2,South East (England),"Surrey, East and West Sussex",East Sussex
+UKJ3,South East (England),Hampshire and Isle of Wight,Hampshire
+UKJ3,South East (England),Hampshire and Isle of Wight,Isle of Wight
+UKJ4,South East (England),Kent,Kent
+UKK1,South West (England),"Gloucestershire, Wiltshire and Bristol/Bath area",Gloucestershire
+UKK1,South West (England),"Gloucestershire, Wiltshire and Bristol/Bath area",Wiltshire
+UKK1,South West (England),"Gloucestershire, Wiltshire and Bristol/Bath area",Bristol
+UKK2,South West (England),Dorset and Somerset,Dorset
+UKK2,South West (England),Dorset and Somerset,Somerset
+UKK3,South West (England),Cornwall and Isles of Scilly,Cornwall
+UKK4,South West (England),Devon,Devon
+UKL1,Wales,West Wales and The Valleys,Gwynedd
+UKL1,Wales,West Wales and The Valleys,Dyfed
+UKL1,Wales,West Wales and The Valleys,Mid Glamorgan
+UKL1,Wales,West Wales and The Valleys,West Glamorgan
+UKL1,Wales,West Wales and The Valleys,Clwyd (except Flintshire + Wrexham)
+UKL2,Wales,East Wales,Powys
+UKL2,Wales,East Wales,Gwent
+UKL2,Wales,East Wales,South Glamorgan
+UKL2,Wales,East Wales,Flintshire
+UKL2,Wales,East Wales,Wrexham
+UKM5,Wales,North Eastern Scotland,Aberdeenshire
+UKM5,Wales,North Eastern Scotland,City of Aberdeen
+UKM5,Wales,North Eastern Scotland,Berwickshire
+UKM6,Wales,Highlands and Islands,Caithness
+UKM6,Wales,Highlands and Islands,Sutherland
+UKM6,Wales,Highlands and Islands,Ross and Cromarty
+UKM6,Wales,Highlands and Islands,Inverness
+UKM6,Wales,Highlands and Islands,Moray
+UKM6,Wales,Highlands and Islands,Nairn
+UKM6,Wales,Highlands and Islands,Argyll and Bute
+UKM6,Wales,Highlands and Islands,Ayrshire and Arran
+UKM6,Wales,Highlands and Islands,Orkney
+UKM6,Wales,Highlands and Islands,Shetland
+UKM6,Wales,Highlands and Islands,Western Isles
+UKM7,Wales,Eastern Scotland,Angus
+UKM7,Wales,Eastern Scotland,City of Dundee
+UKM7,Wales,Eastern Scotland,Clackmannan
+UKM7,Wales,Eastern Scotland,Fife
+UKM7,Wales,Eastern Scotland,Midlothian
+UKM7,Wales,Eastern Scotland,West Lothian
+UKM7,Wales,Eastern Scotland,City of Edinburgh
+UKM7,Wales,Eastern Scotland,Stirling and Falkirk
+UKM7,Wales,Eastern Scotland,East Lothian
+UKM7,Wales,Eastern Scotland,Perth and Kinross
+UKM7,Wales,Eastern Scotland,Roxburgh Ettrick and Lauderdale
+UKM7,Wales,Eastern Scotland,Tweeddale
+UKM8,Wales,West Central Scotland,Dunbartonshire
+UKM8,Wales,West Central Scotland,City of Glasgow
+UKM8,Wales,West Central Scotland,Renfrewshire
+UKM8,Wales,West Central Scotland,Lanarkshire
+UKM9,Wales,Southern Scotland,Dumfries
+UKM9,Wales,Southern Scotland,Wigtown
+UKM9,Wales,Southern Scotland,The Stewartry of Kirkcudbright
+UKN0,Northern Ireland,Northern Ireland,Northern Ireland

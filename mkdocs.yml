@@ -43,12 +43,33 @@ nav:
         - PatentCity: RECIPE_PATENTCITY.md
         - WGP: RECIPE_WGP.md
       - Cheatsheet: CHEATSHEET.md
+
+  - Assets:
+    - Demography:
+      - Population: ASSETS_POPULATION.md
+      - Immigration: ASSETS_IMMIGRATION.md
+      - Area: ASSETS_AREA.md
+    - Structure:
+      - Regional GDP: ASSETS_GDPREG.md
+      - Share agriculture: ASSETS_GDPSHAREAGRICULTURE.md
+      - Share industry: ASSETS_GDPSHAREINDUSTRY.md
+      - Share service: ASSETS_GDPSHARESERVICE.md
+    - Gravity:
+      - Border: ASSETS_BORDER.md
+      - Language: ASSETS_LANGUAGE.md
+      - Distance: ASSETS_DISTANCE.md
+      - GDP per capita: ASSETS_GDPPCCOUNTRY.md
+      - Exports: ASSETS_EXPORTS.md
+      - Imports: ASSETS_IMPORTS.md
   - API:
       - brew: API_BREW.md
       - eval: API_EVAL.md
       - geo: API_GEO.md
       - io: API_IO.md
       - search: API_SEARCH.md
+  - Contribute:
+      - Guidelines: CONTRIBUTION_GUIDELINES.md
+      - Code of conduct: CODE_OF_CONDUCT.md
   - License:
     - Code: LICENSE_CODE.md
     - Data: LICENSE_DATA.md
@@ -77,8 +98,17 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.highlight:
       use_pygments: true
+  - pymdownx.arithmatex:
+      generic: true
   - toc:
       permalink: true
+
+##### javascript #####
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 
 ##### Plugins #####
 plugins:
