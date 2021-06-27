@@ -8,9 +8,6 @@
 </a>
 <img src="https://img.shields.io/badge/code-MIT-green">
 <img src="https://img.shields.io/badge/data-CC%20BY%204.0-blue">
-<a href="https://doi.org/10.5281/zenodo.3710993">
-    <img src="https://img.shields.io/badge/zenodo-0.3.1-darkblue" alt="DOI">
-</a>
 <img src="https://img.shields.io/badge/models-dvc-purple">
 </p>
 
@@ -29,11 +26,11 @@
 
 💥 The goal of the database is to spur research on the history of innovation and to deepen the set of natural experiments from which historians, economists and scientists in general can learn to improve our understanding of innovation dynamics.
 
-🌎 Explore and visualize the patentCity database online at [patentcity.xyz](http://www.patentcity.xyz) (click on the map under the "Explore" section).
+🌎 Explore and visualize the patentCity database online at [patentcity.xyz](http://patentcity.xyz) (click on the map under the "Explore" section).
 
 📥 [Not available yet] Download the patentCity database ([CC-BY-4](docs/LICENSE_DATA.md)).
 
-📝 The patentCity codebase and database are documented at [doc.patentcity.xyz](http://www.doc.patentcity.xyz).
+📝 The patentCity codebase and database are documented at [doc.patentcity.xyz](http://doc.patentcity.xyz).
 
 🤗 We open source our code ([MIT](docs/LICENSE_CODE.md)) to support future extensions, and a collaborative way to create and continuously improve research databases.
 
