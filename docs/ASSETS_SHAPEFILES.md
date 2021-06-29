@@ -3,8 +3,8 @@
 
 Files | Source(s)
 ---|---
-[boundariesnust2_[de,fr,gb].shp](https://github.com/cverluise/patentcity/tree/master/assets) | [Eurostat](https://ec.europa.eu/eurostat/fr/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts)
-[boundariescz1990_us.shp](https://github.com/cverluise/patentcity/tree/master/assets)|[Health inequality project](https://healthinequality.org/dl/cz1990_shapefile.zip)
+[boundariesnust2_[de,fr,gb].shp.tar.gz](https://github.com/cverluise/patentcity/tree/master/assets) | [Eurostat](https://ec.europa.eu/eurostat/fr/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts)
+[boundariescz1990_us.shp.tar.gz](https://github.com/cverluise/patentcity/tree/master/assets)|[Health inequality project](https://healthinequality.org/dl/cz1990_shapefile.zip)
 
 ## Coverage
 

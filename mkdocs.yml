@@ -61,6 +61,7 @@ nav:
       - GDP per capita: ASSETS_GDPPCCOUNTRY.md
       - Exports: ASSETS_EXPORTS.md
       - Imports: ASSETS_IMPORTS.md
+    - Shapefiles: ASSETS_SHAPEFILES.md
   - API:
       - brew: API_BREW.md
       - eval: API_EVAL.md
