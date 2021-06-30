@@ -15,7 +15,7 @@ This format spans the period 1951-1976.
 #### Information display
 
 The document has a header with its publication number ("*Patentschrift Nr*").
-The assignee is referred to as "*Inhaber*" while the inventor is referred to as "*Erfinder*". When the same person is both the assignee and the inventor, he might referred to as "*Erfinder zugleich Inhaber*".
+The assignee is referred to as "*Inhaber*" while the inventor is referred to as "*Erfinder*". When the same person is both the assignee and the inventor, he might be referred to as "*Erfinder zugleich Inhaber*".
 
 Well often, a geographical indication is given with the name of the assignee or the inventor. Typically, this is the name of a city (*e.g* Leipzig). It can be followed by the name of the country (especially when the latter is not Germany). The name of the city is not always given though (*cf* DD79836).
 
@@ -47,7 +47,7 @@ These entities are tied together with 2 types of relations.
 
 #### Information display
 
-In this new format, relevant information are given in slots associated with a number.
+In this new format, relevant information is given in slots associated with a number.
 
 For instance, the number 51 announces the (CPC) international technological class of the invention. The number 54 gives the
 title of the invention.
