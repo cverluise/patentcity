@@ -32,7 +32,7 @@ spacy train configs/en_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 
 ## 🎯 Intended use
 
-`en_ent_gbpatent01` has been specifically trained on GB patents GB189317126A to GB2000001A (excluded). The model's performance are not guaranteed out of this scope.
+`en_ent_gbpatent01` has been specifically trained on GB patents GB189317126A to GB2000001A (excluded). The model's performances are not guaranteed out of this scope.
 
 ## 🔂 Versions and alternative approaches
 
