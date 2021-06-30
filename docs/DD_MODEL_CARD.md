@@ -40,7 +40,7 @@ spacy train configs/de_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 
 ## 🎯 Intended use
 
-`de_ent_ddpatent0*` have been specifically trained on DD patents. The model's performance are not guaranteed out of this scope.
+`de_ent_ddpatent0*` have been specifically trained on DD patents. The model's performances are not guaranteed out of this scope.
 
 ## 🔂 Versions and alternative approaches
 
