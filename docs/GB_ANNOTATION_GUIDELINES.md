@@ -5,7 +5,7 @@
 
 ## Preliminary comments
 
-he patent corpus that we consider for GB has two types of formats and spans the period 1893-1980.
+The patent corpus that we consider for GB has two types of formats and spans the period 1893-1980.
 The formatting of UK patent documents have evolved in time but only modestly. Typically, until patent number GB2000001, the first paragraph of the text contains most of the relevant information, which is completed by the header, whose content changes slightly over time. See Figures 1, 2 and 3 for different examples.
 
 From GB2000001 onward, the information is located in the front-page of the patent in a structured way (see Figure 4 for an example). This only concerns 23,889 patent documents as we stop the analysis in 1980.
