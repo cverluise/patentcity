@@ -42,7 +42,7 @@ spacy train configs/fr_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 
 ## 🎯 Intended use
 
-`en_ent_frpatent0*` have been specifically trained on FR patents (resp FR317502A-FR1569050A and FR1605567A-FR2427761A). The model's performance are not guaranteed out of this scope.
+`en_ent_frpatent0*` have been specifically trained on FR patents (resp FR317502A-FR1569050A and FR1605567A-FR2427761A). The model's performances are not guaranteed out of this scope.
 
 ## 🔂 Versions and alternative approaches
 
