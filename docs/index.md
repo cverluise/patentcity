@@ -18,7 +18,7 @@ patentCity is the data backbone of Bergeaud and Verluise (2021).
 === "Chicago"
 
     ```raw
-    Bergeaud, Antonin and Cyril Verluise. "One Century of Innovation in Europe and the US". 2021
+    Bergeaud, Antonin and Verluise, Cyril. "One Century of Innovation in Europe and the US". 2021
     ```
 
 Here, you can find the project and API documentation.
