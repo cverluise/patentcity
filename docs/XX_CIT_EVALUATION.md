@@ -6,7 +6,7 @@ The `CIT` text extracted from the text is just a span of natural language (e.g. 
 
 ## Approach
 
-We use a Finite State Transducer. The task of the Finite State Transducer is to map these spans to a well definite set of codes, here the ISO-3 code of the country of citizenship (e.g. USA). Below we evaluate the FST on US and GB data. Note: since there is no "learning" in the FST, overfitting is not really an issue and we do not distinguish between the training and the test set.
+We use a Finite State Transducer. The task of the Finite State Transducer is to map these spans to a well-defined set of codes, here the ISO-3 code of the country of citizenship (e.g. USA). Below we evaluate the FST on US and GB data. Note: since there is no "learning" in the FST, overfitting is not really an issue and we do not distinguish between the training and the test set.
 
 ## Results
 
