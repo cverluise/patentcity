@@ -3,7 +3,7 @@
 ## Problem
 
 Before 1919 (incl), the publication date of DE patents is missing.
-Frontier is fuzzy, patents publication numbers are not exactly chronological but nearly. This makes it hard to manually find the latest publication number for each vintage. Number seem to be given based on the "Patentdatum"
+Frontier is fuzzy, patents publication numbers are not exactly chronological but nearly. This makes it hard to manually find the latest publication number for each vintage. Number seem to be given based on the "Patentdatum".
 
 ## Approach
 
