@@ -21,16 +21,3 @@ country_code            | Country code | `str`
 statisticalAreaCode     | Statistical area code (nuts/fips) | `str`
 statisticalAreaName     | Statistical area name (literal)| `str`
 area                    | Area of the statistical area (in kilometers| `float`
-
-??? note  "Focus on GB statistical areas construction"
-
-    Some modern counties are made of a couple of older ones. In this case, we recompose modern counties or use the old name.
-
-    statisticalAreaName | Construction
-    ---|---
-    City and County of the City of London | County of London (includes the city)
-    Ross and Cromarty       | Ross-shire
-    Roxburgh, Ettrick and Lauderdale | Roxburghshire + Selkirkshire + Berwickshire/4 + Midlothian/4
-    Ayrshire and Arran      | South Ayrshire + North Ayrshire + East Ayrshire
-    Tweeddale               | Peeblesshire
-    Stirling and Falkirk    | Stirling + Falkirk
