@@ -94,7 +94,7 @@ ls entrel_*patentxx.jsonl | parallel "wc -l {}*"
 ## Geocode dataset
 
 !!! danger
-    Take care, geocoding is not free, especially using GMAPS. Keep calm and plan your budget, you might want to ask for a grant and/or chunk the data and process it month-by-month as you free-tier gets automatically refilled. You might also want to first start with the batch geocoding API from HERE (which offers much more generous free plan) and use gmaps only for the no-match. NB: HERE batch geocoding API is supported by patentcity.
+    Take care, geocoding is not free, especially using GMAPS. Keep calm and plan your budget, you might want to ask for a grant and/or chunk the data and process it month-by-month as your free-tier gets automatically refilled. You might also want to first start with the batch geocoding API from HERE (which offers a much more generous free plan) and use gmaps only for the no-match. NB: HERE batch geocoding API is supported by patentcity.
 
 
 === "HERE"
