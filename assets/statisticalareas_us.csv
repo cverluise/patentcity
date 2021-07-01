@@ -1,4 +1,4 @@
-country,key,statisticalArea1,statisticalArea1Code,statisticalArea2,statisticalArea2Code,statisticalArea3,statisticalArea3Code
+country,key,statisticalarea1,statisticalarea1code,statisticalarea2,statisticalarea2code,statisticalarea3,statisticalarea3code
 USA,TN.Greene,Tennessee,TN,Johnson City,100,Greene,47059
 USA,VA.Bristol(City),Virginia,VA,Johnson City,100,Bristol City,51520
 USA,TN.Unicoi,Tennessee,TN,Johnson City,100,Unicoi,47171
@@ -3296,5 +3296,5 @@ USA,WA.Pierce,Washington,WA,Seattle,39400,Pierce,53053
 USA,WA.Snohomish,Washington,WA,Seattle,39400,Snohomish,53061
 USA,WA.King,Washington,WA,Seattle,39400,King,53033
 USA,WA.Lewis,Washington,WA,Seattle,39400,Lewis,53041
-USA,DC.PrinceGeorge's,,DC,Washington DC,,,11000
-USA,DC.Arlington,,DC,Washington DC,,,11000
+USA,DC.PrinceGeorge's,District of Columbia,DC,Washington DC,11304,Washington,11000
+USA,DC.Arlington,District of Columbia,DC,Washington DC,11304,Washington,11000
