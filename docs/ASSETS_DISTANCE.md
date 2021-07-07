@@ -3,7 +3,7 @@
 
 File | Source
 ---|---
-[distance_xx.csv](https://github.com/cverluise/patentcity/tree/feature/assets/assets)| [Mayer, T. & Zignago, S. "Notes on CEPII's distances measures: the GeoDist Database". *CEPII Working  Paper 2011-25*. 2011](http://www.cepii.fr/CEPII/en/publications/wp/abstract.asp?NoDoc=3877)
+[distance_xx.csv](https://github.com/cverluise/patentcity/tree/feature/assets/assets)| [Mayer, T. & Zignago, S. (2011); Notes on CEPII's distances measures: the GeoDist Database; CEPII Working Paper 2011-25](http://www.cepii.fr/CEPII/en/publications/wp/abstract.asp?NoDoc=3877)
 
 ## Coverage
 
