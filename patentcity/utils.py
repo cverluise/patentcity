@@ -686,5 +686,36 @@ def is_pers_to_spacy(file: Path, dest: Path, language: str):
     doc_bin.to_disk(dest)
 
 
+@app.command()
+def print_schema(schema: str) -> None:
+    """
+    Print the json `schema` as a markdown table.
+
+    Arguments:
+        schema: json schema file
+
+    **Usage:**
+        ```shell
+        patentcity utils print-schema schema/patentcity_v1.json
+        ```
+    """
+    df = pd.read_json(schema)
+    nested = df.query("fields==fields")
+    unnested = pd.DataFrame()
+    for i in range(len(nested)):
+        tmp = pd.DataFrame.from_dict(nested["fields"].values[i])
+        tmp["name"] = tmp["name"].apply(
+            lambda x: ".".join([nested["name"].values[i], x])
+        )
+        unnested = unnested.append(tmp)
+
+    out = (
+        df.query("fields!=fields")
+        .append(unnested)
+        .drop("fields", axis=1)[["name", "description", "mode", "type"]]
+    )
+    typer.echo(out.to_markdown(index=False))
+
+
 if __name__ == "__main__":
     app()
