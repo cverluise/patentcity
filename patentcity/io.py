@@ -32,7 +32,9 @@ def _get_job_done(
 
 
 @app.command()
-def augment_patentcity(src_table: str, destination_table: str, credentials: str = None):
+def augment_patentcity(
+    src_table: str, destination_table: str, credentials: str = None
+) -> None:
     """Add (mainly interoperability) variables to `src_table` and save to `destination_table
 
     Arguments:
@@ -71,7 +73,7 @@ def impute_publication_date(
     imputation_table: str,
     country_code: str = None,
     credentials: str = None,
-):
+) -> None:
     """Update `src_table` publication_date - DE & DD only
 
     Arguments:
@@ -114,7 +116,7 @@ def extract_sample_kepler(
     sample_ratio: float = 0.1,
     office: str = None,
     credentials: str = None,
-):
+) -> None:
     """Extract sample for kepler.gl
 
     Arguments:
@@ -167,7 +169,7 @@ def build_wgp_as_patentcity(
     destination_table: str = None,
     flavor: int = None,
     credentials: str = None,
-):
+) -> None:
     """Join addresses and individuals from WGP and add data at the patent as well as individual level.
 
     Arguments:
@@ -292,7 +294,7 @@ def order(
     by: str = None,
     destination_table: str = None,
     credentials: str = None,
-):
+) -> None:
     """Order `src_table` by `by` and stage it onto `destination_table`
 
     Arguments:
@@ -324,7 +326,7 @@ def get_stratified_sample(
     preview: bool = False,
     destination_table: str = None,
     credentials: str = None,
-):
+) -> None:
     """Return a stratified sample of `src_table` (based on country_code and publication_decade) with `bin_size` samples
     in each bin (if possible).
 
@@ -403,7 +405,7 @@ def get_wgp25_recid(
     patstat_patent_properties_table: str,
     destination_table: str,
     credentials: str,
-):
+) -> None:
     """Extract recId and searchText from wgp25 for patents published in `country_code`.
 
     Arguments:
@@ -450,7 +452,7 @@ def get_wgp25_recid(
 @app.command()
 def family_expansion(
     src_table: str, destination_table: str, credentials: str, destination_schema: str
-):
+) -> None:
     """Expand along families in `table ref`. The returned table contains all publications belonging to a family
     existing in `src_table` *but* absent from the latter. Family data are *assigned* from data in `src_table`.
 
@@ -513,7 +515,7 @@ def family_expansion(
 
 
 @app.command()
-def deduplicate(src_table: str, destination_table: str, credentials: str):
+def deduplicate(src_table: str, destination_table: str, credentials: str) -> None:
     """
     Deduplicate patentcity table from publications which are both in at least 2 of the following data sources PC, WGP45
     and WGP25. We prioritize PC, then WGP45 and then WGP25.
@@ -573,7 +575,7 @@ def deduplicate(src_table: str, destination_table: str, credentials: str):
 
 
 @app.command()
-def filter_kind_codes(src_table: str, destination_table: str, credentials: str):
+def filter_kind_codes(src_table: str, destination_table: str, credentials: str) -> None:
     """Filter `src_table` to make sure that only *utility patents* are reported.
 
     Arguments:
@@ -607,6 +609,33 @@ def filter_kind_codes(src_table: str, destination_table: str, credentials: str):
       WHERE
         keep_list.publication_number = origin.publication_number
         AND keep_list.keep IS TRUE
+    """
+    _get_job_done(query, destination_table, credentials)
+
+
+@app.command()
+def prep_csv_extract(src_table: str, destination_table: str, credentials: str) -> None:
+    """
+    Return the patentcity table as an unstructured table for CSV extract
+
+    Arguments:
+        src_table: source table (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
+
+    **Usage**:
+        ```shell
+        RELEASE="v100rc5"
+        patentcity io prep-csv-extract patentcity.patentcity.${RELEASE} patentcity.stage.${RELEASE} <your-credentials.json>
+        ```
+    """
+    query = f"""
+    SELECT
+      p.* EXCEPT(patentee),
+      patentee.*
+    FROM
+      `{src_table}` as p,
+      UNNEST(patentee) AS patentee
     """
     _get_job_done(query, destination_table, credentials)
 
