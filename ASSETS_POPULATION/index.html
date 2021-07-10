@@ -812,18 +812,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../XX_GEOC_REPORT/" class="md-nav__link">
-        Geocoding
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../XX_CIT_EVALUATION/" class="md-nav__link">
         Citizenship
       </a>
@@ -1533,7 +1521,7 @@
 <tbody>
 <tr>
 <td><a href="https://github.com/cverluise/patentcity/tree/master/assets">population_xx.csv</a></td>
-<td>DE: <a href="https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp">Rosés-Wolf database on regional GDP (version 6, 2020)</a>, FR: <a href="https://www.insee.fr/fr/statistiques/3698339">INSEE</a>, GB: <a href="https://www.visionofbritain.org.uk/">Vision of Britain</a> (pre 1981) &amp; <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/13221populationestimatesbylocalauthoritiesofgreatbritainmid1981tomid2019">ONS</a> (post 1981) &amp; <a href="https://en.wikipedia.org/wiki/Demography_of_Northern_Ireland">Wiki</a> (Northern Ireland) and <a href="https://data.london.gov.uk/dataset/historic-census-population">Census</a> (London), US: <a href="https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip">Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020</a></td>
+<td>DE: <a href="https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp">Rosés-Wolf database on regional GDP (version 6, 2020)</a>(pre 1990) &amp; <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_statistics_at_regional_level">Eurostat</a>(post 1990), FR: <a href="https://www.insee.fr/fr/statistiques/3698339">INSEE</a>, GB: <a href="https://www.visionofbritain.org.uk/">Vision of Britain</a> (pre 1981) &amp; <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/13221populationestimatesbylocalauthoritiesofgreatbritainmid1981tomid2019">ONS</a> (post 1981) &amp; <a href="https://en.wikipedia.org/wiki/Demography_of_Northern_Ireland">Wiki</a> (Northern Ireland) and <a href="https://data.london.gov.uk/dataset/historic-census-population">Census</a> (London), US: <a href="https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip">Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020</a>(1830-1970) &amp; <a href="https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-total.html">Census</a>(1970-2010) &amp; <a href="https://data.nber.org/data/census-intercensal-county-population.html">NBER data</a>(2010-2018)</td>
 </tr>
 </tbody>
 </table>
@@ -1550,25 +1538,27 @@
 <tr>
 <td>DE</td>
 <td>2 (nuts2)</td>
-<td>1900-2015</td>
+<td>1900-2017</td>
 </tr>
 <tr>
 <td>FR</td>
 <td>3 (nuts3)</td>
-<td>1876-2018</td>
+<td>1876-2017</td>
 </tr>
 <tr>
 <td>GB</td>
 <td>2 (nuts2)</td>
-<td>1851-2019</td>
+<td>1851-2017</td>
 </tr>
 <tr>
 <td>US</td>
-<td>2 (commuting zone)</td>
-<td>1830-2000</td>
+<td>2 (county)</td>
+<td>1830-2018</td>
 </tr>
 </tbody>
 </table>
+<details class="note"><summary>Annual data</summary><p>We proceed to a linear interpolation based on <em>population_raw</em> column to obtain population data for each year in <em>population</em> column.</p>
+</details>
 <h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1611,9 +1601,11 @@
 </tr>
 </tbody>
 </table>
+<details class="note"><summary>Focus on US data</summary><p>We obtain US population post 1970 data by aggregating county data thanks to <a href="https://www.ddorn.net/data.htm">David Dorn crossover table</a>.</p>
+</details>
 <details class="note"><summary>Focus on GB data</summary><p>GB population data are not available at a sufficiently detailed NUTS level over long period - at least we did not find it. For instance, Rosés and Wolf (2020) only provides data at the NUTS1 level for GB. Hence, we had to build the population data for GB at the NUTS2 level ourselves. This includes 3 main stages: 1. Pre-1981 data collection, 2. Post-1981 data collection, 3. Data harmonization</p>
 <p><strong>Pre-1981 data collection</strong>:</p>
-<p>We use Vision of Britain (VoB) population data, except for London where we use data from the Census. Some VoB geographic entities have no population data though. In this case, we made our best to reconstitute the data from smaller entities with known population data. Below we detail the contruction of these entities</p>
+<p>We use Vision of Britain (VoB) population data, except for London where we use data from the Census. Some VoB geographic entities have no population data though. In this case, we made our best to reconstitute the data from smaller entities with known population data. Below we detail the construction of these entities</p>
 <table>
 <thead>
 <tr>
@@ -1661,7 +1653,7 @@
 </tbody>
 </table>
 <p>Missing VoB data (concentrated in 1871, 1901 and 1941) are filled with linear interpolation.</p>
-<p>Once we have data for all VoB entities (real or imputed), we caggregate them to obtain population data at the NUTS2 level using the conversion table reported in <a href="https://github.com/cverluise/patentcity/tree/master/assets">statisticalareasvob_gb.csv</a>.</p>
+<p>Once we have data for all VoB entities (real or imputed), we aggregate them to obtain population data at the NUTS2 level using the conversion table reported in <a href="https://github.com/cverluise/patentcity/tree/master/assets">statisticalareasvob_gb.csv</a>.</p>
 <p><strong>Post-1981 data collection</strong></p>
 <p>After 1981, the ONS  provides data at the local authority level for each year. Same as before, we aggregate them to obtain population data at the NUTS2 level using the conversion table reported in <a href="https://github.com/cverluise/patentcity/tree/master/assets">statisticalareaslau_gb.csv</a>. The conversion table is based on the <a href="https://data.gov.uk/dataset/86beb640-9fa4-4131-b330-fc26d74c074f/local-authority-district-december-2018-to-nuts3-to-nuts2-to-nuts1-january-2018-lookup-in-united-kingdom">local authority to NUTS crossover table</a> and the <a href="https://www.gov.scot/publications/review-nomenclature-units-territorial-statistics-nuts-boundaries/">Scotish Review of NUTS boundaries</a>.</p>
 <p><strong>Data harmonization</strong></p>

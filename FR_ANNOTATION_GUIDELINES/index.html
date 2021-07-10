@@ -1139,18 +1139,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../XX_GEOC_REPORT/" class="md-nav__link">
-        Geocoding
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../XX_CIT_EVALUATION/" class="md-nav__link">
         Citizenship
       </a>
@@ -2087,14 +2075,14 @@
 </details>
 <h3 id="format-1-from-fr317502a-to-fr1569050a"><em>Format 1</em>, from FR317502A to FR1569050A.<a class="headerlink" href="#format-1-from-fr317502a-to-fr1569050a" title="Permanent link">&para;</a></h3>
 <h4 id="information-display">Information display<a class="headerlink" href="#information-display" title="Permanent link">&para;</a></h4>
-<p>The information we are interested is in the header.</p>
+<p>The information we are interested in is in the header.</p>
 <p>The upper part of the header contains generic terms like the name of the institution and its seal, the patent's publication number and its technological class code.</p>
 <p>The lower part of the header contains a brief description of the content of the invention and the information about the assignee (name and location).
-Those two distinct information can be blended together in the same sentence or not.
-Finally a last sentence gives indicates the date at which the patent has been granted as well as the publication date.</p>
+Those two distinct pieces of information can be blended together in the same sentence or not.
+Finally a last sentence indicates the date at which the patent has been granted as well as the publication date.</p>
 <details class="note"><summary>More on format 1</summary><p>We notice some slight changes within this format across time.</p>
 <ul>
-<li>Technological class: up until FR1096200A, the patents provide a French technological class. From patent FR1096201A to patent FR1196800A, both the French technological class as well as the international technological class are mentioned in the header. Finally, starting with patent FR1196801A, only the international technlogical class is retained.</li>
+<li>Technological class: up until FR1096200A, the patents provide a French technological class. From patent FR1096201A to patent FR1196800A, both the French technological class as well as the international technological class are mentioned in the header. Finally, starting with patent FR1196801A, only the international technological class is retained.</li>
 <li>Location: It appears only from FR328212A. The assignee's country of residence is then mentioned. Starting with the patent FR371349A, the county is mentioned when the assignee's country is France (otherwise, only the country is reported).</li>
 </ul>
 </details>
@@ -2158,7 +2146,7 @@ Finally a last sentence gives indicates the date at which the patent has been gr
 </ul>
 <details class="note"><summary>More on format 2</summary><p>Attributes reported but not extracted:</p>
 <ul>
-<li>Mandataire: A "Mandataire" is a specilalised entity that files the patents on behalf of their client -the inventor. It appears in format 2.</li>
+<li>Mandataire: A "Mandataire" is a specialised entity that files the patents on behalf of their client -the inventor. It appears in format 2.</li>
 <li>Technological class: The international technology class is reported</li>
 </ul>
 </details>
@@ -2238,7 +2226,7 @@ Finally a last sentence gives indicates the date at which the patent has been gr
 </ol>
 </div>
 <h4 id="inv"><code>INV</code><a class="headerlink" href="#inv" title="Permanent link">&para;</a></h4>
-<p>The tag <code>INV</code> refers to the full name of an inventor (this person is explicity referred to as the inventor). Format 1 patents often don't have an inventor who is explicitly referred to as such (meaning, distinctively from the assignee).</p>
+<p>The tag <code>INV</code> refers to the full name of an inventor (this person is explicitly referred to as the inventor). Format 1 patents often don't have an inventor who is explicitly referred to as such (meaning, distinctively from the assignee).</p>
 <div class="admonition example">
 <p class="admonition-title">Examples</p>
 <ol>
@@ -2320,14 +2308,14 @@ Finally a last sentence gives indicates the date at which the patent has been gr
 </div>
 <h4 id="loc_1"><code>LOC</code><a class="headerlink" href="#loc_1" title="Permanent link">&para;</a></h4>
 <h5 id="general-case_3">General case<a class="headerlink" href="#general-case_3" title="Permanent link">&para;</a></h5>
-<p>Refers to an indication about the location. Again, when assignees are lcoated outside France, the geographic indication usually boils down to the name of the country.</p>
+<p>Refers to an indication about the location. Again, when assignees are located outside France, the geographic indication usually boils down to the name of the country.</p>
 <h5 id="specific-cases_3">Specific cases<a class="headerlink" href="#specific-cases_3" title="Permanent link">&para;</a></h5>
 <ul>
 <li>
 <p><em>Address</em>: Sometimes, the patent document might give the full address of the assignee. This only happens for assignees located in France. For the sake of consistency, we only keep the name of the city (and associated zipcode when it is provided). See example 2.</p>
 </li>
 <li>
-<p><em>State of the Headquarters</em>: Typically in the case of an American firm as the assignee, a patent might report the US state in which this firm is headquartered. Again, because the instances are rare and for the sake of consistency, we tag only he country of residence. See example 3.</p>
+<p><em>State of the Headquarters</em>: Typically in the case of an American firm as the assignee, a patent might report the US state in which this firm is headquartered. Again, because the instances are rare and for the sake of consistency, we tag only the country of residence. See example 3.</p>
 </li>
 </ul>
 <div class="admonition example">

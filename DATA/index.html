@@ -360,9 +360,53 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Data
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Data
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-data" class="md-nav__link">
+    Download data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-schema" class="md-nav__link">
+    Database schema
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -812,18 +856,6 @@
     <li class="md-nav__item">
       <a href="../DE_DATE_IMPUTATION/" class="md-nav__link">
         DE dates
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../XX_GEOC_REPORT/" class="md-nav__link">
-        Geocoding
       </a>
     </li>
   
@@ -1444,6 +1476,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-data" class="md-nav__link">
+    Download data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-schema" class="md-nav__link">
+    Database schema
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1460,12 +1521,14 @@
                 
                 
                 <h1 id="data">DATA<a class="headerlink" href="#data" title="Permanent link">&para;</a></h1>
+<h2 id="download-data">Download data<a class="headerlink" href="#download-data" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Beta only</p>
 <p>The database is available for beta testing only. If you would like to become a beta-tester, please, drop us a mail at antonin.bergeaud@gmail.com and cyril.verluise@gmail.com, ideally with a short description of your use case and mentioning your testing timeline (ideally within 6 weeks). We are committed to provide access to any team meeting basic requirements (actual use-case and availability).</p>
 </div>
-<p>The patentCity database is publicly available (CC-BY-4).</p>
+<p>The patentCity database will be publicly available (CC-BY-4) soon.</p>
 <p><a class="md-button md-button--primary" href="#">Download patentCity database</a></p>
+<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>If you use the data, please cite Bergeaud and Verluise (2021) and De Rassenfosse, Kozak and Seliger (2019)</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">BibTeX</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="err">@techreport</span><span class="p">{</span><span class="err">bergeaudVerluise2021,</span>
@@ -1491,6 +1554,398 @@
 </code></pre></div>
 </div>
 </div>
+<h2 id="database-schema">Database schema<a class="headerlink" href="#database-schema" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Nested fields</p>
+<ul>
+<li>Dotted variables (e.g. <code>patentee.is_inv</code>) indicate nested fields.</li>
+<li>In the csv flavour of the data, the prefix (e.g. <code>patentee.</code>) is not reported. The database has already been flattened.</li>
+</ul>
+</div>
+<table>
+<thead>
+<tr>
+<th align="left">name</th>
+<th align="left">description</th>
+<th align="left">mode</th>
+<th align="left">type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">publication_number</td>
+<td align="left">Publication number.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">publication_date</td>
+<td align="left">Publication date (yyyymmdd).</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">country_code</td>
+<td align="left">Country code of the patent office.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">pubnum</td>
+<td align="left">Publication number.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">kind_code</td>
+<td align="left">Kind code.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">family_id</td>
+<td align="left">Family ID (DOCDB).</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">origin</td>
+<td align="left">Indicates the origin of the patentee data (PC: patentcity, WGP25: Worldwide Geocoding of Patent - slot 25, WGP45: Worldwide Geocoding of Patent - slot 45, EXP: expansion ).</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.is_inv</td>
+<td align="left">True if the patentee is an inventor, else False.</td>
+<td align="left">NULLABLE</td>
+<td align="left">BOOLEAN</td>
+</tr>
+<tr>
+<td align="left">patentee.is_asg</td>
+<td align="left">True if the patentee is an inventor, else False.</td>
+<td align="left">NULLABLE</td>
+<td align="left">BOOLEAN</td>
+</tr>
+<tr>
+<td align="left">patentee.name_text</td>
+<td align="left">Name.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.person_id</td>
+<td align="left">Person ID (PATSTAT).</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.name_start</td>
+<td align="left">Name start.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.name_end</td>
+<td align="left">Name end.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.occ_text</td>
+<td align="left">Occupation text.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.occ_start</td>
+<td align="left">Occupation start.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.occ_end</td>
+<td align="left">Occupation end.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.cit_text</td>
+<td align="left">Citizenship text.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.cit_code</td>
+<td align="left">Citizenship code.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.cit_start</td>
+<td align="left">Citizenship start.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.cit_end</td>
+<td align="left">Citizenship end.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_text</td>
+<td align="left">Location text.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_start</td>
+<td align="left">Location start.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_end</td>
+<td align="left">Location end.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_addressLines</td>
+<td align="left">Formatted address lines built out of the parsed address components.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_locationLabel</td>
+<td align="left">Assembled address value for displaying purposes.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_country</td>
+<td align="left">ISO 3166-alpha-3 country code.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_state</td>
+<td align="left">First subdivision level(s) below the country. Where commonly used, this is a state code (for instance, CA for California).</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_county</td>
+<td align="left">Second subdivision level(s) below the country. Use of this field is optional if a second subdivision level is not available.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_city</td>
+<td align="left">Locality of the address.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_district</td>
+<td align="left">Subdivision level below the city. Use of this field is optional if a second subdivision level is not available.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_subdistrict</td>
+<td align="left">Subdivision level below the district. Used only for India.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_postalCode</td>
+<td align="left">Postal code.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_street</td>
+<td align="left">Street name.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_building</td>
+<td align="left">Building name.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_houseNumber</td>
+<td align="left">House number.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_longitude</td>
+<td align="left">Longitude.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_latitude</td>
+<td align="left">Latitude.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_relevance</td>
+<td align="left">Indicates the relevance of the results found; the higher the score the more relevant the alternative. The score is a normalized value between 0 and 1.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchType</td>
+<td align="left">Quality of the location match. pointAddress: Location matches exactly as point address. interpolated: Location was interpolated.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchCode</td>
+<td align="left">Code indicating how well the result matches the request. Enumeration [exact, ambiguous, upHierarchy, ambiguousUpHierarchy].</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchLevel</td>
+<td align="left">The most detailed address field that matched the input record.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchQualityCountry</td>
+<td align="left">MatchQuality provides detailed information about the match quality of a result at attribute level. Match quality is a value between 0.0 and 1.0. 1.0 represents a 100% match. Here, matchQuality is defined at country level.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchQualityState</td>
+<td align="left">Same at state level.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchQualityCounty</td>
+<td align="left">Same at county level.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchQualityCity</td>
+<td align="left">Same at city level.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchQualityDistrict</td>
+<td align="left">Same at district level.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchQualityPostalCode</td>
+<td align="left">Same at postalCode level.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchQualityStreet</td>
+<td align="left">Same at street level.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchQualityHouseNumber</td>
+<td align="left">Same at houseNumber level.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_matchQualityBuilding</td>
+<td align="left">Same at building level.</td>
+<td align="left">NULLABLE</td>
+<td align="left">FLOAT</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_key</td>
+<td align="left">Key used for statistical area mapping (internal use).</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_statisticalArea1</td>
+<td align="left">Name of the high level Statistical Area.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_statisticalArea1Code</td>
+<td align="left">Code of the high level Statistical Area.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_statisticalArea2</td>
+<td align="left">Name of the mid level Statistical Area.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_statisticalArea2Code</td>
+<td align="left">Code of the mid level Statistical Area.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_statisticalArea3</td>
+<td align="left">Name of the low level Statistical Area.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_statisticalArea3Code</td>
+<td align="left">Code of the low level Statistical Area.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_recId</td>
+<td align="left">Identifier of the input address in the response.</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_seqLength</td>
+<td align="left">Number of results for the corresponding input record.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_seqNumber</td>
+<td align="left">Consecutively numbers the different results for the corresponding input record starting with 1.</td>
+<td align="left">NULLABLE</td>
+<td align="left">INTEGER</td>
+</tr>
+<tr>
+<td align="left">patentee.loc_source</td>
+<td align="left">Geocoding source (in [HERE, GMAPS, MANUAL]).</td>
+<td align="left">NULLABLE</td>
+<td align="left">STRING</td>
+</tr>
+<tr>
+<td align="left">patentee.is_duplicate</td>
+<td align="left">True if a patentee with the 'same' name has been detected in the same patent. Only one of the two is marked as duplicate.</td>
+<td align="left">NULLABLE</td>
+<td align="left">BOOLEAN</td>
+</tr>
+</tbody>
+</table>
                 
               
               

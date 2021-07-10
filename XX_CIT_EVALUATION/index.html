@@ -814,18 +814,6 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../XX_GEOC_REPORT/" class="md-nav__link">
-        Geocoding
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
     
   
   
@@ -1622,7 +1610,7 @@
 <h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
 <p>The <code>CIT</code> text extracted from the text is just a span of natural language (e.g. "a citizen of the United States"). This cannot be used as such.</p>
 <h2 id="approach">Approach<a class="headerlink" href="#approach" title="Permanent link">&para;</a></h2>
-<p>We use a Finite State Transducer. The task of the Finite State Transducer is to map these spans to a well definite set of codes, here the ISO-3 code of the country of citizenship (e.g. USA). Below we evaluate the FST on US and GB data. Note: since there is no "learning" in the FST, overfitting is not really an issue and we do not distinguish between the training and the test set.</p>
+<p>We use a Finite State Transducer. The task of the Finite State Transducer is to map these spans to a well-defined set of codes, here the ISO-3 code of the country of citizenship (e.g. USA). Below we evaluate the FST on US and GB data. Note: since there is no "learning" in the FST, overfitting is not really an issue and we do not distinguish between the training and the test set.</p>
 <h2 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2117,7 +2105,7 @@ python patentcity/eval.py cit-fst data/gold_cit_uspatentocr03.csv --fst-file lib
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../XX_GEOC_REPORT/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../DE_DATE_IMPUTATION/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2126,7 +2114,7 @@ python patentcity/eval.py cit-fst data/gold_cit_uspatentocr03.csv --fst-file lib
               <span class="md-footer__direction">
                 Previous
               </span>
-              Geocoding
+              DE dates
             </div>
           </div>
         </a>

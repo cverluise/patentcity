@@ -816,18 +816,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../XX_GEOC_REPORT/" class="md-nav__link">
-        Geocoding
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../XX_CIT_EVALUATION/" class="md-nav__link">
         Citizenship
       </a>
@@ -1538,7 +1526,7 @@
                 
                 <h1 id="statistical-areas">STATISTICAL AREAS<a class="headerlink" href="#statistical-areas" title="Permanent link">&para;</a></h1>
 <h2 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h2>
-<p>We harvest administrative areas from the geocoding. They are already useful, but they have some limitations. In particular, they are not fully satisgying regarding the following features:</p>
+<p>We harvest administrative areas from the geocoding. They are already useful, but they have some limitations. In particular, they are not fully satisfying regarding the following features:</p>
 <ul>
 <li>between country comparability. We would like to be able to compare countries based on comparable objects (e.g. <a href="https://en.wikipedia.org/wiki/Nomenclature_of_Territorial_Units_for_Statistics">NUTS</a>)</li>
 <li>common usage. We want to be able to interoperate our data with external statistics (e.g. demographic data, economic data, structural data)</li>
@@ -1665,7 +1653,7 @@
 <p>Administrative areas obtained directly from the geocoding services (<code>loc_state</code> and <code>loc_counties</code>) also exhibit intrinsic limitations:</p>
 <ul>
 <li>spelling inconsistencies between geocoding services (e.g. "Constance" vs "Konstanz")</li>
-<li>semantic inconsistencies between geocoding services (e.g. districts vs kreis as level 3 adminstritative area for DE)</li>
+<li>semantic inconsistencies between geocoding services (e.g. districts vs kreis as level 3 administrative area for DE)</li>
 </ul>
 <p>Although we recommend the use of statistical areas, we also propose a solution using hand-made crossover tables. We do not implement the harmonization directly in the database as this is partly destructive. The solution (and its history) is described by issue <a href="https://github.com/cverluise/patentcity/issues/7">#7</a>.</p>
                 

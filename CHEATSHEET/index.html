@@ -814,18 +814,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../XX_GEOC_REPORT/" class="md-nav__link">
-        Geocoding
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../XX_CIT_EVALUATION/" class="md-nav__link">
         Citizenship
       </a>
@@ -977,6 +965,13 @@
         <li class="md-nav__item">
   <a href="#extract-sample-for-kepler" class="md-nav__link">
     Extract sample for kepler
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extract-data" class="md-nav__link">
+    Extract data
   </a>
   
 </li>
@@ -1531,6 +1526,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#extract-data" class="md-nav__link">
+    Extract data
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1577,6 +1579,12 @@ cat lib/format.txt<span class="p">|</span> grep <span class="nv">$OFFICE</span> 
 <div class="highlight"><pre><span></span><code><span class="nv">OFFICE</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="c1"># e.g. DD, DE, etc</span>
 <span class="nv">RATIO</span><span class="o">=</span> <span class="c1"># e.g. .2, .015</span>
 patentcity io extract-sample-kepler patentcity.patentcity.pc_v100rc1 data_tmp/sample_<span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span>.csv --sample-ratio <span class="si">${</span><span class="nv">RATIO</span><span class="si">}</span> --office <span class="si">${</span><span class="nv">OFFICE</span><span class="si">}</span> --key-file credentials-patentcity.json
+</code></pre></div>
+<h2 id="extract-data">Extract data<a class="headerlink" href="#extract-data" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;v100rc5&quot;</span>
+bq extract --destination_format NEWLINE_DELIMITED_JSON --compression GZIP patentcity:patentcity.<span class="si">${</span><span class="nv">RELEASE</span><span class="si">}</span> <span class="s2">&quot;gs://patentcity_dev/beta/</span><span class="si">${</span><span class="nv">RELEASE</span><span class="si">}</span><span class="s2">_*.jsonl.gz&quot;</span>
+patentcity io prep-csv-extract patentcity.patentcity.<span class="si">${</span><span class="nv">RELEASE</span><span class="si">}</span> patentcity.stage.<span class="si">${</span><span class="nv">RELEASE</span><span class="si">}</span> credentials-patentcity.json
+bq extract --destination_format CSV --compression GZIP patentcity:stage.<span class="si">${</span><span class="nv">RELEASE</span><span class="si">}</span> <span class="s2">&quot;gs://patentcity_dev/beta/</span><span class="si">${</span><span class="nv">RELEASE</span><span class="si">}</span><span class="s2">_*.csv.gz&quot;</span>
 </code></pre></div>
                 
               

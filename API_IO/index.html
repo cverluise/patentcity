@@ -812,18 +812,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../XX_GEOC_REPORT/" class="md-nav__link">
-        Geocoding
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../XX_CIT_EVALUATION/" class="md-nav__link">
         Citizenship
       </a>
@@ -1389,6 +1377,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#patentcity.io.prep_csv_extract" class="md-nav__link">
+    prep_csv_extract()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1623,6 +1618,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#patentcity.io.prep_csv_extract" class="md-nav__link">
+    prep_csv_extract()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1741,8 +1743,12 @@
 62
 63
 64
-65</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
-<span class="k">def</span> <span class="nf">augment_patentcity</span><span class="p">(</span><span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+65
+66
+67</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">augment_patentcity</span><span class="p">(</span>
+    <span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Add (mainly interoperability) variables to `src_table` and save to `destination_table</span>
 
 <span class="sd">    Arguments:</span>
@@ -1862,9 +1868,7 @@
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>160
-161
-162
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>162
 163
 164
 165
@@ -1988,7 +1992,9 @@
 283
 284
 285
-286</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+286
+287
+288</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">build_wgp_as_patentcity</span><span class="p">(</span>
     <span class="n">addresses_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">patentee_location_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -1998,7 +2004,7 @@
     <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">flavor</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="p">):</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Join addresses and individuals from WGP and add data at the patent as well as individual level.</span>
 
 <span class="sd">    Arguments:</span>
@@ -2150,9 +2156,7 @@ credentials: BQ credentials file path</p>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>515
-516
-517
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>517
 518
 519
 520
@@ -2207,8 +2211,10 @@ credentials: BQ credentials file path</p>
 569
 570
 571
-572</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
-<span class="k">def</span> <span class="nf">deduplicate</span><span class="p">(</span><span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+572
+573
+574</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">deduplicate</span><span class="p">(</span><span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Deduplicate patentcity table from publications which are both in at least 2 of the following data sources PC, WGP45</span>
 <span class="sd">    and WGP25. We prioritize PC, then WGP45 and then WGP25.</span>
@@ -2336,9 +2342,7 @@ credentials: BQ credentials file path</p>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>110
-111
-112
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>112
 113
 114
 115
@@ -2383,14 +2387,16 @@ credentials: BQ credentials file path</p>
 154
 155
 156
-157</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+157
+158
+159</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">extract_sample_kepler</span><span class="p">(</span>
     <span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">dest_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">sample_ratio</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
     <span class="n">office</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="p">):</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Extract sample for kepler.gl</span>
 
 <span class="sd">    Arguments:</span>
@@ -2497,9 +2503,7 @@ existing in <code>src_table</code> <em>but</em> absent from the latter. Family d
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>450
-451
-452
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>452
 453
 454
 455
@@ -2559,10 +2563,12 @@ existing in <code>src_table</code> <em>but</em> absent from the latter. Family d
 509
 510
 511
-512</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+512
+513
+514</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">family_expansion</span><span class="p">(</span>
     <span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_schema</span><span class="p">:</span> <span class="nb">str</span>
-<span class="p">):</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Expand along families in `table ref`. The returned table contains all publications belonging to a family</span>
 <span class="sd">    existing in `src_table` *but* absent from the latter. Family data are *assigned* from data in `src_table`.</span>
 
@@ -2681,9 +2687,7 @@ existing in <code>src_table</code> <em>but</em> absent from the latter. Family d
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>575
-576
-577
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>577
 578
 579
 580
@@ -2717,8 +2721,10 @@ existing in <code>src_table</code> <em>but</em> absent from the latter. Family d
 608
 609
 610
-611</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
-<span class="k">def</span> <span class="nf">filter_kind_codes</span><span class="p">(</span><span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+611
+612
+613</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">filter_kind_codes</span><span class="p">(</span><span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Filter `src_table` to make sure that only *utility patents* are reported.</span>
 
 <span class="sd">    Arguments:</span>
@@ -2830,9 +2836,7 @@ in each bin (if possible).</p>
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>320
-321
-322
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>322
 323
 324
 325
@@ -2906,14 +2910,16 @@ in each bin (if possible).</p>
 393
 394
 395
-396</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+396
+397
+398</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">get_stratified_sample</span><span class="p">(</span>
     <span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">bin_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span>
     <span class="n">preview</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="p">):</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Return a stratified sample of `src_table` (based on country_code and publication_decade) with `bin_size` samples</span>
 <span class="sd">    in each bin (if possible).</span>
 
@@ -3059,9 +3065,7 @@ patentcity io get-wgp25-recid <span class="nv">$OFFICE</span> patentcity.externa
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>399
-400
-401
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>401
 402
 403
 404
@@ -3107,14 +3111,16 @@ patentcity io get-wgp25-recid <span class="nv">$OFFICE</span> patentcity.externa
 444
 445
 446
-447</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+447
+448
+449</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">get_wgp25_recid</span><span class="p">(</span>
     <span class="n">country_code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">patstat_patent_properties_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<span class="p">):</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Extract recId and searchText from wgp25 for patents published in `country_code`.</span>
 
 <span class="sd">    Arguments:</span>
@@ -3221,9 +3227,7 @@ patentcity io get-wgp25-recid <span class="nv">$OFFICE</span> patentcity.externa
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 68
- 69
- 70
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 70
  71
  72
  73
@@ -3260,13 +3264,15 @@ patentcity io get-wgp25-recid <span class="nv">$OFFICE</span> patentcity.externa
 104
 105
 106
-107</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+107
+108
+109</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">impute_publication_date</span><span class="p">(</span>
     <span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">imputation_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">country_code</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="p">):</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Update `src_table` publication_date - DE &amp; DD only</span>
 
 <span class="sd">    Arguments:</span>
@@ -3365,9 +3371,7 @@ patentcity io get-wgp25-recid <span class="nv">$OFFICE</span> patentcity.externa
 
         <details class="quote">
           <summary>Source code in <code>patentcity/io.py</code></summary>
-          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>289
-290
-291
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>291
 292
 293
 294
@@ -3393,13 +3397,15 @@ patentcity io get-wgp25-recid <span class="nv">$OFFICE</span> patentcity.externa
 314
 315
 316
-317</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+317
+318
+319</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span> <span class="nf">order</span><span class="p">(</span>
     <span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">by</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="p">):</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Order `src_table` by `by` and stage it onto `destination_table`</span>
 
 <span class="sd">    Arguments:</span>
@@ -3420,6 +3426,115 @@ patentcity io get-wgp25-recid <span class="nv">$OFFICE</span> patentcity.externa
 <span class="s2">      `</span><span class="si">{</span><span class="n">src_table</span><span class="si">}</span><span class="s2">`</span>
 <span class="s2">    ORDER BY</span>
 <span class="s2">      </span><span class="si">{</span><span class="n">by</span><span class="si">}</span><span class="s2">  # publication_number</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+    <span class="n">_get_job_done</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">,</span> <span class="n">credentials</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+        </details>
+    </div>
+
+  </div>
+
+
+
+  <div class="doc doc-object doc-function">
+
+
+
+<h2 id="patentcity.io.prep_csv_extract" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">prep_csv_extract</span><span class="p">(</span><span class="n">src_table</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">,</span> <span class="n">credentials</span><span class="p">)</span></code>
+
+
+<a href="#patentcity.io.prep_csv_extract" class="headerlink" title="Permanent link">&para;</a></h2>
+
+    <div class="doc doc-contents ">
+
+      <p>Return the patentcity table as an unstructured table for CSV extract</p>
+
+<p><strong>Parameters:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td><code>src_table</code></td>
+        <td><code>str</code></td>
+        <td><p>source table (project.dataset.table)</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>destination_table</code></td>
+        <td><code>str</code></td>
+        <td><p>destination table (project.dataset.table)</p></td>
+        <td><em>required</em></td>
+      </tr>
+      <tr>
+        <td><code>credentials</code></td>
+        <td><code>str</code></td>
+        <td><p>BQ credentials file path</p></td>
+        <td><em>required</em></td>
+      </tr>
+  </tbody>
+</table>      <p><strong>Usage</strong>:
+    <div class="highlight"><pre><span></span><code><span class="nv">RELEASE</span><span class="o">=</span><span class="s2">&quot;v100rc5&quot;</span>
+patentcity io prep-csv-extract patentcity.patentcity.<span class="si">${</span><span class="nv">RELEASE</span><span class="si">}</span> patentcity.stage.<span class="si">${</span><span class="nv">RELEASE</span><span class="si">}</span> &lt;your-credentials.json&gt;
+</code></pre></div></p>
+
+        <details class="quote">
+          <summary>Source code in <code>patentcity/io.py</code></summary>
+          <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+640</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">prep_csv_extract</span><span class="p">(</span><span class="n">src_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credentials</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return the patentcity table as an unstructured table for CSV extract</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        src_table: source table (project.dataset.table)</span>
+<span class="sd">        destination_table: destination table (project.dataset.table)</span>
+<span class="sd">        credentials: BQ credentials file path</span>
+
+<span class="sd">    **Usage**:</span>
+<span class="sd">        ```shell</span>
+<span class="sd">        RELEASE=&quot;v100rc5&quot;</span>
+<span class="sd">        patentcity io prep-csv-extract patentcity.patentcity.${RELEASE} patentcity.stage.${RELEASE} &lt;your-credentials.json&gt;</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">query</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    SELECT</span>
+<span class="s2">      p.* EXCEPT(patentee),</span>
+<span class="s2">      patentee.*</span>
+<span class="s2">    FROM</span>
+<span class="s2">      `</span><span class="si">{</span><span class="n">src_table</span><span class="si">}</span><span class="s2">` as p,</span>
+<span class="s2">      UNNEST(patentee) AS patentee</span>
 <span class="s2">    &quot;&quot;&quot;</span>
     <span class="n">_get_job_done</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">,</span> <span class="n">credentials</span><span class="p">)</span>
 </code></pre></div>
