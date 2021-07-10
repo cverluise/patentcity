@@ -35,7 +35,7 @@ nav:
       - Enrichment:
         - DD dates: DD_DATE_IMPUTATION.md
         - DE dates: DE_DATE_IMPUTATION.md
-        - Geocoding: XX_GEOC_REPORT.md
+        #- Geocoding: XX_GEOC_REPORT.md
         - Citizenship: XX_CIT_EVALUATION.md
         - Statistical areas: XX_STATISTICAL_AREAS.md
         - Deduplication: XX_DEDUPLICATION_EVALUATION.md
