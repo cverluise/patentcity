@@ -364,8 +364,8 @@ USA,LA.WestCarrollParish,Louisiana,LA,Lake Providence,3902,West Carroll,22123
 USA,LA.EastCarroll,Louisiana,LA,Lake Providence,3902,East Carroll,22035
 USA,LA.EastCarrollParish,Louisiana,LA,Lake Providence,3902,East Carroll,22035
 USA,LA.WestCarroll,Louisiana,LA,Lake Providence,3902,West Carroll,22123
-USA,AR.Lafayette,Arkansas,AR,Magnolia,4001,Lafayette,5073
-USA,AR.Columbia,Arkansas,AR,Magnolia,4001,Columbia,5027
+USA,AR.Lafayette,Arkansas,AR,Magnolia,4001,Lafayette,05073
+USA,AR.Columbia,Arkansas,AR,Magnolia,4001,Columbia,05027
 USA,LA.Caddo,Louisiana,LA,Shreveport,4002,Caddo,22017
 USA,LA.Bossier,Louisiana,LA,Shreveport,4002,Bossier,22015
 USA,LA.DeSoto,Louisiana,LA,Shreveport,4002,De Soto,22031
@@ -390,31 +390,31 @@ USA,LA.JacksonParish,Louisiana,LA,Ruston,4003,Jackson,22049
 USA,LA.Jackson,Louisiana,LA,Ruston,4003,Jackson,22049
 USA,LA.SabineParish,Louisiana,LA,Many,4004,Sabine,22085
 USA,LA.Sabine,Louisiana,LA,Many,4004,Sabine,22085
-USA,AR.Ashley,Arkansas,AR,Crossett,4101,Ashley,5003
-USA,AR.Chicot,Arkansas,AR,Pine Bluff,4102,Chicot,5017
-USA,AR.Jefferson,Arkansas,AR,Pine Bluff,4102,Jefferson,5069
-USA,AR.Lincoln,Arkansas,AR,Pine Bluff,4102,Lincoln,5079
-USA,AR.Cleveland,Arkansas,AR,Pine Bluff,4102,Cleveland,5025
-USA,AR.Desha,Arkansas,AR,Pine Bluff,4102,Desha,5041
-USA,AR.Bradley,Arkansas,AR,Pine Bluff,4102,Bradley,5011
-USA,AR.Drew,Arkansas,AR,Pine Bluff,4102,Drew,5043
-USA,AR.Ouachita,Arkansas,AR,El Dorado,4103,Ouachita,5103
-USA,AR.Union,Arkansas,AR,El Dorado,4103,Union,5139
-USA,AR.Dallas,Arkansas,AR,El Dorado,4103,Dallas,5039
-USA,AR.Calhoun,Arkansas,AR,El Dorado,4103,Calhoun,5013
-USA,AR.Grant,Arkansas,AR,Little Rock,4200,Grant,5053
-USA,AR.Conway,Arkansas,AR,Little Rock,4200,Conway,5029
-USA,AR.Pulaski,Arkansas,AR,Little Rock,4200,Pulaski,5119
-USA,AR.Faulkner,Arkansas,AR,Little Rock,4200,Faulkner,5045
-USA,AR.Perry,Arkansas,AR,Little Rock,4200,Perry,5105
-USA,AR.Saline,Arkansas,AR,Little Rock,4200,Saline,5125
-USA,AR.Lonoke,Arkansas,AR,Little Rock,4200,Lonoke,5085
-USA,AR.Prairie,Arkansas,AR,Stuttgart,4301,Prairie,5117
-USA,AR.Arkansas,Arkansas,AR,Stuttgart,4301,Arkansas,5001
-USA,AR.Monroe,Arkansas,AR,Stuttgart,4301,Monroe,5095
-USA,AR.Woodruff,Arkansas,AR,Searcy,4302,Woodruff,5147
-USA,AR.Jackson,Arkansas,AR,Searcy,4302,Jackson,5067
-USA,AR.White,Arkansas,AR,Searcy,4302,White,5145
+USA,AR.Ashley,Arkansas,AR,Crossett,4101,Ashley,05003
+USA,AR.Chicot,Arkansas,AR,Pine Bluff,4102,Chicot,05017
+USA,AR.Jefferson,Arkansas,AR,Pine Bluff,4102,Jefferson,05069
+USA,AR.Lincoln,Arkansas,AR,Pine Bluff,4102,Lincoln,05079
+USA,AR.Cleveland,Arkansas,AR,Pine Bluff,4102,Cleveland,05025
+USA,AR.Desha,Arkansas,AR,Pine Bluff,4102,Desha,05041
+USA,AR.Bradley,Arkansas,AR,Pine Bluff,4102,Bradley,05011
+USA,AR.Drew,Arkansas,AR,Pine Bluff,4102,Drew,05043
+USA,AR.Ouachita,Arkansas,AR,El Dorado,4103,Ouachita,05103
+USA,AR.Union,Arkansas,AR,El Dorado,4103,Union,05139
+USA,AR.Dallas,Arkansas,AR,El Dorado,4103,Dallas,05039
+USA,AR.Calhoun,Arkansas,AR,El Dorado,4103,Calhoun,05013
+USA,AR.Grant,Arkansas,AR,Little Rock,4200,Grant,05053
+USA,AR.Conway,Arkansas,AR,Little Rock,4200,Conway,05029
+USA,AR.Pulaski,Arkansas,AR,Little Rock,4200,Pulaski,05119
+USA,AR.Faulkner,Arkansas,AR,Little Rock,4200,Faulkner,05045
+USA,AR.Perry,Arkansas,AR,Little Rock,4200,Perry,05105
+USA,AR.Saline,Arkansas,AR,Little Rock,4200,Saline,05125
+USA,AR.Lonoke,Arkansas,AR,Little Rock,4200,Lonoke,05085
+USA,AR.Prairie,Arkansas,AR,Stuttgart,4301,Prairie,05117
+USA,AR.Arkansas,Arkansas,AR,Stuttgart,4301,Arkansas,05001
+USA,AR.Monroe,Arkansas,AR,Stuttgart,4301,Monroe,05095
+USA,AR.Woodruff,Arkansas,AR,Searcy,4302,Woodruff,05147
+USA,AR.Jackson,Arkansas,AR,Searcy,4302,Jackson,05067
+USA,AR.White,Arkansas,AR,Searcy,4302,White,05145
 USA,KY.Knox,Kentucky,KY,Corbin,4401,Knox,21121
 USA,KY.Whitley,Kentucky,KY,Corbin,4401,Whitley,21235
 USA,KY.Clay,Kentucky,KY,Corbin,4401,Clay,21051
@@ -504,12 +504,12 @@ USA,TN.Shelby,Tennessee,TN,Memphis,5202,Shelby,47157
 USA,MS.Tate,Mississippi,MS,Memphis,5202,Tate,28137
 USA,TN.Fayette,Tennessee,TN,Memphis,5202,Fayette,47047
 USA,TN.Tipton,Tennessee,TN,Memphis,5202,Tipton,47167
-USA,AR.Lee,Arkansas,AR,West Memphis,5300,Lee,5077
-USA,AR.Cross,Arkansas,AR,West Memphis,5300,Cross,5037
-USA,AR.Phillips,Arkansas,AR,West Memphis,5300,Phillips,5107
-USA,AR.Crittenden,Arkansas,AR,West Memphis,5300,Crittenden,5035
-USA,AR.StFrancis,Arkansas,AR,West Memphis,5300,St Francis,5123
-USA,AR.St.Francis,Arkansas,AR,West Memphis,5300,St Francis,5123
+USA,AR.Lee,Arkansas,AR,West Memphis,5300,Lee,05077
+USA,AR.Cross,Arkansas,AR,West Memphis,5300,Cross,05037
+USA,AR.Phillips,Arkansas,AR,West Memphis,5300,Phillips,05107
+USA,AR.Crittenden,Arkansas,AR,West Memphis,5300,Crittenden,05035
+USA,AR.StFrancis,Arkansas,AR,West Memphis,5300,St Francis,05123
+USA,AR.St.Francis,Arkansas,AR,West Memphis,5300,St Francis,05123
 USA,KY.Simpson,Kentucky,KY,Bowling Green,5401,Simpson,21213
 USA,KY.Logan,Kentucky,KY,Bowling Green,5401,Logan,21141
 USA,KY.Warren,Kentucky,KY,Bowling Green,5401,Warren,21227
@@ -552,21 +552,21 @@ USA,KY.Todd,Kentucky,KY,Clarksville,5900,Todd,21219
 USA,KY.Christian,Kentucky,KY,Clarksville,5900,Christian,21047
 USA,TN.Stewart,Tennessee,TN,Clarksville,5900,Stewart,47161
 USA,TN.Houston,Tennessee,TN,Clarksville,5900,Houston,47083
-USA,AL.Madison,Alabama,AL,Huntsville,6000,Madison,1089
-USA,AL.Lawrence,Alabama,AL,Huntsville,6000,Lawrence,1079
-USA,AL.Morgan,Alabama,AL,Huntsville,6000,Morgan,1103
+USA,AL.Madison,Alabama,AL,Huntsville,6000,Madison,01089
+USA,AL.Lawrence,Alabama,AL,Huntsville,6000,Lawrence,01079
+USA,AL.Morgan,Alabama,AL,Huntsville,6000,Morgan,01103
 USA,TN.Lincoln,Tennessee,TN,Huntsville,6000,Lincoln,47103
-USA,AL.Limestone,Alabama,AL,Huntsville,6000,Limestone,1083
-USA,AL.Marshall,Alabama,AL,Gadsden,6100,Marshall,1095
-USA,AL.Etowah,Alabama,AL,Gadsden,6100,Etowah,1055
-USA,AL.Dekalb,Alabama,AL,Gadsden,6100,De Kalb,1049
-USA,AL.DeKalb,Alabama,AL,Gadsden,6100,De Kalb,1049
-USA,AL.Jackson,Alabama,AL,Gadsden,6100,Jackson,1071
-USA,AL.Lauderdale,Alabama,AL,Florence,6200,Lauderdale,1077
+USA,AL.Limestone,Alabama,AL,Huntsville,6000,Limestone,01083
+USA,AL.Marshall,Alabama,AL,Gadsden,6100,Marshall,01095
+USA,AL.Etowah,Alabama,AL,Gadsden,6100,Etowah,01055
+USA,AL.Dekalb,Alabama,AL,Gadsden,6100,De Kalb,01049
+USA,AL.DeKalb,Alabama,AL,Gadsden,6100,De Kalb,01049
+USA,AL.Jackson,Alabama,AL,Gadsden,6100,Jackson,01071
+USA,AL.Lauderdale,Alabama,AL,Florence,6200,Lauderdale,01077
 USA,TN.Wayne,Tennessee,TN,Florence,6200,Wayne,47181
 USA,TN.Lawrence,Tennessee,TN,Florence,6200,Lawrence,47099
-USA,AL.Franklin,Alabama,AL,Florence,6200,Franklin,1059
-USA,AL.Colbert,Alabama,AL,Florence,6200,Colbert,1033
+USA,AL.Franklin,Alabama,AL,Florence,6200,Franklin,01059
+USA,AL.Colbert,Alabama,AL,Florence,6200,Colbert,01033
 USA,TN.White,Tennessee,TN,McMinnville,6301,White,47185
 USA,TN.VanBuren,Tennessee,TN,McMinnville,6301,Van Buren,47175
 USA,TN.Warren,Tennessee,TN,McMinnville,6301,Warren,47177
@@ -596,7 +596,7 @@ USA,TN.Monroe,Tennessee,TN,Cleveland,6502,Monroe,47123
 USA,GA.Chattooga,Georgia,GA,Rome,6600,Chattooga,13055
 USA,GA.Polk,Georgia,GA,Rome,6600,Polk,13233
 USA,GA.Whitfield,Georgia,GA,Rome,6600,Whitfield,13313
-USA,AL.Cherokee,Alabama,AL,Rome,6600,Cherokee,1019
+USA,AL.Cherokee,Alabama,AL,Rome,6600,Cherokee,01019
 USA,GA.Floyd,Georgia,GA,Rome,6600,Floyd,13115
 USA,GA.Gordon,Georgia,GA,Rome,6600,Gordon,13129
 USA,GA.Bartow,Georgia,GA,Rome,6600,Bartow,13015
@@ -799,19 +799,19 @@ USA,GA.Jackson,Georgia,GA,Gainesville,9400,Jackson,13157
 USA,GA.White,Georgia,GA,Gainesville,9400,White,13311
 USA,GA.Hall,Georgia,GA,Gainesville,9400,Hall,13139
 USA,GA.Habersham,Georgia,GA,Gainesville,9400,Habersham,13137
-USA,AL.Coosa,Alabama,AL,Talladega,9500,Coosa,1037
-USA,AL.Talladega,Alabama,AL,Talladega,9500,Talladega,1121
-USA,AL.Tallapoosa,Alabama,AL,Talladega,9500,Tallapoosa,1123
-USA,AL.Clay,Alabama,AL,Talladega,9500,Clay,1027
-USA,AL.Calhoun,Alabama,AL,LaGrange,9600,Calhoun,1015
+USA,AL.Coosa,Alabama,AL,Talladega,9500,Coosa,01037
+USA,AL.Talladega,Alabama,AL,Talladega,9500,Talladega,01121
+USA,AL.Tallapoosa,Alabama,AL,Talladega,9500,Tallapoosa,01123
+USA,AL.Clay,Alabama,AL,Talladega,9500,Clay,01027
+USA,AL.Calhoun,Alabama,AL,LaGrange,9600,Calhoun,01015
 USA,GA.Carroll,Georgia,GA,LaGrange,9600,Carroll,13045
 USA,GA.Haralson,Georgia,GA,LaGrange,9600,Haralson,13143
 USA,GA.Heard,Georgia,GA,LaGrange,9600,Heard,13149
-USA,AL.Chambers,Alabama,AL,LaGrange,9600,Chambers,1017
+USA,AL.Chambers,Alabama,AL,LaGrange,9600,Chambers,01017
 USA,GA.Troup,Georgia,GA,LaGrange,9600,Troup,13285
 USA,GA.Coweta,Georgia,GA,LaGrange,9600,Coweta,13077
-USA,AL.Cleburne,Alabama,AL,LaGrange,9600,Cleburne,1029
-USA,AL.Randolph,Alabama,AL,LaGrange,9600,Randolph,1111
+USA,AL.Cleburne,Alabama,AL,LaGrange,9600,Cleburne,01029
+USA,AL.Randolph,Alabama,AL,LaGrange,9600,Randolph,01111
 USA,GA.Chattahoochee,Georgia,GA,Columbus,9701,Chattahoochee,13053
 USA,GA.Muscogee,Georgia,GA,Columbus,9701,Muscogee,13215
 USA,GA.Harris,Georgia,GA,Columbus,9701,Harris,13145
@@ -823,9 +823,9 @@ USA,GA.Marion,Georgia,GA,Americus,9702,Marion,13197
 USA,GA.Schley,Georgia,GA,Americus,9702,Schley,13249
 USA,GA.Sumter,Georgia,GA,Americus,9702,Sumter,13261
 USA,GA.Macon,Georgia,GA,Americus,9702,Macon,13193
-USA,AL.Lee,Alabama,AL,Auburn,9800,Lee,1081
-USA,AL.Macon,Alabama,AL,Auburn,9800,Macon,1087
-USA,AL.Bullock,Alabama,AL,Auburn,9800,Bullock,1011
+USA,AL.Lee,Alabama,AL,Auburn,9800,Lee,01081
+USA,AL.Macon,Alabama,AL,Auburn,9800,Macon,01087
+USA,AL.Bullock,Alabama,AL,Auburn,9800,Bullock,01011
 USA,FL.Gadsden,Florida,FL,Tallahassee,9900,Gadsden,12039
 USA,FL.Leon,Florida,FL,Tallahassee,9900,Leon,12073
 USA,FL.Wakulla,Florida,FL,Tallahassee,9900,Wakulla,12129
@@ -849,72 +849,72 @@ USA,GA.Dougherty,Georgia,GA,Albany,10200,Dougherty,13095
 USA,GA.Mitchell,Georgia,GA,Albany,10200,Mitchell,13205
 USA,GA.Terrell,Georgia,GA,Albany,10200,Terrell,13273
 USA,GA.Lee,Georgia,GA,Albany,10200,Lee,13177
-USA,AL.Barbour,Alabama,AL,Eufaula,10301,Barbour,1005
+USA,AL.Barbour,Alabama,AL,Eufaula,10301,Barbour,01005
 USA,GA.Calhoun,Georgia,GA,Eufaula,10301,Calhoun,13037
 USA,GA.Randolph,Georgia,GA,Eufaula,10301,Randolph,13243
 USA,GA.Early,Georgia,GA,Eufaula,10301,Early,13099
 USA,GA.Quitman,Georgia,GA,Eufaula,10301,Quitman,13239
 USA,GA.Clay,Georgia,GA,Eufaula,10301,Clay,13061
-USA,AL.Geneva,Alabama,AL,Dothan,10302,Geneva,1061
-USA,AL.Coffee,Alabama,AL,Dothan,10302,Coffee,1031
-USA,AL.Dale,Alabama,AL,Dothan,10302,Dale,1045
-USA,AL.Henry,Alabama,AL,Dothan,10302,Henry,1067
-USA,AL.Houston,Alabama,AL,Dothan,10302,Houston,1069
+USA,AL.Geneva,Alabama,AL,Dothan,10302,Geneva,01061
+USA,AL.Coffee,Alabama,AL,Dothan,10302,Coffee,01031
+USA,AL.Dale,Alabama,AL,Dothan,10302,Dale,01045
+USA,AL.Henry,Alabama,AL,Dothan,10302,Henry,01067
+USA,AL.Houston,Alabama,AL,Dothan,10302,Houston,01069
 USA,MS.Lauderdale,Mississippi,MS,Meridian,10400,Lauderdale,28075
 USA,MS.Newton,Mississippi,MS,Meridian,10400,Newton,28101
 USA,MS.Neshoba,Mississippi,MS,Meridian,10400,Neshoba,28099
 USA,MS.Kemper,Mississippi,MS,Meridian,10400,Kemper,28069
 USA,MS.Clarke,Mississippi,MS,Meridian,10400,Clarke,28023
-USA,AL.Pickens,Alabama,AL,Columbus,10501,Pickens,1107
+USA,AL.Pickens,Alabama,AL,Columbus,10501,Pickens,01107
 USA,MS.Noxubee,Mississippi,MS,Columbus,10501,Noxubee,28103
 USA,MS.Lowndes,Mississippi,MS,Columbus,10501,Lowndes,28087
-USA,AL.Russell,Alabama,AL,Columbus,10501,Russell,1113
+USA,AL.Russell,Alabama,AL,Columbus,10501,Russell,01113
 USA,MS.Choctaw,Mississippi,MS,Starkville,10502,Choctaw,28019
 USA,MS.Webster,Mississippi,MS,Starkville,10502,Webster,28155
 USA,MS.Clay,Mississippi,MS,Starkville,10502,Clay,28025
 USA,MS.Oktibbeha,Mississippi,MS,Starkville,10502,Oktibbeha,28105
 USA,MS.Winston,Mississippi,MS,Starkville,10502,Winston,28159
-USA,AL.Winston,Alabama,AL,Jasper,10600,Winston,1133
-USA,AL.Lamar,Alabama,AL,Jasper,10600,Lamar,1075
-USA,AL.Marion,Alabama,AL,Jasper,10600,Marion,1093
-USA,AL.Fayette,Alabama,AL,Jasper,10600,Fayette,1057
-USA,AL.Walker,Alabama,AL,Jasper,10600,Walker,1127
-USA,AL.Jefferson,Alabama,AL,Birmingham,10700,Jefferson,1073
-USA,AL.Chilton,Alabama,AL,Birmingham,10700,Chilton,1021
-USA,AL.St.Clair,Alabama,AL,Birmingham,10700,St Clair,1115
-USA,AL.Cullman,Alabama,AL,Birmingham,10700,Cullman,1043
-USA,AL.Blount,Alabama,AL,Birmingham,10700,Blount,1009
-USA,AL.Shelby,Alabama,AL,Birmingham,10700,Shelby,1117
-USA,AL.StClair,Alabama,AL,Birmingham,10700,St Clair,1115
-USA,AL.Tuscaloosa,Alabama,AL,Tuscaloosa,10801,Tuscaloosa,1125
-USA,AL.Bibb,Alabama,AL,Tuscaloosa,10801,Bibb,1007
-USA,AL.Hale,Alabama,AL,Tuscaloosa,10801,Hale,1065
-USA,AL.Perry,Alabama,AL,Tuscaloosa,10801,Perry,1105
-USA,AL.Dallas,Alabama,AL,Tuscaloosa,10801,Dallas,1047
-USA,AL.Sumter,Alabama,AL,Demopolis,10802,Sumter,1119
-USA,AL.Marengo,Alabama,AL,Demopolis,10802,Marengo,1091
-USA,AL.Greene,Alabama,AL,Demopolis,10802,Greene,1063
-USA,AL.Choctaw,Alabama,AL,Demopolis,10802,Choctaw,1023
+USA,AL.Winston,Alabama,AL,Jasper,10600,Winston,01133
+USA,AL.Lamar,Alabama,AL,Jasper,10600,Lamar,01075
+USA,AL.Marion,Alabama,AL,Jasper,10600,Marion,01093
+USA,AL.Fayette,Alabama,AL,Jasper,10600,Fayette,01057
+USA,AL.Walker,Alabama,AL,Jasper,10600,Walker,01127
+USA,AL.Jefferson,Alabama,AL,Birmingham,10700,Jefferson,01073
+USA,AL.Chilton,Alabama,AL,Birmingham,10700,Chilton,01021
+USA,AL.St.Clair,Alabama,AL,Birmingham,10700,St Clair,01115
+USA,AL.Cullman,Alabama,AL,Birmingham,10700,Cullman,01043
+USA,AL.Blount,Alabama,AL,Birmingham,10700,Blount,01009
+USA,AL.Shelby,Alabama,AL,Birmingham,10700,Shelby,01117
+USA,AL.StClair,Alabama,AL,Birmingham,10700,St Clair,01115
+USA,AL.Tuscaloosa,Alabama,AL,Tuscaloosa,10801,Tuscaloosa,01125
+USA,AL.Bibb,Alabama,AL,Tuscaloosa,10801,Bibb,01007
+USA,AL.Hale,Alabama,AL,Tuscaloosa,10801,Hale,01065
+USA,AL.Perry,Alabama,AL,Tuscaloosa,10801,Perry,01105
+USA,AL.Dallas,Alabama,AL,Tuscaloosa,10801,Dallas,01047
+USA,AL.Sumter,Alabama,AL,Demopolis,10802,Sumter,01119
+USA,AL.Marengo,Alabama,AL,Demopolis,10802,Marengo,01091
+USA,AL.Greene,Alabama,AL,Demopolis,10802,Greene,01063
+USA,AL.Choctaw,Alabama,AL,Demopolis,10802,Choctaw,01023
 USA,FL.SantaRosa,Florida,FL,Pensacola,10900,Santa Rosa,12113
 USA,FL.Okaloosa,Florida,FL,Pensacola,10900,Okaloosa,12091
 USA,FL.Escambia,Florida,FL,Pensacola,10900,Escambia,12033
 USA,FL.Walton,Florida,FL,Pensacola,10900,Walton,12131
-USA,AL.Washington,Alabama,AL,Mobile,11001,Washington,1129
-USA,AL.Wilcox,Alabama,AL,Mobile,11001,Wilcox,1131
-USA,AL.Clarke,Alabama,AL,Mobile,11001,Clarke,1025
-USA,AL.Baldwin,Alabama,AL,Mobile,11001,Baldwin,1003
-USA,AL.Mobile,Alabama,AL,Mobile,11001,Mobile,1097
-USA,AL.Conecuh,Alabama,AL,Atmore,11002,Conecuh,1035
-USA,AL.Escambia,Alabama,AL,Atmore,11002,Escambia,1053
-USA,AL.Monroe,Alabama,AL,Atmore,11002,Monroe,1099
-USA,AL.Montgomery,Alabama,AL,Montgomery,11101,Montgomery,1101
-USA,AL.Butler,Alabama,AL,Montgomery,11101,Butler,1013
-USA,AL.Autauga,Alabama,AL,Montgomery,11101,Autauga,1001
-USA,AL.Elmore,Alabama,AL,Montgomery,11101,Elmore,1051
-USA,AL.Lowndes,Alabama,AL,Montgomery,11101,Lowndes,1085
-USA,AL.Crenshaw,Alabama,AL,Troy,11102,Crenshaw,1041
-USA,AL.Pike,Alabama,AL,Troy,11102,Pike,1109
-USA,AL.Covington,Alabama,AL,Troy,11102,Covington,1039
+USA,AL.Washington,Alabama,AL,Mobile,11001,Washington,01129
+USA,AL.Wilcox,Alabama,AL,Mobile,11001,Wilcox,01131
+USA,AL.Clarke,Alabama,AL,Mobile,11001,Clarke,01025
+USA,AL.Baldwin,Alabama,AL,Mobile,11001,Baldwin,01003
+USA,AL.Mobile,Alabama,AL,Mobile,11001,Mobile,01097
+USA,AL.Conecuh,Alabama,AL,Atmore,11002,Conecuh,01035
+USA,AL.Escambia,Alabama,AL,Atmore,11002,Escambia,01053
+USA,AL.Monroe,Alabama,AL,Atmore,11002,Monroe,01099
+USA,AL.Montgomery,Alabama,AL,Montgomery,11101,Montgomery,01101
+USA,AL.Butler,Alabama,AL,Montgomery,11101,Butler,01013
+USA,AL.Autauga,Alabama,AL,Montgomery,11101,Autauga,01001
+USA,AL.Elmore,Alabama,AL,Montgomery,11101,Elmore,01051
+USA,AL.Lowndes,Alabama,AL,Montgomery,11101,Lowndes,01085
+USA,AL.Crenshaw,Alabama,AL,Troy,11102,Crenshaw,01041
+USA,AL.Pike,Alabama,AL,Troy,11102,Pike,01109
+USA,AL.Covington,Alabama,AL,Troy,11102,Covington,01039
 USA,VA.Bland,Virginia,VA,Bluefield,11201,Bland,51021
 USA,VA.Wythe,Virginia,VA,Bluefield,11201,Wythe,51197
 USA,WV.Mercer,West Virginia,WV,Bluefield,11201,Mercer,54055
@@ -1622,16 +1622,16 @@ USA,VT.Windham,Vermont,VT,Keene,20700,Windham,50025
 USA,MA.Hampshire,Massachusetts,MA,Springfield,20800,Hampshire,25015
 USA,MA.Hampden,Massachusetts,MA,Springfield,20800,Hampden,25013
 USA,MA.Franklin,Massachusetts,MA,Springfield,20800,Franklin,25011
-USA,CT.Montgomery,Connecticut,CT,Bridgeport,20901,Fairfield,9001
-USA,CT.Litchfield,Connecticut,CT,Bridgeport,20901,Litchfield,9005
-USA,CT.Kent,Connecticut,CT,Bridgeport,20901,Tolland,9013
-USA,CT.NewLondon,Connecticut,CT,Bridgeport,20901,New London,9011
-USA,CT.Fairfield,Connecticut,CT,Bridgeport,20901,Fairfield,9001
-USA,CT.Hartford,Connecticut,CT,Bridgeport,20901,Hartford,9003
-USA,CT.Tolland,Connecticut,CT,Bridgeport,20901,Tolland,9013
-USA,CT.Middlesex,Connecticut,CT,Bridgeport,20901,Middlesex,9007
-USA,CT.NewHaven,Connecticut,CT,Bridgeport,20901,New Haven,9009
-USA,CT.Windham,Connecticut,CT,Bridgeport,20901,Windham,9015
+USA,CT.Montgomery,Connecticut,CT,Bridgeport,20901,Fairfield,09001
+USA,CT.Litchfield,Connecticut,CT,Bridgeport,20901,Litchfield,09005
+USA,CT.Kent,Connecticut,CT,Bridgeport,20901,Tolland,09013
+USA,CT.NewLondon,Connecticut,CT,Bridgeport,20901,New London,09011
+USA,CT.Fairfield,Connecticut,CT,Bridgeport,20901,Fairfield,09001
+USA,CT.Hartford,Connecticut,CT,Bridgeport,20901,Hartford,09003
+USA,CT.Tolland,Connecticut,CT,Bridgeport,20901,Tolland,09013
+USA,CT.Middlesex,Connecticut,CT,Bridgeport,20901,Middlesex,09007
+USA,CT.NewHaven,Connecticut,CT,Bridgeport,20901,New Haven,09009
+USA,CT.Windham,Connecticut,CT,Bridgeport,20901,Windham,09015
 USA,MA.Berkshire,Massachusetts,MA,Pittsfield,20902,Berkshire,25003
 USA,VT.Bennington,Vermont,VT,Pittsfield,20902,Bennington,50003
 USA,WI.Ashland,Wisconsin,WI,Ashland,21001,Ashland,55003
@@ -1909,24 +1909,24 @@ USA,IL.Adams,Illinois,IL,Quincy,25000,Adams,17001
 USA,MO.Ralls,Missouri,MO,Quincy,25000,Ralls,29173
 USA,MO.Pike,Missouri,MO,Quincy,25000,Pike,29163
 USA,MO.Marion,Missouri,MO,Quincy,25000,Marion,29127
-USA,AR.Marion,Arkansas,AR,Mountain Home,25101,Marion,5089
-USA,AR.Baxter,Arkansas,AR,Mountain Home,25101,Baxter,5005
+USA,AR.Marion,Arkansas,AR,Mountain Home,25101,Marion,05089
+USA,AR.Baxter,Arkansas,AR,Mountain Home,25101,Baxter,05005
 USA,MO.Ozark,Missouri,MO,Mountain Home,25101,Ozark,29153
 USA,MO.Howell,Missouri,MO,West Plains,25102,Howell,29091
 USA,MO.Shannon,Missouri,MO,West Plains,25102,Shannon,29203
 USA,MO.Texas,Missouri,MO,West Plains,25102,Texas,29215
 USA,MO.Oregon,Missouri,MO,West Plains,25102,Oregon,29149
-USA,AR.Fulton,Arkansas,AR,West Plains,25102,Fulton,5049
-USA,AR.Newton,Arkansas,AR,Harrison,25103,Newton,5101
-USA,AR.Boone,Arkansas,AR,Harrison,25103,Boone,5009
-USA,AR.Carroll,Arkansas,AR,Harrison,25103,Carroll,5015
-USA,AR.Searcy,Arkansas,AR,Harrison,25103,Searcy,5129
-USA,AR.Cleburne,Arkansas,AR,Heber Springs,25104,Cleburne,5023
-USA,AR.Stone,Arkansas,AR,Heber Springs,25104,Stone,5137
-USA,AR.VanBuren,Arkansas,AR,Heber Springs,25104,Van Buren,5141
-USA,AR.Izard,Arkansas,AR,Batesville,25105,Izard,5065
-USA,AR.Sharp,Arkansas,AR,Batesville,25105,Sharp,5135
-USA,AR.Independence,Arkansas,AR,Batesville,25105,Independence,5063
+USA,AR.Fulton,Arkansas,AR,West Plains,25102,Fulton,05049
+USA,AR.Newton,Arkansas,AR,Harrison,25103,Newton,05101
+USA,AR.Boone,Arkansas,AR,Harrison,25103,Boone,05009
+USA,AR.Carroll,Arkansas,AR,Harrison,25103,Carroll,05015
+USA,AR.Searcy,Arkansas,AR,Harrison,25103,Searcy,05129
+USA,AR.Cleburne,Arkansas,AR,Heber Springs,25104,Cleburne,05023
+USA,AR.Stone,Arkansas,AR,Heber Springs,25104,Stone,05137
+USA,AR.VanBuren,Arkansas,AR,Heber Springs,25104,Van Buren,05141
+USA,AR.Izard,Arkansas,AR,Batesville,25105,Izard,05065
+USA,AR.Sharp,Arkansas,AR,Batesville,25105,Sharp,05135
+USA,AR.Independence,Arkansas,AR,Batesville,25105,Independence,05063
 USA,KY.Webster,Kentucky,KY,Henderson,25200,Webster,21233
 USA,KY.Union,Kentucky,KY,Henderson,25200,Union,21225
 USA,KY.Caldwell,Kentucky,KY,Henderson,25200,Caldwell,21033
@@ -1975,14 +1975,14 @@ USA,MO.Butler,Missouri,MO,Poplar Bluff,25702,Butler,29023
 USA,MO.Wayne,Missouri,MO,Poplar Bluff,25702,Wayne,29223
 USA,MO.Carter,Missouri,MO,Poplar Bluff,25702,Carter,29035
 USA,MO.Dunklin,Missouri,MO,Blytheville,25800,Dunklin,29069
-USA,AR.Mississippi,Arkansas,AR,Blytheville,25800,Mississippi,5093
+USA,AR.Mississippi,Arkansas,AR,Blytheville,25800,Mississippi,05093
 USA,MO.Pemiscot,Missouri,MO,Blytheville,25800,Pemiscot,29155
-USA,AR.Lawrence,Arkansas,AR,Jonesboro,25900,Lawrence,5075
-USA,AR.Craighead,Arkansas,AR,Jonesboro,25900,Craighead,5031
-USA,AR.Clay,Arkansas,AR,Jonesboro,25900,Clay,5021
-USA,AR.Poinsett,Arkansas,AR,Jonesboro,25900,Poinsett,5111
-USA,AR.Randolph,Arkansas,AR,Jonesboro,25900,Randolph,5121
-USA,AR.Greene,Arkansas,AR,Jonesboro,25900,Greene,5055
+USA,AR.Lawrence,Arkansas,AR,Jonesboro,25900,Lawrence,05075
+USA,AR.Craighead,Arkansas,AR,Jonesboro,25900,Craighead,05031
+USA,AR.Clay,Arkansas,AR,Jonesboro,25900,Clay,05021
+USA,AR.Poinsett,Arkansas,AR,Jonesboro,25900,Poinsett,05111
+USA,AR.Randolph,Arkansas,AR,Jonesboro,25900,Randolph,05121
+USA,AR.Greene,Arkansas,AR,Jonesboro,25900,Greene,05055
 USA,MN.LakeoftheWoods,Minnesota,MN,Roseau,26001,Lake of the Woods,27077
 USA,MN.Roseau,Minnesota,MN,Roseau,26001,Roseau,27135
 USA,MN.Lake,Minnesota,MN,Duluth,26002,Lake,27075
@@ -2300,14 +2300,14 @@ USA,NE.Douglas,Nebraska,NE,Omaha,28202,Douglas,31055
 USA,NE.Sarpy,Nebraska,NE,Omaha,28202,Sarpy,31153
 USA,NE.Dodge,Nebraska,NE,Omaha,28202,Dodge,31053
 USA,IA.Pottawattamie,Iowa,IA,Omaha,28202,Pottawattamie,19155
-USA,CO.Yuma,Colorado,CO,Sterling,28301,Yuma,8125
-USA,CO.Logan,Colorado,CO,Sterling,28301,Logan,8075
-USA,CO.Washington,Colorado,CO,Sterling,28301,Washington,8121
-USA,CO.Phillips,Colorado,CO,Sterling,28301,Phillips,8095
+USA,CO.Yuma,Colorado,CO,Sterling,28301,Yuma,08125
+USA,CO.Logan,Colorado,CO,Sterling,28301,Logan,08075
+USA,CO.Washington,Colorado,CO,Sterling,28301,Washington,08121
+USA,CO.Phillips,Colorado,CO,Sterling,28301,Phillips,08095
 USA,NE.Perkins,Nebraska,NE,Ogallala,28302,Perkins,31135
 USA,NE.Deuel,Nebraska,NE,Ogallala,28302,Deuel,31049
 USA,NE.Keith,Nebraska,NE,Ogallala,28302,Keith,31101
-USA,CO.Sedgwick,Colorado,CO,Ogallala,28302,Sedgwick,8115
+USA,CO.Sedgwick,Colorado,CO,Ogallala,28302,Sedgwick,08115
 USA,NE.Garden,Nebraska,NE,Oshkosh,28303,Garden,31069
 USA,NE.Cherry,Nebraska,NE,Valentine,28304,Cherry,31031
 USA,NE.Hooker,Nebraska,NE,Valentine,28304,Hooker,31091
@@ -2319,22 +2319,22 @@ USA,NE.Thomas,Nebraska,NE,Broken Bow,28305,Thomas,31171
 USA,NE.Lincoln,Nebraska,NE,North Platte,28306,Lincoln,31111
 USA,NE.McPherson,Nebraska,NE,North Platte,28306,McPherson,31117
 USA,NE.Logan,Nebraska,NE,North Platte,28306,Logan,31113
-USA,CO.ElPaso,Colorado,CO,Colorado Springs,28401,El Paso,8041
-USA,CO.Custer,Colorado,CO,Colorado Springs,28401,Custer,8027
-USA,CO.Fremont,Colorado,CO,Colorado Springs,28401,Fremont,8043
-USA,CO.Teller,Colorado,CO,Colorado Springs,28401,Teller,8119
-USA,CO.Lincoln,Colorado,CO,Limon,28402,Lincoln,8073
-USA,CO.Baca,Colorado,CO,Springfield,28501,Baca,8009
-USA,CO.Otero,Colorado,CO,Pueblo,28502,Otero,8089
-USA,CO.Crowley,Colorado,CO,Pueblo,28502,Crowley,8025
-USA,CO.Bent,Colorado,CO,Pueblo,28502,Bent,8011
-USA,CO.Pueblo,Colorado,CO,Pueblo,28502,Pueblo,8101
-USA,CO.Prowers,Colorado,CO,Pueblo,28502,Prowers,8099
-USA,CO.LasAnimas,Colorado,CO,Trinidad,28503,Las Animas,8071
-USA,CO.Huerfano,Colorado,CO,Trinidad,28503,Huerfano,8055
-USA,CO.KitCarson,Colorado,CO,Burlington,28504,Kit Carson,8063
-USA,CO.Kiowa,Colorado,CO,Burlington,28504,Kiowa,8061
-USA,CO.Cheyenne,Colorado,CO,Burlington,28504,Cheyenne,8017
+USA,CO.ElPaso,Colorado,CO,Colorado Springs,28401,El Paso,08041
+USA,CO.Custer,Colorado,CO,Colorado Springs,28401,Custer,08027
+USA,CO.Fremont,Colorado,CO,Colorado Springs,28401,Fremont,08043
+USA,CO.Teller,Colorado,CO,Colorado Springs,28401,Teller,08119
+USA,CO.Lincoln,Colorado,CO,Limon,28402,Lincoln,08073
+USA,CO.Baca,Colorado,CO,Springfield,28501,Baca,08009
+USA,CO.Otero,Colorado,CO,Pueblo,28502,Otero,08089
+USA,CO.Crowley,Colorado,CO,Pueblo,28502,Crowley,08025
+USA,CO.Bent,Colorado,CO,Pueblo,28502,Bent,08011
+USA,CO.Pueblo,Colorado,CO,Pueblo,28502,Pueblo,08101
+USA,CO.Prowers,Colorado,CO,Pueblo,28502,Prowers,08099
+USA,CO.LasAnimas,Colorado,CO,Trinidad,28503,Las Animas,08071
+USA,CO.Huerfano,Colorado,CO,Trinidad,28503,Huerfano,08055
+USA,CO.KitCarson,Colorado,CO,Burlington,28504,Kit Carson,08063
+USA,CO.Kiowa,Colorado,CO,Burlington,28504,Kiowa,08061
+USA,CO.Cheyenne,Colorado,CO,Burlington,28504,Cheyenne,08017
 USA,KS.Decatur,Kansas,KS,Oberlin,28601,Decatur,20039
 USA,KS.Rawlins,Kansas,KS,Oberlin,28601,Rawlins,20153
 USA,KS.Norton,Kansas,KS,Norton,28602,Norton,20137
@@ -2362,29 +2362,29 @@ USA,NE.Gosper,Nebraska,NE,Lexington,28609,Gosper,31073
 USA,NE.Frontier,Nebraska,NE,Lexington,28609,Frontier,31063
 USA,NE.Dawson,Nebraska,NE,Lexington,28609,Dawson,31047
 USA,NE.Furnas,Nebraska,NE,Lexington,28609,Furnas,31065
-USA,CO.Chaffee,Colorado,CO,Salida,28701,Chaffee,8015
-USA,CO.Summit,Colorado,CO,Glenwood Springs,28702,Summit,8117
-USA,CO.Eagle,Colorado,CO,Glenwood Springs,28702,Eagle,8037
-USA,CO.Pitkin,Colorado,CO,Glenwood Springs,28702,Pitkin,8097
-USA,CO.Garfield,Colorado,CO,Glenwood Springs,28702,Garfield,8045
-USA,CO.Lake,Colorado,CO,Glenwood Springs,28702,Lake,8065
-USA,CO.Grand,Colorado,CO,Granby,28703,Grand,8049
-USA,CO.Jackson,Colorado,CO,Laramie,28704,Jackson,8057
+USA,CO.Chaffee,Colorado,CO,Salida,28701,Chaffee,08015
+USA,CO.Summit,Colorado,CO,Glenwood Springs,28702,Summit,08117
+USA,CO.Eagle,Colorado,CO,Glenwood Springs,28702,Eagle,08037
+USA,CO.Pitkin,Colorado,CO,Glenwood Springs,28702,Pitkin,08097
+USA,CO.Garfield,Colorado,CO,Glenwood Springs,28702,Garfield,08045
+USA,CO.Lake,Colorado,CO,Glenwood Springs,28702,Lake,08065
+USA,CO.Grand,Colorado,CO,Granby,28703,Grand,08049
+USA,CO.Jackson,Colorado,CO,Laramie,28704,Jackson,08057
 USA,WY.Albany,Wyoming,WY,Laramie,28704,Albany,56001
-USA,CO.Morgan,Colorado,CO,Fort Collins,28800,Morgan,8087
-USA,CO.Weld,Colorado,CO,Fort Collins,28800,Weld,8123
-USA,CO.Larimer,Colorado,CO,Fort Collins,28800,Larimer,8069
-USA,CO.Broomfield,Colorado,CO,Denver,28900,,8014
-USA,CO.Douglas,Colorado,CO,Denver,28900,Douglas,8035
-USA,CO.Denver,Colorado,CO,Denver,28900,Denver,8031
-USA,CO.Arapahoe,Colorado,CO,Denver,28900,Arapahoe,8005
-USA,CO.Boulder,Colorado,CO,Denver,28900,Boulder,8013
-USA,CO.Adams,Colorado,CO,Denver,28900,Adams,8001
-USA,CO.Gilpin,Colorado,CO,Denver,28900,Gilpin,8047
-USA,CO.ClearCreek,Colorado,CO,Denver,28900,Clear Creek,8019
-USA,CO.Jefferson,Colorado,CO,Denver,28900,Jefferson,8059
-USA,CO.Elbert,Colorado,CO,Denver,28900,Elbert,8039
-USA,CO.Park,Colorado,CO,Denver,28900,Park,8093
+USA,CO.Morgan,Colorado,CO,Fort Collins,28800,Morgan,08087
+USA,CO.Weld,Colorado,CO,Fort Collins,28800,Weld,08123
+USA,CO.Larimer,Colorado,CO,Fort Collins,28800,Larimer,08069
+USA,CO.Broomfield,Colorado,CO,Denver,28900,,08014
+USA,CO.Douglas,Colorado,CO,Denver,28900,Douglas,08035
+USA,CO.Denver,Colorado,CO,Denver,28900,Denver,08031
+USA,CO.Arapahoe,Colorado,CO,Denver,28900,Arapahoe,08005
+USA,CO.Boulder,Colorado,CO,Denver,28900,Boulder,08013
+USA,CO.Adams,Colorado,CO,Denver,28900,Adams,08001
+USA,CO.Gilpin,Colorado,CO,Denver,28900,Gilpin,08047
+USA,CO.ClearCreek,Colorado,CO,Denver,28900,Clear Creek,08019
+USA,CO.Jefferson,Colorado,CO,Denver,28900,Jefferson,08059
+USA,CO.Elbert,Colorado,CO,Denver,28900,Elbert,08039
+USA,CO.Park,Colorado,CO,Denver,28900,Park,08093
 USA,KS.Barber,Kansas,KS,Pratt,29001,Barber,20007
 USA,KS.Pratt,Kansas,KS,Pratt,29001,Pratt,20151
 USA,KS.Kiowa,Kansas,KS,Pratt,29001,Kiowa,20097
@@ -2522,27 +2522,27 @@ USA,MO.Cedar,Missouri,MO,Center,29902,Cedar,29039
 USA,MO.Dade,Missouri,MO,Center,29902,Dade,29057
 USA,MO.Barton,Missouri,MO,Center,29902,Barton,29011
 USA,MO.Vernon,Missouri,MO,Center,29902,Vernon,29217
-USA,AR.Johnson,Arkansas,AR,Russellville,30000,Johnson,5071
-USA,AR.Logan,Arkansas,AR,Russellville,30000,Logan,5083
-USA,AR.Pope,Arkansas,AR,Russellville,30000,Pope,5115
-USA,AR.Yell,Arkansas,AR,Russellville,30000,Yell,5149
-USA,AR.Franklin,Arkansas,AR,Russellville,30000,Franklin,5047
+USA,AR.Johnson,Arkansas,AR,Russellville,30000,Johnson,05071
+USA,AR.Logan,Arkansas,AR,Russellville,30000,Logan,05083
+USA,AR.Pope,Arkansas,AR,Russellville,30000,Pope,05115
+USA,AR.Yell,Arkansas,AR,Russellville,30000,Yell,05149
+USA,AR.Franklin,Arkansas,AR,Russellville,30000,Franklin,05047
 USA,OK.Pittsburg,Oklahoma,OK,Fort Smith,30100,Pittsburg,40121
-USA,AR.Crawford,Arkansas,AR,Fort Smith,30100,Crawford,5033
+USA,AR.Crawford,Arkansas,AR,Fort Smith,30100,Crawford,05033
 USA,OK.LeFlore,Oklahoma,OK,Fort Smith,30100,Le Flore,40079
 USA,OK.Latimer,Oklahoma,OK,Fort Smith,30100,Latimer,40077
 USA,OK.Haskell,Oklahoma,OK,Fort Smith,30100,Haskell,40061
-USA,AR.Sebastian,Arkansas,AR,Fort Smith,30100,Sebastian,5131
-USA,AR.Scott,Arkansas,AR,Fort Smith,30100,Scott,5127
+USA,AR.Sebastian,Arkansas,AR,Fort Smith,30100,Sebastian,05131
+USA,AR.Scott,Arkansas,AR,Fort Smith,30100,Scott,05127
 USA,OK.Sequoyah,Oklahoma,OK,Fort Smith,30100,Sequoyah,40135
 USA,OK.Cherokee,Oklahoma,OK,Muskogee,30200,Cherokee,40021
 USA,OK.Adair,Oklahoma,OK,Muskogee,30200,Adair,40001
 USA,OK.McIntosh,Oklahoma,OK,Muskogee,30200,McIntosh,40091
 USA,OK.Muskogee,Oklahoma,OK,Muskogee,30200,Muskogee,40101
 USA,MO.McDonald,Missouri,MO,Fayetteville,30300,McDonald,29119
-USA,AR.Washington,Arkansas,AR,Fayetteville,30300,Washington,5143
-USA,AR.Benton,Arkansas,AR,Fayetteville,30300,Benton,5007
-USA,AR.Madison,Arkansas,AR,Fayetteville,30300,Madison,5087
+USA,AR.Washington,Arkansas,AR,Fayetteville,30300,Washington,05143
+USA,AR.Benton,Arkansas,AR,Fayetteville,30300,Benton,05007
+USA,AR.Madison,Arkansas,AR,Fayetteville,30300,Madison,05087
 USA,OK.Delaware,Oklahoma,OK,Fayetteville,30300,Delaware,40041
 USA,OK.Payne,Oklahoma,OK,Stillwater,30401,Payne,40119
 USA,OK.Noble,Oklahoma,OK,Stillwater,30401,Noble,40103
@@ -2845,9 +2845,9 @@ USA,TX.Upshur,Texas,TX,Longview,33400,Upshur,48459
 USA,TX.Harrison,Texas,TX,Longview,33400,Harrison,48203
 USA,TX.Marion,Texas,TX,Longview,33400,Marion,48315
 USA,TX.Panola,Texas,TX,Longview,33400,Panola,48365
-USA,AR.Miller,Arkansas,AR,Texarkana,33500,Miller,5091
+USA,AR.Miller,Arkansas,AR,Texarkana,33500,Miller,05091
 USA,TX.Morris,Texas,TX,Texarkana,33500,Morris,48343
-USA,AR.LittleRiver,Arkansas,AR,Texarkana,33500,Little River,5081
+USA,AR.LittleRiver,Arkansas,AR,Texarkana,33500,Little River,05081
 USA,TX.Bowie,Texas,TX,Texarkana,33500,Bowie,48037
 USA,TX.Camp,Texas,TX,Texarkana,33500,Camp,48063
 USA,TX.Franklin,Texas,TX,Texarkana,33500,Franklin,48159
@@ -2890,63 +2890,63 @@ USA,OK.Coal,Oklahoma,OK,Ada,33901,Coal,40029
 USA,OK.Bryan,Oklahoma,OK,Sherman,33902,Bryan,40013
 USA,TX.Grayson,Texas,TX,Sherman,33902,Grayson,48181
 USA,TX.Fannin,Texas,TX,Sherman,33902,Fannin,48147
-USA,AR.Nevada,Arkansas,AR,Hot Springs,34001,Nevada,5099
-USA,AR.HotSpring,Arkansas,AR,Hot Springs,34001,Hot Spring,5059
-USA,AR.Hempstead,Arkansas,AR,Hot Springs,34001,Hempstead,5057
-USA,AR.Howard,Arkansas,AR,Hot Springs,34001,Howard,5061
-USA,AR.Clark,Arkansas,AR,Hot Springs,34001,Clark,5019
-USA,AR.Montgomery,Arkansas,AR,Hot Springs,34001,Montgomery,5097
-USA,AR.Garland,Arkansas,AR,Hot Springs,34001,Garland,5051
-USA,AR.Pike,Arkansas,AR,Hot Springs,34001,Pike,5109
-USA,AR.Polk,Arkansas,AR,Idabel,34002,Polk,5113
-USA,AR.Sevier,Arkansas,AR,Idabel,34002,Sevier,5133
+USA,AR.Nevada,Arkansas,AR,Hot Springs,34001,Nevada,05099
+USA,AR.HotSpring,Arkansas,AR,Hot Springs,34001,Hot Spring,05059
+USA,AR.Hempstead,Arkansas,AR,Hot Springs,34001,Hempstead,05057
+USA,AR.Howard,Arkansas,AR,Hot Springs,34001,Howard,05061
+USA,AR.Clark,Arkansas,AR,Hot Springs,34001,Clark,05019
+USA,AR.Montgomery,Arkansas,AR,Hot Springs,34001,Montgomery,05097
+USA,AR.Garland,Arkansas,AR,Hot Springs,34001,Garland,05051
+USA,AR.Pike,Arkansas,AR,Hot Springs,34001,Pike,05109
+USA,AR.Polk,Arkansas,AR,Idabel,34002,Polk,05113
+USA,AR.Sevier,Arkansas,AR,Idabel,34002,Sevier,05133
 USA,OK.McCurtain,Oklahoma,OK,Idabel,34002,McCurtain,40089
 USA,OK.Choctaw,Oklahoma,OK,Idabel,34002,Choctaw,40023
 USA,OK.Pushmataha,Oklahoma,OK,Idabel,34002,Pushmataha,40127
-USA,AK.AleutiansEastBorough,Alaska,AK,Sand Point,34101,Aleutians East,2013
-USA,AK.Matanuska-SusitnaBorough,Alaska,AK,Anchorage,34102,Matanuska-Susitna,2170
-USA,AK.KenaiPeninsula,Alaska,AK,Anchorage,34102,Kenai Peninsula,2122
-USA,AK.Anchorage,Alaska,AK,Anchorage,34102,Anchorage,2020
-USA,AK.AnchorageMunicipality,Alaska,AK,Anchorage,34102,Anchorage,2020
-USA,AK.KenaiPeninsulaBorough,Alaska,AK,Anchorage,34102,Kenai Peninsula,2122
-USA,AK.Matanuska-Susitna,Alaska,AK,Anchorage,34102,Matanuska-Susitna,2170
-USA,AK.Valdez-Cordova,Alaska,AK,Valdez,34103,Valdez-Cordova,2261
-USA,AK.Valdez-CordovaCensusArea,Alaska,AK,Valdez,34103,Valdez-Cordova,2261
-USA,AK.BristolBayBorough,Alaska,AK,Bristol Bay,34104,Bristol Bay,2060
-USA,AK.NorthwestArcticBorough,Alaska,AK,Kotzebue,34105,Northwest Arctic,2188
-USA,AK.NorthwestArctic,Alaska,AK,Kotzebue,34105,Northwest Arctic,2188
-USA,AK.PetersburgBorough,Alaska,AK,Nome,34106,,2195
-USA,AK.Petersburg,Alaska,AK,Nome,34106,,2195
-USA,AK.Nome,Alaska,AK,Nome,34106,Nome,2180
-USA,AK.NomeCensusArea,Alaska,AK,Nome,34106,Nome,2180
-USA,AK.LakeandPeninsulaBorough,Alaska,AK,Dillingham,34107,Lake and Peninsula,2164
-USA,AK.DillinghamCensusArea,Alaska,AK,Dillingham,34107,Dillingham,2070
-USA,AK.Dillingham,Alaska,AK,Dillingham,34107,Dillingham,2070
-USA,AK.KodiakIsland,Alaska,AK,Kodiak,34108,Kodiak Island,2150
-USA,AK.KodiakIslandBorough,Alaska,AK,Kodiak,34108,Kodiak Island,2150
-USA,AK.Juneau,Alaska,AK,Juneau,34109,Juneau,2110
-USA,AK.HainesBorough,Alaska,AK,Juneau,34109,Haines,2100
-USA,AK.JuneauCityandBorough,Alaska,AK,Juneau,34109,Juneau,2110
-USA,AK.Haines,Alaska,AK,Juneau,34109,Haines,2100
-USA,AK.SitkaCityandBorough,Alaska,AK,Sitka,34110,Sitka,2220
-USA,AK.Sitka,Alaska,AK,Sitka,34110,Sitka,2220
-USA,AK.PrinceofWales-Hyder,Alaska,AK,Ketchikan,34111,,2198
-USA,AK.PrinceofWales-HyderCensusArea,Alaska,AK,Ketchikan,34111,,2198
-USA,AK.Skagway,Alaska,AK,Ketchikan,34111,,2230
-USA,AK.Wrangell,Alaska,AK,Ketchikan,34111,,2275
-USA,AK.KetchikanGateway,Alaska,AK,Ketchikan,34111,Ketchikan Gateway,2130
-USA,AK.KetchikanGatewayBorough,Alaska,AK,Ketchikan,34111,Ketchikan Gateway,2130
-USA,AK.WadeHamptonCensusArea,Alaska,AK,Bethel,34112,Wade Hampton,2270
-USA,AK.BethelCensusArea,Alaska,AK,Bethel,34112,Bethel,2050
-USA,AK.NorthSlopeBorough,Alaska,AK,Barrow,34113,North Slope,2185
-USA,AK.AleutiansWestCensusArea,Alaska,AK,Unalaska,34114,Aleutians West,2016
-USA,AK.Denali,Alaska,AK,Fairbanks,34115,Denali,2068
-USA,AK.Yukon-Koyukuk,Alaska,AK,Fairbanks,34115,Yukon-Koyukuk,2290
-USA,AK.FairbanksNorthStarBorough,Alaska,AK,Fairbanks,34115,Fairbanks North Star,2090
-USA,AK.FairbanksNorthStar,Alaska,AK,Fairbanks,34115,Fairbanks North Star,2090
-USA,AK.SoutheastFairbanksCensusArea,Alaska,AK,Fairbanks,34115,Southeast Fairbanks,2240
-USA,AK.SoutheastFairbanks,Alaska,AK,Fairbanks,34115,Southeast Fairbanks,2240
-USA,AK.Yukon-KoyukukCensusArea,Alaska,AK,Fairbanks,34115,Yukon-Koyukuk,2290
+USA,AK.AleutiansEastBorough,Alaska,AK,Sand Point,34101,Aleutians East,02013
+USA,AK.Matanuska-SusitnaBorough,Alaska,AK,Anchorage,34102,Matanuska-Susitna,02170
+USA,AK.KenaiPeninsula,Alaska,AK,Anchorage,34102,Kenai Peninsula,02122
+USA,AK.Anchorage,Alaska,AK,Anchorage,34102,Anchorage,02020
+USA,AK.AnchorageMunicipality,Alaska,AK,Anchorage,34102,Anchorage,02020
+USA,AK.KenaiPeninsulaBorough,Alaska,AK,Anchorage,34102,Kenai Peninsula,02122
+USA,AK.Matanuska-Susitna,Alaska,AK,Anchorage,34102,Matanuska-Susitna,02170
+USA,AK.Valdez-Cordova,Alaska,AK,Valdez,34103,Valdez-Cordova,02261
+USA,AK.Valdez-CordovaCensusArea,Alaska,AK,Valdez,34103,Valdez-Cordova,02261
+USA,AK.BristolBayBorough,Alaska,AK,Bristol Bay,34104,Bristol Bay,02060
+USA,AK.NorthwestArcticBorough,Alaska,AK,Kotzebue,34105,Northwest Arctic,02188
+USA,AK.NorthwestArctic,Alaska,AK,Kotzebue,34105,Northwest Arctic,02188
+USA,AK.PetersburgBorough,Alaska,AK,Nome,34106,,02195
+USA,AK.Petersburg,Alaska,AK,Nome,34106,,02195
+USA,AK.Nome,Alaska,AK,Nome,34106,Nome,02180
+USA,AK.NomeCensusArea,Alaska,AK,Nome,34106,Nome,02180
+USA,AK.LakeandPeninsulaBorough,Alaska,AK,Dillingham,34107,Lake and Peninsula,02164
+USA,AK.DillinghamCensusArea,Alaska,AK,Dillingham,34107,Dillingham,02070
+USA,AK.Dillingham,Alaska,AK,Dillingham,34107,Dillingham,02070
+USA,AK.KodiakIsland,Alaska,AK,Kodiak,34108,Kodiak Island,02150
+USA,AK.KodiakIslandBorough,Alaska,AK,Kodiak,34108,Kodiak Island,02150
+USA,AK.Juneau,Alaska,AK,Juneau,34109,Juneau,02110
+USA,AK.HainesBorough,Alaska,AK,Juneau,34109,Haines,02100
+USA,AK.JuneauCityandBorough,Alaska,AK,Juneau,34109,Juneau,02110
+USA,AK.Haines,Alaska,AK,Juneau,34109,Haines,02100
+USA,AK.SitkaCityandBorough,Alaska,AK,Sitka,34110,Sitka,02220
+USA,AK.Sitka,Alaska,AK,Sitka,34110,Sitka,02220
+USA,AK.PrinceofWales-Hyder,Alaska,AK,Ketchikan,34111,,02198
+USA,AK.PrinceofWales-HyderCensusArea,Alaska,AK,Ketchikan,34111,,02198
+USA,AK.Skagway,Alaska,AK,Ketchikan,34111,,02230
+USA,AK.Wrangell,Alaska,AK,Ketchikan,34111,,02275
+USA,AK.KetchikanGateway,Alaska,AK,Ketchikan,34111,Ketchikan Gateway,02130
+USA,AK.KetchikanGatewayBorough,Alaska,AK,Ketchikan,34111,Ketchikan Gateway,02130
+USA,AK.WadeHamptonCensusArea,Alaska,AK,Bethel,34112,Wade Hampton,02270
+USA,AK.BethelCensusArea,Alaska,AK,Bethel,34112,Bethel,02050
+USA,AK.NorthSlopeBorough,Alaska,AK,Barrow,34113,North Slope,02185
+USA,AK.AleutiansWestCensusArea,Alaska,AK,Unalaska,34114,Aleutians West,02016
+USA,AK.Denali,Alaska,AK,Fairbanks,34115,Denali,02068
+USA,AK.Yukon-Koyukuk,Alaska,AK,Fairbanks,34115,Yukon-Koyukuk,02290
+USA,AK.FairbanksNorthStarBorough,Alaska,AK,Fairbanks,34115,Fairbanks North Star,02090
+USA,AK.FairbanksNorthStar,Alaska,AK,Fairbanks,34115,Fairbanks North Star,02090
+USA,AK.SoutheastFairbanksCensusArea,Alaska,AK,Fairbanks,34115,Southeast Fairbanks,02240
+USA,AK.SoutheastFairbanks,Alaska,AK,Fairbanks,34115,Southeast Fairbanks,02240
+USA,AK.Yukon-KoyukukCensusArea,Alaska,AK,Fairbanks,34115,Yukon-Koyukuk,02290
 USA,MT.Blaine,Montana,MT,Havre,34201,Blaine,30005
 USA,MT.Liberty,Montana,MT,Havre,34201,Liberty,30051
 USA,MT.Hill,Montana,MT,Havre,34201,Hill,30041
@@ -3021,12 +3021,12 @@ USA,NM.RioArriba,New Mexico,NM,Santa Fe,34802,Rio Arriba,35039
 USA,NM.Quay,New Mexico,NM,Tucumcari,34803,Quay,35037
 USA,NM.Harding,New Mexico,NM,Tucumcari,34803,Harding,35021
 USA,NM.Union,New Mexico,NM,Clayton,34804,Union,35059
-USA,CO.Alamosa,Colorado,CO,Alamosa,34805,Alamosa,8003
-USA,CO.RioGrande,Colorado,CO,Alamosa,34805,Rio Grande,8105
-USA,CO.Conejos,Colorado,CO,Alamosa,34805,Conejos,8021
-USA,CO.Mineral,Colorado,CO,Alamosa,34805,Mineral,8079
-USA,CO.Saguache,Colorado,CO,Alamosa,34805,Saguache,8109
-USA,CO.Costilla,Colorado,CO,Alamosa,34805,Costilla,8023
+USA,CO.Alamosa,Colorado,CO,Alamosa,34805,Alamosa,08003
+USA,CO.RioGrande,Colorado,CO,Alamosa,34805,Rio Grande,08105
+USA,CO.Conejos,Colorado,CO,Alamosa,34805,Conejos,08021
+USA,CO.Mineral,Colorado,CO,Alamosa,34805,Mineral,08079
+USA,CO.Saguache,Colorado,CO,Alamosa,34805,Saguache,08109
+USA,CO.Costilla,Colorado,CO,Alamosa,34805,Costilla,08023
 USA,NM.Sandoval,New Mexico,NM,Albuquerque,34901,Sandoval,35043
 USA,NM.Bernalillo,New Mexico,NM,Albuquerque,34901,Bernalillo,35001
 USA,NM.Torrance,New Mexico,NM,Albuquerque,34901,Torrance,35057
@@ -3034,34 +3034,34 @@ USA,NM.Cibola,New Mexico,NM,Albuquerque,34901,Cibola,35006
 USA,NM.Valencia,New Mexico,NM,Albuquerque,34901,Valencia,35061
 USA,NM.Socorro,New Mexico,NM,Socorro,34902,Socorro,35053
 USA,NM.Catron,New Mexico,NM,Socorro,34902,Catron,35003
-USA,AZ.Maricopa,Arizona,AZ,Phoenix,35001,Maricopa,4013
-USA,AZ.Pinal,Arizona,AZ,Phoenix,35001,Pinal,4021
-USA,AZ.Gila,Arizona,AZ,Phoenix,35001,Gila,4007
-USA,AZ.Graham,Arizona,AZ,Safford,35002,Graham,4009
-USA,AZ.Greenlee,Arizona,AZ,Safford,35002,Greenlee,4011
-USA,AZ.SantaCruz,Arizona,AZ,Tucson,35100,Santa Cruz,4023
-USA,AZ.Cochise,Arizona,AZ,Tucson,35100,Cochise,4003
-USA,AZ.Pima,Arizona,AZ,Tucson,35100,Pima,4019
-USA,CO.Delta,Colorado,CO,Grand Junction,35201,Delta,8029
-USA,CO.Montrose,Colorado,CO,Grand Junction,35201,Montrose,8085
-USA,CO.SanMiguel,Colorado,CO,Grand Junction,35201,San Miguel,8113
-USA,CO.Mesa,Colorado,CO,Grand Junction,35201,Mesa,8077
-USA,CO.Ouray,Colorado,CO,Grand Junction,35201,Ouray,8091
-USA,CO.Gunnison,Colorado,CO,Gunnison,35202,Gunnison,8051
-USA,CO.Hinsdale,Colorado,CO,Gunnison,35202,Hinsdale,8053
-USA,CO.LaPlata,Colorado,CO,Farmington,35300,La Plata,8067
-USA,CO.SanJuan,Colorado,CO,Farmington,35300,San Juan,8111
-USA,CO.Archuleta,Colorado,CO,Farmington,35300,Archuleta,8007
+USA,AZ.Maricopa,Arizona,AZ,Phoenix,35001,Maricopa,04013
+USA,AZ.Pinal,Arizona,AZ,Phoenix,35001,Pinal,04021
+USA,AZ.Gila,Arizona,AZ,Phoenix,35001,Gila,04007
+USA,AZ.Graham,Arizona,AZ,Safford,35002,Graham,04009
+USA,AZ.Greenlee,Arizona,AZ,Safford,35002,Greenlee,04011
+USA,AZ.SantaCruz,Arizona,AZ,Tucson,35100,Santa Cruz,04023
+USA,AZ.Cochise,Arizona,AZ,Tucson,35100,Cochise,04003
+USA,AZ.Pima,Arizona,AZ,Tucson,35100,Pima,04019
+USA,CO.Delta,Colorado,CO,Grand Junction,35201,Delta,08029
+USA,CO.Montrose,Colorado,CO,Grand Junction,35201,Montrose,08085
+USA,CO.SanMiguel,Colorado,CO,Grand Junction,35201,San Miguel,08113
+USA,CO.Mesa,Colorado,CO,Grand Junction,35201,Mesa,08077
+USA,CO.Ouray,Colorado,CO,Grand Junction,35201,Ouray,08091
+USA,CO.Gunnison,Colorado,CO,Gunnison,35202,Gunnison,08051
+USA,CO.Hinsdale,Colorado,CO,Gunnison,35202,Hinsdale,08053
+USA,CO.LaPlata,Colorado,CO,Farmington,35300,La Plata,08067
+USA,CO.SanJuan,Colorado,CO,Farmington,35300,San Juan,08111
+USA,CO.Archuleta,Colorado,CO,Farmington,35300,Archuleta,08007
 USA,NM.SanJuan,New Mexico,NM,Farmington,35300,San Juan,35045
-USA,AZ.Coconino,Arizona,AZ,Flagstaff,35401,Coconino,4005
-USA,AZ.Yavapai,Arizona,AZ,Flagstaff,35401,Yavapai,4025
+USA,AZ.Coconino,Arizona,AZ,Flagstaff,35401,Coconino,04005
+USA,AZ.Yavapai,Arizona,AZ,Flagstaff,35401,Yavapai,04025
 USA,UT.Kane,Utah,UT,Flagstaff,35401,Kane,49025
-USA,CO.Montezuma,Colorado,CO,Cortez,35402,Montezuma,8083
-USA,CO.Dolores,Colorado,CO,Cortez,35402,Dolores,8033
+USA,CO.Montezuma,Colorado,CO,Cortez,35402,Montezuma,08083
+USA,CO.Dolores,Colorado,CO,Cortez,35402,Dolores,08033
 USA,UT.SanJuan,Utah,UT,Cortez,35402,San Juan,49037
-USA,AZ.Navajo,Arizona,AZ,Gallup,35500,Navajo,4017
+USA,AZ.Navajo,Arizona,AZ,Gallup,35500,Navajo,04017
 USA,NM.McKinley,New Mexico,NM,Gallup,35500,McKinley,35031
-USA,AZ.Apache,Arizona,AZ,Gallup,35500,Apache,4001
+USA,AZ.Apache,Arizona,AZ,Gallup,35500,Apache,04001
 USA,HI.Hawaii,Hawaii,HI,Hawaii,35600,Hawaii,15001
 USA,ID.Lincoln,Idaho,ID,Twin Falls,35701,Lincoln,16063
 USA,ID.Blaine,Idaho,ID,Twin Falls,35701,Blaine,16013
@@ -3120,9 +3120,9 @@ USA,ID.Custer,Idaho,ID,Salmon,36302,Custer,16037
 USA,ID.Lemhi,Idaho,ID,Salmon,36302,Lemhi,16059
 USA,ID.Teton,Idaho,ID,Jackson,36303,Teton,16081
 USA,WY.Teton,Wyoming,WY,Jackson,36303,Teton,56039
-USA,CO.Routt,Colorado,CO,Steamboat Springs,36401,Routt,8107
-USA,CO.RioBlanco,Colorado,CO,Steamboat Springs,36401,Rio Blanco,8103
-USA,CO.Moffat,Colorado,CO,Steamboat Springs,36401,Moffat,8081
+USA,CO.Routt,Colorado,CO,Steamboat Springs,36401,Routt,08107
+USA,CO.RioBlanco,Colorado,CO,Steamboat Springs,36401,Rio Blanco,08103
+USA,CO.Moffat,Colorado,CO,Steamboat Springs,36401,Moffat,08081
 USA,UT.Uintah,Utah,UT,Vernal,36402,Uintah,49047
 USA,UT.Duchesne,Utah,UT,Vernal,36402,Duchesne,49013
 USA,ID.BearLake,Idaho,ID,Soda Springs,36403,Bear Lake,16007
@@ -3133,94 +3133,94 @@ USA,WY.Sublette,Wyoming,WY,Rock Springs,36404,Sublette,56035
 USA,WY.Sweetwater,Wyoming,WY,Rock Springs,36404,Sweetwater,56037
 USA,WY.Uinta,Wyoming,WY,Rock Springs,36404,Uinta,56041
 USA,UT.Daggett,Utah,UT,Rock Springs,36404,Daggett,49009
-USA,CA.Siskiyou,California,CA,Klamath Falls,36501,Siskiyou,6093
-USA,CA.Modoc,California,CA,Klamath Falls,36501,Modoc,6049
+USA,CA.Siskiyou,California,CA,Klamath Falls,36501,Siskiyou,06093
+USA,CA.Modoc,California,CA,Klamath Falls,36501,Modoc,06049
 USA,OR.Klamath,Oregon,OR,Klamath Falls,36501,Klamath,41035
-USA,CA.Lassen,California,CA,Klamath Falls,36501,Lassen,6035
+USA,CA.Lassen,California,CA,Klamath Falls,36501,Lassen,06035
 USA,OR.Harney,Oregon,OR,Burns,36502,Harney,41025
 USA,OR.Lake,Oregon,OR,Lakeview,36503,Lake,41037
-USA,CA.Shasta,California,CA,Redding,36600,Shasta,6089
-USA,CA.Tehama,California,CA,Redding,36600,Tehama,6103
-USA,CA.Humboldt,California,CA,Eureka,36700,Humboldt,6023
-USA,CA.Trinity,California,CA,Eureka,36700,Trinity,6105
+USA,CA.Shasta,California,CA,Redding,36600,Shasta,06089
+USA,CA.Tehama,California,CA,Redding,36600,Tehama,06103
+USA,CA.Humboldt,California,CA,Eureka,36700,Humboldt,06023
+USA,CA.Trinity,California,CA,Eureka,36700,Trinity,06105
 USA,OR.Jackson,Oregon,OR,Medford,36800,Jackson,41029
 USA,OR.Josephine,Oregon,OR,Medford,36800,Josephine,41033
 USA,OR.Curry,Oregon,OR,Crescent City,36901,Curry,41015
-USA,CA.DelNorte,California,CA,Crescent City,36901,Del Norte,6015
+USA,CA.DelNorte,California,CA,Crescent City,36901,Del Norte,06015
 USA,OR.Coos,Oregon,OR,Roseburg,36902,Coos,41011
 USA,OR.Douglas,Oregon,OR,Roseburg,36902,Douglas,41019
-USA,CA.Tuolumne,California,CA,Modesto,37000,Tuolumne,6109
-USA,CA.Merced,California,CA,Modesto,37000,Merced,6047
-USA,CA.Mariposa,California,CA,Modesto,37000,Mariposa,6043
-USA,CA.Stanislaus,California,CA,Modesto,37000,Stanislaus,6099
-USA,CA.Kern,California,CA,Bakersfield,37100,Kern,6029
-USA,CA.Madera,California,CA,Fresno,37200,Madera,6039
-USA,CA.Fresno,California,CA,Fresno,37200,Fresno,6019
-USA,CA.Tulare,California,CA,Fresno,37200,Tulare,6107
-USA,CA.Kings,California,CA,Fresno,37200,Kings,6031
-USA,CA.Glenn,California,CA,Chico,37300,Glenn,6021
-USA,CA.Sutter,California,CA,Chico,37300,Sutter,6101
-USA,CA.Colusa,California,CA,Chico,37300,Colusa,6011
-USA,CA.Butte,California,CA,Chico,37300,Butte,6007
-USA,CA.Yuba,California,CA,Chico,37300,Yuba,6115
-USA,CA.ElDorado,California,CA,Sacramento,37400,El Dorado,6017
-USA,CA.Sacramento,California,CA,Sacramento,37400,Sacramento,6067
-USA,CA.Alpine,California,CA,Sacramento,37400,Alpine,6003
-USA,CA.Yolo,California,CA,Sacramento,37400,Yolo,6113
-USA,CA.Nevada,California,CA,Sacramento,37400,Nevada,6057
-USA,CA.Calaveras,California,CA,Sacramento,37400,Calaveras,6009
+USA,CA.Tuolumne,California,CA,Modesto,37000,Tuolumne,06109
+USA,CA.Merced,California,CA,Modesto,37000,Merced,06047
+USA,CA.Mariposa,California,CA,Modesto,37000,Mariposa,06043
+USA,CA.Stanislaus,California,CA,Modesto,37000,Stanislaus,06099
+USA,CA.Kern,California,CA,Bakersfield,37100,Kern,06029
+USA,CA.Madera,California,CA,Fresno,37200,Madera,06039
+USA,CA.Fresno,California,CA,Fresno,37200,Fresno,06019
+USA,CA.Tulare,California,CA,Fresno,37200,Tulare,06107
+USA,CA.Kings,California,CA,Fresno,37200,Kings,06031
+USA,CA.Glenn,California,CA,Chico,37300,Glenn,06021
+USA,CA.Sutter,California,CA,Chico,37300,Sutter,06101
+USA,CA.Colusa,California,CA,Chico,37300,Colusa,06011
+USA,CA.Butte,California,CA,Chico,37300,Butte,06007
+USA,CA.Yuba,California,CA,Chico,37300,Yuba,06115
+USA,CA.ElDorado,California,CA,Sacramento,37400,El Dorado,06017
+USA,CA.Sacramento,California,CA,Sacramento,37400,Sacramento,06067
+USA,CA.Alpine,California,CA,Sacramento,37400,Alpine,06003
+USA,CA.Yolo,California,CA,Sacramento,37400,Yolo,06113
+USA,CA.Nevada,California,CA,Sacramento,37400,Nevada,06057
+USA,CA.Calaveras,California,CA,Sacramento,37400,Calaveras,06009
 USA,NV.Douglas,Nevada,NV,Sacramento,37400,Douglas,32005
-USA,CA.Amador,California,CA,Sacramento,37400,Amador,6005
-USA,CA.SanJoaquin,California,CA,Sacramento,37400,San Joaquin,6077
-USA,CA.Placer,California,CA,Sacramento,37400,Placer,6061
-USA,CA.Stanford,California,CA,San Jose,37500,Santa Clara,6085
-USA,CA.SanBenito,California,CA,San Jose,37500,San Benito,6069
-USA,CA.Monterey,California,CA,San Jose,37500,Monterey,6053
-USA,CA.SantaCruz,California,CA,San Jose,37500,Santa Cruz,6087
-USA,CA.SantaClara,California,CA,San Jose,37500,Santa Clara,6085
+USA,CA.Amador,California,CA,Sacramento,37400,Amador,06005
+USA,CA.SanJoaquin,California,CA,Sacramento,37400,San Joaquin,06077
+USA,CA.Placer,California,CA,Sacramento,37400,Placer,06061
+USA,CA.Stanford,California,CA,San Jose,37500,Santa Clara,06085
+USA,CA.SanBenito,California,CA,San Jose,37500,San Benito,06069
+USA,CA.Monterey,California,CA,San Jose,37500,Monterey,06053
+USA,CA.SantaCruz,California,CA,San Jose,37500,Santa Cruz,06087
+USA,CA.SantaClara,California,CA,San Jose,37500,Santa Clara,06085
 USA,NV.WhitePine,Nevada,NV,Elko,37601,White Pine,32033
 USA,NV.Eureka,Nevada,NV,Elko,37601,Eureka,32011
 USA,NV.Lander,Nevada,NV,Elko,37601,Lander,32015
 USA,NV.Elko,Nevada,NV,Elko,37601,Elko,32007
 USA,NV.Humboldt,Nevada,NV,Winnemucca,37602,Humboldt,32013
 USA,NV.Pershing,Nevada,NV,Winnemucca,37602,Pershing,32027
-USA,CA.Plumas,California,CA,Portola,37603,Plumas,6063
-USA,CA.Sierra,California,CA,Portola,37603,Sierra,6091
+USA,CA.Plumas,California,CA,Portola,37603,Plumas,06063
+USA,CA.Sierra,California,CA,Portola,37603,Sierra,06091
 USA,NV.Washoe,Nevada,NV,Reno,37604,Washoe,32031
 USA,NV.Storey,Nevada,NV,Reno,37604,Storey,32029
 USA,NV.Lyon,Nevada,NV,Reno,37604,Lyon,32019
 USA,NV.Churchill,Nevada,NV,Reno,37604,Churchill,32001
 USA,NV.CarsonCity,Nevada,NV,Reno,37604,Carson City,32510
 USA,NV.CarsonCity(City),Nevada,NV,Reno,37604,Carson City,32510
-USA,CA.Sonoma,California,CA,Santa Rosa,37700,Sonoma,6097
-USA,CA.Lake,California,CA,Santa Rosa,37700,Lake,6033
-USA,CA.Mendocino,California,CA,Santa Rosa,37700,Mendocino,6045
-USA,CA.Solano,California,CA,San Francisco,37800,Solano,6095
-USA,CA.ContraCosta,California,CA,San Francisco,37800,Contra Costa,6013
-USA,CA.SanFrancisco,California,CA,San Francisco,37800,San Francisco,6075
-USA,CA.Alameda,California,CA,San Francisco,37800,Alameda,6001
-USA,CA.SanMateo,California,CA,San Francisco,37800,San Mateo,6081
-USA,CA.Napa,California,CA,San Francisco,37800,Napa,6055
-USA,CA.Marin,California,CA,San Francisco,37800,Marin,6041
+USA,CA.Sonoma,California,CA,Santa Rosa,37700,Sonoma,06097
+USA,CA.Lake,California,CA,Santa Rosa,37700,Lake,06033
+USA,CA.Mendocino,California,CA,Santa Rosa,37700,Mendocino,06045
+USA,CA.Solano,California,CA,San Francisco,37800,Solano,06095
+USA,CA.ContraCosta,California,CA,San Francisco,37800,Contra Costa,06013
+USA,CA.SanFrancisco,California,CA,San Francisco,37800,San Francisco,06075
+USA,CA.Alameda,California,CA,San Francisco,37800,Alameda,06001
+USA,CA.SanMateo,California,CA,San Francisco,37800,San Mateo,06081
+USA,CA.Napa,California,CA,San Francisco,37800,Napa,06055
+USA,CA.Marin,California,CA,San Francisco,37800,Marin,06041
 USA,NV.Nye,Nevada,NV,Las Vegas,37901,Nye,32023
 USA,NV.Clark,Nevada,NV,Las Vegas,37901,Clark,32003
 USA,NV.Lincoln,Nevada,NV,Las Vegas,37901,Lincoln,32017
-USA,AZ.Mohave,Arizona,AZ,Las Vegas,37901,Mohave,4015
+USA,AZ.Mohave,Arizona,AZ,Las Vegas,37901,Mohave,04015
 USA,NV.Esmeralda,Nevada,NV,Las Vegas,37901,Esmeralda,32009
 USA,NV.Mineral,Nevada,NV,Mineral,37902,Mineral,32021
-USA,CA.Mono,California,CA,Mammoth Lakes,37903,Mono,6051
-USA,CA.Inyo,California,CA,Mammoth Lakes,37903,Inyo,6027
-USA,CA.SanDiego,California,CA,San Diego,38000,San Diego,6073
-USA,AZ.Yuma,Arizona,AZ,Yuma,38100,Yuma,4027
-USA,CA.Imperial,California,CA,Yuma,38100,Imperial,6025
-USA,CA.SanLuisObispo,California,CA,Santa Barbara,38200,San Luis Obispo,6079
-USA,CA.SantaBarbara,California,CA,Santa Barbara,38200,Santa Barbara,6083
-USA,CA.Riverside,California,CA,Los Angeles,38300,Riverside,6065
-USA,CA.Orange,California,CA,Los Angeles,38300,Orange,6059
-USA,CA.SanBernardino,California,CA,Los Angeles,38300,San Bernardino,6071
-USA,CA.Ventura,California,CA,Los Angeles,38300,Ventura,6111
-USA,CA.LosAngeles,California,CA,Los Angeles,38300,Los Angeles,6037
-USA,AZ.LaPaz,Arizona,AZ,Los Angeles,38300,La Paz,4012
+USA,CA.Mono,California,CA,Mammoth Lakes,37903,Mono,06051
+USA,CA.Inyo,California,CA,Mammoth Lakes,37903,Inyo,06027
+USA,CA.SanDiego,California,CA,San Diego,38000,San Diego,06073
+USA,AZ.Yuma,Arizona,AZ,Yuma,38100,Yuma,04027
+USA,CA.Imperial,California,CA,Yuma,38100,Imperial,06025
+USA,CA.SanLuisObispo,California,CA,Santa Barbara,38200,San Luis Obispo,06079
+USA,CA.SantaBarbara,California,CA,Santa Barbara,38200,Santa Barbara,06083
+USA,CA.Riverside,California,CA,Los Angeles,38300,Riverside,06065
+USA,CA.Orange,California,CA,Los Angeles,38300,Orange,06059
+USA,CA.SanBernardino,California,CA,Los Angeles,38300,San Bernardino,06071
+USA,CA.Ventura,California,CA,Los Angeles,38300,Ventura,06111
+USA,CA.LosAngeles,California,CA,Los Angeles,38300,Los Angeles,06037
+USA,AZ.LaPaz,Arizona,AZ,Los Angeles,38300,La Paz,04012
 USA,ID.NezPerce,Idaho,ID,Lewiston,38401,Nez Perce,16069
 USA,ID.Clearwater,Idaho,ID,Lewiston,38401,Clearwater,16035
 USA,WA.Asotin,Washington,WA,Lewiston,38401,Asotin,53003
