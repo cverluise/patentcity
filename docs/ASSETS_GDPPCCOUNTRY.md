@@ -16,8 +16,7 @@ AFG, AGO, ALB, ARE, ARG, ARM, AUS, AUT, AZE, BDI, BEL, BEN, BFA, BGD, BGR, BHR, 
 
 Variable|Description    | Type
 ---|---|---
-country         | Country       | `str`
-country_code    | Country code  | `str`
+countrycode    | Country code  | `str`
 year            | Year          | `int`
 gdppc           | GDP per capita (in 2011 USD) | `float`
 pop | population (in thousand people) | `float'
