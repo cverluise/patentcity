@@ -2,7 +2,7 @@
 
 File |Source
 ---|---
-[language_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets)| [Mayer, T. & Zignago, S. (2011); Notes on CEPII’s distances measures : the GeoDist Database; CEPII Working Paper 2011-25](http://www.cepii.fr/CEPII/fr/bdd_modele/presentation.asp?id=6)
+[gravity_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets)| [Mayer, T. & Zignago, S. (2011); Notes on CEPII’s distances measures : the GeoDist Database; CEPII Working Paper 2011-25](http://www.cepii.fr/CEPII/fr/bdd_modele/presentation.asp?id=6)
 
 ## Coverage
 
