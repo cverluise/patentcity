@@ -18,5 +18,5 @@ origin_country_code     | Country code of the origin country| `str`
 destination_country_code| Country code of the destination country | `str`
 comlang_ethno         | Whether the origin and destination country share a common language (officially or not) | `bool`
 colony | Whether the destination country was a colony of the origin | `bool`
-dist | Distance between the origin and destination country in km | `num`
+dist | Distance between the origin and destination country in km | `float`
 
