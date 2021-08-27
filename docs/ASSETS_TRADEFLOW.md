@@ -2,8 +2,7 @@
 
 File | Source
 ---|---
-[tradeflow.csv](https://github.com/cverluise/patentcity/tree/feature/assets/assets) | [Fouquin, M and HUgot, J. 2016 Two Centuries of Bilateral Trade and Gravity Data: 1827-2014
-](https://econpapers.repec.org/paper/ciicepidt/2016-14.htm)
+[tradeflow.csv](https://github.com/cverluise/patentcity/tree/feature/assets/assets) | [Fouquin, M and HUgot, J. 2016 Two Centuries of Bilateral Trade and Gravity Data: 1827-2014](https://econpapers.repec.org/paper/ciicepidt/2016-14.htm)
 
 ## Coverage
 
