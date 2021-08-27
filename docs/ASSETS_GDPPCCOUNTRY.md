@@ -20,3 +20,4 @@ country         | Country       | `str`
 country_code    | Country code  | `str`
 year            | Year          | `int`
 gdppc           | GDP per capita (in 2011 USD) | `float`
+pop | population (in thousand people) | `float'
