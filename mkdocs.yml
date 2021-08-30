@@ -55,12 +55,9 @@ nav:
       - Share industry: ASSETS_GDPSHAREINDUSTRY.md
       - Share service: ASSETS_GDPSHARESERVICE.md
     - Gravity:
-      - Border: ASSETS_BORDER.md
-      - Language: ASSETS_LANGUAGE.md
-      - Distance: ASSETS_DISTANCE.md
+      - Trade flows: ASSETS_TRADEFLOW.md
       - GDP per capita: ASSETS_GDPPCCOUNTRY.md
-      - Exports: ASSETS_EXPORTS.md
-      - Imports: ASSETS_IMPORTS.md
+      - Others: ASSETS_GRAVITY.md
     - Shapefiles: ASSETS_SHAPEFILES.md
   - API:
       - brew: API_BREW.md
