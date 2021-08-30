@@ -88,7 +88,9 @@ def impute_publication_date(
         ```
     """
     de_clause = (
-        """AND CAST(t.pubnum AS INT64)<330000""" if country_code == "DE" else """"""
+        """AND CAST(imputation.pubnum AS INT64)<330000"""
+        if country_code == "DE"
+        else """"""
     )
     query = f"""UPDATE
       `{src_table}` AS t
@@ -614,7 +616,9 @@ def filter_kind_codes(src_table: str, destination_table: str, credentials: str) 
 
 
 @app.command()
-def filter_granted(src_table: str, destination_table: str, credentials: str) -> None:
+def filter_granted_firstpub(
+    src_table: str, destination_table: str, credentials: str
+) -> None:
     """
     Filter `src_table` so as to keep only first publication of granted patents
 
