@@ -244,7 +244,7 @@ gsutil -m rsync ./ gs://patentcity_dev/v1/
     # gsutil -m cp "pubdate_*patentxx.imputation.expanded.csv" gs://patentcity_dev/v1/
     for OFFICE in dd de; do
       bq load --source_format CSV --replace --ignore_unknown_values --max_bad_records 1000 patentcity:tmp.de_pubdate_imputation "gs://patentcity_dev/v1/pubdate_${OFFICE}patentxx.imputation.expanded.csv" schema/date_imputation.json
-      python patentcity io impute-publication-date $(echo ${STAGETABLE} | sed -e 's/:/./') patentcity.tmp.${OFFICE}_pubdate_imputation --country-code ${OFFICE:u} --credentials ${KEYFILE};
+      patentcity io impute-publication-date $(echo ${STAGETABLE} | sed -e 's/:/./') patentcity.tmp.${OFFICE}_pubdate_imputation --country-code ${OFFICE:u} --credentials ${KEYFILE};
     done;
 
     # Deduplicate data (pc, wgp25 and wgp45 have a small overlap)
@@ -258,6 +258,9 @@ gsutil -m rsync ./ gs://patentcity_dev/v1/
 
     # Filter kind codes (we have kind codes that do not correspond to utility patents - we filter them out)
     patentcity io filter-kind-codes $(echo ${STAGETABLE} | sed -e 's/:/./') $(echo ${RELEASETABLE} | sed -e 's/:/./') $KEYFILE
+
+    # Filter granted first publication
+    patentcity io filter-granted-firstpub $(echo ${RELEASETABLE} | sed -e 's/:/./') $(echo ${RELEASETABLE} | sed -e 's/:/./') $KEYFILE
     ```
 
 === "patentcity only"
