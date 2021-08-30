@@ -47,7 +47,7 @@
         "type": "BOOLEAN"
       },
       {
-        "description": "True if the patentee is an inventor, else False.",
+        "description": "True if the patentee is an assignee, else False.",
         "mode": "NULLABLE",
         "name": "is_asg",
         "type": "BOOLEAN"

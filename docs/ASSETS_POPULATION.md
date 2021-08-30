@@ -11,7 +11,7 @@ Country |Geographical level |Period
 DE  |2 (nuts2)       | 1900-2017
 FR  |3 (nuts3)       | 1876-2017
 GB  |2 (nuts2)       | 1851-2017
-US  |2 (county) | 1830-2018
+US  |3 (county) | 1830-2018
 
 ??? note  "Annual data"
 
@@ -35,6 +35,10 @@ population\_raw         | Population in the statistical area before correction (
 ??? note  "Focus on GB data"
 
     GB population data are not available at a sufficiently detailed NUTS level over long period - at least we did not find it. For instance, Rosés and Wolf (2020) only provides data at the NUTS1 level for GB. Hence, we had to build the population data for GB at the NUTS2 level ourselves. This includes 3 main stages: 1. Pre-1981 data collection, 2. Post-1981 data collection, 3. Data harmonization
+
+??? note "Focus on DE data"
+
+    Following Roses and Wolf (2020), we have merged the regions of Darmstadt and Giessen into one entity and similarly for Braunschweig and Hannover. While each of these areas correspond to a NUTS2, the multiple changes in borders make it impossible to track population estimates over time without merging the regions.
 
     **Pre-1981 data collection**:
 
