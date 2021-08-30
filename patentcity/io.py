@@ -616,12 +616,12 @@ def filter_kind_codes(src_table: str, destination_table: str, credentials: str) 
 @app.command()
 def filter_granted(src_table: str, destination_table: str, credentials: str) -> None:
     """
-    Keep only first publication of granted patents
+    Filter `src_table` so as to keep only first publication of granted patents
 
     Arguments:
-        src_table:
-        destination_table:
-        credentials:
+        src_table: source table (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
 
     **Usage:**
         ```shell
