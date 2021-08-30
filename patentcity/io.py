@@ -594,9 +594,9 @@ def filter_kind_codes(src_table: str, destination_table: str, credentials: str) 
       publication_number,
       CASE
         WHEN country_code = "DD" AND (kind_code in ("A", "A1", "A3", "B")) THEN TRUE
-        WHEN country_code = "DE" AND (kind_code in ("A1", "B", "B3", "C", "C1", "D1")) THEN TRUE
-        WHEN country_code = "FR" AND (kind_code in ("A", "A1")) THEN TRUE
-        WHEN country_code = "GB" AND (kind_code in ("A")) THEN TRUE
+        WHEN country_code = "DE" AND (kind_code in ("A1", "B", "B1", "B2", "B3", "B4", "C","C1", "C2", "C3")) THEN TRUE
+        WHEN country_code = "FR" AND (kind_code in ("A", "A1","A5", "B1", "B3", "C3")) THEN TRUE
+        WHEN country_code = "GB" AND (kind_code in ("A", "B")) THEN TRUE
         WHEN country_code = "US" AND (kind_code in ("A", "B1", "B2")) THEN TRUE
         ELSE FALSE
       END AS keep
@@ -609,6 +609,71 @@ def filter_kind_codes(src_table: str, destination_table: str, credentials: str) 
       WHERE
         keep_list.publication_number = origin.publication_number
         AND keep_list.keep IS TRUE
+    """
+    _get_job_done(query, destination_table, credentials)
+
+
+@app.command()
+def filter_granted(src_table: str, destination_table: str, credentials: str) -> None:
+    """
+    Keep only first publication of granted patents
+
+    Arguments:
+        src_table:
+        destination_table:
+        credentials:
+
+    **Usage:**
+        ```shell
+        patentcity io filter-granted <src_table> <destination_table> credentials-patentcity.json
+        ```
+    """
+    query = f"""
+    WITH
+      tmp AS (
+      SELECT
+        pubnum,
+        country_code,
+        STRING_AGG(kind_code) AS kind_codes,
+        COUNT(pubnum) AS N,
+        STRING_AGG(kind_code) LIKE "%A1,%" OR STRING_AGG(kind_code) LIKE "%,A1" OR STRING_AGG(kind_code)="A1" AS has_A,
+        STRING_AGG(kind_code) LIKE "%B,%" OR STRING_AGG(kind_code) LIKE "%,B" OR STRING_AGG(kind_code)="B" AS has_B
+      FROM
+        `{src_table}`
+      GROUP BY
+        pubnum,
+        country_code )
+    SELECT
+      pc.*,
+      tmp.* EXCEPT(pubnum, country_code)
+    FROM
+      `{src_table}` AS pc,
+      tmp
+    WHERE
+      pc.country_code=tmp.country_code
+      AND pc.pubnum = tmp.pubnum
+      AND (
+        pc.country_code="DD" ## clause DD
+
+        OR (pc.country_code= "DE" ## clause DE
+          AND ( (kind_code="C" OR kind_code = "B")
+            OR (kind_code="C2" AND N>1 AND has_A=FALSE)
+            OR (kind_code = "A1" AND N > 1)
+            OR (N = 1 AND has_a = FALSE) ) )
+
+        OR (pc.country_code= "FR" ## clause FR
+          AND ( (kind_code = "A")
+            OR (kind_code = "A1" AND N > 1)
+            OR (kind_code = "A1" AND N = 1 AND publication_date < 19710000)
+            OR (kind_code = "A5") ) )
+
+        OR (pc.country_code="GB" ## clause GB
+          AND ( (kind_code = "A" AND N > 1)
+            OR (kind_code = "A" AND publication_date < 19500000)
+            OR (kind_code = "A" AND N = 1 AND CAST(pc.pubnum AS INT64) < 2000000) ) )
+
+        OR pc.country_code = "US" ## clause US
+        )
     """
     _get_job_done(query, destination_table, credentials)
 
