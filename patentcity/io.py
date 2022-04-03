@@ -683,6 +683,43 @@ def filter_granted_firstpub(
 
 
 @app.command()
+def add_cpc_codes(src_table: str, destination_table: str, credentials: str):
+    """
+
+    Args:
+        src_table: source table (project.dataset.table)
+        destination_table: destination table (project.dataset.table)
+        credentials: BQ credentials file path
+
+    **Usage:**
+        ```shell
+        patentcity io add-cpc-codes <src_table> <destination_table> credentials-patentcity.json
+        ```
+    """
+    query = f"""
+    WITH tmp AS( 
+    SELECT
+    publication_number, 
+    STRING_AGG(cpc.code) AS cpc_code
+    FROM
+    `patents-public-data.patents.publications`,
+    UNNEST(cpc)
+    AS
+    cpc
+    GROUP BY
+    publication_number)
+
+    SELECT
+    pc. *, tmp.cpc_code
+    FROM
+    `{src_table}` # patentcity.patentcity.v100rc7
+    AS pc
+    LEFT JOIN tmp
+    ON pc.publication_number = tmp.publication_number"""
+    _get_job_done(query, destination_table, credentials)
+
+
+@app.command()
 def prep_csv_extract(src_table: str, destination_table: str, credentials: str) -> None:
     """
     Return the patentcity table as an unstructured table for CSV extract
