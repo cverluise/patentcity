@@ -36,7 +36,7 @@
 
 💌 patentCity is due to expand and improve continuously in the coming years. Make sure to receive updates, [join our newsletter](http://www.patentcity.xyz) and star the GitHub repository!
 
-©️ patentCity is the backbone of [Bergeaud and Verluise (2021, work in progress)](./CITATION.bib). If you use the data or the codebase, make sure to cite the paper.
+©️ patentCity is the backbone of [Bergeaud and Verluise (2021, work in progress)](http://longtermproductivity.com/perso/Patentcity_desc.pdf). If you use the data or the codebase, make sure to [cite the paper](./CITATION.bib).
 
 
 ## Developer guide
