@@ -28,7 +28,7 @@
 
 🌎 Explore and visualize the patentCity database online at [patentcity.xyz](http://patentcity.xyz) (click on the map under the "Explore" section).
 
-📥 [Not available yet] Download the patentCity database ([CC-BY-4](docs/LICENSE_DATA.md)).
+📥 Download the patentCity database at [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FPG6THV&version=DRAFT) ([CC-BY-4](docs/LICENSE_DATA.md)).
 
 📝 The patentCity codebase and database are documented at [doc.patentcity.xyz](http://doc.patentcity.xyz).
 
