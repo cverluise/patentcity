@@ -1,6 +1,14 @@
+"""CLI"""
 import typer
 
-from patentcity import brew, eval, geo, io, search, utils
+from patentcity import (  # pylint: disable=redefined-builtin
+    brew,
+    eval,
+    geo,
+    io,
+    search,
+    utils,
+)
 
 app = typer.Typer()
 

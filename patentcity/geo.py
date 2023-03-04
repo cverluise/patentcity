@@ -1,3 +1,33 @@
+"""
+                            Patentcity geo
+
+general principle: address (str) -> structured geo data (dict)
+3 flavors: libpostal, HERE, GMAPS
+
+# libpostal (parser)
+
+Libpostal https://github.com/openvenues/libpostal
+Docker libpostal https://github.com/johnlonganecker/libpostal-rest-docker
+REST api https://github.com/johnlonganecker/libpostal-rest
+
+Note: i) if set up on GCP, you need to set up firewall rules to authorize access from the requesting
+machine ii) get external IP of GCP compute engine 
+https://console.cloud.google.com/networking/addresses/list?project=<your-project>
+
+# HERE Batch (geocoding)
+
+Guide: developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-constructing.html
+API ref: https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/endpoints.html
+
+# Gmaps (geocoding)
+
+API ref
+
+- https://developers.google.com/maps/documentation/geocoding/start
+- https://developers.google.com/maps/documentation/geocoding/overview
+"""
+
+
 import csv
 import json
 import os
@@ -13,43 +43,27 @@ import pandas as pd
 import requests
 import typer
 from bs4 import BeautifulSoup
-from smart_open import open
+from smart_open import open  # pylint: disable=redefined-builtin
 
-from patentcity.lib import (GEOC_OUTCOLS, GEOC_URL, HERE2GMAPS, TYPE2LEVEL,
-                            get_countycrossover, get_isocrossover,
-                            get_usstatecrossover)
-from patentcity.utils import (clean_text, flatten, get_dt_human,
-                              get_empty_here_schema, get_recid, not_ok, ok,
-                              read_csv_many)
-
-"""
-                            Patentcity geo
-
-general principle: address (str) -> structured geo data (dict)
-3 flavors: libpostal, HERE, GMAPS
-
-# libpostal (parser)
-
-Libpostal https://github.com/openvenues/libpostal
-Docker libpostal https://github.com/johnlonganecker/libpostal-rest-docker
-REST api https://github.com/johnlonganecker/libpostal-rest
-
-Note: i) if set up on GCP, you need to set up firewall rules to authorize access from the requesting
-machine ii) get external IP of GCP compute engine https://console.cloud.google.com/networking/addresses/list
-?project=<your-project>
-
-# HERE Batch (geocoding)
-
-Guide: developer.here.com/documentation/batch-geocoder/dev_guide/topics/request-constructing.html
-API ref: https://developer.here.com/documentation/batch-geocoder/dev_guide/topics/endpoints.html
-
-# Gmaps (geocoding)
-
-API ref
-
-- https://developers.google.com/maps/documentation/geocoding/start
-- https://developers.google.com/maps/documentation/geocoding/overview
-"""
+from patentcity.lib import (
+    GEOC_OUTCOLS,
+    GEOC_URL,
+    HERE2GMAPS,
+    TYPE2LEVEL,
+    get_countycrossover,
+    get_isocrossover,
+    get_usstatecrossover,
+)
+from patentcity.utils import (
+    clean_text,
+    flatten,
+    get_dt_human,
+    get_empty_here_schema,
+    get_recid,
+    not_ok,
+    ok,
+    read_csv_many,
+)
 
 app = typer.Typer()
 
@@ -92,7 +106,9 @@ def _parse_loc_blob(line, api_reference, debug):
 def get_parsed_loc_libpostal(
     path: str, api_reference: str, max_workers: int = 10, debug: bool = False
 ):
-    """Send data in `path` to libpostal service (hosted at `api_reference`) and return parsed loc json blobs to stdout.
+    """
+    Send data in `path` to libpostal service (hosted at `api_reference`)
+    and return parsed loc json blobs to stdout.
 
     Arguments:
         path: data path (wildcard allowed)
@@ -117,9 +133,9 @@ def post_geoc_data_here(
     file: str,
     api_key: str,
     countryfocus: str,  # ISO3?
-    outCols: str = None,
-    inDelim: str = "|",
-    outDelim: str = ",",
+    outCols: str = None,  # pylint: disable=invalid-name
+    inDelim: str = "|",  # pylint: disable=invalid-name
+    outDelim: str = ",",  # pylint: disable=invalid-name
     locationattributes: str = "addressDetails",
     language: str = "en-EN",  # eg "en-EN", "en-US"
     includeinputfields: bool = False,  # False for downstream compatibility
@@ -481,7 +497,7 @@ def get_geoc_data_gmaps(
             )
 
 
-def _parse_response_gmaps(
+def _parse_response_gmaps(  # pylint: disable=too-many-statements
     response, recid, out_format, iso_crossover, us_state_crossover, county_crossover
 ):
     """Parse the high level Gmaps response (list of results). Can contain more than 1 results as
@@ -537,8 +553,8 @@ def _parse_response_gmaps(
             return level
 
         levels = []
-        for type in types:
-            levels += [TYPE2LEVEL.get(type)]
+        for type_ in types:
+            levels += [TYPE2LEVEL.get(type_)]
         levels = list(set(filter(lambda x: x, levels)))
         level = min_geoent(levels)
         return level
@@ -733,8 +749,8 @@ def add_statisticalareas(file: str, statisticalareas_path: str, verbose: bool = 
     )
     geoc_df = pd.read_csv(file, dtype=str, error_bad_lines=False)
     geoc_df = geoc_df.where(pd.notnull(geoc_df), None)  # we replace pandas nan by None
-    vars = ["country", "state", "county", "city", "postalCode"]
-    geoc_df["key"] = geoc_df[vars].apply(lambda x: get_statisticalarea_key(x), axis=1)
+    variables = ["country", "state", "county", "city", "postalCode"]
+    geoc_df["key"] = geoc_df[variables].apply(get_statisticalarea_key, axis=1)
     geoc_df = geoc_df.merge(statisticalareas_df, how="left", on=["country", "key"])
     typer.echo(geoc_df.to_csv(sys.stdout, index=False))
 

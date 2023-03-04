@@ -47,3 +47,34 @@ isort = "^5.12.0"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+
+[tool.pylint.basic]
+# Good variable names which should always be accepted, separated by a comma.
+good-names = ["e", "f*", "i", "j", "k", "p", "r", "ex", "eg", "_"]
+
+
+[tool.pylint."messages control"]
+# Disable the message, report, category or checker with the given id(s). 
+disable = ["too-many-locals", 
+            "too-many-arguments", 
+            "missing-timeout", 
+            "line-too-long",
+            "invalid-name",
+            "unspecified-encoding",
+            "consider-using-with",
+            "duplicate-code",  # TODO enable and address specifically relationship.py case
+            "no-member", # too many false positives
+            "no-name-in-module",  # too many false positives
+            "fixme", # TODO enable
+            "missing-class-docstring",  # TODO enable
+            "missing-function-docstring",  # TODO enable
+            ]
+
+[tool.pylint.variables]
+# List of names allowed to shadow builtins
+allowed-redefined-builtins = ["open"]            
+
+[tool.isort]
+profile = "black"
+

@@ -1,3 +1,4 @@
+"""Search"""
 import os
 from glob import glob
 
@@ -31,7 +32,7 @@ def relationship_params(config_search: str):
 
         for param in search.keys():
             try:
-                start, end = list(map(lambda x: int(x), search[param].split("-")))
+                start, end = list(map(int, search[param].split("-")))
                 grid = range(start, end)
             except ValueError:
                 grid = search[param].split("-")
@@ -74,7 +75,7 @@ def relationship_best(path: str, report: str = "short"):
         res_label = res.query(f"label=='{label}'").sort_values("f", ascending=False)
         if report == "long":
             if i == 0:
-                typer.secho(f"# Report", fg=typer.colors.BLUE)
+                typer.secho("# Report", fg=typer.colors.BLUE)
             typer.secho(f"\n## {label}", fg=typer.colors.BLUE)
             typer.echo(res_label.to_markdown(index=False))
         else:
