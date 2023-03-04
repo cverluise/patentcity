@@ -16,9 +16,11 @@ jobs:
           python-version: "3.8" 
       - name: "💌 Install Poetry"
         uses: snok/install-poetry@v1
-      - run: poetry install --only linting
+      - name: "🧱 Check install patentcity dependencies"
+        run: poetry install
       - name: "🎨 Linting checks"
         run: |
+          poetry install --only linting
           poetry run black --check patentcity/
           poetry run isort --check patentcity/
           poetry run pylint patentcity/
