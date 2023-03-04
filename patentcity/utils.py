@@ -11,16 +11,15 @@ from hashlib import md5
 from itertools import repeat
 from operator import itemgetter
 from pathlib import Path
-import spacy
-from smart_open import open
 
 import numpy as np
 import pandas as pd
+import spacy
 import typer
 import yaml
-
-from fuzzyset import FuzzySet
+# from fuzzyset import FuzzySet
 from fuzzysearch import find_near_matches
+from smart_open import open
 
 from patentcity.lib import GEOC_OUTCOLS, get_isocrossover, list_countrycodes
 
@@ -78,7 +77,9 @@ def get_group(pubnum: int, u_bounds: str):
     u_bounds = [int(u_bound) for u_bound in u_bounds.split(",")]
     try:
         group = int(max(np.where(np.array(u_bounds) <= pubnum)[0]) + 2)
-    except ValueError:  # case where the pubnum is lower than any bound, hence in group 1
+    except (
+        ValueError
+    ):  # case where the pubnum is lower than any bound, hence in group 1
         group = 1
     return group
 
@@ -315,30 +316,32 @@ def mcq(line, fset, ignore):
         pass
 
 
-@app.command()
-def mcq_factory(
-    loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
-):
-    """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
-    on the text of each line in the loc file and the targets in the index file"""
-    targets = open(index, "r").read().split("\n")
-    fset = FuzzySet()
-    for target in targets:
-        fset.add(target)
-    if list_ignore:
-        with open(list_ignore, "r") as ignore:
-            ignore = ignore.read().replace('"', "").split("\n")
-    else:
-        ignore = []
-    with open(loc, "r") as lines:
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            executor.map(mcq, lines, repeat(fset), repeat(ignore))
+# TODO - fix fuzzyset installation issue and restore or remove
+# @app.command()
+# def mcq_factory(
+#     loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
+# ):
+#     """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
+#     on the text of each line in the loc file and the targets in the index file"""
+#     targets = open(index, "r").read().split("\n")
+#     fset = FuzzySet()
+#     for target in targets:
+#         fset.add(target)
+#     if list_ignore:
+#         with open(list_ignore, "r") as ignore:
+#             ignore = ignore.read().replace('"', "").split("\n")
+#     else:
+#         ignore = []
+#     with open(loc, "r") as lines:
+#         with ThreadPoolExecutor(max_workers=max_workers) as executor:
+#             executor.map(mcq, lines, repeat(fset), repeat(ignore))
 
 
 @app.command()
 def mcq_revert(file, max_options: int = 50):
     """Revert a sequence of mcq where main text is the raw text and options are
-    targets into a sequence of mcq where the target is the main text and options are the raw text"""
+    targets into a sequence of mcq where the target is the main text and options are the raw text
+    """
 
     def revert_line(line, index):
         for option in line.get("options"):
@@ -397,8 +400,7 @@ def prep_disamb_index(file: str, inDelim: str = "|"):
 
 @app.command()
 def prep_disamb(file: str, orient: str = "revert", inDelim: str = "|"):
-    """Prep disamb file from mcq output data
-    """
+    """Prep disamb file from mcq output data"""
     assert orient in ["revert"]
     with open(file, "r") as lines:
         for line in lines:
