@@ -1,6 +1,6 @@
 name: code-quality
 on:
-  pull-request:
+  pull_request:
     branches:
       - master
       - nightly
