@@ -424,7 +424,8 @@ def get_wgp25_recid(
         ```
 
     !!! info
-        This function assumes that the recId has been added to inventor_applicant_locationid beforehand (using `utils.get_recid(address_)`)."""
+        This function assumes that the recId has been added to inventor_applicant_locationid beforehand (using `utils.get_recid(address_)`).
+    """
     assert len(country_code) == 2
     query = f"""
     WITH

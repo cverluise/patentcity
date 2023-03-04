@@ -1,10 +1,6 @@
 import typer
-from patentcity import geo
-from patentcity import brew
-from patentcity import utils
-from patentcity import io
-from patentcity import eval
-from patentcity import search
+
+from patentcity import brew, eval, geo, io, search, utils
 
 app = typer.Typer()
 

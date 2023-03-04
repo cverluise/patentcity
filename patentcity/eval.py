@@ -1,15 +1,14 @@
 import json
 import os
-
 from typing import List
+
 import numpy as np
 import pandas as pd
 import typer
 import yaml
 
+from patentcity.relationship import RELATIONS, get_child
 from patentcity.utils import get_cit_code
-from patentcity.relationship import get_child, RELATIONS
-
 
 """
                             Eval patentcity model components
@@ -197,7 +196,12 @@ def relationship_model(test_file: str, rel_config: str, report: str = "short"):
             true, true_positives, false_positives, false_negatives, label=None
         ):
             if label:
-                true, true_positives, false_positives, false_negatives = filter_relation(
+                (
+                    true,
+                    true_positives,
+                    false_positives,
+                    false_negatives,
+                ) = filter_relation(
                     label, true, true_positives, false_positives, false_negatives
                 )
             # nb_t = len(true)
@@ -274,9 +278,12 @@ def relationship_model(test_file: str, rel_config: str, report: str = "short"):
 
                     relations_pred += get_relation(head, child)
 
-            true_, true_positives_, false_positives_, false_negatives_ = eval_performance(
-                relations_pred, relations_gold
-            )
+            (
+                true_,
+                true_positives_,
+                false_positives_,
+                false_negatives_,
+            ) = eval_performance(relations_pred, relations_gold)
 
             true += true_
             true_positives += true_positives_

@@ -45,7 +45,8 @@ class EntityRelationshipComponent:
     ):
         """Return all candidate ent satisfying the conditions defined by max_length and position.
         POSITION refers to the relative place of the child wrt the head and MAX_LENGTH is the max
-        number of tokens away from the head which are considered for the start of a child."""
+        number of tokens away from the head which are considered for the start of a child.
+        """
         assert label in LABELS
         assert position in POSITIONS
         candidates_ = [child for child in children if child["label"] == label]
@@ -134,7 +135,8 @@ def harvest_candidates(
 ):
     """Return all candidate ent satisfying the conditions defined by max_length and position.
     POSITION refers to the relative place of the child wrt the head and MAX_LENGTH is the max
-    number of tokens away from the head which are considered for the start of a child."""
+    number of tokens away from the head which are considered for the start of a child.
+    """
     assert label in LABELS
     assert position in POSITIONS
     candidates_ = [child for child in children if child["label"] == label]

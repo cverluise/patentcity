@@ -7,33 +7,20 @@ from concurrent.futures import ThreadPoolExecutor
 from glob import glob
 from itertools import repeat
 from zipfile import ZipFile
-from smart_open import open
 
 import googlemaps
+import pandas as pd
 import requests
 import typer
-
-import pandas as pd
 from bs4 import BeautifulSoup
+from smart_open import open
 
-from patentcity.lib import (
-    GEOC_URL,
-    GEOC_OUTCOLS,
-    HERE2GMAPS,
-    get_isocrossover,
-    get_usstatecrossover,
-    get_countycrossover,
-    TYPE2LEVEL,
-)
-
-from patentcity.utils import (
-    clean_text,
-    get_dt_human,
-    get_empty_here_schema,
-    flatten,
-    read_csv_many,
-)
-from patentcity.utils import ok, not_ok, get_recid
+from patentcity.lib import (GEOC_OUTCOLS, GEOC_URL, HERE2GMAPS, TYPE2LEVEL,
+                            get_countycrossover, get_isocrossover,
+                            get_usstatecrossover)
+from patentcity.utils import (clean_text, flatten, get_dt_human,
+                              get_empty_here_schema, get_recid, not_ok, ok,
+                              read_csv_many)
 
 """
                             Patentcity geo

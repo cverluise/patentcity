@@ -1,7 +1,6 @@
 import prodigy
 from prodigy.components.loaders import Images
 
-
 OPTIONS = [{"id": 0, "text": "Unknown"}]
 
 

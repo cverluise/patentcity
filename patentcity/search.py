@@ -1,9 +1,11 @@
-import yaml
-import typer
-import pandas as pd
-from glob import glob
-from patentcity.relationship import RELATIONS
 import os
+from glob import glob
+
+import pandas as pd
+import typer
+import yaml
+
+from patentcity.relationship import RELATIONS
 
 app = typer.Typer()
 

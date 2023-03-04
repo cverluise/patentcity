@@ -1,20 +1,20 @@
 import json
-import yaml
 import os
-from pathlib import Path
-from glob import iglob, glob
-from smart_open import open
-import git
 from concurrent.futures import ThreadPoolExecutor
-from itertools import repeat, combinations
-from Levenshtein import distance as levenshtein_distance
+from glob import glob, iglob
+from hashlib import md5
+from itertools import combinations, repeat
+from pathlib import Path
 
-from patentcity.relationship import create_relationship_component
+import git
 import spacy
 import typer
-from hashlib import md5
+import yaml
+from Levenshtein import distance as levenshtein_distance
+from smart_open import open
 
-from patentcity.utils import clean_text, get_recid, get_cit_code
+from patentcity.relationship import create_relationship_component
+from patentcity.utils import clean_text, get_cit_code, get_recid
 
 """
                              Brew patentcity dataset
