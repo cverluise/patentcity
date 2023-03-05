@@ -5,7 +5,7 @@ on:
       - master
 
 jobs:
-  check-requirements-code-quality:
+  deploy-doc:
     runs-on: ubuntu-latest
     steps:
       - name: "🏡 Checkout repository"
