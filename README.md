@@ -28,7 +28,7 @@
 
 🌎 Explore and visualize the patentCity database online at [patentcity.xyz](http://patentcity.xyz) (click on the map under the "Explore" section).
 
-📥 Download the patentCity database at [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910%2FDVN%2FPG6THV&version=DRAFT) ([CC-BY-4](docs/LICENSE_DATA.md)).
+📥 Download the patentCity database [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PG6THV) ([CC-BY-4](docs/LICENSE_DATA.md)).
 
 📝 The patentCity codebase and database are documented at [doc.patentcity.xyz](http://doc.patentcity.xyz).
 
@@ -36,7 +36,7 @@
 
 💌 patentCity is due to expand and improve continuously in the coming years. Make sure to receive updates, [join our newsletter](http://www.patentcity.xyz) and star the GitHub repository!
 
-©️ patentCity is the backbone of [Bergeaud and Verluise (2021, work in progress)](http://longtermproductivity.com/perso/Patentcity_desc.pdf). If you use the data or the codebase, make sure to [cite the paper](./CITATION.bib).
+©️ patentCity is the backbone of [Bergeaud and Verluise (2022)](https://cep.lse.ac.uk/_NEW/publications/abstract.asp?index=9250). If you use the data or the codebase, make sure to [cite the paper](./CITATION.bib).
 
 
 ## Developer guide
