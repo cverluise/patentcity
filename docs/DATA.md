@@ -5,7 +5,7 @@
 
 The patentCity database is available as an open access dataset (CC-BY-4).
 
-[Download patentCity database](#){ .md-button .md-button--primary }
+[Download patentCity database](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PG6THV){ .md-button .md-button--primary }
 
 ## Citation
 
