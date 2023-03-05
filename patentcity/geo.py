@@ -11,7 +11,7 @@ Docker libpostal https://github.com/johnlonganecker/libpostal-rest-docker
 REST api https://github.com/johnlonganecker/libpostal-rest
 
 Note: i) if set up on GCP, you need to set up firewall rules to authorize access from the requesting
-machine ii) get external IP of GCP compute engine 
+machine ii) get external IP of GCP compute engine
 https://console.cloud.google.com/networking/addresses/list?project=<your-project>
 
 # HERE Batch (geocoding)

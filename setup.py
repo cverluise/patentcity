@@ -1,3 +1,4 @@
+"""Set-up"""
 from setuptools import setup
 
 setup(

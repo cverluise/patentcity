@@ -699,9 +699,9 @@ def add_cpc_codes(src_table: str, destination_table: str, credentials: str):
         ```
     """
     query = f"""
-    WITH tmp AS( 
+    WITH tmp AS(
     SELECT
-    publication_number, 
+    publication_number,
     STRING_AGG(cpc.code) AS cpc_code
     FROM
     `patents-public-data.patents.publications`,

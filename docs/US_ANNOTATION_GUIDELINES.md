@@ -335,7 +335,7 @@ The tag `INV` refers to the full name of an inventor.
 
 - *Format 3:* the format 3 corresponds to a format that is very close the format 3 describes above. See example 1.
 - *Format 4:* the standard case which is structured with a dedicated field named: inventor(s). See example 2.
-- *Deceased:* in some rare case, the inventor is dead and an administrator is designated. Only the (dead) inventor should be labeled then. See example 3. 
+- *Deceased:* in some rare case, the inventor is dead and an administrator is designated. Only the (dead) inventor should be labeled then. See example 3.
 
 !!! example "Examples"
 

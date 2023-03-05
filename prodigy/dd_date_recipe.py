@@ -1,10 +1,11 @@
+"""Prodigy date recipe"""
 import prodigy
-from prodigy.components.loaders import Images
+from prodigy.components.loaders import Images  # pylint: disable=import-error
 
 OPTIONS = [{"id": 0, "text": "Unknown"}]
 
 
-@prodigy.recipe("date-dd")
+@prodigy.recipe("date-dd")  # pylint: disable=c-extension-no-member
 def date_dd(dataset, source):
     """Display 3 blocks: 1. image of the patent, 2. choice block, 3. text block for date. 2 is
     artifical and should be ignored"""

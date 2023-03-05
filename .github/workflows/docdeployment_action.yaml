@@ -13,7 +13,7 @@ jobs:
       - name: "🐍 Install python"
         uses: actions/setup-python@v4
         with:
-          python-version: "3.8" 
+          python-version: "3.8"
       - name: "💌 Install Poetry"
         uses: snok/install-poetry@v1
       - name: "🧱 Install patentcity dependencies"
