@@ -1,0 +1,24 @@
+name: doc-deployment
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check-requirements-code-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "🏡 Checkout repository"
+        uses: actions/checkout@v3
+      - name: "🐍 Install python"
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.8"
+      - name: "💌 Install Poetry"
+        uses: snok/install-poetry@v1
+      - name: "🧱 Install patentcity dependencies"
+        run: poetry install
+      - name: "📚 Deploy doc"
+        run: |
+          poetry install --only doc
+          poetry run mkdocs gh-deploy

@@ -1,5 +1,6 @@
+"""Prodigy mcq recipe"""
 import prodigy
-from prodigy.components.loaders import JSONL
+from prodigy.components.loaders import JSONL  # pylint: disable=import-error
 
 HEADER_STYLE = [
     "<span style='background-color:#775ec2;color:white;font-size:100%;font-weight:bold;'>",
@@ -7,12 +8,12 @@ HEADER_STYLE = [
 ]
 
 
-@prodigy.recipe(
+@prodigy.recipe(  # pylint: disable=c-extension-no-member
     "mcq.loc",
     dataset=("The dataset to save to", "positional", None, str),
     file_path=("Path to texts", "positional", None, str),
 )
-def mcq(dataset, file_path):
+def mcq_loc(dataset, file_path):
     """Validate the disambiguated LOC of raw locs extracted from the patent texts."""
 
     def add_html(stream):
@@ -53,7 +54,7 @@ def mcq(dataset, file_path):
     dataset=("The dataset to save to", "positional", None, str),
     file_path=("Path to texts", "positional", None, str),
 )
-def mcq(dataset, file_path):
+def mcq_geoc(dataset, file_path):
     """Validate the geocoded LOC of raw locs extracted from the patent texts."""
 
     def add_options(stream):

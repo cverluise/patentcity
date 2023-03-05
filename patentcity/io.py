@@ -1,3 +1,4 @@
+"""IO"""
 import typer
 from google.cloud import bigquery
 from google.oauth2 import service_account
@@ -424,7 +425,8 @@ def get_wgp25_recid(
         ```
 
     !!! info
-        This function assumes that the recId has been added to inventor_applicant_locationid beforehand (using `utils.get_recid(address_)`)."""
+        This function assumes that the recId has been added to inventor_applicant_locationid beforehand (using `utils.get_recid(address_)`).
+    """
     assert len(country_code) == 2
     query = f"""
     WITH
@@ -697,9 +699,9 @@ def add_cpc_codes(src_table: str, destination_table: str, credentials: str):
         ```
     """
     query = f"""
-    WITH tmp AS( 
+    WITH tmp AS(
     SELECT
-    publication_number, 
+    publication_number,
     STRING_AGG(cpc.code) AS cpc_code
     FROM
     `patents-public-data.patents.publications`,

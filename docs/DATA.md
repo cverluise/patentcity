@@ -1,11 +1,11 @@
 # DATA
 
 ## Download data
-    
+
 
 The patentCity database is available as an open access dataset (CC-BY-4).
 
-[Download patentCity database](#){ .md-button .md-button--primary }
+[Download patentCity database](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PG6THV){ .md-button .md-button--primary }
 
 ## Citation
 
@@ -40,12 +40,12 @@ If you use the data, please cite Bergeaud and Verluise (2021) and De Rassenfosse
 
 ## Database schema
 
-The database is available in 2 formats: `csv` and `jsonl`. Both contain the same data and are compatible with most SQL database engine and cloud data wharehouses such as BigQuery (GCP) and Athena (AWS) which should be your preferred way to work the patentcity full database.   
+The database is available in 2 formats: `csv` and `jsonl`. Both contain the same data and are compatible with most SQL database engine and cloud data wharehouses such as BigQuery (GCP) and Athena (AWS) which should be your preferred way to work the patentcity full database.
 
 !!! info "`jsonl` or `csv`"
-    
+
     The `jsonl` format allows nested data, hence is more compact.
-    The `csv` format can be read off-the-shell by any library supporting tabular/structured data (e.g. pandas for python, dplyr for R, etc).      
+    The `csv` format can be read off-the-shell by any library supporting tabular/structured data (e.g. pandas for python, dplyr for R, etc).
 
 === "jsonl"
 
