@@ -9,10 +9,10 @@ Each corpus has its specific set of relationship that are detailed in a separate
 The labelling of relationship between entities follow the general rule that the relation should go from the object to its attributes. For example, in the case of a link between an entity `LOC`
 and an entity `INV`, the relationship should go from `INV` to `LOC`.
 
-## Specific casees
+## Specific cases
 
 From the set of annotated entities, the context should be sufficient to use the general rule without ambiguity. Standard cases are presented in Examples 1 to 3 below.
-Two specific cases are worth mentionning:
+Two specific cases are worth mentioning:
 
 - Multiple similar objects for a given subject (e.g. two `LOC` for a same `ASG`)
 - Multiple subjects for a given object (e.g. two INV for a same `CIT`)

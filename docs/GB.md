@@ -2,7 +2,7 @@
 
 ## Background
 
-Although evidence of an earlier version of patents can be found in 1449, the British patent system starts in 1623 (Plasseraud and Savignon, 1983). There were no official publications prior to 1852. To our knowledges, most patent publications earlier than 1894 have not been digitized, and some are still missing from 1894 to 1900.
+Although evidence of an earlier version of patents can be found in 1449, the British patent system starts in 1623 (Plasseraud and Savignon, 1983). There were no official publications prior to 1852. To our knowledge, most patent publications earlier than 1894 have not been digitized, and some are still missing from 1894 to 1900.
 
 ## 📚 Data source
 

@@ -57,7 +57,7 @@ spacy train configs/en_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 
 ## 🎯 Intended use
 
-`en_ent_uspatent*` have been specifically trained on US patents. The model's performance are not guaranteed out of this scope.
+`en_ent_uspatent*` have been specifically trained on US patents. The model's performances are not guaranteed out of this scope.
 
 ## 🔂 Versions and alternative approaches
 

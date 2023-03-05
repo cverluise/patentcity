@@ -1,3 +1,6 @@
+"""
+General purpose utilities
+"""
 import csv
 import datetime
 import json
@@ -11,22 +14,20 @@ from hashlib import md5
 from itertools import repeat
 from operator import itemgetter
 from pathlib import Path
-import spacy
-from smart_open import open
 
 import numpy as np
 import pandas as pd
+import spacy
 import typer
 import yaml
 
-from fuzzyset import FuzzySet
+# from fuzzyset import FuzzySet
 from fuzzysearch import find_near_matches
+from smart_open import open  # pylint: disable=redefined-builtin
+from spacy.tokens import DocBin
+from spacy.training import Example
 
 from patentcity.lib import GEOC_OUTCOLS, get_isocrossover, list_countrycodes
-
-"""
-General purpose utilities
-"""
 
 # msg utils
 ok = "\u2713"
@@ -78,7 +79,9 @@ def get_group(pubnum: int, u_bounds: str):
     u_bounds = [int(u_bound) for u_bound in u_bounds.split(",")]
     try:
         group = int(max(np.where(np.array(u_bounds) <= pubnum)[0]) + 2)
-    except ValueError:  # case where the pubnum is lower than any bound, hence in group 1
+    except (
+        ValueError
+    ):  # case where the pubnum is lower than any bound, hence in group 1
         group = 1
     return group
 
@@ -131,10 +134,8 @@ def make_groups(path: str, u_bounds: str = None, max_workers: int = 10):
     """Distribute files in folders by groups. u_bounds (upper bounds of the groups) should be
     ascending & comma-separated."""
     files = glob(path)
-    [
+    for i in range(len(u_bounds.split(",")) + 1):
         os.mkdir(os.path.join(os.path.dirname(path), f"group_{i + 1}"))
-        for i in range(len(u_bounds.split(",")) + 1)
-    ]
 
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         executor.map(move_file, files, repeat(u_bounds))
@@ -178,10 +179,10 @@ def get_buggy_labels(file: str):
                 for span in spans:
                     span_text = text[span["start"] : span["end"]]
                     startswith_space = any(
-                        [span_text.startswith(" "), span_text.startswith("\s")]
+                        [span_text.startswith(" "), span_text.startswith(r"\s")]
                     )
                     endswith_space = any(
-                        [span_text.endswith("\s"), span_text.endswith(" ")]
+                        [span_text.endswith(r"\s"), span_text.endswith(" ")]
                     )
                     startswith_punctuation, endswith_punctuation = ([], [])
                     for punctuation in punctuation_:
@@ -253,8 +254,8 @@ def get_recid_nomatch(file, index, inDelim: str = "|"):
 @app.command()
 def prep_searchtext(file, config_file: str):
     """Prepare search text so as to avoid common pitfalls (country codes, postcodes, etc)"""
-    with open(config_file, "r") as config_file:
-        config = yaml.load(config_file, Loader=yaml.FullLoader)
+    with open(config_file, "r") as config_file_:
+        config = yaml.load(config_file_, Loader=yaml.FullLoader)
 
     remove_postcode = config["postcode"]["remove"]
     remove_countrycode = config["countrycode"]["remove"]
@@ -315,30 +316,32 @@ def mcq(line, fset, ignore):
         pass
 
 
-@app.command()
-def mcq_factory(
-    loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
-):
-    """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
-    on the text of each line in the loc file and the targets in the index file"""
-    targets = open(index, "r").read().split("\n")
-    fset = FuzzySet()
-    for target in targets:
-        fset.add(target)
-    if list_ignore:
-        with open(list_ignore, "r") as ignore:
-            ignore = ignore.read().replace('"', "").split("\n")
-    else:
-        ignore = []
-    with open(loc, "r") as lines:
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            executor.map(mcq, lines, repeat(fset), repeat(ignore))
+# TODO - fix fuzzyset installation issue and restore or remove
+# @app.command()
+# def mcq_factory(
+#     loc: str = None, index: str = None, max_workers: int = 5, list_ignore: str = None
+# ):
+#     """Return jsonl for choice prodigy view-id based on fuzzyset suggestion for each line based
+#     on the text of each line in the loc file and the targets in the index file"""
+#     targets = open(index, "r").read().split("\n")
+#     fset = FuzzySet()
+#     for target in targets:
+#         fset.add(target)
+#     if list_ignore:
+#         with open(list_ignore, "r") as ignore:
+#             ignore = ignore.read().replace('"', "").split("\n")
+#     else:
+#         ignore = []
+#     with open(loc, "r") as lines:
+#         with ThreadPoolExecutor(max_workers=max_workers) as executor:
+#             executor.map(mcq, lines, repeat(fset), repeat(ignore))
 
 
 @app.command()
 def mcq_revert(file, max_options: int = 50):
     """Revert a sequence of mcq where main text is the raw text and options are
-    targets into a sequence of mcq where the target is the main text and options are the raw text"""
+    targets into a sequence of mcq where the target is the main text and options are the raw text
+    """
 
     def revert_line(line, index):
         for option in line.get("options"):
@@ -372,9 +375,7 @@ def mcq_revert(file, max_options: int = 50):
             tasks += [
                 {
                     "text": text,
-                    "nb_occurences": max(
-                        [opt["nb_occurences"] for opt in chunk_options]
-                    ),
+                    "nb_occurences": max(opt["nb_occurences"] for opt in chunk_options),
                     "options": chunk_options,
                 }
             ]
@@ -397,8 +398,7 @@ def prep_disamb_index(file: str, inDelim: str = "|"):
 
 @app.command()
 def prep_disamb(file: str, orient: str = "revert", inDelim: str = "|"):
-    """Prep disamb file from mcq output data
-    """
+    """Prep disamb file from mcq output data"""
     assert orient in ["revert"]
     with open(file, "r") as lines:
         for line in lines:
@@ -470,10 +470,9 @@ def get_gmaps_index_wgp(
                 typer.echo(
                     f"{line[recid_idx]}{inDelim}{json.dumps(json.loads(line[3])['results'])}"
                 )
-            except Exception as e:
+            except Exception as e:  # pylint: disable=broad-exception-caught
                 if verbose:
                     typer.secho(str(e), fg=typer.colors.RED)
-                pass
             # the first field is the location id (eq recid)
             # the second field is the gmaps result
 
@@ -628,11 +627,11 @@ def prep_geoc_gold(gold: str, data: str):
 
     out = data_df.merge(gold_, on="loc_text", how="left")
     truth_values = pd.DataFrame(
-        data=out["accept"].apply(lambda x: level2array(x)).values.tolist(),
+        data=out["accept"].apply(level2array).values.tolist(),
         columns=list(map(lambda x: x + "_is_true", levels)),
     )
     option_values = pd.DataFrame(
-        data=out["option"].apply(lambda x: level2array(x)).values.tolist(),
+        data=out["option"].apply(level2array).values.tolist(),
         columns=list(map(lambda x: x + "_is_option", levels)),
     )
 
@@ -641,11 +640,6 @@ def prep_geoc_gold(gold: str, data: str):
     )
 
     typer.echo(out.to_csv())
-
-
-import spacy
-from spacy.tokens import DocBin
-from spacy.training import Example
 
 
 @app.command()
@@ -677,13 +671,48 @@ def is_pers_to_spacy(file: Path, dest: Path, language: str):
             text = line["text"]
             doc = nlp(text)
             answer = line["answer"]
-            cats.update({"PERS": 1}) if answer == "accept" else cats.update(
-                {"NOT_PERS": 1}
-            )
+            if answer == "accept":
+                cats.update({"PERS": 1})
+            else:
+                cats.update({"NOT_PERS": 1})
             if answer != "ignore":
                 egs += [Example.from_dict(doc, {"cats": cats})]
-    [doc_bin.add(eg.reference) for eg in egs]
+    for eg in egs:
+        doc_bin.add(eg.reference)
     doc_bin.to_disk(dest)
+
+
+@app.command()
+def print_schema(schema: str) -> None:
+    """
+    Print the json `schema` as a markdown table.
+
+    Arguments:
+        schema: json schema file
+
+    **Usage:**
+        ```shell
+        patentcity utils print-schema schema/patentcity_v1.json
+        ```
+    """
+    df = pd.read_json(schema)
+    nested = df.query("fields==fields")
+    unnested = pd.DataFrame()
+    for i in range(len(nested)):
+        tmp = pd.DataFrame.from_dict(nested["fields"].values[i])
+        tmp["name"] = tmp["name"].apply(
+            lambda x: ".".join(
+                [nested["name"].values[i], x]  # pylint: disable=cell-var-from-loop
+            )
+        )
+        unnested = unnested.append(tmp)
+
+    out = (
+        df.query("fields!=fields")
+        .append(unnested)
+        .drop("fields", axis=1)[["name", "description", "mode", "type"]]
+    )
+    typer.echo(out.to_markdown(index=False))
 
 
 if __name__ == "__main__":

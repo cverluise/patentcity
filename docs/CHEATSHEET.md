@@ -37,3 +37,12 @@ OFFICE="" # e.g. DD, DE, etc
 RATIO= # e.g. .2, .015
 patentcity io extract-sample-kepler patentcity.patentcity.pc_v100rc1 data_tmp/sample_${OFFICE}.csv --sample-ratio ${RATIO} --office ${OFFICE} --key-file credentials-patentcity.json
 ```
+
+## Extract data
+
+```shell
+RELEASE="v100rc5"
+bq extract --destination_format NEWLINE_DELIMITED_JSON --compression GZIP patentcity:patentcity.${RELEASE} "gs://patentcity_dev/beta/${RELEASE}_*.jsonl.gz"
+patentcity io prep-csv-extract patentcity.patentcity.${RELEASE} patentcity.stage.${RELEASE} credentials-patentcity.json
+bq extract --destination_format CSV --compression GZIP patentcity:stage.${RELEASE} "gs://patentcity_dev/beta/${RELEASE}_*.csv.gz"
+```

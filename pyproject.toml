@@ -15,30 +15,66 @@ pre-commit = "^2.6.0"
 bs4 = "^0.0.1"
 lxml = "^4.6.2"
 pandas = "^1.0.5"
-smart_open = "^2.1.0"
 spacy-lookups-data = "^0.3.2"
 googlemaps = "^4.4.2"
 google-cloud = "^0.34.0"
 google-cloud-bigquery = "^1.27.2"
-typer =  {extras = ["all"], version = "^0.3.2"}
 fuzzysearch = "^0.7.3"
 tabulate = "^0.8.7"
 spacy = "^3.0.1"
 spacy-transformers = "^1.0.1"
 python-levenshtein = "^0.12.2"
-fuzzyset = "^0.0.19"
+#fuzzyset = "^0.0.19"
 dvc = "^2.0.18"
 Cython = "^0.29.23"
-
-[tool.poetry.dev-dependencies]
-typer-cli = "^0.0.11"
-mkdocs = "^1.1.2"
-mkdocs-minify-plugin = "^0.3.0"
-pymdown-extensions = "^7.1"
+geopandas = "^0.9.0"
+smart-open = "^6.3.0" # previously "^0.0.19" but breaking on pep517
+typer =  "^0.7.0" # previously 0.3.2
 gitpython = "^3.1.12"
-mkdocs-material = "^7.1.3"
-mkdocstrings = "^0.15.2"
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-minify-plugin = "^0.3.0"
+mkdocs = "^1.4.2"
+jinja2 = "^3.1.2"
+mkdocs-material = "^9.1.1"
+mkdocstrings = "^0.20.0"
+mkdocstrings-python = "^0.8.3"
+
+[tool.poetry.group.linting.dependencies]
+black = "^23.1.0"
+pylint = "^2.16.3"
+isort = "^5.12.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+
+[tool.pylint.basic]
+# Good variable names which should always be accepted, separated by a comma.
+good-names = ["e", "f*", "i", "j", "k", "p", "r", "ex", "eg", "_"]
+
+
+[tool.pylint."messages control"]
+# Disable the message, report, category or checker with the given id(s).
+disable = ["too-many-locals",
+            "too-many-arguments",
+            "missing-timeout",
+            "line-too-long",
+            "invalid-name",
+            "unspecified-encoding",
+            "consider-using-with",
+            "duplicate-code",  # TODO enable and address specifically relationship.py case
+            "no-member", # too many false positives
+            "no-name-in-module",  # too many false positives
+            "fixme", # TODO enable
+            "missing-class-docstring",  # TODO enable
+            "missing-function-docstring",  # TODO enable
+            ]
+
+[tool.pylint.variables]
+# List of names allowed to shadow builtins
+allowed-redefined-builtins = ["open"]
+
+[tool.isort]
+profile = "black"

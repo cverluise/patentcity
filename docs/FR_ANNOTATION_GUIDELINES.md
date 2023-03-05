@@ -20,20 +20,20 @@ The first format spans spans the period 1902-1969 (from FR317502A to FR1569050A)
 
 #### Information display
 
-The information we are interested is in the header.
+The information we are interested in is in the header.
 
 The upper part of the header contains generic terms like the name of the institution and its seal, the patent's publication number and its technological class code.
 
 
 The lower part of the header contains a brief description of the content of the invention and the information about the assignee (name and location).
-Those two distinct information can be blended together in the same sentence or not.
-Finally a last sentence gives indicates the date at which the patent has been granted as well as the publication date.
+Those two distinct pieces of information can be blended together in the same sentence or not.
+Finally a last sentence indicates the date at which the patent has been granted as well as the publication date.
 
 ??? note "More on format 1"
 
     We notice some slight changes within this format across time.
 
-    - Technological class: up until FR1096200A, the patents provide a French technological class. From patent FR1096201A to patent FR1196800A, both the French technological class as well as the international technological class are mentioned in the header. Finally, starting with patent FR1196801A, only the international technlogical class is retained.
+    - Technological class: up until FR1096200A, the patents provide a French technological class. From patent FR1096201A to patent FR1196800A, both the French technological class as well as the international technological class are mentioned in the header. Finally, starting with patent FR1196801A, only the international technological class is retained.
     - Location: It appears only from FR328212A. The assignee's country of residence is then mentioned. Starting with the patent FR371349A, the county is mentioned when the assignee's country is France (otherwise, only the country is reported).
 
 
@@ -69,7 +69,7 @@ In this format:
 
     Attributes reported but not extracted:
 
-    - Mandataire: A "Mandataire" is a specilalised entity that files the patents on behalf of their client -the inventor. It appears in format 2.
+    - Mandataire: A "Mandataire" is a specialised entity that files the patents on behalf of their client -the inventor. It appears in format 2.
     - Technological class: The international technology class is reported
 
 
@@ -124,7 +124,7 @@ The tag `ASG` refers to the full name of an assignee, either a firm or a person.
 
 #### `INV`
 
-The tag `INV` refers to the full name of an inventor (this person is explicity referred to as the inventor). Format 1 patents often don't have an inventor who is explicitly referred to as such (meaning, distinctively from the assignee).
+The tag `INV` refers to the full name of an inventor (this person is explicitly referred to as the inventor). Format 1 patents often don't have an inventor who is explicitly referred to as such (meaning, distinctively from the assignee).
 
 !!! example "Examples"
 
@@ -212,13 +212,13 @@ The tag `INV` refers to the full name of an inventor. This is a person that is n
 
 ##### General case
 
-Refers to an indication about the location. Again, when assignees are lcoated outside France, the geographic indication usually boils down to the name of the country.
+Refers to an indication about the location. Again, when assignees are located outside France, the geographic indication usually boils down to the name of the country.
 
 ##### Specific cases
 
 - *Address*: Sometimes, the patent document might give the full address of the assignee. This only happens for assignees located in France. For the sake of consistency, we only keep the name of the city (and associated zipcode when it is provided). See example 2.
 
-- *State of the Headquarters*: Typically in the case of an American firm as the assignee, a patent might report the US state in which this firm is headquartered. Again, because the instances are rare and for the sake of consistency, we tag only he country of residence. See example 3.
+- *State of the Headquarters*: Typically in the case of an American firm as the assignee, a patent might report the US state in which this firm is headquartered. Again, because the instances are rare and for the sake of consistency, we tag only the country of residence. See example 3.
 
 !!! example "Examples"
 

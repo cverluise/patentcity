@@ -239,11 +239,11 @@ It can encompass more or less details.
 
 Do not include "*Deutsche Kl*" in the label.
 
-When two classifications are given (international and German) only label the German's (see examples 3 and 4)
+When two classifications are given (international and German) only label the German's. See examples 3 and 4.
 
-Do not label the description of the class (see example 1)
+Do not label the description of the class. See example 1.
 
-Label also the subclass (see example 4 and 5)
+Label also the subclass. See example 4 and 5.
 
 
 !!! example "Examples"
@@ -277,7 +277,7 @@ Label also the subclass (see example 4 and 5)
 
 ##### General case
 
-The tag `INV` refers to the full name of an inventor. This is a person that is refered to as *Erfinder*. It appears after the item *Als Erfinder banannt:* or simply after *Erfinder:*.
+The tag `INV` refers to the full name of an inventor. This is a person that is referred to as *Erfinder*. It appears after the item *Als Erfinder banannt:* or simply after *Erfinder:*.
 
 ##### Specific cases
 
@@ -293,7 +293,7 @@ The tag `INV` refers to the full name of an inventor. This is a person that is r
 
 ##### General case
 
-The tag `ASG` refers to the full name of an assignee, either a firm or a person. This is a person that is refered to as *Anmelder*. It appears after the item *Anmelder:*. When the assignee lives outside Germany, the patent also specifies the name of the patent attorney (*Vertreter*). We are not interested in this information and the associated entities (`LOC` and `OCC` namely).
+The tag `ASG` refers to the full name of an assignee, either a firm or a person. This is a person that is referred to as *Anmelder*. It appears after the item *Anmelder:*. When the assignee lives outside Germany, the patent also specifies the name of the patent attorney (*Vertreter*). We are not interested in this information and the associated entities (`LOC` and `OCC` namely).
 
 ##### Specific cases
 
@@ -356,7 +356,7 @@ Similar to format 1.
 
 ##### Specific cases
 
-- *Class KL:* In some cases, the classe is given in the form: KL.XXXXXX, in such case, we label the "KL." See example 2.
+- *Class KL:* In some cases, the class is given in the form: KL.XXXXXX, in such case, we label the "KL." See example 2.
 
 !!! example "Examples"
 
@@ -372,7 +372,7 @@ Similar to format 1.
 
 ##### General case
 
-In some rare occasion, the origin of the firm is precised. This seems to only be the case for US firms. The `CIT` is either printed in full letter (example 1) or with abbreviations (example 2).
+On some rare occasions, the origin of the firm is precised. This seems to only be the case for US firms. The `CIT` is either printed in full letter (example 1) or with abbreviations (example 2).
 
 !!! example "Examples"
 

@@ -1,11 +1,11 @@
-import spacy
-from spacy import Language
-from spacy.tokens import Doc
+"""Relationship
 
-"""
 WARNING: functions below are copy-pasted in the relation_extractor factory for the sake of efficiency.
 If you modify a function, make sure that you do the exact same modification on its twin function.
 """
+import spacy
+from spacy import Language
+from spacy.tokens import Doc
 
 LABELS = ["LOC", "CIT", "OCC"]
 POSITIONS = ["before", "after", "any"]
@@ -20,11 +20,13 @@ Doc.set_extension("patentees", default=[], force=True)
 
 
 @spacy.Language.factory("relation_extractor", default_config={"config": default_config})
-def create_relationship_component(nlp: Language, name: str, config: dict):
+def create_relationship_component(
+    nlp: Language, name: str, config: dict
+):  # pylint: disable=unused-argument
     return EntityRelationshipComponent(config)
 
 
-class EntityRelationshipComponent:
+class EntityRelationshipComponent:  # pylint: disable=missing-class-docstring,too-few-public-methods
     def __init__(self, config: dict):
         self.config = config
         if not Doc.has_extension("patentees"):
@@ -45,7 +47,8 @@ class EntityRelationshipComponent:
     ):
         """Return all candidate ent satisfying the conditions defined by max_length and position.
         POSITION refers to the relative place of the child wrt the head and MAX_LENGTH is the max
-        number of tokens away from the head which are considered for the start of a child."""
+        number of tokens away from the head which are considered for the start of a child.
+        """
         assert label in LABELS
         assert position in POSITIONS
         candidates_ = [child for child in children if child["label"] == label]
@@ -134,7 +137,8 @@ def harvest_candidates(
 ):
     """Return all candidate ent satisfying the conditions defined by max_length and position.
     POSITION refers to the relative place of the child wrt the head and MAX_LENGTH is the max
-    number of tokens away from the head which are considered for the start of a child."""
+    number of tokens away from the head which are considered for the start of a child.
+    """
     assert label in LABELS
     assert position in POSITIONS
     candidates_ = [child for child in children if child["label"] == label]

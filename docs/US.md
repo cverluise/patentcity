@@ -23,11 +23,11 @@ US3554067A-... | Espacenet | OCR | US3564067A| 4
 
 ## 🚜 Extraction schema
 
-See the [annotation guidelines](./US_ANNOTATION_GUIDELINES.md)
+See the [annotation guidelines](./US_ANNOTATION_GUIDELINES.md).
 
 ## 🔮 Models
 
-See the [models card](./US_MODEL_CARD.md)
+See the [models card](./US_MODEL_CARD.md).
 
 ## Other
 

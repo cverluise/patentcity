@@ -1,21 +1,18 @@
-import json
-import os
-
-from typing import List
-import numpy as np
-import pandas as pd
-import typer
-import yaml
-
-from patentcity.utils import get_cit_code
-from patentcity.relationship import get_child, RELATIONS
-
-
 """
                             Eval patentcity model components
 
 Take model (and test data, opt) and return performance metrics report
 """
+import json
+import os
+
+import numpy as np
+import pandas as pd
+import typer
+import yaml
+
+from patentcity.relationship import RELATIONS, get_child
+from patentcity.utils import get_cit_code
 
 app = typer.Typer()
 
@@ -72,7 +69,7 @@ def citizenship_fst(
     test_df = test_df.replace({np.nan: None})
 
     res = []
-    for i, row in test_df.iterrows():
+    for _, row in test_df.iterrows():
         text = row["text"]
         pred = get_cit_code(text, fst, fuzzy_match)
         res += [
@@ -93,7 +90,9 @@ def citizenship_fst(
 
 
 @app.command()
-def relationship_model(test_file: str, rel_config: str, report: str = "short"):
+def relationship_model(
+    test_file: str, rel_config: str, report: str = "short"
+):  # pylint: disable=too-many-statements
     """
     Evaluate relationship model and return report to stdout
 
@@ -197,7 +196,12 @@ def relationship_model(test_file: str, rel_config: str, report: str = "short"):
             true, true_positives, false_positives, false_negatives, label=None
         ):
             if label:
-                true, true_positives, false_positives, false_negatives = filter_relation(
+                (
+                    true,
+                    true_positives,
+                    false_positives,
+                    false_negatives,
+                ) = filter_relation(
                     label, true, true_positives, false_positives, false_negatives
                 )
             # nb_t = len(true)
@@ -274,9 +278,12 @@ def relationship_model(test_file: str, rel_config: str, report: str = "short"):
 
                     relations_pred += get_relation(head, child)
 
-            true_, true_positives_, false_positives_, false_negatives_ = eval_performance(
-                relations_pred, relations_gold
-            )
+            (
+                true_,
+                true_positives_,
+                false_positives_,
+                false_negatives_,
+            ) = eval_performance(relations_pred, relations_gold)
 
             true += true_
             true_positives += true_positives_
@@ -312,7 +319,9 @@ def patentee_deduplication(test_file: str, verbose: bool = False):
     df = df.query("clas==clas").copy()
     accuracy = {}
     for threshold in np.arange(0, 2, 0.01):
-        df["pred"] = df["lev_dist_rel"].apply(lambda x: 1 if x < threshold else 0)
+        df["pred"] = df["lev_dist_rel"].apply(
+            lambda x: 1 if x < threshold else 0  # pylint: disable=cell-var-from-loop
+        )
         nb_true = len(df.query("clas==pred"))
         acc = nb_true / len(df)
         accuracy.update({threshold: acc})

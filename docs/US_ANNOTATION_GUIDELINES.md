@@ -7,7 +7,7 @@
 
 The patent corpus that we consider for US has 4 types of formats and spans the period 1836-1980.
 
-The formatting is different from one format to the next one. In publication prior to US1248454A, the relevant information are contained in the first paragraph and in the header (format 1), it is subsequently only contained in the header. See Figures 1,2, 3 and 4 for an example of each format type.
+The formatting is different from one format to the next one. In publication prior to US1248454A, the relevant information is contained in the first paragraph and in the header (format 1), it is subsequently only contained in the header. See Figures 1,2, 3 and 4 for an example of each format type.
 From publication US3930271A onward, we use information provided by the USPTO in the Patentsview database.
 
 
@@ -35,7 +35,7 @@ Entities are tied together with 2 types of relations.
 
 ### *Format 2*, from 1926 to 1933
 
-This second format starts with patent US1583767A and ends with patent US1920166A. All the information are contained in a header just below the title.
+This second format starts with patent US1583767A and ends with patent US1920166A. All the information is contained in a header just below the title.
 
 We extract 4 different "entities".
 
@@ -154,7 +154,7 @@ The tag `LOC` refers to the full location of an inventor or an assignee. The gra
 
 - *Location in header*: the location is given in the header in the form: CITY/STATE or CITY/COUNTRY (example 1)
 - *Location in text*: the location is also given in the text following the name of the inventor. The location is usually given as "in [CITY] in the county of [COUNTY] and state of [STATE]" (example 2)
-- *Detailed address*: in some rare cases, a more detailed information is given such as the borough or the full postal address. In which case only information more aggregated than city is labeled (example 3)
+- *Detailed address*: in some rare cases, more detailed information is given such as the borough or the full postal address. In which case only information more aggregated than city is labeled (example 3)
 
 !!! example "Examples"
 
@@ -333,9 +333,9 @@ The tag `INV` refers to the full name of an inventor.
 
 ##### Specific cases
 
-- *Format 3:* the format 3 corresponds to a format that is very close the format 3 describes above (see example 1)
-- *Format 4:* the standard case which is structured with a dedicated field named: inventor(s) (example 2)
-- *Deceased:* in some rare case, the inventor is dead and an administrator is designated. Only the (dead) inventor should be labeled then (see example 3)
+- *Format 3:* the format 3 corresponds to a format that is very close the format 3 describes above. See example 1.
+- *Format 4:* the standard case which is structured with a dedicated field named: inventor(s). See example 2.
+- *Deceased:* in some rare case, the inventor is dead and an administrator is designated. Only the (dead) inventor should be labeled then. See example 3.
 
 !!! example "Examples"
 
@@ -359,10 +359,10 @@ The tag `LOC` refers to the location of the inventor or assignee and is given by
 
 ##### Specific cases
 
-- *Format 3:* the format 3 corresponds to a format that is very close the format 3 describes above (see example 1)
-- *Format 4:* the standard case which is structured. The location appears in the field inventor and/or assignee (example 2)
-- *all of / both of:* in some cases with multiple inventors, the location is designated in two times (INV1, [CITY] and INV2, [CITY], both of [STATE]) (see example 3).
-- *Full address:* in some cases, the full postal address is given. In this case, only the city and more aggregated geographical entities should be labeled (see example 4).
+- *Format 3:* the format 3 corresponds to a format that is very close the format 3 describes above. See example 1.
+- *Format 4:* the standard case which is structured. The location appears in the field inventor and/or assignee. See example 2.
+- *all of / both of:* in some cases with multiple inventors, the location is designated in two times (INV1, [CITY] and INV2, [CITY], both of [STATE]). See example 3.
+- *Full address:* in some cases, the full postal address is given. In this case, only the city and more aggregated geographical entities should be labeled. See example 4.
 
 !!! example "Examples"
 
@@ -390,8 +390,8 @@ The tag `ASG` refers either to the name of the assignee.
 
 ##### Specific cases
 
-- *Format 3:* the format 3 corresponds to a format that is very close the format 3 describes above (see example 1)
-- *Format 4:* the standard case which is structured with a dedicated field named: assignee (example 2)
+- *Format 3:* the format 3 corresponds to a format that is very close the format 3 describes above. See example 1.
+- *Format 4:* the standard case which is structured with a dedicated field named: assignee. See example 2.
 - *The United States of America:* when the assignee is part of the government, the assignee is referred to as "the United States of America, as represented by XX". In such a case, only "the United States of America" should be labeled (example 3) do not tag the representant
 
 !!! example "Examples"

@@ -3,7 +3,7 @@
 ## Problem
 
 Before 1972 (incl), the publication date of DD patents is missing.
-frontier is fuzzy, patents publication numbers are not exactly chronological but nearly. This makes it hard to manually find the latest publication number for each vintage.
+Frontier is fuzzy, patents publication numbers are not exactly chronological but nearly. This makes it hard to manually find the latest publication number for each vintage.
 
 ![](./img/DD_numberdate.png)
 !!! note

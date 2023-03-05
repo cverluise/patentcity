@@ -2,7 +2,7 @@
 
 ## Problem
 
-We harvest administrative areas from the geocoding. They are already useful, but they have some limitations. In particular, they are not fully satisgying regarding the following features:
+We harvest administrative areas from the geocoding. They are already useful, but they have some limitations. In particular, they are not fully satisfying regarding the following features:
 
 - between country comparability. We would like to be able to compare countries based on comparable objects (e.g. [NUTS](https://en.wikipedia.org/wiki/Nomenclature_of_Territorial_Units_for_Statistics))
 - common usage. We want to be able to interoperate our data with external statistics (e.g. demographic data, economic data, structural data)
@@ -69,6 +69,6 @@ US  |State    |Commuting Zone (1990) | County
 Administrative areas obtained directly from the geocoding services (`loc_state` and `loc_counties`) also exhibit intrinsic limitations:
 
 - spelling inconsistencies between geocoding services (e.g. "Constance" vs "Konstanz")
-- semantic inconsistencies between geocoding services (e.g. districts vs kreis as level 3 adminstritative area for DE)
+- semantic inconsistencies between geocoding services (e.g. districts vs kreis as level 3 administrative area for DE)
 
 Although we recommend the use of statistical areas, we also propose a solution using hand-made crossover tables. We do not implement the harmonization directly in the database as this is partly destructive. The solution (and its history) is described by issue [#7](https://github.com/cverluise/patentcity/issues/7).

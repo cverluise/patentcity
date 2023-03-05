@@ -42,7 +42,7 @@ spacy train configs/de_t2vner.cfg --paths.train data/train_ent_${FORMAT}.spacy -
 
 ## 🎯 Intended use
 
-`de_ent_depatent0*_sm` have been specifically trained on DE patents (resp DE1C-DE977922C and DE1000001B-). The model's performance are not guaranteed out of this scope.
+`de_ent_depatent0*_sm` have been specifically trained on DE patents (resp DE1C-DE977922C and DE1000001B-). The model's performances are not guaranteed out of this scope.
 
 
 

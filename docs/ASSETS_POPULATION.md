@@ -2,16 +2,20 @@
 
 File | Source(s)
 ---|---
-[population_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets) |DE: [Rosés-Wolf database on regional GDP (version 6, 2020)](https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp), FR: [INSEE](https://www.insee.fr/fr/statistiques/3698339), GB: [Vision of Britain](https://www.visionofbritain.org.uk/) (pre 1981) & [ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/13221populationestimatesbylocalauthoritiesofgreatbritainmid1981tomid2019) (post 1981) & [Wiki](https://en.wikipedia.org/wiki/Demography_of_Northern_Ireland) (Northern Ireland) and [Census](https://data.london.gov.uk/dataset/historic-census-population) (London), US: [Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020](https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip)
+[population_xx.csv](https://github.com/cverluise/patentcity/tree/master/assets) |DE: [Rosés-Wolf database on regional GDP (version 6, 2020)](https://www.wiwi.hu-berlin.de/de/professuren/vwl/wg/roses-wolf-database-on-regional-gdp)(pre 1990) & [Eurostat](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Population_statistics_at_regional_level)(post 1990), FR: [INSEE](https://www.insee.fr/fr/statistiques/3698339), GB: [Vision of Britain](https://www.visionofbritain.org.uk/) (pre 1981) & [ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/13221populationestimatesbylocalauthoritiesofgreatbritainmid1981tomid2019) (post 1981) & [Wiki](https://en.wikipedia.org/wiki/Demography_of_Northern_Ireland) (Northern Ireland) and [Census](https://data.london.gov.uk/dataset/historic-census-population) (London), US: [Fabian Eckert, Andrés Gvirtz, Jack Liang, and Michael Peters. "A Method to Construct Geographical Crosswalks with an Application to US Counties since 1790." NBER Working Paper #26770, 2020](https://mipeters.weebly.com/uploads/1/4/6/5/14651240/egp_crosswalk.zip)(1830-1970) & [Census](https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-total.html)(1970-2010) & [NBER data](https://data.nber.org/data/census-intercensal-county-population.html)(2010-2018)
 
 ## Coverage
 
 Country |Geographical level |Period
 ---|---|---
-DE  |2 (nuts2)       | 1900-2015
-FR  |3 (nuts3)       | 1876-2018
-GB  |2 (nuts2)       | 1851-2019
-US  |2 (commuting zone) | 1830-2000
+DE  |2 (nuts2)       | 1900-2017
+FR  |3 (nuts3)       | 1876-2017
+GB  |2 (nuts2)       | 1851-2017
+US  |3 (county) | 1830-2018
+
+??? note  "Annual data"
+
+    We proceed to a linear interpolation based on _population_raw_ column to obtain population data for each year in _population_ column.
 
 ## Variables
 
@@ -24,14 +28,21 @@ year                    | Year | `int`
 population              | Population in the statistical area (in thousands)| `float`
 population\_raw         | Population in the statistical area before correction (in thousands). Relevant for GB only (see notes below)| `float`
 
+??? note  "Focus on US data"
+
+    We obtain US population post 1970 data by aggregating county data thanks to [David Dorn crossover table](https://www.ddorn.net/data.htm).
 
 ??? note  "Focus on GB data"
 
     GB population data are not available at a sufficiently detailed NUTS level over long period - at least we did not find it. For instance, Rosés and Wolf (2020) only provides data at the NUTS1 level for GB. Hence, we had to build the population data for GB at the NUTS2 level ourselves. This includes 3 main stages: 1. Pre-1981 data collection, 2. Post-1981 data collection, 3. Data harmonization
 
+??? note "Focus on DE data"
+
+    Following Roses and Wolf (2020), we have merged the regions of Darmstadt and Giessen into one entity and similarly for Braunschweig and Hannover. While each of these areas correspond to a NUTS2, the multiple changes in borders make it impossible to track population estimates over time without merging the regions.
+
     **Pre-1981 data collection**:
 
-    We use Vision of Britain (VoB) population data, except for London where we use data from the Census. Some VoB geographic entities have no population data though. In this case, we made our best to reconstitute the data from smaller entities with known population data. Below we detail the contruction of these entities
+    We use Vision of Britain (VoB) population data, except for London where we use data from the Census. Some VoB geographic entities have no population data though. In this case, we made our best to reconstitute the data from smaller entities with known population data. Below we detail the construction of these entities
 
     VoB | Construction
     ---|---
@@ -47,7 +58,7 @@ population\_raw         | Population in the statistical area before correction (
 
     Missing VoB data (concentrated in 1871, 1901 and 1941) are filled with linear interpolation.
 
-    Once we have data for all VoB entities (real or imputed), we caggregate them to obtain population data at the NUTS2 level using the conversion table reported in [statisticalareasvob_gb.csv](https://github.com/cverluise/patentcity/tree/master/assets).
+    Once we have data for all VoB entities (real or imputed), we aggregate them to obtain population data at the NUTS2 level using the conversion table reported in [statisticalareasvob_gb.csv](https://github.com/cverluise/patentcity/tree/master/assets).
 
     **Post-1981 data collection**
 

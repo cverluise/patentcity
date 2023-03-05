@@ -1,21 +1,3 @@
-import json
-import yaml
-import os
-from pathlib import Path
-from glob import iglob, glob
-from smart_open import open
-import git
-from concurrent.futures import ThreadPoolExecutor
-from itertools import repeat, combinations
-from Levenshtein import distance as levenshtein_distance
-
-from patentcity.relationship import create_relationship_component
-import spacy
-import typer
-from hashlib import md5
-
-from patentcity.utils import clean_text, get_recid, get_cit_code
-
 """
                              Brew patentcity dataset
 
@@ -24,6 +6,21 @@ General functioning: Stream text blobs | process | print json blobs to stdout
 * beta: entities only
 * v1: entities & relationship
 """
+import json
+import os
+from concurrent.futures import ThreadPoolExecutor
+from glob import glob, iglob
+from hashlib import md5
+from itertools import combinations, repeat
+
+import git
+import spacy
+import typer
+import yaml
+from Levenshtein import distance as levenshtein_distance
+from smart_open import open  # pylint: disable=redefined-builtin
+
+from patentcity.utils import clean_text, get_cit_code, get_recid
 
 app = typer.Typer()
 repo = git.Repo(search_parent_directories=True)
@@ -44,7 +41,8 @@ def _get_blob(file: str):
 
 @app.command(name="v1.grind")
 def grind(path: str, max_workers: int = 10):
-    """Stream texts in `path` and return json objects to stdout. Files are expected to be patent texts named after the
+    """Stream texts in `path` and return json objects to stdout.
+    Files are expected to be patent texts named after the
     publication_number of the patent (e.g. US-12345-A.txt).
 
 
@@ -69,13 +67,13 @@ def grind(path: str, max_workers: int = 10):
 
 
 @app.command()
-def v1(
+def v1(  # pylint: disable=invalid-name
     path: str,
     model: str,
     rel_config: str,
     max_char: int = 9999,
     batch_size: int = 1000,
-    inDelim: str = "|",
+    inDelim: str = "|",  # pylint: disable=invalid-name
 ):
     """
     Stream json objects in `path` and return json v1 objects to stdout.
@@ -152,8 +150,8 @@ def _topping(line, config):
             patentee.update({"cit_code": cit_code})
         patentees_ += [patentee]
     nb_patee = len(patentees_) if patentees_ else 0
-    nb_inv = sum([patentee_.get("is_inv") for patentee_ in patentees_])
-    nb_asg = sum([patentee_.get("is_asg") for patentee_ in patentees_])
+    nb_inv = sum(patentee_.get("is_inv") for patentee_ in patentees_)
+    nb_asg = sum(patentee_.get("is_asg") for patentee_ in patentees_)
     line.update({"patentee": patentees_})
 
     if country_code in config["deduplicate"].keys():
@@ -192,21 +190,26 @@ def _topping(line, config):
 
 
 def _deduplicate(line: dict, threshold: float):
-    """Return LINE with an additional field is_duplicate (bool). is_duplicate is True when the patentee should be
-    removed from the analysis because another patentee has the 'same' name. We say that 2 patentees have the same name
-     when the relative levenshtein of the two strings (lower) is below THRESHOLD."""
+    """Return LINE with an additional field is_duplicate (bool).
+
+    is_duplicate is True when the patentee should be removed
+    from the analysis because another patentee has the 'same' name.
+
+    We say that 2 patentees have the same name when the relative
+    levenshtein of the two strings (lower) is below THRESHOLD."""
     # line = json.loads(line)
     patentees = line.get("patentee")
-    [patentee.update({"is_duplicate": False}) for patentee in patentees]
+    for patentee in patentees:
+        patentee.update({"is_duplicate": False})
     if patentees:
         for i, j in list(combinations(range(len(patentees)), 2)):
-            p1, p2 = patentees[i], patentees[j]
+            p1, p2 = patentees[i], patentees[j]  # pylint: disable=invalid-name
             name1 = p1.get("name_text").lower()
             name2 = p2.get("name_text").lower()
             lev_dist_rel = levenshtein_distance(name1, name2) / (
                 (len(name1) + len(name2)) / 2
             )
-            are_duplicates = True if lev_dist_rel < threshold else False
+            are_duplicates = bool(lev_dist_rel < threshold)
             # print(name1, name2, are_duplicates, lev_dist_rel)
             if are_duplicates:
                 p1_hasloc, p2_has_loc = p1.get("loc_text"), p2.get("loc_text")
@@ -256,14 +259,14 @@ def topping(file: str, config_file: str = None, max_workers=10):
     **Usage:**
         ```shell
         mv data/US/entrel_uspatentxx.jsonl data/US/entrel_uspatentxx.jsonl.tmp
-        patencity v1.topping --config-file configs/top_xxpatentxx.yaml "data/US/entrel_uspatentxx.jsonl.tmp"
+        patencity v1.topping --config-file configs/top_xxpatentxx.yaml "data/US/entrel_uspatentxx.jsonl.tmp"  # pylint: disable=line-too-long
         # Nb: if the file is large, you can split and zip
         ```
 
     """
-    with open(config_file, "r") as config_file:
-        config = yaml.load(config_file, Loader=yaml.FullLoader)
-    for k, v in config["cit_code"].items():
+    with open(config_file, "r") as config_file_:
+        config = yaml.load(config_file_, Loader=yaml.FullLoader)
+    for k, v in config["cit_code"].items():  # pylint: disable=invalid-name
         config["cit_code"].update({k: json.loads(open(v, "r").read())})
 
     with open(file, "r") as lines:
