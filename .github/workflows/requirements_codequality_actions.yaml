@@ -1,11 +1,11 @@
-name: code-quality
+name: requirements-code-quality
 on:
   pull_request:
     branches:
       - master
       - nightly
 jobs:
-  check-code-quality:
+  check-requirements-code-quality:
     runs-on: ubuntu-latest
     steps:
       - name: "🏡 Checkout repository"
